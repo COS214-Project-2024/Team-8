@@ -7,7 +7,7 @@ using namespace std;
 #include "BudgetAllocationSystem.h"
 
 void FinanceDepartment::setCommercialTaxRates(float aBusinessTaxRate, float aSalesTaxRate) {
-	throw "Not yet implemented";
+	cout<<"finance section changed"<<endl;
 }
 
 void FinanceDepartment::setResidentialTaxRates(float aIncomeTaxRate, float aPropertyTaxRate) {
