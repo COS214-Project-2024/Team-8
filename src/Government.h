@@ -1,10 +1,14 @@
 #include <exception>
 using namespace std;
 
-#ifndef __Government_h__
-#define __Government_h__
+#ifndef GOVERNMENT_H
+#define GOVERNMENT_H
 
-// #include "Citizen.h"
+#include <vector>
+#include <memory>
+#include "Command.h"
+
+#include "Citizen.h"
 // #include "Policies.h"
 // #include "Buildings.h"
 
@@ -13,40 +17,42 @@ class Policies;
 class Buildings;
 class Government;
 
-__abstract class Government
+class Government
 {
-	private: Citizen* _citizenList;
-	private: Government _successor;
+	private:
+	 Citizen* citizenList;
+ 	 Government* successor;
+	 Citizen* requestee;
+	 vector<unique_ptr<Command>> commands;
+	 double budget;
+	 double totalRevenue;
+
 	public: Government* _unnamed_Government_;
-	public: Citizen* _requestee;
-	public: Policies* _unnamed_Policies_;
-	public: Buildings* _unnamed_Buildings_;
+	 Citizen* _requestee;
+	 Policies* _unnamed_Policies_;
+	 Buildings* _unnamed_Buildings_;
 
-	public: void attach(string a:_Citizen);
-
-	public: void detach(string a:_Citizen);
-
-	public: void notify();
+ 	void attach(Citizen* citizen);
+ 	void detach(Citizen* citizen);
+ 	void notify();
+	void addCommand(unique_ptr<Command> command);
+	void executeCommands();
+	void requestCollectionOfPropertyTax();
+	void requestCollectionOfIncomeTax();
+	void requestCollectionOfBusinessTax();
+	float requestAllocationOfUtilitiesFunds();
+	float requestAllocationOfHealthcareFunds();
+	void requestCollectionOfSalesTax();
+	float requestAllocationOfTransportFunds();
+	float requestAllocationOfEducationFunds();
+	float requestAllocationOfRecreationFunds();
+	void setBudget(double b);
+	double getBudget();
+	double getTotalRevenue();
 
 	public: virtual void handleRequest() = 0;
 
-	public: void requestCollectionOfIPropertyTax();
 
-	public: void requestCollectionOfIncomeTax();
-
-	public: void requestCollectionOfIBusinessTax();
-
-	public: float requestAllocationOfIUntilitiesFunds();
-
-	public: float requestAllocationOfHealthcareFunds();
-
-	public: void requestCollectionOfISalesTax();
-
-	public: float requestAllocationOfTransportFunds();
-
-	public: float requestAllocationOfEducationFunds();
-
-	public: float requestAllocationOfRecreationFunds();
 };
 
 #endif

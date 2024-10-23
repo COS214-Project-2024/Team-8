@@ -1,22 +1,23 @@
 #include <exception>
 using namespace std;
 
-#ifndef __PublicServicesPolicies_h__
-#define __PublicServicesPolicies_h__
+#ifndef PUBLICSERVICESPOLICIES_H
+#define PUBLICSERVICESPOLICIES_H
 
 // #include "Citizen.h"
 // #include "EconomicPolicies.h"
+#include "Policies.h"
 
 class Citizen;
 class EconomicPolicies;
 class PublicServicesPolicies;
 
-class PublicServicesPolicies
+class PublicServicesPolicies : public Policies
 {
-	public: Citizen* _unnamed_Citizen_;
-	public: EconomicPolicies* _unnamed_EconomicPolicies_;
-
-	public: void executePolicy();
+	public: Citizen* citizen;
+	public: EconomicPolicies* economicPolicies;
+	explicit PublicServicesPolicies(Government* govt) : Policies(govt) {} // Command Pattern for policies
+	public: void executePolicy() override; // Command Pattern for policies
 };
 
 #endif

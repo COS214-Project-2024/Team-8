@@ -5,15 +5,21 @@ using namespace std;
 #define __Policies_h__
 
 // #include "Government.h"
+#include "Command.h"
 
 class Government;
 class Policies;
 
-__abstract class Policies
+class Policies : public Command
 {
-	public: Government* _unnamed_Government_;
+	protected:
+		Government* government;
 
-	public: virtual void executePolicy() = 0;
+	public: 
+		explicit Policies(Government* govt) : government(govt) {} // Command Pattern for policies
+		virtual void executePolicy() = 0; // Command Pattern for policies
+		void execute() override { executePolicy(); }// Command Pattern for policies
+   	    virtual ~Policies() = default;
 };
 
 #endif

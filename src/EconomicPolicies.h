@@ -1,8 +1,8 @@
 #include <exception>
 using namespace std;
 
-#ifndef __EconomicPolicies_h__
-#define __EconomicPolicies_h__
+#ifndef ECONOMICPOLICIES_H
+#define ECONOMICPOLICIES_H
 
 // #include "PublicServicesPolicies.h"
 // #include "Citizen.h"
@@ -15,10 +15,11 @@ class EconomicPolicies;
 
 class EconomicPolicies: public Policies
 {
-	public: PublicServicesPolicies* _unnamed_PublicServicesPolicies_;
-	public: Citizen* _unnamed_Citizen_;
-
-	public: void executePolicy();
+	public: 
+		explicit EconomicPolicies(Government* govt); // Command Pattern for policies
+		PublicServicesPolicies* psPolicies;
+	    Citizen* citizen;
+	    void executePolicy() override;
 };
 
 #endif

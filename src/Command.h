@@ -10,14 +10,14 @@ using namespace std;
 class UtilityManager;
 class Command;
 
-__abstract class Command
+class Command
 {
-	protected: Utilities* _utility;
-	public: UtilityManager* _unnamed_UtilityManager_;
+	// protected: Utilities* utility;
+	public: UtilityManager* utilityMan;
 
-	public: virtual void execute() = 0;
+	public: virtual void execute() = 0; // Command Pattern for policies
 
-	public: virtual ~Command();
+	public: virtual ~Command() = default; // Command Pattern for policies
 
 	public: string getUtilityType();
 
