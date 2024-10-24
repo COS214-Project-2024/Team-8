@@ -20,7 +20,7 @@ class Government;
 class Government
 {
 	private:
-	 Citizen* citizenList;
+	 std::vector<Citizen*> citizenList;
  	 Government* successor;
 	 Citizen* requestee;
 	 vector<unique_ptr<Command>> commands;
