@@ -56,7 +56,7 @@ private:
     int totalPopulation;                ///< Current total population
     static const int MAX_POPULATION;    ///< Maximum allowable population
     static const float MIGRATION_RATE_MULTIPLIER;
-    static const float BIRTH_RATE_PER_HOSPITAL;
+    static const int BIRTH_RATE_PER_HOSPITAL;
     
 
     /**
