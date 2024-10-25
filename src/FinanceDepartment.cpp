@@ -1,56 +1,38 @@
 #include <exception>
 #include <vector>
+#include <iostream>
 using namespace std;
 
 #include "FinanceDepartment.h"
 #include "ResidentialTaxationSystem.h"
 #include "BudgetAllocationSystem.h"
+ 
 
-void FinanceDepartment::setCommercialTaxRates(float aBusinessTaxRate, float aSalesTaxRate) {
-	cout<<"finance section changed"<<endl;
+void FinanceDepartment::setCommercialTaxRates(float businessTaxRate, float salesTaxRate) {
+    this->businessTaxRate = businessTaxRate;
+    this->salesTaxRate = salesTaxRate;
+    cout << "💼 Setting Commercial Tax Rates..." << endl;
+    cout << "   - Business Tax Rate updated to: " << businessTaxRate * 100 << "%" << endl;
+    cout << "   - Sales Tax Rate updated to: " << salesTaxRate * 100 << "%" << endl;
 }
 
-void FinanceDepartment::setResidentialTaxRates(float aIncomeTaxRate, float aPropertyTaxRate) {
-	throw "Not yet implemented";
+void FinanceDepartment::setResidentialTaxRates(float incomeTaxRate, float propertyTaxRate) {
+    this->incomeTaxRate = incomeTaxRate;
+    this->propertyTaxRate = propertyTaxRate;
+    cout << "🏠 Setting Residential Tax Rates..." << endl;
+    cout << "   - Income Tax Rate updated to: " << incomeTaxRate * 100 << "%" << endl;
+    cout << "   - Property Tax Rate updated to: " << propertyTaxRate * 100 << "%" << endl;
 }
 
-void FinanceDepartment::handleRequestForIncomeTaxCollection() {
-	throw "Not yet implemented";
+void FinanceDepartment:: delegateRequestForCollectionOfTaxes(){
+	residentialTaxation->collectIncomeTaxes(incomeTaxRate,totalResidentsIncomes)
+	residentialTaxation->collectPropertyTaxes(propertyTaxRate,totalResidentsIncomes);
+	businessTaxation->collectBusinessTaxes(businessTaxRate,totalbusinessProfits);
+	businessTaxation->collectSalesTaxes(salesTaxRate,totalbusinessProfits)
 }
 
-void FinanceDepartment::handleRequestForPropertyTaxCollection() {
-	throw "Not yet implemented";
+void FinanceDepartment:: delegateRequestOfAllocationOfFunds(float requiredExpenUtilities, float requiredExpenTransport, 
+                                          float requiredExpenHealth, float requiredExpenEducation, 
+                                          float requiredExpenSecurity, float requiredExpenRecreation){
+									
 }
-
-void FinanceDepartment::handleRequestForBusinessTaxCollection() {
-	throw "Not yet implemented";
-}
-
-void FinanceDepartment::handleRequestForSalesTaxCollection() {
-	throw "Not yet implemented";
-}
-
-float FinanceDepartment::handleRequestForUtilitiesFundsAllocation(float aRequiredExpenditure) {
-	throw "Not yet implemented";
-}
-
-float FinanceDepartment::handleRequestForTransportFundsAllocation(float aRequiredExpenditure) {
-	throw "Not yet implemented";
-}
-
-float FinanceDepartment::handleRequestForHealthcareFundsAllocation(float aRequiredExpenditure) {
-	throw "Not yet implemented";
-}
-
-float FinanceDepartment::handleRequestForEducationFundsAllocation(float aRequiredExpenditure) {
-	throw "Not yet implemented";
-}
-
-float FinanceDepartment::handleRequestForRecreationFundsAllocation(float aRequiredExpenditure) {
-	throw "Not yet implemented";
-}
-
-float FinanceDepartment::calculateTotalRevenue(float aRequiredExpenditure) {
-	throw "Not yet implemented";
-}
-

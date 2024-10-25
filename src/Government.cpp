@@ -5,56 +5,44 @@ using namespace std;
 #include "Citizen.h"
 #include "Policies.h"
 #include "Buildings.h"
+#include <iostream>
+#include <iomanip>
+using namespace std;
 
-void Government::attach(string a:_Citizen) {
-	throw "Not yet implemented";
+void Government:: attach(Citizen* citizen){
+
+}
+void Government:: detach(Citizen* citizen){
+
 }
 
-void Government::detach(string a:_Citizen) {
-	throw "Not yet implemented";
+void Government:: notify(){
+
+}
+void Government::requestCollectionOfTaxes() {
+
+    cout << "💰 Collecting taxes from residents (Income and Property Taxes) and businesses (Business and Sales Taxes)" << endl;
+    financeDepartment->handleRequestForCollectionOfTaxes();
+    cout  << "✅ Tax collection processed!"  << endl;
 }
 
-void Government::notify() {
-	throw "Not yet implemented";
-}
+void Government::requestAllocationOfFunds(float requiredExpenUtilities, float requiredExpenTransport, 
+                                          float requiredExpenHealth, float requiredExpenEducation, 
+                                          float requiredExpenSecurity, float requiredExpenRecreation) {
 
-void Government::handleRequest() {
-	throw "Not yet implemented";
-}
 
-void Government::requestCollectionOfIPropertyTax() {
-	throw "Not yet implemented";
-}
+    cout  << "💼 Allocating Government Funds..."  << endl;
 
-void Government::requestCollectionOfIncomeTax() {
-	throw "Not yet implemented";
-}
+    cout << "   Utilities:       "  << "R" << fixed << setprecision(2) << requiredExpenUtilities  << endl;
+    cout << "   Transport:       "  << "R" << fixed << setprecision(2) << requiredExpenTransport  << endl;
+    cout << "   Healthcare:      "  << "R" << fixed << setprecision(2) << requiredExpenHealth  << endl;
+    cout << "   Education:       "  << "R" << fixed << setprecision(2) << requiredExpenEducation  << endl;
+    cout << "   Security:        "  << "R" << fixed << setprecision(2) << requiredExpenSecurity  << endl;
+    cout << "   Recreation:      "  << "R" << fixed << setprecision(2) << requiredExpenRecreation  << endl;
 
-void Government::requestCollectionOfIBusinessTax() {
-	throw "Not yet implemented";
-}
+    financeDepartment->handleRequestForFundsAllocation(requiredExpenUtilities, requiredExpenTransport, 
+                                                       requiredExpenHealth, requiredExpenEducation, 
+                                                       requiredExpenSecurity, requiredExpenRecreation);
 
-float Government::requestAllocationOfIUntilitiesFunds() {
-	throw "Not yet implemented";
+    cout  << "✅ Funds allocated successfully!"  << endl;
 }
-
-float Government::requestAllocationOfHealthcareFunds() {
-	throw "Not yet implemented";
-}
-
-void Government::requestCollectionOfISalesTax() {
-	throw "Not yet implemented";
-}
-
-float Government::requestAllocationOfTransportFunds() {
-	throw "Not yet implemented";
-}
-
-float Government::requestAllocationOfEducationFunds() {
-	throw "Not yet implemented";
-}
-
-float Government::requestAllocationOfRecreationFunds() {
-	throw "Not yet implemented";
-}
-

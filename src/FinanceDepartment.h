@@ -5,49 +5,36 @@ using namespace std;
 #ifndef __FinanceDepartment_h__
 #define __FinanceDepartment_h__
 
-// #include "ResidentialTaxationSystem.h"
-// #include "BudgetAllocationSystem.h"
-
 class ResidentialTaxationSystem;
+class CommercialTaxationSystem; 
 class BudgetAllocationSystem;
-class FinanceDepartment;
+class Citizen;
+class Policies;
+class Buildings;
 
-class FinanceDepartment
-{
-	private: ResidentialTaxationSystem* _residentialTaxation;
-	private: CommericalTaxationSystem* _commercialTaxation;
-	private: BudgetAllocationSystem* _budgetAllocation;
-	private: vector<> _residentsIncomes;
-	private: vector<> _businessProfits;
-	private: float _totalRevenue;
-	private: vector<> _totalIncomeTaxes;
-	private: vector<> _totalPropertyTaxes;
-	private: vector<> _totalBusinessTaxes;
-	private: vector<> _totalSalesTaxes;
+class FinanceDepartment {
+private:
+    ResidentialTaxationSystem* residentialTaxation;
+    BusinessTaxationSystem* businessTaxation; 
+    BudgetAllocationSystem* budgetAllocation;
+	Citizen* residentsList;
+	Buildings* commercialBuidlingsList;
+	Buildings* industrialBuidlingsList;
+    float totalRevenue;
+    float incomeTaxRate;                        
+    float propertyTaxRate;               
+    float businessTaxRate;            
+    float salesTaxRate;  
+ 	float totalbusinessProfits; 
+ 	float totalResidentsIncomes;                                             
 
-	public: void setCommercialTaxRates(float aBusinessTaxRate, float aSalesTaxRate);
-
-	public: void setResidentialTaxRates(float aIncomeTaxRate, float aPropertyTaxRate);
-
-	public: void handleRequestForIncomeTaxCollection();
-
-	public: void handleRequestForPropertyTaxCollection();
-
-	public: void handleRequestForBusinessTaxCollection();
-
-	public: void handleRequestForSalesTaxCollection();
-
-	public: float handleRequestForUtilitiesFundsAllocation(float aRequiredExpenditure);
-
-	public: float handleRequestForTransportFundsAllocation(float aRequiredExpenditure);
-
-	public: float handleRequestForHealthcareFundsAllocation(float aRequiredExpenditure);
-
-	public: float handleRequestForEducationFundsAllocation(float aRequiredExpenditure);
-
-	public: float handleRequestForRecreationFundsAllocation(float aRequiredExpenditure);
-
-	public: float calculateTotalRevenue(float aRequiredExpenditure);
+public:
+    void setResidentialTaxRates(float incomeTaxRate, float propertyTaxRate);
+    void setCommercialTaxRates(float businessTaxRate, float salesTaxRate);
+	void delegateRequestForCollectionOfTaxes();
+	void delegateRequestOfAllocationOfFunds(float requiredExpenUtilities, float requiredExpenTransport, 
+                                          float requiredExpenHealth, float requiredExpenEducation, 
+                                          float requiredExpenSecurity, float requiredExpenRecreation);
 };
 
 #endif
