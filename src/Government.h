@@ -1,52 +1,50 @@
 #include <exception>
+#include <string>
+
 using namespace std;
 
 #ifndef __Government_h__
 #define __Government_h__
 
-// #include "Citizen.h"
-// #include "Policies.h"
-// #include "Buildings.h"
-
+// Forward declarations to prevent circular dependency issues
 class Citizen;
 class Policies;
 class Buildings;
-class Government;
 
-__abstract class Government
+class Government
 {
-	private: Citizen* _citizenList;
-	private: Government _successor;
-	public: Government* _unnamed_Government_;
-	public: Citizen* _requestee;
-	public: Policies* _unnamed_Policies_;
-	public: Buildings* _unnamed_Buildings_;
+    private:
+        Citizen* _citizenList;
+        Government* _successor; // Changed type to pointer to allow for inheritance and chaining
 
-	public: void attach(string a:_Citizen);
+    public:
+        Government* _unnamed_Government_;
+        Citizen* _requestee;
+        Policies* _unnamed_Policies_;
+        Buildings* _unnamed_Buildings_;
 
-	public: void detach(string a:_Citizen);
+        // Attach and detach methods for managing citizens (using Citizen* instead of string)
+        void attach(Citizen* citizen);
+        void detach(Citizen* citizen);
 
-	public: void notify();
+        // Notify method to inform observers or related components
+        void notify();
 
-	public: virtual void handleRequest() = 0;
+        // Pure virtual method, making Government an abstract base class
+        virtual void handleRequest() = 0;
 
-	public: void requestCollectionOfIPropertyTax();
+        // Tax collection methods
+        void requestCollectionOfPropertyTax();
+        void requestCollectionOfIncomeTax();
+        void requestCollectionOfBusinessTax();
+        void requestCollectionOfSalesTax();
 
-	public: void requestCollectionOfIncomeTax();
-
-	public: void requestCollectionOfIBusinessTax();
-
-	public: float requestAllocationOfIUntilitiesFunds();
-
-	public: float requestAllocationOfHealthcareFunds();
-
-	public: void requestCollectionOfISalesTax();
-
-	public: float requestAllocationOfTransportFunds();
-
-	public: float requestAllocationOfEducationFunds();
-
-	public: float requestAllocationOfRecreationFunds();
+        // Fund allocation methods returning float for allocated amounts
+        float requestAllocationOfUtilitiesFunds();
+        float requestAllocationOfHealthcareFunds();
+        float requestAllocationOfTransportFunds();
+        float requestAllocationOfEducationFunds();
+        float requestAllocationOfRecreationFunds();
 };
 
 #endif
