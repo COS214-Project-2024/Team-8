@@ -1,3 +1,4 @@
+
 #ifndef POPULATIONCONTROL_H
 #define POPULATIONCONTROL_H
 
@@ -40,7 +41,6 @@ public:
     /**
      * @brief Simulates population growth based on hospitals' birth rates.
      * 
-     * @param numberOfHospitals The number of hospitals contributing to birth rates.
      */
     void simulatePopulationGrowth();
 
@@ -55,6 +55,9 @@ private:
     std::vector<Buildings*> buildings; ///< List of buildings in the city
     int totalPopulation;                ///< Current total population
     static const int MAX_POPULATION;    ///< Maximum allowable population
+    static const float MIGRATION_RATE_MULTIPLIER;
+    static const float BIRTH_RATE_PER_HOSPITAL;
+    
 
     /**
      * @brief Calculates the migration effect based on created jobs.
@@ -63,6 +66,14 @@ private:
      * @return The calculated migration increase.
      */
     int calculateMigration(int jobsCreated) ;
+    
+    /**
+     * @brief Implements population control when the population exceeds the limit.
+     * 
+     * This function could represent a government policy that introduces emigration incentives,
+     * population growth restrictions, or other controls to manage overflow.
+     */
+    void enforcePopulationControl();
 };
 
-#endif // POPULATIONCONTROL_H
+#endif // POPULATION_CONTROL_H

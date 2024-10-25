@@ -1,7 +1,11 @@
 #include "PopulationControl.h"
 
-// Define the maximum population constant
+// Define the maximum population
 const int PopulationControl::MAX_POPULATION = 1000000;
+ // 5% per 1000 jobs
+const float PopulationControl::MIGRATION_RATE_MULTIPLIER = 0.05f;
+ // Birth rate increment per hospital
+const float PopulationControl::BIRTH_RATE_PER_HOSPITAL = 15.0f;
 
 PopulationControl::PopulationControl() : totalPopulation(0) {}
 
@@ -19,52 +23,65 @@ void PopulationControl::updatePopulation(Buildings* building) {
         totalPopulation += capacity; 
         buildings.push_back(building);
 
-        // If the building is a commercial one, simulate migration based on jobs created
-        if (dynamic_cast<CommercialBuilding*>(building)) {
-            int jobsCreated = building->getJobsCreated(); // Assume this method exists
-            simulateMigration(jobsCreated);
+        // Simulate migration based on jobs created for commercial buildings
+        CommercialBuilding* commercialBuilding = dynamic_cast<CommercialBuilding*>(building);
+        if (commercialBuilding != nullptr) {
+            simulateMigration(commercialBuilding->getJobsCreated());
         }
     } else {
-        // Handle case where the population would exceed the threshold
-        std::cout << "Cannot add building: population limit exceeded!" << std::endl;
+        std::cout << "Cannot add building: population limit exceeded! Enforcing population policy." << std::endl;
         delete building;
+        // Enforce policy to manage population overflow
+        enforcePopulationControl();
     }
 }
 
-int PopulationControl::getTotalPopulation() {
+int PopulationControl::getTotalPopulation(){
     return totalPopulation;
 }
 
 void PopulationControl::simulatePopulationGrowth() {
     int totalBirths = 0;
-
-    // Sum births from all hospitals
-    for (Buildings* building : buildings) {
-        if (dynamic_cast<MedicalCenter*>(building)) {
-            totalBirths += building->getBirthRate();
+    for (size_t i = 0; i < buildings.size(); ++i) {
+        MedicalCenter* hospital = dynamic_cast<MedicalCenter*>(buildings[i]);
+        if (hospital != nullptr) {
+            totalBirths += hospital->getBirthRate();
         }
     }
 
+
     totalPopulation += totalBirths;
 
-    // Ensure population does not exceed the maximum limit
     if (totalPopulation > MAX_POPULATION) {
-        totalPopulation = MAX_POPULATION;
+        enforcePopulationControl();
     }
 }
 
 void PopulationControl::simulateMigration(int jobsCreated) {
-    // Calculate migration based on the number of jobs created
     int migrationEffect = calculateMigration(jobsCreated);
     totalPopulation += migrationEffect;
 
-    // Ensure population does not exceed the maximum limit
     if (totalPopulation > MAX_POPULATION) {
-        totalPopulation = MAX_POPULATION;
+        enforcePopulationControl();
     }
 }
 
 int PopulationControl::calculateMigration(int jobsCreated) {
-    //Migration rate of 5% per 1000 jobs created
-    return static_cast<int>(jobsCreated * 0.05);
+    return (int)(jobsCreated * MIGRATION_RATE_MULTIPLIER);
+}
+
+void PopulationControl::enforcePopulationControl() {
+    int overflow = totalPopulation - MAX_POPULATION;
+    // Reduce population through emigration incentive
+    if (overflow > 0) {
+         // Emigrate 10% of overflow
+        int emigration = (int)(overflow * 0.10); 
+        std::cout << "Population exceeds maximum limit. Emigrating " << emigration << " people." << std::endl;
+        totalPopulation -= emigration;
+    }
+
+    // Cap the population at the maximum threshold
+    if (totalPopulation > MAX_POPULATION) {
+        totalPopulation = MAX_POPULATION;
+    }
 }
