@@ -1,29 +1,68 @@
-#include <exception>
-using namespace std;
+#ifndef POPULATIONCONTROL_H
+#define POPULATIONCONTROL_H
 
-#ifndef __PopulationControl_h__
-#define __PopulationControl_h__
+#include <iostream>
+#include <vector>
+#include "Buildings.h"
+#include "MedicalCenter.h"
+#include "CommercialBuilding.h"
 
-#include "State.h"
-// #include "Citizen.h"
-// #include "City.h"
-#include "PopulationMemento.h"
+/**
+ * @class PopulationControl
+ * @brief Class for managing population dynamics in a city.
+ */
+class PopulationControl {
+public:
+    /** 
+     * @brief Constructor for the PopulationControl class. 
+     */
+    PopulationControl();
 
-class State;
-class Citizen;
-class City;
-class PopulationMemento;
-class PopulationControl;
+    /** 
+     * @brief Destructor for the PopulationControl class, cleans up dynamically allocated buildings.
+     */
+    ~PopulationControl();
 
-class PopulationControl
-{
-	private: State _state;
-	public: Citizen* _unnamed_Citizen_;
-	public: City* _unnamed_City_;
+    /**
+     * @brief Updates the population based on the building being added.
+     * 
+     * @param building Pointer to the building being added.
+     */
+    void updatePopulation(Buildings* building);
 
-	public: PopulationMemento createMemento();
+    /**
+     * @brief Gets the current total population.
+     * 
+     * @return Current population as an integer.
+     */
+    int getTotalPopulation() ;
 
-	public: void setMemento(PopulationMemento aMemento);
+    /**
+     * @brief Simulates population growth based on hospitals' birth rates.
+     * 
+     * @param numberOfHospitals The number of hospitals contributing to birth rates.
+     */
+    void simulatePopulationGrowth();
+
+    /**
+     * @brief Calculates migration based on commercial buildings' job creation.
+     * 
+     * @param jobsCreated The number of jobs created by new commercial buildings.
+     */
+    void simulateMigration(int jobsCreated);
+
+private:
+    std::vector<Buildings*> buildings; ///< List of buildings in the city
+    int totalPopulation;                ///< Current total population
+    static const int MAX_POPULATION;    ///< Maximum allowable population
+
+    /**
+     * @brief Calculates the migration effect based on created jobs.
+     * 
+     * @param jobsCreated The number of jobs created by new commercial buildings.
+     * @return The calculated migration increase.
+     */
+    int calculateMigration(int jobsCreated) ;
 };
 
-#endif
+#endif // POPULATIONCONTROL_H
