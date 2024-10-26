@@ -70,11 +70,14 @@ public:
      */
     void makeRequest(Government* government, std::string& requestDetails) override;
     void useTransport(Transport *transport);
+    void adjustCitizenSatisfaction(float newSatisfaction) ;
+
 
 private:
     Government* government; /**< Pointer to the Government */
     bool hasJob;            /**< Employment status of the citizen */
     bool ownsProperty;      /**< Property ownership status of the citizen */
+    float currTaxRate;
 };
 
 #endif // CITIZEN_H
