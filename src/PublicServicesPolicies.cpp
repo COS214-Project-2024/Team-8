@@ -6,8 +6,8 @@ using namespace std;
 #include "EconomicPolicies.h"
 #include "Government.h"
 
-PublicServicesPolicies::PublicServicesPolicies(Government* govt)
-    : Policies(govt) {}
+// Constructor is already defined in header file
+// PublicServicesPolicies::PublicServicesPolicies(Government* govt) : Policies(govt) {}
 
 void PublicServicesPolicies::executePolicy() {
     government->requestAllocationOfHealthcareFunds();

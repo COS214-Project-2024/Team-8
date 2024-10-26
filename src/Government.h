@@ -50,7 +50,7 @@ class Government
 	double getBudget();
 	double getTotalRevenue();
 
-	public: virtual void handleRequest() = 0;
+	// public: virtual void handleRequest() = 0; makes Government abstract, would need "concreteGovernment" but Government is invoker.
 
 
 };
