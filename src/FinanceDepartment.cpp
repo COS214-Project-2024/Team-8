@@ -6,6 +6,7 @@ using namespace std;
 #include "FinanceDepartment.h"
 #include "ResidentialTaxationSystem.h"
 #include "BudgetAllocationSystem.h"
+#include "CommercialTaxationSystem.h"
  
 
 void FinanceDepartment::setCommercialTaxRates(float businessTaxRate, float salesTaxRate) {
@@ -25,10 +26,10 @@ void FinanceDepartment::setResidentialTaxRates(float incomeTaxRate, float proper
 }
 
 void FinanceDepartment:: delegateRequestForCollectionOfTaxes(){
-	residentialTaxation->collectIncomeTaxes(incomeTaxRate,totalResidentsIncomes)
-	residentialTaxation->collectPropertyTaxes(propertyTaxRate,totalResidentsIncomes);
-	businessTaxation->collectBusinessTaxes(businessTaxRate,totalbusinessProfits);
-	businessTaxation->collectSalesTaxes(salesTaxRate,totalbusinessProfits)
+	totalRevenue+=residentialTaxation->collectIncomeTaxes(incomeTaxRate,totalResidentsIncomes);
+	totalRevenue+=residentialTaxation->collectPropertyTaxes(propertyTaxRate,totalResidentsIncomes);
+	totalRevenue+=businessTaxation->collectBusinessTaxes(businessTaxRate,totalbusinessProfits);
+	totalRevenue+=businessTaxation->collectSalesTaxes(salesTaxRate,totalbusinessProfits);
 }
 
 void FinanceDepartment:: delegateRequestOfAllocationOfFunds(float requiredExpenUtilities, float requiredExpenTransport, 

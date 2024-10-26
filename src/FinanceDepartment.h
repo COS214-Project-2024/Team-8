@@ -15,18 +15,18 @@ class Buildings;
 class FinanceDepartment {
 private:
     ResidentialTaxationSystem* residentialTaxation;
-    BusinessTaxationSystem* businessTaxation; 
+    CommercialTaxationSystem* businessTaxation; 
     BudgetAllocationSystem* budgetAllocation;
 	Citizen* residentsList;
 	Buildings* commercialBuidlingsList;
 	Buildings* industrialBuidlingsList;
-    float totalRevenue;
     float incomeTaxRate;                        
     float propertyTaxRate;               
     float businessTaxRate;            
     float salesTaxRate;  
  	float totalbusinessProfits; 
- 	float totalResidentsIncomes;                                             
+ 	float totalResidentsIncomes;  
+	float totalRevenue;                                           
 
 public:
     void setResidentialTaxRates(float incomeTaxRate, float propertyTaxRate);
