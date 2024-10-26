@@ -1,40 +1,41 @@
-#include <exception>
-#include <string>
-using namespace std;
-
 #include "Citizen.h"
-#include "City.h"
 #include "Government.h"
-#include "PublicServicesPolicies.h"
-#include "EconomicPolicies.h"
-#include "PopulationControl.h"
-#include "Transport.h"
 
-void Citizen::citizen(int aAge, string aName, double aSalary) {
-	throw "Not yet implemented";
+Citizen::Citizen(const std::string& name, float salary, Government* government, bool hasJob, bool ownsProperty)
+    : government(government), hasJob(hasJob), ownsProperty(ownsProperty) {
+    this->name = name;
+    this->salary = salary;
+    this->satisfaction = 100.0f; 
 }
 
-int Citizen::getAge() {
-	return this->_age;
+Citizen::~Citizen() {
+   
 }
 
-string Citizen::getName() {
-	return this->_name;
+float Citizen::calculateTax() {
+    
 }
 
-double Citizen::getSalary() {
-	return this->_salary;
+void Citizen::applyTax() {
+    
 }
 
-double Citizen::getSatisfaction() {
-	return this->_satisfaction;
+void Citizen::jobPromotion(float percentage) {
+    
 }
 
-Citizen* Citizen::clone() {
-	throw "Not yet implemented";
+std::unique_ptr<CitizenInterface> Citizen::clone() {
+    
 }
 
-void Citizen::update() {
-	throw "Not yet implemented";
+void Citizen::update(float newTaxRate) {
 }
 
+void Citizen::makeRequest(Government* government, std::string& requestDetails)
+{
+    
+}
+
+void Citizen::useTransport(Transport *transport)
+{
+}

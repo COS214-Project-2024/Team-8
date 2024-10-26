@@ -1,52 +1,80 @@
-#include <exception>
+#ifndef CITIZEN_H
+#define CITIZEN_H
+
 #include <string>
-using namespace std;
+#include <memory>
+#include "CitizenInterface.h"
 
-#ifndef __Citizen_h__
-#define __Citizen_h__
-
-// #include "City.h"
-// #include "Government.h"
-// #include "PublicServicesPolicies.h"
-// #include "EconomicPolicies.h"
-// #include "PopulationControl.h"
-// #include "Transport.h"
-
-class City;
+// Forward declaration of the Government class
 class Government;
-class PublicServicesPolicies;
-class EconomicPolicies;
-class PopulationControl;
-class Transport;
-class Citizen;
 
-__abstract class Citizen
-{
-	private: int _age;
-	private: string _name;
-	private: double _salary;
-	private: double _satisfaction;
-	public: City* _prototype;
-	public: Government* _citizenList;
-	public: Government* _requestee;
-	public: PublicServicesPolicies* _unnamed_PublicServicesPolicies_;
-	public: EconomicPolicies* _unnamed_EconomicPolicies_;
-	public: PopulationControl* _unnamed_PopulationControl_;
-	public: Transport* _unnamed_Transport_;
+/**
+ * @class Citizen
+ * @brief Represents a citizen in the government system.
+ *
+ * This class implements the CitizenInterface and represents an individual citizen 
+ * who can interact with the government and has properties like salary and satisfaction.
+ */
+class Citizen : public CitizenInterface {
+public:
+    /**
+     * @brief Constructs a Citizen object.
+     * 
+     * @param name The name of the citizen.
+     * @param salary The initial salary of the citizen.
+     * @param government Pointer to the Government object.
+     * @param hasJob Employment status of the citizen (default is false).
+     * @param ownsProperty Property ownership status of the citizen (default is false).
+     */
+    Citizen(const std::string& name, float salary, Government* government, bool hasJob = false, bool ownsProperty = false);
+    
+    /**
+     * @brief Destructor for the Citizen object.
+     */
+    ~Citizen() override;
 
-	public: void citizen(int aAge, string aName, double aSalary);
+    /**
+     * @brief Calculates tax based on the citizen's salary and property ownership.
+     * @return Calculated tax amount.
+     */
+    float calculateTax() override;
 
-	public: int getAge();
+    /**
+     * @brief Applies tax to the citizen's salary.
+     */
+    void applyTax() override;
 
-	public: string getName();
+    /**
+     * @brief Increases the citizen's salary by a given percentage.
+     * @param percentage The percentage increase.
+     */
+    void jobPromotion(float percentage) override;
 
-	public: double getSalary();
+    /**
+     * @brief Clones the citizen object.
+     * @return A unique pointer to a new CitizenInterface object that is a clone of this object.
+     */
+    std::unique_ptr<CitizenInterface> clone() override;
 
-	public: double getSatisfaction();
+    /**
+     * @brief Updates the citizen with information from a governing authority.
+     * @param newTaxRate The new tax rate to be applied.
+     */
+    void update(float newTaxRate) override;
 
-	public: virtual Citizen* clone() = 0;
+    /**
+     * @brief Submits a request to the government.
+     * 
+     * @param government Pointer to the Government object to handle the request.
+     * @param requestDetails The details of the request.
+     */
+    void makeRequest(Government* government, std::string& requestDetails) override;
+    void useTransport(Transport *transport);
 
-	public: virtual void update() = 0;
+private:
+    Government* government; /**< Pointer to the Government */
+    bool hasJob;            /**< Employment status of the citizen */
+    bool ownsProperty;      /**< Property ownership status of the citizen */
 };
 
-#endif
+#endif // CITIZEN_H
