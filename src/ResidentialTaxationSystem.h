@@ -8,8 +8,8 @@ class ResidentialTaxationSystem
 {
 	public:
 		ResidentialTaxationSystem(){}
-		double collectIncomeTaxes(double businessTaxRate,double totalbusinessProfits);
-		double collectPropertyTaxes(double salesTaxRate,double totalbusinessProfits);
+		double collectIncomeTax(double incomeTaxRate, double residentsIncome);
+		double collectPropertyTax(double propertyTaxRate, double residentsIncome);
 };
 
 #endif

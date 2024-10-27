@@ -84,8 +84,8 @@ void FinanceDepartment::delegateRequestForCollectionOfTaxes()
     {
         if (resident)
         {
-            double incomeTax = residentialTaxation->collectIncomeTaxes(incomeTaxRate, resident->getSalary());
-            double propertyTax = residentialTaxation->collectPropertyTaxes(propertyTaxRate, resident->getSalary());
+            double incomeTax = residentialTaxation->collectIncomeTax(incomeTaxRate, resident->getSalary());
+            double propertyTax = residentialTaxation->collectPropertyTax(propertyTaxRate, resident->getSalary());
 
             availableFunds += incomeTax;
             availableFunds += propertyTax;
@@ -97,8 +97,8 @@ void FinanceDepartment::delegateRequestForCollectionOfTaxes()
     {
         if (building)
         {
-            double businessTaxc = businessTaxation->collectBusinessTaxes(businessTaxRate, building->getProfit());
-            double salesTax = businessTaxation->collectSalesTaxes(salesTaxRate, building->getSales());
+            double businessTaxc = businessTaxation->collectBusinessTax(businessTaxRate, building->getProfit());
+            double salesTax = businessTaxation->collectSalesTax(salesTaxRate, building->getSales());
 
             availableFunds += businessTaxc;
             availableFunds += salesTax;

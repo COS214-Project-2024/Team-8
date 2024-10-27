@@ -8,8 +8,8 @@ class CommercialTaxationSystem
 {
 	public:
 		CommercialTaxationSystem(){}
-		double collectBusinessTaxes(double businessTaxRate,double totalbusinessProfits);
-		double collectSalesTaxes(double salesTaxRate,double totalbusinessProfits);
+		double collectBusinessTax(double businessTaxRate,double businessProfit);
+		double collectSalesTax(double salesTaxRate,double businessProfit);
 };
 
 #endif
