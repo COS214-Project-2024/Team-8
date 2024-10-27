@@ -7,30 +7,29 @@ using namespace std;
 #include "State.h"
 #include "Buildings.h"
 
-class State;
-// class Buildings;
-class CommercialBuilding;
-
-class CommercialBuilding: public Buildings
+class CommercialBuilding : public Buildings
 {
-	private: State _state;
-	private: int _powerReq;
-	private: int _waterReq;
-	private: double _maintenanceCost;
-	private: int _sewageCost;
-	private: int _waste;
+public:
+	// Implementing the virtual functions from the Buildings base class
+	void requestState() override;
 
-	public: void requestState();
+	double getMaintenanceCost() override;
 
-	public: double getMaintenanceCost();
+	int getPowerReq() override;
 
-	public: int getPowerReq();
+	int getSewageCost() override;
 
-	public: int getSewageCost();
+	int getWaterCost() override;
 
-	public: int getWaterCost();
+	int getWasteCost() override;
 
-	public: int getWasteCost();
+	double getSales() const;
+
+	double getProfit() const;
+
+protected:
+	double sales;
+	double profit;
 };
 
 #endif

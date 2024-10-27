@@ -9,36 +9,33 @@ using namespace std;
 // #include "ConstructionCompany.h"
 // #include "Resources.h"
 
-class State;
-class Government;
-class ConstructionCompany;
-class Resources;
-class Buildings;
+class Government;         // Forward declaration
+class ConstructionCompany; // Forward declaration
+class Resources;          // Forward declaration
 
-__abstract class Buildings
+class Buildings // Correct class declaration without 'public'
 {
-	private: State _state;
-	private: int _powerReq;
-	private: int _waterReq;
-	private: double _maintenanceCost;
-	private: int _sewageCost;
-	private: int _waste;
-	public: Government* _unnamed_Government_;
-	public: ConstructionCompany* _unnamed_ConstructionCompany_;
-	public: State* _buidling;
-	public: Resources* _unnamed_Resources_;
+private:
+    //State _state;          // Assuming State is a class and needs to be instantiated
+    int _powerReq;
+    int _waterReq;
+    double _maintenanceCost;
+    int _sewageCost;
+    int _waste;
 
-	public: virtual void requestState() = 0;
+public:
+    Government* _unnamed_Government_;
+    ConstructionCompany* _unnamed_ConstructionCompany_;
+    State* _building;      // Fix typo from _buidling to _building
+    Resources* _unnamed_Resources_;
 
-	public: virtual double getMaintenanceCost() = 0;
-
-	public: virtual int getPowerReq() = 0;
-
-	public: virtual int getSewageCost() = 0;
-
-	public: virtual int getWaterCost() = 0;
-
-	public: virtual void getWasteCost() = 0;
+    // Virtual methods
+    virtual void requestState() = 0;
+    virtual double getMaintenanceCost() = 0;
+    virtual int getPowerReq() = 0;
+    virtual int getSewageCost() = 0;
+    virtual int getWaterCost() = 0;
+    virtual int getWasteCost() = 0; // Correct return type to match your intention
 };
 
 #endif

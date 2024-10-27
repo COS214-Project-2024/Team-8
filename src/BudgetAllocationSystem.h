@@ -1,28 +1,31 @@
-#include <exception>
-using namespace std;
+
 
 #ifndef __BudgetAllocationSystem_h__
 #define __BudgetAllocationSystem_h__
 
-class BudgetAllocationSystem;
-
 class BudgetAllocationSystem
 {
-	private: float _availableBudget;
+public:
+    // Public Service Buildings
+    float allocateMedicalCenterFunds(float availableFunds);
+    float allocateSchoolFunds(float availableFunds);
+    float allocatePoliceStationFunds(float availableFunds);
 
-	public: float allocateUtilitiesFunds(float aRequiredExpenditure);
+    // Utilities
+    float allocatePowerPlantFunds(float availableFunds);
+    float allocateWaterTowerFunds(float availableFunds);
+    float allocateWastePlantFunds(float availableFunds);
+    float allocateSewagePipeFunds(float availableFunds);
 
-	public: float allocateTransportFunds(float aRequiredExpenditure);
+    // Transport Infrastructure
+    float allocateRoadsFunds(float availableFunds);
+    float allocateAirportsFunds(float availableFunds);
+    float allocateTrainStationsFunds(float availableFunds);
 
-	public: float allocateHealthcareFunds(float aRequiredExpenditure);
-
-	public: float allocateEducationFunds(float aRequiredExpenditure);
-
-	public: float allocateSecurityServiceFunds(float aRequiredExpenditure);
-
-	public: float allocateRecreationFunds(float aRequiredExpenditure);
-
-	public: void setAvailableBudget(float aAvailableBudget);
+    // Landmark Buildings
+    float allocateParkFunds(float availableFunds);
+    float allocateMonumentFunds(float availableFunds);
+    float allocateCulturalCenterFunds(float availableFunds);
 };
 
 #endif

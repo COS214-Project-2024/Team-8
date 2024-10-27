@@ -3,38 +3,43 @@
 using namespace std;
 
 #include "Citizen.h"
-#include "City.h"
-#include "Government.h"
-#include "PublicServicesPolicies.h"
-#include "EconomicPolicies.h"
-#include "PopulationControl.h"
-#include "Transport.h"
+// Temporarily comment these until their issues are fixed
+// #include "City.h"
+// #include "Government.h"
+// #include "PublicServicesPolicies.h"
+// #include "EconomicPolicies.h"
+// #include "PopulationControl.h"
+// #include "Transport.h"
 
-void Citizen::citizen(int aAge, string aName, double aSalary) {
-	throw "Not yet implemented";
+// Fixed initialization order to match declaration order in header
+Citizen::Citizen(std::string aName, int aAge, double aSalary) 
+    : age(aAge),              // Match header order: age first
+      name(aName),            // then name
+      salary(aSalary),        // then salary
+      satisfaction(100.0)     // then satisfaction
+{
 }
 
-int Citizen::getAge() {
-	return this->_age;
+int Citizen::getAge() const {
+    return age;
 }
 
-string Citizen::getName() {
-	return this->_name;
+string Citizen::getName() const {
+    return name;
 }
 
-double Citizen::getSalary() {
-	return this->_salary;
+double Citizen::getSalary() const {
+    return salary;
 }
 
-double Citizen::getSatisfaction() {
-	return this->_satisfaction;
+double Citizen::getSatisfaction() const {
+    return satisfaction;
 }
 
-Citizen* Citizen::clone() {
-	throw "Not yet implemented";
+void Citizen::setSalary(double s) {
+    salary = s;
 }
 
-void Citizen::update() {
-	throw "Not yet implemented";
+void Citizen::setSatisfaction(double s) {
+    satisfaction = s;
 }
-

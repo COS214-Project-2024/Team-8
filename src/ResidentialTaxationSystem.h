@@ -1,22 +1,15 @@
-#include <exception>
-#include <vector>
-using namespace std;
 
+using namespace std;
 #ifndef __ResidentialTaxationSystem_h__
 #define __ResidentialTaxationSystem_h__
 
-class ResidentialTaxationSystem;
 
 class ResidentialTaxationSystem
 {
-	private: float _incomeTaxRate;
-	private: float _propertyTaxRate;
+	public:
 
-	public: void setResidentialTaxRates(float aIncomeTaxRate, float aPropertyTaxRate);
-
-	public: void collectIncomeTax(vector<> aResidentsIncomes, vector<> aTotalIncomeTaxes);
-
-	public: void collectPropertyTax(vector<> aResidentsIncomes);
+		float collectIncomeTaxes(float businessTaxRate,float totalbusinessProfits);
+		float collectPropertyTaxes(float salesTaxRate,float totalbusinessProfits);
 };
 
 #endif

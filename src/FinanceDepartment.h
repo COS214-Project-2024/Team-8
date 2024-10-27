@@ -19,22 +19,22 @@ private:
     BudgetAllocationSystem* budgetAllocation;
 	Citizen* residentsList;
 	Buildings* commercialBuidlingsList;
-	Buildings* industrialBuidlingsList;
     float incomeTaxRate;                        
     float propertyTaxRate;               
     float businessTaxRate;            
     float salesTaxRate;  
  	float totalbusinessProfits; 
  	float totalResidentsIncomes;  
-	float totalRevenue;                                           
+	float availableFunds;                                           
 
 public:
     void setResidentialTaxRates(float incomeTaxRate, float propertyTaxRate);
     void setCommercialTaxRates(float businessTaxRate, float salesTaxRate);
 	void delegateRequestForCollectionOfTaxes();
-	void delegateRequestOfAllocationOfFunds(float requiredExpenUtilities, float requiredExpenTransport, 
-                                          float requiredExpenHealth, float requiredExpenEducation, 
-                                          float requiredExpenSecurity, float requiredExpenRecreation);
+	float delegateRequestForAllocationOfPublicServiceBuildingsFunds();
+    float delegateRequestForAllocationOfUtilitiesFunds();
+    float delegateRequestForAllocationOfTransportInfrastructureFunds();
+    float delegateRequestForAllocationOfLandmarkBuildingsFunds();
 };
 
 #endif
