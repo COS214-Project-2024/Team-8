@@ -28,6 +28,7 @@ class Citizen
     std::string name;
     double salary;
     double satisfaction;
+    double balance; //---------------------------HEY I'M NEW HERE-------------------------------------- 
 
 protected:
     // Protected constructor for abstract class
@@ -50,6 +51,8 @@ protected:
     double getSalary() const;
     double getSatisfaction() const;
     void setSalary(double s);
+    void setBalance(double s); //---------------------------HEY I'M NEW HERE-------------------------------------- 
+    double getBalance();//---------------------------HEY I'M NEW HERE-------------------------------------- 
     void setSatisfaction(double s);
     virtual double calculateTax() const = 0;
     virtual Citizen* clone() = 0;

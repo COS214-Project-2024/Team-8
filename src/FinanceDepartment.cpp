@@ -7,6 +7,8 @@ using namespace std;
 #include "ResidentialTaxationSystem.h"
 #include "BudgetAllocationSystem.h"
 #include "CommercialTaxationSystem.h"
+#include "CommercialBuilding.h"
+#include "Citizen.h"
 
 void FinanceDepartment::setCommercialTaxRates(double businessTaxRate, double salesTaxRate)
 {
@@ -28,10 +30,32 @@ void FinanceDepartment::setResidentialTaxRates(double incomeTaxRate, double prop
 
 void FinanceDepartment::delegateRequestForCollectionOfTaxes()
 {
-    availableFunds += residentialTaxation->collectIncomeTaxes(incomeTaxRate, totalResidentsIncomes);
-    availableFunds += residentialTaxation->collectPropertyTaxes(propertyTaxRate, totalResidentsIncomes);
-    availableFunds += businessTaxation->collectBusinessTaxes(businessTaxRate, totalbusinessProfits);
-    availableFunds += businessTaxation->collectSalesTaxes(salesTaxRate, totalbusinessProfits);
+    for (Citizen *resident : residentsList)
+    {
+        if (resident)
+        {
+            double incomeTax = residentialTaxation->collectIncomeTaxes(incomeTaxRate, resident->getSalary());
+            double propertyTax = residentialTaxation->collectPropertyTaxes(propertyTaxRate, resident->getSalary());
+
+            availableFunds += incomeTax;
+            availableFunds += propertyTax;
+
+            resident->setBalance(resident->getBalance() - (incomeTax + propertyTax));
+        }
+    }
+    for (CommercialBuilding *building : commercialBuildingsList)
+    {
+        if (building)
+        {
+            double businessTaxc = businessTaxation->collectBusinessTaxes(businessTaxRate, building->getProfit());
+            double salesTax = businessTaxation->collectSalesTaxes(salesTaxRate, building->getSales());
+
+            availableFunds += businessTaxc;
+            availableFunds += salesTax;
+
+            building->setBalance(building->getBalance() - (businessTaxc + salesTax));
+        }
+    }
 }
 
 double FinanceDepartment::delegateRequestForAllocationOfUtilitiesFunds()
@@ -68,4 +92,58 @@ double FinanceDepartment::delegateRequestForAllocationOfLandmarkBuildingsFunds()
     totalLandmarkBuildingsFunds += budgetAllocation->allocateMonumentFunds(availableFunds);
     totalLandmarkBuildingsFunds += budgetAllocation->allocateCulturalCenterFunds(availableFunds);
     return totalLandmarkBuildingsFunds;
+}
+
+double FinanceDepartment::calculateTotalResidentsIncome()
+{
+    double totalIncome = 0.0;
+
+    for (Citizen *resident : residentsList)
+    {
+        if (resident)
+        {
+            totalIncome += resident->getSalary();
+        }
+    }
+
+    return totalIncome;
+}
+
+double FinanceDepartment::calculateTotalBusinessProfit()
+{
+    double totalProfit = 0.0;
+    for (CommercialBuilding *building : commercialBuildingsList)
+    {
+        if (building)
+        {
+            totalProfit += building->getProfit();
+        }
+    }
+    return totalProfit;
+}
+
+double FinanceDepartment::calculateTotalBusinessSale()
+{
+    double totalSale = 0.0;
+    for (CommercialBuilding *building : commercialBuildingsList)
+    {
+        if (building)
+        {
+            totalSale += building->getSales();
+        }
+    }
+    return totalSale;
+}
+
+void FinanceDepartment::addResidents(Citizen *resident)
+{
+    if (resident)
+    {
+        residentsList.push_back(resident);
+    }
+}
+
+void FinanceDepartment::addCommercialBuilding(CommercialBuilding *commercialBuilding)
+{
+    commercialBuildingsList.push_back(commercialBuilding);
 }

@@ -10,7 +10,6 @@ using namespace std;
 class CommercialBuilding : public Buildings
 {
 public:
-	// Implementing the virtual functions from the Buildings base class
 	void requestState() override;
 
 	double getMaintenanceCost() override;
@@ -23,13 +22,23 @@ public:
 
 	int getWasteCost() override;
 
-	double getSales() const;
+	double getSales(); //----------------------HEY I'M NEW HERE=---------------------
 
-	double getProfit() const;
+	double getProfit(); //----------------------HEY I'M NEW HERE=---------------------
+
+	double getBalance(); //----------------------HEY I'M NEW HERE=---------------------
+
+	void setSales(double sale); //----------------------HEY I'M NEW HERE=---------------------
+
+	void setProfit(double profit); //----------------------HEY I'M NEW HERE=---------------------
+
+	void setBalance(double balance); //----------------------HEY I'M NEW HERE=---------------------
+
 
 protected:
-	double sales;
-	double profit;
+	double sales;  //----------------------HEY I'M NEW HERE=---------------------
+	double profit; //----------------------HEY I'M NEW HERE=---------------------
+	double balance ;//----------------------HEY I'M NEW HERE=---------------------
 };
 
 #endif
