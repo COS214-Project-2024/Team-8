@@ -10,6 +10,56 @@ using namespace std;
 #include "CommercialBuilding.h"
 #include "Citizen.h"
 
+FinanceDepartment::FinanceDepartment()
+    : residentialTaxation(new ResidentialTaxationSystem()),
+      businessTaxation(new CommercialTaxationSystem()),
+      budgetAllocation(new BudgetAllocationSystem()),
+      incomeTaxRate(0.0),
+      propertyTaxRate(0.0),
+      businessTaxRate(0.0),
+      salesTaxRate(0.0),
+      totalBusinessSales(0.0),
+      totalBusinessProfits(0.0),
+      totalResidentsIncomes(0.0),
+      availableFunds(0.0) {}
+
+FinanceDepartment::FinanceDepartment(
+    std::vector<Citizen *> residentsList,
+    std::vector<CommercialBuilding *> commercialBuildingsList
+)
+    : residentsList(std::move(residentsList)),               
+      commercialBuildingsList(std::move(commercialBuildingsList)), 
+      residentialTaxation(new ResidentialTaxationSystem()), 
+      businessTaxation(new CommercialTaxationSystem()),
+      budgetAllocation(new BudgetAllocationSystem()),
+      incomeTaxRate(0.0),      
+      propertyTaxRate(0.0),
+      businessTaxRate(0.0),
+      salesTaxRate(0.0),
+      totalBusinessSales(0.0),
+      totalBusinessProfits(0.0),
+      totalResidentsIncomes(0.0),
+      availableFunds(0.0){}
+
+FinanceDepartment::~FinanceDepartment()
+{
+    delete residentialTaxation;
+    delete businessTaxation;
+    delete budgetAllocation;
+
+    for (Citizen *resident : residentsList)
+    {
+        delete resident;
+    }
+
+    for (CommercialBuilding *building : commercialBuildingsList)
+    {
+        delete building;
+    }
+
+    residentsList.clear();
+    commercialBuildingsList.clear();
+}
 void FinanceDepartment::setCommercialTaxRates(double businessTaxRate, double salesTaxRate)
 {
     this->businessTaxRate = businessTaxRate;

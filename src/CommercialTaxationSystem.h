@@ -7,7 +7,7 @@ using namespace std;
 class CommercialTaxationSystem
 {
 	public:
-
+		CommercialTaxationSystem(){}
 		double collectBusinessTaxes(double businessTaxRate,double totalbusinessProfits);
 		double collectSalesTaxes(double salesTaxRate,double totalbusinessProfits);
 };

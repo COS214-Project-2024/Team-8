@@ -18,8 +18,8 @@ private:
     ResidentialTaxationSystem *residentialTaxation;
     CommercialTaxationSystem *businessTaxation;
     BudgetAllocationSystem *budgetAllocation;
-    std::vector<Citizen*> residentsList;             
-    std::vector<CommercialBuilding*> commercialBuildingsList; 
+    std::vector<Citizen *> residentsList;
+    std::vector<CommercialBuilding *> commercialBuildingsList;
     double incomeTaxRate;
     double propertyTaxRate;
     double businessTaxRate;
@@ -30,6 +30,12 @@ private:
     double availableFunds;
 
 public:
+    FinanceDepartment();
+    FinanceDepartment::FinanceDepartment(
+    std::vector<Citizen *> residentsList,
+    std::vector<CommercialBuilding *> commercialBuildingsList
+    );
+    ~FinanceDepartment();
     void setResidentialTaxRates(double incomeTaxRate, double propertyTaxRate);
     void setCommercialTaxRates(double businessTaxRate, double salesTaxRate);
     void delegateRequestForCollectionOfTaxes();
@@ -40,8 +46,8 @@ public:
     double calculateTotalResidentsIncome();
     double calculateTotalBusinessProfit();
     double calculateTotalBusinessSale();
-    void addResidents(Citizen* resident);
-    void addCommercialBuilding(CommercialBuilding* commercialBuilding);
+    void addResidents(Citizen *resident);
+    void addCommercialBuilding(CommercialBuilding *commercialBuilding);
 };
 
 #endif

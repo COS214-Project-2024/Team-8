@@ -6,6 +6,7 @@
 class BudgetAllocationSystem
 {
 public:
+    BudgetAllocationSystem(){}
     // Public Service Buildings
     double allocateMedicalCenterFunds(double availableFunds);
     double allocateSchoolFunds(double availableFunds);
