@@ -8,8 +8,8 @@ class CommercialTaxationSystem
 {
 	public:
 
-		float collectBusinessTaxes(float businessTaxRate,float totalbusinessProfits);
-		float collectSalesTaxes(float salesTaxRate,float totalbusinessProfits);
+		double collectBusinessTaxes(double businessTaxRate,double totalbusinessProfits);
+		double collectSalesTaxes(double salesTaxRate,double totalbusinessProfits);
 };
 
 #endif

@@ -7,25 +7,25 @@ class BudgetAllocationSystem
 {
 public:
     // Public Service Buildings
-    float allocateMedicalCenterFunds(float availableFunds);
-    float allocateSchoolFunds(float availableFunds);
-    float allocatePoliceStationFunds(float availableFunds);
+    double allocateMedicalCenterFunds(double availableFunds);
+    double allocateSchoolFunds(double availableFunds);
+    double allocatePoliceStationFunds(double availableFunds);
 
     // Utilities
-    float allocatePowerPlantFunds(float availableFunds);
-    float allocateWaterTowerFunds(float availableFunds);
-    float allocateWastePlantFunds(float availableFunds);
-    float allocateSewagePipeFunds(float availableFunds);
+    double allocatePowerPlantFunds(double availableFunds);
+    double allocateWaterTowerFunds(double availableFunds);
+    double allocateWastePlantFunds(double availableFunds);
+    double allocateSewagePipeFunds(double availableFunds);
 
     // Transport Infrastructure
-    float allocateRoadsFunds(float availableFunds);
-    float allocateAirportsFunds(float availableFunds);
-    float allocateTrainStationsFunds(float availableFunds);
+    double allocateRoadsFunds(double availableFunds);
+    double allocateAirportsFunds(double availableFunds);
+    double allocateTrainStationsFunds(double availableFunds);
 
     // Landmark Buildings
-    float allocateParkFunds(float availableFunds);
-    float allocateMonumentFunds(float availableFunds);
-    float allocateCulturalCenterFunds(float availableFunds);
+    double allocateParkFunds(double availableFunds);
+    double allocateMonumentFunds(double availableFunds);
+    double allocateCulturalCenterFunds(double availableFunds);
 };
 
 #endif

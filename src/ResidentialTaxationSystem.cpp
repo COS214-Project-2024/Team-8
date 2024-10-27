@@ -2,14 +2,14 @@ using namespace std;
 #include <iostream>
 #include "ResidentialTaxationSystem.h"
 
-float ResidentialTaxationSystem::collectIncomeTaxes(float incomeTaxRate, float totalResidentsIncomes) {
-    float totalIncomeTaxes = incomeTaxRate * totalResidentsIncomes;
+double ResidentialTaxationSystem::collectIncomeTaxes(double incomeTaxRate, double totalResidentsIncomes) {
+    double totalIncomeTaxes = incomeTaxRate * totalResidentsIncomes;
     cout << "💰 Total Income Taxes Collected: R " << totalIncomeTaxes << endl;
     return totalIncomeTaxes;
 }
 
-float ResidentialTaxationSystem::collectPropertyTaxes(float propertyTaxRate, float totalResidentsIncomes) {
-    float totalPropertyTaxes = propertyTaxRate * totalResidentsIncomes;
+double ResidentialTaxationSystem::collectPropertyTaxes(double propertyTaxRate, double totalResidentsIncomes) {
+    double totalPropertyTaxes = propertyTaxRate * totalResidentsIncomes;
     cout << "🏡 Total Property Taxes Collected: R " << totalPropertyTaxes << endl;
     return totalPropertyTaxes;
 }

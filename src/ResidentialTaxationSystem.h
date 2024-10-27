@@ -8,8 +8,8 @@ class ResidentialTaxationSystem
 {
 	public:
 
-		float collectIncomeTaxes(float businessTaxRate,float totalbusinessProfits);
-		float collectPropertyTaxes(float salesTaxRate,float totalbusinessProfits);
+		double collectIncomeTaxes(double businessTaxRate,double totalbusinessProfits);
+		double collectPropertyTaxes(double salesTaxRate,double totalbusinessProfits);
 };
 
 #endif

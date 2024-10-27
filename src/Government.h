@@ -25,9 +25,9 @@ class Government
         void notify();
         virtual void handleRequest() = 0;
         void requestCollectionOfTaxes();
-        void requestAllocationOfFunds(float requiredExpenUtilities, float requiredExpenTransport, 
-                                          float requiredExpenHealth, float requiredExpenEducation, 
-                                          float requiredExpenSecurity, float requiredExpenRecreation);
+        void requestAllocationOfFunds(double requiredExpenUtilities, double requiredExpenTransport, 
+                                          double requiredExpenHealth, double requiredExpenEducation, 
+                                          double requiredExpenSecurity, double requiredExpenRecreation);
 };
 
 #endif

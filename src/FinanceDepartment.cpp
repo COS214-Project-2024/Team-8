@@ -8,7 +8,7 @@ using namespace std;
 #include "BudgetAllocationSystem.h"
 #include "CommercialTaxationSystem.h"
 
-void FinanceDepartment::setCommercialTaxRates(float businessTaxRate, float salesTaxRate)
+void FinanceDepartment::setCommercialTaxRates(double businessTaxRate, double salesTaxRate)
 {
     this->businessTaxRate = businessTaxRate;
     this->salesTaxRate = salesTaxRate;
@@ -17,7 +17,7 @@ void FinanceDepartment::setCommercialTaxRates(float businessTaxRate, float sales
     cout << "   - Sales Tax Rate updated to: " << salesTaxRate * 100 << "%" << endl;
 }
 
-void FinanceDepartment::setResidentialTaxRates(float incomeTaxRate, float propertyTaxRate)
+void FinanceDepartment::setResidentialTaxRates(double incomeTaxRate, double propertyTaxRate)
 {
     this->incomeTaxRate = incomeTaxRate;
     this->propertyTaxRate = propertyTaxRate;
@@ -34,9 +34,9 @@ void FinanceDepartment::delegateRequestForCollectionOfTaxes()
     availableFunds += businessTaxation->collectSalesTaxes(salesTaxRate, totalbusinessProfits);
 }
 
-float FinanceDepartment::delegateRequestForAllocationOfUtilitiesFunds()
+double FinanceDepartment::delegateRequestForAllocationOfUtilitiesFunds()
 {
-    float totalUtilitiesFunds = 0.0;
+    double totalUtilitiesFunds = 0.0;
     totalUtilitiesFunds += budgetAllocation->allocatePowerPlantFunds(availableFunds);
     totalUtilitiesFunds += budgetAllocation->allocateWaterTowerFunds(availableFunds);
     totalUtilitiesFunds += budgetAllocation->allocateWastePlantFunds(availableFunds);
@@ -44,26 +44,26 @@ float FinanceDepartment::delegateRequestForAllocationOfUtilitiesFunds()
     return totalUtilitiesFunds;
 }
 
-float FinanceDepartment::delegateRequestForAllocationOfTransportInfrastructureFunds()
+double FinanceDepartment::delegateRequestForAllocationOfTransportInfrastructureFunds()
 {
-    float totalTransportInfrastructureFunds = 0.0;
+    double totalTransportInfrastructureFunds = 0.0;
     totalTransportInfrastructureFunds += budgetAllocation->allocateRoadsFunds(availableFunds);
     totalTransportInfrastructureFunds += budgetAllocation->allocateAirportsFunds(availableFunds);
     totalTransportInfrastructureFunds += budgetAllocation->allocateTrainStationsFunds(availableFunds);
     return totalTransportInfrastructureFunds;
 }
-float FinanceDepartment::delegateRequestForAllocationOfPublicServiceBuildingsFunds()
+double FinanceDepartment::delegateRequestForAllocationOfPublicServiceBuildingsFunds()
 {
-    float totalPublicServiceBuildingsFunds = 0.0;
+    double totalPublicServiceBuildingsFunds = 0.0;
     totalPublicServiceBuildingsFunds += budgetAllocation->allocateMedicalCenterFunds(availableFunds);
     totalPublicServiceBuildingsFunds += budgetAllocation->allocateSchoolFunds(availableFunds);
     totalPublicServiceBuildingsFunds += budgetAllocation->allocatePoliceStationFunds(availableFunds);
     return totalPublicServiceBuildingsFunds;
 }
 
-float FinanceDepartment::delegateRequestForAllocationOfLandmarkBuildingsFunds()
+double FinanceDepartment::delegateRequestForAllocationOfLandmarkBuildingsFunds()
 {
-    float totalLandmarkBuildingsFunds = 0.0;
+    double totalLandmarkBuildingsFunds = 0.0;
     totalLandmarkBuildingsFunds += budgetAllocation->allocateParkFunds(availableFunds);
     totalLandmarkBuildingsFunds += budgetAllocation->allocateMonumentFunds(availableFunds);
     totalLandmarkBuildingsFunds += budgetAllocation->allocateCulturalCenterFunds(availableFunds);
