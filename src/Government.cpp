@@ -18,8 +18,8 @@ void Government::detach(Citizen* citizen) {
 
 void Government::notify() {
     for (auto citizen : citizenList) {
-        citizen->setSatisfaction(citizen->getSatisfaction() + 5.0);
-      //  citizen->update(newTaxRate);
+       // citizen->setSatisfaction(citizen->getSatisfaction() + 5.0);
+        citizen->update(newTaxRate);
     }
 }
 
@@ -41,7 +41,6 @@ double Government::requestCollectionOfPropertyTax() {
         citizen->setSatisfaction(citizen->getSatisfaction() - 2.0);
     }
     totalRevenue += collected;
-    notify();
     return collected;
 }
 
@@ -52,7 +51,6 @@ double Government::requestCollectionOfIncomeTax() {
         citizen->setSatisfaction(citizen->getSatisfaction() - 3.0);
     }
     totalRevenue += collected;
-    notify();
     return collected;
 }
 
@@ -63,7 +61,6 @@ double Government::requestCollectionOfBusinessTax() {
         citizen->setSatisfaction(citizen->getSatisfaction() - 2.5);
     }
     totalRevenue += collected;
-    notify();
     return collected;
 }
 
@@ -72,7 +69,6 @@ void Government::requestCollectionOfSalesTax() {
     for (auto citizen : citizenList) {
         collected += citizen->getSalary() * 0.05; // 5% sales tax
         citizen->setSatisfaction(citizen->getSatisfaction() - 1.0);
-        notify();
     }
     totalRevenue += collected;
 }
