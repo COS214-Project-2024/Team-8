@@ -94,6 +94,13 @@ public:
      * @return The age of the citizen.
      */
     int getAge();
+    /**
+     * @brief Gets the name of the citizen.
+     * @return The name of the citizen.
+     */
+    std::string getName();
+
+
 
     /**
      * @brief Requests access to a public service, affecting citizen satisfaction.
@@ -114,6 +121,7 @@ public:
      * @return An overall happiness level considering satisfaction and other personal factors.
      */
     float evaluateHappiness()  override;
+
     protected:
     std::string name;       /**< Name of the citizen. */
     float salary;           /**< Salary of the citizen. */
