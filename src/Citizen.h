@@ -121,6 +121,10 @@ public:
      * @return An overall happiness level considering satisfaction and other personal factors.
      */
     float evaluateHappiness()  override;
+    /**
+     * @brief Displays the details of the citizen in a formatted manner.
+     */
+     void displayDetails() ; // Function declaration
 
     protected:
     std::string name;       /**< Name of the citizen. */

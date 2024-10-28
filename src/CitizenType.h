@@ -46,6 +46,10 @@ public:
      * @return A string representing the type of the citizen.
      */
     virtual std::string citizenType() {}; // Making this a pure virtual function
+    /**
+     * @brief Displays the details of the citizen in a formatted manner.
+     */
+    void displayDetails() ; // Function declaration
 
 protected:
     std::unique_ptr<CitizenInterface> baseCitizen; /**< Pointer to the base citizen */

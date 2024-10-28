@@ -108,6 +108,10 @@ public:
      * @return The name of the citizen.
      */
     virtual std::string getName(){};
+    /**
+     * @brief Displays the details of the citizen in a formatted manner.
+     */
+    virtual void displayDetails() = 0; // Function declaration
 
 
 protected:

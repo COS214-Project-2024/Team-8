@@ -130,3 +130,16 @@ float Citizen::evaluateHappiness() {
     std::cout << name << "'s overall happiness level is " << happiness << "." << std::endl;
     return happiness;
 }
+
+void Citizen::displayDetails() {
+    std::cout << "\n===== Citizen Details =====" << std::endl;
+    std::cout << "Name: " << name << std::endl;
+    std::cout << "Age: " << age << " years" << std::endl;
+    std::cout << "Employment Status: " << (isEmployed ? "Employed" : "Unemployed") << std::endl;
+    std::cout << "Property Ownership: " << (ownsProperty ? "Owner" : "Not an Owner") << std::endl;
+    std::cout << "Salary: $" << (isEmployed ? salary : 3500.0f) << std::endl; 
+    std::cout << "Satisfaction: " << satisfaction << " / 100" << std::endl;
+    std::cout << "Current Tax Rate: " << currTaxRate * 100 << "%" << std::endl;
+    std::cout << "Overall Happiness: " << evaluateHappiness() << " / 100" << std::endl;
+    std::cout << "===========================\n" << std::endl;
+}
