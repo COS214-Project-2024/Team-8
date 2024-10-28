@@ -1,6 +1,8 @@
 #ifndef CITIZEN_TYPE_H
 #define CITIZEN_TYPE_H
 
+#include <memory>
+#include <string>
 #include "CitizenInterface.h"
 
 /**
@@ -17,19 +19,19 @@ public:
      * 
      * @param baseCitizen A unique pointer to the base citizen.
      */
-    CitizenType(std::unique_ptr<CitizenInterface> baseCitizen);
+    CitizenType(std::unique_ptr<CitizenInterface> baseCitizen){};
 
     /**
      * @brief Clones the citizen object.
      * @return A unique pointer to a new CitizenInterface object that is a clone of this object.
      */
-    std::unique_ptr<CitizenInterface> clone() override;
+    std::unique_ptr<CitizenInterface> clone() {};
 
     /**
      * @brief Updates the citizen with information from a governing authority.
      * @param newTaxRate The new tax rate to be applied.
      */
-    void update(float newTaxRate) override;
+    void update(float newTaxRate) {};
 
     /**
      * @brief Submits a request to the government.
@@ -37,8 +39,13 @@ public:
      * @param government Pointer to the Government object to handle the request.
      * @param requestDetails The details of the request.
      */
-    void makeRequest(Government* government, std::string& requestDetails) override;
-    virtual std::string citizenType(){};
+    void makeRequest(Government* government, std::string requestDetails) {};
+
+    /**
+     * @brief Returns the type of the citizen.
+     * @return A string representing the type of the citizen.
+     */
+    virtual std::string citizenType() {}; // Making this a pure virtual function
 
 protected:
     std::unique_ptr<CitizenInterface> baseCitizen; /**< Pointer to the base citizen */

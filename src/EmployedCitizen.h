@@ -27,30 +27,20 @@ public:
      * 
      * @param building Pointer to the building offering employment.
      */
-    void getEmployed(Buildings* building) ;
-
-    /**
-     * @brief Calculates tax based on the citizen's salary and property ownership.
-     * @return Calculated tax amount.
-     */
-    float calculateTax() override;
-
-    /**
-     * @brief Applies tax to the citizen's salary.
-     */
-    void applyTax() override;
+    void getEmployed(Buildings* building);
 
     /**
      * @brief Increases the citizen's salary by a given percentage.
+     * 
      * @param percentage The percentage increase.
      */
-    void jobPromotion(float percentage) override;
+    void jobPromotion(float percentage);
 
-private:
-    Government* government; /**< Pointer to the Government */
-    bool hasJob = false;    /**< Employment status of the citizen */
-    bool ownsProperty = false; /**< Property ownership status of the citizen */
-    float currTaxRate = 0.0f; /**< Current tax rate applied to the citizen */
+    /**
+     * @brief Returns the type of the citizen.
+     * @return A string representing the type of the citizen.
+     */
+    std::string citizenType()  override;
 };
 
 #endif // EMPLOYED_CITIZEN_H

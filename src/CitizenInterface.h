@@ -74,6 +74,41 @@ public:
      * @return An overall happiness level considering satisfaction and other personal factors.
      */
     virtual float evaluateHappiness() = 0;
+     /**
+     * @brief Sets the employment status of the citizen.
+     * @param employmentStatus The employment status (true for employed, false for unemployed).
+     */
+    virtual void setEmploymentStatus(bool employmentStatus){};
+
+    /**
+     * @brief Sets the property ownership status of the citizen.
+     * @param ownsProperty The ownership status (true if owns property, false otherwise).
+     */
+    virtual void setPropertyOwnership(bool ownsProperty){};
+
+    /**
+     * @brief Returns the citizen's current salary.
+     * @return The citizen's salary.
+     */
+    virtual float getSalary(){} ;
+
+    /**
+     * @brief Sets a new salary for the citizen.
+     * @param newSalary The new salary amount.
+     */
+    virtual void setSalary(float newSalary){};
+
+    /**
+     * @brief Gets the age of the citizen.
+     * @return The age of the citizen.
+     */
+    virtual int getAge(){};
+    /**
+     * @brief Gets the name of the citizen.
+     * @return The name of the citizen.
+     */
+    virtual std::string getName(){};
+
 
 protected:
     std::string name;       /**< Name of the citizen. */
