@@ -53,7 +53,7 @@ protected:
     void setSatisfaction(double s);
     virtual double calculateTax() const = 0;
     virtual Citizen* clone() = 0;
-    virtual void update() = 0;
+    virtual void update(float newTaxRate) = 0;
 };
 
 #endif

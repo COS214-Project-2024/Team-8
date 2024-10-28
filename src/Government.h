@@ -16,6 +16,7 @@ private:
     std::vector<std::unique_ptr<Command>> commands;
     double budget;
     double totalRevenue;
+    float currentTaxRate; // Added for notify() [Integrating w Tebogo]
 
 public:
     Government();
@@ -24,7 +25,8 @@ public:
     void attach(Citizen* citizen);
     void detach(Citizen* citizen);
     void notify();
-    
+ //   void notifyTaxChange(float newTaxRate);  // Added specific tax notification (not too sure shame.)
+
     void addCommand(std::unique_ptr<Command> command);
     void executeCommands();
     
