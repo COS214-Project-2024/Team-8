@@ -10,7 +10,7 @@
 
 class Government {
 private:
-    std::vector<Citizen*> citizenList;
+    std::vector<CitizenInterface*> citizenList;
     Government* successor;
     Government* requestee;
     std::vector<std::unique_ptr<Command>> commands;
