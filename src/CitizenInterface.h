@@ -15,59 +15,76 @@ class PopulationControl;
  * @brief An abstract base class that defines the interface for Citizen components.
  *
  * This interface provides a common structure for all citizen-related classes, including
- * functions for tax calculation, salary adjustments, and cloning capabilities.
+ * functions for tax calculation, salary adjustments, public service requests, and cloning capabilities.
  */
 class CitizenInterface {
 public:
     /**
      * @brief Virtual destructor to allow for polymorphic deletion.
      */
-    virtual ~CitizenInterface(){};
-
-    /**
-     * @brief Calculates tax based on citizen's properties.
-     * @return Calculated tax amount.
-     */
-    virtual float calculateTax()  = 0;
-
-    /**
-     * @brief Applies tax to the citizen's salary.
-     */
-    virtual void applyTax() = 0;
-
-    /**
-     * @brief Increases the citizen's salary by a given percentage.
-     * @param percentage The percentage increase.
-     */
-    virtual void jobPromotion(float percentage) = 0;
+    virtual ~CitizenInterface() = default;
 
     /**
      * @brief Clones the citizen object.
      * @return A unique pointer to a new CitizenInterface object that is a clone of this object.
      */
-    virtual std::unique_ptr<CitizenInterface> clone()  = 0;
+    virtual std::unique_ptr<CitizenInterface> clone() = 0;
 
     /**
      * @brief Updates the citizen with information from a governing authority.
      * @param newTaxRate The new tax rate to be applied.
      */
     virtual void update(float newTaxRate) = 0;
+
     /**
      * @brief Submits a request to the government.
-     * 
+     * @param government The government entity to receive the request.
      * @param requestDetails The details of the request.
      */
-    virtual void makeRequest(Government* government, std::string& requestDetails) = 0;
+    virtual void makeRequest(Government* government, std::string requestDetails) = 0;
+
     /**
-     * @brief Uses transport by calling travel method in Transport hierarchy
-     * 
+     * @brief Uses transport by calling travel method in Transport hierarchy.
+     * @param transport The transport system to be used.
      */
     virtual void useTransport(Transport *transport) = 0;
+
+    /**
+     * @brief Adjusts the satisfaction level of the citizen.
+     * @param newSatisfaction The new satisfaction level.
+     */
+    virtual void adjustCitizenSatisfaction(float newSatisfaction) = 0;
+
+    /**
+     * @brief Requests access to a public service, affecting citizen satisfaction.
+     * @param serviceType The type of public service requested (e.g., "Healthcare", "Education").
+     * @param impact Satisfaction impact of using this service.
+     */
+    virtual void requestPublicService(std::string serviceType, float impact) = 0;
+
+    /**
+     * @brief Attends a city event, potentially boosting satisfaction and engagement.
+     * @param eventName The name of the event.
+     * @param impact The impact of the event on citizen satisfaction.
+     */
+    virtual void attendEvent(std::string eventName, float impact) = 0;
+
+    /**
+     * @brief Evaluates the happiness level of the citizen.
+     * @return An overall happiness level considering satisfaction and other personal factors.
+     */
+    virtual float evaluateHappiness() = 0;
 
 protected:
     std::string name;       /**< Name of the citizen. */
     float salary;           /**< Salary of the citizen. */
     float satisfaction;     /**< Satisfaction level of the citizen. */
+    int age;
+    bool isEmployed;        /**< Employment status of the citizen. */
+    bool ownsProperty;      /**< Property ownership status of the citizen. */
+    PopulationControl popControl; /**< Manages population metrics and demographics. */
+    Government *government; /**< Pointer to the Government */
+    float currTaxRate;
 };
 
 #endif // CITIZEN_INTERFACE_H

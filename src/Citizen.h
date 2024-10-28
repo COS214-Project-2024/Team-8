@@ -5,50 +5,34 @@
 #include <memory>
 #include "CitizenInterface.h"
 
-// Forward declaration of the Government class
-class Government;
-
 /**
  * @class Citizen
  * @brief Represents a citizen in the government system.
  *
  * This class implements the CitizenInterface and represents an individual citizen 
- * who can interact with the government and has properties like salary and satisfaction.
+ * who can interact with the government, access services, and attend events.
  */
 class Citizen : public CitizenInterface {
 public:
-    /**
+       /**
      * @brief Constructs a Citizen object.
-     * 
      * @param name The name of the citizen.
      * @param salary The initial salary of the citizen.
+     * @param age The age of the citizen.
+     * @param satisfaction The initial satisfaction level of the citizen.
      * @param government Pointer to the Government object.
      * @param hasJob Employment status of the citizen (default is false).
      * @param ownsProperty Property ownership status of the citizen (default is false).
      */
-    Citizen(const std::string& name, float salary, Government* government, bool hasJob = false, bool ownsProperty = false);
+    Citizen(std::string name, float salary, int age, float satisfaction, 
+            Government* government, bool hasJob = false, bool ownsProperty = false);
     
+    Citizen(std::string name, float salary, int age, float satisfaction);
+
     /**
      * @brief Destructor for the Citizen object.
      */
     ~Citizen() override;
-
-    /**
-     * @brief Calculates tax based on the citizen's salary and property ownership.
-     * @return Calculated tax amount.
-     */
-    float calculateTax() override;
-
-    /**
-     * @brief Applies tax to the citizen's salary.
-     */
-    void applyTax() override;
-
-    /**
-     * @brief Increases the citizen's salary by a given percentage.
-     * @param percentage The percentage increase.
-     */
-    void jobPromotion(float percentage) override;
 
     /**
      * @brief Clones the citizen object.
@@ -64,20 +48,83 @@ public:
 
     /**
      * @brief Submits a request to the government.
-     * 
      * @param government Pointer to the Government object to handle the request.
      * @param requestDetails The details of the request.
      */
-    void makeRequest(Government* government, std::string& requestDetails) override;
-    void useTransport(Transport *transport);
-    void adjustCitizenSatisfaction(float newSatisfaction) ;
+    void makeRequest(Government* government, std::string requestDetails) override;
 
+    /**
+     * @brief Uses transport by calling the travel method in the Transport hierarchy.
+     * @param transport Pointer to a Transport object.
+     */
+    void useTransport(Transport *transport) override;
 
-private:
-    Government* government; /**< Pointer to the Government */
-    bool hasJob;            /**< Employment status of the citizen */
-    bool ownsProperty;      /**< Property ownership status of the citizen */
-    float currTaxRate;
+    /**
+     * @brief Adjusts the satisfaction level of the citizen.
+     * @param newSatisfaction The new satisfaction level.
+     */
+    void adjustCitizenSatisfaction(float newSatisfaction) override;
+
+    /**
+     * @brief Sets the employment status of the citizen.
+     * @param employmentStatus The employment status (true for employed, false for unemployed).
+     */
+    void setEmploymentStatus(bool employmentStatus);
+
+    /**
+     * @brief Sets the property ownership status of the citizen.
+     * @param ownsProperty The ownership status (true if owns property, false otherwise).
+     */
+    void setPropertyOwnership(bool ownsProperty);
+
+    /**
+     * @brief Returns the citizen's current salary.
+     * @return The citizen's salary.
+     */
+    float getSalary() ;
+
+    /**
+     * @brief Sets a new salary for the citizen.
+     * @param newSalary The new salary amount.
+     */
+    void setSalary(float newSalary);
+
+    /**
+     * @brief Gets the age of the citizen.
+     * @return The age of the citizen.
+     */
+    int getAge();
+
+    /**
+     * @brief Requests access to a public service, affecting citizen satisfaction.
+     * @param serviceType The type of public service requested (e.g., "Healthcare", "Education").
+     * @param impact Satisfaction impact of using this service.
+     */
+    void requestPublicService( std::string serviceType, float impact) override;
+
+    /**
+     * @brief Attends a city event, potentially boosting satisfaction and engagement.
+     * @param eventName The name of the event.
+     * @param impact The impact of the event on citizen satisfaction.
+     */
+    void attendEvent(std::string eventName, float impact) override;
+
+    /**
+     * @brief Evaluates the happiness level of the citizen.
+     * @return An overall happiness level considering satisfaction and other personal factors.
+     */
+    float evaluateHappiness()  override;
+    protected:
+    std::string name;       /**< Name of the citizen. */
+    float salary;           /**< Salary of the citizen. */
+    float satisfaction;     /**< Satisfaction level of the citizen. */
+    int age;                /**< Age of the citizen. */
+    bool isEmployed;        /**< Employment status of the citizen. */
+    bool ownsProperty;      /**< Property ownership status of the citizen. */
+    PopulationControl popControl; /**< Manages population metrics and demographics. */
+    Government *government; /**< Pointer to the Government */
+    float currTaxRate;      /**< Current tax rate for the citizen. */
+
 };
 
 #endif // CITIZEN_H

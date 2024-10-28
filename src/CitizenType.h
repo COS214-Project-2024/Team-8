@@ -20,23 +20,6 @@ public:
     CitizenType(std::unique_ptr<CitizenInterface> baseCitizen);
 
     /**
-     * @brief Calculates tax based on the citizen's properties.
-     * @return Calculated tax amount.
-     */
-    float calculateTax() override;
-
-    /**
-     * @brief Applies tax to the citizen's salary.
-     */
-    void applyTax() override;
-
-    /**
-     * @brief Increases the citizen's salary by a given percentage.
-     * @param percentage The percentage increase.
-     */
-    void jobPromotion(float percentage) override;
-
-    /**
      * @brief Clones the citizen object.
      * @return A unique pointer to a new CitizenInterface object that is a clone of this object.
      */
@@ -55,6 +38,7 @@ public:
      * @param requestDetails The details of the request.
      */
     void makeRequest(Government* government, std::string& requestDetails) override;
+    virtual std::string citizenType(){};
 
 protected:
     std::unique_ptr<CitizenInterface> baseCitizen; /**< Pointer to the base citizen */
