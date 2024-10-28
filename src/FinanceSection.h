@@ -1,18 +1,16 @@
 #include <exception>
 using namespace std;
 
-#ifndef __FinanceSection_h__
-#define __FinanceSection_h__
+#ifndef FinanceSection_h
+#define FinanceSection_h
 
 #include "Government.h"
 
 // class Government;
-class FinanceSection;
 
-__abstract class FinanceSection: public Government
-{
-
-	public: virtual void handleRequest() = 0;
+class FinanceSection : public Government {
+public:
+    void handleRequest(std::string requestDetails) override;
 };
 
 #endif

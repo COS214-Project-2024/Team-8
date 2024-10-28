@@ -42,6 +42,8 @@ public:
     void setBudget(double b);
     double getBudget() const;
     double getTotalRevenue() const;
+
+    virtual void handleRequest(std::string requestDetails);
 };
 
 #endif // GOVERNMENT_H

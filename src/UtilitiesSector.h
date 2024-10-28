@@ -1,19 +1,15 @@
 #include <exception>
 using namespace std;
 
-#ifndef __UtilitiesSector_h__
-#define __UtilitiesSector_h__
+#ifndef UtilitiesSector_h
+#define UtilitiesSector_h
 
 // #include "Main.h"
+#include "Government.h"
 
-class Main;
-class UtilitiesSector;
-
-__abstract class UtilitiesSector
-{
-	public: Main* _unnamed_Main_;
-
-	public: virtual void handleRequest() = 0;
+class UtilitiesSector : public Government {
+public:
+    void handleRequest(std::string requestDetails) override;
 };
 
 #endif
