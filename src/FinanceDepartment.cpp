@@ -25,21 +25,20 @@ FinanceDepartment::FinanceDepartment()
 
 FinanceDepartment::FinanceDepartment(
     std::vector<Citizen *> residentsList,
-    std::vector<CommercialBuilding *> commercialBuildingsList
-)
-    : residentsList(std::move(residentsList)),               
-      commercialBuildingsList(std::move(commercialBuildingsList)), 
-      residentialTaxation(new ResidentialTaxationSystem()), 
+    std::vector<CommercialBuilding *> commercialBuildingsList)
+    : residentsList(std::move(residentsList)),
+      commercialBuildingsList(std::move(commercialBuildingsList)),
+      residentialTaxation(new ResidentialTaxationSystem()),
       businessTaxation(new CommercialTaxationSystem()),
       budgetAllocation(new BudgetAllocationSystem()),
-      incomeTaxRate(0.0),      
+      incomeTaxRate(0.0),
       propertyTaxRate(0.0),
       businessTaxRate(0.0),
       salesTaxRate(0.0),
       totalBusinessSales(0.0),
       totalBusinessProfits(0.0),
       totalResidentsIncomes(0.0),
-      availableFunds(0.0){}
+      availableFunds(0.0) {}
 
 FinanceDepartment::~FinanceDepartment()
 {
@@ -60,22 +59,51 @@ FinanceDepartment::~FinanceDepartment()
     residentsList.clear();
     commercialBuildingsList.clear();
 }
-void FinanceDepartment::setCommercialTaxRates(double businessTaxRate, double salesTaxRate)
-{
-    this->businessTaxRate = businessTaxRate;
-    this->salesTaxRate = salesTaxRate;
-    cout << "💼 Setting Commercial Tax Rates..." << endl;
-    cout << "   - Business Tax Rate updated to: " << businessTaxRate * 100 << "%" << endl;
-    cout << "   - Sales Tax Rate updated to: " << salesTaxRate * 100 << "%" << endl;
-}
-
-void FinanceDepartment::setResidentialTaxRates(double incomeTaxRate, double propertyTaxRate)
+void FinanceDepartment::setResidentialIncomeTaxRate(double incomeTaxRate)
 {
     this->incomeTaxRate = incomeTaxRate;
+}
+void FinanceDepartment::setTaxBreakRate(double taxBreakRate)
+{
+    this->taxBreakRate = taxBreakRate;
+}
+double FinanceDepartment::getTaxBreakRate(double taxBreakRate)
+{
+    return this->taxBreakRate;
+}
+void FinanceDepartment::setResidentialPropertyTaxRate(double propertyTaxRate)
+{
     this->propertyTaxRate = propertyTaxRate;
-    cout << "🏠 Setting Residential Tax Rates..." << endl;
-    cout << "   - Income Tax Rate updated to: " << incomeTaxRate * 100 << "%" << endl;
-    cout << "   - Property Tax Rate updated to: " << propertyTaxRate * 100 << "%" << endl;
+}
+
+void FinanceDepartment::setCommercialBusinessTaxRate(double businessTaxRate)
+{
+    this->businessTaxRate = businessTaxRate;
+}
+
+void FinanceDepartment::setCommercialSalesTaxRate(double salesTaxRate)
+{
+    this->salesTaxRate = salesTaxRate;
+}
+
+double FinanceDepartment::getResidentialIncomeTaxRate()
+{
+    return incomeTaxRate;
+}
+
+double FinanceDepartment::getResidentialPropertyTaxRate()
+{
+    return propertyTaxRate;
+}
+
+double FinanceDepartment::getCommercialBusinessTaxRate()
+{
+    return businessTaxRate;
+}
+
+double FinanceDepartment::getCommercialSalesTaxRate()
+{
+    return salesTaxRate;
 }
 
 void FinanceDepartment::delegateRequestForCollectionOfTaxes()
@@ -84,13 +112,34 @@ void FinanceDepartment::delegateRequestForCollectionOfTaxes()
     {
         if (resident)
         {
-            double incomeTax = residentialTaxation->collectIncomeTax(incomeTaxRate, resident->getSalary());
-            double propertyTax = residentialTaxation->collectPropertyTax(propertyTaxRate, resident->getSalary());
+            double incomeTax = 0.0;
+            double propertyTax = 0.0;
+            if (resident->typeOfCitizen() == "Employed")
+            {
+                incomeTax = residentialTaxation->collectIncomeTax(incomeTaxRate, resident->getSalary());
+                availableFunds += incomeTax;
+                resident->setBalance(resident->getBalance() - incomeTax);
+            }
+            if (resident->typeOfCitizen() == "Property Owner")
+            {
+                propertyTax = residentialTaxation->collectPropertyTax(propertyTaxRate, resident->getSalary());
+                availableFunds += propertyTax;
+                resident->setBalance(resident->getBalance() - propertyTax);
+            }
+            if (resident->typeOfCitizen() == "Politically Active")
+            {
+                // Apply tax break to income tax if the citizen has a salary
+                incomeTax = residentialTaxation->collectIncomeTax(incomeTaxRate, resident->getSalary());
+                incomeTax *= (1 - taxBreakRate); // 10% discount
+                availableFunds += incomeTax;
 
-            availableFunds += incomeTax;
-            availableFunds += propertyTax;
+                // Apply tax break to property tax if the citizen owns property
+                propertyTax = residentialTaxation->collectPropertyTax(propertyTaxRate, resident->getSalary());
+                propertyTax *= (1 - taxBreakRate); // 10% discount
+                availableFunds += propertyTax;
 
-            resident->setBalance(resident->getBalance() - (incomeTax + propertyTax));
+                resident->setBalance(resident->getBalance() - (incomeTax + propertyTax));
+            }
         }
     }
     for (CommercialBuilding *building : commercialBuildingsList)

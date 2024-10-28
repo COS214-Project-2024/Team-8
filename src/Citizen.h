@@ -48,6 +48,7 @@ protected:
 
     int getAge() const;
     std::string getName() const;
+    std::string typeOfCitizen() const;
     double getSalary() const;
     double getSatisfaction() const;
     void setSalary(double s);

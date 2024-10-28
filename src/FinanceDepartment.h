@@ -24,6 +24,7 @@ private:
     double propertyTaxRate;
     double businessTaxRate;
     double salesTaxRate;
+    double taxBreakRate;
     double totalBusinessSales;
     double totalBusinessProfits;
     double totalResidentsIncomes;
@@ -36,8 +37,16 @@ public:
     std::vector<CommercialBuilding *> commercialBuildingsList
     );
     ~FinanceDepartment();
-    void setResidentialTaxRates(double incomeTaxRate, double propertyTaxRate);
-    void setCommercialTaxRates(double businessTaxRate, double salesTaxRate);
+    void setTaxBreakRate(double taxBreakRate);
+    void setResidentialIncomeTaxRate(double incomeTaxRate);
+    void setResidentialPropertyTaxRate(double propertyTaxRate);
+    void setCommercialBusinessTaxRate(double businessTaxRate);
+    void setCommercialSalesTaxRate(double salesTaxRate);
+    double getTaxBreakRate(double taxBreakRate);
+    double getResidentialIncomeTaxRate();
+    double getResidentialPropertyTaxRate();
+    double getCommercialBusinessTaxRate();
+    double getCommercialSalesTaxRate();
     void delegateRequestForCollectionOfTaxes();
     double delegateRequestForAllocationOfPublicServiceBuildingsFunds();
     double delegateRequestForAllocationOfUtilitiesFunds();

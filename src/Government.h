@@ -17,19 +17,19 @@ class Government
     private:
         Citizen* citizenList;
         Government* successor;
-        FinanceDepartment* financeDepartment;
+        FinanceDepartment* financeDepartment;//NEW 
         
     public:
-        Government(FinanceDepartment* financeDepartment);
+        Government(FinanceDepartment* financeDepartment);//NEW 
         void attach(Citizen* citizen);
         void detach(Citizen* citizen);
         void notify();
         virtual void handleRequest() = 0;
-        void requestCollectionOfTaxes();
-        void requestAllocationOfPublicServiceBuildingsFunds();
-        void requestAllocationOfUtilitiesFunds();
-        void requestAllocationOfTransportInfrastructureFunds();
-        void requestAllocationOfLandmarkBuildingsFunds();
+        void requestCollectionOfTaxes();//NEW 
+        void requestAllocationOfPublicServiceBuildingsFunds();//NEW 
+        void requestAllocationOfUtilitiesFunds();//NEW 
+        void requestAllocationOfTransportInfrastructureFunds();//NEW 
+        void requestAllocationOfLandmarkBuildingsFunds();//NEW 
         
 };
 
