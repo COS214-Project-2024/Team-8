@@ -50,13 +50,13 @@ public:
      * @param jobsCreated The number of jobs created by new commercial buildings.
      */
     void simulateMigration(int jobsCreated);
+    void increasePopulation();
 
 private:
     std::vector<Buildings*> buildings; ///< List of buildings in the city
     int totalPopulation;                ///< Current total population
     static const int MAX_POPULATION;    ///< Maximum allowable population
     static const float MIGRATION_RATE_MULTIPLIER;
-    static const int BIRTH_RATE_PER_HOSPITAL;
     
 
     /**
