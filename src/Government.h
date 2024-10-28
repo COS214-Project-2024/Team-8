@@ -1,58 +1,47 @@
-#include <exception>
-using namespace std;
-
+// Government.h
 #ifndef GOVERNMENT_H
 #define GOVERNMENT_H
 
 #include <vector>
 #include <memory>
-#include "Command.h"
+#include <string>
+#include "Citizen.h" // Added explicit include for Citizen class
+#include "Command.h" // Added explicit include for Command class
 
-#include "Citizen.h"
-// #include "Policies.h"
-// #include "Buildings.h"
+class Government {
+private:
+    std::vector<Citizen*> citizenList;
+    Government* successor;
+    Government* requestee;
+    std::vector<std::unique_ptr<Command>> commands;
+    double budget;
+    double totalRevenue;
 
-class Citizen;
-class Policies;
-class Buildings;
-class Government;
-
-class Government
-{
-	private:
-	 std::vector<Citizen*> citizenList;
- 	 Government* successor;
-	 Citizen* requestee;
-	 vector<unique_ptr<Command>> commands;
-	 double budget;
-	 double totalRevenue;
-
-	public: Government* _unnamed_Government_;
-	 Citizen* _requestee;
-	 Policies* _unnamed_Policies_;
-	 Buildings* _unnamed_Buildings_;
-
- 	void attach(Citizen* citizen);
- 	void detach(Citizen* citizen);
- 	void notify();
-	void addCommand(unique_ptr<Command> command);
-	void executeCommands();
-	void requestCollectionOfPropertyTax();
-	void requestCollectionOfIncomeTax();
-	void requestCollectionOfBusinessTax();
-	float requestAllocationOfUtilitiesFunds();
-	float requestAllocationOfHealthcareFunds();
-	void requestCollectionOfSalesTax();
-	float requestAllocationOfTransportFunds();
-	float requestAllocationOfEducationFunds();
-	float requestAllocationOfRecreationFunds();
-	void setBudget(double b);
-	double getBudget();
-	double getTotalRevenue();
-
-	// public: virtual void handleRequest() = 0; makes Government abstract, would need "concreteGovernment" but Government is invoker.
-
-
+public:
+    Government();
+    virtual ~Government() = default;  // Added virtual destructor
+    
+    void attach(Citizen* citizen);
+    void detach(Citizen* citizen);
+    void notify();
+    
+    void addCommand(std::unique_ptr<Command> command);
+    void executeCommands();
+    
+    double requestCollectionOfPropertyTax();
+    double requestCollectionOfIncomeTax();
+    double requestCollectionOfBusinessTax();
+    void requestCollectionOfSalesTax();
+    
+    float requestAllocationOfUtilitiesFunds();
+    float requestAllocationOfHealthcareFunds();
+    float requestAllocationOfTransportFunds();
+    float requestAllocationOfEducationFunds();
+    float requestAllocationOfRecreationFunds();
+    
+    void setBudget(double b);
+    double getBudget() const;
+    double getTotalRevenue() const;
 };
 
-#endif
+#endif // GOVERNMENT_H
