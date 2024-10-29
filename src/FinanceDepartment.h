@@ -8,7 +8,7 @@ using namespace std;
 class ResidentialTaxationSystem;
 class CommercialTaxationSystem;
 class BudgetAllocationSystem;
-class Citizen;
+class CitizenType;
 class Policies;
 class CommercialBuilding;
 
@@ -32,7 +32,7 @@ private:
 public:
     FinanceDepartment();
     FinanceDepartment::FinanceDepartment(
-    std::vector<Citizen *> residentsList,
+    std::vector<Citizen*> residentsList,
     std::vector<CommercialBuilding *> commercialBuildingsList
     );
     ~FinanceDepartment();

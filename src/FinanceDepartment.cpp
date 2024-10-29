@@ -107,13 +107,13 @@ void FinanceDepartment::delegateRequestForCollectionOfTaxes()
         {
             double incomeTax = 0.0;
             double propertyTax = 0.0;
-            if (resident->typeOfCitizen() == "Employed")
+            if (resident->citizenType() == "Employed")
             {
                 incomeTax = residentialTaxation->collectIncomeTax(incomeTaxRate, resident->getSalary());
                 availableFunds += incomeTax;
                 resident->setBalance(resident->getBalance() - incomeTax);
             }
-            if (resident->typeOfCitizen() == "Property Owner")
+            if (resident->citizenType() == "Property Owner")
             {
                 propertyTax = residentialTaxation->collectPropertyTax(propertyTaxRate, resident->getSalary());
                 availableFunds += propertyTax;

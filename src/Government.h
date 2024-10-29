@@ -8,8 +8,7 @@ using namespace std;
 
 class Citizen;
 class Policies;
-class Buildings;
-class FinanceDepartment;
+class FinanceDepartment; // USED BY FACADE DESIGN PATTERN
 
 
 class Government
@@ -17,19 +16,19 @@ class Government
     private:
         Citizen* citizenList;
         Government* successor;
-        FinanceDepartment* financeDepartment;//NEW 
+        FinanceDepartment* financeDepartment;// USED BY FACADE DESIGN PATTERN
         
     public:
-        Government(FinanceDepartment* financeDepartment);//NEW 
+        Government(FinanceDepartment* financeDepartment);// USED BY FACADE DESIGN PATTERN
         void attach(Citizen* citizen);
         void detach(Citizen* citizen);
         void notify();
         virtual void handleRequest() = 0;
-        void requestCollectionOfTaxes();//NEW 
-        void requestAllocationOfPublicServiceBuildingsFunds();//NEW 
-        void requestAllocationOfUtilitiesFunds();//NEW 
-        void requestAllocationOfTransportInfrastructureFunds();//NEW 
-        void requestAllocationOfLandmarkBuildingsFunds();//NEW 
+        void requestCollectionOfTaxes();// USED BY FACADE DESIGN PATTERN
+        void requestAllocationOfPublicServiceBuildingsFunds();// USED BY FACADE DESIGN PATTERN
+        void requestAllocationOfUtilitiesFunds();// USED BY FACADE DESIGN PATTERN
+        void requestAllocationOfTransportInfrastructureFunds();// USED BY FACADE DESIGN PATTERN
+        void requestAllocationOfLandmarkBuildingsFunds();// USED BY FACADE DESIGN PATTERN
         
 };
 
