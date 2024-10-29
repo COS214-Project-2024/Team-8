@@ -119,20 +119,7 @@ void FinanceDepartment::delegateRequestForCollectionOfTaxes()
                 availableFunds += propertyTax;
                 resident->setBalance(resident->getBalance() - propertyTax);
             }
-            if (resident->typeOfCitizen() == "Politically Active")
-            {
-                // Apply tax break to income tax if the citizen has a salary
-                incomeTax = residentialTaxation->collectIncomeTax(incomeTaxRate, resident->getSalary());
-                incomeTax *= (1 - taxBreakRate); // 10% discount
-                availableFunds += incomeTax;
-
-                // Apply tax break to property tax if the citizen owns property
-                propertyTax = residentialTaxation->collectPropertyTax(propertyTaxRate, resident->getSalary());
-                propertyTax *= (1 - taxBreakRate); // 10% discount
-                availableFunds += propertyTax;
-
-                resident->setBalance(resident->getBalance() - (incomeTax + propertyTax));
-            }
+            
         }
     }
     for (CommercialBuilding *building : commercialBuildingsList)
