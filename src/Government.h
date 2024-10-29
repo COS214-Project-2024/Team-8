@@ -19,11 +19,11 @@ class Government
         FinanceDepartment* financeDepartment;// USED BY FACADE DESIGN PATTERN
         
     public:
-        Government(FinanceDepartment* financeDepartment);// USED BY FACADE DESIGN PATTERN
         void attach(Citizen* citizen);
         void detach(Citizen* citizen);
         void notify();
         virtual void handleRequest() = 0;
+        Government(FinanceDepartment* financeDepartment);// USED BY FACADE DESIGN PATTERN
         void requestCollectionOfTaxes();// USED BY FACADE DESIGN PATTERN
         void requestAllocationOfPublicServiceBuildingsFunds();// USED BY FACADE DESIGN PATTERN
         void requestAllocationOfUtilitiesFunds();// USED BY FACADE DESIGN PATTERN
