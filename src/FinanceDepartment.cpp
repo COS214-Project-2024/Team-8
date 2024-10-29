@@ -8,7 +8,7 @@ using namespace std;
 #include "BudgetAllocationSystem.h"
 #include "CommercialTaxationSystem.h"
 #include "CommercialBuilding.h"
-#include "Citizen.h"
+#include "CitizenInterface.h"
 
 FinanceDepartment::FinanceDepartment()
     : residentialTaxation(new ResidentialTaxationSystem()),

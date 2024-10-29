@@ -14,15 +14,9 @@ class FinanceDepartment; // USED BY FACADE DESIGN PATTERN
 class Government
 {
     private:
-        Citizen* citizenList;
-        Government* successor;
         FinanceDepartment* financeDepartment;// USED BY FACADE DESIGN PATTERN
         
     public:
-        void attach(Citizen* citizen);
-        void detach(Citizen* citizen);
-        void notify();
-        virtual void handleRequest() = 0;
         Government(FinanceDepartment* financeDepartment);// USED BY FACADE DESIGN PATTERN
         void requestCollectionOfTaxes();// USED BY FACADE DESIGN PATTERN
         void requestAllocationOfPublicServiceBuildingsFunds();// USED BY FACADE DESIGN PATTERN
