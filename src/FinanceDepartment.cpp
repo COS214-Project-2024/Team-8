@@ -63,14 +63,7 @@ void FinanceDepartment::setResidentialIncomeTaxRate(double incomeTaxRate)
 {
     this->incomeTaxRate = incomeTaxRate;
 }
-void FinanceDepartment::setTaxBreakRate(double taxBreakRate)
-{
-    this->taxBreakRate = taxBreakRate;
-}
-double FinanceDepartment::getTaxBreakRate(double taxBreakRate)
-{
-    return this->taxBreakRate;
-}
+
 void FinanceDepartment::setResidentialPropertyTaxRate(double propertyTaxRate)
 {
     this->propertyTaxRate = propertyTaxRate;
