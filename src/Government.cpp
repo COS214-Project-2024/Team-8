@@ -18,7 +18,8 @@ void Government::detach(Citizen* citizen) {
 
 void Government::notify() {
     for (auto citizen : citizenList) {
-        citizen->setSatisfaction(citizen->getSatisfaction() + 5.0);
+       // citizen->setSatisfaction(citizen->getSatisfaction() + 5.0);
+        citizen->update(newTaxRate);
     }
 }
 
