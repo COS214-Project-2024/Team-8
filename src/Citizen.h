@@ -99,6 +99,11 @@ public:
      * @return The name of the citizen.
      */
     std::string getName();
+     /**
+     * @brief Gets the satisfaction of the citizen.
+     * @return The satisfaction of the citizen.
+     */
+    float getSatisfaction();
 
 
 
@@ -125,6 +130,16 @@ public:
      * @brief Displays the details of the citizen in a formatted manner.
      */
      void displayDetails() ; // Function declaration
+     /**
+     * @brief Gets the employment status of the citizen.
+     * @return The employment status of the citizen.
+     */
+     bool getEmployementStatus() ;
+    /**
+     * @brief Gets the property ownership status of the citizen.
+     * @return The property ownership status of the citizen.
+     */
+     bool getPropertyOwnershipStatus();
 
     protected:
     std::string name;       /**< Name of the citizen. */

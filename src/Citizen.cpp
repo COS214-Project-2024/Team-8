@@ -107,6 +107,11 @@ std::string Citizen::getName() {
     return this->name;
 }
 
+float Citizen::getSatisfaction()
+{
+    return satisfaction;
+}
+
 void Citizen::requestPublicService(std::string serviceType, float impact) {
     std::cout << name << " has requested access to " << serviceType << " service." << std::endl;
     adjustCitizenSatisfaction(impact);
@@ -142,4 +147,14 @@ void Citizen::displayDetails() {
     std::cout << "Current Tax Rate: " << currTaxRate * 100 << "%" << std::endl;
     std::cout << "Overall Happiness: " << evaluateHappiness() << " / 100" << std::endl;
     std::cout << "===========================\n" << std::endl;
+}
+
+bool Citizen::getEmployementStatus()
+{
+    return isEmployed;
+}
+
+bool Citizen::getPropertyOwnershipStatus()
+{
+    return ownsProperty;
 }

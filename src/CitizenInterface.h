@@ -97,6 +97,21 @@ public:
      * @param newSalary The new salary amount.
      */
     virtual void setSalary(float newSalary){};
+    /**
+     * @brief Gets the satisfaction of the citizen.
+     * @return The satisfaction of the citizen.
+     */
+    virtual float getSatisfaction() = 0;
+    /**
+     * @brief Gets the employment status of the citizen.
+     * @return The employment status of the citizen.
+     */
+    virtual bool getEmployementStatus() = 0;
+    /**
+     * @brief Gets the property ownership status of the citizen.
+     * @return The property ownership status of the citizen.
+     */
+    virtual bool getPropertyOwnershipStatus() = 0;
 
     /**
      * @brief Gets the age of the citizen.

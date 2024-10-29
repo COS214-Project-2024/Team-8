@@ -51,12 +51,12 @@ public:
      */
     void simulateMigration(int jobsCreated);
     void increasePopulation();
-
-private:
-    std::vector<Buildings*> buildings; ///< List of buildings in the city
     int totalPopulation;                ///< Current total population
     static const int MAX_POPULATION;    ///< Maximum allowable population
     static const float MIGRATION_RATE_MULTIPLIER;
+
+private:
+    std::vector<Buildings*> buildings; ///< List of buildings in the city
     
 
     /**
