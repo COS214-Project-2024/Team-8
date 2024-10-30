@@ -28,15 +28,22 @@ void Government::notify()
     for (auto citizen : citizenList)
     {
         // citizen->setSatisfaction(citizen->getSatisfaction() + 5.0);
-        double incomeTaxRate = financeDepartment->getResidentialIncomeTaxRate();
-        double propertyTaxRate = financeDepartment->getResidentialPropertyTaxRate();
-        if (citizen->citizenType() == "Employed")
+        float incomeTaxRate = (float)financeDepartment->getResidentialIncomeTaxRate();
+        float propertyTaxRate = (float) financeDepartment->getResidentialPropertyTaxRate();
+        if (citizen->getEmploymentStatus() == true)
         {
             citizen->update(incomeTaxRate);
         }
-        if (citizen->citizenType() == "Property Owner")
+        else if (citizen->getPropertyOwnershipStatus() == true)
         {
             citizen->update(propertyTaxRate);
+        }
+        else if (citizen->getEmploymentStatus() && citizen->getPropertyOwnershipStatus())
+        {
+            float combinedTaxRate = incomeTaxRate + propertyTaxRate;
+            citizen->update(combinedTaxRate);
+        }else{
+            citizen->update(0.0f);
         }
     }
 }
