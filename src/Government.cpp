@@ -28,7 +28,16 @@ void Government::notify()
     for (auto citizen : citizenList)
     {
         // citizen->setSatisfaction(citizen->getSatisfaction() + 5.0);
-        citizen->update(newTaxRate);
+        double incomeTaxRate = financeDepartment->getResidentialIncomeTaxRate();
+        double propertyTaxRate = financeDepartment->getResidentialPropertyTaxRate();
+        if (citizen->citizenType() == "Employed")
+        {
+            citizen->update(incomeTaxRate);
+        }
+        if (citizen->citizenType() == "Property Owner")
+        {
+            citizen->update(propertyTaxRate);
+        }
     }
 }
 
@@ -113,11 +122,13 @@ double Government::requestAllocationOfRecreationFunds()
     notify();
     return allocatedFundsForRecreation;
 }
-void Government:: setBudget(double b){
+void Government::setBudget(double b)
+{
     budget = b;
 }
 
-double Government:: getBudget() const{
+double Government::getBudget() const
+{
     return budget;
 }
 
