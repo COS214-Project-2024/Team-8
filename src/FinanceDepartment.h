@@ -36,19 +36,28 @@ public:
     std::vector<CommercialBuilding *> commercialBuildingsList
     );
     ~FinanceDepartment();
+
     void setResidentialIncomeTaxRate(double incomeTaxRate);
     void setResidentialPropertyTaxRate(double propertyTaxRate);
     void setCommercialBusinessTaxRate(double businessTaxRate);
     void setCommercialSalesTaxRate(double salesTaxRate);
+
     double getResidentialIncomeTaxRate();
     double getResidentialPropertyTaxRate();
     double getCommercialBusinessTaxRate();
     double getCommercialSalesTaxRate();
-    void delegateRequestForCollectionOfTaxes();
+
+    void delegateRequestForCollectionOffPropertyTax();
+    void delegateRequestForCollectionOffIncomeTax();
+    void delegateRequestForCollectionOfBusinessTax();
+    void delegateRequestForCollectionOfSalesTax();
+
     double delegateRequestForAllocationOfPublicServiceBuildingsFunds();
     double delegateRequestForAllocationOfUtilitiesFunds();
     double delegateRequestForAllocationOfTransportInfrastructureFunds();
-    double delegateRequestForAllocationOfLandmarkBuildingsFunds();
+    double delegateRequestForAllocationOfLandmarkBuildingsFunds(); //SYNONYMOUS WITH Recreation
+
+
     double calculateTotalResidentsIncome();
     double calculateTotalBusinessProfit();
     double calculateTotalBusinessSale();

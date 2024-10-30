@@ -101,38 +101,65 @@ double FinanceDepartment::getCommercialSalesTaxRate()
 
 void FinanceDepartment::delegateRequestForCollectionOfTaxes()
 {
+}
+void FinanceDepartment::delegateRequestForCollectionOffPropertyTax()
+{
     for (Citizen *resident : residentsList)
     {
         if (resident)
         {
-            double incomeTax = 0.0;
             double propertyTax = 0.0;
-            if (resident->citizenType() == "Employed")
-            {
-                incomeTax = residentialTaxation->collectIncomeTax(incomeTaxRate, resident->getSalary());
-                availableFunds += incomeTax;
-                resident->setBalance(resident->getBalance() - incomeTax);
-            }
+
             if (resident->citizenType() == "Property Owner")
             {
                 propertyTax = residentialTaxation->collectPropertyTax(propertyTaxRate, resident->getSalary());
                 availableFunds += propertyTax;
                 resident->setBalance(resident->getBalance() - propertyTax);
             }
-            
         }
     }
+}
+void FinanceDepartment::delegateRequestForCollectionOffIncomeTax()
+{
+    for (Citizen *resident : residentsList)
+    {
+        if (resident)
+        {
+            double incomeTax = 0.0;
+            if (resident->citizenType() == "Employed")
+            {
+                incomeTax = residentialTaxation->collectIncomeTax(incomeTaxRate, resident->getSalary());
+                availableFunds += incomeTax;
+                resident->setBalance(resident->getBalance() - incomeTax);
+            }
+        }
+    }
+}
+void FinanceDepartment::delegateRequestForCollectionOfBusinessTax()
+{
     for (CommercialBuilding *building : commercialBuildingsList)
     {
         if (building)
         {
             double businessTaxc = businessTaxation->collectBusinessTax(businessTaxRate, building->getProfit());
-            double salesTax = businessTaxation->collectSalesTax(salesTaxRate, building->getSales());
 
             availableFunds += businessTaxc;
+
+            building->setBalance(building->getBalance() - (businessTaxc));
+        }
+    }
+}
+void FinanceDepartment::delegateRequestForCollectionOfSalesTax()
+{
+    for (CommercialBuilding *building : commercialBuildingsList)
+    {
+        if (building)
+        {
+            double salesTax = businessTaxation->collectSalesTax(salesTaxRate, building->getSales());
+
             availableFunds += salesTax;
 
-            building->setBalance(building->getBalance() - (businessTaxc + salesTax));
+            building->setBalance(building->getBalance() - (salesTax));
         }
     }
 }
