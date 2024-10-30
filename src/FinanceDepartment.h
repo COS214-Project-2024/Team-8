@@ -49,10 +49,10 @@ public:
     double getCommercialSalesTaxRate();
     double getAvailableFunds();
 
-    void delegateRequestForCollectionOffPropertyTax();
-    void delegateRequestForCollectionOffIncomeTax();
-    void delegateRequestForCollectionOfBusinessTax();
-    void delegateRequestForCollectionOfSalesTax();
+    double delegateRequestForCollectionOffPropertyTax();
+    double delegateRequestForCollectionOffIncomeTax();
+    double delegateRequestForCollectionOfBusinessTax();
+    double delegateRequestForCollectionOfSalesTax();
 
     double delegateRequestForAllocationOfPublicServiceBuildingsFunds();
     double delegateRequestForAllocationOfUtilitiesFunds();
