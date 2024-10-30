@@ -1,4 +1,3 @@
-// Government.h
 /**
  * @file Government.h
  * @brief Government class header implementing Observer and Chain of Responsibility patterns
@@ -14,6 +13,8 @@
 #include <string>
 #include "Citizen.h"
 #include "Command.h"
+#include <FinanceDepartment.h>
+
 
 /**
  * @class Government
@@ -30,12 +31,16 @@ private:
     std::vector<std::unique_ptr<Command>> commands; ///< Command pattern implementation
     double budget;                               ///< Current government budget
     double totalRevenue;                         ///< Total collected revenue
-    float currentTaxRate;                        ///< Current tax rate for citizen notifications
+    double currentTaxRate;                        ///< Current tax rate for citizen notifications
+    FinanceDepartment* financeDepartment; ///< Finance branch of the Government
 
 public:
     /** @brief Default constructor */
     Government();
-    
+
+    /** @brief Parameterized  constructor */
+    Government(FinanceDepartment *financeDepartment);
+
     /** @brief Virtual destructor */
     virtual ~Government() = default;
     
@@ -88,37 +93,33 @@ public:
     /**
      * @brief Collects sales tax
      */
-    void requestCollectionOfSalesTax();
+    double requestCollectionOfSalesTax();
     
     /**
      * @brief Allocates funds for utilities
      * @return Amount allocated for utilities
      */
-    float requestAllocationOfUtilitiesFunds();
+    double requestAllocationOfUtilitiesFunds();
     
     /**
-     * @brief Allocates funds for healthcare
-     * @return Amount allocated for healthcare
+     * @brief Allocates funds for PublicServiceBuildings such as HealthCare ,Education and Police Station
+     * @return Amount allocated for PublicServiceBuildings such as HealthCare ,Education and Police Station
      */
-    float requestAllocationOfHealthcareFunds();
+    double requestAllocationOfPublicServiceBuildingsFunds();
     
     /**
      * @brief Allocates funds for transport
      * @return Amount allocated for transport
      */
-    float requestAllocationOfTransportFunds();
+    double requestAllocationOfTransportFunds();
     
-    /**
-     * @brief Allocates funds for education
-     * @return Amount allocated for education
-     */
-    float requestAllocationOfEducationFunds();
+
     
     /**
      * @brief Allocates funds for recreation
      * @return Amount allocated for recreation
      */
-    float requestAllocationOfRecreationFunds();
+    double requestAllocationOfRecreationFunds();
     
     /**
      * @brief Sets the government budget
@@ -131,6 +132,12 @@ public:
      * @return Current budget amount
      */
     double getBudget() const;
+    
+     /**
+     * @brief Sets the total revenue
+     * @param b Current revenue amount
+     */
+    void setTotalRevenue(double b);
     
     /**
      * @brief Gets the total revenue
