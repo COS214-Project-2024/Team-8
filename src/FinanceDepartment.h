@@ -37,6 +37,7 @@ public:
     );
     ~FinanceDepartment();
 
+    void setAvailableFunds(double totalRevenue);
     void setResidentialIncomeTaxRate(double incomeTaxRate);
     void setResidentialPropertyTaxRate(double propertyTaxRate);
     void setCommercialBusinessTaxRate(double businessTaxRate);
@@ -46,6 +47,7 @@ public:
     double getResidentialPropertyTaxRate();
     double getCommercialBusinessTaxRate();
     double getCommercialSalesTaxRate();
+    double getAvailableFunds();
 
     void delegateRequestForCollectionOffPropertyTax();
     void delegateRequestForCollectionOffIncomeTax();

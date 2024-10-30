@@ -59,6 +59,13 @@ FinanceDepartment::~FinanceDepartment()
     residentsList.clear();
     commercialBuildingsList.clear();
 }
+void FinanceDepartment:: setAvailableFunds(double totalRevenue){
+    availableFunds =  totalRevenue;
+}
+double FinanceDepartment:: getAvailableFunds(){
+    return availableFunds;
+}
+
 void FinanceDepartment::setResidentialIncomeTaxRate(double incomeTaxRate)
 {
     this->incomeTaxRate = incomeTaxRate;
