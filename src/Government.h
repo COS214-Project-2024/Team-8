@@ -93,7 +93,7 @@ public:
     /**
      * @brief Collects sales tax
      */
-    void requestCollectionOfSalesTax();
+    double requestCollectionOfSalesTax();
     
     /**
      * @brief Allocates funds for utilities
@@ -102,10 +102,10 @@ public:
     double requestAllocationOfUtilitiesFunds();
     
     /**
-     * @brief Allocates funds for healthcare
-     * @return Amount allocated for healthcare
+     * @brief Allocates funds for PublicServiceBuildings such as HealthCare ,Education and Police Station
+     * @return Amount allocated for PublicServiceBuildings such as HealthCare ,Education and Police Station
      */
-    double requestAllocationOfHealthcareFunds();
+    double requestAllocationOfPublicServiceBuildingsFunds();
     
     /**
      * @brief Allocates funds for transport
@@ -113,11 +113,7 @@ public:
      */
     double requestAllocationOfTransportFunds();
     
-    /**
-     * @brief Allocates funds for education
-     * @return Amount allocated for education
-     */
-    double requestAllocationOfEducationFunds();
+
     
     /**
      * @brief Allocates funds for recreation
@@ -136,6 +132,12 @@ public:
      * @return Current budget amount
      */
     double getBudget() const;
+    
+     /**
+     * @brief Sets the total revenue
+     * @param b Current revenue amount
+     */
+    void setTotalRevenue(double b);
     
     /**
      * @brief Gets the total revenue

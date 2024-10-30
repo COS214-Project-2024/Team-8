@@ -18,7 +18,7 @@ private:
     ResidentialTaxationSystem *residentialTaxation;
     CommercialTaxationSystem *businessTaxation;
     BudgetAllocationSystem *budgetAllocation;
-    std::vector<Citizen *> residentsList;
+    std::vector<CitizenInterface* *> residentsList;
     std::vector<CommercialBuilding *> commercialBuildingsList;
     double incomeTaxRate;
     double propertyTaxRate;

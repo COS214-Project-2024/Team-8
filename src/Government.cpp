@@ -1,112 +1,17 @@
-#include <exception>
-using namespace std;
-#include "FinanceDepartment.h"
-#include "Government.h"
-#include "Citizen.h"
-#include "Policies.h"
-#include "Buildings.h"
-#include <iostream>
-#include <iomanip>
-#include <iostream>
-using namespace std;
-
-void Government::attach(Citizen *citizen)
-{
-}
-void Government::detach(Citizen *citizen)
-{
-}
-
-void Government::notify()
-{
-}
-Government::Government(FinanceDepartment *financeDepartment)
-    : financeDepartment(financeDepartment),
-      citizenList(nullptr),
-      successor(nullptr) {}
-void Government::requestCollectionOfTaxes()
-{
-
-    cout << "💰 Collecting taxes from residents (Income and Property Taxes) and businesses (Business and Sales Taxes)" << endl;
-    financeDepartment->delegateRequestForCollectionOfTaxes();
-    cout << "✅ Tax collection processed!" << endl;
-}
-
-void Government::requestAllocationOfPublicServiceBuildingsFunds()
-{
-    double totalPublicServiceBuildingsFunds = 0.0;
-    totalPublicServiceBuildingsFunds = financeDepartment->delegateRequestForAllocationOfPublicServiceBuildingsFunds();
-    std::cout << "🏛️ Public Service Buildings Funds Allocated: R"
-              << totalPublicServiceBuildingsFunds << std::endl;
-}
-
-void Government::requestAllocationOfUtilitiesFunds()
-{
-    double totalUtilitiesFunds = 0.0;
-    totalUtilitiesFunds = financeDepartment->delegateRequestForAllocationOfUtilitiesFunds();
-    std::cout << "💧 Utilities Funds Allocated: R"
-              << totalUtilitiesFunds << std::endl;
-}
-
-void Government::requestAllocationOfTransportInfrastructureFunds()
-{
-    double totalTransportInfrastructureFunds = 0.0;
-    totalTransportInfrastructureFunds = financeDepartment->delegateRequestForAllocationOfTransportInfrastructureFunds();
-    std::cout << "🚆 Transport Infrastructure Funds Allocated: R"
-              << totalTransportInfrastructureFunds << std::endl;
-}
-
-void Government::requestAllocationOfLandmarkBuildingsFunds()
-{
-    double totalLandmarkBuildingsFunds = 0.0;
-    totalLandmarkBuildingsFunds = financeDepartment->delegateRequestForAllocationOfLandmarkBuildingsFunds();
-    std::cout << "🏰 Landmark Buildings Funds Allocated: R"
-              << totalLandmarkBuildingsFunds << std::endl;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Government.cpp
 #include "Government.h"
 #include <algorithm>
 
 Government::Government()
-    : financeDepartment(nullptr),successor(nullptr), requestee(nullptr), budget(0.0), totalRevenue(0.0) {}
+    : financeDepartment(nullptr), successor(nullptr), requestee(nullptr), budget(0.0), totalRevenue(0.0) {}
 
 Government::Government(FinanceDepartment *financeDepartment)
-    : financeDepartment(financeDepartment) ,successor(nullptr), requestee(nullptr), budget(0.0), totalRevenue(0.0) {}
+    : financeDepartment(financeDepartment), successor(nullptr), requestee(nullptr), budget(0.0), totalRevenue(0.0) {}
 
 void Government::attach(Citizen *citizen)
 {
     citizenList.push_back(citizen);
+    financeDepartment->addResidents(citizen);
 }
 
 void Government::detach(Citizen *citizen)
@@ -143,70 +48,78 @@ void Government::executeCommands()
 
 double Government::requestCollectionOfPropertyTax()
 {
-    financeDepartment->delegateRequestForCollectionOffPropertyTax();
+    double totalCollectedPropertyTax = financeDepartment->delegateRequestForCollectionOffPropertyTax();
     for (auto citizen : citizenList)
     {
         citizen->setSatisfaction(citizen->getSatisfaction() - 2.0);
     }
-    
+    return totalCollectedPropertyTax;
 }
 
 double Government::requestCollectionOfIncomeTax()
 {
-    financeDepartment->delegateRequestForCollectionOffIncomeTax();
+    double totalCollectedIncomeTax = financeDepartment->delegateRequestForCollectionOffIncomeTax();
     for (auto citizen : citizenList)
     {
         citizen->setSatisfaction(citizen->getSatisfaction() - 3.0);
     }
+    return totalCollectedIncomeTax;
 }
 
 double Government::requestCollectionOfBusinessTax()
 {
-    financeDepartment->delegateRequestForCollectionOffIncomeTax();
+    double totalCollectedBusinessTax = financeDepartment->delegateRequestForCollectionOfBusinessTax();
     for (auto citizen : citizenList)
     {
         citizen->setSatisfaction(citizen->getSatisfaction() - 2.5);
     }
+    return totalCollectedBusinessTax;
 }
 
-void Government::requestCollectionOfSalesTax()
+double Government::requestCollectionOfSalesTax()
 {
+    double totalCollectedSalesTax = financeDepartment->delegateRequestForCollectionOfSalesTax();
     for (auto citizen : citizenList)
     {
         citizen->setSatisfaction(citizen->getSatisfaction() - 1.0);
     }
+    return totalCollectedSalesTax;
 }
 
-float Government::requestAllocationOfUtilitiesFunds()
+double Government::requestAllocationOfUtilitiesFunds()
 {
-   
+    double allocatedFundsForUtilities = financeDepartment->delegateRequestForAllocationOfUtilitiesFunds();
     notify();
+    return allocatedFundsForUtilities;
 }
 
-float Government::requestAllocationOfHealthcareFunds()
+double Government::requestAllocationOfPublicServiceBuildingsFunds()
 {
- 
+    double allocatedFundsForPublicServiceBuildings = financeDepartment->delegateRequestForAllocationOfPublicServiceBuildingsFunds();
     notify();
+    return allocatedFundsForPublicServiceBuildings;
 }
 
-float Government::requestAllocationOfTransportFunds()
+double Government::requestAllocationOfTransportFunds()
 {
-   
+    double allocatedFundsForTransport = financeDepartment->delegateRequestForAllocationOfTransportInfrastructureFunds();
     notify();
+    return allocatedFundsForTransport;
 }
 
-float Government::requestAllocationOfEducationFunds()
+double Government::requestAllocationOfRecreationFunds()
 {
-
+    double allocatedFundsForRecreation = financeDepartment->delegateRequestForAllocationOfLandmarkBuildingsFunds();
     notify();
+    return allocatedFundsForRecreation;
+}
+void Government:: setBudget(double b){
+    budget = b;
 }
 
-float Government::requestAllocationOfRecreationFunds()
-{
-
-    notify();
+double Government:: getBudget() const{
+    return budget;
 }
 
-void Government::setBudget(double b) { budget = b; }
-double Government::getBudget() const { return budget; }
-double Government::getTotalRevenue() const { return totalRevenue; }
+void Government::setTotalRevenue(double b) { financeDepartment->setAvailableFunds(b); }
+double Government::getTotalRevenue() const { return financeDepartment->getAvailableFunds(); }
