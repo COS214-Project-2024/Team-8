@@ -1,18 +1,13 @@
-#include <exception>
-#include <string>
-using namespace std;
-
 #include "StopCommand.h"
-#include "Command.h"
 
 void StopCommand::execute() {
-	throw "Not yet implemented";
+	this->utility->pauseOperation();
 }
 
-string StopCommand::getUtilityType() {
-	throw "Not yet implemented";
+std::string StopCommand::getUtilityType() {
+	this->utility->getUtilityType();
 }
 
-StopCommand::StopCommand(Utilities* aUtility) {
+StopCommand::StopCommand(Utility* utility) {
+	this->utility = utility;
 }
-

@@ -1,52 +1,41 @@
-#include <exception>
-using namespace std;
-
 #include "UtilityBuilder.h"
-#include "Utility.h"
-#include "UtilityDirector.h"
-#include "WaterSupply.h"
-#include "Command.h"
 
 WaterSupply* UtilityBuilder::getWaterManager() {
-	throw "Not yet implemented";
+	throw "NOT A MEMBER OF SAID CLASS";
 }
 
-WasterManagement* UtilityBuilder::getWasterManager() {
-	throw "Not yet implemented";
+WasteManagement* UtilityBuilder::getWasterManager() {
+	throw "NOT A MEMBER OF SAID CLASS";
 }
 
-SewageSystem* UtilityBuilder::getSewageSystem() {
-	throw "Not yet implemented";
+SewageSystems* UtilityBuilder::getSewageSystem() {
+	throw "NOT A MEMBER OF SAID CLASS";
 }
 
-void UtilityBuilder::addCommand(Command* aCom) {
-	throw "Not yet implemented";
+void UtilityBuilder::setMaxWaste(int max) {
+	throw "NOT A MEMBER OF SAID CLASS";
 }
 
-void UtilityBuilder::setMaxWaste(int aMax) {
-	throw "Not yet implemented";
+void UtilityBuilder::setCapacity(int max) {
+	throw "NOT A MEMBER OF SAID CLASS";
 }
 
-void UtilityBuilder::setCapacity(int aMax) {
-	throw "Not yet implemented";
+void UtilityBuilder::setMaxGallons(int max) {
+	throw "NOT A MEMBER OF SAID CLASS";
 }
 
-void UtilityBuilder::setMaxGallons(int aMax) {
-	throw "Not yet implemented";
-}
-
-void UtilityBuilder::setMaxWatts(float aMax) {
-	throw "Not yet implemented";
+void UtilityBuilder::setMaxWatts(float max) {
+	throw "NOT A MEMBER OF SAID CLASS";
 }
 
 void UtilityBuilder::switchFuel() {
-	throw "Not yet implemented";
+	throw "NOT A MEMBER OF SAID CLASS";
 }
 
 UtilityBuilder::UtilityBuilder() {
+	std::cout<<"Utility Builder Initialized"<<std::endl;
 }
 
 UtilityBuilder::~UtilityBuilder() {
-	throw "Not yet implemented";
+	delete this->utility;
 }
-

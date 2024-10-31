@@ -1,19 +1,13 @@
-#include <exception>
-#include <string>
-using namespace std;
-
 #include "WindSource.h"
-#include "EnergySource.h"
 
-void WindSource::windSource(int aI) {
-	throw "Not yet implemented";
+WindSource::WindSource(int output) {
+	this->energyOutput = output;
 }
 
 float WindSource::getEnergyOutput() {
-	throw "Not yet implemented";
+	return energyOutput;
 }
 
-string WindSource::getFuelType() {
-	throw "Not yet implemented";
+std::string WindSource::getFuelType() {
+	return "Wind";
 }
-

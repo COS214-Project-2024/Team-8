@@ -1,28 +1,19 @@
-#include <exception>
-using namespace std;
+#ifndef WATERBUILDER_H
+#define WATERBUILDER_H
 
-#ifndef __WaterBuilder_h__
-#define __WaterBuilder_h__
-
-// #include "WaterSupply.h"
-// #include "Command.h"
 #include "UtilityBuilder.h"
+#include "WaterSupply.h"
+class WaterBuilder : public UtilityBuilder {
+public:
+	WaterSupply* getWaterManager();
 
-class WaterSupply;
-class Command;
-// class UtilityBuilder;
-class WaterBuilder;
+	void addCommand(Command* com);
 
-class WaterBuilder: public UtilityBuilder
-{
+	void setMaxGallons(int max);
 
-	public: WaterSupply* getWaterManagerr();
+	WaterBuilder(int curSuplly);
 
-	public: void addCommand(Command* aCom);
-
-	public: void setMaxGallons(int aMax);
-
-	public: WaterBuilder(int aCurSuplly);
+	void undoChange();
 };
 
 #endif

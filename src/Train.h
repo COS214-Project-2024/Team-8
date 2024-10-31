@@ -1,28 +1,32 @@
-#include <exception>
-using namespace std;
+#ifndef TRAIN_H
+#define TRAIN_H
 
-#ifndef __Train_h__
-#define __Train_h__
-
-// #include "Stops.h"
 #include "Transport.h"
+/**
+ * @file Train.h
+ * 
+ * @brief This file implements the Train class
+ */
 
-class Stops;
-// class Transport;
-class Train;
+class Train : public Transport {
+public:
+	Train(int capacity);
 
-__abstract class Train: public Transport
-{
+	void setNumPassenger(int pass);
 
-	public: void train(Stops* aDestination);
+	void setCargoWeight(float weight);
 
-	public: void travel(Stops* aDestination);
+	float travel(Stops* stop, RouteNode* head, bool best = 0);
 
-	public: int getCapacity();
+	std::string getType();
 
-	public: float getCargoWeight();
+	void setCapacity(int capacity);
 
-	public: bool isReachable(Stops* aDest);
+	int getCapacity();
+
+	float getWeight();
+
+	int getPassengers();
 };
 
 #endif

@@ -1,38 +1,35 @@
-#include <exception>
-#include <string>
-using namespace std;
+#ifndef WASTEMANAGEMENT_H
+#define WASTEMANAGEMENT_H
 
-#ifndef __WasteManagement_h__
-#define __WasteManagement_h__
-
-// #include "Command.h"
 #include "Utility.h"
+class WasteManagement : public Utility {
+private:
+	int processCapacity;
+	int currentload;
+	float recycledperc;
 
-class Command;
-// class Utility;
-class WasteManagement;
+public:
+	WasteManagement(int curload);
 
-class WasteManagement: public Utility
-{
-	private: int _processCapacity;
-	private: int _currentload;
-	private: float _recycledperc;
+	std::string getStatus();
 
-	public: void wasteManagement(int aCurload);
+	void repairUtility();
 
-	public: string getStatus();
+	void executeOperation();
 
-	public: void repairUtility();
+	int getCurrentLoad();
 
-	public: void executeOperation();
+	void pauseOperation();
 
-	public: int getCurrentLoad();
+	void addCommand(Command* com);
 
-	public: void pauseOperation();
+	void setProcessCapacity(int pro);
 
-	public: void addCommand(Command* aCom);
+	std::string getUtilityType();
 
-	public: void setProcessCapacity(int aPro);
+	void undoChange();
+
+
 };
 
 #endif

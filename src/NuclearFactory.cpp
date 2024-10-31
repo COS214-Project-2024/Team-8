@@ -1,11 +1,5 @@
-#include <exception>
-using namespace std;
-
 #include "NuclearFactory.h"
-#include "EnergySource.h"
-#include "EnergyFactory.h"
 
-EnergySource* NuclearFactory::createEnergySource(int aI) {
-	throw "Not yet implemented";
+EnergySource* NuclearFactory::createEnergySource(int output) {
+	return new NuclearSource(output);
 }
-

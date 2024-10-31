@@ -1,23 +1,15 @@
-#include <exception>
-#include <string>
-using namespace std;
-
-#ifndef __StartCommand_h__
-#define __StartCommand_h__
+#ifndef STARTCOMMAND_H
+#define STARTCOMMAND_H
 
 #include "Command.h"
+#include "Utility.h"
+class StartCommand : public Command {
+public:
+	void execute();
 
-// class Command;
-class StartCommand;
+	std::string getUtilityType();
 
-class StartCommand: public Command
-{
-
-	public: void execute();
-
-	public: string getUtilityType();
-
-	public: StartCommand(Utilities* aUtility);
+	StartCommand(Utility* utility);
 };
 
 #endif

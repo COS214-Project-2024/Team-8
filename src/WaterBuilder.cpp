@@ -1,23 +1,17 @@
-#include <exception>
-using namespace std;
-
 #include "WaterBuilder.h"
-#include "WaterSupply.h"
-#include "Command.h"
-#include "UtilityBuilder.h"
 
-WaterSupply* WaterBuilder::getWaterManagerr() {
-	throw "Not yet implemented";
+WaterSupply* WaterBuilder::getWaterManager() {
+	return dynamic_cast<WaterSupply*>(this->utility);
 }
 
-void WaterBuilder::addCommand(Command* aCom) {
-	throw "Not yet implemented";
+void WaterBuilder::addCommand(Command* com) {
+	utility->addCommand(com);
 }
 
-void WaterBuilder::setMaxGallons(int aMax) {
-	throw "Not yet implemented";
+void WaterBuilder::setMaxGallons(int max) {
+	utility->setMaxGallons(max);
 }
 
-WaterBuilder::WaterBuilder(int aCurSuplly) {
+WaterBuilder::WaterBuilder(int cursupply) {
+	utility = new WaterSupply(cursupply);
 }
-
