@@ -1,18 +1,19 @@
-#include <exception>
-using namespace std;
+#ifndef WATERRESOURCE_H
+#define WATERRESOURCE_H
 
-#ifndef __waterResource_h__
-#define __waterResource_h__
+#include "Resource.h"
 
-class waterResource;
+class waterResource : public Resource {
 
-class waterResource
-{
-	private: int _availableWater;
+float availableWater;
 
-	public: bool giveWater(int aUnits);
-
-	public: void recieveWater(int aUnits);
+public:
+    waterResource();
+    bool giveResource(float units) override;
+    void receiveResource() override;
+    float getAvailableAmount() override;
+    //void outOfResources() override;
+    ~waterResource() override = default;
 };
 
-#endif
+#endif // WATERRESOURCE_H

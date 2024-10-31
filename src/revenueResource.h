@@ -1,18 +1,20 @@
-#include <exception>
-using namespace std;
+#ifndef REVENUERESOURCE_H
+#define REVENUERESOURCE_H
 
-#ifndef __revenueResource_h__
-#define __revenueResource_h__
+#include "Resource.h"
 
-class revenueResource;
+class revenueResource : public Resource {
 
-class revenueResource
-{
-	private: double _availableRevenue;
+private:
+    int availableRevenue;
 
-	public: bool giveRevenue(int aUnits);
-
-	public: void receiverRevenue(int aUnits);
+public:
+    revenueResource();
+    bool giveResource(float units) override;
+    void receiveResource() override;
+    float getAvailableAmount() override;
+    //void outOfResources() override;
+    ~revenueResource() override = default;
 };
 
-#endif
+#endif // REVENUERESOURCE_H
