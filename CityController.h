@@ -7,6 +7,8 @@
 #include "Policy.h"
 #include "Citizen.h"
 #include "UtilitesControl.h"
+#include "BuildingController.h"
+#include "CitizenController.h"
 
 
 class CityController
@@ -14,6 +16,9 @@ class CityController
 private:
     /* data */
     UtilitesControl ManagmentOfUtilities ; 
+    BuildingController ManagmentOfBuildings ;
+    CitizenController ManagmentOfCitizens ; 
+
 public:
 
     CityController() ;
@@ -26,15 +31,30 @@ public:
     void addDecorations() ; // What Decorations and where ? City Sectors ? 
     void ProvideUtilities() ;
     Resources * buildInfrastructure() ; 
-    Buildings* createBuilding ; // Was Buildier , changed to Buildings  
+    Buildings* createBuilding ; // Was Builder , changed to Buildings  
 
-    int getTransportCapacity() ; // How do I cycle through the Transports , where is it stored ?
     int getCurrentEnergySupply() ; 
     int getCurrentWasteSupply() ; 
     int getCurrentWaterSupply() ; 
     int getCurrentSewageSupply() ; 
+    int getAmountOfUtilities() ; 
 
-    double getTotalIncome() ; // Through Citizen Interface I presume ?
+    double getTotalIncome() ; // Through Citizen Interface I presume ? Just gonna add TaxableIncome with CommercialIncome for now
+
+    int getBuildingWaterCost() ; 
+    int getBuildingPowerCost() ; 
+    int getBuildingWasteCost() ; 
+    int getBuildingSewageCost() ; 
+    Citizen** getBuildingCitizenInRes() ; 
+    int getBuildingCommercialIncome() ; 
+
+    int AmountOfCitizens() ; 
+    int EmployedCitizens() ; 
+    int PropertyOwners() ;
+
+    double AvgSatisfaction() ;
+    float TaxableIncome() ; 
+    Citizen** getListOfCitizens() ; 
 
 };
 
