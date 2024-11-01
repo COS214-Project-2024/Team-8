@@ -1,19 +1,13 @@
-#include <exception>
-#include <string>
-using namespace std;
-
 #include "NuclearSource.h"
-#include "EnergySource.h"
 
-void NuclearSource::nuclearSource(int aI) {
-	throw "Not yet implemented";
+NuclearSource::NuclearSource(int output) {
+	this->energyOutput = output;
 }
 
 float NuclearSource::getEnergyOutput() {
-	throw "Not yet implemented";
+	return energyOutput;
 }
 
-string NuclearSource::getFuelType() {
-	throw "Not yet implemented";
+std::string NuclearSource::getFuelType() {
+	return "Nuclear";
 }
-

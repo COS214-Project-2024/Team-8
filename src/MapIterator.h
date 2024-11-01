@@ -1,30 +1,31 @@
-#include <exception>
-using namespace std;
+#ifndef MAPITERATOR_H
+#define MAPITERATOR_H
 
-#ifndef __MapIterator_h__
-#define __MapIterator_h__
+#include "RouteNode.h"
+/**
+ * @file MapIterator.h
+ * 
+ * @brief This file implements the MapIterator class 
+ * 
+ * This class is used to iterate through the RouteNode to simulate travelling
+ */
+class MapIterator {
+protected:
+	RouteNode* head;
+	RouteNode* current;
 
-// #include "RouteNode.h"
-// #include "RouteMap.h"
-// #include "Stops.h"
+public:
+	MapIterator(RouteNode* cur);
 
-class RouteNode;
-class RouteMap;
-class Stops;
-class MapIterator;
+	Stops* operator*();
 
-class MapIterator
-{
-	protected: RouteNode* _head;
-	protected: RouteNode* _current;
+	RouteNode* operator++();
 
-	public: void mapIterator();
+	bool operator==(RouteNode* other);
 
-	public: MapIterator(RouteMap* aMap, RouteNode* aCur);
+	RouteNode* currentNode();
 
-	public: Stops* operator_();
-
-	public: RouteNode* operator__(RouteNode* aOther);
+	RouteNode* headNode();
 };
 
 #endif

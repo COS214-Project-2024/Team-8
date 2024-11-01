@@ -1,18 +1,13 @@
-#include <exception>
-#include <string>
-using namespace std;
-
 #include "StartCommand.h"
-#include "Command.h"
 
 void StartCommand::execute() {
-	throw "Not yet implemented";
+	this->utility->executeOperation();
 }
 
-string StartCommand::getUtilityType() {
-	throw "Not yet implemented";
+std::string StartCommand::getUtilityType() {
+	return this->utility->getUtilityType();
 }
 
-StartCommand::StartCommand(Utilities* aUtility) {
+StartCommand::StartCommand(Utility* utility) {
+	this->utility = utility;
 }
-

@@ -1,31 +1,34 @@
-#include <exception>
-#include <string>
-using namespace std;
+#ifndef STOPS_H
+#define STOPS_H
 
-#ifndef __Stops_h__
-#define __Stops_h__
+#include <iostream>
+/**
+ * @file Stops.h
+ * 
+ * @brief This file implements the Stops class
+ */
+class Stops {
+protected:
+	char symbol;
+	float length;
+	std::string name;
 
-// #include "TravelManager.h"
+public:
+	virtual float getCost();
 
-class TravelManager;
-class Stops;
+	virtual char getSymbol() = 0;
 
-class Stops
-{
-	private: Char _symbol;
-	private: float _lengthOfStop;
-	private: string _stopName;
-	public: TravelManager* _unnamed_TravelManager_;
+	virtual float getDistance() = 0;
 
-	public: float getCost();
+	virtual void setTicketCost(float cost);
 
-	public: string getSymbol();
+	virtual float getTicketCost();
 
-	public: float getDistance();
+	virtual std::string getName();
 
-	public: void setTicketCost(float aCost);
+	virtual void setSpeedLimit(int limit);
 
-	public: float getTicketCost();
+	virtual int getSpeedLimit();
 };
 
 #endif

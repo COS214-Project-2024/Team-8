@@ -1,19 +1,13 @@
-#include <exception>
-#include <string>
-using namespace std;
-
 #include "CoalSource.h"
-#include "EnergySource.h"
 
-void CoalSource::coalSource(int aI) {
-	throw "Not yet implemented";
+CoalSource::CoalSource(float output) {
+	this->energyOutput = output;
 }
 
 float CoalSource::getEnergyOutput() {
-	throw "Not yet implemented";
+	return energyOutput;
 }
 
-string CoalSource::getFuelType() {
-	throw "Not yet implemented";
+std::string CoalSource::getFuelType() {
+	return "Coal";
 }
-

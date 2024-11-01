@@ -1,52 +1,48 @@
-#include <exception>
-#include <string>
-using namespace std;
-
 #include "Utility.h"
-#include "UtilityManager.h"
-#include "City.h"
-#include "Command.h"
 
-string Utility::getStatus() {
-	return this->_status;
+std::string Utility::getStatus() {
+	return this->status;
 }
 
-void Utility::executeOperation() {
-	throw "Not yet implemented";
+void Utility::setFuel(EnergySource* fuel) {
+	throw "NOT A MEMBER OF SAID CLASS";
 }
 
-void Utility::repairUtility() {
-	throw "Not yet implemented";
+std::string Utility::getEnergyType() {
+	throw "NOT A MEMBER OF SAID CLASS";
 }
 
-string Utility::getEnergyType() {
-	throw "Not yet implemented";
+void Utility::setmaxWaste(int max){
+	throw "NOT A MEMBER OF SAID CLASS";
 }
 
 int Utility::getCurrentSupply() {
-	throw "Not yet implemented";
+	throw "NOT A MEMBER OF SAID CLASS";
 }
 
 int Utility::getCurrentLoad() {
-	throw "Not yet implemented";
+	throw "NOT A MEMBER OF SAID CLASS";
+}
+void Utility::setProcessCapacity(int pro){
+	throw "NOT A MEMBER OF SAID CLASS";
 }
 
-void Utility::undoChange() {
-	throw "Not yet implemented";
+void Utility::setMaxWatts(float max){
+	throw "NOT A MEMBER OF SAID CLASS";
 }
 
-void Utility::pauseOperation() {
-	throw "Not yet implemented";
+void Utility::setMaxGallons(float max){
+	throw "NOT A MEMBER OF SAID CLASS";
 }
 
-void Utility::addCommand(Command* aCom) {
-	throw "Not yet implemented";
+int Utility::getCurrentOutput() {
+	throw "NOT A MEMBER OF SAID CLASS";
+}
+
+float Utility::getMaxWatts() {
+	throw "NOT A MEMBER OF SAID CLASS";
 }
 
 Utility::~Utility() {
-	throw "Not yet implemented";
+	delete manager;
 }
-
-Utility::Utility() {
-}
-

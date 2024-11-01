@@ -1,44 +1,42 @@
-#include <exception>
-#include <string>
-using namespace std;
-
 #include "WaterSupply.h"
-#include "Command.h"
-#include "Utility.h"
 
-void WaterSupply::waterSupply(int aCurSupply) {
-	throw "Not yet implemented";
+WaterSupply::WaterSupply(int curSupply) {
+	this->currentSupply = curSupply;
+	this->status = "Operational";
+	manager = new UtilityManager();
 }
 
-string WaterSupply::getStatus() {
-	throw "Not yet implemented";
-}
-
-void WaterSupply::reapirUtility() {
-	throw "Not yet implemented";
-}
-
-void WaterSupply::executeOperation() {
-	throw "Not yet implemented";
-}
-
-int WaterSupply::getCurrentSupply() {
-	return this->_currentSupply;
-}
-
-void WaterSupply::pauseOperation() {
-	throw "Not yet implemented";
-}
-
-void WaterSupply::addCommand(Command* aCom) {
-	throw "Not yet implemented";
-}
-
-void WaterSupply::setMaxGallons(float aMax) {
-	throw "Not yet implemented";
+std::string WaterSupply::getStatus() {
+	return this->status;
 }
 
 void WaterSupply::repairUtility() {
-	throw "Not yet implemented";
+	std::cout << "Water Supply is being repaired" << std::endl;
+	this->status = "Repairing";
 }
 
+void WaterSupply::executeOperation() {
+	std::cout << "Water Supply is running" << std::endl;
+	this->status = "Operational";
+}
+
+int WaterSupply::getCurrentSupply() {
+	return this->currentSupply;
+}
+
+void WaterSupply::pauseOperation() {
+	std::cout << "Water Supply is paused" << std::endl;
+	this->status = "Paused";
+}
+
+void WaterSupply::addCommand(Command* com) {
+	manager->addCommand(com);
+}
+
+void WaterSupply::setMaxGallons(float max) {
+	this->maxGallons = max;
+}
+
+std::string WaterSupply::getUtilityType() {
+	return "WaterTreatment";
+}

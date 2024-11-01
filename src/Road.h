@@ -1,28 +1,32 @@
-#include <exception>
-#include <string>
-using namespace std;
-
-#ifndef __Road_h__
-#define __Road_h__
+#ifndef ROAD_H
+#define ROAD_H
 
 #include "Stops.h"
 
-// class Stops;
-class Road;
+/**
+ * @file Road.h
+ * 
+ * @brief This file implements the Road class
+ * 
+ * The Road class is a subclass of the Stops class
+ */
 
-class Road: public Stops
-{
-	private: int _speedLimit;
+class Road : public Stops {
 
-	public: void road(string aName, float aLength);
+public:
+	int speedLimit;
 
-	public: string getSymbol();
+	Road(std::string name, float length);
 
-	public: float getDistance();
+	char getSymbol();
 
-	public: void setSpeedLimit(int aLimit);
+	float getDistance();
 
-	public: int getSpeedLimit();
+	void setSpeedLimit(int limit);
+
+	int getSpeedLimit();
+
+	std::string getName();
 };
 
 #endif

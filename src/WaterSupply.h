@@ -1,40 +1,35 @@
-#include <exception>
-#include <string>
-using namespace std;
+#ifndef WATERSUPPLY_H
+#define WATERSUPPLY_H
 
-#ifndef __WaterSupply_h__
-#define __WaterSupply_h__
-
-// #include "Command.h"
 #include "Utility.h"
+#include <iostream>
+#include "Command.h"
+class WaterSupply : public Utility {
+private:
+	int maxGallons;
+	float puritypercentage;
+	int currentSupply;
 
-class Command;
-// class Utility;
-class WaterSupply;
+public:
+	WaterSupply(int curSupply);
 
-class WaterSupply: public Utility
-{
-	private: int _maxGallons;
-	private: float _puritypercentage;
-	private: int _currentSupply;
+	std::string getStatus();
 
-	public: void waterSupply(int aCurSupply);
+	void repairUtility();
 
-	public: string getStatus();
+	void executeOperation();
 
-	public: void reapirUtility();
+	int getCurrentSupply();
 
-	public: void executeOperation();
+	void pauseOperation();
 
-	public: int getCurrentSupply();
+	void addCommand(Command* com);
 
-	public: void pauseOperation();
+	void setMaxGallons(float max);
 
-	public: void addCommand(Command* aCom);
+	std::string getUtilityType();
 
-	public: void setMaxGallons(float aMax);
-
-	public: virtual void repairUtility();
+	void undoChange();
 };
 
 #endif

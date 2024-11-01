@@ -1,41 +1,31 @@
-#include <exception>
-using namespace std;
+#ifndef UTILITYMANAGER_H
+#define UTILITYMANAGER_H
 
-#ifndef __UtilityManager_h__
-#define __UtilityManager_h__
+#include "StartCommand.h"
+#include "StopCommand.h"
+#include <vector>
+#include <iostream>
+class UtilityManager {
+private:
+	std::vector<Command*> history;
+public:
+	UtilityManager();
 
-// #include "Command.h"
-// #include "Utility.h"
-// #include "Command.h"
+	void executeWaste();
 
-class Command;
-class Utility;
-class Command;
-class UtilityManager;
+	void undoCommand();
 
-class UtilityManager
-{
-	private: Command* _history;
-	public: Utility* _unnamed_Utility_;
-	public: Command* _unnamed_Command_;
+	void LoadShedding();
 
-	public: UtilityManager();
+	void UnfilledDam();
 
-	public: void executeWaste();
+	void executeSewage();
 
-	public: void undoCommand();
+	void executeWater();
 
-	public: void loadShedding();
+	void executeElectricity();
 
-	public: void unfilledDam();
-
-	public: void executeSewage();
-
-	public: void executeWater();
-
-	public: void executeElectricity();
-
-	public: void addCommand(Command* aCom);
+	void addCommand(Command* com);
 };
 
 #endif

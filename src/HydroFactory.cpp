@@ -1,11 +1,8 @@
-#include <exception>
-using namespace std;
-
 #include "HydroFactory.h"
-#include "EnergySource.h"
-#include "EnergyFactory.h"
 
-EnergySource* HydroFactory::createEnergySource(int aI) {
-	throw "Not yet implemented";
+#include "HydroSource.h"
+
+
+EnergySource* HydroFactory::createEnergySource(int output) {
+	return new HydroSource(output);
 }
-

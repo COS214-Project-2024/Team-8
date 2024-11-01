@@ -1,44 +1,40 @@
-#include <exception>
-#include <string>
-using namespace std;
+#ifndef UTILITYPOWERPLANT_H
+#define UTILITYPOWERPLANT_H
 
-#ifndef __UtilityPowerPlant_h__
-#define __UtilityPowerPlant_h__
-
-// #include "Command.h"
-// #include "EnergySource.h"
 #include "Utility.h"
+#include "EnergySource.h"
+class UtilityPowerPlant : public Utility {
+private:
+	float maximumWatts;
+	int currentOutput;
+	EnergySource* fuel = nullptr;
 
-class Command;
-class EnergySource;
-// class Utility;
-class UtilityPowerPlant;
+public:
+	UtilityPowerPlant(int output);
 
-class UtilityPowerPlant: public Utility
-{
-	private: float _maximumWatts;
-	private: int _currentOutput;
-	private: EnergySourcel* _fuel;
+	std::string getEnergyType();
 
-	public: UtilityPowerPlant(int aOutput);
+	void executeOperation();
 
-	public: string getEnergyType();
+	void repairUtility();
 
-	public: void executeOperation();
+	std::string getStatus();
 
-	public: void repareUtility();
+	void pauseOperation();
 
-	public: string getStatus();
+	void addCommand(Command* com);
 
-	public: void pauseOperation();
+	void setMaxWatts(float max);
 
-	public: void addCommand(Command* aCom);
+	void setFuel(EnergySource* fuel);
 
-	public: void setMaxWatts(float aMax);
+	float getMaxWatts();
 
-	public: void setFuel(EnergySource* aFuel);
+	int getCurrentOutput();
 
-	public: virtual void repairUtility();
+	std::string getUtilityType();
+
+	void undoChange();
 };
 
 #endif

@@ -1,40 +1,48 @@
-#include <exception>
-#include <string>
-using namespace std;
-
 #include "WasteManagement.h"
-#include "Command.h"
-#include "Utility.h"
 
-void WasteManagement::wasteManagement(int aCurload) {
-	throw "Not yet implemented";
+WasteManagement::WasteManagement(int curload) {
+	this->currentload = curload;
+	this->recycledperc = 0;
+	this->processCapacity = curload*2;
+	this->status = "Operational";
+	manager = new UtilityManager();
 }
 
-string WasteManagement::getStatus() {
-	throw "Not yet implemented";
+std::string WasteManagement::getStatus() {
+	return this->status;
 }
 
 void WasteManagement::repairUtility() {
-	throw "Not yet implemented";
+	std::cout << "Waste Management is being repaired" << std::endl;
+	this->status = "Repairing";
 }
 
 void WasteManagement::executeOperation() {
-	throw "Not yet implemented";
+	std::cout << "Waste Management is running" << std::endl;
+	this->status = "Operational";
 }
 
 int WasteManagement::getCurrentLoad() {
-	throw "Not yet implemented";
+	return this->currentload;
+}
+
+void WasteManagement::undoChange() {
+	manager->undoCommand();
 }
 
 void WasteManagement::pauseOperation() {
-	throw "Not yet implemented";
+	std::cout << "Waste Management is paused" << std::endl;
+	this->status = "Paused";
 }
 
-void WasteManagement::addCommand(Command* aCom) {
-	throw "Not yet implemented";
+void WasteManagement::addCommand(Command* com) {
+	manager->addCommand(com);
 }
 
-void WasteManagement::setProcessCapacity(int aPro) {
-	this->_processCapacity = aPro;
+void WasteManagement::setProcessCapacity(int pro) {
+	this->processCapacity = pro;
 }
 
+std::string WasteManagement::getUtilityType() {
+	return "WasteTreatment";
+}

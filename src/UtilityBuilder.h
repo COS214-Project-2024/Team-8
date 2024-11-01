@@ -1,46 +1,37 @@
-#include <exception>
-using namespace std;
+#ifndef UTILITYBUILDER_H
+#define UTILITYBUILDER_H
 
-#ifndef __UtilityBuilder_h__
-#define __UtilityBuilder_h__
+#include "WaterSupply.h"
+#include "WasteManagement.h"
+#include "SewageSystems.h"
 
-// #include "Utility.h"
-// #include "UtilityDirector.h"
-// #include "WaterSupply.h"
-// #include "Command.h"
+#include <iostream>
+class UtilityBuilder {
+protected:
+	Utility* utility;
 
-class Utility;
-class UtilityDirector;
-class WaterSupply;
-class Command;
-class UtilityBuilder;
+public:
+	virtual WaterSupply* getWaterManager();
 
-__abstract class UtilityBuilder
-{
-	protected: Utility* _utility;
-	public: UtilityDirector* _unnamed_UtilityDirector_;
+	virtual WasteManagement* getWasterManager();
 
-	public: WaterSupply* getWaterManager();
+	virtual SewageSystems* getSewageSystem();
 
-	public: WasterManagement* getWasterManager();
+	virtual void addCommand(Command* com) = 0;
 
-	public: SewageSystem* getSewageSystem();
+	virtual void setMaxWaste(int max);
 
-	public: virtual void addCommand(Command* aCom) = 0;
+	virtual void setCapacity(int max);
 
-	public: void setMaxWaste(int aMax);
+	virtual void setMaxGallons(int max);
 
-	public: void setCapacity(int aMax);
+	virtual void setMaxWatts(float max);
 
-	public: void setMaxGallons(int aMax);
+	virtual void switchFuel();
 
-	public: void setMaxWatts(float aMax);
+	UtilityBuilder();
 
-	public: void switchFuel();
-
-	public: UtilityBuilder();
-
-	public: virtual ~UtilityBuilder();
+	virtual ~UtilityBuilder();
 };
 
 #endif

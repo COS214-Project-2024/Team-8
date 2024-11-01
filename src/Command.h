@@ -1,27 +1,16 @@
-#include <exception>
-#include <string>
-using namespace std;
+#ifndef COMMAND_H
+#define COMMAND_H
 
-#ifndef __Command_h__
-#define __Command_h__
+#include "Utility.h"
+class Command {
+protected:
+	Utility* utility = nullptr;
+public:
+	virtual void execute() = 0;
 
-// #include "UtilityManager.h"
+	virtual ~Command();
 
-class UtilityManager;
-class Command;
-
-__abstract class Command
-{
-	protected: Utilities* _utility;
-	public: UtilityManager* _unnamed_UtilityManager_;
-
-	public: virtual void execute() = 0;
-
-	public: virtual ~Command();
-
-	public: string getUtilityType();
-
-	public: Command();
+	virtual std::string getUtilityType() = 0;
 };
 
 #endif
