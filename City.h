@@ -8,7 +8,7 @@
 #include "Buildings.h"
 #include "ResourceMediator.h"
 #include "Resources.h"
-#include "Utilities.h"
+#include "Utility.h"
 #include "CitySector.h"
 #include "CityController.h"
 
@@ -39,7 +39,7 @@ private:
     PopulationControl *Population;
     int AmountOfPop ; 
 
-    Utilities *ListOfUtilityBuildings;
+    Utility *ListOfUtilityBuildings;
 
 public:
     City(/* args */);
