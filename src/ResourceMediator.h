@@ -1,55 +1,41 @@
-#include <exception>
+#ifndef RESOURCEMEDIATOR_H
+#define RESOURCEMEDIATOR_H
+
+#include <map>
+#include <iostream>
 #include <vector>
-using namespace std;
+#include <memory>
 
-#ifndef __ResourceMediator_h__
-#define __ResourceMediator_h__
 
-// #include "Resources.h"
-#include "CitySector.h"
+#include "Building.h"
 
-class Resources;
-class CitySector;
-class ResourceMediator;
+#include "waterSupply.h"
+#include "Resource.h"
 
-class ResourceMediator
-{
-	private: Vector<Resources*> _resources;
-	private: Vector<CitySector*> _citySectors;
-	public: Resources* _unnamed_Resources_;
-	public: CitySector* _unnamed_CitySector_;
+class Resource;
+class Building;
 
-	public: ResourceMediator(vector<Resources*> aResources);
+class ResourceMediator {
+private:
+    std::map<std::string, Resource*>* resources;
+    std::vector<utility*>* utilities;
 
-	public: bool usePower(double aUnits, CitySector aSender);
-
-	public: void replenishPower(double aUnits);
-
-	public: bool useRevenue(double aUnits, CitySector aSender);
-
-	public: void replenishRevenue(double aUnits);
-
-	public: bool useWater(double aUnits, CitySector aSender);
-
-	public: void replenishWater(double aUnits);
-
-	public: bool cleanWaste(double aUnits, CitySector aSender);
-
-	public: void gainWaste(double aUnits);
-
-	public: bool cleanSewage(double aUnits, CitySector aSender);
-
-	public: void gainSewage(double aUnits);
-
-	public: void outOfPower();
-
-	public: void outOfWater();
-
-	public: void outOfRevenue();
-
-	public: void outOfWasteMan();
-
-	public: void outOfSewageMan();
+public:
+    ResourceMediator();
+    bool usePower(float units, Building* sender);
+    float replenishPower();
+    bool useRevenue(float units, Building* sender);
+    float replenishRevenue();
+    bool useWater(float units, Building* sender);
+    float replenishWater();
+    bool cleanWaste(float units, Building* sender);
+    float gainWasteCleaning();
+    bool cleanSewage(float units, Building* sender);
+    float gainSewageCleaning();
+    bool useConstResource(float units, Building* sender);
+    float replenishConstResource();
+    void setResources(std::map<std::string, Resource*>* resources);
+    void setUtilities(std::vector<utility*>* utilities);
 };
 
-#endif
+#endif // RESOURCEMEDIATOR_H
