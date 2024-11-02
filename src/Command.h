@@ -5,23 +5,23 @@ using namespace std;
 #ifndef __Command_h__
 #define __Command_h__
 
-// #include "UtilityManager.h"
-
 class UtilityManager;
 class Command;
 
-__abstract class Command
-{
-	protected: Utilities* _utility;
-	public: UtilityManager* _unnamed_UtilityManager_;
+class Command {
+    public: 
+        UtilityManager* utilityMan;
 
-	public: virtual void execute() = 0;
+        // Default the constructor like we did with destructor
+        Command() = default;  // Command Pattern for policies
 
-	public: virtual ~Command();
+        virtual void execute() = 0; // Command Pattern for policies
 
-	public: string getUtilityType();
+        virtual ~Command() = default; // Command Pattern for policies
 
-	public: Command();
+        virtual string getUtilityType() {
+            return ""; // Default implementation or make it pure virtual if needed
+        }
 };
 
 #endif

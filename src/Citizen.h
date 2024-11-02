@@ -2,8 +2,8 @@
 #include <string>
 using namespace std;
 
-#ifndef __Citizen_h__
-#define __Citizen_h__
+#ifndef CITIZEN_H
+#define CITIZEN_H
 
 // #include "City.h"
 // #include "Government.h"
@@ -20,12 +20,20 @@ class PopulationControl;
 class Transport;
 class Citizen;
 
-__abstract class Citizen
+class Citizen
 {
-	private: int _age;
-	private: string _name;
-	private: double _salary;
-	private: double _satisfaction;
+
+	private:
+    int age;
+    std::string name;
+    double salary;
+    double satisfaction;
+
+protected:
+    // Protected constructor for abstract class
+    Citizen(std::string name, int age, double salary);
+
+	
 	public: City* _prototype;
 	public: Government* _citizenList;
 	public: Government* _requestee;
@@ -34,19 +42,18 @@ __abstract class Citizen
 	public: PopulationControl* _unnamed_PopulationControl_;
 	public: Transport* _unnamed_Transport_;
 
-	public: void citizen(int aAge, string aName, double aSalary);
+	public:
+    virtual ~Citizen() = default;
 
-	public: int getAge();
-
-	public: string getName();
-
-	public: double getSalary();
-
-	public: double getSatisfaction();
-
-	public: virtual Citizen* clone() = 0;
-
-	public: virtual void update() = 0;
+    int getAge() const;
+    std::string getName() const;
+    double getSalary() const;
+    double getSatisfaction() const;
+    void setSalary(double s);
+    void setSatisfaction(double s);
+    virtual double calculateTax() const = 0;
+    virtual Citizen* clone() = 0;
+    virtual void update(float newTaxRate) = 0;
 };
 
 #endif

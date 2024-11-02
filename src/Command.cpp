@@ -1,22 +1,11 @@
-#include <exception>
-#include <string>
-using namespace std;
+#ifndef COMMAND_H
+#define COMMAND_H
 
-#include "Command.h"
-#include "UtilityManager.h"
+class Command {
+    public:
+        Command() = default;
+        virtual ~Command() = default;
+        virtual void execute() = 0;  // Pure virtual function for Command pattern
+};
 
-void Command::execute() {
-	throw "Not yet implemented";
-}
-
-Command::~Command() {
-	throw "Not yet implemented";
-}
-
-string Command::getUtilityType() {
-	throw "Not yet implemented";
-}
-
-Command::Command() {
-}
-
+#endif
