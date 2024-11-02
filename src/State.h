@@ -1,23 +1,29 @@
-#include <exception>
-using namespace std;
-
-#ifndef __State_h__
-#define __State_h__
-
-// #include "Buildings.h"
+#include "Buildings.h"
+#ifndef STATE_H
+#define STATE_H
 
 class Buildings;
-class State;
 
-__abstract class State
-{
-	protected: Buidling _building;
-	public: Buildings* _state;
-	public: Buildings* _buidling;
+/**
+ * @class State
+ * @brief Abstract class representing the state of a building.
+ */
+class State {
 
-	public: virtual void handle() = 0;
+protected:
+    Buildings* building; ///< Pointer to the building associated with this state
 
-	public: virtual void changeState() = 0;
+public:
+    /**
+     * @brief Handles the operations specific to the current state.
+     */
+    virtual void handle() = 0;
+
+    /**
+     * @brief Changes the state of the building.
+     */
+    virtual void changeState() = 0;
 };
 
 #endif
+
