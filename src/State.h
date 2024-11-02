@@ -9,14 +9,14 @@ using namespace std;
 class Buildings;
 class State;
 
-__abstract class State
+class State
 {
-	protected: Buidling _building;
+	// protected: Buidlings _building;
 	public: Buildings* _state;
 	public: Buildings* _buidling;
 
 	public: virtual void handle() = 0;
-
+	virtual ~State() = default;
 	public: virtual void changeState() = 0;
 };
 

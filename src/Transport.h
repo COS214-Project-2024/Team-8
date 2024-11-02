@@ -15,7 +15,7 @@ class RouteMap;
 class Stops;
 class Transport;
 
-__abstract class Transport
+class Transport
 {
 	protected: RouteMap* _routes;
 	protected: int _capacity;
@@ -33,7 +33,7 @@ __abstract class Transport
 
 	public: void bestRoute(Stops* aDest);
 
-	public: virtual ~Transport();
+	public: virtual ~Transport() = default;
 };
 
 #endif

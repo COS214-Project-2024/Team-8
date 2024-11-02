@@ -1,24 +1,45 @@
-#include <exception>
-using namespace std;
+/**
+ * @file EconomicPolicies.h
+ * @brief Economic policy implementation class
+ * @author Design Wits
+ * @date 2024-04-29
+ */
 
-#ifndef __EconomicPolicies_h__
-#define __EconomicPolicies_h__
+#ifndef ECONOMICPOLICIES_H
+#define ECONOMICPOLICIES_H
 
-// #include "PublicServicesPolicies.h"
-// #include "Citizen.h"
 #include "Policies.h"
+#include "PublicServicesPolicies.h"
+#include "Citizen.h"
 
 class PublicServicesPolicies;
 class Citizen;
-// class Policies;
-class EconomicPolicies;
 
-class EconomicPolicies: public Policies
-{
-	public: PublicServicesPolicies* _unnamed_PublicServicesPolicies_;
-	public: Citizen* _unnamed_Citizen_;
+/**
+ * @class EconomicPolicies
+ * @brief Concrete implementation of economic policies
+ * 
+ * This class handles the execution of economic policies affecting
+ * citizens and public services. It acts as a ConcreteCommand in
+ * the Command pattern hierarchy.
+ */
+class EconomicPolicies : public Policies {
+public:
+    /**
+     * @brief Construct a new Economic Policies object
+     * @param govt Pointer to the government executing the policies
+     */
+    explicit EconomicPolicies(Government* govt);
 
-	public: void executePolicy();
+    PublicServicesPolicies* psPolicies;  ///< Related public services policies
+    Citizen* citizen;                    ///< Affected citizen
+
+    /**
+     * @brief Implementation of policy execution for economic policies
+     * 
+     * Defines the specific behavior for executing economic policies.
+     */
+    void executePolicy() override;
 };
 
-#endif
+#endif // ECONOMICPOLICIES_H

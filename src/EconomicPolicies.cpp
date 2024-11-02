@@ -5,8 +5,14 @@ using namespace std;
 #include "PublicServicesPolicies.h"
 #include "Citizen.h"
 #include "Policies.h"
+#include "Government.h"
+
+EconomicPolicies::EconomicPolicies(Government* govt) : Policies(govt) {}
 
 void EconomicPolicies::executePolicy() {
-	throw "Not yet implemented";
+    government->requestCollectionOfIncomeTax();
+    government->requestCollectionOfBusinessTax();
+    government->requestCollectionOfSalesTax();
+    government->notify();
 }
 
