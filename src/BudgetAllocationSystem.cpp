@@ -1,32 +1,86 @@
-#include <exception>
 using namespace std;
+#include <iostream>
 
 #include "BudgetAllocationSystem.h"
-float BudgetAllocationSystem::allocateUtilitiesFunds(float aRequiredExpenditure) {
-	throw "Not yet implemented";
+
+// Public Service Buildings
+double allocateMedicalCenterFunds(double availableFunds)
+{
+    std::cout << "🏥 Medical Center: ";
+    return availableFunds * 0.20; // 20% for Medical Center
 }
 
-float BudgetAllocationSystem::allocateTransportFunds(float aRequiredExpenditure) {
-	throw "Not yet implemented";
+double allocateSchoolFunds(double availableFunds)
+{
+    std::cout << "📚 School: ";
+    return availableFunds * 0.10; // 10% for School
 }
 
-float BudgetAllocationSystem::allocateHealthcareFunds(float aRequiredExpenditure) {
-	throw "Not yet implemented";
+double allocatePoliceStationFunds(double availableFunds)
+{
+    std::cout << "🚔 Police Station: ";
+    return availableFunds * 0.10; // 10% for Police Station
 }
 
-float BudgetAllocationSystem::allocateEducationFunds(float aRequiredExpenditure) {
-	throw "Not yet implemented";
+// Utilities
+double allocatePowerPlantFunds(double availableFunds)
+{
+    std::cout << "⚡ Power Plant: ";
+    return availableFunds * 0.15; // 15% for Power Plant
 }
 
-float BudgetAllocationSystem::allocateSecurityServiceFunds(float aRequiredExpenditure) {
-	throw "Not yet implemented";
+double allocateWaterTowerFunds(double availableFunds)
+{
+    std::cout << "🚰 Water Tower: ";
+    return availableFunds * 0.10; // 10% for Water Tower
 }
 
-float BudgetAllocationSystem::allocateRecreationFunds(float aRequiredExpenditure) {
-	throw "Not yet implemented";
+double allocateWastePlantFunds(double availableFunds)
+{
+    std::cout << "♻️ Waste Plant: ";
+    return availableFunds * 0.05; // 5% for Waste Plant
 }
 
-void BudgetAllocationSystem::setAvailableBudget(float aAvailableBudget) {
-	this->_availableBudget = aAvailableBudget;
+double allocateSewagePipeFunds(double availableFunds)
+{
+    std::cout << "🚽 Sewage Pipe: ";
+    return availableFunds * 0.05; // 5% for Sewage Pipe
 }
 
+// Transport Infrastructure
+double allocateRoadsFunds(double availableFunds)
+{
+    std::cout << "🛣️ Roads: ";
+    return availableFunds * 0.10; // 10% for Roads
+}
+
+double allocateAirportsFunds(double availableFunds)
+{
+    std::cout << "✈️ Airports: ";
+    return availableFunds * 0.05; // 5% for Airports
+}
+
+double allocateTrainStationsFunds(double availableFunds)
+{
+    std::cout << "🚆 Train Stations: ";
+    return availableFunds * 0.05; // 5% for Train Stations
+}
+
+// Landmark Buildings
+double allocateParkFunds(double availableFunds)
+{
+    std::cout << "🌳 Park: ";
+    return availableFunds * 0.05; // 5% for Park
+}
+
+double allocateMonumentFunds(double availableFunds)
+{
+    std::cout << "⛲ Monument: ";
+    return availableFunds * 0.025; // 2.5% for Monument
+}
+
+double allocateCulturalCenterFunds(double availableFunds)
+{
+    std::cout << "🎭 Cultural Center: ";
+    return availableFunds * 0.025; // 2.5% for Cultural Center
+}
