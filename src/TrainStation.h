@@ -1,28 +1,28 @@
-#include <exception>
-#include <string>
-using namespace std;
-
-#ifndef __TrainStation_h__
-#define __TrainStation_h__
+#ifndef TRAINSTATION_H
+#define TRAINSTATION_H
 
 #include "Stops.h"
+/**
+ * @file TrainStation.h
+ * 
+ * @brief This file declares the TrainStation class
+ */
+class TrainStation : public Stops {
 
-// class Stops;
-class TrainStation;
+public:
+	float ticketCost;
 
-class TrainStation: public Stops
-{
-	private: float _ticketCost;
+	TrainStation(std::string name, float length);
 
-	public: void trainStation(string aName, float aLength);
+	char getSymbol();
 
-	public: string getSymbol();
+	float getDistance();
 
-	public: float getDistance();
+	void setTicketCost(float cost);
 
-	public: void setTicketCost(float aCost);
+	float getTicket();
 
-	public: float getTicket();
+	std::string getName();
 };
 
 #endif

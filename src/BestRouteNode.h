@@ -1,29 +1,26 @@
-#include <exception>
-using namespace std;
+#ifndef BESTROUTENODE_H
+#define BESTROUTENODE_H
 
-#ifndef __BestRouteNode_h__
-#define __BestRouteNode_h__
-
-// #include "RouteMap.h"
-// #include "Stops.h"
 #include "RouteNode.h"
+/**
+ * @class BestRouteNode
+ * @brief A node in the route tree that keeps track of the best route
+ *
+ * The BestRouteNode class is a subclass of RouteNode that keeps track of the best route to add
+ * Specific stops to the route and calculate the distance based in stops.
+ * 
+ */
+class BestRouteNode : public RouteNode {
+public:
+	BestRouteNode();
 
-class RouteMap;
-class Stops;
-// class RouteNode;
-class BestRouteNode;
+	void add(Stops* data);
 
-class BestRouteNode: public RouteNode
-{
-	public: RouteMap* _unnamed_RouteMap_;
+	float getDistance();
 
-	public: void bestRouteNode(Stops* aData);
+	Stops* getData();
 
-	public: void travel(Stops* aDest);
-
-	public: void add(Stops* aData);
-
-	public: float getDistance();
+	RouteNode* travel();
 };
 
 #endif

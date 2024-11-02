@@ -1,39 +1,43 @@
-#include <exception>
-using namespace std;
+#ifndef TRANSPORT_H
+#define TRANSPORT_H
 
-#ifndef __Transport_h__
-#define __Transport_h__
+#include <iostream>
+#include "Stops.h"
+#include <sstream>
 
-// #include "TravelManager.h"
-// #include "Citizen.h"
-// #include "RouteMap.h"
-// #include "Stops.h"
-
-class TravelManager;
-class Citizen;
-class RouteMap;
-class Stops;
-class Transport;
-
+#include "RouteNode.h"
+#include "MapIterator.h"
+/**
+ * @file Transport.h
+ * 
+ * @brief This file declares the Transport class interface
+ */
 class Transport
 {
-	protected: RouteMap* _routes;
-	protected: int _capacity;
-	public: TravelManager* _unnamed_TravelManager_;
-	public: Citizen* _unnamed_Citizen_;
-	public: RouteMap* _unnamed_RouteMap_;
+protected:
+    RouteMap* _routes;
+    int _capacity;
+public:
+    TravelManager* _unnamed_TravelManager_;
+    Citizen* _unnamed_Citizen_;
+    RouteMap* _unnamed_RouteMap_;
 
-	public: virtual void travel(Stops* aDestination) = 0;
+    virtual void setCapacity(int capacity) = 0;
 
-	public: int getCapacity();
+    virtual void setNumPassenger(int pass) = 0;
 
-	public: float getCargoWeight();
+    virtual void setCargoWeight(float weight) = 0;
 
-	public: bool isReachable(Stops* aDestination);
+    virtual float travel(Stops* stop, RouteNode* head, bool best = 0) = 0;
 
-	public: void bestRoute(Stops* aDest);
+    virtual std::string getType() = 0;
 
-	public: virtual ~Transport() = default;
+    virtual float getWeight() = 0;
+
+    virtual int getPassengers() = 0;
+
+    virtual ~Transport() = default;
 };
 
 #endif
+

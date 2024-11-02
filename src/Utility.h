@@ -1,48 +1,51 @@
-#include <exception>
-#include <string>
-using namespace std;
+#ifndef UTILITY_H
+#define UTILITY_H
 
-#ifndef __Utility_h__
-#define __Utility_h__
+#include <iostream>
+#include "UtilityManager.h"
+class EnergySource;
+class Utility {
+protected:
+	std::string status;
+	//Buildings* buildinglist;
+	UtilityManager* manager;
 
-// #include "UtilityManager.h"
-// #include "City.h"
-// #include "Command.h"
+public:
+	virtual std::string getStatus();
 
-class UtilityManager;
-class City;
-class Command;
-class Utility;
+	virtual void setFuel(EnergySource* fuel);
 
-__abstract class Utility
-{
-	protected: string _status;
-	protected: Buildings* _buildinglist;
-	protected: UtilityManager* _manager;
-	public: UtilityManager* _unnamed_UtilityManager_;
-	public: City* _unnamed_City_;
+	virtual void executeOperation() = 0;
 
-	public: string getStatus();
+	virtual void setmaxWaste(int max);
 
-	public: virtual void executeOperation() = 0;
+	virtual void repairUtility() = 0;
 
-	public: virtual void repairUtility() = 0;
+	virtual std::string getEnergyType();
 
-	public: string getEnergyType();
+	virtual void setProcessCapacity(int pro);
 
-	public: int getCurrentSupply();
+	virtual int getCurrentSupply();
 
-	public: int getCurrentLoad();
+	virtual int getCurrentLoad();
 
-	public: void undoChange();
+	virtual void undoChange() = 0;
 
-	public: void pauseOperation();
+	virtual void setMaxWatts(float max);
 
-	public: void addCommand(Command* aCom);
+	virtual int getCurrentOutput();
 
-	public: virtual ~Utility();
+	virtual void setMaxGallons(float max);
 
-	public: Utility();
+	virtual void pauseOperation() = 0;
+
+	virtual void addCommand(Command* com) = 0;
+
+	virtual float getMaxWatts();
+
+	virtual std::string getUtilityType() = 0;
+
+	virtual ~Utility();
 };
 
 #endif

@@ -1,30 +1,43 @@
-#include <exception>
-using namespace std;
+#ifndef TRAVELMANAGER_H
+#define TRAVELMANAGER_H
 
-#ifndef __TravelManager_h__
-#define __TravelManager_h__
+#include "PlaneBuilder.h"
+#include "TrainBuilder.h"
+#include "VehicleBuilder.h"
 
-// #include "Transport.h"
-// #include "City.h"
-// #include "Stops.h"
+#include "AccesibleRoute.h"
+#include "BestRouteNode.h"
+/**
+ * @file TravelManager.h
+ * 
+ * @brief This file declares the TravelManager class
+ */
+class TravelManager {
 
-class Transport;
-class City;
-class Stops;
-class TravelManager;
+private:
+	TransportBuilder* builder;
+	float distanceTravelled;
+	RouteNode* route;
+	Transport* transport;
 
-class TravelManager
-{
-	private: Transport* _transport;
-	public: City* _unnamed_City_;
-	public: Transport* _unnamed_Transport_;
-	public: Stops* _unnamed_Stops_;
+	void constructCargo(int capacity, float weight);
 
-	public: void travelManager();
+	void constructPassenger(int capacity, int passengers);
 
-	public: bool travel(Stops* aDestination, int aTransType, bool aCargo);
+public:
+	void Travel(int capacity, Stops* destination, float weight = 0);
 
-	public: ~TravelManager();
+	void addStops(Stops* stop);
+
+	~TravelManager();
+
+	TravelManager();
+
+	void BestRoute(int capacity, Stops* destination, float weight = 0);
+
+	void Travel(Transport* trans, Stops* destination);
+
+	void BestRoute(Transport* trans, Stops* destination);
 };
 
 #endif

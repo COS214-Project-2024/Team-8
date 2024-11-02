@@ -1,40 +1,33 @@
-#include <exception>
-#include <string>
-using namespace std;
+#ifndef SEWAGESYSTEMS_H
+#define SEWAGESYSTEMS_H
 
-#ifndef __SewageSystems_h__
-#define __SewageSystems_h__
-
-// #include "Command.h"
 #include "Utility.h"
+class SewageSystems : public Utility {
+private:
+	int maxWaste;
+	float blockagepercentage;
+	int currentload;
 
-class Command;
-// class Utility;
-class SewageSystems;
+public:
+	SewageSystems(int curloat);
 
-class SewageSystems: public Utility
-{
-	private: int _maxWaste;
-	private: float _blockagepercentage;
-	private: int _currentload;
+	std::string getStatus();
 
-	public: void sewageSystems(int aCurloat);
+	void repairUtility();
 
-	public: string getStatus();
+	void executeOperation();
 
-	public: void repareUtility();
+	int getCurrentLoad();
 
-	public: void executeOperation();
+	void pauseOperation();
 
-	public: int getCurrentLoad();
+	void addCommand(Command* com);
 
-	public: void pauseOperation();
+	void setmaxWaste(int max);
 
-	public: void addCommand(Command* aCom);
+	std::string getUtilityType();
 
-	public: void setmaxWaste(int aMax);
-
-	public: virtual void repairUtility();
+	void undoChange();
 };
 
 #endif

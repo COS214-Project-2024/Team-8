@@ -1,21 +1,15 @@
-#include <exception>
-#include <string>
-using namespace std;
+#ifndef ENERGYSOURCE_H
+#define ENERGYSOURCE_H
 
-#ifndef __EnergySource_h__
-#define __EnergySource_h__
+#include <iostream>
+class EnergySource {
+protected:
+	float energyOutput;
 
-class EnergySource;
+public:
+	virtual float getEnergyOutput() = 0;
 
-__abstract class EnergySource
-{
-	protected: float _energyOutput;
-
-	public: EnergySource();
-
-	public: float getEnergyOutput();
-
-	public: virtual string getFuelType() = 0;
+	virtual std::string getFuelType() = 0;
 };
 
 #endif

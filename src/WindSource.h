@@ -1,23 +1,14 @@
-#include <exception>
-#include <string>
-using namespace std;
-
-#ifndef __WindSource_h__
-#define __WindSource_h__
+#ifndef WINDSOURCE_H
+#define WINDSOURCE_H
 
 #include "EnergySource.h"
+class WindSource : public EnergySource {
+public:
+	WindSource(int output);
 
-// class EnergySource;
-class WindSource;
+	float getEnergyOutput();
 
-class WindSource: public EnergySource
-{
-
-	public: void windSource(int aI);
-
-	public: float getEnergyOutput();
-
-	public: string getFuelType();
+	std::string getFuelType();
 };
 
 #endif

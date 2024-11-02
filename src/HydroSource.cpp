@@ -1,19 +1,13 @@
-#include <exception>
-#include <string>
-using namespace std;
-
 #include "HydroSource.h"
-#include "EnergySource.h"
 
-void HydroSource::hydroSource(int aI) {
-	throw "Not yet implemented";
+HydroSource::HydroSource(int output) {
+	this->energyOutput = output;
 }
 
 float HydroSource::getEnergyOutput() {
-	throw "Not yet implemented";
+	return energyOutput;
 }
 
-string HydroSource::getFuelType() {
-	throw "Not yet implemented";
+std::string HydroSource::getFuelType() {
+	return "Hydro";
 }
-

@@ -1,20 +1,11 @@
-#include <exception>
-using namespace std;
+#ifndef NUCLEARFACTORY_H
+#define NUCLEARFACTORY_H
 
-#ifndef __NuclearFactory_h__
-#define __NuclearFactory_h__
-
-// #include "EnergySource.h"
 #include "EnergyFactory.h"
-
-class EnergySource;
-// class EnergyFactory;
-class NuclearFactory;
-
-class NuclearFactory: public EnergyFactory
-{
-
-	public: EnergySource* createEnergySource(int aI);
+#include "NuclearSource.h"
+class NuclearFactory : public EnergyFactory {
+public:
+	EnergySource* createEnergySource(int output);
 };
 
 #endif

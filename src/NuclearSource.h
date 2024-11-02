@@ -1,23 +1,14 @@
-#include <exception>
-#include <string>
-using namespace std;
-
-#ifndef __NuclearSource_h__
-#define __NuclearSource_h__
+#ifndef NUCLEARSOURCE_H
+#define NUCLEARSOURCE_H
 
 #include "EnergySource.h"
+class NuclearSource : public EnergySource {
+public:
+	NuclearSource(int output);
 
-// class EnergySource;
-class NuclearSource;
+	float getEnergyOutput();
 
-class NuclearSource: public EnergySource
-{
-
-	public: void nuclearSource(int aI);
-
-	public: float getEnergyOutput();
-
-	public: string getFuelType();
+	std::string getFuelType();
 };
 
 #endif

@@ -1,29 +1,23 @@
-#include <exception>
-using namespace std;
+#ifndef ACCESIBLEROUTE_H
+#define ACCESIBLEROUTE_H
 
-#ifndef __AccessibleRoute_h__
-#define __AccessibleRoute_h__
-
-// #include "RouteMap.h"
-// #include "Stops.h"
 #include "RouteNode.h"
+/**
+ * @file AccesibleRoute.h
+ * 
+ * @brief This is the AccesibleRoute class header file
+ */
+class AccesibleRoute : public RouteNode {
+public:
+	AccesibleRoute();
 
-class RouteMap;
-class Stops;
-// class RouteNode;
-class AccessibleRoute;
+	void add(Stops* data);
 
-class AccessibleRoute: public RouteNode
-{
-	public: RouteMap* _head_:_RouteNode_;
+	float getDistance();
 
-	public: void AccessibleRoute(Stops* aData);
+	Stops* getData();
 
-	public: void travel(Stops* aDest);
-
-	public: void add(Stops* aData);
-
-	public: float getDistance();
+	RouteNode* travel();
 };
 
 #endif

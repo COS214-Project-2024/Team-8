@@ -1,21 +1,10 @@
-#include <exception>
-using namespace std;
+#ifndef ENERGYFACTORY_H
+#define ENERGYFACTORY_H
 
-#ifndef __EnergyFactory_h__
-#define __EnergyFactory_h__
-
-// #include "PowerPlantBuilder.h"
-// #include "EnergySource.h"
-
-class PowerPlantBuilder;
-class EnergySource;
-class EnergyFactory;
-
-__abstract class EnergyFactory
-{
-	public: PowerPlantBuilder* _unnamed_PowerPlantBuilder_;
-
-	protected: virtual EnergySource* createEnergySource(int aI) = 0;
+#include "EnergySource.h"
+class EnergyFactory {
+public:
+	virtual EnergySource* createEnergySource(int output) = 0;
 };
 
 #endif

@@ -1,28 +1,28 @@
-#include <exception>
-using namespace std;
+#ifndef ROUTENODE_H
+#define ROUTENODE_H
 
-#ifndef __RouteNode_h__
-#define __RouteNode_h__
+#include "Stops.h"
+/**
+ * @file RouteNode.h
+ * 
+ * @brief This file implements the RouteNode class
+ */
 
-// #include "Stops.h"
+class RouteNode {
+protected:
+	Stops* data = nullptr;
+	RouteNode* successor = nullptr;
 
-class Stops;
-class RouteNode;
+public:
+	virtual void add(Stops* data) = 0;
 
-__abstract class RouteNode
-{
-	protected: Stops* _data;
-	protected: RouteNode* _successor;
+	virtual float getDistance() = 0;
 
-	public: void routeNode();
+	virtual ~RouteNode();
 
-	public: virtual void travel(Stops* aDestination) = 0;
+	virtual Stops* getData() = 0;
 
-	public: void add(Stops* aData);
-
-	public: float getDistance();
-
-	public: virtual ~RouteNode();
+	virtual RouteNode* travel() = 0;
 };
 
 #endif

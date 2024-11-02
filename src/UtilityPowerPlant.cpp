@@ -1,48 +1,63 @@
-#include <exception>
-#include <string>
-using namespace std;
-
 #include "UtilityPowerPlant.h"
-#include "Command.h"
-#include "EnergySource.h"
-#include "Utility.h"
 
-UtilityPowerPlant::UtilityPowerPlant(int aOutput) {
+UtilityPowerPlant::UtilityPowerPlant(int output) {
+	this->currentOutput = output;
+	this->maximumWatts = output;
+	this->status = "Operational";
+	manager = new UtilityManager();
+	//fuel construction done outside class
 }
 
-string UtilityPowerPlant::getEnergyType() {
-	throw "Not yet implemented";
+std::string UtilityPowerPlant::getEnergyType() {
+	return fuel->getFuelType();
 }
 
 void UtilityPowerPlant::executeOperation() {
-	throw "Not yet implemented";
-}
-
-void UtilityPowerPlant::repareUtility() {
-	throw "Not yet implemented";
-}
-
-string UtilityPowerPlant::getStatus() {
-	throw "Not yet implemented";
-}
-
-void UtilityPowerPlant::pauseOperation() {
-	throw "Not yet implemented";
-}
-
-void UtilityPowerPlant::addCommand(Command* aCom) {
-	throw "Not yet implemented";
-}
-
-void UtilityPowerPlant::setMaxWatts(float aMax) {
-	throw "Not yet implemented";
-}
-
-void UtilityPowerPlant::setFuel(EnergySource* aFuel) {
-	throw "Not yet implemented";
+	std::cout << "Power Plant is running" << std::endl;
+	this->status = "Operational";
 }
 
 void UtilityPowerPlant::repairUtility() {
-	throw "Not yet implemented";
+	std::cout << "Power Plant is being repaired" << std::endl;
+	this->status = "Repairing";
 }
 
+void UtilityPowerPlant::undoChange() {
+	manager->undoCommand();
+}
+
+std::string UtilityPowerPlant::getStatus() {
+	return this->status;
+}
+
+void UtilityPowerPlant::pauseOperation() {
+	std::cout << "Power Plant is paused" << std::endl;
+	this->status = "Paused";
+}
+
+void UtilityPowerPlant::addCommand(Command* com) {
+	manager->addCommand(com);
+}
+
+void UtilityPowerPlant::setMaxWatts(float max) {
+	this->maximumWatts = max;
+}
+
+void UtilityPowerPlant::setFuel(EnergySource* fuel) {
+	if(fuel != nullptr) {
+		delete fuel;
+	}
+	fuel = fuel;
+}
+
+float UtilityPowerPlant::getMaxWatts() {
+	return this->maximumWatts;
+}
+
+int UtilityPowerPlant::getCurrentOutput() {
+	return this->currentOutput;
+}
+
+std::string UtilityPowerPlant::getUtilityType() {
+	return "PowerPlant";
+}

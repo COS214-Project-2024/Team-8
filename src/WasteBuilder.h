@@ -1,28 +1,17 @@
-#include <exception>
-using namespace std;
+#ifndef WASTEBUILDER_H
+#define WASTEBUILDER_H
 
-#ifndef __WasteBuilder_h__
-#define __WasteBuilder_h__
-
-// #include "WasteManagement.h"
-// #include "Command.h"
 #include "UtilityBuilder.h"
+#include "WasteManagement.h"
+class WasteBuilder : public UtilityBuilder {
+public:
+	WasteManagement* getWasteManager();
 
-class WasteManagement;
-class Command;
-// class UtilityBuilder;
-class WasteBuilder;
+	WasteBuilder(int curload);
 
-class WasteBuilder: public UtilityBuilder
-{
+	void addCommand(Command* com);
 
-	public: WasteManagement* getWasteManager();
-
-	public: WasteBuilder(int aCurload);
-
-	public: void addCommand(Command* aCom);
-
-	public: void setCapacity(int aMax);
+	void setCapacity(int max);
 };
 
 #endif
