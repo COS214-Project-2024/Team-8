@@ -1,4 +1,3 @@
-// Government.h
 /**
  * @file Government.h
  * @brief Government class header implementing Observer and Command patterns
@@ -37,7 +36,7 @@ private:
 public:
     /** @brief Default constructor */
     Government();
-  
+
     /** @brief Parameterized  constructor */
     Government(FinanceDepartment *financeDepartment);
 
@@ -100,11 +99,12 @@ public:
      * @return Amount allocated for utilities
      */
     double requestAllocationOfUtilitiesFunds();
+
     /**
-     * @brief Allocates funds for healthcare
-     * @return Amount allocated for healthcare
+     * @brief Allocates funds for PublicServiceBuildings such as HealthCare ,Education and Police Station
+     * @return Amount allocated for PublicServiceBuildings such as HealthCare ,Education and Police Station
      */
-    float requestAllocationOfHealthcareFunds();
+    double requestAllocationOfPublicServiceBuildingsFunds();
     
     /**
      * @brief Allocates funds for PublicServiceBuildings such as HealthCare ,Education and Police Station
