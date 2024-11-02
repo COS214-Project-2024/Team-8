@@ -1,17 +1,15 @@
-#include <exception>
-#include <vector>
 using namespace std;
-
+#include <iostream>
 #include "CommercialTaxationSystem.h"
-void CommercialTaxationSystem::setCommercialTaxRates(float aBusinessTaxRate, float aSalesTaxRate) {
-	throw "Not yet implemented";
+
+double CommercialTaxationSystem::collectBusinessTax(double businessTaxRate, double businessProfit) {
+    double totalBusinessTaxes = businessTaxRate * businessProfit;
+    cout << "💰 Total Business Taxes Collected: R " << totalBusinessTaxes << endl;
+    return totalBusinessTaxes;
 }
 
-void CommercialTaxationSystem::collectBusinessTax(vector<> aBusinessProfits, vector<> aTotalBusinessTaxes) {
-	throw "Not yet implemented";
+double CommercialTaxationSystem::collectSalesTax(double salesTaxRate, double businessProfit) {
+    double totalSalesTaxes = salesTaxRate * businessProfit;
+    cout << "🛒 Total Sales Taxes Collected: R " << totalSalesTaxes << endl;
+    return totalSalesTaxes;
 }
-
-void CommercialTaxationSystem::collectSalesTax(vector<> aBusinessProfits) {
-	throw "Not yet implemented";
-}
-
