@@ -1,37 +1,48 @@
-#include <exception>
-using namespace std;
+#ifndef POWERPLANT_H
+#define POWERPLANT_H
 
-#ifndef __PowerPlant_h__
-#define __PowerPlant_h__
+class PowerPlant : IndustrialBuilding {
 
-#include "State.h"
+protected:
+	string buildingName;
+	string buildingType;
+	Citizen* listOfCitizens;
+	double maintenanceCost;
+	int powerReq;
+	ResourceMediator* resources;
+	int sewageCost;
+protected:
+	State* state;
+	int waterReq;
 
-class State;
-class PowerPlant;
+public:
+	virtual bool cleanSewage() = 0;
 
-class PowerPlant
-{
-	private: State _state;
-	private: int _capacity;
-	private: int _powerReq;
-	private: int _waterReq;
-	private: double _maintenanceCost;
-	private: int _sewageCost;
-	private: int _waste;
+	virtual bool cleanWaste() = 0;
 
-	public: void requestState();
+	virtual string getBuildingType() = 0;
 
-	public: int getCapacity();
+	virtual int getJobsCreated() = 0;
 
-	public: int getPowerReq();
+	virtual double getMaintenanceCost() = 0;
 
-	public: int getWaterReq();
+	virtual string getName() = 0;
 
-	public: int getSewageCost();
+	virtual int getPowerReq() = 0;
 
-	public: int getWasteCost();
+	virtual int getSewageCost() = 0;
 
-	public: int getMaintenaceCost();
+	virtual int getWaterCost() = 0;
+
+	virtual void operation() = 0;
+
+	virtual bool payMaintenance() = 0;
+
+	virtual bool recievePower() = 0;
+
+	virtual bool recieveWater() = 0;
+
+	virtual void requestState() = 0;
 };
 
 #endif

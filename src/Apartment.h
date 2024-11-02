@@ -1,40 +1,43 @@
-#include <exception>
+#include <string>
 using namespace std;
 
-#ifndef __Apartment_h__
-#define __Apartment_h__
+#ifndef APARTMENT_H
+#define APARTMENT_H
 
-#include "State.h"
+class Apartment : ResidentialBuilding {
 
-class State;
-class Apartment;
+// Attributes
+    string buildingName;
+    string buildingType;
+    int capacity;
+    Citizen* listOfCitizens;         // Pointer to a list of citizens
+    double maintenanceCost;
+    int powerReq;
+    int waterReq;
+    int sewageCost;
+    
+    ResourceMediator* resources;     // Mediator for managing resources
+    State* state;                    // Current state of the building
 
-class Apartment
-{
-	private: State _state;
-	private: int _capacity;
-	private: Citizen* _listOfResidents;
-	private: int _powerReq;
-	private: int _waterReq;
-	private: double _maintenanceCost;
-	private: int _sewageCost;
-	private: int _waste;
+public:
+    // Virtual Destructor
+    virtual ~Building() = default;
 
-	public: void requestState();
-
-	public: int getCapacity();
-
-	public: Citizen* getListOfResidents();
-
-	public: double getMaiantenanceCost();
-
-	public: int getPowerReq();
-
-	public: int getWaterReq();
-
-	public: int getSewageCost();
-
-	public: int getWasteCost();
+    // Pure Virtual Functions - Must be implemented by derived classes
+    virtual bool cleanSewage() = 0;
+    virtual bool cleanWaste() = 0;
+    virtual string getBuildingType() = 0;
+    virtual int getJobsCreated() = 0;
+    virtual double getMaintenanceCost() = 0;
+    virtual string getName() = 0;
+    virtual int getPowerReq() = 0;
+    virtual int getSewageCost() = 0;
+    virtual int getWaterCost() = 0;
+    virtual void operation() = 0;
+    virtual bool payMaintenance() = 0;
+    virtual bool receivePower() = 0;
+    virtual bool receiveWater() = 0;
+    virtual void requestState() = 0;
 };
 
 #endif

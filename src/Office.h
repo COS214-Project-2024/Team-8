@@ -1,40 +1,57 @@
-#include <exception>
-using namespace std;
+#ifndef OFFICE_H
+#define OFFICE_H
 
-#ifndef __Office_h__
-#define __Office_h__
+class Office : CommercialBuilding {
 
-#include "State.h"
+protected:
+	string buildingName;
+	string buildingType;
+	int employment;
+	Citizen* listOfCitizens;
+	double maintenanceCost;
+	int powerReq;
+	float profit;
+	ResourceMediator* resources;
+	float sales;
+	int sewageCost;
+protected:
+	State* state;
+	int waterReq;
 
-class State;
-class Office;
+public:
+	virtual bool cleanSewage() = 0;
 
-class Office
-{
-	private: State _state;
-	private: double _income;
-	private: int _employment;
-	private: int _powerReq;
-	private: int _waterReq;
-	private: double _maintenanceCost;
-	private: int _sewageCost;
-	private: int _waste;
+	virtual bool cleanWaste() = 0;
 
-	public: void requestState();
+	virtual string getBuildingType() = 0;
 
-	public: int getIncome();
+	virtual int getJobsCreated() = 0;
 
-	public: int getEmployment();
+	float getlSales();
 
-	public: double getMaintenanceCost();
+	virtual double getMaintenanceCost() = 0;
 
-	public: int getPowerReq();
+	virtual string getName() = 0;
 
-	public: int getWatereReq();
+	virtual int getPowerReq() = 0;
 
-	public: int getSewageCost();
+	float getProfit();
 
-	public: int getWasteCost();
+	virtual int getSewageCost() = 0;
+
+	virtual int getWaterCost() = 0;
+
+	virtual void operation() = 0;
+
+	void operation2();
+
+	virtual bool payMaintenance() = 0;
+
+	virtual bool recievePower() = 0;
+
+	virtual bool recieveWater() = 0;
+
+	virtual void requestState() = 0;
 };
 
 #endif

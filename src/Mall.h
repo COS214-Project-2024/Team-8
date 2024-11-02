@@ -1,56 +1,57 @@
-#include <exception>
-using namespace std;
+#ifndef MALL_H
+#define MALL_H
 
-#ifndef __Mall_h__
-#define __Mall_h__
+class Mall : CommercialBuilding {
 
-#include "State.h"
-#include "CommComponent.h"
+protected:
+	string buildingName;
+	string buildingType;
+	int employment;
+	Citizen* listOfCitizens;
+	double maintenanceCost;
+	int powerReq;
+	float profit;
+	ResourceMediator* resources;
+	float sales;
+	int sewageCost;
+protected:
+	State* state;
+	int waterReq;
 
-class State;
-// class CommComponent;
-class Mall;
+public:
+	virtual bool cleanSewage() = 0;
 
-class Mall: public CommComponent
-{
-	private: State _state;
-	private: double _income;
-	private: int _employment;
-	private: int _powerReq;
-	private: int _waterReq;
-	private: double _maintenanceCost;
-	private: int _sewageCost;
-	private: int _waste;
-	private: CommComponent _children;
-	public: CommComponent* _unnamed_CommComponent_;
+	virtual bool cleanWaste() = 0;
 
-	public: void requestState();
+	virtual string getBuildingType() = 0;
 
-	public: int getIncome();
+	virtual int getJobsCreated() = 0;
 
-	public: int getEmployment();
+	float getlSales();
 
-	public: double getMaintenanceCost();
+	virtual double getMaintenanceCost() = 0;
 
-	public: int getWaterReq();
+	virtual string getName() = 0;
 
-	public: int getPowerReq();
+	virtual int getPowerReq() = 0;
 
-	public: int getSewageCost();
+	float getProfit();
 
-	public: int getWasteCost();
+	virtual int getSewageCost() = 0;
 
-	public: void add(CommComponent aParam);
+	virtual int getWaterCost() = 0;
 
-	public: void remove(CommComponent aParam);
+	virtual void operation() = 0;
 
-	public: CommComponent getChild();
+	void operation2();
 
-	public: virtual void add(EstateComponent aParam);
+	virtual bool payMaintenance() = 0;
 
-	public: virtual void remove(EstateComponent aParam);
+	virtual bool recievePower() = 0;
 
-	public: virtual void getChild(EstateComponent aParam);
+	virtual bool recieveWater() = 0;
+
+	virtual void requestState() = 0;
 };
 
 #endif

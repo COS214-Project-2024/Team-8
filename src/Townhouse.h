@@ -1,11 +1,12 @@
-#ifndef MEDICALCENTER_H
-#define MEDICALCENTER_H
+#ifndef TOWNHOUSE_H
+#define TOWNHOUSE_H
 
-class MedicalCenter : PublicServiceBuilding {
+class Townhouse : ResidentialBuilding {
 
 protected:
 	string buildingName;
 	string buildingType;
+	int capacity;
 	Citizen* listOfCitizens;
 	double maintenanceCost;
 	int powerReq;
