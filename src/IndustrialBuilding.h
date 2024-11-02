@@ -1,36 +1,59 @@
-#include <exception>
+#include "Buildings.h"
+#include <string>
 using namespace std;
 
-#ifndef __IndustrialBuilding_h__
-#define __IndustrialBuilding_h__
+#ifndef INDUSTRIALBUILDING_H
+#define INDUSTRIALBUILDING_H
 
-#include "State.h"
-#include "Buildings.h"
-
+class Citizen;
+class ResourceMediator;
 class State;
-// class Buildings;
-class IndustrialBuilding;
 
-class IndustrialBuilding: public Buildings
-{
-	private: State _state;
-	private: int _powerReq;
-	private: int _waterReq;
-	private: double _maintenanceCost;
-	private: int _sewageCost;
-	private: int _waste;
 
-	public: void requestState();
+class IndustrialBuilding : Buildings {
 
-	public: double getMaintenanceCost();
+protected:
+    // Basic building details
+    string buildingName;
+    string buildingType;
+    Citizen* listOfCitizens;
 
-	public: int getPowerReq();
+    // Resource and cost requirements
+    double maintenanceCost;
+    int powerReq;
+    int waterReq;
+    int sewageCost;
+    ResourceMediator* resources;
 
-	public: int getSewageCost();
+    // Business metrics
+    float sales;
+    float profit;
+    int employment;
 
-	public: int getWaterCost();
+    // Current building state
+    State* state;
 
-	public: int getWasteCost();
+public:
+    // Pure virtual functions for building operations
+    virtual bool cleanSewage() = 0;
+    virtual bool cleanWaste() = 0;
+    virtual string getBuildingType() = 0;
+    virtual int getJobsCreated() = 0;
+    virtual double getMaintenanceCost() = 0;
+    virtual string getName() = 0;
+    virtual int getPowerReq() = 0;
+    virtual int getSewageCost() = 0;
+    virtual int getWaterCost() = 0;
+    virtual void operation() = 0;
+    virtual bool payMaintenance() = 0;
+    virtual bool receivePower() = 0;
+    virtual bool receiveWater() = 0;
+    virtual void requestState() = 0;
+
+    // Additional functions
+    float getSales();
+    void operation2();
+    float getProfit();
 };
 
 #endif
