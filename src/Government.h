@@ -13,7 +13,7 @@
 #include <string>
 #include "Citizen.h"
 #include "Command.h"
-#include <FinanceDepartment.h>
+#include "FinanceDepartment.h"
 
 
 /**
