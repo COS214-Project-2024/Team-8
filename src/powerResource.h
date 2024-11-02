@@ -1,18 +1,20 @@
-#include <exception>
-using namespace std;
+#ifndef POWERRESOURCE_H
+#define POWERRESOURCE_H
 
-#ifndef __powerResource_h__
-#define __powerResource_h__
+#include "Resource.h"
 
-class powerResource;
+class powerResource : public Resource {
 
-class powerResource
-{
-	private: int _availablePower;
+    private:
+        int availablePower;
 
-	public: bool givePower(int aUnits);
-
-	public: void recievePower(int aUnits);
+    public:
+        powerResource();
+        bool giveResource(float units) override;
+        void receiveResource() override;
+        float getAvailableAmount() override;
+        //void outOfResources() override;
+        ~powerResource() override = default;
 };
 
-#endif
+#endif // POWERRESOURCE_H
