@@ -1,6 +1,6 @@
 /**
  * @file Government.h
- * @brief Government class header implementing Observer and Chain of Responsibility patterns
+ * @brief Government class header implementing Observer and Command patterns
  * @author Design Wits
  * @date 2024-04-29
  */
@@ -13,8 +13,7 @@
 #include <string>
 #include "Citizen.h"
 #include "Command.h"
-#include <FinanceDepartment.h>
-
+#include "FinanceDepartment.h"
 
 /**
  * @class Government
@@ -100,6 +99,12 @@ public:
      * @return Amount allocated for utilities
      */
     double requestAllocationOfUtilitiesFunds();
+
+    /**
+     * @brief Allocates funds for PublicServiceBuildings such as HealthCare ,Education and Police Station
+     * @return Amount allocated for PublicServiceBuildings such as HealthCare ,Education and Police Station
+     */
+    double requestAllocationOfPublicServiceBuildingsFunds();
     
     /**
      * @brief Allocates funds for PublicServiceBuildings such as HealthCare ,Education and Police Station
@@ -111,8 +116,14 @@ public:
      * @brief Allocates funds for transport
      * @return Amount allocated for transport
      */
-    double requestAllocationOfTransportFunds();
+
+     double requestAllocationOfTransportFunds();
     
+    /**
+     * @brief Allocates funds for education
+     * @return Amount allocated for education
+     */
+    float requestAllocationOfEducationFunds();
 
     
     /**
@@ -138,7 +149,7 @@ public:
      * @param b Current revenue amount
      */
     void setTotalRevenue(double b);
-    
+
     /**
      * @brief Gets the total revenue
      * @return Total revenue amount
