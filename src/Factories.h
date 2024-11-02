@@ -1,37 +1,59 @@
-#include <exception>
+#include "IndustrialBuilding.h"
+#include <string>
+
 using namespace std;
 
-#ifndef __Factories_h__
-#define __Factories_h__
+#ifndef FACTORIES_H
+#define FACTORIES_H
 
-#include "State.h"
+class Factories : IndustrialBuilding {
 
-class State;
-class Factories;
+protected:
+    // Basic building details
+    string buildingName;
+    string buildingType;
+    Citizen* listOfCitizens;
 
-class Factories
-{
-	private: State _state;
-	private: int _capacity;
-	private: int _powerReq;
-	private: int _waterReq;
-	private: double _maintenanceCost;
-	private: int _sewageCost;
-	private: int _waste;
+    // Resource and cost requirements
+    double maintenanceCost;
+    int powerReq;
+    int waterReq;
+	int waste;
+    int sewageCost;
+    ResourceMediator* resources;
 
-	public: void requestState();
+    // Business metrics
+    float sales;
+    float profit;
+    int employment;
 
-	public: int getCapacity();
+    // Current building state
+    State* state;
 
-	public: int getPowerReq();
+public:
+    // Pure virtual functions for building operations
+	Factories(string bName, int pReq, int wReq, double mCost, int sCost, int waste, int employment);
+    virtual bool cleanSewage();
+    virtual bool cleanWaste();
+    virtual string getBuildingType();
+    virtual int getJobsCreated();
+    virtual double getMaintenanceCost();
+    virtual string getName();
+    virtual int getPowerReq();
+    virtual int getSewageCost();
+    virtual int getWaterCost();
+    virtual void operation();
+    virtual bool payMaintenance();
+    virtual bool receivePower();
+    virtual bool receiveWater();
+    virtual void requestState();
+	int getWasteCost();
+	void setState();
 
-	public: int getWaterReq();
-
-	public: int getSewageCost();
-
-	public: int getWasteCost();
-
-	public: double getMaintanenceCost();
+    // Additional functions
+    float getSales();
+    void operation2();
+    float getProfit();
 };
 
 #endif

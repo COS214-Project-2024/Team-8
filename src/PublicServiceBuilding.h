@@ -1,36 +1,46 @@
-#include <exception>
+
+#include "Buildings.h"
+#include <string>
 using namespace std;
 
-#ifndef __PublicServiceBuilding_h__
-#define __PublicServiceBuilding_h__
+#ifndef PUBLICSERVICEBUILDING_H
+#define PUBLICSERVICEBUILDING_H
 
-#include "State.h"
-#include "Buildings.h"
+class PublicServiceBuilding : Buildings {
 
-class State;
-// class Buildings;
-class PublicServiceBuilding;
+protected:
+    // Building details
+    string buildingName;
+    string buildingType;
+    Citizen* listOfCitizens;
 
-class PublicServiceBuilding: public Buildings
-{
-	private: State _state;
-	private: int _powerReq;
-	private: int _waterReq;
-	private: double _maintenanceCost;
-	private: int _sewageCost;
-	private: int _waste;
+    // Resource and maintenance requirements
+    double maintenanceCost;
+    int powerReq;
+    int waterReq;
+    int sewageCost;
 
-	public: void requestState();
+    // Resource mediator and state
+    ResourceMediator* resources;
+    State* state;
 
-	public: double getMaintenanceCost();
+public:
+    // Pure virtual functions for building operations
+    virtual bool cleanSewage() = 0;
+    virtual bool cleanWaste() = 0;
+    virtual string getBuildingType() = 0;
+    virtual int getWaterCost() = 0;
+    virtual int getJobsCreated() = 0;
+    virtual double getMaintenanceCost() = 0;
+    virtual string getName() = 0;
+    virtual int getPowerReq() = 0;
+    virtual int getSewageCost() = 0;
+    virtual void operation() = 0;
+    virtual bool payMaintenance() = 0;
+    virtual bool receivePower() = 0;
+    virtual bool receiveWater() = 0;
+    virtual void requestState() = 0;
 
-	public: int getPowerReq();
-
-	public: int getSewageCost();
-
-	public: int getWaterCost();
-
-	public: int getWasteCost();
 };
 
 #endif

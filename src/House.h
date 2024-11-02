@@ -1,49 +1,52 @@
+#include "ResidentialBuilding.h"
+#include <string>
+using namespace std;
+
 #ifndef HOUSE_H
 #define HOUSE_H
 
 class House : ResidentialBuilding {
 
 protected:
-	string buildingName;
-	string buildingType;
-	int capacity;
-	Citizen* listOfCitizens;
-	double maintenanceCost;
-	int powerReq;
-	ResourceMediator* resources;
-	int sewageCost;
-protected:
-	State* state;
-	int waterReq;
+    // Building details
+    string buildingName;
+    string buildingType;
+    int capacity;
+    Citizen* listOfCitizens;
+
+    // Resource and maintenance requirements
+    double maintenanceCost;
+    int powerReq;
+    int waterReq;
+    int sewageCost;
+	int waste;
+
+    // Mediator and state
+    ResourceMediator* resources;
+    State* state;
 
 public:
-	virtual bool cleanSewage() = 0;
+    // Pure virtual functions for building operations
+	House(string bName,int pReq, int wReq, double mCost, int sCost, int waste, int capacity);
+    virtual bool cleanSewage();
+    virtual bool cleanWaste();
+    virtual string getBuildingType();
+    virtual int getJobsCreated();
+    virtual double getMaintenanceCost();
+    virtual string getName();
+    virtual int getPowerReq();
+    virtual int getSewageCost();
+    virtual int getWaterReq();
+    virtual void operation();
+    virtual bool payMaintenance();
+    virtual bool receivePower();
+    virtual bool receiveWater();
+    virtual void requestState();
+	void setState();
+	Citizen* getListOfResidents();
+	int getCapacity();
+	int getWasteCost();
 
-	virtual bool cleanWaste() = 0;
-
-	virtual string getBuildingType() = 0;
-
-	virtual int getJobsCreated() = 0;
-
-	virtual double getMaintenanceCost() = 0;
-
-	virtual string getName() = 0;
-
-	virtual int getPowerReq() = 0;
-
-	virtual int getSewageCost() = 0;
-
-	virtual int getWaterCost() = 0;
-
-	virtual void operation() = 0;
-
-	virtual bool payMaintenance() = 0;
-
-	virtual bool recievePower() = 0;
-
-	virtual bool recieveWater() = 0;
-
-	virtual void requestState() = 0;
 };
 
 #endif

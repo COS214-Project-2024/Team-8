@@ -1,3 +1,4 @@
+#include <string>
 #include <exception>
 using namespace std;
 
@@ -11,10 +12,12 @@ class Damaged;
 
 class Damaged: public State
 {
+	public: 
+		Damaged();
+		void handle();
+		void changeState();
+		string getStateName();
 
-	public: void handle();
-
-	public: void changeState();
 };
 
 #endif

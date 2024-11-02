@@ -1,3 +1,4 @@
+#include <string>
 #include <exception>
 using namespace std;
 
@@ -11,10 +12,12 @@ class UnderConstruction;
 
 class UnderConstruction: public State
 {
+	public: 
+		UnderConstruction();
+		void handle();
+		void changeState();
+		string getStateName();
 
-	public: void handle();
-
-	public: void changeState();
 };
 
 #endif

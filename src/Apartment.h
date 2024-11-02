@@ -4,40 +4,42 @@ using namespace std;
 #ifndef APARTMENT_H
 #define APARTMENT_H
 
+class ResourceMediator;
+class Citizen;
+#include "ResidentialBuilding.h";
+
 class Apartment : ResidentialBuilding {
 
 // Attributes
-    string buildingName;
-    string buildingType;
-    int capacity;
-    Citizen* listOfCitizens;         // Pointer to a list of citizens
-    double maintenanceCost;
-    int powerReq;
-    int waterReq;
-    int sewageCost;
-    
-    ResourceMediator* resources;     // Mediator for managing resources
-    State* state;                    // Current state of the building
+    private: 
+        State* state;
+        int capacity;
+        std::unique_ptr<Citizen> listOfCitizens; //using a smart pointer to avoid memory leaks
+        int powerReq;
+        int waterReq;
+        double maintenanceCost;
+        int sewageCost;
+        int waste;
+		// added attribute
+        string buildingType;
+        string buildingName;
 
-public:
-    // Virtual Destructor
-    virtual ~Building() = default;
+    public: 
+		Apartment(string bName,int pReq, int wReq, double mCost, int sCost, int waste, int capacity);
+        void requestState();
+        int getCapacity();
+        std::unique_ptr<Citizen> getListOfResidents();
+        double getMaiantenanceCost();
+        int getPowerReq();
+        int getWaterReq();
+        int getSewageCost();
+        int getWasteCost();
+		//added functions
+		void setState();
+        int getCapacity();
+        string getName();
+    ~Apartment();
 
-    // Pure Virtual Functions - Must be implemented by derived classes
-    virtual bool cleanSewage() = 0;
-    virtual bool cleanWaste() = 0;
-    virtual string getBuildingType() = 0;
-    virtual int getJobsCreated() = 0;
-    virtual double getMaintenanceCost() = 0;
-    virtual string getName() = 0;
-    virtual int getPowerReq() = 0;
-    virtual int getSewageCost() = 0;
-    virtual int getWaterCost() = 0;
-    virtual void operation() = 0;
-    virtual bool payMaintenance() = 0;
-    virtual bool receivePower() = 0;
-    virtual bool receiveWater() = 0;
-    virtual void requestState() = 0;
 };
 
 #endif

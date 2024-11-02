@@ -1,42 +1,54 @@
-#include <exception>
+#include "ResidentialBuilding.h"
+#include <string>
+
 using namespace std;
 
-#ifndef __TownHouse_h__
-#define __TownHouse_h__
+#ifndef TOWNHOUSE_H
+#define TOWNHOUSE_H
 
-#include "State.h"
-#include "Estate.h"
+class TownHouse : ResidentialBuilding {
 
-class State;
-// class Estate;
-class TownHouse;
+protected:
+    // Building details
+    string buildingName;
+    string buildingType;
+    int capacity;
+    Citizen* listOfCitizens;
 
-class TownHouse: public Estate
-{
-	private: State _state;
-	private: int _capacity;
-	private: Citizen* _listOfResidents;
-	private: int _powerReq;
-	private: int _waterReq;
-	private: double _maintenanceCost;
-	private: int _sewageCost;
-	private: int _waste;
+    // Maintenance and resource requirements
+    double maintenanceCost;
+    int powerReq;
+    int waterReq;
+    int sewageCost;
+    int waste;
 
-	public: void requestState();
+    // Resource mediator and state
+    ResourceMediator* resources;
+    State* state;
 
-	public: int getCapacity();
+public:
+    // Virtual functions for building operations
+	TownHouse(string bName,int pReq, int wReq, double mCost, int sCost, int waste, int capacity);
+    virtual bool cleanSewage();
+    virtual bool cleanWaste();
+    virtual string getBuildingType();
+    virtual int getJobsCreated();
+    virtual double getMaintenanceCost();
+    virtual string getName();
+    virtual int getPowerReq();
+    virtual int getSewageCost();
+    virtual int getWaterReq();
+    virtual void operation();
+    virtual bool payMaintenance();
+    virtual bool receivePower();
+    virtual bool receiveWater();
+    virtual void requestState();
+    void setState();
+    int getWasteCost();
+    int getCapacity();
+    Citizen* getListOfResidents();
 
-	public: Citizen* getListOfResidents();
 
-	public: int getPowerReq();
-
-	public: int getWaterReq();
-
-	public: int getSewageCost();
-
-	public: int getWasteCost();
-
-	public: double getMaintanenceCost();
 };
 
 #endif
