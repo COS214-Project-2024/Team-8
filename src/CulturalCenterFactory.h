@@ -4,12 +4,20 @@
 #include "Buildings.h"
 #include "LandmarkFactory.h"
 
+/**
+ * @class CulturalCenterFactory
+ * @brief Factory class for creating instances of CulturalCenter buildings.
+ */
 class CulturalCenterFactory : LandmarkFactory {
 
 public:
-	Buildings* buildings;
+    Buildings* buildings; /**< Pointer to a Buildings instance used by the factory. */
 
-	virtual Buildings* createBuilding();
+    /**
+     * @brief Creates a new CulturalCenter building.
+     * @return Pointer to the created Buildings object.
+     */
+    virtual Buildings* createBuilding();
 };
 
 #endif

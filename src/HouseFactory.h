@@ -7,7 +7,9 @@
 #define HOUSEFACTORY_H
 
 #include "Buildings.h"
+#include "House.h"
 #include "ResidentialFactory.h"
+#include "ResidentialBuilding.h"
 
 /**
  * @class HouseFactory

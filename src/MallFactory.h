@@ -17,7 +17,7 @@
  * creating mall building objects. Derived classes must implement the
  * createBuilding() method to produce specific types of mall buildings.
  */
-class MallFactory : CommercialFactory {
+class MallFactory : public CommercialFactory {
 
 public:
 	Buildings* buildings; /**< Pointer to a Buildings object, representing the mall building instance managed by the factory. */

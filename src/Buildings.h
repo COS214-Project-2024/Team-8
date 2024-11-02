@@ -1,136 +1,114 @@
 #include <string>
 using namespace std;
-
 #ifndef BUILDINGS_H
 #define BUILDINGS_H
 
-// Forward declarations
 class State;
 class ResourceMediator;
 class Citizen;
 
 /**
- * @brief Abstract base class representing buildings in a city simulation system
- * @details This class defines the interface for all building types in the simulation : 
- *        Residential , Commercial , Industrial , Landmarks , Public Service 
+ * @class Buildings
+ * @brief Abstract base class representing a building with basic utilities and resource requirements.
  */
 class Buildings {
 public:
-    /** @brief Pointer to the state object managing a type of building */
-    State* state;
+    State* state; /**< Pointer to the state of the building. */
 
 protected:
-    /** @brief Mediator for handling resource distribution */
-    ResourceMediator* resources;
-    
-    /** @brief Power requirement for the building in units */
-    int powerReq;
-    
-    /** @brief Water requirement for the building in units */
-    int waterReq;
-    
-    /** @brief Sewage cost for the building in units */
-    int sewageCost;
-    
-    /** @brief Monthly maintenance cost for the building */
-    double maintenanceCost;
-    
-    /** @brief Name identifier for the building */
-    string buildingName;
-    
-    /** @brief Type category of the building */
-    string buildingType;
-    
-    /** @brief List of citizens associated with this building */
-    Citizen* listOfCitizens;
+    ResourceMediator* resources; /**< Pointer to the resource mediator for managing resources. */
+    int powerReq;                /**< Power requirement of the building. */
+    int waterReq;                /**< Water requirement of the building. */
+    int sewageCost;              /**< Sewage cost associated with the building. */
+    double maintenanceCost;      /**< Maintenance cost of the building. */
+    string buildingName;         /**< Name of the building. */
+    string buildingType;         /**< Type of the building. */
+    Citizen* listOfCitizens;     /**< List of citizens associated with the building. */
 
 public:
-    // Pure virtual functions to be implemented by derived classes
-    
     /**
-     * @brief Requests the current state of the building
+     * @brief Requests the current state of the building.
+     * @note Pure virtual function to be implemented by derived classes.
      */
     virtual void requestState() = 0;
-    
+
     /**
-     * @brief Gets the maintenance cost of the building
-     * @return Monthly maintenance cost in currency units
+     * @brief Retrieves the maintenance cost of the building.
+     * @return The maintenance cost as a double.
      */
     virtual double getMaintenanceCost() = 0;
-    
+
     /**
-     * @brief Gets the power requirement of the building
-     * @return Power requirement in units
+     * @brief Retrieves the power requirement of the building.
+     * @return The power requirement as an integer.
      */
     virtual int getPowerReq() = 0;
-    
+
     /**
-     * @brief Gets the sewage cost of the building
-     * @return Sewage cost in units
+     * @brief Retrieves the sewage cost of the building.
+     * @return The sewage cost as an integer.
      */
     virtual int getSewageCost() = 0;
-    
+
     /**
-     * @brief Gets the water cost of the building
-     * @return Water cost in units
+     * @brief Retrieves the water requirement of the building.
+     * @return The water requirement as an integer.
      */
-    virtual int getWaterCost() = 0;
-    
+    virtual int getWaterReq() = 0;
+
     /**
-     * @brief Gets the name of the building
-     * @return Building name as string
+     * @brief Retrieves the name of the building.
+     * @return The building's name as a string.
      */
     virtual string getName() = 0;
-    
+
     /**
-     * @brief Gets the type of the building
-     * @return Building type as string
+     * @brief Retrieves the type of the building.
+     * @return The building type as a string.
      */
     virtual string getBuildingType() = 0;
-    
+
     /**
-     * @brief Gets the number of jobs created by this building
-     * @return Number of jobs as integer
+     * @brief Retrieves the number of jobs created by the building.
+     * @return The number of jobs as an integer.
      */
     virtual int getJobsCreated() = 0;
 
-    // Resource management functions
-    
     /**
-     * @brief Handles power reception for the building
-     * @return true if power was successfully received, false otherwise
+     * @brief Receives power for the building.
+     * @return true if power was received successfully, false otherwise.
      */
     virtual bool receivePower() = 0;
-    
+
     /**
-     * @brief Handles water reception for the building
-     * @return true if water was successfully received, false otherwise
+     * @brief Receives water for the building.
+     * @return true if water was received successfully, false otherwise.
      */
     virtual bool receiveWater() = 0;
-    
+
     /**
-     * @brief Processes maintenance payment
-     * @return true if maintenance was successfully paid, false otherwise
+     * @brief Pays the maintenance cost of the building.
+     * @return true if payment was successful, false otherwise.
      */
     virtual bool payMaintenance() = 0;
-    
+
     /**
-     * @brief Handles waste cleaning for the building
-     * @return true if waste was successfully cleaned, false otherwise
+     * @brief Cleans the waste of the building.
+     * @return true if waste cleaning was successful, false otherwise.
      */
     virtual bool cleanWaste() = 0;
-    
+
     /**
-     * @brief Handles sewage cleaning for the building
-     * @return true if sewage was successfully cleaned, false otherwise
+     * @brief Cleans the sewage of the building.
+     * @return true if sewage cleaning was successful, false otherwise.
      */
     virtual bool cleanSewage() = 0;
 
     /**
-     * @brief Main operation function for the building
-     * @details This function handles the main operational logic specific to each building type
+     * @brief Sets the state of the building.
      */
-    virtual void operation() = 0;
+    virtual void setState() = 0;
+
 };
 
 #endif

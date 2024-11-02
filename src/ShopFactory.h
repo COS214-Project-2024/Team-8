@@ -16,7 +16,7 @@
  * This class inherits from CommercialFactory and provides a method
  * for creating shop building objects.
  */
-class ShopFactory : CommercialFactory {
+class ShopFactory : public CommercialFactory {
 
 public:
 	Buildings* buildings; /**< Pointer to a Buildings object, representing the shop building instance managed by the factory. */

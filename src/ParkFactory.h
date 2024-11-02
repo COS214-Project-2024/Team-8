@@ -16,7 +16,7 @@
  * This class inherits from LandmarkFactory and provides a method
  * for creating park building objects.
  */
-class ParkFactory : LandmarkFactory {
+class ParkFactory : public LandmarkFactory {
 
 public:
 	Buildings* buildings; /**< Pointer to a Buildings object, representing the park building instance managed by the factory. */

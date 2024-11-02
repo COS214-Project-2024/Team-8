@@ -5,129 +5,104 @@ using namespace std;
 #ifndef LANDMARKBUILDING_H
 #define LANDMARKBUILDING_H
 
-// Forward declarations
-class Citizen;
-class ResourceMediator;
-class State;
-
 /**
- * @brief Abstract base class representing landmark buildings in the simulation
- * @details This class extends the Buildings base class and implements specific
- *          functionality for landmark structures such as Park , Monument and Cultural Center
+ * @class LandmarkBuilding
+ * @brief Represents a landmark building, inheriting from Buildings.
  */
-class LandmarkBuilding : Buildings {
+class LandmarkBuilding : public Buildings {
+
 protected:
-    /** @brief Name identifier for the landmark building */
-    string buildingName;
-    
-    /** @brief Type category of the landmark (e.g., monument, museum, historical site) */
-    string buildingType;
-    
-    /** @brief List of citizens working at or visiting this landmark */
-    Citizen* listOfCitizens;
-    
-    /** @brief Monthly maintenance cost for preserving the landmark */
-    double maintenanceCost;
-    
-    /** @brief Power requirement for the landmark in units */
-    int powerReq;
-    
-    /** @brief Water requirement for the landmark in units */
-    int waterReq;
-    
-    /** @brief Sewage cost for the landmark in units */
-    int sewageCost;
-    
-    /** @brief Mediator for handling resource distribution */
-    ResourceMediator* resources;
-    
-    /** @brief Pointer to the state object managing this landmark */
-    State* state;
+    string buildingName;          /**< Name of the landmark building. */
+    string buildingType;          /**< Type of the landmark building. */
+    Citizen* listOfCitizens;      /**< List of citizens associated with the building. */
+
+    double maintenanceCost;       /**< Maintenance cost for the building. */
+    int powerReq;                 /**< Power requirement of the building. */
+    int waterReq;                 /**< Water requirement of the building. */
+    int sewageCost;               /**< Sewage cost for the building. */
+
+    ResourceMediator* resources;  /**< Mediator for managing resources. */
+    State* state;                 /**< Current state of the building. */
 
 public:
     /**
-     * @brief Handles sewage cleaning for the landmark building
-     * @return true if sewage was successfully cleaned, false otherwise
+     * @brief Cleans the sewage of the landmark building.
+     * @return true if sewage cleaning was successful, false otherwise.
      */
     virtual bool cleanSewage() = 0;
-    
+
     /**
-     * @brief Handles waste cleaning for the landmark building
-     * @return true if waste was successfully cleaned, false otherwise
+     * @brief Cleans the waste of the landmark building.
+     * @return true if waste cleaning was successful, false otherwise.
      */
     virtual bool cleanWaste() = 0;
-    
+
     /**
-     * @brief Gets the type of the landmark building
-     * @return Building type as string (e.g., "Monument", "Museum", "Historical Site")
+     * @brief Gets the type of the landmark building.
+     * @return The type of the building as a string.
      */
     virtual string getBuildingType() = 0;
-    
+
     /**
-     * @brief Gets the number of jobs created by this landmark
-     * @return Number of jobs as integer (typically includes tourism and maintenance staff)
+     * @brief Gets the number of jobs created by the landmark building.
+     * @return The number of jobs as an integer.
      */
     virtual int getJobsCreated() = 0;
-    
+
     /**
-     * @brief Gets the maintenance cost of the landmark building
-     * @return Monthly maintenance cost in currency units (often higher due to preservation needs)
+     * @brief Gets the maintenance cost of the landmark building.
+     * @return The maintenance cost as a double.
      */
     virtual double getMaintenanceCost() = 0;
-    
+
     /**
-     * @brief Gets the name of the landmark building
-     * @return Building name as string
+     * @brief Gets the name of the landmark building.
+     * @return The name of the building as a string.
      */
     virtual string getName() = 0;
-    
+
     /**
-     * @brief Gets the power requirement of the landmark building
-     * @return Power requirement in units
+     * @brief Gets the power requirement of the landmark building.
+     * @return The power requirement as an integer.
      */
     virtual int getPowerReq() = 0;
-    
+
     /**
-     * @brief Gets the sewage cost of the landmark building
-     * @return Sewage cost in units
+     * @brief Gets the sewage cost of the landmark building.
+     * @return The sewage cost as an integer.
      */
     virtual int getSewageCost() = 0;
-    
+
     /**
-     * @brief Gets the water cost of the landmark building
-     * @return Water cost in units
+     * @brief Gets the water requirement of the landmark building.
+     * @return The water requirement as an integer.
      */
-    virtual int getWaterCost() = 0;
-    
+    virtual int getWaterReq() = 0;
+
     /**
-     * @brief Main operation function for the landmark building
-     * @details Handles primary landmark operations including visitor management,
-     *          maintenance of historical/cultural value, and resource management
-     */
-    virtual void operation() = 0;
-    
-    /**
-     * @brief Processes maintenance payment for the landmark building
-     * @return true if maintenance was successfully paid, false otherwise
+     * @brief Pays the maintenance cost for the landmark building.
+     * @return true if payment was successful, false otherwise.
      */
     virtual bool payMaintenance() = 0;
-    
+
     /**
-     * @brief Handles power reception for the landmark building
-     * @return true if power was successfully received, false otherwise
+     * @brief Receives power for the landmark building.
+     * @return true if power was received successfully, false otherwise.
      */
     virtual bool receivePower() = 0;
-    
+
     /**
-     * @brief Handles water reception for the landmark building
-     * @return true if water was successfully received, false otherwise
+     * @brief Receives water for the landmark building.
+     * @return true if water was received successfully, false otherwise.
      */
     virtual bool receiveWater() = 0;
-    
+
     /**
-     * @brief Requests the current state of the landmark building
+     * @brief Requests the current state of the landmark building.
      */
     virtual void requestState() = 0;
+
 };
 
 #endif
+

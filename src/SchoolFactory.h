@@ -16,7 +16,7 @@
  * This class inherits from PublicServiceFactory and provides a method
  * for creating school building objects.
  */
-class SchoolFactory : PublicServiceFactory {
+class SchoolFactory : public PublicServiceFactory {
 
 public:
 	Buildings* buildings; /**< Pointer to a Buildings object, representing the school building instance managed by the factory. */

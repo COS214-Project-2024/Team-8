@@ -16,7 +16,7 @@
  * This class inherits from PublicServiceFactory and provides a method
  * for creating medical center building objects.
  */
-class MedicalCenterFactory : PublicServiceFactory {
+class MedicalCenterFactory : public PublicServiceFactory {
 
 public:
 	Buildings* buildings; /**< Pointer to a Buildings object, representing the medical center building instance managed by the factory. */

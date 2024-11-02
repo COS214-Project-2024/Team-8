@@ -7,17 +7,33 @@ using namespace std;
 
 #include "State.h"
 
-// class State;
-class Damaged;
-
-class Damaged: public State
+/**
+ * @class Damaged
+ * @brief Represents a damaged state in a building's lifecycle, inheriting from the State class.
+ */
+class Damaged : public State
 {
-	public: 
-		Damaged();
-		void handle();
-		void changeState();
-		string getStateName();
+public:
+    /**
+     * @brief Constructs a new Damaged state object.
+     */
+    Damaged();
 
+    /**
+     * @brief Handles operations specific to the Damaged state.
+     */
+    void handle();
+
+    /**
+     * @brief Changes the state from Damaged to another state.
+     */
+    void changeState();
+
+    /**
+     * @brief Retrieves the name of the current state.
+     * @return The name of the state as a string.
+     */
+    string getStateName();
 };
 
 #endif

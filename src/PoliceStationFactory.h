@@ -3,11 +3,21 @@
 
 #include "Buildings.h"
 #include "PublicServiceFactory.h"
+
+/**
+ * @class PoliceStationFactory
+ * @brief Factory class for creating instances of PoliceStation.
+ */
 class PoliceStationFactory : PublicServiceFactory {
 
 public:
-	Buildings* buildings;
-	virtual Buildings* createBuilding();
+    Buildings* buildings; ///< Pointer to a Building instance
+
+    /**
+     * @brief Creates an instance of a PoliceStation.
+     * @return Pointer to the created PoliceStation building.
+     */
+    virtual Buildings* createBuilding();
 };
 
 #endif

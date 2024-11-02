@@ -16,7 +16,7 @@
  * creating industrial building objects. Derived classes must implement
  * the createBuilding() method to produce specific types of industrial buildings.
  */
-class IndustrialFactory : BuildingFactory {
+class IndustrialFactory : public BuildingFactory {
 
 public:
 	Buildings* buildings; /**< Pointer to a Buildings object, representing the industrial building instance managed by the factory. */
