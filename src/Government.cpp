@@ -3,111 +3,141 @@
 #include <algorithm>
 
 Government::Government()
-    : successor(nullptr), requestee(nullptr), budget(0.0), totalRevenue(0.0) {}
+    : financeDepartment(nullptr), successor(nullptr), requestee(nullptr), budget(0.0), totalRevenue(0.0) {}
 
-void Government::attach(Citizen* citizen) {
+Government::Government(FinanceDepartment *financeDepartment)
+    : financeDepartment(financeDepartment), successor(nullptr), requestee(nullptr), budget(0.0), totalRevenue(0.0) {}
+
+void Government::attach(Citizen *citizen)
+{
     citizenList.push_back(citizen);
+    financeDepartment->addResidents(citizen);
 }
 
-void Government::detach(Citizen* citizen) {
+void Government::detach(Citizen *citizen)
+{
     auto it = std::find(citizenList.begin(), citizenList.end(), citizen);
-    if (it != citizenList.end()) {
+    if (it != citizenList.end())
+    {
         citizenList.erase(it);
     }
 }
 
-void Government::notify() {
-    for (auto citizen : citizenList) {
-       // citizen->setSatisfaction(citizen->getSatisfaction() + 5.0);
-        citizen->update(newTaxRate);
+void Government::notify()
+{
+    for (auto citizen : citizenList)
+    {
+        // citizen->setSatisfaction(citizen->getSatisfaction() + 5.0);
+        float incomeTaxRate = (float)financeDepartment->getResidentialIncomeTaxRate();
+        float propertyTaxRate = (float) financeDepartment->getResidentialPropertyTaxRate();
+        if (citizen->getEmploymentStatus() == true)
+        {
+            citizen->update(incomeTaxRate);
+        }
+        else if (citizen->getPropertyOwnershipStatus() == true)
+        {
+            citizen->update(propertyTaxRate);
+        }
+        else if (citizen->getEmploymentStatus() && citizen->getPropertyOwnershipStatus())
+        {
+            float combinedTaxRate = incomeTaxRate + propertyTaxRate;
+            citizen->update(combinedTaxRate);
+        }else{
+            citizen->update(0.0f);
+        }
     }
 }
 
-void Government::addCommand(std::unique_ptr<Command> command) {
+void Government::addCommand(std::unique_ptr<Command> command)
+{
     commands.push_back(std::move(command));
 }
 
-void Government::executeCommands() {
-    for (const auto& command : commands) {
+void Government::executeCommands()
+{
+    for (const auto &command : commands)
+    {
         command->execute();
     }
     commands.clear();
 }
 
-double Government::requestCollectionOfPropertyTax() {
-    double collected = 0.0;
-    for (auto citizen : citizenList) {
-        collected += citizen->getSalary() * 0.1; // 10% property tax
+double Government::requestCollectionOfPropertyTax()
+{
+    double totalCollectedPropertyTax = financeDepartment->delegateRequestForCollectionOffPropertyTax();
+    for (auto citizen : citizenList)
+    {
         citizen->setSatisfaction(citizen->getSatisfaction() - 2.0);
     }
-    totalRevenue += collected;
-    return collected;
+    return totalCollectedPropertyTax;
 }
 
-double Government::requestCollectionOfIncomeTax() {
-    double collected = 0.0;
-    for (auto citizen : citizenList) {
-        collected += citizen->calculateTax();
+double Government::requestCollectionOfIncomeTax()
+{
+    double totalCollectedIncomeTax = financeDepartment->delegateRequestForCollectionOffIncomeTax();
+    for (auto citizen : citizenList)
+    {
         citizen->setSatisfaction(citizen->getSatisfaction() - 3.0);
     }
-    totalRevenue += collected;
-    return collected;
+    return totalCollectedIncomeTax;
 }
 
-double Government::requestCollectionOfBusinessTax() {
-    double collected = 0.0;
-    for (auto citizen : citizenList) {
-        collected += citizen->getSalary() * 0.15; // 15% business tax
+double Government::requestCollectionOfBusinessTax()
+{
+    double totalCollectedBusinessTax = financeDepartment->delegateRequestForCollectionOfBusinessTax();
+    for (auto citizen : citizenList)
+    {
         citizen->setSatisfaction(citizen->getSatisfaction() - 2.5);
     }
-    totalRevenue += collected;
-    return collected;
+    return totalCollectedBusinessTax;
 }
 
-void Government::requestCollectionOfSalesTax() {
-    double collected = 0.0;
-    for (auto citizen : citizenList) {
-        collected += citizen->getSalary() * 0.05; // 5% sales tax
+double Government::requestCollectionOfSalesTax()
+{
+    double totalCollectedSalesTax = financeDepartment->delegateRequestForCollectionOfSalesTax();
+    for (auto citizen : citizenList)
+    {
         citizen->setSatisfaction(citizen->getSatisfaction() - 1.0);
     }
-    totalRevenue += collected;
+    return totalCollectedSalesTax;
 }
 
-float Government::requestAllocationOfUtilitiesFunds() {
-    float amount = budget * 0.15f; // 15% of budget
-    budget -= amount;
+double Government::requestAllocationOfUtilitiesFunds()
+{
+    double allocatedFundsForUtilities = financeDepartment->delegateRequestForAllocationOfUtilitiesFunds();
     notify();
-    return amount;
+    return allocatedFundsForUtilities;
 }
 
-float Government::requestAllocationOfHealthcareFunds() {
-    float amount = budget * 0.25f; // 25% of budget
-    budget -= amount;
+double Government::requestAllocationOfPublicServiceBuildingsFunds()
+{
+    double allocatedFundsForPublicServiceBuildings = financeDepartment->delegateRequestForAllocationOfPublicServiceBuildingsFunds();
     notify();
-    return amount;
+    return allocatedFundsForPublicServiceBuildings;
 }
 
-float Government::requestAllocationOfTransportFunds() {
-    float amount = budget * 0.20f; // 20% of budget
-    budget -= amount;
+double Government::requestAllocationOfTransportFunds()
+{
+    double allocatedFundsForTransport = financeDepartment->delegateRequestForAllocationOfTransportInfrastructureFunds();
     notify();
-    return amount;
+    return allocatedFundsForTransport;
 }
 
-float Government::requestAllocationOfEducationFunds() {
-    float amount = budget * 0.30f; // 30% of budget
-    budget -= amount;
+double Government::requestAllocationOfRecreationFunds()
+{
+    double allocatedFundsForRecreation = financeDepartment->delegateRequestForAllocationOfLandmarkBuildingsFunds();
     notify();
-    return amount;
+    return allocatedFundsForRecreation;
+}
+void Government::setBudget(double b)
+{
+    budget = b;
 }
 
-float Government::requestAllocationOfRecreationFunds() {
-    float amount = budget * 0.10f; // 10% of budget
-    budget -= amount;
-    notify();
-    return amount;
+double Government::getBudget() const
+{
+    return budget;
 }
 
-void Government::setBudget(double b) { budget = b; }
-double Government::getBudget() const { return budget; }
-double Government::getTotalRevenue() const { return totalRevenue; }
+void Government::setTotalRevenue(double b) { financeDepartment->setAvailableFunds(b); }
+double Government::getTotalRevenue() const { return financeDepartment->getAvailableFunds(); }

@@ -1,17 +1,15 @@
-#include <exception>
-#include <vector>
 using namespace std;
-
+#include <iostream>
 #include "ResidentialTaxationSystem.h"
-void ResidentialTaxationSystem::setResidentialTaxRates(float aIncomeTaxRate, float aPropertyTaxRate) {
-	throw "Not yet implemented";
+
+double ResidentialTaxationSystem::collectIncomeTax(double incomeTaxRate, double residentsIncome) {
+    double incomeTax = incomeTaxRate * residentsIncome;
+    cout << "💰 Income Tax Collected: R " << incomeTax << endl;
+    return incomeTax;
 }
 
-void ResidentialTaxationSystem::collectIncomeTax(vector<> aResidentsIncomes, vector<> aTotalIncomeTaxes) {
-	throw "Not yet implemented";
+double ResidentialTaxationSystem::collectPropertyTax(double propertyTaxRate, double residentsIncome) {
+    double propertyTax = propertyTaxRate * residentsIncome;
+    cout << "🏡 Property Tax Collected: R " << propertyTax << endl;
+    return propertyTax;
 }
-
-void ResidentialTaxationSystem::collectPropertyTax(vector<> aResidentsIncomes) {
-	throw "Not yet implemented";
-}
-
