@@ -51,9 +51,9 @@ int CulturalCenter::getWasteCost() {
 	return this->waste;
 }
 
-void CulturalCenter::setState()
+void CulturalCenter::setState(State* newState)
 {
-	this->state->changeState();
+	this->state = newState;
 }
 
 string CulturalCenter::getName()
