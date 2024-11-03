@@ -133,9 +133,9 @@ public:
     float getEducationCoverage();
 
     /**
-     * @brief Sets the state of the school.
+     * @brief sets the state of the building
      */
-    void setState();
+    void setState(State* newState);
 };
 
 #endif
