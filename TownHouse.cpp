@@ -59,9 +59,9 @@ int TownHouse::getWasteCost() {
 	return this->waste;
 }
 
-void TownHouse::setState()
+void TownHouse::setState(State* newState)
 {
-	this->state->changeState();
+	this->state = newState;
 }
 
 int TownHouse::getCapacity()
