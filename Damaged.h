@@ -13,6 +13,11 @@ using namespace std;
  */
 class Damaged : public State
 {
+
+protected:
+    Buildings* building; ///< Pointer to the building associated with this state
+    string stateName;
+
 public:
     /**
      * @brief Constructs a new Damaged state object.
@@ -34,6 +39,8 @@ public:
      * @return The name of the state as a string.
      */
     string getStateName();
+
 };
 
 #endif
+
