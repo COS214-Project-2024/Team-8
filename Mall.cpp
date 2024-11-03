@@ -26,7 +26,6 @@ Mall::Mall(string bName,int pReq, int wReq, double mCost, int sCost, int waste, 
 	this->state->handle(); //handle the state;
 	this->setState(); //change the state to operation if the resources are available
 
-	this->resources = new ResourceMediator();
 	this->listOfCitizens = new Citizen("NewCitizen",100,23,5.0);
 	this->listOfCitizens->adjustCitizenSatisfaction(5.0);
 }
