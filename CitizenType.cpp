@@ -51,12 +51,9 @@ void CitizenType::makeRequest(Government *government, std::string requestDetails
     }
 }
 
-void CitizenType::useTransport(Transport *transport)
+void useTransport(Stop *stop, int capacity)
 {
-    if (baseCitizen && transport)
-    {
-        baseCitizen->useTransport(transport);
-    }
+        baseCitizen->useTransport(stop, capacity);
 }
 
 void CitizenType::adjustCitizenSatisfaction(float newSatisfaction)
