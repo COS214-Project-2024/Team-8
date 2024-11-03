@@ -61,7 +61,7 @@ int Apartment::getWasteCost() {
 
 void Apartment::setState(State* newState)
 {
-	this->state = new State;
+	this->state = newState;
 }
 
 int Apartment::getCapacity()
