@@ -173,6 +173,24 @@ public:
      * @return Amount paid to the citizen.
      */
     int payCitizen();
+
+     /**
+     * @brief gets the current income of a commercial building
+     * @return the income as an integer
+     */
+    virtual int getCommercialIncome();
+
+    /**
+     * @brief gets the current income of a commercial building
+     * @return the income as an integer
+     */
+    virtual double getBalance();
+
+    /**
+     * @brief gets the current income of a commercial building
+     * @return the income as an integer
+     */
+    virtual void SetBalance(double b);
 };
 
 #endif
