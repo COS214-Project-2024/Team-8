@@ -178,7 +178,7 @@ int Office::payCitizen()
 
 int Office::getCommercialIncome()
 {
-	return->this->income;
+	return this->profit ;
 }
 
 void Office::setBalance(double d)
@@ -186,7 +186,7 @@ void Office::setBalance(double d)
 	this->balance  = d;
 }
 
-int Office::getBalance()
+double Office::getBalance()
 {
 	return this->balance;
 }

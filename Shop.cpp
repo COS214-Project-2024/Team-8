@@ -194,15 +194,15 @@ int Shop::payCitizen()
 
 int Shop::getCommercialIncome()
 {
-	return->this->income;
+	return this->profit;
 }
 
 void Shop::setBalance(double d)
 {
-	this->balance  = d;
+	this->balance  = d ;
 }
 
-int Shop::getBalance()
+double Shop::getBalance()
 {
 	return this->balance;
 }
