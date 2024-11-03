@@ -141,3 +141,11 @@ double Government::getBudget() const
 
 void Government::setTotalRevenue(double b) { financeDepartment->setAvailableFunds(b); }
 double Government::getTotalRevenue() const { return financeDepartment->getAvailableFunds(); }
+
+void Government::setSuccessor(Government* nextHandler) {
+    successor = nextHandler;
+}
+
+Government* Government::getSuccessor() const {
+    return successor;
+}
