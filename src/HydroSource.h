@@ -1,7 +1,5 @@
 #ifndef HYDROSOURCE_H
 #define HYDROSOURCE_H
-#ifndef HYDROSOURCE_H
-#define HYDROSOURCE_H
 
 #include "EnergySource.h"
 /**
@@ -14,9 +12,7 @@ public:
 	HydroSource(float output);
 
 	float getEnergyOutput();
-	float getEnergyOutput();
 
-	std::string getFuelType();
 	std::string getFuelType();
 };
 

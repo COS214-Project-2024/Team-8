@@ -28,12 +28,9 @@ public:
 	void executeSewage();
 
 	void executeWater();
-	void executeWater();
 
 	void executeElectricity();
-	void executeElectricity();
 
-	void addCommand(Command* com);
 	void addCommand(Command* com);
 };
 

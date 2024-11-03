@@ -1,7 +1,5 @@
 #ifndef COALSOURCE_H
 #define COALSOURCE_H
-#ifndef COALSOURCE_H
-#define COALSOURCE_H
 
 #include "EnergySource.h"
 /**

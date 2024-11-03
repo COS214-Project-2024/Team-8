@@ -1,7 +1,5 @@
 #ifndef NUCLEARSOURCE_H
 #define NUCLEARSOURCE_H
-#ifndef NUCLEARSOURCE_H
-#define NUCLEARSOURCE_H
 
 #include "EnergySource.h"
 /**
@@ -14,9 +12,7 @@ public:
 	NuclearSource(float output);
 
 	float getEnergyOutput();
-	float getEnergyOutput();
 
-	std::string getFuelType();
 	std::string getFuelType();
 };
 

@@ -1,9 +1,6 @@
 #ifndef SEWAGESYSTEMS_H
 #define SEWAGESYSTEMS_H
 
-#ifndef SEWAGESYSTEMS_H
-#define SEWAGESYSTEMS_H
-
 #include "Utility.h"
 /**
  * @file SewageSystems.h
@@ -26,7 +23,6 @@ public:
 
 	float getOutput();
 
-	void pauseOperation();
 	void pauseOperation();
 
 	void setmaxWaste(int max);

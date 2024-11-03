@@ -15,7 +15,6 @@ public:
 	float getEnergyOutput();
 
 	virtual std::string getFuelType() = 0;
-	virtual std::string getFuelType() = 0;
 };
 
 #endif

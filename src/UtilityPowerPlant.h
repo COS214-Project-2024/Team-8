@@ -1,9 +1,6 @@
 #ifndef UTILITYPOWERPLANT_H
 #define UTILITYPOWERPLANT_H
 
-#ifndef UTILITYPOWERPLANT_H
-#define UTILITYPOWERPLANT_H
-
 #include "Utility.h"
 #include "WindFactory.h"
 #include "HydroFactory.h"
@@ -34,11 +31,9 @@ public:
 	void setOutput(float Output);
 
 	void pauseOperation();
-	void pauseOperation();
 
 	void setMaxWatts(float max);
 
-	void setFuel(EnergySource* fuel);
 	void setFuel(EnergySource* fuel);
 
 	std::string getEnergyType();
