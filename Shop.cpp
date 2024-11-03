@@ -52,7 +52,7 @@ int Shop::getWasteCost() {
 	return this->waste;
 }
 
-void TownHouse::setState(State* newState)
+void Shop::setState(State* newState)
 {
 	this->state = newState;
 }
