@@ -55,13 +55,9 @@ void Citizen::makeRequest(Government* government, std::string requestDetails) {
     }
 }
 
-void Citizen::useTransport(Transport *transport) {
-    if (transport) {
-        std::cout << name << " is using transport to travel." << std::endl;
-        //transport->travel();
-    } else {
-        std::cout << "[Citizen] Transport does not exist." << std::endl;
-    }
+void Citizen::useTransport(Stop *stop, int capacity){
+    TravelManager *manager = new TravelManager();
+    manager->Travel(capacity,stop);
 }
 
 void Citizen::adjustCitizenSatisfaction(float newSatisfaction) {
