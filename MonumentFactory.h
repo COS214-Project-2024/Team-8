@@ -17,7 +17,7 @@ public:
      * @brief Pure virtual function to create a building.
      * @return Pointer to a Buildings object.
      */
-    virtual Buildings* createBuilding() = 0;
+    virtual Buildings* createBuilding();
 };
 
 #endif
