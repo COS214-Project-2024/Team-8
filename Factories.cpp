@@ -46,9 +46,9 @@ int Factories::getWasteCost() {
 	return this->waste;
 }
 
-void Factories::setState()
+void Factories::setState(State* newState)
 {
-	this->state->changeState();
+	this->state = newState;
 }
 
 int Factories::getJobsCreated()
