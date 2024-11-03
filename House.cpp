@@ -59,9 +59,9 @@ int House::getWasteCost() {
 	return this->waste;
 }
 
-void House::setState()
+void House::setState(State* newState)
 {
-  this->state->changeState();
+	this->state = newState;
 }
 
 string House::getName()
