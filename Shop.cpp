@@ -192,4 +192,18 @@ int Shop::payCitizen()
 	return 5000;
 }
 
+int Shop::getCommercialIncome()
+{
+	return->this->income;
+}
+
+void Shop::setBalance(double d)
+{
+	this->balance  = d;
+}
+
+int Shop::getBalance()
+{
+	return this->balance;
+}
 
