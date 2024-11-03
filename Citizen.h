@@ -61,7 +61,7 @@ public:
      * @brief Uses transport by calling the travel method in the Transport hierarchy.
      * @param transport Pointer to a Transport object.
      */
-    void useTransport(Transport *transport) override;
+    void useTransport(Stop *stop, int capacity) override;
 
     /**
      * @brief Adjusts the satisfaction level of the citizen.
