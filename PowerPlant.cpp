@@ -23,7 +23,6 @@ PowerPlant::PowerPlant(string bName, int pReq, int wReq, double mCost, int sCost
 	this->state->handle(); //handle the state;
 	this->setState(); //change the state to operation if the resources are available
 
-	this->resources = new ResourceMediator();
 	this->listOfCitizens = new Citizen("NewCitizen",100,21,5.0);
 }
 
