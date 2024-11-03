@@ -14,6 +14,7 @@
 #include "Citizen.h"
 #include "Command.h"
 #include "FinanceDepartment.h"
+#include "CitizenInterface.h"
 
 /**
  * @class Government
