@@ -1,23 +1,28 @@
-#ifndef COMMAND_H
-#define COMMAND_H
+#include "Command.h"
 
-#include "Utility.h"
+/**
+ * @brief Get the utility type of the command
+ * 
+ * @return std::string The utility type of the command
+ */
+std::string Command::getUtilityType() {
+	this->utility->getUtilityType();
+}
 
-class UtilityManager; // Forward declaration
+/**
+ * @brief Get the utility of the command
+ * 
+ * @return Utility* The utility of the command
+ */
+Utility* Command::getUtility() {
+	return this->utility->clone();
+}
 
-class Command {
-public: 
-    UtilityManager* utilityMan; // Member variable
-
-    Command() = default; // Default constructor
-
-    virtual void execute() = 0; // Pure virtual function
-
-    virtual ~Command() = default; // Default destructor
-
-    virtual std::string getUtilityType() {
-        return ""; // Default implementation
-    }
-};
-
-#endif
+/**
+ * @brief Destroy the Command object
+ * 
+ * Destrcuts the utility object
+ */
+Command::~Command() {
+	delete this->utility;
+}

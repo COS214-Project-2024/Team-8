@@ -3,11 +3,17 @@
 
 #include "StartCommand.h"
 #include "StopCommand.h"
+#include "UndoCommand.h"
 #include <vector>
 #include <iostream>
+/**
+ * @brief The UtilityManager class
+ * 
+ * The UtilityManager class is used to manage the utilities in the city
+ */
 class UtilityManager {
 private:
-	std::vector<Command*> history;
+	std::vector<Command*> commands;
 public:
 	UtilityManager();
 

@@ -2,14 +2,20 @@
 #define STOPCOMMAND_H
 
 #include "Command.h"
-class Utility;
+/**
+ * @file StopCommand.h
+ * 
+ * @brief The header file for the StopCommand class
+ */
 class StopCommand : public Command {
 public:
+	StopCommand(Utility* utility);
+
 	void execute();
 
 	std::string getUtilityType();
 
-	StopCommand(Utility* utility);
+	Utility* getUtility();
 };
 
 #endif

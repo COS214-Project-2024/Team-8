@@ -2,14 +2,19 @@
 #define WASTEMANAGEMENT_H
 
 #include "Utility.h"
+/**
+ * @file WasteManagement.h
+ * 
+ * @brief The header file for the WasteManagement class
+ */
 class WasteManagement : public Utility {
+
 private:
 	int processCapacity;
-	int currentload;
 	float recycledperc;
 
 public:
-	WasteManagement(int curload);
+	WasteManagement(float output);
 
 	std::string getStatus();
 
@@ -17,19 +22,17 @@ public:
 
 	void executeOperation();
 
-	int getCurrentLoad();
+	float getOutput();
 
 	void pauseOperation();
 
-	void addCommand(Command* com);
+	std::string getUtilityType();
+
+	Utility* clone();
 
 	void setProcessCapacity(int pro);
 
-	std::string getUtilityType();
-
 	void undoChange();
-
-
 };
 
 #endif
