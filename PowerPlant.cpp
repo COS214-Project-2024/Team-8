@@ -50,9 +50,9 @@ int PowerPlant::getWasteCost() {
 	return this->waste;
 }
 
-void PowerPlant::setState()
+void PowerPlant::setState(State* newState)
 {
-	this->state->changeState();
+	this->state = newState;
 }
 
 
