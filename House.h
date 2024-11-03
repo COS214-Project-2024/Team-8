@@ -138,6 +138,11 @@ public:
      * @return The waste cost as an integer.
      */
     int getWasteCost();
+
+    /**
+     * @brief sets the state of the building
+     */
+    void setState(State* newState);
 };
 
 #endif
