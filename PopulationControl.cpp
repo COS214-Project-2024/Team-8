@@ -26,17 +26,16 @@ void PopulationControl::updatePopulation(Buildings* building) {
     if (totalPopulation + buildingCapacity <= MAX_POPULATION) {
         totalPopulation += buildingCapacity; 
         buildings.push_back(building);
-
-        // Simulate migration based on jobs created for commercial buildings
-        if (CommercialBuilding* commercialBuilding = dynamic_cast<CommercialBuilding*>(building)) {
-            simulateMigration(commercialBuilding->getJobsCreated());
-        }
     } else {
         std::cout << "Cannot add building: population limit exceeded! Enforcing population policy." << std::endl;
         delete building;
         enforcePopulationControl();
     }
 }
+// Simulate migration based on jobs created for commercial buildings
+        if (CommercialBuilding* commercialBuilding = dynamic_cast<CommercialBuilding*>(building)) {
+            simulateMigration(commercialBuilding->getJobsCreated());
+        }
 
 // Get the current total population
 int PopulationControl::getTotalPopulation() {
