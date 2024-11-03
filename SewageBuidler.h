@@ -6,6 +6,7 @@ using namespace std;
 
 #include "Command.h"
 #include "UtilityBuilder.h"
+#include "SewageSystems.h"
 
 class Command;
 // class UtilityBuilder;
@@ -14,7 +15,7 @@ class SewageBuidler;
 class SewageBuidler: public UtilityBuilder
 {
 
-	public: SewageSystem* getSewageSystem();
+	public: SewageSystems* getSewageSystem();
 
 	public: SewageBuidler(int aCurload);
 

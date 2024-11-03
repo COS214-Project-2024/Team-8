@@ -20,7 +20,7 @@ class Buildings;
 // class sewageManagmentResource;
 class Resources;
 
-__abstract class Resources: public powerResource, public waterResource, public revenueResource, public wasteManagmentResource, public sewageManagmentResource
+class Resources: public powerResource, public waterResource, public revenueResource, public wasteManagmentResource, public sewageManagmentResource
 {
 	private: ResourceMediator* _citySector;
 	public: Buildings* _unnamed_Buildings_;

@@ -5,7 +5,7 @@ using namespace std;
 #include "Command.h"
 #include "UtilityBuilder.h"
 
-SewageSystem* SewageBuidler::getSewageSystem() {
+SewageSystems* SewageBuidler::getSewageSystem() {
 	throw "Not yet implemented";
 }
 

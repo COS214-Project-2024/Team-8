@@ -189,7 +189,7 @@ float ResourceMediator::replenishRevenue(){
     float total = 0;
     for(Utility* util : *utilities){
 
-        waterSupply* specificUtil = dynamic_cast<waterSupply*>(util);
+        WaterSupply* specificUtil = dynamic_cast<WaterSupply*>(util);
         if(specificUtil){
         total += specificUtil->supplyResources();
         }
