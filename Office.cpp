@@ -176,4 +176,19 @@ int Office::payCitizen()
 	return 5000;
 }
 
+int Office::getCommercialIncome()
+{
+	return->this->income;
+}
+
+void Office::setBalance(double d)
+{
+	this->balance  = d;
+}
+
+int Office::getBalance()
+{
+	return this->balance;
+}
+
 
