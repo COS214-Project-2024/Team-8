@@ -18,7 +18,7 @@ class Buildings;
 class ResourceMediator {
 private:
     std::map<std::string, Resource*>* resources;
-    std::vector<utility*>* utilities;
+    std::vector<Utility*>* utilities;
 
 public:
     ResourceMediator();
@@ -35,7 +35,7 @@ public:
     bool useConstResource(float units, Buildings* sender);
     float replenishConstResource();
     void setResources(std::map<std::string, Resource*>* resources);
-    void setUtilities(std::vector<utility*>* utilities);
+    void setUtilities(std::vector<Utility*>* utilities);
 };
 
 #endif // RESOURCEMEDIATOR_H

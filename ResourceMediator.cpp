@@ -36,7 +36,7 @@ bool ResourceMediator::usePower(float units, Buildings* sender){
  */
 float ResourceMediator::replenishPower(){
     float total = 0;
-    for(utility* util : *utilities){
+    for(Utility* util : *utilities){
 
         waterSupply* specificUtil = dynamic_cast<waterSupply*>(util);
         if(specificUtil){
@@ -72,7 +72,7 @@ bool ResourceMediator::useWater(float units, Buildings* sender){
  */
 float ResourceMediator::replenishWater(){
     float total = 0;
-    for(utility* util : *utilities){
+    for(Utility* util : *utilities){
 
         waterSupply* specificUtil = dynamic_cast<waterSupply*>(util);
         if(specificUtil){
@@ -129,7 +129,7 @@ bool ResourceMediator::cleanWaste(float units, Buildings* sender){
  */
 float ResourceMediator::gainWasteCleaning(){
     float total = 0;
-    for(utility* util : *utilities){
+    for(Utility* util : *utilities){
 
         waterSupply* specificUtil = dynamic_cast<waterSupply*>(util);
         if(specificUtil){
@@ -167,7 +167,7 @@ bool ResourceMediator::cleanSewage(float units, Buildings* sender){
  */
 float ResourceMediator::gainSewageCleaning(){
     float total = 0;
-    for(utility* util : *utilities){
+    for(Utility* util : *utilities){
 
         waterSupply* specificUtil = dynamic_cast<waterSupply*>(util);
         if(specificUtil){
@@ -187,7 +187,7 @@ float ResourceMediator::gainSewageCleaning(){
  */
 float ResourceMediator::replenishRevenue(){
     float total = 0;
-    for(utility* util : *utilities){
+    for(Utility* util : *utilities){
 
         waterSupply* specificUtil = dynamic_cast<waterSupply*>(util);
         if(specificUtil){
@@ -217,7 +217,7 @@ bool ResourceMediator::useConstResource(float units, Buildings* sender){
 }
 float ResourceMediator::replenishConstResource(){
     float total = 0;
-    for(utility* util : *utilities){
+    for(Utility* util : *utilities){
 
         waterSupply* specificUtil = dynamic_cast<waterSupply*>(util);
         if(specificUtil){
@@ -232,6 +232,6 @@ float ResourceMediator::replenishConstResource(){
 void ResourceMediator::setResources(std::map<std::string, Resource*>* resources){
     this->resources = resources;
 }
-void ResourceMediator::setUtilities(std::vector<utility*>* utilities){
+void ResourceMediator::setUtilities(std::vector<Utility*>* utilities){
     this->utilities = utilities;
 }
