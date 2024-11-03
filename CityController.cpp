@@ -15,7 +15,7 @@ void CityController::Update()
 {
 }
 
-Policy *CityController::evaluatePolicies()
+Policies *CityController::evaluatePolicies()
 {
     return nullptr;
 }
@@ -38,29 +38,29 @@ void CityController::ProvideUtilities()
 {
 }
 
-Resources *CityController::buildInfrastructure()
+Resource *CityController::buildInfrastructure()
 {
     return nullptr;
 }
 
 int CityController::getCurrentEnergySupply()
 {
-    this->ManagmentOfUtilities.getTotalPower() ; 
+    return this->ManagmentOfUtilities.getTotalPower() ; 
 }
 
 int CityController::getCurrentWasteSupply()
 {
-    this->ManagmentOfUtilities.getTotalWaste() ; 
+    return this->ManagmentOfUtilities.getTotalWaste() ; 
 }
 
 int CityController::getCurrentWaterSupply()
 {
-    this->ManagmentOfUtilities.getTotalWater() ; 
+    return this->ManagmentOfUtilities.getTotalWater() ; 
 }
 
 int CityController::getCurrentSewageSupply()
 {
-    this->ManagmentOfUtilities.getTotalSewage() ; 
+    return this->ManagmentOfUtilities.getTotalSewage() ; 
 }
 
 int CityController::getAmountOfUtilities()

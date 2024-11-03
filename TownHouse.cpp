@@ -31,10 +31,6 @@ void TownHouse::requestState() {
 	this->state->handle();
 }
 
-int TownHouse::getCapacity() {
-	return this->capacity;
-}
-
 Citizen* TownHouse::getListOfResidents() {
 	return this->listOfCitizens;
 }

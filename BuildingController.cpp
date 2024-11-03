@@ -109,7 +109,7 @@ void BuildingController::removeBuilding(Buildings *rem)
 
 int BuildingController::getAmountOfBuildings()
 {
-    this->amountOfBuildings ; 
+    return this->amountOfBuildings ; 
 }
 
 int BuildingController::getTotalPowerReq()

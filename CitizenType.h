@@ -152,9 +152,14 @@ public:
      * @brief Displays the details of the citizen in a formatted manner.
      */
     void displayDetails() override;
-    virtual string CitizenType::citizenType();
+    virtual string citizenType();
 
     void Test() ; 
+     float getTaxRate() ; 
+     double getBalance() ; 
+     void setBalance(double newBalance) ; 
+
+     void setSatisfaction( int newSatisfaction ) ;
 
 protected:
     std::unique_ptr<CitizenInterface> baseCitizen; /**< The underlying citizen object being decorated. */

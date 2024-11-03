@@ -57,26 +57,6 @@ void Shop::setState(State* newState)
 	this->state = newState;
 }
 
-string Shop::getName()
-{
-	return this->buildingName;
-}
-
-string Shop::getBuildingType()
-{
-	return this->buildingType;
-}
-
-float Shop::getSales()
-{
-	return this->sales;
-}
-
-float Shop::getProfit()
-{
-	return this->profit;
-}
-
 int Shop::getJobsCreated()
 {
 	return this->employment;

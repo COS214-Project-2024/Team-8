@@ -17,7 +17,7 @@ PopulationControl::~PopulationControl() {
 }
 
 // Update the total population based on the new building being added
-void PopulationControl::updatePopulation(Buildings* building) {
+void PopulationControl::updatePopulation(ResidentialBuilding* building) {
     int buildingCapacity = 0;
     if(building->getBuildingType() == "Residential"){
         buildingCapacity = building->getCapacity();

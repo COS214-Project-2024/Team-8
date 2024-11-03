@@ -6,7 +6,7 @@ using namespace std;
 
 class ResourceMediator;
 class Citizen;
-#include "ResidentialBuilding.h";
+#include "ResidentialBuilding.h"
 
 /**
  * @class Apartment

@@ -64,10 +64,6 @@ void Apartment::setState(State* newState)
 	this->state = newState;
 }
 
-int Apartment::getCapacity()
-{
-	return this->capacity;
-}
 
 string Apartment::getName()
 {
