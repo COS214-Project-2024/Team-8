@@ -127,6 +127,24 @@ public:
      * @return The payment amount as an integer.
      */
     virtual int payCitizen() = 0;
+
+    /**
+     * @brief gets the current income of a commercial building
+     * @return the income as an integer
+     */
+    virtual int getCommercialIncome() = 0;
+
+    /**
+     * @brief gets the current income of a commercial building
+     * @return the income as an integer
+     */
+    virtual double getBalance() = 0;
+
+    /**
+     * @brief gets the current income of a commercial building
+     * @return the income as an integer
+     */
+    virtual void SetBalance(double b) = 0;
 };
 
 #endif
