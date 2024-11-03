@@ -13,6 +13,10 @@ using namespace std;
  */
 class Operational: public State
 {
+	protected:
+    Buildings* building; ///< Pointer to the building associated with this state
+    string stateName;
+	
 	public: 
 		/**
 		 * @brief Constructor for the Operational class.
@@ -37,4 +41,5 @@ class Operational: public State
 };
 
 #endif
+
 
