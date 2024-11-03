@@ -195,4 +195,19 @@ int Mall::payCitizen()
 	return 5000;
 }
 
+int Mall::getCommercialIncome()
+{
+	return->this->income;
+}
+
+void Mall::setBalance(double d)
+{
+	this->balance  = d;
+}
+
+int Mall::getBalance()
+{
+	return this->balance;
+}
+
 
