@@ -7,10 +7,6 @@
 #include "Transport.h"
 #include "PopulationControl.h"
 
-class Government;
-class Transport;
-class PopulationControl;
-
 /**
  * @class CitizenInterface
  * @brief An abstract base class that defines the interface for Citizen components.
@@ -118,6 +114,7 @@ public:
      * @brief Gets the employment status of the citizen.
      * @return The employment status of the citizen.
      */
+    virtual void setSatisfaction(float satis) = 0 ; 
     virtual bool getEmployementStatus() = 0;
     /**
      * @brief Gets the property ownership status of the citizen.
@@ -139,6 +136,8 @@ public:
      * @brief Displays the details of the citizen in a formatted manner.
      */
     virtual void displayDetails() = 0; // Function declaration
+    virtual void setBalance( int bal) = 0 ;
+    virtual int getBalance () = 0  ; 
 
 
 protected:
@@ -151,6 +150,7 @@ protected:
     PopulationControl popControl; /**Manages population metrics and demographics. */
     Government *government; /**Pointer to the Government */
     float currTaxRate;
+    int Balance ; 
 };
 
 #endif // CITIZEN_INTERFACE_H

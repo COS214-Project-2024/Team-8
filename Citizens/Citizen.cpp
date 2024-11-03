@@ -19,8 +19,23 @@ Citizen::Citizen(std::string name, float salary, int age, float satisfaction)
     : Citizen(name, salary, age, satisfaction, nullptr) {}
 
 std::unique_ptr<CitizenInterface> Citizen::clone() {
-    popControl.increasePopulation() ;
+    popControl.increasePopulation();
     return std::make_unique<Citizen>(*this);
+}
+
+void Citizen::setBalance(int bal)
+{
+    this->Balance = bal ;
+}
+
+int Citizen::getBalance()
+{
+    return this->Balance ;
+}
+
+void Citizen::setSatisfaction(float satis)
+{
+    this->satisfaction = satis ; 
 }
 
 Citizen::~Citizen() {
@@ -44,7 +59,7 @@ void Citizen::update(float newTaxRate) {
 void Citizen::makeRequest(Government* government, std::string requestDetails) {
     if (government) {
         std::cout << name << " is making a request to the government: " << requestDetails << std::endl;
-        // government->handleRequest(requestDetails);
+        government->handleRequest(requestDetails);
     } else {
         std::cout << "[Citizen] Government does not exist." << std::endl;
     }
@@ -53,7 +68,7 @@ void Citizen::makeRequest(Government* government, std::string requestDetails) {
 void Citizen::useTransport(Transport *transport) {
     if (transport) {
         std::cout << name << " is using transport to travel." << std::endl;
-        // transport->travel();
+        // transport->travel(); // Problem Here , Too few Arguments 
     } else {
         std::cout << "[Citizen] Transport does not exist." << std::endl;
     }
@@ -110,11 +125,6 @@ std::string Citizen::getName() {
 float Citizen::getSatisfaction()
 {
     return satisfaction;
-}
-
-float Citizen::getTaxRate()
-{
-    return this->currTaxRate ;
 }
 
 void Citizen::requestPublicService(std::string serviceType, float impact) {
