@@ -134,9 +134,9 @@ public:
     float getHealthCoverage();
 
     /**
-     * @brief Sets the state of the medical center.
+     * @brief sets the state of the building
      */
-    void setState();
+    void setState(State* newState);
 
     /**
      * @brief Gets the birth rate supported by the medical center.
