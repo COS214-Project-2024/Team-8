@@ -29,6 +29,8 @@ public:
     
     Citizen(std::string name, float salary, int age, float satisfaction);
 
+    Citizen(){}; //added a default constructor - unathi
+
     /**
      * @brief Destructor for the Citizen object.
      */
