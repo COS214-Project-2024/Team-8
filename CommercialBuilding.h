@@ -147,6 +147,11 @@ public:
      * @return the income as an integer
      */
     virtual void SetBalance(double b) = 0;
+
+    /**
+     * @brief sets the state of the building
+     */
+    virtual void setState(State* newState) = 0;
 };
 
 #endif
