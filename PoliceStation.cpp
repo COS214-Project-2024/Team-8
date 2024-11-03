@@ -52,9 +52,9 @@ int PoliceStation::getWasteCost() {
 	return this->waste;
 }
 
-void PoliceStation::setState()
+void PoliceStation::setState(State* newState)
 {
-	this->state->changeState();
+	this->state = newState;
 }
 
 
