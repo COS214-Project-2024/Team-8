@@ -8,7 +8,7 @@
  * @class MonumentFactory
  * @brief Abstract factory class for creating Monument objects.
  */
-class MonumentFactory : LandmarkFactory {
+class MonumentFactory : public LandmarkFactory {
 
 public:
     Buildings* buildings; /**< Pointer to a Buildings object. */
