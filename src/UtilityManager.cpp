@@ -7,6 +7,7 @@
  */
 UtilityManager::UtilityManager() {
 	std::cout << "UtilityManager created" << std::endl;
+	std::cout << "UtilityManager created" << std::endl;
 }
 
 /**

@@ -1,29 +1,79 @@
-#include <exception>
-using namespace std;
 
-#ifndef __PopulationControl_h__
-#define __PopulationControl_h__
+#ifndef POPULATIONCONTROL_H
+#define POPULATIONCONTROL_H
 
-#include "State.h"
-// #include "Citizen.h"
-// #include "City.h"
-#include "PopulationMemento.h"
+#include <iostream>
+#include <vector>
+#include "Buildings.h"
+#include "MedicalCenter.h"
+#include "CommercialBuilding.h"
 
-class State;
-class Citizen;
-class City;
-class PopulationMemento;
-class PopulationControl;
+/**
+ * @class PopulationControl
+ * @brief Class for managing population dynamics in a city.
+ */
+class PopulationControl {
+public:
+    /** 
+     * @brief Constructor for the PopulationControl class. 
+     */
+    PopulationControl();
 
-class PopulationControl
-{
-	private: State _state;
-	public: Citizen* _unnamed_Citizen_;
-	public: City* _unnamed_City_;
+    /** 
+     * @brief Destructor for the PopulationControl class, cleans up dynamically allocated buildings.
+     */
+    ~PopulationControl();
 
-	public: PopulationMemento createMemento();
+    /**
+     * @brief Updates the population based on the building being added.
+     * 
+     * @param building Pointer to the building being added.
+     */
+    void updatePopulation(Buildings* building);
 
-	public: void setMemento(PopulationMemento aMemento);
+    /**
+     * @brief Gets the current total population.
+     * 
+     * @return Current population as an integer.
+     */
+    int getTotalPopulation() ;
+
+    /**
+     * @brief Simulates population growth based on hospitals' birth rates.
+     * 
+     */
+    void simulatePopulationGrowth();
+
+    /**
+     * @brief Calculates migration based on commercial buildings' job creation.
+     * 
+     * @param jobsCreated The number of jobs created by new commercial buildings.
+     */
+    void simulateMigration(int jobsCreated);
+    void increasePopulation();
+    int totalPopulation;                ///< Current total population
+    static const int MAX_POPULATION;    ///< Maximum allowable population
+    static const float MIGRATION_RATE_MULTIPLIER;
+
+private:
+    std::vector<Buildings*> buildings; ///< List of buildings in the city
+    
+
+    /**
+     * @brief Calculates the migration effect based on created jobs.
+     * 
+     * @param jobsCreated The number of jobs created by new commercial buildings.
+     * @return The calculated migration increase.
+     */
+    int calculateMigration(int jobsCreated) ;
+    
+    /**
+     * @brief Implements population control when the population exceeds the limit.
+     * 
+     * This function could represent a government policy that introduces emigration incentives,
+     * population growth restrictions, or other controls to manage overflow.
+     */
+    void enforcePopulationControl();
 };
 
-#endif
+#endif // POPULATION_CONTROL_H

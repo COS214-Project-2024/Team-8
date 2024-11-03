@@ -16,6 +16,7 @@ WindSource::WindSource(float output) {
  */
 float WindSource::getEnergyOutput() {
 	return energyOutput;
+	return energyOutput;
 }
 
 /**

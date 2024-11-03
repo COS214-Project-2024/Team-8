@@ -1,6 +1,9 @@
 #ifndef HYDROFACTORY_H
 #define HYDROFACTORY_H
 
+#ifndef HYDROFACTORY_H
+#define HYDROFACTORY_H
+
 #include "EnergyFactory.h"
 #include "HydroSource.h"
 /**

@@ -1,6 +1,9 @@
 #ifndef WATERSUPPLY_H
 #define WATERSUPPLY_H
 
+#ifndef WATERSUPPLY_H
+#define WATERSUPPLY_H
+
 #include "Utility.h"
 #include <iostream>
 #include "Command.h"
@@ -17,8 +20,6 @@ private:
 
 public:
 	WaterSupply(float curSupply);
-
-	void addCommand(Command* com);
 
 	std::string getStatus();
 

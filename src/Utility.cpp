@@ -9,6 +9,17 @@ float Utility::getOutput() {
 	return this->Output;
 }
 
+void Utility::setFuel(EnergySource* fuel) {
+	throw "NOT A MEMBER OF SAID CLASS";
+}
+
+std::string Utility::getEnergyType() {
+	throw "NOT A MEMBER OF SAID CLASS";
+}
+
+void Utility::setmaxWaste(int max){
+	throw "NOT A MEMBER OF SAID CLASS";
+}
 /**
  * @brief Set the max watts of the Utility
  * 
@@ -29,4 +40,3 @@ std::string Utility::getEnergyType() {
 void Utility::setOutput(float Output) {
 	this->Output = Output;
 }
-

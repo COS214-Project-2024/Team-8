@@ -1,6 +1,9 @@
 #ifndef NUCLEARFACTORY_H
 #define NUCLEARFACTORY_H
 
+#ifndef NUCLEARFACTORY_H
+#define NUCLEARFACTORY_H
+
 #include "EnergyFactory.h"
 #include "NuclearSource.h"
 /**

@@ -13,7 +13,9 @@ public:
 	WindSource(float output);
 
 	float getEnergyOutput();
+	float getEnergyOutput();
 
+	std::string getFuelType();
 	std::string getFuelType();
 };
 
