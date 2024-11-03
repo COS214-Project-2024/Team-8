@@ -1,48 +1,32 @@
 #include "Utility.h"
 
-std::string Utility::getStatus() {
-	return this->status;
+/**
+ * @brief return the output of the Utility
+ * 
+ * @return float The output of the Utility
+ */
+float Utility::getOutput() {
+	return this->Output;
 }
 
-void Utility::setFuel(EnergySource* fuel) {
-	throw "NOT A MEMBER OF SAID CLASS";
-}
-
+/**
+ * @brief Set the max watts of the Utility
+ * 
+ * @throw NOT A MEMBER OF SAID CLASS
+ * 
+ * This function only works for the PowerPlant class
+ */
 std::string Utility::getEnergyType() {
 	throw "NOT A MEMBER OF SAID CLASS";
 }
 
-void Utility::setmaxWaste(int max){
-	throw "NOT A MEMBER OF SAID CLASS";
+/**
+ * @brief Set the output of the Utility
+ * 
+ * @param Output The output of the Utility
+ * 
+ */
+void Utility::setOutput(float Output) {
+	this->Output = Output;
 }
 
-int Utility::getCurrentSupply() {
-	throw "NOT A MEMBER OF SAID CLASS";
-}
-
-int Utility::getCurrentLoad() {
-	throw "NOT A MEMBER OF SAID CLASS";
-}
-void Utility::setProcessCapacity(int pro){
-	throw "NOT A MEMBER OF SAID CLASS";
-}
-
-void Utility::setMaxWatts(float max){
-	throw "NOT A MEMBER OF SAID CLASS";
-}
-
-void Utility::setMaxGallons(float max){
-	throw "NOT A MEMBER OF SAID CLASS";
-}
-
-int Utility::getCurrentOutput() {
-	throw "NOT A MEMBER OF SAID CLASS";
-}
-
-float Utility::getMaxWatts() {
-	throw "NOT A MEMBER OF SAID CLASS";
-}
-
-Utility::~Utility() {
-	delete manager;
-}

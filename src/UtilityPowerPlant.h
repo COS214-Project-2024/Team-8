@@ -2,37 +2,47 @@
 #define UTILITYPOWERPLANT_H
 
 #include "Utility.h"
-#include "EnergySource.h"
+#include "WindFactory.h"
+#include "HydroFactory.h"
+#include "CoalFactory.h"
+#include "NuclearFactory.h"
+/**
+ * @file UtilityPowerPlant.h
+ * 
+ * @brief The header file for the UtilityPowerPlant class
+ */
 class UtilityPowerPlant : public Utility {
+
 private:
 	float maximumWatts;
-	int currentOutput;
-	EnergySource* fuel = nullptr;
+	EnergySource* fuel;
 
 public:
-	UtilityPowerPlant(int output);
-
-	std::string getEnergyType();
-
-	void executeOperation();
-
-	void repairUtility();
+	UtilityPowerPlant(float output);
 
 	std::string getStatus();
 
-	void pauseOperation();
+	void repairUtility();
 
-	void addCommand(Command* com);
+	void executeOperation();
+
+	float getOutput();
+
+	void setOutput(float Output);
+
+	void pauseOperation();
 
 	void setMaxWatts(float max);
 
 	void setFuel(EnergySource* fuel);
 
-	float getMaxWatts();
-
-	int getCurrentOutput();
+	std::string getEnergyType();
 
 	std::string getUtilityType();
+
+	void switchFuel();
+
+	Utility* clone();
 
 	void undoChange();
 };

@@ -1,21 +1,21 @@
-#include "StartCommand.h"
+#include "UndoCommand.h"
 
 /**
- * @brief Create a StartCommand object
+ * @brief Create a UndoCommand object
  * 
- * @param utility The utility to start
+ * @param utility The utility to Undo
  */
-StartCommand::StartCommand(Utility* utility) {
+UndoCommand::UndoCommand(Utility* utility) {
 	this->utility = utility;
 }
 
 /**
  * @brief Execute the command
  * 
- * Starts the utility
+ * Undos the utility
  */
-void StartCommand::execute() {
-	this->utility->executeOperation();
+void UndoCommand::execute() {
+	this->utility->pauseOperation();
 }
 
 /**
@@ -23,7 +23,7 @@ void StartCommand::execute() {
  * 
  * @return std::string The utility type of the command
  */
-std::string StartCommand::getUtilityType() {
+std::string UndoCommand::getUtilityType() {
 	return Command::getUtilityType();
 }
 
@@ -32,6 +32,6 @@ std::string StartCommand::getUtilityType() {
  * 
  * @return Utility* The utility of the command(deep copy)
  */
-Utility* StartCommand::getUtility() {
+Utility* UndoCommand::getUtility() {
 	return Command::getUtility();
 }

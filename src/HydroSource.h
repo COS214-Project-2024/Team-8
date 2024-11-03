@@ -2,9 +2,14 @@
 #define HYDROSOURCE_H
 
 #include "EnergySource.h"
+/**
+ * @file HydroSource.h
+ * 
+ * @brief The header file for the HydroSource class
+ */
 class HydroSource : public EnergySource {
 public:
-	HydroSource(int output);
+	HydroSource(float output);
 
 	float getEnergyOutput();
 
