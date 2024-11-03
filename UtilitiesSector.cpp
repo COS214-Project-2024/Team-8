@@ -3,11 +3,9 @@
 using namespace std;
 
 #include "UtilitiesSector.h"
+#include "Main.h"
 
 void UtilitiesSector::handleRequest(std::string requestDetails) {
-    if (requestDetails.find("UTILITIES") != std::string::npos) {
-        std::cout << "[COR] Utilities Sector handling request: " << requestDetails << std::endl;
-    } else if (getSuccessor()) {
-        getSuccessor()->handleRequest(requestDetails);
-    }
+	std::cout << "UtilitiesSector handling request: " << requestDetails << endl;
 }
+
