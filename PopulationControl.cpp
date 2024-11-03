@@ -18,8 +18,9 @@ PopulationControl::~PopulationControl() {
 
 // Update the total population based on the new building being added
 void PopulationControl::updatePopulation(Buildings* building) {
-    Citizen * list = building->getlistOfResidence()  ; 
+    if(building->getBuildingType() == "Residential"){
     int buildingCapacity = building->getCapacity();
+    }
 
     // Check if adding this building will exceed the maximum population
     if (totalPopulation + buildingCapacity <= MAX_POPULATION) {
