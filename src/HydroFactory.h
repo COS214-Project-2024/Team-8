@@ -2,10 +2,15 @@
 #define HYDROFACTORY_H
 
 #include "EnergyFactory.h"
-#include "HydroFactory.h"
+#include "HydroSource.h"
+/**
+ * @file HydroFactory.h
+ * 
+ * @brief The header file for the HydroFactory class
+ */
 class HydroFactory : public EnergyFactory {
 public:
-	EnergySource* createEnergySource(int output);
+	EnergySource* createEnergySource(float output);
 };
 
 #endif

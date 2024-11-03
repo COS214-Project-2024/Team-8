@@ -1,15 +1,15 @@
-#ifndef STOPCOMMAND_H
-#define STOPCOMMAND_H
+#ifndef UNDOCOMMAND_H
+#define UNDOCOMMAND_H
 
 #include "Command.h"
 /**
- * @file StopCommand.h
+ * @file UndoCommand.h
  * 
  * @brief The header file for the StopCommand class
  */
-class StopCommand : public Command {
+class UndoCommand : public Command {
 public:
-	StopCommand(Utility* utility);
+	UndoCommand(Utility* utility);
 
 	void execute();
 

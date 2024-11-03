@@ -2,15 +2,23 @@
 #define COMMAND_H
 
 #include "Utility.h"
+/**
+ * @file Command.h
+ * 
+ * @brief The header file for the Command class
+ */
 class Command {
 protected:
-	Utility* utility = nullptr;
+	Utility* utility;
+
 public:
 	virtual void execute() = 0;
 
-	virtual ~Command();
+	std::string getUtilityType();
 
-	virtual std::string getUtilityType() = 0;
+	Utility* getUtility();
+
+	virtual ~Command();
 };
 
 #endif

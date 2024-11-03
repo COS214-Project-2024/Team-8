@@ -2,32 +2,38 @@
 #define SEWAGESYSTEMS_H
 
 #include "Utility.h"
+/**
+ * @file SewageSystems.h
+ * 
+ * @brief The header file for the SewageSystems class
+ */
 class SewageSystems : public Utility {
 private:
 	int maxWaste;
 	float blockagepercentage;
-	int currentload;
 
 public:
-	SewageSystems(int curloat);
+	SewageSystems(float output);
 
 	std::string getStatus();
 
-	void repairUtility();
+	void repareUtility();
 
 	void executeOperation();
 
-	int getCurrentLoad();
+	float getOutput();
 
 	void pauseOperation();
 
-	void addCommand(Command* com);
-
 	void setmaxWaste(int max);
+
+	void undoChange();
 
 	std::string getUtilityType();
 
-	void undoChange();
+	Utility* clone();
+
+	void repairUtility();
 };
 
 #endif
