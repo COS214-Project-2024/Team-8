@@ -1,3 +1,4 @@
+#include <string>
 #include "Buildings.h"
 #ifndef STATE_H
 #define STATE_H
@@ -12,6 +13,7 @@ class State {
 
 protected:
     Buildings* building; ///< Pointer to the building associated with this state
+    string stateName;
 
 public:
     /**
@@ -26,4 +28,3 @@ public:
 };
 
 #endif
-
