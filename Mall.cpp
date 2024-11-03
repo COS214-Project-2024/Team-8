@@ -21,6 +21,7 @@ Mall::Mall(string bName,int pReq, int wReq, double mCost, int sCost, int waste, 
 	this->sales = sales;
 	this->profit = profit;
 	this->employment = emp;
+	this->income = 8000;
 
 	this->state =  new UnderConstruction(); //when we instantiate a building it will be under construction
 	this->state->handle(); //handle the state;
