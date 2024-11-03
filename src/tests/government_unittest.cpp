@@ -1,112 +1,148 @@
 /**
  * @file government_unittest.cpp
- * @brief Test file for Chain of Responsibility pattern implementation
+ * @brief Test file for Government implementations including Chain of Responsibility, Observer, and Command patterns
  * @author Design Wits
  * @date 2024-04-29
  */
 
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
+#include "Government.h"
 #include "FinanceSector.h"
 #include "UtilitiesSector.h"
 #include "GeneralSector.h"
 #include "FinanceDepartment.h"
+#include "Policies.h"
+#include "EconomicPolicies.h"
+#include "PublicServicesPolicies.h"
+#include "Citizen.h"
+#include "Transport.h"
 #include <memory>
 
-TEST_SUITE("Chain of Responsibility Tests") {
-    // Setup that's common for all tests
-    struct ChainSetup {
-        FinanceDepartment* financeDepartment;
-        FinanceSector* financeSector;
-        UtilitiesSector* utilitiesSector;
-        GeneralSector* generalSector;
+// Mock classes for testing
+class MockGovernment : public Government {
+public:
+    MockGovernment(FinanceDepartment* financeDepartment) : Government(financeDepartment) {}
+    bool policiesExecuted = false;
+    void executePolicies() { policiesExecuted = true; }
+};
 
-        ChainSetup() {
-            financeDepartment = new FinanceDepartment();
-            financeSector = new FinanceSector(financeDepartment);
-            utilitiesSector = new UtilitiesSector(financeDepartment);
-            generalSector = new GeneralSector(financeDepartment);
+class MockCitizen : public Citizen {
+public:
+    bool wasNotified = false;
+    
+    // Constructor using Citizen's constructor
+    MockCitizen() : Citizen("MockCitizen", 50000.0f, 30, 75.0f) {}
 
-            // Set up the chain
-            financeSector->setSuccessor(utilitiesSector);
-            utilitiesSector->setSuccessor(generalSector);
-        }
+    // Override only the update function to track notification
+    void update(float newTaxRate) override {
+        wasNotified = true;
+        Citizen::update(newTaxRate);
+    }
+};
 
-        ~ChainSetup() {
-            delete generalSector;
-            delete utilitiesSector;
-            delete financeSector;
-            delete financeDepartment;
-        }
-    };
+// Setup structure for Chain of Responsibility tests
+struct ChainSetup {
+    FinanceDepartment* financeDepartment;
+    FinanceSector* financeSector;
+    UtilitiesSector* utilitiesSector;
+    GeneralSector* generalSector;
 
-    TEST_CASE("Testing Chain Setup") {
-        ChainSetup setup;
-        
+    ChainSetup() {
+        financeDepartment = new FinanceDepartment();
+        financeSector = new FinanceSector(financeDepartment);
+        utilitiesSector = new UtilitiesSector(financeDepartment);
+        generalSector = new GeneralSector(financeDepartment);
+
+        // Set up the chain
+        financeSector->setSuccessor(utilitiesSector);
+        utilitiesSector->setSuccessor(generalSector);
+    }
+
+    ~ChainSetup() {
+        delete generalSector;
+        delete utilitiesSector;
+        delete financeSector;
+        delete financeDepartment;
+    }
+};
+
+TEST_CASE("Chain of Responsibility Basic Tests") {
+    ChainSetup setup;
+    
+    SUBCASE("Chain Setup Verification") {
         CHECK(setup.financeSector->getSuccessor() == setup.utilitiesSector);
         CHECK(setup.utilitiesSector->getSuccessor() == setup.generalSector);
         CHECK(setup.generalSector->getSuccessor() == nullptr);
     }
 
-    TEST_CASE("Testing Finance Request Handling") {
-        ChainSetup setup;
-        
-        // Test direct finance requests
-        SUBCASE("Finance request is handled by Finance Sector") {
-            std::string request = "FINANCE: Budget review needed";
-            setup.financeSector->handleRequest(request);
-            // Note: Since console output is used, we can't directly test the output
-            // In a real system, we'd want to mock the output or use a different verification method
-        }
-
-        SUBCASE("Finance request with tax") {
-            std::string request = "FINANCE: TAX collection review";
-            setup.financeSector->handleRequest(request);
-        }
+    SUBCASE("Finance Request Handling") {
+        std::string request = "FINANCE: Budget review needed";
+        setup.financeSector->handleRequest(request);
     }
 
-    TEST_CASE("Testing Utilities Request Handling") {
-        ChainSetup setup;
-        
-        SUBCASE("Utilities request is handled by Utilities Sector") {
-            std::string request = "UTILITIES: Power maintenance required";
-            setup.financeSector->handleRequest(request);
-        }
-
-        SUBCASE("Utilities request with funds") {
-            std::string request = "UTILITIES: FUNDS allocation needed";
-            setup.financeSector->handleRequest(request);
-        }
+    SUBCASE("Utilities Request Handling") {
+        std::string request = "UTILITIES: Power maintenance required";
+        setup.financeSector->handleRequest(request);
     }
 
-    TEST_CASE("Testing General Request Handling") {
-        ChainSetup setup;
+    SUBCASE("General Request Handling") {
+        std::string request = "General inquiry about services";
+        setup.financeSector->handleRequest(request);
+    }
+}
+
+TEST_CASE("Policy Implementation Tests") {
+    FinanceDepartment* financeDepartment = new FinanceDepartment();
+    MockGovernment govt(financeDepartment);
+    
+    SUBCASE("Economic Policies") {
+        EconomicPolicies econPolicies(&govt);
+        MockCitizen testCitizen;
+        PublicServicesPolicies psPolicies(&govt);
         
-        SUBCASE("General request is handled by General Sector") {
-            std::string request = "General inquiry about services";
-            setup.financeSector->handleRequest(request);
-        }
+        econPolicies.execute();
+        CHECK(govt.policiesExecuted);
     }
 
-    TEST_CASE("Testing Request Propagation") {
-        ChainSetup setup;
-        
-        SUBCASE("Non-finance request propagates to correct handler") {
-            std::string request = "UTILITIES: Emergency maintenance";
-            setup.financeSector->handleRequest(request);
-            // Request should propagate to Utilities Sector
-        }
-
-        SUBCASE("Non-specific request propagates to General Sector") {
-            std::string request = "General information needed";
-            setup.financeSector->handleRequest(request);
-            // Request should propagate to General Sector
-        }
+    SUBCASE("Public Services Policies") {
+        PublicServicesPolicies psPolicies(&govt);
+        psPolicies.execute();
+        CHECK(govt.policiesExecuted);
     }
 
-    TEST_CASE("Testing Multiple Requests") {
-        ChainSetup setup;
+    delete financeDepartment;
+}
+
+TEST_CASE("Observer Pattern Implementation") {
+    FinanceDepartment* financeDepartment = new FinanceDepartment();
+    Government govt(financeDepartment);
+    MockCitizen citizen1, citizen2;
+    
+    SUBCASE("Attachment and Notification") {
+        govt.attach(&citizen1);
+        govt.attach(&citizen2);
+        govt.notify();
         
+        CHECK(citizen1.wasNotified);
+        CHECK(citizen2.wasNotified);
+    }
+    
+    SUBCASE("Detachment Verification") {
+        govt.attach(&citizen1);
+        govt.detach(&citizen1);
+        govt.notify();
+        
+        CHECK_FALSE(citizen1.wasNotified);
+    }
+
+    delete financeDepartment;
+}
+
+TEST_CASE("Multiple Request Processing") {
+    ChainSetup setup;
+    
+    SUBCASE("Multiple Request Types") {
         std::vector<std::string> requests = {
             "FINANCE: Budget review",
             "UTILITIES: Power outage",
@@ -120,13 +156,8 @@ TEST_SUITE("Chain of Responsibility Tests") {
         }
     }
 
-    TEST_CASE("Testing Null Request Handling") {
-        ChainSetup setup;
-        
-        SUBCASE("Empty request string") {
-            std::string request = "";
-            setup.financeSector->handleRequest(request);
-            // Should be handled by General Sector
-        }
+    SUBCASE("Empty Request Handling") {
+        std::string request = "";
+        setup.financeSector->handleRequest(request);
     }
 }
