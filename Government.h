@@ -156,6 +156,24 @@ public:
      */
     double getTotalRevenue() const;
 
+    // Chain of Responsibility methods
+    /**
+     * @brief Sets the successor in the chain of responsibility
+     * @param nextHandler Pointer to the next handler in the chain
+     */
+    void setSuccessor(Government* nextHandler);
+    
+    /**
+     * @brief Gets the current successor in the chain
+     * @return Pointer to the current successor
+     */
+    Government* getSuccessor() const;
+
+    /**
+     * @brief Handles requests through the chain of responsibility
+     * @param requestDetails Details of the request to be handled
+     */
+
     /**
      * @brief Handles citizen requests
      * @param requestDetails Details of the request

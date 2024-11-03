@@ -49,8 +49,7 @@ void Citizen::update(float newTaxRate) {
 void Citizen::makeRequest(Government* government, std::string requestDetails) {
     if (government) {
         std::cout << name << " is making a request to the government: " << requestDetails << std::endl;
-        government->handleRequest(requestDetails);
-    } else {
+        government->handleRequest(requestDetails); // Pass first object in chain and set successors in main
         std::cout << "[Citizen] Government does not exist." << std::endl;
     }
 }
