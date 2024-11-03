@@ -24,7 +24,7 @@ void UnderConstruction::changeState() {
 		if(building->receivePower() && building->receivePower())
         {
             State* newState = new Operational();
-            building->setState();
+            building->setState(newState);
             cout<<"The building is now Operational, resources have been replenished!";
             //if the resources are available, the building will be repaired
             //the state will become operations
