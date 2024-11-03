@@ -5,6 +5,7 @@
 #include <memory>
 #include "CitizenInterface.h"
 #include "TravelManager.h"
+#include "Stops.h"
 
 /**
  * @class Citizen

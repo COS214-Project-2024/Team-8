@@ -115,7 +115,7 @@ public:
      * @brief Returns the list of residents in a building
      * @return list of residents in the building
      */
-    int getlistOfResidence()
+    Citizen* getlistOfResidence()
     {
         return this->listOfCitizens;
     }
