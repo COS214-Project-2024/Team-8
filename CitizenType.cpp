@@ -16,32 +16,6 @@ void CitizenType::update(float newTaxRate)
         baseCitizen->update(newTaxRate);
     }
 }
-void Government::notify()
-{
-    for (Citizen * citizen : CitizenList)
-    {
-        double incomeTax;
-        double propertyTax;
-        if (citizen->getEmployementStatus() == true)
-        {
-            citizen->update(incomeTax);
-        }
-        else if (citizen->getPropertyOwnershipStatus() == true)
-        {
-            citizen->update(propertyTax);
-        }
-        else if (citizen->getPropertyOwnershipStatus() && citizen->getEmployementStatus())
-        {
-            double combinedTax = incomeTax + propertyTax;
-            citizen->update(combinedTax);
-        }
-        else
-        {
-            // assuming the citizen is unemployed
-            citizen->update(0.0f);
-        }
-    }
-}
 
 void CitizenType::makeRequest(Government *government, std::string requestDetails)
 {
@@ -51,10 +25,11 @@ void CitizenType::makeRequest(Government *government, std::string requestDetails
     }
 }
 
-void useTransport(Stops* stop, int capacity)
+void CitizenType::useTransport(Stops *stop, int capacity)
 {
-        baseCitizen->useTransport(stop, capacity);
+    baseCitizen->useTransport(stop, capacity);
 }
+
 
 void CitizenType::adjustCitizenSatisfaction(float newSatisfaction)
 {

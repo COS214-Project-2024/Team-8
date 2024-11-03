@@ -54,7 +54,7 @@ void Citizen::makeRequest(Government* government, std::string requestDetails) {
     }
 }
 
-void Citizen::useTransport(Stop *stop, int capacity){
+void Citizen::useTransport(Stops *stop, int capacity){
     TravelManager *manager = new TravelManager();
     manager->Travel(capacity,stop);
 }
