@@ -2,6 +2,7 @@
 #define CITIZENTYPE_H
 
 #include "CitizenInterface.h"
+#include "TravelManager.h"
 #include <string>
 #include <memory>
 #include <iostream>
