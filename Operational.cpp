@@ -31,3 +31,8 @@ void Operational::changeState() {
 		//if the resources are unavailable, the building will become damaged.
 	}
 }
+
+string Operational::getStateName()
+{
+	return this->stateName;
+}
