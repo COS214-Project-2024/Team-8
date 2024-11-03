@@ -8,7 +8,7 @@ revenueResource::revenueResource(){
     availableRevenue = 1000;
 }
 /**
- * @brief give power to the city sector, return true if there is enough power and decrease the availabe power by the power given to the city sector, otherwise return false
+ * @brief Return true if the requested units of Revenue can be given and subtract the available Revenue, otherwise return false if it can not be given.
  * 
  * @param units 
  * @return true 
@@ -24,7 +24,7 @@ bool revenueResource::giveResource(float units){
     return true;
 }
 /**
- * @brief Get Revenue from a city sector, increase the available revenue by the amount received from said City Sector
+ * @brief Get Revenue from the city, increase the available revenue by the amount received
  * 
  * @param units 
  */

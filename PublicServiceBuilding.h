@@ -108,9 +108,9 @@ public:
     virtual void requestState() = 0;
 
     /**
-     * @brief Sets the current state of the building.
+     * @brief sets the state of the building
      */
-    void setState();
+    virtual void setState(State* newState) = 0;
     
     /**
      * @brief Gets the waste cost of the building.

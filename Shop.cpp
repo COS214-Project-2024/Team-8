@@ -23,7 +23,7 @@ Shop::Shop(string bName, int pReq, int wReq, double mCost, int sCost, int waste,
 
 	this->state =  new UnderConstruction(); //when we instantiate a building it will be under construction
 	this->state->handle(); //handle the state;
-	this->setState(); //change the state to operation if the resources are available
+	this->state->changeState();//in case it needs to change
 
 	this->listOfCitizens->adjustCitizenSatisfaction(5.0);
 }
@@ -52,29 +52,9 @@ int Shop::getWasteCost() {
 	return this->waste;
 }
 
-void Shop::setState()
+void Shop::setState(State* newState)
 {
-	this->state->changeState();
-}
-
-string Shop::getName()
-{
-	return this->buildingName;
-}
-
-string Shop::getBuildingType()
-{
-	return this->buildingType;
-}
-
-float Shop::getSales()
-{
-	return this->sales;
-}
-
-float Shop::getProfit()
-{
-	return this->profit;
+	this->state = newState;
 }
 
 int Shop::getJobsCreated()
@@ -192,4 +172,18 @@ int Shop::payCitizen()
 	return 5000;
 }
 
+int Shop::getCommercialIncome()
+{
+	return this->profit;
+}
+
+void Shop::setBalance(double d)
+{
+	this->balance  = d ;
+}
+
+double Shop::getBalance()
+{
+	return this->balance;
+}
 

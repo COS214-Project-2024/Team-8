@@ -117,9 +117,9 @@ public:
     virtual void requestState();
 
     /**
-     * @brief Sets the state of the park.
+     * @brief sets the state of the building
      */
-    void setState();
+    void setState(State* newState);
 
     /**
      * @brief Gets the waste cost for the park.

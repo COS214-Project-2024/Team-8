@@ -24,7 +24,7 @@ Mall::Mall(string bName,int pReq, int wReq, double mCost, int sCost, int waste, 
 
 	this->state =  new UnderConstruction(); //when we instantiate a building it will be under construction
 	this->state->handle(); //handle the state;
-	this->setState(); //change the state to operation if the resources are available
+	this->state->changeState();//in case it needs to change
 
 	this->listOfCitizens = new Citizen("NewCitizen",100,23,5.0);
 	this->listOfCitizens->adjustCitizenSatisfaction(5.0);
@@ -54,19 +54,9 @@ int Mall::getWasteCost() {
 	return this->waste;
 }
 
-void Mall::setState()
+void Mall::setState(State* newState)
 {
-	this->state->changeState();
-}
-
-string Mall::getName()
-{
-	return this->buildingName;
-}
-
-string Mall::getBuildingType()
-{
-	return this->buildingType;
+	this->state = newState;
 }
 
 float Mall::getSales()
@@ -74,10 +64,6 @@ float Mall::getSales()
 	return this->sales;
 }
 
-float Mall::getProfit()
-{
-	return this->profit;
-}
 
 int Mall::getJobsCreated()
 {
@@ -99,10 +85,6 @@ float Mall::getProfit()
 	return this->profit;
 }
 
-float Mall::getSales()
-{
-	return this->sales;
-}
 
 bool Mall::payMaintenance()
 {
@@ -193,6 +175,21 @@ int Mall::payCitizen()
 {
 	cout<<"Paying citizen"<<endl;
 	return 5000;
+}
+
+int Mall::getCommercialIncome()
+{
+	return this->profit;
+}
+
+void Mall::setBalance(double d)
+{
+	this->balance  = d;
+}
+
+double Mall::getBalance()
+{
+	return this->balance;
 }
 
 

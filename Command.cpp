@@ -6,7 +6,7 @@
  * @return std::string The utility type of the command
  */
 std::string Command::getUtilityType() {
-	this->utility->getUtilityType();
+	return this->utility->getUtilityType();
 }
 
 /**

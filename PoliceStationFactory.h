@@ -8,7 +8,7 @@
  * @class PoliceStationFactory
  * @brief Factory class for creating instances of PoliceStation.
  */
-class PoliceStationFactory : PublicServiceFactory {
+class PoliceStationFactory : public PublicServiceFactory {
 
 public:
     Buildings* buildings; ///< Pointer to a Building instance

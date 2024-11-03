@@ -40,7 +40,7 @@ float ResourceMediator::replenishPower(){
 
         WaterSupply* specificUtil = dynamic_cast<WaterSupply*>(util);
         if(specificUtil){
-            total += specificUtil->supplyResources();
+            total += specificUtil->getOutput();
         }
 
     }
@@ -76,7 +76,7 @@ float ResourceMediator::replenishWater(){
 
         WaterSupply* specificUtil = dynamic_cast<WaterSupply*>(util);
         if(specificUtil){
-        total += specificUtil->supplyResources();
+        total += specificUtil->getOutput();
         }
 
     }
@@ -131,11 +131,10 @@ float ResourceMediator::gainWasteCleaning(){
     float total = 0;
     for(Utility* util : *utilities){
 
-        WaterSupply* specificUtil = dynamic_cast<WaterSupply*>(util);
+        WasteManagement* specificUtil = dynamic_cast<WasteManagement*>(util);
         if(specificUtil){
-        total += specificUtil->supplyResources();
+        total += specificUtil->getOutput() ;
         }
-
     }
 
     return total;
@@ -169,9 +168,9 @@ float ResourceMediator::gainSewageCleaning(){
     float total = 0;
     for(Utility* util : *utilities){
 
-        WaterSupply* specificUtil = dynamic_cast<WaterSupply*>(util);
+        SewageSystems* specificUtil = dynamic_cast<SewageSystems*>(util);
         if(specificUtil){
-        total += specificUtil->supplyResources();
+        total += specificUtil->getOutput() ;
         }
 
     }
@@ -191,7 +190,7 @@ float ResourceMediator::replenishRevenue(){
 
         WaterSupply* specificUtil = dynamic_cast<WaterSupply*>(util);
         if(specificUtil){
-        total += specificUtil->supplyResources();
+        total += specificUtil->getOutput();
         }
 
     }
@@ -221,7 +220,7 @@ float ResourceMediator::replenishConstResource(){
 
         WaterSupply* specificUtil = dynamic_cast<WaterSupply*>(util);
         if(specificUtil){
-        total += specificUtil->supplyResources();
+        total += specificUtil->getOutput();
         }
 
     }

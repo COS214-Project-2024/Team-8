@@ -4,6 +4,7 @@ using namespace std;
 #ifndef BUILDINGS_H
 #define BUILDINGS_H
 
+
 class State;
 class ResourceMediator;
 class Citizen;
@@ -109,7 +110,7 @@ public:
     /**
      * @brief Sets the state of the building.
      */
-    virtual void setState() = 0;
+    virtual void setState(State* newState) = 0;
 
     /**
      * @brief Returns the list of residents in a building

@@ -9,7 +9,9 @@
 
 #include "Buildings.h"
 
-#include "waterSupply.h"
+#include "WaterSupply.h"
+#include "SewageSystems.h"
+#include "WasteManagement.h"
 #include "Resource.h"
 
 class Resource;

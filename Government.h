@@ -11,9 +11,12 @@
 #include <vector>
 #include <memory>
 #include <string>
-#include "Citizen.h"
 #include "Command.h"
-#include "FinanceDepartment.h"
+#include "CitizenInterface.h"
+
+// Forward declaration
+class CitizenInterface;
+class FinanceDepartment;
 
 /**
  * @class Government
@@ -25,20 +28,20 @@
 class Government {
 private:
     std::vector<CitizenInterface*> citizenList;  ///< List of citizen observers
-    Government* successor;                        ///< Next handler in chain of responsibility
-    Government* requestee;                        ///< Government entity handling requests
+    Government* successor;              ///< Next handler in chain of responsibility
+    Government* requestee;              ///< Government entity handling requests
     std::vector<std::unique_ptr<Command>> commands; ///< Command pattern implementation
-    double budget;                               ///< Current government budget
-    double totalRevenue;                         ///< Total collected revenue
-    double currentTaxRate;                        ///< Current tax rate for citizen notifications
+    double budget;                     ///< Current government budget
+    double totalRevenue;               ///< Total collected revenue
+    double currentTaxRate;             ///< Current tax rate for citizen notifications
     FinanceDepartment* financeDepartment; ///< Finance branch of the Government
 
 public:
     /** @brief Default constructor */
     Government();
 
-    /** @brief Parameterized  constructor */
-    Government(FinanceDepartment *financeDepartment);
+    /** @brief Parameterized constructor */
+    Government(FinanceDepartment* financeDepartment);
 
     /** @brief Virtual destructor */
     virtual ~Government() = default;
@@ -47,13 +50,13 @@ public:
      * @brief Attaches a citizen observer to the government
      * @param citizen Pointer to citizen to attach
      */
-    void attach(Citizen* citizen);
+    void attach(CitizenInterface* citizen);
     
     /**
      * @brief Detaches a citizen observer from the government
      * @param citizen Pointer to citizen to detach
      */
-    void detach(Citizen* citizen);
+    void detach(CitizenInterface* citizen);
     
     /**
      * @brief Notifies all citizen observers of changes in tax rates
@@ -91,6 +94,7 @@ public:
     
     /**
      * @brief Collects sales tax
+     * @return Amount of sales tax collected
      */
     double requestCollectionOfSalesTax();
     
@@ -101,14 +105,8 @@ public:
     double requestAllocationOfUtilitiesFunds();
 
     /**
-     * @brief Allocates funds for PublicServiceBuildings such as HealthCare ,Education and Police Station
-     * @return Amount allocated for PublicServiceBuildings such as HealthCare ,Education and Police Station
-     */
-    double requestAllocationOfPublicServiceBuildingsFunds();
-    
-    /**
-     * @brief Allocates funds for PublicServiceBuildings such as HealthCare ,Education and Police Station
-     * @return Amount allocated for PublicServiceBuildings such as HealthCare ,Education and Police Station
+     * @brief Allocates funds for public service buildings
+     * @return Amount allocated for public service buildings
      */
     double requestAllocationOfPublicServiceBuildingsFunds();
     
@@ -116,15 +114,13 @@ public:
      * @brief Allocates funds for transport
      * @return Amount allocated for transport
      */
-
-     double requestAllocationOfTransportFunds();
+    double requestAllocationOfTransportFunds();
     
     /**
      * @brief Allocates funds for education
      * @return Amount allocated for education
      */
     float requestAllocationOfEducationFunds();
-
     
     /**
      * @brief Allocates funds for recreation
@@ -144,7 +140,7 @@ public:
      */
     double getBudget() const;
     
-     /**
+    /**
      * @brief Sets the total revenue
      * @param b Current revenue amount
      */
@@ -156,7 +152,6 @@ public:
      */
     double getTotalRevenue() const;
 
-    // Chain of Responsibility methods
     /**
      * @brief Sets the successor in the chain of responsibility
      * @param nextHandler Pointer to the next handler in the chain
@@ -168,11 +163,6 @@ public:
      * @return Pointer to the current successor
      */
     Government* getSuccessor() const;
-
-    /**
-     * @brief Handles requests through the chain of responsibility
-     * @param requestDetails Details of the request to be handled
-     */
 
     /**
      * @brief Handles citizen requests

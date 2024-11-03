@@ -30,7 +30,7 @@ public:
 	 *
 	 * @return A pointer to a newly created mall Buildings object.
 	 */
-	virtual Buildings* createBuilding() = 0;
+	virtual Buildings* createBuilding();
 };
 
 #endif

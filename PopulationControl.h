@@ -7,6 +7,7 @@
 #include "Buildings.h"
 #include "MedicalCenter.h"
 #include "CommercialBuilding.h"
+#include "ResidentialBuilding.h"
 
 /**
  * @class PopulationControl
@@ -29,7 +30,7 @@ public:
      * 
      * @param building Pointer to the building being added.
      */
-    void updatePopulation(Buildings* building);
+    void updatePopulation(ResidentialBuilding* building);
 
     /**
      * @brief Gets the current total population.

@@ -32,7 +32,7 @@ Citizen** BuildingController::getListOfCitizens()
     {
         if ( dynamic_cast<ResidentialBuilding  *>(ListOfBuildings[i]) ) 
         {
-            ListOfCitizens[Res] = this->ListOfBuildings[i].getListOfResidence ; // Residential Buildings doesnt have a getListOfResidents function , also no variable for the Residents
+            ListOfCitizens[Res] = this->ListOfBuildings[i]->getlistOfResidence() ; // Residential Buildings doesnt have a getListOfResidents function , also no variable for the Residents
             Res++ ;
         }
     }
@@ -109,7 +109,7 @@ void BuildingController::removeBuilding(Buildings *rem)
 
 int BuildingController::getAmountOfBuildings()
 {
-    this->amountOfBuildings ; 
+    return this->amountOfBuildings ; 
 }
 
 int BuildingController::getTotalPowerReq()
@@ -169,7 +169,7 @@ int BuildingController::getCommercialIncome()
     {
         if ( dynamic_cast<CommercialBuilding * >(ListOfBuildings[i]) ) 
         {
-             Res += this->ListOfBuildings[i].getCommercialIncome() ; // Commercial Buildings Doesnt have an Income 
+             Res += dynamic_cast<CommercialBuilding * >(ListOfBuildings[i])->getProfit() ; // Commercial Buildings Doesnt have an Income 
         }
     }
     return Res;

@@ -6,7 +6,7 @@ using namespace std;
 
 class ResourceMediator;
 class Citizen;
-#include "ResidentialBuilding.h";
+#include "ResidentialBuilding.h"
 
 /**
  * @class Apartment
@@ -120,11 +120,6 @@ public:
     virtual void requestState();
 
     /**
-     * @brief Sets the state of the building.
-     */
-    void setState();
-
-    /**
      * @brief Gets the list of residents in the apartment.
      * @return A pointer to the list of residents.
      */
@@ -141,6 +136,11 @@ public:
      * @return The waste cost as an integer.
      */
     int getWasteCost();
+
+    /**
+     * @brief sets the state of the building
+     */
+    void setState(State* newState);
 };
 
 #endif

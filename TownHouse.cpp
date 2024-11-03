@@ -22,17 +22,13 @@ TownHouse::TownHouse(string bName,int pReq, int wReq, double mCost, int sCost, i
 
 	this->state =  new UnderConstruction(); //when we instantiate a building it will be under construction
 	this->state->handle(); //handle the state;
-	this->setState(); //change the state to operation if the resources are available
+	this->state->changeState();//in case it needs to change
 
 	this->listOfCitizens = new Citizen();
 }
 
 void TownHouse::requestState() {
 	this->state->handle();
-}
-
-int TownHouse::getCapacity() {
-	return this->capacity;
 }
 
 Citizen* TownHouse::getListOfResidents() {
@@ -59,9 +55,9 @@ int TownHouse::getWasteCost() {
 	return this->waste;
 }
 
-void TownHouse::setState()
+void TownHouse::setState(State* newState)
 {
-	this->state->changeState();
+	this->state = newState;
 }
 
 int TownHouse::getCapacity()

@@ -26,8 +26,13 @@ void Operational::changeState() {
 	else
 	{
 		State* newState = new Damaged();
-		building->setState();
+		building->setState(newState);
 		cout<<"The building is now Damaged, please replace resources to restore it to operational!";
 		//if the resources are unavailable, the building will become damaged.
 	}
+}
+
+string Operational::getStateName()
+{
+	return this->stateName;
 }

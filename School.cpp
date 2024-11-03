@@ -22,7 +22,7 @@ School::School(string bName,int pReq, int wReq, double mCost, int sCost, int was
 
 	this->state =  new UnderConstruction(); //when we instantiate a building it will be under construction
 	this->state->handle(); //handle the state;
-	this->setState(); //change the state to operation if the resources are available
+	this->state->changeState();//in case it needs to change
 
 	this->listOfCitizens = new Citizen();
 }
@@ -51,11 +51,10 @@ int School::getWasteCost() {
 	return this->waste;
 }
 
-void School::setState()
+void School::setState(State* newState)
 {
-	this->state->changeState();
+	this->state = newState;
 }
-
 
 int School::getJobsCreated()
 {

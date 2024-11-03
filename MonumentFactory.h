@@ -8,7 +8,7 @@
  * @class MonumentFactory
  * @brief Abstract factory class for creating Monument objects.
  */
-class MonumentFactory : LandmarkFactory {
+class MonumentFactory : public LandmarkFactory {
 
 public:
     Buildings* buildings; /**< Pointer to a Buildings object. */
@@ -17,7 +17,7 @@ public:
      * @brief Pure virtual function to create a building.
      * @return Pointer to a Buildings object.
      */
-    virtual Buildings* createBuilding() = 0;
+    virtual Buildings* createBuilding();
 };
 
 #endif

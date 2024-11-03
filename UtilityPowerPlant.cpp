@@ -83,23 +83,6 @@ void UtilityPowerPlant::pauseOperation() {
 	this->status = "Paused";
 }
 
-/**
- * @brief Set the max watts of the UtilityPowerPlant
- * 
- * @param max The max watts of the UtilityPowerPlant
- */
-void UtilityPowerPlant::setMaxWatts(float max) {
-	this->maximumWatts = max;
-}
-
-/**
- * @brief Set the fuel of the UtilityPowerPlant
- * 
- * @param fuel The fuel of the UtilityPowerPlant
- */
-std::string UtilityPowerPlant::getEnergyType() {
-	return this->fuel->getFuelType();
-}
 
 /**
  * @brief Get the utility type of the UtilityPowerPlant

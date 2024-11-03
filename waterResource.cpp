@@ -8,7 +8,7 @@ waterResource::waterResource(){
     availableWater = 1000;
 }
 /**
- * @brief Return true if the requested amount of water can be supplied, otherwise return false.
+ * @brief Return true if the requested units of water can be supplied and subtract the available water, otherwise return false if it can not be supplied.
  * 
  * @param units 
  * @return true 
@@ -24,7 +24,7 @@ bool waterResource::giveResource(float units){
     return true;
 }
 /**
- * @brief Get water from a city sector, increase the available water by the water received from said City Sector
+ * @brief Get water from the water utility object, increase the available water by the water received from said water utility
  * 
  * @param units 
  */

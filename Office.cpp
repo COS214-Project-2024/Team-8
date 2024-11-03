@@ -24,7 +24,7 @@ Office::Office(string bName,int pReq, int wReq, double mCost, int sCost, int was
 
 	this->state =  new UnderConstruction(); //when we instantiate a building it will be under construction
 	this->state->handle(); //handle the state;
-	this->setState(); //change the state to operation if the resources are available
+	this->state->changeState();//in case it needs to change
 
 	this->listOfCitizens = new Citizen("NewCitizen",100,21,5.0);
 	this->listOfCitizens->adjustCitizenSatisfaction(5.0);
@@ -50,9 +50,9 @@ int Office::getWasteCost() {
 	return this->waste;
 }
 
-void Office::setState()
+void Office::setState(State* newState)
 {
-	this->state->changeState();
+	this->state = newState;
 }
 
 string Office::getName()
@@ -174,6 +174,21 @@ int Office::payCitizen()
 {
 	cout<<"Paying citizen"<<endl;
 	return 5000;
+}
+
+int Office::getCommercialIncome()
+{
+	return this->profit ;
+}
+
+void Office::setBalance(double d)
+{
+	this->balance  = d;
+}
+
+double Office::getBalance()
+{
+	return this->balance;
 }
 
 

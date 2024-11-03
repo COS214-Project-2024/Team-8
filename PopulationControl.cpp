@@ -17,9 +17,10 @@ PopulationControl::~PopulationControl() {
 }
 
 // Update the total population based on the new building being added
-void PopulationControl::updatePopulation(Buildings* building) {
+void PopulationControl::updatePopulation(ResidentialBuilding* building) {
+    int buildingCapacity = 0;
     if(building->getBuildingType() == "Residential"){
-    int buildingCapacity = building->getCapacity();
+        buildingCapacity = building->getCapacity();
     }
 
     // Check if adding this building will exceed the maximum population
@@ -31,11 +32,12 @@ void PopulationControl::updatePopulation(Buildings* building) {
         delete building;
         enforcePopulationControl();
     }
-}
-// Simulate migration based on jobs created for commercial buildings
+    // Simulate migration based on jobs created for commercial buildings
         if (CommercialBuilding* commercialBuilding = dynamic_cast<CommercialBuilding*>(building)) {
             simulateMigration(commercialBuilding->getJobsCreated());
         }
+}
+
 
 // Get the current total population
 int PopulationControl::getTotalPopulation() {
@@ -47,7 +49,8 @@ void PopulationControl::simulatePopulationGrowth() {
     int totalBirths = 0;
 
     for (const Buildings* building : buildings) {
-        if (const MedicalCenter* hospital = dynamic_cast<const MedicalCenter*>(building)) {
+        if (const MedicalCenter* constHospital = dynamic_cast<const MedicalCenter*>(building)) {
+            MedicalCenter* hospital = const_cast<MedicalCenter*>(constHospital);
             totalBirths += hospital->getBirthRate();
         }
     }
@@ -58,6 +61,8 @@ void PopulationControl::simulatePopulationGrowth() {
         enforcePopulationControl();
     }
 }
+
+
 
 // Simulate migration based on jobs created in commercial buildings
 void PopulationControl::simulateMigration(int jobsCreated) {

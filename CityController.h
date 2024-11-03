@@ -3,8 +3,8 @@
 
 #include "Buildings.h"
 #include "PopulationControl.h"
-#include "Resources.h"
-#include "Policy.h"
+#include "Resource.h"
+#include "Policies.h"
 #include "Citizen.h"
 #include "UtilitesControl.h"
 #include "BuildingController.h"
@@ -45,12 +45,12 @@ public:
     ~CityController();
 
     void Update();
-    Policy *evaluatePolicies();
+    Policies *evaluatePolicies();
     Citizen *handleCitizenNeedsAndSatisfaction();
     PopulationControl *evaluatePopulationControl();
     void addDecorations(); // What Decorations and where ? City Sectors ?
     void ProvideUtilities();
-    Resources *buildInfrastructure();
+    Resource *buildInfrastructure();
     Buildings *createBuilding; // Was Builder , changed to Buildings
 
     /**

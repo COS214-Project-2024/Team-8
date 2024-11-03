@@ -7,7 +7,7 @@
 #include "PopulationControl.h"
 #include "Buildings.h"
 #include "ResourceMediator.h"
-#include "Resources.h"
+#include "Resource.h"
 #include "Utility.h"
 #include "CitySector.h"
 #include "CityController.h"
@@ -24,7 +24,7 @@ private:
     int AmountOfUtilities ;
 
     CitySector * buildings; // 
-    std::vector<Resources *> resources;
+    std::vector<Resource *> resources;
     ResourceMediator *resourceMediator;
 
     int TotalWasteManagment;
