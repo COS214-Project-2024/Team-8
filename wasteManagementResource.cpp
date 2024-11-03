@@ -8,7 +8,7 @@ wasteManagementResource::wasteManagementResource(){
     availableWasteManagment = 1000;
 }
 /**
- * @brief give power to the city sector, return true if there is enough power and decrease the availabe power by the power given to the city sector, otherwise return false
+ * @brief Return true if the requested units of waste cleaning can be supplied and subtract the available resource, otherwise return false if it can not be supplied.
  * 
  * @param units 
  * @return true 
@@ -24,7 +24,7 @@ bool wasteManagementResource::giveResource(float units){
     return true;
 }
 /**
- * @brief Get waste cleaning capabilities from a city sector, increase the available capabilities for waste cleaning by the amount received from said City Sector
+ * @brief Get waste cleaning capabilities from waste Management, increase the available capabilities for waste cleaning by the amount received from said waste Management
  * 
  * @param units 
  */

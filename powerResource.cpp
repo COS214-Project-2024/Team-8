@@ -7,7 +7,7 @@ powerResource::powerResource(){
     availablePower = 1000;
 }
 /**
- * @brief give power to the city sector, return true if there is enough power and decrease the availabe power by the power given to the city sector, otherwise return false
+ * @brief Return true if the requested amount of power can be supplied and subtract the available power, otherwise return false if it can not be supplied.
  * 
  * @param units 
  * @return true 
@@ -23,7 +23,7 @@ bool powerResource::giveResource(float units){
     return true;
 }
 /**
- * @brief Get Power from a city sector, increase the available Power by the amount received from said City Sector
+ * @brief Get Power from a Power Plant, increase the available Power by the amount received from said Power Plant
  * 
  * @param units 
  */

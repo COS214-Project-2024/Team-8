@@ -8,7 +8,7 @@ constructionResource::constructionResource(){
     constructionMaterial = 1000;
 }
 /**
- * @brief give power to the city sector, return true if there is enough power and decrease the availabe power by the power given to the city sector, otherwise return false
+ * @brief Return true if the requested amount of construction material can be supplied and subtract the available material, otherwise return false if it can not be supplied.
  * 
  * @param units 
  * @return true 
@@ -24,7 +24,7 @@ bool constructionResource::giveResource(float units){
     return true;
 }
 /**
- * @brief Get Construction Material from a city sector, increase the available Construction by the amount received from said City Sector
+ * @brief Get Construction Material from the City, increase the available Construction by the amount received.
  * 
  * @param units 
  */
