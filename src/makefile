@@ -1,41 +1,33 @@
-# Compiler settings
-CXX = g++
-CXXFLAGS = -std=c++17 -Wall -Wextra
+CC = g++ -c -std=c++17 -g -Wall -Werror
 
-# Source files - including dependencies
-SOURCES = Main.cpp \
-         Government.cpp \
-         Policies.cpp \
-         EconomicPolicies.cpp \
-         PublicServicesPolicies.cpp \
-         Command.cpp \
-         Citizen.cpp
+all = main.o Stops.o TrainStation.o Airpot.o Road.o RouteNode.o BestRouteNode.o AccesibleRoute.o MapIterator.o \
+	Transport.o Train.o Vehicle.o Plane.o TransportBuilder.o PlaneBuilder.o TrainBuilder.o \
+	VehicleBuilder.o TravelManager.o
 
-# Object files
-OBJECTS = $(SOURCES:.cpp=.o)
+demoall = DemoMain.o Stops.o TrainStation.o Airpot.o Road.o RouteNode.o BestRouteNode.o AccesibleRoute.o MapIterator.o \
+	Transport.o Train.o Vehicle.o Plane.o TransportBuilder.o PlaneBuilder.o TrainBuilder.o \
+	VehicleBuilder.o TravelManager.o
 
-# Target executable
-TARGET = government
+%.o: %.cpp %.h
+	$(CC) $<
 
-# Default target
-all: $(TARGET)
+main: $(all)
+	g++ $(all) -o main
 
-# Link the program
-$(TARGET): $(OBJECTS)
-	$(CXX) $(OBJECTS) -o $(TARGET)
+DemoMain: $(demoall)
+	g++ $(demoall) -o DemoMain
 
-# Compile source files
-%.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+run: main
+	./main
 
-# Clean build files
+demo: DemoMain
+	./DemoMain
+
+valgrind: main
+	valgrind --leak-check=full ./main
+
+valgrind-demo: DemoMain
+	valgrind --leak-check=full ./DemoMain
+
 clean:
-	rm -f $(OBJECTS) $(TARGET)
-
-# Run the program
-run: all
-	./$(TARGET)
-
-# Phony targets
-.PHONY: all clean run
-
+	rm -f *.o main DemoMain
