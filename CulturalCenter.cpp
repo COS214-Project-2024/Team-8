@@ -23,7 +23,6 @@ CulturalCenter::CulturalCenter(string bName,int pReq, int wReq, double mCost, in
 	this->state->handle(); //handle the state;
 	this->setState(); //change the state to operation if the resources are available
 
-	this->resources = new ResourceMediator();
 	this->listOfCitizens = new Citizen("New Citizen" , 100 , 23 , 5.0) ;
 	this->listOfCitizens->adjustCitizenSatisfaction(5.0);
 }
