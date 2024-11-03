@@ -53,7 +53,7 @@ void CitizenType::makeRequest(Government *government, std::string requestDetails
 
 void useTransport(Stops* stop, int capacity)
 {
-        baseCitizen->useTransport(stop, capacity);
+    baseCitizen->useTransport(stop, capacity);
 }
 
 void CitizenType::adjustCitizenSatisfaction(float newSatisfaction)
