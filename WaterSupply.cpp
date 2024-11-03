@@ -7,7 +7,7 @@
  */
 WaterSupply::WaterSupply(float curSupply) {
 	this->Output = curSupply;
-	this->maxGallons = __INT_MAX__;
+	this->maxGallons = 1000;
 	this->status = "Operational";
 	this->puritypercentage = 100;
 }
@@ -29,14 +29,17 @@ std::string WaterSupply::getStatus() {
  */
 void WaterSupply::repairUtility() {
 	std::cout << "Water Supply is being repaired..." << std::endl;
-	int interval = 500;
+	int interval = 200;
 	std::cout << "Repairing..." << std::endl;
+	std::string progress;
 	for(int i = 0; i < 30; i++) {
-		std::cout << std::string(i, '#') << std::endl;
-		std::cout.flush();
-		std::this_thread::sleep_for(std::chrono::milliseconds(interval));
-	}
-	std::cout << std::string(30, '#') << std::endl;
+        progress += '#';
+        std::cout << "\r" << progress << std::flush;
+        std::this_thread::sleep_for(std::chrono::milliseconds(interval));
+    }
+	std::cout << std::endl;
+	this->puritypercentage += (this->puritypercentage * 0.10);
+	std::cout << "Purity Percentage: " << this->puritypercentage << std::endl;
 	executeOperation();
 }
 
@@ -59,6 +62,8 @@ void WaterSupply::pauseOperation() {
 void WaterSupply::executeOperation() {
 	std::cout << "Water Supply is operational." << std::endl;
 	this->status = "Operational";
+	this->puritypercentage -= (this->puritypercentage * 0.05);
+	std::cout << "Purity Percentage: " << this->puritypercentage << std::endl;
 	this->commandHistory.push_back("Operational");
 }
 
@@ -93,14 +98,15 @@ void WaterSupply::undoChange() {
 		return;
 	}
 	std::cout << "Last Operation On Water Supply being undone.." << std::endl;
-	int interval = 500;
-	std::cout << "Reverting Operation..." << std::endl;
-	for(int i = 0; i < 30; i++) {
-		std::cout << std::string(i, '#') << std::endl;
-		std::cout.flush();
-		std::this_thread::sleep_for(std::chrono::milliseconds(interval));
-	}
-	std::cout << std::string(30, '#') << std::endl;
+	int interval = 200;
+    std::cout << "Reverting Operation..." << std::endl;
+    std::string progress;
+    for(int i = 0; i < 30; i++) {
+        progress += '#';
+        std::cout << "\r" << progress << std::flush;
+        std::this_thread::sleep_for(std::chrono::milliseconds(interval));
+    }
+    std::cout << std::endl;
 	if(commandHistory[size - 1] == "Operational") {
 		commandHistory.pop_back();
 		pauseOperation();

@@ -1,7 +1,6 @@
 #ifndef STOPCOMMAND_H
 #define STOPCOMMAND_H
 
-#include <string>
 #include "Command.h"
 /**
  * @file StopCommand.h

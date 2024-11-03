@@ -10,6 +10,7 @@
 class EnergyFactory {
 public:
 	virtual EnergySource* createEnergySource(float output) = 0;
+	virtual ~EnergyFactory();
 };
 
 #endif

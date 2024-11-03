@@ -64,7 +64,7 @@ void UtilityManager::UnfilledDam() {
 	int size = this->commands.size();
 	for(int i = 0; i < size; i++) {
 		if(StopCommand* stop = dynamic_cast<StopCommand*>(this->commands[i])) {
-			if(stop->getUtilityType() == "WaterTreatment") {
+			if(stop->getUtilityType() == "Water Supply") {
 				stop->execute();
 			}
 		}
@@ -80,7 +80,7 @@ void UtilityManager::executeSewage() {
 	int size = this->commands.size();
 	for(int i = 0; i < size; i++) {
 		if(StartCommand* start = dynamic_cast<StartCommand*>(this->commands[i])) {
-			if(start->getUtilityType() == "SewagePlant") {
+			if(start->getUtilityType() == "Sewage Systems") {
 				start->execute();
 			}
 		}
@@ -112,7 +112,7 @@ void UtilityManager::executeElectricity() {
 	int size = this->commands.size();
 	for(int i = 0; i < size; i++) {
 		if(StartCommand* start = dynamic_cast<StartCommand*>(this->commands[i])) {
-			if(start->getUtilityType() == "PowerPlant") {
+			if(start->getUtilityType() == "Power Plant") {
 				start->execute();
 			}
 		}

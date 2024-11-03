@@ -9,6 +9,6 @@
  */
 Utility* WasteFactory::createUtility(float output) {
 	Utility* utility = new WasteManagement(output);
-	utility->setmaxWaste(output * 0.8);
+	utility->setProcessCapacity(output * 0.8);
 	return utility;
 }

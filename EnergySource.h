@@ -12,9 +12,11 @@ protected:
 	float energyOutput;
 
 public:
-	float getEnergyOutput();
+	virtual float getEnergyOutput();
 
 	virtual std::string getFuelType() = 0;
+
+	virtual ~EnergySource() {};
 };
 
 #endif

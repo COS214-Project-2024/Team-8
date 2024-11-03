@@ -10,7 +10,8 @@
  */
 UtilityPowerPlant::UtilityPowerPlant(float output) {
 	this->Output = output;
-	this->maximumWatts = 0;
+	this->maximumWatts = output * 2;
+	this->fuel = nullptr;
 	switchFuel();
 }
 
@@ -31,14 +32,15 @@ std::string UtilityPowerPlant::getStatus() {
  */
 void UtilityPowerPlant::repairUtility() {
 	std::cout << "Power Plant is being repaired..." << std::endl;
-	int interval = 500;
+	int interval = 200;
 	std::cout << "Repairing..." << std::endl;
+	std::string progress;
 	for(int i = 0; i < 30; i++) {
-		std::cout << std::string(i, '#') << std::endl;
-		std::cout.flush();
-		std::this_thread::sleep_for(std::chrono::milliseconds(interval));
-	}
-	std::cout << std::string(30, '#') << std::endl;
+        progress += '#';
+        std::cout << "\r" << progress << std::flush;
+        std::this_thread::sleep_for(std::chrono::milliseconds(interval));
+    }
+    std::cout << std::endl;
 	executeOperation();
 }
 
@@ -83,6 +85,23 @@ void UtilityPowerPlant::pauseOperation() {
 	this->status = "Paused";
 }
 
+/**
+ * @brief Set the max watts of the UtilityPowerPlant
+ * 
+ * @param max The max watts of the UtilityPowerPlant
+ */
+void UtilityPowerPlant::setMaxWatts(float max) {
+	this->maximumWatts = max;
+}
+
+/**
+ * @brief Set the fuel of the UtilityPowerPlant
+ * 
+ * @param fuel The fuel of the UtilityPowerPlant
+ */
+std::string UtilityPowerPlant::getEnergyType() {
+	return this->fuel->getFuelType();
+}
 
 /**
  * @brief Get the utility type of the UtilityPowerPlant
@@ -99,7 +118,14 @@ std::string UtilityPowerPlant::getUtilityType() {
  * Changes the fuel type of the UtilityPowerPlant based on the current fuel type
  */
 void UtilityPowerPlant::switchFuel() {
-	if(fuel->getFuelType() == "Wind" || fuel == nullptr){
+	if(fuel == nullptr) {
+		EnergyFactory *energy = new WindFactory();
+		setFuel(energy->createEnergySource(Output));
+		delete energy;
+		return;
+	}
+	std::cout <<"Got here"<<std::endl;
+	if(fuel->getFuelType() == "Wind") {
 		int output = fuel->getEnergyOutput() + 100;
 		EnergyFactory *energy = new HydroFactory();
 		setFuel(energy->createEnergySource(output));
@@ -143,37 +169,29 @@ Utility* UtilityPowerPlant::clone() {
  * Undoes the last change to the UtilityPowerPlant
  */
 void UtilityPowerPlant::undoChange() {
-	int size = commandHistory.size();
-	if(size == 1) {
-		std::cout << "No more operations to undo." << std::endl;
-		return;
-	}
-	std::cout << "Last Operation On Powerplant being undone.." << std::endl;
-	int interval = 500;
-	std::cout << "Reverting Operation..." << std::endl;
-	for(int i = 0; i < 30; i++) {
-		std::cout << std::string(i, '#') << std::endl;
-		std::cout.flush();
-		std::this_thread::sleep_for(std::chrono::milliseconds(interval));
-	}
-	std::cout << std::string(30, '#') << std::endl;
-	if(commandHistory[size - 1] == "Operational") {
-		commandHistory.pop_back();
-		pauseOperation();
-	}
-	else {
-		commandHistory.pop_back();
-		executeOperation();
-	}
-}
-
-/**
- * @brief Set the max waste of the UtilityPowerPlant
- * 
- * @param max The max waste of the UtilityPowerPlant
- */
-void UtilityPowerPlant::setMaxWatts(float max) {
-	this->maximumWatts = max;
+    int size = commandHistory.size();
+    if(size <= 1) {
+        std::cout << "No more operations to undo." << std::endl;
+        return;
+    }
+    std::cout << "Last Operation On Powerplant being undone.." << std::endl;
+    int interval = 200;
+    std::cout << "Reverting Operation..." << std::endl;
+    std::string progress;
+    for(int i = 0; i < 30; i++) {
+        progress += '#';
+        std::cout << "\r" << progress << std::flush;
+        std::this_thread::sleep_for(std::chrono::milliseconds(interval));
+    }
+    std::cout << std::endl;
+    if(commandHistory[size - 1] == "Operational") {
+        commandHistory.pop_back();
+        pauseOperation();
+    }
+    else {
+        commandHistory.pop_back();
+        executeOperation();
+    }
 }
 
 /**
@@ -181,21 +199,21 @@ void UtilityPowerPlant::setMaxWatts(float max) {
  * 
  * @param fuel The fuel of the UtilityPowerPlant
  */
-void UtilityPowerPlant::setFuel(EnergySource* fuel) {
-	std::cout << "Switching fuel from " << this->fuel->getFuelType() << " to " << fuel->getFuelType() << std::endl;
+void UtilityPowerPlant::setFuel(EnergySource* fuel2) {
 	if(fuel != nullptr) {
 		delete fuel;
 	}
-	this->fuel = fuel;
+	this->fuel = fuel2;
+	std::cout << "Switching fuel from to " << fuel->getFuelType() << std::endl;
 }
 
 /**
- * @brief Get the energy type of the UtilityPowerPlant
+ * @brief Destroy the UtilityPowerPlant object
  * 
- * @return std::string The energy type of the UtilityPowerPlant
+ * Destroys the UtilityPowerPlant object
  */
-std::string UtilityPowerPlant::getEnergyType() {
-	return this->fuel->getFuelType();
+UtilityPowerPlant::~UtilityPowerPlant() {
+	delete fuel;
+	fuel = nullptr;
 }
-
 

@@ -1,10 +1,10 @@
-#include <exception>
-using namespace std;
-
 #include "EnergyFactory.h"
-#include "EnergySource.h"
 
-EnergySource* EnergyFactory::createEnergySource(float output) {
-	throw "Not yet implemented";
+/**
+ * @brief Destroy the EnergyFactory object
+ * 
+ * The destructor for the EnergyFactory class
+ */
+EnergyFactory::~EnergyFactory() {
+    std::cout << "Energy Factory Destroyed" << std::endl;
 }
-

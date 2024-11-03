@@ -31,14 +31,15 @@ std::string WasteManagement::getStatus() {
  */
 void WasteManagement::repairUtility() {
 	std::cout << "Waste Management is being repaired..." << std::endl;
-	int interval = 500;
+	int interval = 200;
 	std::cout << "Repairing..." << std::endl;
+	std::string progress;
 	for(int i = 0; i < 30; i++) {
-		std::cout << std::string(i, '#') << std::endl;
-		std::cout.flush();
-		std::this_thread::sleep_for(std::chrono::milliseconds(interval));
-	}
-	std::cout << std::string(30, '#') << std::endl;
+        progress += '#';
+        std::cout << "\r" << progress << std::flush;
+        std::this_thread::sleep_for(std::chrono::milliseconds(interval));
+    }
+	std::cout << std::endl;
 	executeOperation();
 }
 
@@ -91,19 +92,20 @@ void WasteManagement::setProcessCapacity(int pro) {
  */
 void WasteManagement::undoChange() {
 	int size = commandHistory.size();
-	if(size == 1) {
+	if(size <= 1) {
 		std::cout << "No more operations to undo." << std::endl;
 		return;
 	}
 	std::cout << "Last Operation On Waste Management being undone.." << std::endl;
-	int interval = 500;
-	std::cout << "Reverting Operation..." << std::endl;
-	for(int i = 0; i < 30; i++) {
-		std::cout << std::string(i, '#') << std::endl;
-		std::cout.flush();
-		std::this_thread::sleep_for(std::chrono::milliseconds(interval));
-	}
-	std::cout << std::string(30, '#') << std::endl;
+	int interval = 200;
+    std::cout << "Reverting Operation..." << std::endl;
+    std::string progress;
+    for(int i = 0; i < 30; i++) {
+        progress += '#';
+        std::cout << "\r" << progress << std::flush;
+        std::this_thread::sleep_for(std::chrono::milliseconds(interval));
+    }
+    std::cout << std::endl;
 	if(commandHistory[size - 1] == "Operational") {
 		commandHistory.pop_back();
 		pauseOperation();

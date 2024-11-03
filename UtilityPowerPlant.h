@@ -45,6 +45,8 @@ public:
 	Utility* clone();
 
 	void undoChange();
+
+	~UtilityPowerPlant();
 };
 
 #endif

@@ -30,7 +30,7 @@ public:
 
 	virtual float getOutput();
 
-	virtual void pauseOperation();
+	virtual void pauseOperation() = 0;
 
 	virtual std::string getEnergyType();
 
@@ -49,6 +49,10 @@ public:
 	virtual void switchFuel();
 
 	virtual void setMaxGallons(float max);
+
+	virtual void setProcessCapacity(int pro);
+
+	virtual ~Utility() {};
 };
 
 #endif

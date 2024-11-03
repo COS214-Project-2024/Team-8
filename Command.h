@@ -14,9 +14,9 @@ protected:
 public:
 	virtual void execute() = 0;
 
-	std::string getUtilityType();
+	virtual std::string getUtilityType();
 
-	Utility* getUtility();
+	virtual Utility* getUtility();
 
 	virtual ~Command();
 };
