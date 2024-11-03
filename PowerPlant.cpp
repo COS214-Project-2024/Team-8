@@ -21,7 +21,7 @@ PowerPlant::PowerPlant(string bName, int pReq, int wReq, double mCost, int sCost
 
 	this->state =  new UnderConstruction(); //when we instantiate a building it will be under construction
 	this->state->handle(); //handle the state;
-	this->setState(); //change the state to operation if the resources are available
+	this->state->changeState();//in case it needs to change
 
 	this->listOfCitizens = new Citizen("NewCitizen",100,21,5.0);
 }
