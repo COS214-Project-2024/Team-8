@@ -135,11 +135,10 @@ public:
      */
     int getWasteCost();
 
-    /**
-     * @brief Sets the current state of the warehouse.
+   /**
+     * @brief sets the state of the building
      */
-    void setState();
-
+    void setState(State* newState);
     // Additional functions
 
     /**
