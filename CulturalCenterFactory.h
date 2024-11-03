@@ -8,7 +8,7 @@
  * @class CulturalCenterFactory
  * @brief Factory class for creating instances of CulturalCenter buildings.
  */
-class CulturalCenterFactory : LandmarkFactory {
+class CulturalCenterFactory : public LandmarkFactory {
 
 public:
     Buildings* buildings; /**< Pointer to a Buildings instance used by the factory. */
