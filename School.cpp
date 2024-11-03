@@ -51,11 +51,10 @@ int School::getWasteCost() {
 	return this->waste;
 }
 
-void School::setState()
+void School::setState(State* newState)
 {
-	this->state->changeState();
+	this->state = newState;
 }
-
 
 int School::getJobsCreated()
 {
