@@ -36,3 +36,8 @@ void UnderConstruction::changeState() {
 		cout<<"No resources available. please replenish resources to make this building operational"<<endl;
 	}
 }
+
+string UnderConstruction::getStateName()
+{
+	return this->stateName;
+}
