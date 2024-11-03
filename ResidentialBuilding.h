@@ -107,6 +107,15 @@ public:
      */
     virtual bool receiveWater() = 0;
 
+    /**
+     * @brief Receives water for the building.
+     * @return True if water was received successfully, false otherwise.
+     */
+    int getCapacity()
+    {
+        return this->capacity;
+    }
+
 };
 
 #endif

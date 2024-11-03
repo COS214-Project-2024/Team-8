@@ -7,6 +7,7 @@
 #include <memory>
 #include <iostream>
 #include <vector>
+#include "Stops.h"
 
 /**
  * @class CitizenType

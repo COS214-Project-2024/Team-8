@@ -70,7 +70,7 @@ string Warehouse::getBuildingType()
 	return this->buildingType;
 }
 
-bool House::payMaintenance()
+bool Warehouse::payMaintenance()
 {
 	if(this->maintenanceCost > 200)
 	{

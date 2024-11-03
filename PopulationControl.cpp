@@ -18,23 +18,24 @@ PopulationControl::~PopulationControl() {
 
 // Update the total population based on the new building being added
 void PopulationControl::updatePopulation(Buildings* building) {
+    if(building->getBuildingType() == "Residential"){
     int buildingCapacity = building->getCapacity();
+    }
 
     // Check if adding this building will exceed the maximum population
     if (totalPopulation + buildingCapacity <= MAX_POPULATION) {
         totalPopulation += buildingCapacity; 
         buildings.push_back(building);
-
-        // Simulate migration based on jobs created for commercial buildings
-        if (CommercialBuilding* commercialBuilding = dynamic_cast<CommercialBuilding*>(building)) {
-            simulateMigration(commercialBuilding->getJobsCreated());
-        }
     } else {
         std::cout << "Cannot add building: population limit exceeded! Enforcing population policy." << std::endl;
         delete building;
         enforcePopulationControl();
     }
 }
+// Simulate migration based on jobs created for commercial buildings
+        if (CommercialBuilding* commercialBuilding = dynamic_cast<CommercialBuilding*>(building)) {
+            simulateMigration(commercialBuilding->getJobsCreated());
+        }
 
 // Get the current total population
 int PopulationControl::getTotalPopulation() {
