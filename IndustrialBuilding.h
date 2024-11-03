@@ -128,6 +128,11 @@ public:
      * @return The payment amount as an integer.
      */
     virtual int payCitizen() = 0;
+
+    /**
+     * @brief sets the state of the building
+     */
+    virtual void setState(State* newState) = 0;
 };
 
 #endif
