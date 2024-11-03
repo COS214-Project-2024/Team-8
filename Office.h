@@ -191,7 +191,7 @@ public:
      * @brief gets the current income of a commercial building
      * @return the income as an integer
      */
-    virtual void SetBalance(double b);
+    virtual void setBalance(double b);
 };
 
 #endif
