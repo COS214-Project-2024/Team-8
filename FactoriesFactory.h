@@ -16,7 +16,7 @@
  * This class inherits from IndustrialFactory and provides a method
  * for creating factory building objects.
  */
-class FactoriesFactory : IndustrialFactory {
+class FactoriesFactory : public IndustrialFactory {
 
 public:
 	Buildings* buildings; /**< Pointer to a Buildings object, representing the factory building instance managed by the factory. */
