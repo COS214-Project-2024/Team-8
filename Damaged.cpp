@@ -39,3 +39,7 @@ void Damaged::changeState() {
 	}
 }
 
+string Damaged::getStateName()
+{
+	return this->stateName;
+}
