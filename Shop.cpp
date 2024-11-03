@@ -25,7 +25,6 @@ Shop::Shop(string bName, int pReq, int wReq, double mCost, int sCost, int waste,
 	this->state->handle(); //handle the state;
 	this->setState(); //change the state to operation if the resources are available
 
-	this->resources = new ResourceMediator();
 	this->listOfCitizens();
 	this->listOfCitizens->adjustCitizenSatisfaction(5.0);
 }
