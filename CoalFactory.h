@@ -3,9 +3,14 @@
 
 #include "EnergyFactory.h"
 #include "CoalSource.h"
+/**
+ * @file CoalFactory.h
+ * 
+ * @brief The header file for the CoalFactory class
+ */
 class CoalFactory : public EnergyFactory {
 public:
-	EnergySource* createEnergySource(int output);
+	EnergySource* createEnergySource(float output);
 };
 
 #endif

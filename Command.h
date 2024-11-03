@@ -1,23 +1,24 @@
 #ifndef COMMAND_H
 #define COMMAND_H
 
-class UtilityManager;
-class Command;
-
+#include "Utility.h"
+/**
+ * @file Command.h
+ * 
+ * @brief The header file for the Command class
+ */
 class Command {
-public: 
-    UtilityManager* utilityMan;
+protected:
+	Utility* utility;
 
-    // Default the constructor like we did with destructor
-    Command() = default;  // Command Pattern for policies
+public:
+	virtual void execute() = 0;
 
-    virtual void execute() = 0; // Command Pattern for policies
+	std::string getUtilityType();
 
-    virtual ~Command() = default; // Command Pattern for policies
+	Utility* getUtility();
 
-    virtual string getUtilityType() {
-        return ""; // Default implementation or make it pure virtual if needed
-    }
+	virtual ~Command();
 };
 
 #endif

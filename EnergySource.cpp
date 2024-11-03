@@ -1,16 +1,10 @@
-#include <exception>
-#include <string>
-using namespace std;
-
 #include "EnergySource.h"
-EnergySource::EnergySource() {
-}
 
+/**
+ * @brief Get the energy output of the EnergySource
+ * 
+ * @return float The energy output of the EnergySource
+ */
 float EnergySource::getEnergyOutput() {
 	return this->energyOutput;
 }
-
-string EnergySource::getFuelType() {
-	throw "Not yet implemented";
-}
-
