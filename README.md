@@ -1,5 +1,6 @@
 # <p style="text-align: center;"> COS 214 Project : City Builder </p>
 ---
+<br><img src="./images/logolandscape.png"></br>
 ##  <p style="text-align: center;"> *Team 8 : Design Wits* </p>
 ---
 # Contents:
