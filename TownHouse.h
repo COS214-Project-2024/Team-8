@@ -121,11 +121,6 @@ public:
     virtual void requestState();
     
     /**
-     * @brief Sets the current state of the townhouse.
-     */
-    void setState();
-    
-    /**
      * @brief Gets the list of residents in the townhouse.
      * @return Pointer to the list of residents.
      */
@@ -142,6 +137,11 @@ public:
      * @return The waste cost.
      */
     int getWasteCost();
+
+    /**
+     * @brief sets the state of the building
+     */
+    void setState(State* newState);
 };
 
 #endif
