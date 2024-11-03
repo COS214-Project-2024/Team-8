@@ -111,6 +111,23 @@ public:
      */
     virtual void setState() = 0;
 
+    /**
+     * @brief Returns the list of residents in a building
+     * @return list of residents in the building
+     */
+    int getlistOfResidence()
+    {
+        return this->listOfCitizens;
+    }
+ 
+    /**
+     * @brief sets the resource mediator of the class
+     */
+    void setResources(ResourceMediator* resources)
+    {
+        this->resources = resources;
+    }
+
 };
 
 #endif
