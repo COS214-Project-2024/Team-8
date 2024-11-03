@@ -23,7 +23,6 @@ Factories::Factories(string bName, int pReq, int wReq, double mCost, int sCost, 
 	this->state->handle(); //handle the state;
 	this->setState(); //change the state to operation if the resources are available
 
-	this->resources = new ResourceMediator();
 	this->listOfCitizens = new Citizen("newCitizen",100,23,5.0);
 }
 
