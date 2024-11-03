@@ -21,7 +21,7 @@ Factories::Factories(string bName, int pReq, int wReq, double mCost, int sCost, 
 
 	this->state =  new UnderConstruction(); //when we instantiate a building it will be under construction
 	this->state->handle(); //handle the state;
-	this->setState(); //change the state to operation if the resources are available
+	this->state->changeState();//in case it needs to change
 
 	this->listOfCitizens = new Citizen("newCitizen",100,23,5.0);
 }
