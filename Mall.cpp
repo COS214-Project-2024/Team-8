@@ -54,9 +54,9 @@ int Mall::getWasteCost() {
 	return this->waste;
 }
 
-void Mall::setState()
+void Mall::setState(State* newState)
 {
-	this->state->changeState();
+	this->state = newState;
 }
 
 string Mall::getName()
