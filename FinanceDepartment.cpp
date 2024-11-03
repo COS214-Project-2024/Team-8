@@ -29,7 +29,7 @@ FinanceDepartment::~FinanceDepartment()
     delete businessTaxation;
     delete budgetAllocation;
 
-    for (Citizen *resident : residentsList)
+    for (CitizenInterface *resident : residentsList)
     {
         delete resident;
     }
@@ -94,7 +94,7 @@ double FinanceDepartment::getCommercialSalesTaxRate()
 double FinanceDepartment::delegateRequestForCollectionOffPropertyTax()
 {
     double totalPropertyTaxCollected = 0.0;
-    for (Citizen *resident : residentsList)
+    for (CitizenInterface *resident : residentsList)
     {
         if (resident)
         {
@@ -114,7 +114,7 @@ double FinanceDepartment::delegateRequestForCollectionOffPropertyTax()
 double FinanceDepartment::delegateRequestForCollectionOffIncomeTax()
 {
     double totalIncomeTaxCollected = 0.0;
-    for (Citizen *resident : residentsList)
+    for (CitizenInterface *resident : residentsList)
     {
         if (resident)
         {
@@ -206,7 +206,7 @@ double FinanceDepartment::calculateTotalResidentsIncome()
 {
     double totalIncome = 0.0;
 
-    for (Citizen *resident : residentsList)
+    for (CitizenInterface *resident : residentsList)
     {
         if (resident)
         {
@@ -243,7 +243,7 @@ double FinanceDepartment::calculateTotalBusinessSale()
     return totalSale;
 }
 
-void FinanceDepartment::addResidents(Citizen *resident)
+void FinanceDepartment::addResidents(CitizenInterface *resident)
 {
     if (resident)
     {

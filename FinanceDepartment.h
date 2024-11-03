@@ -32,7 +32,7 @@ private:
     /** @brief Pointer to the budget allocation system */
     BudgetAllocationSystem *budgetAllocation;
     /** @brief List of all residents/citizens */
-    std::vector<Citizen *> residentsList;
+    std::vector<CitizenInterface *> residentsList;
     /** @brief List of all commercial buildings */
     std::vector<CommercialBuilding *> commercialBuildingsList;
     /** @brief Residential income tax rate */
@@ -194,7 +194,7 @@ public:
      * @param resident Pointer to the CitizenInterface object to be added
      * @return void
      */
-    void addResidents(Citizen *resident);
+    void addResidents(CitizenInterface *resident);
 
     /**
      * @brief Adds a new commercial building to the commercial buildings list
