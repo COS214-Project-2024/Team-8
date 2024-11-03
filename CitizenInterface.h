@@ -7,7 +7,6 @@
 #include "Transport.h"
 #include "PopulationControl.h"
 #include "TravelManager.h"
-#include "Stops.h"
 
 class Government;
 class Transport;

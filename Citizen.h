@@ -7,7 +7,6 @@
 #include "TravelManager.h"
 #include "Stops.h"
 
-
 /**
  * @class Citizen
  * @brief Represents a citizen in the government system.
