@@ -31,11 +31,12 @@ void PopulationControl::updatePopulation(Buildings* building) {
         delete building;
         enforcePopulationControl();
     }
-}
-// Simulate migration based on jobs created for commercial buildings
+    // Simulate migration based on jobs created for commercial buildings
         if (CommercialBuilding* commercialBuilding = dynamic_cast<CommercialBuilding*>(building)) {
             simulateMigration(commercialBuilding->getJobsCreated());
         }
+}
+
 
 // Get the current total population
 int PopulationControl::getTotalPopulation() {
