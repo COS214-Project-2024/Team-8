@@ -51,9 +51,9 @@ int Park::getWasteCost() {
 	return this->waste;
 }
 
-void Park::setState()
+void Park::setState(State* newState)
 {
-	this->state->changeState();
+	this->state = newState;
 }
 
 string Park::getName()
