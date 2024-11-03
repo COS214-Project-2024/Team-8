@@ -1,5 +1,7 @@
 // Government.cpp
 #include "Government.h"
+#include "FinanceDepartment.h"
+#include "Citizen.h"
 #include <algorithm>
 
 Government::Government()
@@ -8,13 +10,17 @@ Government::Government()
 Government::Government(FinanceDepartment *financeDepartment)
     : financeDepartment(financeDepartment), successor(nullptr), requestee(nullptr), budget(0.0), totalRevenue(0.0) {}
 
-void Government::attach(Citizen *citizen)
+void Government::attach(CitizenInterface *citizen)
 {
     citizenList.push_back(citizen);
-    financeDepartment->addResidents(citizen);
+    // Cast to Citizen* if we're sure the CitizenInterface* is actually a Citizen*
+    Citizen* concreteCitizen = dynamic_cast<Citizen*>(citizen);
+    if (concreteCitizen) {
+        financeDepartment->addResidents(concreteCitizen);
+    }
 }
 
-void Government::detach(Citizen *citizen)
+void Government::detach(CitizenInterface *citizen)
 {
     auto it = std::find(citizenList.begin(), citizenList.end(), citizen);
     if (it != citizenList.end())
