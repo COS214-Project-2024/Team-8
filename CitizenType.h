@@ -3,6 +3,7 @@
 
 #include "CitizenInterface.h"
 #include "TravelManager.h"
+#include "Stops.h"
 #include <string>
 #include <memory>
 #include <iostream>
