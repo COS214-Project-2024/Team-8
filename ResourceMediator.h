@@ -8,14 +8,17 @@
 
 
 #include "Buildings.h"
+
 #include "waterSupply.h"
 #include "Resource.h"
 
 class Resource;
+class Buildings;
+
 class ResourceMediator {
 private:
     std::map<std::string, Resource*>* resources;
-    std::vector<Utility*>* utilities;
+    std::vector<utility*>* utilities;
 
 public:
     ResourceMediator();
@@ -32,7 +35,7 @@ public:
     bool useConstResource(float units, Buildings* sender);
     float replenishConstResource();
     void setResources(std::map<std::string, Resource*>* resources);
-    void setUtilities(std::vector<Utility*>* utilities);
+    void setUtilities(std::vector<utility*>* utilities);
 };
 
-#endif // ResourceMediator_h
+#endif // RESOURCEMEDIATOR_H

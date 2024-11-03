@@ -1,4 +1,6 @@
 #include "ResourceMediator.h"
+#include "Resource.h"
+#include "Buildings.h"
 /**
  * @brief Construct a new Resource Mediator:: Resource Mediator object
  * 
@@ -10,7 +12,7 @@ ResourceMediator::ResourceMediator(){
 }
 
 /**
- * @brief From Building to Power Resource object. If available, decrease the available power of the power resource object and return true, otherwise return false. Decrease the power according to the units parameter.
+ * @brief From Buildings to Power Resource object. If available, decrease the available power of the power resource object and return true, otherwise return false. Decrease the power according to the units parameter.
  * 
  * @param units 
  * @param sender
@@ -18,7 +20,7 @@ ResourceMediator::ResourceMediator(){
  * @return false 
  */
 
-bool ResourceMediator::usePower(float units, Building* sender){
+bool ResourceMediator::usePower(float units, Buildings* sender){
     if(resources->find("Power")->second->giveResource(units)){
         std::cout << "There is enough power" << std::endl;
         return true;
@@ -46,7 +48,7 @@ float ResourceMediator::replenishPower(){
     return total;
 }
 /**
- * @brief From Building to Power Resource object. If available, decrease the available power of the power resource object and return true, otherwise return false. Decrease the power according to the units parameter.
+ * @brief From Buildings to Power Resource object. If available, decrease the available power of the power resource object and return true, otherwise return false. Decrease the power according to the units parameter.
  * 
  * @param units 
  * @param sender
@@ -54,7 +56,7 @@ float ResourceMediator::replenishPower(){
  * @return false 
  */
 
-bool ResourceMediator::useWater(float units, Building* sender){
+bool ResourceMediator::useWater(float units, Buildings* sender){
     if(resources->find("Water")->second->giveResource(units)){
         std::cout << "There is enough Water" << std::endl;
         return true;
@@ -83,7 +85,7 @@ float ResourceMediator::replenishWater(){
 }
 
 /**
- * @brief From Building to revenue Resource object. If available, decrease the available revenue of the revenue resource object and return true, otherwise return false. Decrease the revenue according to the units parameter.
+ * @brief From Buildings to revenue Resource object. If available, decrease the available revenue of the revenue resource object and return true, otherwise return false. Decrease the revenue according to the units parameter.
  * 
  * @param units 
  * @param sender
@@ -91,7 +93,7 @@ float ResourceMediator::replenishWater(){
  * @return false 
  */
 
-bool ResourceMediator::useRevenue(float units, Building* sender){
+bool ResourceMediator::useRevenue(float units, Buildings* sender){
     if(resources->find("Revenue")->second->giveResource(units)){
         std::cout << "There is enough Money" << std::endl;
         return true;
@@ -102,7 +104,7 @@ bool ResourceMediator::useRevenue(float units, Building* sender){
 
 
 /**
- * @brief From Building to waste Managment Resources object. If available, decrease the available waste cleaning capabilities of the waste managment resource object and return true, otherwise return false. Decrease the available waste cleaning resource according to the units parameter.
+ * @brief From Buildings to waste Managment Resources object. If available, decrease the available waste cleaning capabilities of the waste managment resource object and return true, otherwise return false. Decrease the available waste cleaning resource according to the units parameter.
  * 
  * @param units 
  * @param sender
@@ -110,7 +112,7 @@ bool ResourceMediator::useRevenue(float units, Building* sender){
  * @return false 
  */
 
-bool ResourceMediator::cleanWaste(float units, Building* sender){
+bool ResourceMediator::cleanWaste(float units, Buildings* sender){
     if(resources->find("Waste")->second->giveResource(units)){
         std::cout << "There is enough Waste cleaning resources" << std::endl;
         return true;
@@ -140,7 +142,7 @@ float ResourceMediator::gainWasteCleaning(){
 }
 
 /**
- * @brief From Building to sewage Managment Resources object. If available, decrease the available sewage cleaning capabilities of the sewage managment resource object and return true, otherwise return false. Decrease the available sewage cleaning resource according to the units parameter.
+ * @brief From Buildings to sewage Managment Resources object. If available, decrease the available sewage cleaning capabilities of the sewage managment resource object and return true, otherwise return false. Decrease the available sewage cleaning resource according to the units parameter.
  * 
  * @param units 
  * @param sender
@@ -148,7 +150,7 @@ float ResourceMediator::gainWasteCleaning(){
  * @return false 
  */
 
-bool ResourceMediator::cleanSewage(float units, Building* sender){
+bool ResourceMediator::cleanSewage(float units, Buildings* sender){
     if(resources->find("Sewage")->second->giveResource(units)){
         std::cout << "There is enough sewage cleaning resources" << std::endl;
         return true;
@@ -197,7 +199,7 @@ float ResourceMediator::replenishRevenue(){
     return total;
 }
 /**
- * @brief From Building to construction Resource object. If available, decrease the available construction resources of the construction resource object and return true, otherwise return false. Decrease the construction resources according to the units parameter.
+ * @brief From Buildings to construction Resource object. If available, decrease the available construction resources of the construction resource object and return true, otherwise return false. Decrease the construction resources according to the units parameter.
  * 
  * @param units 
  * @param sender 
@@ -205,7 +207,7 @@ float ResourceMediator::replenishRevenue(){
  * @return false 
  */
 
-bool ResourceMediator::useConstResource(float units, Building* sender){
+bool ResourceMediator::useConstResource(float units, Buildings* sender){
     if(resources->find("Water")->second->giveResource(units)){
         std::cout << "There is enough Water" << std::endl;
         return true;
