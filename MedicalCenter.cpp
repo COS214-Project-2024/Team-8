@@ -52,11 +52,10 @@ int MedicalCenter::getWasteCost() {
 	return this->waste;
 }
 
-void MedicalCenter::setState()
+void MedicalCenter::setState(State* newState)
 {
-	this->state->changeState();
+	this->state = newState;
 }
-
 
 int MedicalCenter::getJobsCreated()
 {
