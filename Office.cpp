@@ -50,9 +50,9 @@ int Office::getWasteCost() {
 	return this->waste;
 }
 
-void Office::setState()
+void Office::setState(State* newState)
 {
-	this->state->changeState();
+	this->state = newState;
 }
 
 string Office::getName()
