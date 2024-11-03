@@ -133,9 +133,9 @@ public:
     float getSecurityCoverage();
 
     /**
-     * @brief Sets the state of the police station.
+     * @brief sets the state of the building
      */
-    void setState();
+    void setState(State* newState);
 };
 
 #endif
