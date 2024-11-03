@@ -20,7 +20,7 @@ int UtilitesControl::getTotalPower()
     {
         if ( dynamic_cast<UtilityPowerPlant * >(ListOfUtilites[i]) ) 
         {
-            Res += this->ListOfUtilites[i]->getCurrentOutput() ; 
+            Res += this->ListOfUtilites[i]->getOutput() ; 
         }
     }
     return Res;
@@ -33,7 +33,7 @@ int UtilitesControl::getTotalSewage()
     {
         if ( dynamic_cast<SewageSystems * >(ListOfUtilites[i]) ) 
         {
-            Res += this->ListOfUtilites[i]->getCurrentLoad() ; 
+            Res += this->ListOfUtilites[i]->getOutput() ; 
         }
 
     }
@@ -47,7 +47,7 @@ int UtilitesControl::getTotalWaste()
     {
         if ( dynamic_cast<WasteManagement * >(ListOfUtilites[i]) ) 
         {
-            Res += this->ListOfUtilites[i]->getCurrentLoad() ; 
+            Res += this->ListOfUtilites[i]->getOutput() ; 
         }
 
     }
@@ -61,7 +61,7 @@ int UtilitesControl::getTotalWater()
     {
         if ( dynamic_cast<WaterSupply * >(ListOfUtilites[i]) ) 
         {
-            Res += this->ListOfUtilites[i]->getCurrentSupply() ; 
+            Res += this->ListOfUtilites[i]->getOutput() ; 
         }
 
     }
