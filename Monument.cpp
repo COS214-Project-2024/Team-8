@@ -51,9 +51,9 @@ int Monument::getWasteCost() {
 	return this->waste;
 }
 
-void Monument::setState()
+void Monument::setState(State* newState)
 {
-	this->state->changeState();
+	this->state = newState;
 }
 
 string Monument::getName()
