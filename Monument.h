@@ -123,9 +123,9 @@ public:
     int getWasteCost();
 
     /**
-     * @brief Sets the state of the monument.
+     * @brief sets the state of the building
      */
-    void setState();
+    void setState(State* newState);
 };
 
 #endif
