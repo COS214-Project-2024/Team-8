@@ -49,7 +49,8 @@ void PopulationControl::simulatePopulationGrowth() {
     int totalBirths = 0;
 
     for (const Buildings* building : buildings) {
-        if (const MedicalCenter* hospital = dynamic_cast<const MedicalCenter*>(building)) {
+        if (const MedicalCenter* constHospital = dynamic_cast<const MedicalCenter*>(building)) {
+            MedicalCenter* hospital = const_cast<MedicalCenter*>(constHospital);
             totalBirths += hospital->getBirthRate();
         }
     }
@@ -60,6 +61,8 @@ void PopulationControl::simulatePopulationGrowth() {
         enforcePopulationControl();
     }
 }
+
+
 
 // Simulate migration based on jobs created in commercial buildings
 void PopulationControl::simulateMigration(int jobsCreated) {
