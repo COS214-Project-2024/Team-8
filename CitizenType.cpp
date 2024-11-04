@@ -17,9 +17,9 @@ void CitizenType::makeRequest(Government *government, std::string requestDetails
     }
 }
 
-void CitizenType::useTransport(Stops *stop, int capacity)
+void CitizenType::useTransport(Stops *stop, int capacity, bool bestRoute)
 {
-    baseCitizen->useTransport(stop, capacity);
+        baseCitizen->useTransport(stop, capacity, bestRoute);
 }
 
 

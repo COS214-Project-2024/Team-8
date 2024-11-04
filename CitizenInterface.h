@@ -50,7 +50,7 @@ public:
      * @brief Uses transport by calling travel method in Transport hierarchy.
      * @param transport The transport system to be used.
      */
-    virtual void useTransport(Stops *stop, int capacity) = 0;
+    virtual void useTransport(Stops *stop, int capacity, bool bestRoute = false) = 0;
 
     /**
      * @brief Adjusts the satisfaction level of the citizen.

@@ -56,7 +56,7 @@ public:
      * 
      * @param transport The transport system used by the citizen.
      */
-    void useTransport(Stops *stop, int capacity) override;
+    void useTransport(Stops *stop, int capacity, bool bestRoute = false) override;
 
     /**
      * @brief Adjusts the citizen's satisfaction level.

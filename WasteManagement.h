@@ -2,7 +2,6 @@
 #define WASTEMANAGEMENT_H
 
 #include "Utility.h"
-#include <string>
 /**
  * @file WasteManagement.h
  * 
@@ -34,8 +33,6 @@ public:
 	void setProcessCapacity(int pro);
 
 	void undoChange();
-	std::string getEnergyType();
 };
-
 
 #endif

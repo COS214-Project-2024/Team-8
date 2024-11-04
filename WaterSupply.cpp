@@ -6,19 +6,10 @@
  * @param curSupply The current supply of the WaterSupply
  */
 WaterSupply::WaterSupply(float curSupply) {
-    this->Output = curSupply;
-    this->maxGallons = __INT_MAX__; // Assuming no limit initially
-    this->status = "Operational";
-    this->purityPercentage = 100; // Default purity percentage
-}
-WaterSupply::WaterSupply(int gallons,  float purity) {
-    this->maxGallons = gallons;
-    this->purityPercentage = purity;
-}
-
-std::string WaterSupply::getEnergyType()
-{
-    return "Water";
+	this->Output = curSupply;
+	this->maxGallons = 1000;
+	this->status = "Operational";
+	this->puritypercentage = 100;
 }
 
 /**
@@ -27,60 +18,30 @@ std::string WaterSupply::getEnergyType()
  * @return std::string The status of the WaterSupply
  */
 std::string WaterSupply::getStatus() {
-    return this->status;
-}
-Utility* WaterSupply::clone() {
-    return new WaterSupply(this->maxGallons, this->purityPercentage); // Create a new instance
+	return this->status;
 }
 
 /**
  * @brief Repairs the WaterSupply
  * 
- * Repairs the WaterSupply and sets the status to operational
+ * Repairs the WaterSupply
+ * Also sets the status to operational
  */
 void WaterSupply::repairUtility() {
-    std::cout << "Water Supply is being repaired..." << std::endl;
-    std::cout << "Repairing..." << std::endl;
-    for (int i = 0; i < 30; i++) {
-        std::cout << std::string(i, '#') << std::endl;
-        std::cout.flush();
-        std::this_thread::sleep_for(std::chrono::milliseconds(500)); // Use a literal value instead
+	std::cout << "Water Supply is being repaired..." << std::endl;
+	int interval = 200;
+	std::cout << "Repairing..." << std::endl;
+	std::string progress;
+	for(int i = 0; i < 30; i++) {
+        progress += '#';
+        std::cout << "\r" << progress << std::flush;
+        std::this_thread::sleep_for(std::chrono::milliseconds(interval));
     }
-    std::cout << std::string(30, '#') << std::endl;
-    executeOperation(); // Set status back to operational
+	std::cout << std::endl;
+	this->puritypercentage += (this->puritypercentage * 0.10);
+	std::cout << "Purity Percentage: " << this->puritypercentage << std::endl;
+	executeOperation();
 }
-
-/**
- * @brief Undoes the last change to the WaterSupply
- * 
- * Undoes the last change to the WaterSupply
- * Also sets the status to paused if the last operation was "Operational"
- */
-void WaterSupply::undoChange() {
-    int size = commandHistory.size();
-    if (size <= 1) {
-        std::cout << "No more operations to undo." << std::endl;
-        return;
-    }
-    std::cout << "Last Operation on Water Supply being undone..." << std::endl;
-    std::cout << "Reverting Operation..." << std::endl;
-    for (int i = 0; i < 30; i++) {
-        std::cout << std::string(i, '#') << std::endl;
-        std::cout.flush();
-        std::this_thread::sleep_for(std::chrono::milliseconds(500)); // Use a literal value instead
-    }
-    std::cout << std::string(30, '#') << std::endl;
-
-    // Check the last command and revert it
-    if (commandHistory[size - 1] == "Operational") {
-        commandHistory.pop_back();
-        pauseOperation();
-    } else {
-        commandHistory.pop_back();
-        executeOperation();
-    }
-}
-
 
 /**
  * @brief Pauses the operation of the WaterSupply
@@ -88,7 +49,9 @@ void WaterSupply::undoChange() {
  * Sets the status to paused
  */
 void WaterSupply::pauseOperation() {
-    Utility::pauseOperation(); // Call base class method
+	std::cout << "Water Supply is being paused..." << std::endl;
+	this->status = "Paused";
+	this->commandHistory.push_back("Paused");
 }
 
 /**
@@ -97,9 +60,11 @@ void WaterSupply::pauseOperation() {
  * Sets the status to operational
  */
 void WaterSupply::executeOperation() {
-    std::cout << "Water Supply is operational." << std::endl;
-    this->status = "Operational";
-    this->commandHistory.push_back("Operational");
+	std::cout << "Water Supply is operational." << std::endl;
+	this->status = "Operational";
+	this->puritypercentage -= (this->puritypercentage * 0.05);
+	std::cout << "Purity Percentage: " << this->puritypercentage << std::endl;
+	this->commandHistory.push_back("Operational");
 }
 
 /**
@@ -108,8 +73,7 @@ void WaterSupply::executeOperation() {
  * @param max The max gallons of the WaterSupply
  */
 void WaterSupply::setMaxGallons(float max) {
-    this->maxGallons = max;
-    std::cout << "Max gallons set to " << max << " for Water Supply." << std::endl;
+	this->maxGallons = max;
 }
 
 /**
@@ -118,10 +82,51 @@ void WaterSupply::setMaxGallons(float max) {
  * @return float The output of the WaterSupply
  */
 float WaterSupply::getOutput() {
-    return this->Output;
+	return this->Output;
 }
 
+/**
+ * @brief Undoes the last change to the WaterSupply
+ * 
+ * Undoes the last change to the WaterSupply
+ * Also sets the status to paused
+ */
+void WaterSupply::undoChange() {
+	int size = commandHistory.size();
+	if(size == 1) {
+		std::cout << "No more operations to undo." << std::endl;
+		return;
+	}
+	std::cout << "Last Operation On Water Supply being undone.." << std::endl;
+	int interval = 200;
+    std::cout << "Reverting Operation..." << std::endl;
+    std::string progress;
+    for(int i = 0; i < 30; i++) {
+        progress += '#';
+        std::cout << "\r" << progress << std::flush;
+        std::this_thread::sleep_for(std::chrono::milliseconds(interval));
+    }
+    std::cout << std::endl;
+	if(commandHistory[size - 1] == "Operational") {
+		commandHistory.pop_back();
+		pauseOperation();
+	}
+	else {
+		commandHistory.pop_back();
+		executeOperation();
+	}
+}
 
+/**
+ * @brief Clones the WaterSupply
+ * 
+ * @return Utility* The cloned WaterSupply
+ */
+Utility* WaterSupply::clone() {
+	WaterSupply* clone = new WaterSupply(this->Output);
+	clone->setMaxGallons(this->maxGallons);
+	return clone;
+}
 
 /**
  * @brief Get the utility type of the WaterSupply
@@ -129,5 +134,5 @@ float WaterSupply::getOutput() {
  * @return std::string The utility type of the WaterSupply
  */
 std::string WaterSupply::getUtilityType() {
-    return "Water Supply";
+	return "Water Supply";
 }

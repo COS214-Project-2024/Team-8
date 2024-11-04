@@ -12,7 +12,7 @@ SewageSystems::SewageSystems(float output) {
 	this->Output = output;
 	this->status = "Operational";
 	this->maxWaste = 0;
-	this->blockagepercentage = 0;
+	this->blockagepercentage = 100;
 	commandHistory.push_back("Operational");
 }
 
@@ -31,16 +31,17 @@ std::string SewageSystems::getStatus() {
  * Sets the status to "Operational" and adds the status to the commandHistory
  * Simulates a repair operation by printing a series of '#' to the console
  */
-void SewageSystems::repareUtility() {
+void SewageSystems::repairUtility() {
 	std::cout << "Sewage System is being repaired..." << std::endl;
-	int interval = 500;
+	int interval = 200;
 	std::cout << "Repairing..." << std::endl;
-	for(int i = 0; i < 30; i++) {
-		std::cout << std::string(i, '#') << std::endl;
-		std::cout.flush();
-		std::this_thread::sleep_for(std::chrono::milliseconds(interval));
-	}
-	std::cout << std::string(30, '#') << std::endl;
+    std::string progress;
+    for(int i = 0; i < 30; i++) {
+        progress += '#';
+        std::cout << "\r" << progress << std::flush;
+        std::this_thread::sleep_for(std::chrono::milliseconds(interval));
+    }
+    std::cout << std::endl;
 	executeOperation();
 }
 
@@ -52,6 +53,7 @@ void SewageSystems::repareUtility() {
 void SewageSystems::executeOperation() {
 	std::cout << "Sewage System is operational." << std::endl;
 	this->status = "Operational";
+	this->blockagepercentage -= (this->blockagepercentage * 0.20);
 	this->commandHistory.push_back("Operational");
 }
 
@@ -72,6 +74,7 @@ float SewageSystems::getOutput() {
 void SewageSystems::pauseOperation() {
 	std::cout << "Sewage System is being paused..." << std::endl;
 	this->status = "Paused";
+	this->blockagepercentage += (this->blockagepercentage * 0.20);
 	this->commandHistory.push_back("Paused");
 }
 
@@ -93,19 +96,20 @@ void SewageSystems::setmaxWaste(int max) {
  */
 void SewageSystems::undoChange() {
 	int size = commandHistory.size();
-	if(size == 1) {
+	if(size <= 1) {
 		std::cout << "No more operations to undo." << std::endl;
 		return;
 	}
 	std::cout << "Last Operation On sewage being undone.." << std::endl;
-	int interval = 500;
-	std::cout << "Reverting Operation..." << std::endl;
-	for(int i = 0; i < 30; i++) {
-		std::cout << std::string(i, '#') << std::endl;
-		std::cout.flush();
-		std::this_thread::sleep_for(std::chrono::milliseconds(interval));
-	}
-	std::cout << std::string(30, '#') << std::endl;
+	int interval = 200;
+    std::cout << "Reverting Operation..." << std::endl;
+    std::string progress;
+    for(int i = 0; i < 30; i++) {
+        progress += '#';
+        std::cout << "\r" << progress << std::flush;
+        std::this_thread::sleep_for(std::chrono::milliseconds(interval));
+    }
+    std::cout << std::endl;
 	if(commandHistory[size - 1] == "Operational") {
 		commandHistory.pop_back();
 		pauseOperation();
@@ -135,19 +139,12 @@ Utility* SewageSystems::clone() {
 	utility->setmaxWaste(this->maxWaste);
 	return utility;
 }
-void SewageSystems::repairUtility()
-{
-	std::cout << "Water Supply is being repaired..." << std::endl;
-    std::cout << "Repairing..." << std::endl;
-    for (int i = 0; i < 30; i++) {
-        std::cout << std::string(i, '#') << std::endl;
-        std::cout.flush();
-        std::this_thread::sleep_for(std::chrono::milliseconds(500)); // Use a literal value instead
-    }
-    std::cout << std::string(30, '#') << std::endl;
-    executeOperation(); // Set status back to operational
-}
-std::string SewageSystems::getEnergyType()
-{
-    return "Sewage";
+
+/**
+ * @brief Set the output of the SewageSystems
+ * 
+ * @param Output The output of the SewageSystems
+ */
+void SewageSystems::setOutput(float Output) {
+	this->Output = Output;
 }

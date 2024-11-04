@@ -5,9 +5,9 @@
 #include <thread>
 #include <chrono>
 #include <vector>
-#include <string>
-#include "EnergySource.h"
 
+#include "Utility.h"
+#include "EnergySource.h"
 /**
  * @file Utility.h
  * 
@@ -15,42 +15,44 @@
  */
 class Utility {
 protected:
-    std::string status;
-    std::vector<std::string> commandHistory;
-    float Output;
+	std::string status;
+	std::vector<std::string> commandHistory;
+	float Output;
 
 public:
-    virtual std::string getStatus() = 0;
-    virtual void executeOperation() = 0;
-    virtual void repairUtility() = 0;
-    virtual void undoChange() = 0;
-    virtual float getOutput();
-    virtual void pauseOperation();
-    virtual std::string getEnergyType() = 0;
-    virtual void setOutput(float Output);
-    virtual std::string getUtilityType() = 0;
-    virtual Utility* clone() = 0;
+	virtual std::string getStatus() = 0;
 
-    // Added implementations
-    virtual void setMaxWatts(float max) {
-        std::cout << "Max watts set to " << max << " for " << getUtilityType() << ".\n";
-    }
-    
-    virtual void setFuel(EnergySource* fuel) {
-        std::cout << "Fuel set for " << getUtilityType() << ".\n";
-    }
-    
-    virtual void setmaxWaste(int max) {
-        std::cout << "Max waste set to " << max << " for " << getUtilityType() << ".\n";
-    }
-    
-    virtual void switchFuel() {
-        std::cout << "Fuel switched for " << getUtilityType() << ".\n";
-    }
-    
-    virtual void setMaxGallons(float max) {
-        std::cout << "Max gallons set to " << max << " for " << getUtilityType() << ".\n";
-    }
+	virtual void executeOperation() = 0;
+
+	virtual void repairUtility() = 0;
+
+	virtual void undoChange() = 0;
+
+	virtual float getOutput();
+
+	virtual void pauseOperation() = 0;
+
+	virtual std::string getEnergyType();
+
+	virtual void setOutput(float Output);
+
+	virtual std::string getUtilityType() = 0;
+
+	virtual Utility* clone() = 0;
+
+	virtual void setMaxWatts(float max);
+
+	virtual void setFuel(EnergySource* fuel);
+
+	virtual void setmaxWaste(int max);
+
+	virtual void switchFuel();
+
+	virtual void setMaxGallons(float max);
+
+	virtual void setProcessCapacity(int pro);
+
+	virtual ~Utility() {};
 };
 
-#endif // UTILITY_H
+#endif

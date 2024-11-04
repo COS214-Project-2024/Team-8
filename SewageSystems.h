@@ -17,8 +17,6 @@ public:
 
 	std::string getStatus();
 
-	void repareUtility();
-
 	void executeOperation();
 
 	float getOutput();
@@ -34,7 +32,8 @@ public:
 	Utility* clone();
 
 	void repairUtility();
-	std::string getEnergyType();
+
+	void setOutput(float Output);
 };
 
 #endif
