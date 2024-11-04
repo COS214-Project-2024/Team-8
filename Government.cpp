@@ -15,7 +15,7 @@ Government::Government()
       financeDepartment(nullptr)
 {
 }
-Government :: ~Government(){}
+
 
 Government::Government(FinanceDepartment *financeDepartment)
     : citizenList(),
