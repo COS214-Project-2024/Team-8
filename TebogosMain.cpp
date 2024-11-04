@@ -52,7 +52,7 @@
 #include "TrainStation.h"
 #include "MapIterator.h"
 
-/*const std::string highlight = "\033[3;38;5;45m";
+const std::string highlight = "\033[3;38;5;45m";
 const std::string reset = "\033[0m";
 
 void clearInput()
@@ -251,7 +251,7 @@ void runFullSimulation()
 
     std::cout << "\n=== Full City Simulation Complete ===\n";
     waitForEnter();
-}*/
+}
 void testGovernment()
 {
     FinanceDepartment *financeDept = new FinanceDepartment();
@@ -296,7 +296,7 @@ void testGovernment()
 }
 int main()
 {
-    /*srand(time(0));
+    srand(time(0));
 
     std::cout << "\033[35m" << " _____ _ _         ____        _ _     _\n"
                                "|     |_| |_ _ ___|    \\ ___ _|_| |___| |___ ___\n"
@@ -343,7 +343,7 @@ int main()
         default:
             std::cout << "Invalid choice. Please try again.\n";
         }
-    }*/
+    }
     testGovernment();
     return 0;
 }
