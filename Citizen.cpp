@@ -1,5 +1,6 @@
 #include "Citizen.h"
 #include <iostream>
+#include <memory>
 
 Citizen::Citizen(std::string name, float salary, int age, float satisfaction,
                  Government* government, bool isEmployed, bool ownsProperty)
@@ -16,6 +17,7 @@ Citizen::Citizen(std::string name, float salary, int age, float satisfaction,
 
 Citizen::Citizen(std::string name, float salary, int age, float satisfaction)
     : Citizen(name, salary, age, satisfaction, nullptr) {}
+
 
 std::unique_ptr<CitizenInterface> Citizen::clone() {
     popControl->increasePopulation();
