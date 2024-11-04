@@ -255,16 +255,21 @@ void runFullSimulation()
 void testGovernment()
 {
     FinanceDepartment *financeDept = new FinanceDepartment();
+    std::cout << "It is the 25th day of the month 😊 Finance Department is about to do its monthly duties..." << std::endl;
+    std::cout << "Finance Department setting Income ,Property , Business and Sales tax rates  "<< std::endl;
+    financeDept->setResidentialIncomeTaxRate(0.10);
+    financeDept->setResidentialPropertyTaxRate(0.012);
+    financeDept->setCommercialBusinessTaxRate(0.25);
+    financeDept->setCommercialSalesTaxRate(0.08);
+    financeDept->setAvailableFunds(40000000.00);
     Government *government = new Government(financeDept);
-
     for (int i = 0; i < 10; ++i)
     {
         CitizenInterface *citizen = new Citizen();
         government->attach(citizen);
     }
     // Set the government budget
-    government->setBudget(1000000.0);
-    std::cout << "Government budget set to: R" << government->getBudget() << std::endl;
+    government->setBudget(40000000.00);
 
     // Simulate tax collection and fund allocation
     double propertyTaxCollected = government->requestCollectionOfPropertyTax();
@@ -272,14 +277,15 @@ void testGovernment()
     double businessTaxCollected = government->requestCollectionOfBusinessTax();
     double salesTaxCollected = government->requestCollectionOfSalesTax();
 
-    std::cout << "Tax Collections:" << std::endl;
-    std::cout << "Property Tax Collected: R" << propertyTaxCollected << std::endl;
-    std::cout << "Income Tax Collected: R" << incomeTaxCollected << std::endl;
-    std::cout << "Business Tax Collected: R" << businessTaxCollected << std::endl;
-    std::cout << "Sales Tax Collected: R" << salesTaxCollected << std::endl;
+    std::cout << "😊 Government is now requesting Finance Department to collect Income ,Property , Business and Sales taxes  "<< std::endl;
+    std::cout << "🏡 Property Tax Collected: R" << propertyTaxCollected << std::endl;
+    std::cout << "💰 Income Tax Collected: R" << incomeTaxCollected << std::endl;
+    std::cout << "🏢 Business Tax Collected: R" << businessTaxCollected << std::endl;
+    std::cout << "🛍️ Sales Tax Collected: R" << salesTaxCollected << std::endl;
+
 
     // Allocate funds and test all allocations
-    double utilitiesFunds = government->requestAllocationOfUtilitiesFunds();
+    /*double utilitiesFunds = government->requestAllocationOfUtilitiesFunds();
     std::cout << "Allocated Utilities Funds: R" << utilitiesFunds << std::endl;
 
     double publicServiceBuildingsFunds = government->requestAllocationOfPublicServiceBuildingsFunds();
@@ -292,7 +298,14 @@ void testGovernment()
     std::cout << "Allocated Education Funds: R" << educationFunds << std::endl;
 
     double recreationFunds = government->requestAllocationOfRecreationFunds();
-    std::cout << "Allocated Recreation Funds: R" << recreationFunds << std::endl;
+    std::cout << "Allocated Recreation Funds: R" << recreationFunds << std::endl;*/
+    std::cout << "😊 Government is now requesting Finance Department to allocate funds for Utilities, Public Service Buildings , Transport Infrastructure , Education Buildings and Recreation Buildings "<< std::endl;
+    std::cout << government->requestAllocationOfUtilitiesFunds()<< std::endl;
+    std::cout << government->requestAllocationOfPublicServiceBuildingsFunds() << std::endl;
+    std::cout << government->requestAllocationOfTransportFunds() << std::endl;
+    std::cout << government->requestAllocationOfEducationFunds() << std::endl;
+    std::cout << government->requestAllocationOfRecreationFunds()  << std::endl;
+
 }
 int main()
 {
