@@ -43,18 +43,6 @@ public:
     Apartment(string bName, int pReq, int wReq, double mCost, int sCost, int waste, int capacity);
 
     /**
-     * @brief Cleans the sewage of the building.
-     * @return true if sewage cleaning was successful, false otherwise.
-     */
-    virtual bool cleanSewage();
-
-    /**
-     * @brief Cleans the waste of the building.
-     * @return true if waste cleaning was successful, false otherwise.
-     */
-    virtual bool cleanWaste();
-
-    /**
      * @brief Gets the type of the building.
      * @return The type of the building as a string.
      */
