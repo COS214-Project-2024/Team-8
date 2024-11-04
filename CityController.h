@@ -54,6 +54,42 @@ public:
     Buildings *createBuilding; // Was Builder , changed to Buildings
 
     /**
+     * @brief Adds a building to the management system.
+     * @param B Pointer to the building to be added.
+     */
+    void addBuilding(Buildings *B);
+
+    /**
+     * @brief Removes a building from the management system.
+     * @param B Pointer to the building to be removed.
+     */
+    void remBuilding(Buildings *B);
+
+    /**
+     * @brief Adds a citizen to the population.
+     * @param C Pointer to the citizen to be added.
+     */
+    void addCitizen(Citizen *C);
+
+    /**
+     * @brief Removes a citizen from the population.
+     * @param C Pointer to the citizen to be removed.
+     */
+    void remCitizen(Citizen *C);
+
+    /**
+     * @brief Adds a utility to the management system.
+     * @param U Pointer to the utility to be added.
+     */
+    void addUtility(Utility *U);
+
+    /**
+     * @brief Removes a utility from the management system.
+     * @param U Pointer to the utility to be removed.
+     */
+    void remUtility(Utility *U);
+
+    /**
      * @brief Gets total Energy Supply
      * @return Calls the function of the UtilitiesManager to calculate total power in the city
      */
@@ -83,25 +119,21 @@ public:
      * @return Calls The functions to get the Tax Rate of the citizens and adds it to the income of the Commercial Buildings
      */
     double getTotalIncome(); // Through Citizen Interface I presume ? Just gonna add TaxableIncome with CommercialIncome for now
-
     /**
      * @brief Gets total Cost of Water for All Buildings
      * @return Calls the function of the BuildingManager and Returns the total amount of Water Demand in the city
      */
     int getBuildingWaterCost();
-
     /**
      * @brief Gets total Cost of Power for All Buildings
      * @return Calls the function of the BuildingManager and Returns the total amount of Power Demand in the city
      */
     int getBuildingPowerCost();
-
     /**
      * @brief Gets total Cost of Waste Recycling for All Buildings
      * @return Calls the function of the BuildingManager and Returns the total amount of Waste Recycling Demand in the city
      */
     int getBuildingWasteCost();
-
     /**
      * @brief Gets total Cost of Sewage Recycling for All Buildings
      * @return Calls the function of the BuildingManager and Returns the total amount of Sewage Recycling Demand in the city
@@ -117,19 +149,16 @@ public:
      * @return Calls the function of the BuildingManager and The total amount of Income that all Commercial Buildings Generate
      */
     int getBuildingCommercialIncome();
-
     /**
      * @brief Gets the Total Population of the City
      * @return Calls the function of the CitizenManager and returns the total amount of Citizens in the city
      */
     int AmountOfCitizens();
-
     /**
      * @brief Gets the Total Employed Population of the City
      * @return Calls the function of the CitizenManager and returns the total amount of Employed Citizens in the city
      */
     int EmployedCitizens();
-
     /**
      * @brief Gets the Total Home Owners Population of the City
      * @return Calls the function of the CitizenManager and returns the total amount of Property Owners in the city

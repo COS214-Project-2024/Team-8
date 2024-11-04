@@ -43,6 +43,37 @@ Resource *CityController::buildInfrastructure()
     return nullptr;
 }
 
+void CityController::addBuilding(Buildings *B)
+{
+    this->ManagmentOfBuildings.addBuilding(B) ; 
+}
+
+void CityController::remBuilding(Buildings *B)
+{
+    this->ManagmentOfBuildings.removeBuilding(B); 
+
+}
+
+void CityController::addCitizen(Citizen *C)
+{
+    this->ManagmentOfCitizens.addCitizen(C) ;
+}
+
+void CityController::remCitizen(Citizen *C)
+{
+    this->ManagmentOfCitizens.removeCitizen(C) ; 
+}
+
+void CityController::addUtility(Utility *U)
+{
+    this->ManagmentOfUtilities.addUtilities(U) ; 
+}
+
+void CityController::remUtility(Utility *U)
+{
+    this->ManagmentOfUtilities.removeUtilities(U) ; 
+}
+
 int CityController::getCurrentEnergySupply()
 {
     return this->ManagmentOfUtilities.getTotalPower() ; 
