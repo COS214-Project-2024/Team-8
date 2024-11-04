@@ -14,6 +14,7 @@
 #include "Shop.h"
 #include "Mall.h"
 #include "Office.h"
+//g++ -std=c++11 -o palesa_test PalesaMainTesting.cpp Citizen.cpp  Government.cpp FinanceDepartment.cpp CommercialTaxationSystem.cpp ResidentialTaxationSystem.cpp BudgetAllocationSystem.cpp  Shop.cpp Mall.cpp Office.cpp ShopFactory.cpp MallFactory.cpp OfficeFactory.cpp Stops.h TravelManager.h PopulationControl.h && ./palesa_test
 
 void testBudgetAllocationSystem()
 {
