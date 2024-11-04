@@ -18,7 +18,7 @@ using namespace std;
 /**
  * @class FinanceDepartment
  * @brief Represents the finance department of a government that manages taxation and budget allocation
- * 
+ *
  * The FinanceDepartment class is responsible for collecting taxes from residential and commercial entities,
  * maintaining financial records, and allocating funds for various public services and infrastructure projects.
  */
@@ -32,7 +32,7 @@ private:
     /** @brief Pointer to the budget allocation system */
     BudgetAllocationSystem *budgetAllocation;
     /** @brief List of all residents/citizens */
-    std::vector<Citizen *> residentsList;
+    std::vector<CitizenInterface *> residentsList;
     /** @brief List of all commercial buildings */
     std::vector<CommercialBuilding *> commercialBuildingsList;
     /** @brief Residential income tax rate */
@@ -57,7 +57,7 @@ public:
      * @brief Constructs a new FinanceDepartment object
      */
     FinanceDepartment();
-    
+
     /**
      * @brief Destroys the FinanceDepartment object
      */
@@ -194,7 +194,7 @@ public:
      * @param resident Pointer to the CitizenInterface object to be added
      * @return void
      */
-    void addResidents(Citizen *resident);
+    void addResidents(CitizenInterface *resident);
 
     /**
      * @brief Adds a new commercial building to the commercial buildings list
@@ -202,6 +202,11 @@ public:
      * @return void
      */
     void addCommercialBuilding(CommercialBuilding *commercialBuilding);
+    /**
+     * @brief Delegates the request for allocation of funds for education
+     * @return The amount of funds allocated for education
+     */
+    double delegateRequestForAllocationOfEducationFunds();
 };
 
 #endif // __FinanceDepartment_h__

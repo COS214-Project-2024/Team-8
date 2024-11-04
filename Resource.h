@@ -8,10 +8,16 @@ class ResourceMediator;
 class Resource {
 
 protected:
+        int available;
+    int capacity;
     ResourceMediator* citySectors;
 
 public:
     Resource() = default;
+    Resource(int capacity) : available(capacity), capacity(capacity), citySectors(nullptr) {}
+    void setMediator(ResourceMediator* m);
+    virtual bool consume(int amount);
+    virtual void replenish(int amount);
     virtual bool giveResource(float units) = 0;  // Pure virtual function for derived classes to implement
     virtual void receiveResource() = 0;
     virtual float getAvailableAmount() = 0;

@@ -157,10 +157,11 @@ public:
     int age;                /**< Age of the citizen. */
     bool isEmployed;        /**< Employment status of the citizen. */
     bool ownsProperty;      /**< Property ownership status of the citizen. */
-    PopulationControl popControl; /**< Manages population metrics and demographics. */
+    PopulationControl *popControl; /**< Manages population metrics and demographics. */
     Government *government; /**< Pointer to the Government */
     float currTaxRate;      /**< Current tax rate for the citizen. */
-        double balance ; 
+    double balance ; 
+    TravelManager *tm;
 
 };
 

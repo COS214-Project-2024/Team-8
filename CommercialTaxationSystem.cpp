@@ -1,15 +1,18 @@
-using namespace std;
-#include <iostream>
 #include "CommercialTaxationSystem.h"
+#include <iostream>
 
-double CommercialTaxationSystem::collectBusinessTax(double businessTaxRate, double businessProfit) {
+CommercialTaxationSystem::CommercialTaxationSystem() {}
+
+double CommercialTaxationSystem::collectBusinessTax(double businessTaxRate, double businessProfit)
+{
     double totalBusinessTaxes = businessTaxRate * businessProfit;
-    cout << "💰 Total Business Taxes Collected: R " << totalBusinessTaxes << endl;
+    std::cout << "💰 Total Business Taxes Collected: R " << totalBusinessTaxes << std::endl;
     return totalBusinessTaxes;
 }
 
-double CommercialTaxationSystem::collectSalesTax(double salesTaxRate, double businessProfit) {
+double CommercialTaxationSystem::collectSalesTax(double salesTaxRate, double businessProfit)
+{
     double totalSalesTaxes = salesTaxRate * businessProfit;
-    cout << "🛒 Total Sales Taxes Collected: R " << totalSalesTaxes << endl;
+    std::cout << "🛒 Total Sales Taxes Collected: R " << totalSalesTaxes << std::endl;
     return totalSalesTaxes;
 }

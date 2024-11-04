@@ -1,9 +1,19 @@
-#include "MallFactory.h"
-#include "ResidentialBuilding.h"
-#include "Mall.h"
+/**
+ * @file MallFactory.cpp
+ * @brief Implementation of the MallFactory class
+ */
 
-Buildings* MallFactory::createBuilding()
-{
-    Buildings* temp = new Mall("mall",500,500,564.50,600,800,50.0,5600.50,500);
-	return  temp;
+#include "MallFactory.h"
+
+MallFactory::MallFactory() {
+    // Initialize any necessary members
+}
+
+MallFactory::~MallFactory() {
+    // Cleanup if needed
+}
+
+Buildings* MallFactory::createBuilding() {
+    // Create and return a new Mall object with default parameters
+    return new Mall("New Mall", 500, 200, 10000.0, 300, 100, 5000.0f, 2500.0f, 100);
 }

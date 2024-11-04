@@ -81,25 +81,25 @@ public:
      * @brief Sets the employment status of the citizen.
      * @param employmentStatus The employment status (true for employed, false for unemployed).
      */
-    virtual void setEmploymentStatus(bool employmentStatus){};
+    virtual void setEmploymentStatus(bool employmentStatus)= 0;
 
     /**
      * @brief Sets the property ownership status of the citizen.
      * @param ownsProperty The ownership status (true if owns property, false otherwise).
      */
-    virtual void setPropertyOwnership(bool ownsProperty){};
+    virtual void setPropertyOwnership(bool ownsProperty)=0;
 
     /**
      * @brief Returns the citizen's current salary.
      * @return The citizen's salary.
      */
-    virtual float getSalary(){} ;
+    virtual float getSalary()=0;
 
     /**
      * @brief Sets a new salary for the citizen.
      * @param newSalary The new salary amount.
      */
-    virtual void setSalary(float newSalary){};
+    virtual void setSalary(float newSalary)=0;
     /**
      * @brief Gets the satisfaction of the citizen.
      * @return The satisfaction of the citizen.
@@ -120,12 +120,12 @@ public:
      * @brief Gets the age of the citizen.
      * @return The age of the citizen.
      */
-    virtual int getAge(){};
+    virtual int getAge()=0;
     /**
      * @brief Gets the name of the citizen.
      * @return The name of the citizen.
      */
-    virtual std::string getName(){};
+    virtual std::string getName()=0;
     /**
      * @brief Displays the details of the citizen in a formatted manner.
      */
@@ -145,8 +145,8 @@ protected:
     int age;
     bool isEmployed;        /**< Employment status of the citizen. */
     bool ownsProperty;      /**< Property ownership status of the citizen. */
-    PopulationControl popControl; /**< Manages population metrics and demographics. */
     Government *government; /**< Pointer to the Government */
+    PopulationControl popControl; /**< Manages population metrics and demographics. */
     float currTaxRate;
     double balance ; 
 };

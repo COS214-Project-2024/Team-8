@@ -5,17 +5,36 @@
 #include <algorithm>
 
 Government::Government()
-    : financeDepartment(nullptr), successor(nullptr), requestee(nullptr), budget(0.0), totalRevenue(0.0) {}
+    : citizenList(),
+      successor(nullptr),
+      requestee(nullptr),
+      commands(),
+      budget(0.0),
+      totalRevenue(0.0),
+      currentTaxRate(0.0),
+      financeDepartment(nullptr)
+{
+}
 
 Government::Government(FinanceDepartment *financeDepartment)
-    : financeDepartment(financeDepartment), successor(nullptr), requestee(nullptr), budget(0.0), totalRevenue(0.0) {}
+    : citizenList(),
+      successor(nullptr),
+      requestee(nullptr),
+      commands(),
+      budget(0.0),
+      totalRevenue(0.0),
+      currentTaxRate(0.0),
+      financeDepartment(financeDepartment)
+{
+}
 
 void Government::attach(CitizenInterface *citizen)
 {
     citizenList.push_back(citizen);
     // Cast to Citizen* if we're sure the CitizenInterface* is actually a Citizen*
-    Citizen* concreteCitizen = dynamic_cast<Citizen*>(citizen);
-    if (concreteCitizen) {
+    Citizen *concreteCitizen = dynamic_cast<Citizen *>(citizen);
+    if (concreteCitizen)
+    {
         financeDepartment->addResidents(concreteCitizen);
     }
 }
@@ -35,7 +54,7 @@ void Government::notify()
     {
         // citizen->setSatisfaction(citizen->getSatisfaction() + 5.0);
         float incomeTaxRate = (float)financeDepartment->getResidentialIncomeTaxRate();
-        float propertyTaxRate = (float) financeDepartment->getResidentialPropertyTaxRate();
+        float propertyTaxRate = (float)financeDepartment->getResidentialPropertyTaxRate();
         if (citizen->getEmployementStatus() == true)
         {
             citizen->update(incomeTaxRate);
@@ -48,7 +67,9 @@ void Government::notify()
         {
             float combinedTaxRate = incomeTaxRate + propertyTaxRate;
             citizen->update(combinedTaxRate);
-        }else{
+        }
+        else
+        {
             citizen->update(0.0f);
         }
     }
@@ -148,10 +169,21 @@ double Government::getBudget() const
 void Government::setTotalRevenue(double b) { financeDepartment->setAvailableFunds(b); }
 double Government::getTotalRevenue() const { return financeDepartment->getAvailableFunds(); }
 
-void Government::setSuccessor(Government* nextHandler) {
+void Government::setSuccessor(Government *nextHandler)
+{
     successor = nextHandler;
 }
 
-Government* Government::getSuccessor() const {
+Government *Government::getSuccessor() const
+{
     return successor;
+}
+
+Government::~Government() {}
+
+double Government::requestAllocationOfEducationFunds()  // Changed from float to double
+{
+    double allocatedFundsForEducation = financeDepartment->delegateRequestForAllocationOfEducationFunds();
+    notify();
+    return allocatedFundsForEducation;
 }

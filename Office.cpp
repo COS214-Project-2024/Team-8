@@ -190,5 +190,14 @@ double Office::getBalance()
 {
 	return this->balance;
 }
+// In Office.cpp
 
+int Office::getWaterReq() {
+    return this->waterReq; // Return the water requirement
+}
 
+void Office::operation() {
+    // Implement the operation logic for the office
+    cout << "Office is operational." << endl;
+    // Additional logic can go here
+}

@@ -135,3 +135,19 @@ Utility* SewageSystems::clone() {
 	utility->setmaxWaste(this->maxWaste);
 	return utility;
 }
+void SewageSystems::repairUtility()
+{
+	std::cout << "Water Supply is being repaired..." << std::endl;
+    std::cout << "Repairing..." << std::endl;
+    for (int i = 0; i < 30; i++) {
+        std::cout << std::string(i, '#') << std::endl;
+        std::cout.flush();
+        std::this_thread::sleep_for(std::chrono::milliseconds(500)); // Use a literal value instead
+    }
+    std::cout << std::string(30, '#') << std::endl;
+    executeOperation(); // Set status back to operational
+}
+std::string SewageSystems::getEnergyType()
+{
+    return "Sewage";
+}

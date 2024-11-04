@@ -1,20 +1,12 @@
 #include "CitizenType.h"
 using namespace std;
 
-CitizenType::CitizenType(std::unique_ptr<CitizenInterface> citizen)
-    : baseCitizen(std::move(citizen)) {}
-
-std::unique_ptr<CitizenInterface> CitizenType::clone()
-{
-    return std::make_unique<CitizenType>(*this);
-}
 
 void CitizenType::update(float newTaxRate)
 {
-    if (baseCitizen)
-    {
+   
         baseCitizen->update(newTaxRate);
-    }
+    
 }
 
 void CitizenType::makeRequest(Government *government, std::string requestDetails)
@@ -33,106 +25,92 @@ void CitizenType::useTransport(Stops *stop, int capacity)
 
 void CitizenType::adjustCitizenSatisfaction(float newSatisfaction)
 {
-    if (baseCitizen)
-    {
+   
         baseCitizen->adjustCitizenSatisfaction(newSatisfaction);
-    }
+    
 }
 
 void CitizenType::requestPublicService(std::string serviceType, float impact)
 {
-    if (baseCitizen)
-    {
+   
         baseCitizen->requestPublicService(serviceType, impact);
-    }
+    
 }
 
 void CitizenType::attendEvent(std::string eventName, float impact)
 {
-    if (baseCitizen)
-    {
+   
         baseCitizen->requestPublicService(eventName, impact);
-    }
+    
 }
 
 float CitizenType::evaluateHappiness()
 {
-    if (baseCitizen)
-    {
+   
         return baseCitizen->evaluateHappiness();
-    }
+    
 }
 
 float CitizenType::getSalary()
 {
-    if (baseCitizen)
-    {
+   
         return baseCitizen->getSalary();
-    }
+    
 }
 
 void CitizenType::setSalary(float newSalary)
 {
-    if (baseCitizen)
-    {
+   
         baseCitizen->setSalary(newSalary);
-    }
+    
 }
 
 float CitizenType::getSatisfaction()
 {
-    if (baseCitizen)
-    {
+   
         return baseCitizen->getSatisfaction();
-    }
+    
 }
 
 bool CitizenType::getEmployementStatus()
 {
-    if (baseCitizen)
-    {
+   
         return baseCitizen->getEmployementStatus();
-    }
+    
 }
 
 void CitizenType::setEmploymentStatus(bool employmentStatus)
 {
-    if (baseCitizen)
-    {
+   
         baseCitizen->setEmploymentStatus(employmentStatus);
-    }
+    
 }
 
 bool CitizenType::getPropertyOwnershipStatus()
 {
-    if (baseCitizen)
-    {
+   
         return baseCitizen->getPropertyOwnershipStatus();
-    }
+    
 }
 
 void CitizenType::setPropertyOwnership(bool ownsProperty)
 {
-    if (baseCitizen)
-    {
+   
         baseCitizen->setPropertyOwnership(ownsProperty);
-    }
+    
 }
 
 int CitizenType::getAge()
 {
-    if (baseCitizen)
-    {
+   
         return baseCitizen->getAge();
-    }
+    
 }
 
 std::string CitizenType::getName()
 {
-    if (baseCitizen)
-    {
+   
         return baseCitizen->getName();
-    }
 }
 
 void CitizenType::displayDetails()
@@ -147,4 +125,24 @@ void CitizenType::displayDetails()
 std::string CitizenType::citizenType()
 {
     return "Decorated Citizen Type";
+}
+
+float CitizenType::getTaxRate()
+{
+    return currTaxRate;
+}
+
+double CitizenType::getBalance()
+{
+    return balance;
+}
+
+void CitizenType::setBalance(double newBalance)
+{
+    balance = newBalance;
+}
+
+void CitizenType::setSatisfaction(int newSatisfaction)
+{
+    satisfaction = newSatisfaction;
 }

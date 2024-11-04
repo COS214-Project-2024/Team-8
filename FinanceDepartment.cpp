@@ -29,7 +29,7 @@ FinanceDepartment::~FinanceDepartment()
     delete businessTaxation;
     delete budgetAllocation;
 
-    for (Citizen *resident : residentsList)
+    for (CitizenInterface *resident : residentsList)
     {
         delete resident;
     }
@@ -94,13 +94,13 @@ double FinanceDepartment::getCommercialSalesTaxRate()
 double FinanceDepartment::delegateRequestForCollectionOffPropertyTax()
 {
     double totalPropertyTaxCollected = 0.0;
-    for (Citizen *resident : residentsList)
+    for (CitizenInterface *resident : residentsList)
     {
         if (resident)
         {
             double propertyTax = 0.0;
 
-            if (resident->getPropertyOwnershipStatus() )
+            if (resident->getPropertyOwnershipStatus())
             {
                 propertyTax = residentialTaxation->collectPropertyTax(propertyTaxRate, resident->getSalary());
                 availableFunds += propertyTax;
@@ -114,7 +114,7 @@ double FinanceDepartment::delegateRequestForCollectionOffPropertyTax()
 double FinanceDepartment::delegateRequestForCollectionOffIncomeTax()
 {
     double totalIncomeTaxCollected = 0.0;
-    for (Citizen *resident : residentsList)
+    for (CitizenInterface *resident : residentsList)
     {
         if (resident)
         {
@@ -140,7 +140,7 @@ double FinanceDepartment::delegateRequestForCollectionOfBusinessTax()
             double businessTaxc = businessTaxation->collectBusinessTax(businessTaxRate, building->getProfit());
 
             availableFunds += businessTaxc;
-            totalBusinessTaxCollected+=businessTaxc;
+            totalBusinessTaxCollected += businessTaxc;
 
             building->setBalance(building->getBalance() - (businessTaxc));
         }
@@ -206,7 +206,7 @@ double FinanceDepartment::calculateTotalResidentsIncome()
 {
     double totalIncome = 0.0;
 
-    for (Citizen *resident : residentsList)
+    for (CitizenInterface *resident : residentsList)
     {
         if (resident)
         {
@@ -243,7 +243,7 @@ double FinanceDepartment::calculateTotalBusinessSale()
     return totalSale;
 }
 
-void FinanceDepartment::addResidents(Citizen *resident)
+void FinanceDepartment::addResidents(CitizenInterface *resident)
 {
     if (resident)
     {
@@ -254,4 +254,11 @@ void FinanceDepartment::addResidents(Citizen *resident)
 void FinanceDepartment::addCommercialBuilding(CommercialBuilding *commercialBuilding)
 {
     commercialBuildingsList.push_back(commercialBuilding);
+}
+
+double FinanceDepartment::delegateRequestForAllocationOfEducationFunds()
+{
+    double totalEducationFunds = 0.0;
+    totalEducationFunds += budgetAllocation->allocateSchoolFunds(availableFunds);
+    return totalEducationFunds;
 }

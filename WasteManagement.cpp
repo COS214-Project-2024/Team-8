@@ -133,3 +133,12 @@ Utility* WasteManagement::clone() {
 	clone->setProcessCapacity(this->processCapacity);
 	return clone;
 }
+/**
+ * @brief Get the energy type of the WasteManagement
+ * 
+ * @return std::string The energy type
+ */
+std::string WasteManagement::getEnergyType() {
+    return "Electricity";  // or another relevant energy type based on your application's logic
+}
+

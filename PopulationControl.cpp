@@ -11,13 +11,10 @@ PopulationControl::PopulationControl() : totalPopulation(0) {}
 
 // Destructor deallocates dynamically allocated buildings
 PopulationControl::~PopulationControl() {
-    for (Buildings* building : buildings) {
-        delete building;
-    }
 }
 
 // Update the total population based on the new building being added
-void PopulationControl::updatePopulation(Buildings* building) {
+void PopulationControl::updatePopulation(ResidentialBuilding* building) {
     int buildingCapacity = 0;
     if(building->getBuildingType() == "Residential"){
         buildingCapacity = building->getCapacity();
@@ -29,7 +26,6 @@ void PopulationControl::updatePopulation(Buildings* building) {
         buildings.push_back(building);
     } else {
         std::cout << "Cannot add building: population limit exceeded! Enforcing population policy." << std::endl;
-        delete building;
         enforcePopulationControl();
     }
     // Simulate migration based on jobs created for commercial buildings

@@ -24,13 +24,16 @@ public:
      * 
      * @param citizen The citizen instance to decorate.
      */
-    CitizenType(std::unique_ptr<CitizenInterface> citizen);
+    CitizenType(std::unique_ptr<CitizenInterface> citizen) 
+        : baseCitizen(std::move(citizen)) {}
 
     /**
      * @brief Clones the current CitizenType object.
      * @return A unique pointer to a new CitizenType object that is a clone of this instance.
      */
-    std::unique_ptr<CitizenInterface> clone() override;
+    std::unique_ptr<CitizenInterface> clone() override {
+        return std::make_unique<CitizenType>(baseCitizen->clone());
+    }
 
     /**
      * @brief Updates the citizen's status based on a new tax rate.
@@ -152,13 +155,32 @@ public:
      * @brief Displays the details of the citizen in a formatted manner.
      */
     void displayDetails() override;
-    virtual string CitizenType::citizenType();
+    virtual string citizenType();
 
     void Test() ; 
+     float getTaxRate() ; 
+     double getBalance() ; 
+     void setBalance(double newBalance) ; 
+
+     void setSatisfaction( int newSatisfaction ) ;
+ // Delete copy constructor and copy assignment operator
+    CitizenType(const CitizenType&) = delete;
+    CitizenType& operator=(const CitizenType&) = delete;
+     CitizenType(CitizenType&& other) noexcept 
+        : baseCitizen(std::move(other.baseCitizen)), CitizenList(std::move(other.CitizenList)) {}
+
+    CitizenType& operator=(CitizenType&& other) noexcept {
+        if (this != &other) {
+            baseCitizen = std::move(other.baseCitizen);
+            CitizenList = std::move(other.CitizenList);
+        }
+        return *this;
+    }
+
 
 protected:
     std::unique_ptr<CitizenInterface> baseCitizen; /**< The underlying citizen object being decorated. */
-    std::vector<Citizen*> CitizenList ; 
+    std::vector<Citizen*> CitizenList; 
 };
 
 #endif // CITIZENTYPE_H

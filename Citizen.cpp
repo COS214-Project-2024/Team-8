@@ -1,25 +1,24 @@
 #include "Citizen.h"
 #include <iostream>
 
-Citizen::Citizen(std::string name, float salary, int age, float satisfaction, 
-                 Government* government, bool hasJob, bool ownsProperty)
-    : name(name), salary(salary), age(age), satisfaction(satisfaction),
-      government(government), isEmployed(hasJob), ownsProperty(ownsProperty),
-      currTaxRate(0.10f)
-{
-    popControl.increasePopulation();
+Citizen::Citizen(std::string name, float salary, int age, float satisfaction,
+                 Government* government, bool isEmployed, bool ownsProperty)
+    : name(name), salary(salary), satisfaction(satisfaction), age(age),
+      isEmployed(isEmployed), ownsProperty(ownsProperty){
+    currTaxRate = 0.10f;
     std::cout << "Citizen " << name << " has been created with a salary of $" << salary 
               << ", age " << age << ", satisfaction level " << satisfaction 
-              << ", employment status: " << (hasJob ? "Employed" : "Unemployed") 
+              << ", employment status: " << (isEmployed ? "Employed" : "Unemployed") 
               << ", property ownership status: " << (ownsProperty ? "Owner" : "Not an owner") 
               << "." << std::endl;
 }
+
 
 Citizen::Citizen(std::string name, float salary, int age, float satisfaction)
     : Citizen(name, salary, age, satisfaction, nullptr) {}
 
 std::unique_ptr<CitizenInterface> Citizen::clone() {
-    popControl.increasePopulation();
+    popControl->increasePopulation();
     return std::make_unique<Citizen>(*this);
 }
 
@@ -55,8 +54,7 @@ void Citizen::makeRequest(Government* government, std::string requestDetails) {
 }
 
 void Citizen::useTransport(Stops *stop, int capacity){
-    TravelManager *manager = new TravelManager();
-    manager->Travel(capacity,stop);
+    tm->Travel(capacity,stop);
 }
 
 void Citizen::adjustCitizenSatisfaction(float newSatisfaction) {

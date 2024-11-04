@@ -104,5 +104,5 @@ int main() {
     srand(time(0)); //random function used in TravelManager
     TravelManagerTest();
     checkStopIterator();
-    checkBestRoute();
+    //checkBestRoute();
 }

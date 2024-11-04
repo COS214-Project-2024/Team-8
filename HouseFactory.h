@@ -18,7 +18,7 @@
  * This class inherits from ResidentialFactory and provides a method
  * for creating house building objects.
  */
-class HouseFactory : ResidentialFactory {
+class HouseFactory : public ResidentialFactory {
 
 public:
 	Buildings* buildings; /**< Pointer to a Buildings object, representing the house building instance managed by the factory. */

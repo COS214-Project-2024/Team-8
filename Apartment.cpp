@@ -64,10 +64,6 @@ void Apartment::setState(State* newState)
 	this->state = newState;
 }
 
-int Apartment::getCapacity()
-{
-	return this->capacity;
-}
 
 string Apartment::getName()
 {
@@ -157,6 +153,14 @@ bool Apartment::cleanWaste()
 		this->state->changeState();
 		return false;
 	}
+}
+// Added missing functions
+string Apartment::getBuildingType() {
+    return this->buildingType;
+}
+
+int Apartment::getJobsCreated() {
+    return 5;  // Each apartment creates maintenance, management, and security jobs
 }
 
 

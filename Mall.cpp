@@ -59,25 +59,11 @@ void Mall::setState(State* newState)
 	this->state = newState;
 }
 
-string Mall::getName()
-{
-	return this->buildingName;
-}
-
-string Mall::getBuildingType()
-{
-	return this->buildingType;
-}
-
 float Mall::getSales()
 {
 	return this->sales;
 }
 
-float Mall::getProfit()
-{
-	return this->profit;
-}
 
 int Mall::getJobsCreated()
 {
@@ -99,10 +85,6 @@ float Mall::getProfit()
 	return this->profit;
 }
 
-float Mall::getSales()
-{
-	return this->sales;
-}
 
 bool Mall::payMaintenance()
 {

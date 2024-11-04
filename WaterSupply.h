@@ -4,39 +4,42 @@
 #include "Utility.h"
 #include <iostream>
 #include "Command.h"
+#include <string>
+
 /**
  * @file WaterSupply.h
  * 
  * @brief The header file for the WaterSupply class
  */
 class WaterSupply : public Utility {
-
 private:
-	int maxGallons;
-	float puritypercentage;
+    int maxGallons;
+    float purityPercentage;
+	
 
 public:
-	WaterSupply(float curSupply);
+    WaterSupply(float curSupply);
+	WaterSupply(int gallons,  float purity);
+	std::string getEnergyType() override;
+    void addCommand(Command* com);
+    
+    std::string getStatus() ;
+    
+    void repairUtility() override;
 
-	void addCommand(Command* com);
+    void pauseOperation() override;
 
-	std::string getStatus();
+    void executeOperation() override;
 
-	void repairUtility();
+    void setMaxGallons(float max) override;
 
-	void pauseOperation();
+    float getOutput() override;
 
-	void executeOperation();
+    void undoChange() override;
 
-	void setMaxGallons(float max);
+    Utility* clone() override;
 
-	float getOutput();
-
-	void undoChange();
-
-	Utility* clone();
-
-	std::string getUtilityType();
+    std::string getUtilityType() override;
 };
 
-#endif
+#endif // WATERSUPPLY_H

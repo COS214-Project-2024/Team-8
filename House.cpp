@@ -64,6 +64,11 @@ void House::setState(State* newState)
 	this->state = newState;
 }
 
+int House::getJobsCreated()
+{
+    return 0;
+}
+
 string House::getName()
 {
 	return this->buildingName;
@@ -158,5 +163,6 @@ bool House::cleanWaste()
 		return false;
 	}
 }
+
 
 

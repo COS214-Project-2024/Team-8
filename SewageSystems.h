@@ -34,6 +34,7 @@ public:
 	Utility* clone();
 
 	void repairUtility();
+	std::string getEnergyType();
 };
 
 #endif
