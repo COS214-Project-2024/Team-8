@@ -21,7 +21,7 @@ protected:
     int waterReq;                 /**< Water requirement of the building. */
     int sewageCost;               /**< Sewage cost for the building. */
 
-    ResourceMediator* resources;  /**< Mediator for managing resources. */
+    Utility* resources;  /**< Mediator for managing resources. */
     State* state;                 /**< Current state of the building. */
 
 public:

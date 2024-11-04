@@ -5,7 +5,7 @@ using namespace std;
 #include "Monument.h"
 #include "State.h"
 #include "UnderConstruction.h"
-#include "ResourceMediator.h"
+#include "Utility.h"
 #include "Citizen.h"
 
 Monument::Monument(string bName,int pReq, int wReq, double mCost, int sCost, int waste)

@@ -24,7 +24,7 @@ protected:
     int waterReq; ///< The water requirement for the warehouse.
     int sewageCost; ///< The sewage cost for the warehouse.
     int waste; ///< The waste produced by the warehouse.
-    ResourceMediator* resources; ///< Mediator for handling resource management.
+    Utility* resources; ///< Mediator for handling resource management.
 
     // Business metrics
     float sales; ///< Total sales made by the warehouse.

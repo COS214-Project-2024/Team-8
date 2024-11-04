@@ -6,7 +6,7 @@ using namespace std;
 #include "Mall.h"
 #include "State.h"
 #include "UnderConstruction.h"
-#include "ResourceMediator.h"
+#include "Utility.h"
 #include "Citizen.h"
 
 Mall::Mall(string bName,int pReq, int wReq, double mCost, int sCost, int waste, float sales, float profit, int emp)

@@ -6,13 +6,13 @@
  */
 
 #include <string>
+#include "Utility.h"
 
 using namespace std;
 #ifndef BUILDINGS_H
 #define BUILDINGS_H
 
 class State;
-class ResourceMediator;
 class Citizen;
 
 /**
@@ -45,7 +45,7 @@ protected:
     Citizen* listOfCitizens;     /**< List of citizens associated with the building. */
 
 public:
-    ResourceMediator* resources; /**< Mediator for handling resource distribution. */
+    Utility* resources; /**< Mediator for handling resource distribution. */
 
     /**
      * @brief Requests the current state of the building.
@@ -141,9 +141,9 @@ public:
  
     /**
      * @brief Sets the resource mediator for the building.
-     * @param resources Pointer to the ResourceMediator object to be used.
+     * @param resources Pointer to the Utility object to be used.
      */
-    void setResources(ResourceMediator* resources) {
+    void setResources(Utility* resources) {
         this->resources = resources;
     }
 };

@@ -5,7 +5,7 @@ using namespace std;
 #include "Warehouse.h"
 #include "State.h"
 #include "UnderConstruction.h"
-#include "ResourceMediator.h"
+#include "Utility.h"
 #include "Citizen.h"
 
 Warehouse::Warehouse(string bName, int pReq, int wReq, double mCost, int sCost, int waste, int employment)

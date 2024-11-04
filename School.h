@@ -26,7 +26,7 @@ protected:
     float educationCoverage; ///< Coverage of education provided by the school
 
     // Resource mediator and state
-    ResourceMediator* resources; ///< Mediator for resources
+    Utility* resources; ///< Mediator for resources
     State* state; ///< Current state of the building
 
 public:

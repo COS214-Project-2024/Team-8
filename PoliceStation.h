@@ -26,7 +26,7 @@ protected:
     float securityCoverage; ///< Security coverage provided by the police station
 
     // Resource mediator and state
-    ResourceMediator* resources; ///< Mediator for managing resources
+    Utility* resources; ///< Mediator for managing resources
     State* state; ///< Current state of the police station
 
 public:

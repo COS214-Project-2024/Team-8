@@ -7,7 +7,7 @@ using namespace std;
 #include "State.h"
 #include "Buildings.h"
 #include "Damaged.h"
-#include "ResourceMediator.h"
+#include "Utility.h"
 
 Operational::Operational()
 {

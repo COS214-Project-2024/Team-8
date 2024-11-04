@@ -29,7 +29,7 @@ class MedicalCenter : public PublicServiceBuilding {
     int birthRate;                /**< Birth rate supported by the medical center. */
 
     // Resource mediator and state
-    ResourceMediator* resources;  /**< Mediator for managing resources. */
+    Utility* resources;  /**< Mediator for managing resources. */
     State* state;                 /**< Current state of the medical center. */
 
 public:

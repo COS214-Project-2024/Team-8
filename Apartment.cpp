@@ -1,12 +1,12 @@
 #include <iostream>
 #include <memory>
 #include <exception>
+
 using namespace std;
 
 #include "Apartment.h"
 #include "State.h"
 #include "UnderConstruction.h"
-#include "ResourceMediator.h"
 #include "Citizen.h"
 
 Apartment::Apartment(string bName,int pReq, int wReq, double mCost, int sCost, int waste, int capacity)

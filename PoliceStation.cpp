@@ -6,7 +6,7 @@ using namespace std;
 #include "PoliceStation.h"
 #include "State.h"
 #include "UnderConstruction.h"
-#include "ResourceMediator.h"
+#include "Utility.h"
 #include "Citizen.h"
 
 PoliceStation::PoliceStation(string bName,int pReq, int wReq, double mCost, int sCost, int waste, int employment, float sCov)

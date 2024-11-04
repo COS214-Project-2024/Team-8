@@ -27,7 +27,7 @@ protected:
     int waste; ///< The amount of waste produced
 
     // Mediator and state
-    ResourceMediator* resources; ///< Pointer to the resource mediator
+    Utility* resources; ///< Pointer to the resource mediator
     State* state; ///< Pointer to the current state of the townhouse
 
 public:

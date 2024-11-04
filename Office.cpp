@@ -5,7 +5,7 @@ using namespace std;
 #include "Office.h"
 #include "State.h"
 #include "UnderConstruction.h"
-#include "ResourceMediator.h"
+#include "Utility.h"
 #include "Citizen.h"
 
 Office::Office(string bName,int pReq, int wReq, double mCost, int sCost, int waste, float sales, float profit, int emp, int income)

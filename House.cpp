@@ -6,7 +6,7 @@ using namespace std;
 #include "State.h"
 #include "UnderConstruction.h"
 #include "ResidentialBuilding.h"
-#include "ResourceMediator.h"
+#include "Utility.h"
 #include "Citizen.h"
 
 House::House(string bName,int pReq, int wReq, double mCost, int sCost, int waste, int capacity)

@@ -24,7 +24,7 @@ class Monument : public LandmarkBuilding {
     int waste;                    /**< Waste produced by the monument. */
 
     // Mediator and state objects
-    ResourceMediator* resources;  /**< Mediator for managing resources. */
+    Utility* resources;  /**< Mediator for managing resources. */
     State* state;                 /**< Current state of the monument. */
 
 public:

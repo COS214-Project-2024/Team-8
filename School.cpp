@@ -5,7 +5,7 @@ using namespace std;
 #include "School.h"
 #include "State.h"
 #include "UnderConstruction.h"
-#include "ResourceMediator.h"
+#include "Utility.h"
 #include "Citizen.h"
 
 School::School(string bName,int pReq, int wReq, double mCost, int sCost, int waste, int employment, float eCov)
