@@ -1,28 +1,65 @@
 #include "Utility.h"
 
-/**
- * @brief return the output of the Utility
- * 
- * @return float The output of the Utility
- */
+
 float Utility::getOutput() {
-    return this->Output;
+	return this->Output;
 }
 
-/**
- * @brief Set the output of the Utility
- * 
- * @param Output The output of the Utility
- */
+
+void Utility::setMaxWatts(float max) {
+	throw "NOT A MEMBER OF SAID CLASS";
+}
+
+
+void Utility::setmaxWaste(int max) {
+	throw "NOT A MEMBER OF SAID CLASS";
+}
+
+
+void Utility::setMaxGallons(float max) {
+	throw "NOT A MEMBER OF SAID CLASS";
+}
+
+
+void Utility::setFuel(EnergySource* fuel) {
+	throw "NOT A MEMBER OF SAID CLASS";
+}
+
+
+void Utility::switchFuel() {
+	throw "NOT A MEMBER OF SAID CLASS";
+}
+
+
+std::string Utility::getEnergyType() {
+	throw "NOT A MEMBER OF SAID CLASS";
+}
+
+
 void Utility::setOutput(float Output) {
-    this->Output = Output;
+	this->Output = Output;
 }
 
-/**
- * @brief Pauses the operation of the Utility
- */
-void Utility::pauseOperation() {
-    std::cout << "Utility is being paused..." << std::endl;
-    this->status = "Paused";
-    this->commandHistory.push_back("Paused");
+void Utility::setProcessCapacity(int pro) {
+	throw "NOT A MEMBER OF SAID CLASS";
+}
+
+bool Utility::getPower(Buildings* sender){
+	std::cout << "Power power sent to building" << std::endl;
+	return true;
+}
+
+bool Utility::getWater(Buildings* sender){
+	std::cout << "Water sent to building" << std::endl;
+	return true;
+}
+
+bool Utility::cleanWaste(Buildings* sender){
+	std::cout << "Waste cleaned" << std::endl;
+	return true;
+}
+
+bool Utility::cleanSewage(Buildings* sender){
+	std::cout << "Sewage cleaned" << std::endl;
+	return true;
 }
