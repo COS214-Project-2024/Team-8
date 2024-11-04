@@ -44,18 +44,6 @@ public:
     PoliceStation(string bName, int pReq, int wReq, double mCost, int sCost, int waste, int employment, float sCov);
 
     /**
-     * @brief Cleans the sewage of the police station.
-     * @return true if the sewage was cleaned successfully, false otherwise.
-     */
-    virtual bool cleanSewage();
-
-    /**
-     * @brief Cleans the waste of the police station.
-     * @return true if the waste was cleaned successfully, false otherwise.
-     */
-    virtual bool cleanWaste();
-
-    /**
      * @brief Gets the type of the building.
      * @return The building type as a string.
      */
@@ -102,24 +90,6 @@ public:
      * @return The waste cost as an integer.
      */
     virtual int getWasteCost();
-
-    /**
-     * @brief Pays the maintenance fee for the police station.
-     * @return true if the payment was successful, false otherwise.
-     */
-    virtual bool payMaintenance();
-
-    /**
-     * @brief Receives power for the police station.
-     * @return true if power was received successfully, false otherwise.
-     */
-    virtual bool receivePower();
-
-    /**
-     * @brief Receives water for the police station.
-     * @return true if water was received successfully, false otherwise.
-     */
-    virtual bool receiveWater();
 
     /**
      * @brief Requests the current state of the police station.
