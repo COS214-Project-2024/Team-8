@@ -45,7 +45,7 @@ public:
     Government(FinanceDepartment *financeDepartment);
 
     /** @brief Virtual destructor */
-    virtual ~Government() = 0;
+    virtual ~Government() ;
 
     /**
      * @brief Attaches a citizen observer to the government
