@@ -83,4 +83,35 @@ int MedicalCenter::getBirthRate()
 	return this->birthRate;
 }
 
+void MedicalCenter::addBuilding(){
+	if(resources){
+		resources->addBuilding(this);
+	}
+}
+
+bool MedicalCenter::getPower(){
+	if(resources){
+		resources->getPower(this);
+	}
+}
+
+bool MedicalCenter::cleanSewage(){
+	if(resources){
+		resources->cleanSewage(this);
+	}
+}
+
+bool MedicalCenter::cleanWaste(){
+	if(resources){
+		resources->cleanWaste(this);
+	}
+}
+
+bool MedicalCenter::getWater(){
+	if(resources){
+		resources->getWater(this);
+	}
+}
+
+
 

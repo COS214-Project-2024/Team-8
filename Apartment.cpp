@@ -75,18 +75,40 @@ string Apartment::getBuildingType() {
     return this->buildingType;
 }
 
-int Apartment::getJobsCreated() {
-    return 5;  // Each apartment creates maintenance, management, and security jobs
-}
 // Added missing functions
 string Apartment::getBuildingType() {
     return this->buildingType;
 }
 
-int Apartment::getJobsCreated() {
-    return 5;  // Each apartment creates maintenance, management, and security jobs
+void Apartment::addBuilding(){
+	if(resources){
+		resources->addBuilding(this);
+	}
 }
 
+bool Apartment::getPower(){
+	if(resources){
+		resources->getPower(this);
+	}
+}
+
+bool Apartment::cleanSewage(){
+	if(resources){
+		resources->cleanSewage(this);
+	}
+}
+
+bool Apartment::cleanWaste(){
+	if(resources){
+		resources->cleanWaste(this);
+	}
+}
+
+bool Apartment::getWater(){
+	if(resources){
+		resources->getWater(this);
+	}
+}
 
 
 

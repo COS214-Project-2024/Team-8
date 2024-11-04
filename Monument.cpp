@@ -66,5 +66,34 @@ string Monument::getBuildingType()
 	return this->buildingType;
 }
 
+void Monument::addBuilding(){
+	if(resources){
+		resources->addBuilding(this);
+	}
+}
+
+bool Monument::getPower(){
+	if(resources){
+		resources->getPower(this);
+	}
+}
+
+bool Monument::cleanSewage(){
+	if(resources){
+		resources->cleanSewage(this);
+	}
+}
+
+bool Monument::cleanWaste(){
+	if(resources){
+		resources->cleanWaste(this);
+	}
+}
+
+bool Monument::getWater(){
+	if(resources){
+		resources->getWater(this);
+	}
+}
 
 

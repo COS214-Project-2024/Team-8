@@ -78,4 +78,32 @@ float PoliceStation::getSecurityCoverage()
 	return this->securityCoverage;
 }
 
+void PoliceStation::addBuilding(){
+	if(resources){
+		resources->addBuilding(this);
+	}
+}
 
+bool PoliceStation::getPower(){
+	if(resources){
+		resources->getPower(this);
+	}
+}
+
+bool PoliceStation::cleanSewage(){
+	if(resources){
+		resources->cleanSewage(this);
+	}
+}
+
+bool PoliceStation::cleanWaste(){
+	if(resources){
+		resources->cleanWaste(this);
+	}
+}
+
+bool PoliceStation::getWater(){
+	if(resources){
+		resources->getWater(this);
+	}
+}

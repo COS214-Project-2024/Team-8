@@ -5,7 +5,7 @@ using namespace std;
 #include "Factories.h"
 #include "State.h"
 #include "UnderConstruction.h"
-#include "ResourceMediator.h"
+#include "Utility.h"
 #include "Citizen.h"
 
 Factories::Factories(string bName, int pReq, int wReq, double mCost, int sCost, int waste, int employment)
@@ -42,6 +42,10 @@ int Factories::getSewageCost() {
 	return this->sewageCost;
 }
 
+int Factories::getWaterReq() {
+	return this->waterReq;
+}
+
 int Factories::getWasteCost() {
 	return this->waste;
 }
@@ -53,7 +57,7 @@ void Factories::setState(State* newState)
 
 int Factories::getJobsCreated()
 {
-	return employment; 
+	return employment; //NOT SURE - ask Tebogo what this should return
 }
 
 string Factories::getName()
@@ -72,19 +76,32 @@ int Factories::payCitizen()
 	return 8000;
 }
 
-// Added missing functions
-int Factories::getWaterReq() {
-    return this->waterReq;
+void Factories::addBuilding(){
+	if(resources){
+		resources->addBuilding(this);
+	}
 }
 
-void Factories::operation() {
-    cout << "Factory " << buildingName << " is operating." << endl;
+bool Factories::getPower(){
+	if(resources){
+		resources->getPower(this);
+	}
 }
 
-float Factories::getSales() {
-    return this->sales;
+bool Factories::cleanSewage(){
+	if(resources){
+		resources->cleanSewage(this);
+	}
 }
 
-float Factories::getProfit() {
-    return this->profit;
+bool Factories::cleanWaste(){
+	if(resources){
+		resources->cleanWaste(this);
+	}
+}
+
+bool Factories::getWater(){
+	if(resources){
+		resources->getWater(this);
+	}
 }

@@ -2,15 +2,15 @@
 #ifndef __CitySector_h__
 #define __CitySector_h__
 
-#include "ResourceMediator.h"
+#include "Utility.h"
 
-class ResourceMediator;
+class Utility;
 class CitySector;
 
 class CitySector
 {
-	private: ResourceMediator _resources;
-	public: ResourceMediator* _unnamed_ResourceMediator_;
+	private: Utility _resources;
+	public: Utility* _unnamed_Utility_;
 };
 
 #endif

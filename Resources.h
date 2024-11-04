@@ -3,7 +3,7 @@ using namespace std;
 #ifndef __Resources_h__
 #define __Resources_h__
 
-// #include "ResourceMediator.h"
+// #include "Utility.h"
 // #include "Buildings.h"
 #include "powerResource.h"
 #include "waterResource.h"
@@ -11,7 +11,7 @@ using namespace std;
 #include "wasteManagmentResource.h"
 #include "sewageManagmentResource.h"
 
-class ResourceMediator;
+class Utility;
 class Buildings;
 // class powerResource;
 // class waterResource;
@@ -22,9 +22,9 @@ class Resources;
 
 class Resources: public powerResource, public waterResource, public revenueResource, public wasteManagmentResource, public sewageManagmentResource
 {
-	private: ResourceMediator* _citySector;
+	private: Utility* _citySector;
 	public: Buildings* _unnamed_Buildings_;
-	public: ResourceMediator* _unnamed_ResourceMediator_;
+	public: Utility* _unnamed_Utility_;
 
 	public: virtual bool giveResource(double aUnits) = 0;
 

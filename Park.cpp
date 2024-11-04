@@ -5,7 +5,7 @@ using namespace std;
 #include "Park.h"
 #include "State.h"
 #include "UnderConstruction.h"
-#include "ResourceMediator.h"
+#include "Utility.h"
 #include "Citizen.h"
 
 Park::Park(string bName,int pReq, int wReq, double mCost, int sCost, int waste)
@@ -64,5 +64,35 @@ string Park::getName()
 string Park::getBuildingType()
 {
 	return this->buildingType;
+}
+
+void Park::addBuilding(){
+	if(resources){
+		resources->addBuilding(this);
+	}
+}
+
+bool Park::getPower(){
+	if(resources){
+		resources->getPower(this);
+	}
+}
+
+bool Park::cleanSewage(){
+	if(resources){
+		resources->cleanSewage(this);
+	}
+}
+
+bool Park::cleanWaste(){
+	if(resources){
+		resources->cleanWaste(this);
+	}
+}
+
+bool Park::getWater(){
+	if(resources){
+		resources->getWater(this);
+	}
 }
 

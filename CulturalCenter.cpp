@@ -70,3 +70,33 @@ string CulturalCenter::getBuildingType()
 int CulturalCenter::getJobsCreated() {
     return 10;  // Cultural centers provide jobs for staff, security, and maintenance
 }
+
+void CulturalCenter::addBuilding(){
+	if(resources){
+		resources->addBuilding(this);
+	}
+}
+
+bool CulturalCenter::getPower(){
+	if(resources){
+		resources->getPower(this);
+	}
+}
+
+bool CulturalCenter::cleanSewage(){
+	if(resources){
+		resources->cleanSewage(this);
+	}
+}
+
+bool CulturalCenter::cleanWaste(){
+	if(resources){
+		resources->cleanWaste(this);
+	}
+}
+
+bool CulturalCenter::getWater(){
+	if(resources){
+		resources->getWater(this);
+	}
+}

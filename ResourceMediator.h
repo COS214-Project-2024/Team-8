@@ -1,5 +1,5 @@
-#ifndef RESOURCEMEDIATOR_H
-#define RESOURCEMEDIATOR_H
+#ifndef Utility_H
+#define Utility_H
 
 #include <map>
 #include <iostream>
@@ -17,13 +17,13 @@
 class Resource;
 class Buildings;
 
-class ResourceMediator {
+class Utility {
 private:
     std::map<std::string, Resource*>* resources;
     std::vector<Utility*>* utilities;
 
 public:
-    ResourceMediator();
+    Utility();
     bool usePower(float units, Buildings* sender);
     float replenishPower();
     bool useRevenue(float units, Buildings* sender);
@@ -40,4 +40,4 @@ public:
     void setUtilities(std::vector<Utility*>* utilities);
 };
 
-#endif // RESOURCEMEDIATOR_H
+#endif // Utility_H

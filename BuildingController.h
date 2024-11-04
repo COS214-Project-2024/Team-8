@@ -5,7 +5,7 @@
 #include "Buildings.h"
 #include "ResidentialBuilding.h"
 #include "CommercialBuilding.h"
-#include "ResourceMediator.h"
+#include "Utility.h"
 
 #include <iostream>
 
@@ -15,12 +15,12 @@ private:
 
     Buildings ** ListOfBuildings ; 
     int amountOfBuildings ; 
-    ResourceMediator* resourceMediator;
+    Utility* Utility;
 public:
     BuildingController(/* args */);
     ~BuildingController();
-    BuildingController(ResourceMediator* mediator) 
-        : resourceMediator(mediator) {
+    BuildingController(Utility* mediator) 
+        : Utility(mediator) {
         ListOfBuildings = new Buildings*[100];
         amountOfBuildings = 0;
     

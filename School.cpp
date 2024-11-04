@@ -56,9 +56,10 @@ void School::setState(State* newState)
 	this->state = newState;
 }
 
+
 int School::getJobsCreated()
 {
-	return employment; 
+	return employment; //NOT SURE - ask Tebogo what this should return
 }
 
 string School::getName()
@@ -71,7 +72,37 @@ string School::getBuildingType()
 	return this->buildingType;
 }
 
-float School::getEducationCoverage()
+void School::addBuilding(){
+	if(resources){
+		resources->addBuilding(this);
+	}
+}
+
+bool School::getPower(){
+	if(resources){
+		resources->getPower(this);
+	}
+}
+
+bool School::cleanSewage(){
+	if(resources){
+		resources->cleanSewage(this);
+	}
+}
+
+bool School::cleanWaste(){
+	if(resources){
+		resources->cleanWaste(this);
+	}
+}
+
+bool School::getWater(){
+	if(resources){
+		resources->getWater(this);
+	}
+}
+
+float School::getEducationalCoverage()
 {
 	return this->educationCoverage;
 }

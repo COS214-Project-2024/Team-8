@@ -10,20 +10,6 @@ using namespace std;
  * @brief Represents a landmark building, inheriting from Buildings.
  */
 class LandmarkBuilding : public Buildings {
-
-protected:
-    string buildingName;          /**< Name of the landmark building. */
-    string buildingType;          /**< Type of the landmark building. */
-    Citizen* listOfCitizens;      /**< List of citizens associated with the building. */
-
-    double maintenanceCost;       /**< Maintenance cost for the building. */
-    int powerReq;                 /**< Power requirement of the building. */
-    int waterReq;                 /**< Water requirement of the building. */
-    int sewageCost;               /**< Sewage cost for the building. */
-
-    Utility* resources;  /**< Mediator for managing resources. */
-    State* state;                 /**< Current state of the building. */
-
 public:
 
     /**
@@ -77,6 +63,38 @@ public:
      * @brief sets the state of the building
      */
     virtual void setState(State* newState) = 0;
+
+    
+    /**
+	 * @brief Add a building to the Utility resource
+	 * 
+	 * @param building The building to add to the WaterSupply
+	 */
+	virtual void addBuilding() = 0;
+
+    /**
+     * @brief Receives power for the building.
+     * @return true if power was received successfully, false otherwise.
+     */
+    virtual bool getPower() = 0;
+
+    /**
+     * @brief Receives water for the building.
+     * @return true if water was received successfully, false otherwise.
+     */
+    virtual bool getWater() = 0;
+
+    /**
+     * @brief Cleans the waste of the building.
+     * @return true if waste cleaning was successful, false otherwise.
+     */
+    virtual bool cleanWaste() = 0;
+
+    /**
+     * @brief Cleans the sewage of the building.
+     * @return true if sewage cleaning was successful, false otherwise.
+     */
+    virtual bool cleanSewage() = 0;
 
 };
 

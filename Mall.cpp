@@ -107,7 +107,32 @@ double Mall::getBalance()
 	return this->balance;
 }
 
-// Added missing function
-void Mall::operation() {
-    cout << "Mall " << buildingName << " is operating." << endl;
+void Mall::addBuilding(){
+	if(resources){
+		resources->addBuilding(this);
+	}
+}
+
+bool Mall::getPower(){
+	if(resources){
+		resources->getPower(this);
+	}
+}
+
+bool Mall::cleanSewage(){
+	if(resources){
+		resources->cleanSewage(this);
+	}
+}
+
+bool Mall::cleanWaste(){
+	if(resources){
+		resources->cleanWaste(this);
+	}
+}
+
+bool Mall::getWater(){
+	if(resources){
+		resources->getWater(this);
+	}
 }

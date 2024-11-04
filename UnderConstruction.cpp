@@ -1,7 +1,7 @@
 #include <iostream>
 #include "UnderConstruction.h"
 #include "Operational.h"
-#include "ResourceMediator.h"
+#include "Utility.h"
 
 UnderConstruction::UnderConstruction()
 {
@@ -16,7 +16,7 @@ void UnderConstruction::handle() {
 void UnderConstruction::changeState() {
     if (this->building && this->building->resources != nullptr) // Ensure building is initialized
     {
-        if (building->receivePower() && building->receiveWater()) // Changed to receiveWater
+        if (building->getPower() && building->getWater()) // Changed to getWater
         {
             State* newState = new Operational();
             building->setState(newState);

@@ -1,4 +1,4 @@
-#include "ResourceMediator.h"
+#include "Utility.h"
 #include "Resource.h"
 #include "Buildings.h"
 /**
@@ -6,7 +6,7 @@
  * 
  * @param resources 
  */
-ResourceMediator::ResourceMediator(){
+Utility::Utility(){
     //this->resources = resources;
     //this->utilities = utilities;
 }
@@ -20,7 +20,7 @@ ResourceMediator::ResourceMediator(){
  * @return false 
  */
 
-bool ResourceMediator::usePower(float units, Buildings* sender){
+bool Utility::usePower(float units, Buildings* sender){
     if(resources->find("Power")->second->giveResource(units)){
         std::cout << "There is enough power" << std::endl;
         return true;
@@ -34,7 +34,7 @@ bool ResourceMediator::usePower(float units, Buildings* sender){
  * 
  * @param units 
  */
-float ResourceMediator::replenishPower(){
+float Utility::replenishPower(){
     float total = 0;
     for(Utility* util : *utilities){
 
@@ -56,7 +56,7 @@ float ResourceMediator::replenishPower(){
  * @return false 
  */
 
-bool ResourceMediator::useWater(float units, Buildings* sender){
+bool Utility::useWater(float units, Buildings* sender){
     if(resources->find("Water")->second->giveResource(units)){
         std::cout << "There is enough Water" << std::endl;
         return true;
@@ -70,7 +70,7 @@ bool ResourceMediator::useWater(float units, Buildings* sender){
  * 
  * @param units 
  */
-float ResourceMediator::replenishWater(){
+float Utility::replenishWater(){
     float total = 0;
     for(Utility* util : *utilities){
 
@@ -93,7 +93,7 @@ float ResourceMediator::replenishWater(){
  * @return false 
  */
 
-bool ResourceMediator::useRevenue(float units, Buildings* sender){
+bool Utility::useRevenue(float units, Buildings* sender){
     if(resources->find("Revenue")->second->giveResource(units)){
         std::cout << "There is enough Money" << std::endl;
         return true;
@@ -112,7 +112,7 @@ bool ResourceMediator::useRevenue(float units, Buildings* sender){
  * @return false 
  */
 
-bool ResourceMediator::cleanWaste(float units, Buildings* sender){
+bool Utility::cleanWaste(float units, Buildings* sender){
     if(resources->find("Waste")->second->giveResource(units)){
         std::cout << "There is enough Waste cleaning resources" << std::endl;
         return true;
@@ -127,7 +127,7 @@ bool ResourceMediator::cleanWaste(float units, Buildings* sender){
  * 
  * @param units 
  */
-float ResourceMediator::gainWasteCleaning(){
+float Utility::gainWasteCleaning(){
     float total = 0;
     for(Utility* util : *utilities){
 
@@ -149,7 +149,7 @@ float ResourceMediator::gainWasteCleaning(){
  * @return false 
  */
 
-bool ResourceMediator::cleanSewage(float units, Buildings* sender){
+bool Utility::cleanSewage(float units, Buildings* sender){
     if(resources->find("Sewage")->second->giveResource(units)){
         std::cout << "There is enough sewage cleaning resources" << std::endl;
         return true;
@@ -164,7 +164,7 @@ bool ResourceMediator::cleanSewage(float units, Buildings* sender){
  * 
  * @param units 
  */
-float ResourceMediator::gainSewageCleaning(){
+float Utility::gainSewageCleaning(){
     float total = 0;
     for(Utility* util : *utilities){
 
@@ -184,7 +184,7 @@ float ResourceMediator::gainSewageCleaning(){
  * 
  * @param units 
  */
-float ResourceMediator::replenishRevenue(){
+float Utility::replenishRevenue(){
     float total = 0;
     for(Utility* util : *utilities){
 
@@ -206,7 +206,7 @@ float ResourceMediator::replenishRevenue(){
  * @return false 
  */
 
-bool ResourceMediator::useConstResource(float units, Buildings* sender){
+bool Utility::useConstResource(float units, Buildings* sender){
     if(resources->find("Water")->second->giveResource(units)){
         std::cout << "There is enough Water" << std::endl;
         return true;
@@ -214,7 +214,7 @@ bool ResourceMediator::useConstResource(float units, Buildings* sender){
     std::cout << "Make more resources for Water" << std::endl;
     return false;
 }
-float ResourceMediator::replenishConstResource(){
+float Utility::replenishConstResource(){
     float total = 0;
     for(Utility* util : *utilities){
 
@@ -228,9 +228,9 @@ float ResourceMediator::replenishConstResource(){
     return total;
 }
 
-void ResourceMediator::setResources(std::map<std::string, Resource*>* resources){
+void Utility::setResources(std::map<std::string, Resource*>* resources){
     this->resources = resources;
 }
-void ResourceMediator::setUtilities(std::vector<Utility*>* utilities){
+void Utility::setUtilities(std::vector<Utility*>* utilities){
     this->utilities = utilities;
 }

@@ -11,25 +11,6 @@ using namespace std;
  * @brief Represents a townhouse, a type of residential building.
  */
 class TownHouse : public ResidentialBuilding {
-
-protected:
-    // Building details
-    string buildingName; ///< The name of the townhouse
-    string buildingType; ///< The type of building
-    int capacity; ///< The maximum capacity of the townhouse
-    Citizen* listOfCitizens; ///< Pointer to the list of residents
-
-    // Resource and maintenance requirements
-    double maintenanceCost; ///< The cost of maintenance
-    int powerReq; ///< The power requirement
-    int waterReq; ///< The water requirement
-    int sewageCost; ///< The sewage cost
-    int waste; ///< The amount of waste produced
-
-    // Mediator and state
-    Utility* resources; ///< Pointer to the resource mediator
-    State* state; ///< Pointer to the current state of the townhouse
-
 public:
     /**
      * @brief Constructor for the TownHouse class.
@@ -48,12 +29,6 @@ public:
      * @return The building type as a string.
      */
     virtual string getBuildingType();
-    
-    /**
-     * @brief Gets the number of jobs created by the townhouse.
-     * @return The number of jobs created.
-     */
-    virtual int getJobsCreated();
     
     /**
      * @brief Gets the maintenance cost of the townhouse.
@@ -112,6 +87,37 @@ public:
      * @brief sets the state of the building
      */
     void setState(State* newState);
+
+     /**
+     * @brief Cleans the sewage of the building.
+     * @return True if the cleaning was successful, false otherwise.
+     */
+    virtual bool cleanSewage();
+
+    /**
+     * @brief Cleans the waste of the building.
+     * @return True if the cleaning was successful, false otherwise.
+     */
+    virtual bool cleanWaste();
+
+    /**
+     * @brief Receives power for the building.
+     * @return True if power was received successfully, false otherwise.
+     */
+    virtual bool getPower();
+
+    /**
+     * @brief Receives water for the building.
+     * @return True if water was received successfully, false otherwise.
+     */
+    virtual bool getWater();
+
+    /**
+	 * @brief Add a building to the Building
+	 * 
+	 * @param building The building to add to the WaterSupply
+	 */
+	virtual void addBuilding();
 };
 
 #endif

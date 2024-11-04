@@ -103,3 +103,33 @@ double Shop::getBalance()
 	return this->balance;
 }
 
+void Shop::addBuilding(){
+	if(resources){
+		resources->addBuilding(this);
+	}
+}
+
+bool Shop::getPower(){
+	if(resources){
+		resources->getPower(this);
+	}
+}
+
+bool Shop::cleanSewage(){
+	if(resources){
+		resources->cleanSewage(this);
+	}
+}
+
+bool Shop::cleanWaste(){
+	if(resources){
+		resources->cleanWaste(this);
+	}
+}
+
+bool Shop::getWater(){
+	if(resources){
+		resources->getWater(this);
+	}
+}
+

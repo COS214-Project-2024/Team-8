@@ -12,20 +12,12 @@ using namespace std;
 class ResidentialBuilding : public Buildings {
 
 protected:
-    // Basic building details
-    string buildingName; ///< Name of the building
-    string buildingType; ///< Type of the building
-    Citizen* listOfCitizens; ///< List of citizens residing in the building
-
     // Maintenance and resource requirements
-    double maintenanceCost; ///< Cost required for maintenance
-    int powerReq; ///< Power requirement for the building
-    int waterReq; ///< Water requirement for the building
-    int sewageCost; ///< Sewage cost for the building
     int capacity; ///< Capacity of the building
+    int waste; 
 
     // Mediator and state
-    ResourceMediator* resources; ///< Mediator for resources
+    Utility* resources; ///< Mediator for resources
     State* state; ///< Current state of the building
 
 public:
@@ -57,7 +49,7 @@ public:
      * @brief Gets the number of jobs created by the building.
      * @return Number of jobs created.
      */
-    virtual int getJobsCreated() = 0;
+    virtual int getJobsCreated(){return 0;}
 
     /**
      * @brief Gets the maintenance cost of the building.
@@ -90,22 +82,16 @@ public:
     virtual int getWaterReq() = 0;
 
     /**
-     * @brief Pays for the maintenance of the building.
-     * @return True if payment was successful, false otherwise.
-     */
-    virtual bool payMaintenance() = 0;
-
-    /**
      * @brief Receives power for the building.
      * @return True if power was received successfully, false otherwise.
      */
-    virtual bool receivePower() = 0;
+    virtual bool getPower() = 0;
 
     /**
      * @brief Receives water for the building.
      * @return True if water was received successfully, false otherwise.
      */
-    virtual bool receiveWater() = 0;
+    virtual bool getWater() = 0;
 
     /**
      * @brief Receives water for the building.
@@ -115,6 +101,13 @@ public:
     {
         return this->capacity;
     }
+
+    /**
+	 * @brief Add a building to the Building
+	 * 
+	 * @param building The building to add to the WaterSupply
+	 */
+	virtual void addBuilding() = 0;
 
     /**
      * @brief sets the state of the building

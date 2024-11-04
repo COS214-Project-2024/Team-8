@@ -69,3 +69,33 @@ string TownHouse::getName()
 {
 	return this->buildingName;
 }
+
+void TownHouse::addBuilding(){
+	if(resources){
+		resources->addBuilding(this);
+	}
+}
+
+bool TownHouse::getPower(){
+	if(resources){
+		resources->getPower(this);
+	}
+}
+
+bool TownHouse::cleanSewage(){
+	if(resources){
+		resources->cleanSewage(this);
+	}
+}
+
+bool TownHouse::cleanWaste(){
+	if(resources){
+		resources->cleanWaste(this);
+	}
+}
+
+bool TownHouse::getWater(){
+	if(resources){
+		resources->getWater(this);
+	}
+}

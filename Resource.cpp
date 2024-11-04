@@ -1,10 +1,10 @@
 #include "Resource.h"
-#include "ResourceMediator.h"
+#include "Utility.h"
 /**
  * @brief Set the mediator attribute of the Resource Mediator
  * 
  * @param mediator 
  */
-void Resource::setResourceMediator(ResourceMediator* mediator){
+void Resource::setUtility(Utility* mediator){
     this->citySectors = mediator;
 }

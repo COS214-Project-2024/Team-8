@@ -64,11 +64,6 @@ void House::setState(State* newState)
 	this->state = newState;
 }
 
-int House::getJobsCreated()
-{
-    return 0;
-}
-
 string House::getName()
 {
 	return this->buildingName;
@@ -78,6 +73,38 @@ string House::getBuildingType()
 {
 	return this->buildingType;
 }
+
+void House::addBuilding(){
+	if(resources){
+		resources->addBuilding(this);
+	}
+}
+
+bool House::getWater(){
+	if(resources){
+		resources->getWater(this);
+	}
+}
+
+bool House::cleanWaste(){
+	if(resources){
+		resources->cleanWaste(this);
+	}
+}
+
+bool House::cleanSewage(){
+	if(resources){
+		resources->cleanSewage(this);
+	}
+}
+
+bool House::getPower(){
+	if(resources){
+		resources->getPower(this);
+	}
+}
+
+
 
 
 

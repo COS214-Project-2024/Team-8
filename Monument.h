@@ -10,22 +10,8 @@ using namespace std;
  * @brief Represents a monument, inheriting from LandmarkBuilding.
  */
 class Monument : public LandmarkBuilding {
-
-    // Basic building details
-    string buildingName;          /**< Name of the monument. */
-    string buildingType;          /**< Type of the monument. */
-    Citizen* listOfCitizens;      /**< List of citizens associated with the monument. */
-
-    // Resource and cost requirements
-    double maintenanceCost;       /**< Maintenance cost for the monument. */
-    int powerReq;                 /**< Power requirement of the monument. */
-    int waterReq;                 /**< Water requirement of the monument. */
-    int sewageCost;               /**< Sewage cost for the monument. */
-    int waste;                    /**< Waste produced by the monument. */
-
-    // Mediator and state objects
-    Utility* resources;  /**< Mediator for managing resources. */
-    State* state;                 /**< Current state of the monument. */
+protected:
+    int waste;
 
 public:
     /**
@@ -97,6 +83,37 @@ public:
      * @brief sets the state of the building
      */
     void setState(State* newState);
+
+     /**
+	 * @brief Add a building to the Utility resource
+	 * 
+	 * @param building The building to add to the WaterSupply
+	 */
+	virtual void addBuilding();
+
+    /**
+     * @brief Receives power for the building.
+     * @return true if power was received successfully, false otherwise.
+     */
+    virtual bool getPower();
+
+    /**
+     * @brief Receives water for the building.
+     * @return true if water was received successfully, false otherwise.
+     */
+    virtual bool getWater();
+
+    /**
+     * @brief Cleans the waste of the building.
+     * @return true if waste cleaning was successful, false otherwise.
+     */
+    virtual bool cleanWaste();
+
+    /**
+     * @brief Cleans the sewage of the building.
+     * @return true if sewage cleaning was successful, false otherwise.
+     */
+    virtual bool cleanSewage();
 };
 
 #endif

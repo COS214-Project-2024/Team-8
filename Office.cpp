@@ -46,6 +46,10 @@ int Office::getSewageCost() {
 	return this->sewageCost;
 }
 
+int Office::getWaterReq() {
+	return this->waterReq;
+}
+
 int Office::getWasteCost() {
 	return this->waste;
 }
@@ -53,6 +57,11 @@ int Office::getWasteCost() {
 void Office::setState(State* newState)
 {
 	this->state = newState;
+}
+
+int Office::getJobsCreated()
+{
+	return this->employment;
 }
 
 string Office::getName()
@@ -65,26 +74,15 @@ string Office::getBuildingType()
 	return this->buildingType;
 }
 
-float Office::getSales()
-{
-	return this->sales;
-}
-
 float Office::getProfit()
 {
 	return this->profit;
 }
 
-int Office::getJobsCreated()
+float Office::getSales()
 {
-	return this->employment;
+	return this->sales;
 }
-
-int Office::getIncome()
-{
-	return this->income;
-}
-
 
 int Office::payCitizen()
 {
@@ -94,26 +92,45 @@ int Office::payCitizen()
 
 int Office::getCommercialIncome()
 {
-	return this->profit ;
+	return this->profit;
 }
 
 void Office::setBalance(double d)
 {
-	this->balance  = d;
+	this->balance  = d ;
 }
 
 double Office::getBalance()
 {
 	return this->balance;
 }
-// In Office.cpp
 
-int Office::getWaterReq() {
-    return this->waterReq; // Return the water requirement
+void Office::addBuilding(){
+	if(resources){
+		resources->addBuilding(this);
+	}
 }
 
-void Office::operation() {
-    // Implement the operation logic for the office
-    cout << "Office is operational." << endl;
-    // Additional logic can go here
+bool Office::getPower(){
+	if(resources){
+		resources->getPower(this);
+	}
+}
+
+bool Office::cleanSewage(){
+	if(resources){
+		resources->cleanSewage(this);
+	}
+}
+
+bool Office::cleanWaste(){
+	if(resources){
+		resources->cleanWaste(this);
+	}
+}
+
+bool Office::getWater(){
+	if(resources){
+		resources->getWater(this);
+	}
 }

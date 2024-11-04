@@ -6,7 +6,7 @@ TARGET = main
 
 # Object files for unified city management simulation
 OBJECTS = TebogosMain.o Citizen.o PopulationControl.o Utility.o WaterSupply.o \
-    WasteManagement.o SewageSystems.o ResourceMediator.o MedicalCenter.o State.o \
+    WasteManagement.o SewageSystems.o Utility.o MedicalCenter.o State.o \
     UnderConstruction.o Operational.o Damaged.o CitizenType.o EmployedCitizen.o \
     PropertyOwner.o BuildingController.o OfficeFactory.o Office.o HouseFactory.o \
     House.o ApartmentFactory.o Apartment.o ShopFactory.o Shop.o MallFactory.o Mall.o \

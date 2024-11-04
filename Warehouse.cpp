@@ -76,3 +76,33 @@ int Warehouse::payCitizen()
 	return 8000;
 }
 
+void Warehouse::addBuilding(){
+	if(resources){
+		resources->addBuilding(this);
+	}
+}
+
+bool Warehouse::getPower(){
+	if(resources){
+		resources->getPower(this);
+	}
+}
+
+bool Warehouse::cleanSewage(){
+	if(resources){
+		resources->cleanSewage(this);
+	}
+}
+
+bool Warehouse::cleanWaste(){
+	if(resources){
+		resources->cleanWaste(this);
+	}
+}
+
+bool Warehouse::getWater(){
+	if(resources){
+		resources->getWater(this);
+	}
+}
+

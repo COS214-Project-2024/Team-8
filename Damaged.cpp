@@ -23,7 +23,7 @@ void Damaged::handle() {
 void Damaged::changeState() {
 	if(this->building->resources != nullptr )
 	{
-        if(building->receivePower() && building->receivePower())
+        if(building->getPower() && building->getPower())
         {
             State* newState = new Operational();
             building->setState(newState);
