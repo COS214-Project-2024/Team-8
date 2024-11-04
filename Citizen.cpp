@@ -21,7 +21,7 @@ Citizen::Citizen(std::string name, float salary, int age, float satisfaction)
 
 std::unique_ptr<CitizenInterface> Citizen::clone() {
     popControl->increasePopulation();
-    return std::make_unique<Citizen>(*this);
+return std::unique_ptr<CitizenInterface>(new Citizen(*this));
 }
 
 Citizen::~Citizen() {
