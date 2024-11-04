@@ -34,7 +34,7 @@ private:
     /** @brief List of all residents/citizens */
     std::vector<CitizenInterface *> residentsList;
     /** @brief List of all commercial buildings */
-    std::vector<CommercialBuilding *> commercialBuildingsList;
+    std::vector<Buildings *> commercialBuildingsList;
     /** @brief Residential income tax rate */
     double incomeTaxRate;
     /** @brief Residential property tax rate */
@@ -201,7 +201,7 @@ public:
      * @param commercialBuilding Pointer to the CommercialBuilding object to be added
      * @return void
      */
-    void addCommercialBuilding(CommercialBuilding *commercialBuilding);
+    void addCommercialBuilding(Buildings *commercialBuilding);
 };
 
 #endif // __FinanceDepartment_h__
