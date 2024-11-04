@@ -325,8 +325,9 @@ int main()
         std::cout << "2. Citizens Management\n";
         std::cout << "3. Building Management\n";
         std::cout << "4. Transportation Management\n";
-        std::cout << "5. Run Full City Simulation\n";
-        std::cout << "6. Exit\n";
+        std::cout << "5. Taxation and Budget Allocation Management\n";
+        std::cout << "6. Run Full City Simulation\n";
+        std::cout << "7. Exit\n";
         std::cout << "Enter your choice: ";
 
         int choice;
@@ -348,9 +349,11 @@ int main()
             demonstrateTransportation();
             break;
         case 5:
+            testGovernment();
+        case 6:
             runFullSimulation();
             break;
-        case 6:
+        case 7:
             std::cout << "Exiting City Builder Simulation. Goodbye!\n";
             return 0;
         default:
