@@ -1,13 +1,6 @@
 #include "CitizenType.h"
 using namespace std;
 
-CitizenType::CitizenType(std::unique_ptr<CitizenInterface> citizen)
-    : baseCitizen(std::move(citizen)) {}
-
-std::unique_ptr<CitizenInterface> CitizenType::clone()
-{
-    return std::make_unique<CitizenType>(*this);
-}
 
 void CitizenType::update(float newTaxRate)
 {
