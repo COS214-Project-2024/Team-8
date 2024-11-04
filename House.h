@@ -113,6 +113,28 @@ public:
      * @brief sets the state of the building
      */
     void setState(State* newState);
+    bool receiveWater() {
+    // Implementation logic for receiving water
+    return true;
+}
+
+bool payMaintenance() {
+    // Implementation logic for paying maintenance
+    return true;
+}
+
+bool cleanWaste() {
+    // Implementation logic for cleaning waste
+    return true;
+}
+
+bool cleanSewage() {
+    // Implementation logic for cleaning sewage
+    return true;
+}
+ bool receivePower(){
+    return true;
+ }
 };
 
 #endif

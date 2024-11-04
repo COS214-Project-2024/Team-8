@@ -151,6 +151,11 @@ public:
      * @return the income as an integer
      */
     virtual void setBalance(double b);
+    bool receivePower() {
+    // Implementation logic for receiving power
+    return true; // or false based on logic
+}
+
 };
 
 #endif

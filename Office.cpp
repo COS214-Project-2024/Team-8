@@ -111,4 +111,3 @@ double Office::getBalance()
 int Office::getWaterReq() {
     return this->waterReq; // Return the water requirement
 }
-
