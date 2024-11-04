@@ -145,8 +145,8 @@ protected:
     int age;
     bool isEmployed;        /**< Employment status of the citizen. */
     bool ownsProperty;      /**< Property ownership status of the citizen. */
-    PopulationControl popControl; /**< Manages population metrics and demographics. */
     Government *government; /**< Pointer to the Government */
+    PopulationControl popControl; /**< Manages population metrics and demographics. */
     float currTaxRate;
     double balance ; 
 };

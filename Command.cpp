@@ -21,7 +21,8 @@ Utility* Command::getUtility() {
 /**
  * @brief Destroy the Command object
  * 
+ * Destrcuts the utility object
  */
 Command::~Command() {
-	std::cout << "Command destroyed" << std::endl;
+	delete this->utility;
 }

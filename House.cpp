@@ -64,6 +64,11 @@ void House::setState(State* newState)
 	this->state = newState;
 }
 
+int House::getJobsCreated()
+{
+    return 0;
+}
+
 string House::getName()
 {
 	return this->buildingName;
@@ -159,7 +164,5 @@ bool House::cleanWaste()
 	}
 }
 
-// Added missing function
-int House::getJobsCreated() {
-    return 1;  // Houses typically create fewer jobs than apartments
-}
+
+

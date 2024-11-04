@@ -1,43 +1,36 @@
-#include <string>
 #include <iostream>
-#include <exception>
-using namespace std;
-
 #include "UnderConstruction.h"
-#include "State.h"
-#include "Buildings.h"
 #include "Operational.h"
 #include "ResourceMediator.h"
 
 UnderConstruction::UnderConstruction()
 {
-	this->stateName = "Under Construction";
+    this->stateName = "Under Construction";
+    this->building = nullptr; // Initialize to nullptr or set it through another method
 }
 
 void UnderConstruction::handle() {
-	cout<<"This building is under construction!";
+    std::cout << "This building is under construction!" << std::endl;
 }
 
 void UnderConstruction::changeState() {
-	if(this->building->resources!= nullptr)
-	{
-		if(building->receivePower() && building->receivePower())
+    if (this->building && this->building->resources != nullptr) // Ensure building is initialized
+    {
+        if (building->receivePower() && building->receiveWater()) // Changed to receiveWater
         {
             State* newState = new Operational();
             building->setState(newState);
-            cout<<"The building is now Operational, resources have been replenished!";
-            //if the resources are available, the building will be repaired
-            //the state will become operations
+            std::cout << "The building is now Operational, resources have been replenished!" << std::endl;
         }
-	}
-	else
-	{
-		//if the resources are unavailable, the building will become remain opertional.
-		cout<<"No resources available. please replenish resources to make this building operational"<<endl;
-	}
+    }
+    else
+    {
+        // If the resources are unavailable, the building will remain under construction.
+        std::cout << "No resources available. Please replenish resources to make this building operational." << std::endl;
+    }
 }
 
-string UnderConstruction::getStateName()
+std::string UnderConstruction::getStateName()
 {
-	return this->stateName;
+    return this->stateName;
 }
