@@ -100,11 +100,6 @@ public:
     virtual int getWaterReq();
 
     /**
-     * @brief Performs the operation of the mall.
-     */
-    virtual void operation();
-
-    /**
      * @brief Pays the maintenance cost for the mall.
      * @return true if payment was successful, false otherwise.
      */
