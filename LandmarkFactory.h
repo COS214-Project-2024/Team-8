@@ -16,7 +16,7 @@
  * creating landmark building objects. Derived classes must implement
  * the createBuilding() method to produce specific types of landmark buildings.
  */
-class LandmarkFactory : BuildingFactory {
+class LandmarkFactory : public BuildingFactory {
 
 public:
 	Buildings* buildings; /**< Pointer to a Buildings object, representing the landmark building instance managed by the factory. */
