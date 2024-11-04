@@ -97,24 +97,6 @@ public:
     virtual int getWaterReq();
 
     /**
-     * @brief Pays the maintenance cost for the building.
-     * @return true if payment was successful, false otherwise.
-     */
-    virtual bool payMaintenance();
-
-    /**
-     * @brief Receives power for the building.
-     * @return true if power was received successfully, false otherwise.
-     */
-    virtual bool receivePower();
-
-    /**
-     * @brief Receives water for the building.
-     * @return true if water was received successfully, false otherwise.
-     */
-    virtual bool receiveWater();
-
-    /**
      * @brief Requests the state of the building.
      */
     virtual void requestState();
