@@ -350,6 +350,7 @@ int main()
             break;
         case 5:
             testGovernment();
+            break;
         case 6:
             runFullSimulation();
             break;
