@@ -10,6 +10,7 @@
 class UtilityFactory {
 public:
 	virtual Utility* createUtility(float output) = 0;
+	virtual ~UtilityFactory() {};
 };
 
 #endif

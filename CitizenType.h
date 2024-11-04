@@ -152,6 +152,13 @@ public:
     std::string getName() override;
 
     /**
+     * @brief Adds a known location to the citizen's list.
+     * 
+     * @param stop The stop to add to the list of known locations.
+     */
+    void addKnownLocations(Stops *stop) override;
+
+    /**
      * @brief Displays the details of the citizen in a formatted manner.
      */
     void displayDetails() override;

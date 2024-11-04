@@ -53,6 +53,12 @@ public:
     virtual void useTransport(Stops *stop, int capacity, bool bestRoute = false) = 0;
 
     /**
+     * @brief Adds known locations to the citizen's travel manager.
+     * @param stop The stop to be added to the travel manager.
+     */
+    virtual void addKnownLocations(Stops *stop) = 0;
+
+    /**
      * @brief Adjusts the satisfaction level of the citizen.
      * @param newSatisfaction The new satisfaction level.
      */

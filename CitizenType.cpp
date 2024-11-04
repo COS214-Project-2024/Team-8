@@ -4,9 +4,12 @@ using namespace std;
 
 void CitizenType::update(float newTaxRate)
 {
-   
         baseCitizen->update(newTaxRate);
-    
+}
+
+void CitizenType::addKnownLocations(Stops *stop)
+{
+        baseCitizen->addKnownLocations(stop);  
 }
 
 void CitizenType::makeRequest(Government *government, std::string requestDetails)

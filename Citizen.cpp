@@ -11,6 +11,7 @@ Citizen::Citizen(std::string name, float salary, int age, float satisfaction,
               << ", employment status: " << (isEmployed ? "Employed" : "Unemployed") 
               << ", property ownership status: " << (ownsProperty ? "Owner" : "Not an owner") 
               << "." << std::endl;
+    tm = new TravelManager();
 }
 
 
@@ -24,11 +25,18 @@ std::unique_ptr<CitizenInterface> Citizen::clone() {
 
 Citizen::~Citizen() {
     std::cout << "Citizen " << name << " has been destroyed." << std::endl;
+    delete tm;
+    tm = nullptr;
 }
 
 float Citizen::getTaxRate()
 {
     return this->currTaxRate ;
+}
+
+void Citizen::addKnownLocations(Stops *stop)
+{
+    tm->addStops(stop);
 }
 
 void Citizen::update(float newTaxRate) {
