@@ -51,18 +51,6 @@ public:
      * @param income Income generated.
      */
     Office(string bName,int pReq, int wReq, double mCost, int sCost, int waste, float sales, float profit, int emp, int income);
-    
-    /**
-     * @brief Cleans the sewage of the building.
-     * @return True if the sewage was cleaned successfully, otherwise false.
-     */
-    virtual bool cleanSewage();
-
-    /**
-     * @brief Cleans the waste of the building.
-     * @return True if the waste was cleaned successfully, otherwise false.
-     */
-    virtual bool cleanWaste();
 
     /**
      * @brief Gets the type of the building.
@@ -105,29 +93,6 @@ public:
      * @return Water requirement.
      */
     virtual int getWaterReq();
-
-    /**
-     * @brief Performs the operation associated with the building.
-     */
-    virtual void operation();
-
-    /**
-     * @brief Pays the maintenance cost of the building.
-     * @return True if payment was successful, otherwise false.
-     */
-    virtual bool payMaintenance();
-
-    /**
-     * @brief Receives power for the building.
-     * @return True if power was received successfully, otherwise false.
-     */
-    virtual bool receivePower();
-
-    /**
-     * @brief Receives water for the building.
-     * @return True if water was received successfully, otherwise false.
-     */
-    virtual bool receiveWater();
 
     /**
      * @brief Requests the current state of the building.
