@@ -58,7 +58,7 @@ void PowerPlant::setState(State* newState)
 
 int PowerPlant::getJobsCreated()
 {
-	return employment; //NOT SURE - ask Tebogo what this should return
+	return employment;
 }
 
 string PowerPlant::getName()
@@ -162,4 +162,15 @@ int PowerPlant::payCitizen()
 	return 8000;
 }
 
+// Added missing functions
+void PowerPlant::operation() {
+    cout << "PowerPlant " << buildingName << " is operating." << endl;
+}
 
+float PowerPlant::getSales() {
+    return this->sales;
+}
+
+float PowerPlant::getProfit() {
+    return this->profit;
+}

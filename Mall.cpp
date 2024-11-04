@@ -192,4 +192,7 @@ double Mall::getBalance()
 	return this->balance;
 }
 
-
+// Added missing function
+void Mall::operation() {
+    cout << "Mall " << buildingName << " is operating." << endl;
+}

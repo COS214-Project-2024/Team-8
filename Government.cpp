@@ -155,3 +155,10 @@ void Government::setSuccessor(Government* nextHandler) {
 Government* Government::getSuccessor() const {
     return successor;
 }
+
+float Government::requestAllocationOfEducationFunds() {
+    if (financeDepartment) {
+        return static_cast<float>(financeDepartment->delegateRequestForAllocationOfPublicServiceBuildingsFunds() * 0.4); // 40% of public service funds
+    }
+    return 0.0f;
+}

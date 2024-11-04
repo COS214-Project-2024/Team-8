@@ -6,7 +6,7 @@ City::City()
 {
     this->buildings = NULL ; 
     this->Population = NULL ;
-    this->resources.empty() ;
+    this->resources.clear() ;
     this->TotalIncome = 0 ;
     this->TotalPower = 0 ;
     this->TotalSewageManagment = 0 ;

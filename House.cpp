@@ -159,4 +159,7 @@ bool House::cleanWaste()
 	}
 }
 
-
+// Added missing function
+int House::getJobsCreated() {
+    return 1;  // Houses typically create fewer jobs than apartments
+}

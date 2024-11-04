@@ -191,4 +191,11 @@ double Office::getBalance()
 	return this->balance;
 }
 
+// Added missing functions
+void Office::operation() {
+    cout << "Office " << buildingName << " is operating." << endl;
+}
 
+int Office::getWaterReq() {
+    return this->waterReq;
+}

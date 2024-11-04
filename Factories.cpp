@@ -158,4 +158,19 @@ int Factories::payCitizen()
 	return 8000;
 }
 
+// Added missing functions
+int Factories::getWaterReq() {
+    return this->waterReq;
+}
 
+void Factories::operation() {
+    cout << "Factory " << buildingName << " is operating." << endl;
+}
+
+float Factories::getSales() {
+    return this->sales;
+}
+
+float Factories::getProfit() {
+    return this->profit;
+}

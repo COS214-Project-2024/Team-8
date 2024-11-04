@@ -155,7 +155,11 @@ bool Apartment::cleanWaste()
 	}
 }
 
+// Added missing functions
+string Apartment::getBuildingType() {
+    return this->buildingType;
+}
 
-
-
-
+int Apartment::getJobsCreated() {
+    return 5;  // Each apartment creates maintenance, management, and security jobs
+}
