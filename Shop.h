@@ -51,18 +51,6 @@ public:
     Shop(string bName, int pReq, int wReq, double mCost, int sCost, int waste, float sales, float profit, int emp);
 
     /**
-     * @brief Cleans the sewage of the shop.
-     * @return True if the cleaning was successful, false otherwise.
-     */
-    virtual bool cleanSewage();
-
-    /**
-     * @brief Cleans the waste of the shop.
-     * @return True if the cleaning was successful, false otherwise.
-     */
-    virtual bool cleanWaste();
-
-    /**
      * @brief Gets the type of building.
      * @return Type of the building as a string.
      */
@@ -103,24 +91,6 @@ public:
      * @return Water requirement as an integer.
      */
     virtual int getWaterReq();
-
-    /**
-     * @brief Pays for the maintenance of the shop.
-     * @return True if payment was successful, false otherwise.
-     */
-    virtual bool payMaintenance();
-
-    /**
-     * @brief Receives power for the shop.
-     * @return True if power was received successfully, false otherwise.
-     */
-    virtual bool receivePower();
-
-    /**
-     * @brief Receives water for the shop.
-     * @return True if water was received successfully, false otherwise.
-     */
-    virtual bool receiveWater();
 
     /**
      * @brief Requests the current state of the shop.
