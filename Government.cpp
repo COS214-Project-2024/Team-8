@@ -187,3 +187,4 @@ double Government::requestAllocationOfEducationFunds()  // Changed from float to
     notify();
     return allocatedFundsForEducation;
 }
+void Government:: handleRequest(std::string requestDetails) {}
