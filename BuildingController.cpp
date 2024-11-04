@@ -124,7 +124,7 @@ int BuildingController::getTotalPowerReq()
 
 int BuildingController::getTotalSewageReq()
 {
-        int Res = 0 ; 
+    int Res = 0 ; 
     for ( int i = 0 ; i < this->amountOfBuildings ; i++)
     {
         Res += this->ListOfBuildings[i]->getSewageCost() ; 
@@ -134,7 +134,7 @@ int BuildingController::getTotalSewageReq()
 
 int BuildingController::getTotalWasteReq()
 {
-       int Res = 0 ; 
+    int Res = 0 ; 
     for ( int i = 0 ; i < this->amountOfBuildings ; i++)
     {
         Res += this->ListOfBuildings[i]->getWaterReq() ; 
@@ -154,7 +154,7 @@ int BuildingController::getTotalWaterReq()
 
 int BuildingController::getMaintenanceCost()
 {
-        int Res = 0 ; 
+    int Res = 0 ; 
     for ( int i = 0 ; i < this->amountOfBuildings ; i++)
     {
         Res += this->ListOfBuildings[i]->getMaintenanceCost() ; 
