@@ -40,18 +40,6 @@ public:
     Park(string bName, int pReq, int wReq, double mCost, int sCost, int waste);
 
     /**
-     * @brief Cleans the sewage of the park.
-     * @return true if the sewage was cleaned successfully, false otherwise.
-     */
-    virtual bool cleanSewage();
-
-    /**
-     * @brief Cleans the waste of the park.
-     * @return true if the waste was cleaned successfully, false otherwise.
-     */
-    virtual bool cleanWaste();
-
-    /**
      * @brief Gets the type of the building.
      * @return The building type as a string.
      */
@@ -92,24 +80,6 @@ public:
      * @return The water requirements as an integer.
      */
     virtual int getWaterReq();
-
-    /**
-     * @brief Pays the maintenance fee for the park.
-     * @return true if the payment was successful, false otherwise.
-     */
-    virtual bool payMaintenance();
-
-    /**
-     * @brief Receives power for the park.
-     * @return true if power was received successfully, false otherwise.
-     */
-    virtual bool receivePower();
-
-    /**
-     * @brief Receives water for the park.
-     * @return true if water was received successfully, false otherwise.
-     */
-    virtual bool receiveWater();
 
     /**
      * @brief Requests the current state of the park.
