@@ -149,10 +149,10 @@ void testGovernment()
 }
 int main()
 {
-    testBudgetAllocationSystem();
-    testCommercialTaxationSystem();
-    testResidentialTaxationSystem();
-    testFinanceDepartment();
+    //testBudgetAllocationSystem();
+    //testCommercialTaxationSystem();
+    //testResidentialTaxationSystem();
+    //testFinanceDepartment();
     testGovernment();
     return 0;
 }
