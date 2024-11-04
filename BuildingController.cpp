@@ -67,6 +67,7 @@ void BuildingController::addBuilding(Buildings *add)
         this->ListOfBuildings = newListOfBuildings;
         this->amountOfBuildings++;
     }
+    
 }
 
 void BuildingController::removeBuilding(Buildings *rem)
@@ -174,5 +175,6 @@ int BuildingController::getCommercialIncome()
     }
     return Res;
 }
+
 
 #endif

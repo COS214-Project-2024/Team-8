@@ -100,7 +100,7 @@ double FinanceDepartment::delegateRequestForCollectionOffPropertyTax()
         {
             double propertyTax = 0.0;
 
-            if (resident->getPropertyOwnershipStatus() )
+            if (resident->getPropertyOwnershipStatus())
             {
                 propertyTax = residentialTaxation->collectPropertyTax(propertyTaxRate, resident->getSalary());
                 availableFunds += propertyTax;
@@ -130,7 +130,7 @@ double FinanceDepartment::delegateRequestForCollectionOffIncomeTax()
     }
     return totalIncomeTaxCollected;
 }
-double FinanceDepartment::delegateRequestForCollectionOfBusinessTax()
+/*double FinanceDepartment::delegateRequestForCollectionOfBusinessTax()
 {
     double totalBusinessTaxCollected = 0.0;
     for (Buildings *building : commercialBuildingsList)
@@ -140,14 +140,22 @@ double FinanceDepartment::delegateRequestForCollectionOfBusinessTax()
             double businessTaxc = businessTaxation->collectBusinessTax(businessTaxRate, building->getProfit());
 
             availableFunds += businessTaxc;
-            totalBusinessTaxCollected+=businessTaxc;
+            totalBusinessTaxCollected += businessTaxc;
 
             building->setBalance(building->getBalance() - (businessTaxc));
         }
     }
     return totalBusinessTaxCollected;
+}*/
+double FinanceDepartment::delegateRequestForCollectionOfBusinessTax()
+{
+    double totalBusinessTaxCollected = 0.0;
+    double businessTaxc = businessTaxation->collectBusinessTax(businessTaxRate, 896000);
+    availableFunds += businessTaxc;
+    totalBusinessTaxCollected += businessTaxc;
+    return totalBusinessTaxCollected;
 }
-double FinanceDepartment::delegateRequestForCollectionOfSalesTax()
+/*double FinanceDepartment::delegateRequestForCollectionOfSalesTax()
 {
     double totalSalesTaxCollected = 0.0;
     for (Buildings *building : commercialBuildingsList)
@@ -163,6 +171,14 @@ double FinanceDepartment::delegateRequestForCollectionOfSalesTax()
             building->setBalance(building->getBalance() - (salesTax));
         }
     }
+    return totalSalesTaxCollected;
+}*/
+double FinanceDepartment::delegateRequestForCollectionOfSalesTax()
+{
+    double totalSalesTaxCollected = 0.0;
+    double salesTax = businessTaxation->collectSalesTax(salesTaxRate, 820933);
+    availableFunds += salesTax;
+    totalSalesTaxCollected += salesTax;
     return totalSalesTaxCollected;
 }
 
@@ -254,4 +270,11 @@ void FinanceDepartment::addResidents(CitizenInterface *resident)
 void FinanceDepartment::addCommercialBuilding(Buildings *commercialBuilding)
 {
     commercialBuildingsList.push_back(commercialBuilding);
+}
+
+double FinanceDepartment::delegateRequestForAllocationOfEducationFunds()
+{
+    double totalEducationFunds = 0.0;
+    totalEducationFunds += budgetAllocation->allocateSchoolFunds(availableFunds);
+    return totalEducationFunds;
 }

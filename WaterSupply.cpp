@@ -1,10 +1,6 @@
 #include "WaterSupply.h"
 
-/**
- * @brief Create a WaterSupply object
- * 
- * @param curSupply The current supply of the WaterSupply
- */
+
 WaterSupply::WaterSupply(float curSupply) {
 	this->Output = curSupply;
 	this->maxGallons = 1000;
@@ -12,21 +8,12 @@ WaterSupply::WaterSupply(float curSupply) {
 	this->puritypercentage = 100;
 }
 
-/**
- * @brief returns the status of the WaterSupply
- * 
- * @return std::string The status of the WaterSupply
- */
+
 std::string WaterSupply::getStatus() {
 	return this->status;
 }
 
-/**
- * @brief Repairs the WaterSupply
- * 
- * Repairs the WaterSupply
- * Also sets the status to operational
- */
+
 void WaterSupply::repairUtility() {
 	std::cout << "Water Supply is being repaired..." << std::endl;
 	int interval = 200;
@@ -43,22 +30,14 @@ void WaterSupply::repairUtility() {
 	executeOperation();
 }
 
-/**
- * @brief Pauses the operation of the WaterSupply
- * 
- * Sets the status to paused
- */
+
 void WaterSupply::pauseOperation() {
 	std::cout << "Water Supply is being paused..." << std::endl;
 	this->status = "Paused";
 	this->commandHistory.push_back("Paused");
 }
 
-/**
- * @brief Executes the operation of the WaterSupply
- * 
- * Sets the status to operational
- */
+
 void WaterSupply::executeOperation() {
 	std::cout << "Water Supply is operational." << std::endl;
 	this->status = "Operational";
@@ -67,30 +46,15 @@ void WaterSupply::executeOperation() {
 	this->commandHistory.push_back("Operational");
 }
 
-/**
- * @brief Sets the max gallons of the WaterSupply
- * 
- * @param max The max gallons of the WaterSupply
- */
+
 void WaterSupply::setMaxGallons(float max) {
 	this->maxGallons = max;
 }
 
-/**
- * @brief Gets the output of the WaterSupply
- * 
- * @return float The output of the WaterSupply
- */
 float WaterSupply::getOutput() {
 	return this->Output;
 }
 
-/**
- * @brief Undoes the last change to the WaterSupply
- * 
- * Undoes the last change to the WaterSupply
- * Also sets the status to paused
- */
 void WaterSupply::undoChange() {
 	int size = commandHistory.size();
 	if(size == 1) {
@@ -117,22 +81,33 @@ void WaterSupply::undoChange() {
 	}
 }
 
-/**
- * @brief Clones the WaterSupply
- * 
- * @return Utility* The cloned WaterSupply
- */
+
 Utility* WaterSupply::clone() {
 	WaterSupply* clone = new WaterSupply(this->Output);
 	clone->setMaxGallons(this->maxGallons);
 	return clone;
 }
 
-/**
- * @brief Get the utility type of the WaterSupply
- * 
- * @return std::string The utility type of the WaterSupply
- */
 std::string WaterSupply::getUtilityType() {
 	return "Water Supply";
 }
+
+void WaterSupply::addBuilding(Buildings* building) {
+	this->buildings.push_back(building);
+}
+
+bool WaterSupply::getWater(Buildings* sender) {
+	int size = buildings.size();
+	for(int i = 0; i < size; i++) {
+		if(buildings[i] == sender) {
+			//sender->setWater(getOutput());
+			std::cout << this->Output << std::endl;
+			return true;
+		}
+	}
+
+	std::cout << "Building is not Registered" << std::endl;
+
+	return false;
+}
+

@@ -1,8 +1,30 @@
+/**
+ * @file cityBuilderMain.cpp
+ * @brief Main demonstration file for City Builder Simulation system
+ * @author Combined Design
+ * @date 2024-04-29
+ */
+
 #include <iostream>
 #include <memory>
 #include <vector>
 #include <limits>
-#include "Citizen.h"
+#include <thread>
+#include <chrono>
+#include <ctime>
+
+// Government includes
+#include "Government.h"
+#include "FinanceSector.h"
+#include "UtilitiesSector.h"
+#include "GeneralSector.h"
+#include "FinanceDepartment.h"
+#include "Command.h"
+#include "Policies.h"
+#include "EconomicPolicies.h"
+#include "PublicServicesPolicies.h"
+
+// Citizens and Buildings includes
 #include "CitizenType.h"
 #include "EmployedCitizen.h"
 #include "PropertyOwner.h"
@@ -13,7 +35,13 @@
 #include "HouseFactory.h"
 #include "House.h"
 #include "ResidentialFactory.h"
+#include "Apartment.h"
+#include "ApartmentFactory.h"
+#include "ShopFactory.h"
+#include "Shop.h"
+#include "BuildingController.h"
 
+// Transportation includes
 #include "TravelManager.h"
 #include "Road.h"
 #include "Plane.h"
@@ -23,392 +51,316 @@
 #include "AccesibleRoute.h"
 #include "TrainStation.h"
 #include "MapIterator.h"
-#include "UtilityFactory.h"
-#include "EnergyFactory.h"
-#include "CoalFactory.h"
-#include "WindFactory.h"
-#include "HydroFactory.h"
-#include "NuclearFactory.h"
-#include "UtilityPowerPlant.h"
-#include "Utility.h"
-#include "EnergySource.h"
-#include "UtilityFactory.h"
-#include "WaterFactory.h"
-#include "SewageSystems.h"
-#include "WaterSupply.h"
-#include "WaterFactory.h"
-#include "PowerPlantFactory.h"
-#include "WasteFactory.h"
-#include "SewageFactory.h"
-#include "UtilityManager.h"
-#include "Command.h"
-#include "StartCommand.h"
-#include "StopCommand.h"
-#include "UndoCommand.h"
 
 const std::string highlight = "\033[3;38;5;45m";
 const std::string reset = "\033[0m";
 
-void clearInput() {
+void clearInput()
+{
     std::cin.clear();
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 }
 
-void waitForEnter() {
+void waitForEnter()
+{
     std::cout << "\nPress Enter to continue...";
     clearInput();
     std::cin.get();
 }
 
-// Component 1: Basic Citizen Management
-void createAndManageCitizens() {
-    std::cout << "Executing: " << std::endl;
-    std::cout << highlight << "auto citizen = std::make_unique<Citizen>(\"John Doe\", 50000, 30, 75);\n" << reset;
+void simulationPause(const std::string &message = "")
+{
+    if (!message.empty())
+    {
+        std::cout << "\n"
+                  << highlight << message << reset << std::endl;
+    }
+    std::this_thread::sleep_for(std::chrono::seconds(2));
+}
+
+void demonstrateGovernment()
+{
+    std::cout << highlight << "Setting up Government Component...\n"
+              << reset;
+
+    // Create components in correct order
+    auto financeDepartment = new FinanceDepartment();
+
+    // Create and link sectors
+    auto generalSector = new GeneralSector(financeDepartment);
+    auto utilitiesSector = new UtilitiesSector(financeDepartment);
+    auto financeSector = new FinanceSector(financeDepartment);
+
+    // Set up chain of responsibility
+    generalSector->setSuccessor(financeSector);
+    financeSector->setSuccessor(utilitiesSector);
+
+    // Create policies using the base handler (generalSector)
+    auto econPolicies = new EconomicPolicies(generalSector);
+    auto psPolicies = new PublicServicesPolicies(generalSector);
+
+    try
+    {
+        std::cout << highlight << "Processing Government Requests...\n"
+                  << reset;
+        generalSector->handleRequest("FINANCE: Budget review needed");
+        generalSector->handleRequest("UTILITIES: Power maintenance required");
+        generalSector->handleRequest("General inquiry about services");
+
+        std::cout << highlight << "Implementing Government Policies...\n"
+                  << reset;
+        econPolicies->execute();
+        psPolicies->execute();
+    }
+    catch (const std::exception &e)
+    {
+        std::cout << "Error during government operations: " << e.what() << std::endl;
+    }
+
+    // Clean up in reverse order of creation
+    delete psPolicies;
+    delete econPolicies;
+    delete utilitiesSector;
+    delete financeSector;
+    delete generalSector;
+    delete financeDepartment;
+
+    waitForEnter();
+}
+
+void demonstrateCitizens()
+{
+    std::cout << highlight << "Creating and Managing Citizens...\n"
+              << reset;
     auto citizen = std::make_unique<Citizen>("John Doe", 50000, 30, 75);
-    
-    std::cout << highlight << "citizen->displayDetails();\n" << reset;
     citizen->displayDetails();
-    
-    std::cout << highlight << "citizen->adjustCitizenSatisfaction(10);\n" << reset;
     citizen->adjustCitizenSatisfaction(10);
-}
 
-void demonstrateCitizenStates() {
-    std::cout << "Executing: " << std::endl;
-    auto citizen = std::make_unique<Citizen>("Jane Smith", 60000, 35, 80);
-    
-    std::cout << highlight << "Initial state:\n" << reset;
-    citizen->displayDetails();
-    
-    std::cout << highlight << "Setting employment status to true:\n" << reset;
-    citizen->setEmploymentStatus(true);
-    
-    std::cout << highlight << "Setting property ownership to true:\n" << reset;
-    citizen->setPropertyOwnership(true);
-    
-    std::cout << highlight << "Final state:\n" << reset;
-    citizen->displayDetails();
-}
+    auto employedCitizen = std::make_unique<Citizen>("Jane Smith", 60000, 35, 80);
+    employedCitizen->setEmploymentStatus(true);
+    employedCitizen->setPropertyOwnership(true);
+    employedCitizen->displayDetails();
 
-// Component 2: Citizen Type Decorators
-void demonstrateEmployedCitizen() {
-    std::cout << "Executing: " << std::endl;
-    auto baseCitizen = std::make_unique<Citizen>("Bob Wilson", 45000, 28, 70);
-    std::cout << highlight << "Creating Employed Citizen decorator\n" << reset;
-    auto employedCitizen = std::make_unique<EmployedCitizen>(std::move(baseCitizen));
-    CommercialFactory *downtownOfficeFactory = new OfficeFactory();
-    Buildings *office = downtownOfficeFactory->createBuilding();
-    
-    std::cout << highlight << "employedCitizen->getEmployed(office);\n" << reset;
-    employedCitizen->getEmployed(office);
-    
-    std::cout << highlight << "employedCitizen->jobPromotion(10);\n" << reset;
-    employedCitizen->jobPromotion(10);
+    CommercialFactory *officeFactory = new OfficeFactory();
+    Buildings *office = officeFactory->createBuilding();
 
-    delete downtownOfficeFactory;
+    auto worker = std::make_unique<EmployedCitizen>(std::make_unique<Citizen>("Bob Wilson", 45000, 28, 70));
+    worker->getEmployed(office);
+    worker->jobPromotion(10);
+
     delete office;
+    delete officeFactory;
+    waitForEnter();
 }
 
-void demonstratePropertyOwner() {
-    std::cout << "Executing: " << std::endl;
-    auto baseCitizen = std::make_unique<Citizen>("Alice Brown", 70000, 40, 85);
-    std::cout << highlight << "Creating Property Owner decorator\n" << reset;
-    auto propertyOwner = std::make_unique<PropertyOwner>(std::move(baseCitizen));
-    
+void demonstrateBuildings()
+{
+    BuildingController controller;
+    std::cout << highlight << "Creating City Buildings...\n"
+              << reset;
+
     ResidentialFactory *houseFactory = new HouseFactory();
     Buildings *house = houseFactory->createBuilding();
-    
-    std::cout << highlight << "propertyOwner->moveIntoResidence(house);\n" << reset;
-    propertyOwner->moveIntoResidence(house);
-    
-    std::cout << highlight << "propertyOwner->upgradeResidence(15);\n" << reset;
-    propertyOwner->upgradeResidence(15);
-    
-    delete house;
+    controller.addBuilding(house);
+
+    ResidentialFactory *apartmentFactory = new ApartmentFactory();
+    Buildings *apartment = apartmentFactory->createBuilding();
+    controller.addBuilding(apartment);
+
+    CommercialFactory *officeFactory = new OfficeFactory();
+    Buildings *office = officeFactory->createBuilding();
+    controller.addBuilding(office);
+
+    CommercialFactory *shopFactory = new ShopFactory();
+    Buildings *shop = shopFactory->createBuilding();
+    controller.addBuilding(shop);
+
+    std::cout << "\n=== Building Statistics ===\n";
+    std::cout << "Total Buildings: " << controller.getAmountOfBuildings() << "\n";
+    std::cout << "Power Required: " << controller.getTotalPowerReq() << " kWh per month\n";
+    std::cout << "Water Required: " << controller.getTotalWaterReq() << " Liters per day\n";
+    std::cout << "Sewage Produced: " << controller.getTotalSewageReq() << " Liters per day\n";
+    std::cout << "Waste Generated: " << controller.getTotalWasteReq() << " kg per week\n";
+    std::cout << "Total Maintenance Cost: $" << controller.getMaintenanceCost() << " per month\n";
+    std::cout << "Total Commercial Income: $" << controller.getCommercialIncome() << " per month\n";
+
+    delete shopFactory;
+    delete officeFactory;
+    delete apartmentFactory;
+    delete houseFactory;
+    waitForEnter();
 }
 
-void CitizenTransport(){
-   std::cout << highlight<<"Citizen Travelling "<<reset << std::endl;
+void demonstrateTransportation()
+{
+    std::cout << highlight << "Setting up Transportation Network...\n"
+              << reset;
+    TravelManager *manager = new TravelManager();
 
-    auto citizen = std::make_unique<Citizen>("John Doe", 50000, 30, 75);
-    std::vector<std::unique_ptr<Stops>> stops;
+    Stops *highway = new Road("Highway-101", 10.0f);
+    Stops *airport = new Airpot("City International", 10.0f);
+    Stops *trainStation = new TrainStation("Central Station", 10.0f);
+    Stops *suburb = new Road("Suburban Route", 10.0f);
 
-    stops.push_back(std::make_unique<Road>("HighWay", 10.0f));
-    stops.push_back(std::make_unique<Airpot>("LAX", 10.0f));
-    stops.push_back(std::make_unique<TrainStation>("Union Station", 10.0f));
-    stops.push_back(std::make_unique<Road>("N2", 10.0f));
-    stops.push_back(std::make_unique<Airpot>("OR Tambo", 10.0f));
-    stops.push_back(std::make_unique<TrainStation>("Gauteng Station", 10.0f));
-    stops.push_back(std::make_unique<Road>("N1", 10.0f));
-    stops.push_back(std::make_unique<Road>("Route 66", 15.0f));
-    stops.push_back(std::make_unique<Airpot>("JFK", 20.0f));
-    stops.push_back(std::make_unique<TrainStation>("Grand Central", 12.0f));
-    stops.push_back(std::make_unique<Road>("M25", 25.0f));
-    stops.push_back(std::make_unique<Airpot>("Heathrow", 30.0f));
-    stops.push_back(std::make_unique<TrainStation>("King's Cross", 22.0f));
-    stops.push_back(std::make_unique<Road>("I-95", 18.0f));
-    stops.push_back(std::make_unique<Airpot>("Singapore Changi", 35.0f));
-    stops.push_back(std::make_unique<TrainStation>("Shinjuku Station", 28.0f));
-    stops.push_back(std::make_unique<Road>("A40", 40.0f));
+    manager->addStops(highway);
+    manager->addStops(airport);
+    manager->addStops(trainStation);
+    manager->addStops(suburb);
 
-    for (const auto& stop : stops) {
-        citizen->addKnownLocations(stop.get());
+    std::cout << highlight << "Testing Transportation Routes...\n"
+              << reset;
+    manager->Travel(140, trainStation);
+    manager->BestRoute(140, trainStation);
+
+    RouteNode *head = new BestRouteNode();
+    head->add(highway);
+    head->add(airport);
+    head->add(trainStation);
+
+    MapIterator *iter = new MapIterator(head);
+    while (iter->currentNode() != nullptr)
+    {
+        std::cout << "Transport Node: " << iter->operator*()->getName() << std::endl;
+        iter->operator++();
     }
 
-    int size = stops.size();
-    int random = rand() % size + 1;
-    int bestRoute = rand() % 2 + 1;
-    if(bestRoute == 1){
-        citizen->useTransport(stops[random].get(), 100, true);
-    }else{
-        citizen->useTransport(stops[random].get(), 100);
-    }
-}
-
-// Demo menu functions
-void demoBasicCitizen() {
-    while (true) {
-        std::cout << "\n\e[1mComponent 1: Basic Citizen Management\e[0m\n";
-        std::cout << "1. Create and manage citizens\n";
-        std::cout << "2. Demonstrate citizen states\n";
-        std::cout << "3. Run Citizen Transport\n";
-        std::cout << "4. Return to main menu\n";
-        std::cout << "Enter your choice: ";
-
-        int choice;
-        std::cin >> choice;
-        clearInput();
-
-        if (choice == 4) break;
-
-        switch (choice) {
-            case 1: createAndManageCitizens(); break;
-            case 2: demonstrateCitizenStates(); break;
-            case 3: CitizenTransport(); break;
-            default: std::cout << "Invalid choice. Please try again.\n";
-        }
-        waitForEnter();
-    }
-}
-
-void demoCitizenDecorators() {
-    while (true) {
-        std::cout << "\n\e[1mComponent 2: Citizen Type Decorators\e[0m\n";
-        std::cout << "1. Demonstrate Employed Citizen\n";
-        std::cout << "2. Demonstrate Property Owner\n";
-        std::cout << "3. Return to main menu\n";
-        std::cout << "Enter your choice: ";
-
-        int choice;
-        std::cin >> choice;
-        clearInput();
-
-        if (choice == 3) break;
-
-        switch (choice) {
-            case 1: demonstrateEmployedCitizen(); break;
-            case 2: demonstratePropertyOwner(); break;
-            default: std::cout << "Invalid choice. Please try again.\n";
-        }
-        waitForEnter();
-    }
-}
-
-void undoCommand(UtilityManager* manager) {
-    std::cout << "Undoing last command" << std::endl;
-    manager->undoCommand();
-}
-
-void PauseOperations(UtilityManager* manager) {
-    std::cout << "Pausing Utility operations" << std::endl;
-    while(true){
-        std::cout<< "1. Pause Water\n";
-        std::cout<< "2. Pause Electricity\n";
-        std::cout<< "3. Pause All\n";
-        std::cout<< "4. Return to utility menu\n";
-        std::cout<<" Enter your choice: ";
-
-        int choice;
-        std::cin >> choice;
-        clearInput();
-        switch (choice)
-        {   
-            case 1: manager->UnfilledDam(); break;
-            case 2: manager->LoadShedding(); break;
-            case 3: manager->UnfilledDam(); manager->LoadShedding(); break;
-            case 4: return;
-            default: std::cout << "Invalid choice. Please try again.\n";
-        }
-        waitForEnter();
-    }
-}
-
-void ExecuteOperations(UtilityManager* manager) {
-    while(true){
-        std::cout<< "1. Execute Sewage\n";
-        std::cout<< "2. Execute Water\n";
-        std::cout<< "3. Execute Electricity\n";
-        std::cout<< "4. Execute All\n";
-        std::cout<< "5. Return to utility menu\n";
-        std::cout<<" Enter your choice: ";
-
-        int choice;
-        std::cin >> choice;
-        clearInput();
-        switch (choice)
-        {   
-            case 1: manager->executeSewage(); break;
-            case 2: manager->executeWater(); break;
-            case 3: manager->executeElectricity(); break;
-            case 4: manager->executeSewage(); manager->executeWater(); manager->executeElectricity(); break;
-            case 5: return;
-            default: std::cout << "Invalid choice. Please try again.\n";
-        }
-        waitForEnter();
-    }
-
-}
-
-void repairUtilities(std::vector<Utility*> utilities) {
-    for (auto utility : utilities) {
-        utility->repairUtility();
-        std::cout << utility->getStatus() << std::endl;
-    }
-}
-
-void useUtilities() {
-    UtilityFactory *plantfactory = new PowerPlantFactory();
-    UtilityFactory *waterfactory = new WaterFactory();
-    UtilityFactory *wastefactory = new WasteFactory();
-    UtilityFactory *sewagefactory = new SewageFactory();
-
-    Utility* plant = plantfactory->createUtility(1200);
-    Utility* water = waterfactory->createUtility(1300);
-    Utility* waste = wastefactory->createUtility(300);
-    Utility* sewage = sewagefactory->createUtility(500);
-
-    std::vector<Utility*> utilities = {plant, water, waste, sewage};
-
-    UtilityManager *manager = new UtilityManager();
-    int size = utilities.size();
-    std::vector<Command*> commands;
-    for(int i = 0; i < size; i++){
-        Command* start = new StartCommand(utilities[i]);
-        commands.push_back(start);
-        manager->addCommand(start);
-    }
-
-    for(int i = 0; i < size; i++){
-        Command* stop = new StopCommand(utilities[i]);
-        commands.push_back(stop);
-        manager->addCommand(stop);
-    }
-
-    for(int i = 0; i < size; i++){
-        Command* undo = new UndoCommand(utilities[i]);
-        commands.push_back(undo);
-        manager->addCommand(undo);
-    }
-
-    bool ran = false;
-    while(true){
-        std::cout << "\n\e[1mUse Utilities\e[0m\n";
-        std::cout << "1. Execute Utility operations\n";
-        std::cout << "2. Repair Utilities\n";
-        if(ran){
-            std::cout << "3. Undo last operation\n";
-        }
-        std::cout << "4. Pause Utility operations\n";
-        std::cout << "5. Return to main menu\n";
-        std::cout << "Enter your choice: ";
-
-        int choice;
-        std::cin >> choice;
-        clearInput();
-
-        if(choice == 3 && !ran){
-            std::cout << "No operations have been executed yet. Please try again.\n";
-            continue;
-        }
-        
-        if (choice == 5) break;
-
-        switch(choice){
-            case 1: ExecuteOperations(manager); break;
-            case 2: repairUtilities(utilities); break;
-            case 3: undoCommand(manager); break;
-            case 4: PauseOperations(manager); break;
-            case 5: return;
-            default: std::cout << "Invalid choice. Please try again.\n";
-        }
-        ran = true;
-        waitForEnter();
-    }
-
-    delete plant;
-    delete water;
-    delete waste;
-    delete sewage;
-
-    delete plantfactory;
-    delete waterfactory;
-    delete wastefactory;
-    delete sewagefactory;
-
-    int commandSize = commands.size();
-    for(int i = 0; i < commandSize; i++){
-        delete commands[i];
-    }
-
+    delete iter;
+    delete head;
+    delete suburb;
+    delete trainStation;
+    delete airport;
+    delete highway;
     delete manager;
+    waitForEnter();
 }
 
-void runFullDemo() {
-    std::cout << "\n=== Running Full Citizen System Demo ===\n";
-    
-    std::cout << "\n\e[1m--- Component 1: Basic Citizen Management ---\e[0m\n";
-    createAndManageCitizens();
-    waitForEnter();
-    demonstrateCitizenStates();
-    waitForEnter();
-    CitizenTransport();
-    waitForEnter();
-    
-    std::cout << "\n\e[1m--- Component 2: Citizen Type Decorators ---\e[0m\n";
-    demonstrateEmployedCitizen();
-    waitForEnter();
-    demonstratePropertyOwner();
-    waitForEnter();
+void runFullSimulation()
+{
+    std::cout << "\n=== Running Full City Simulation ===\n";
+    simulationPause("Starting Government Component...");
+    demonstrateGovernment();
 
-    std::cout << "\n=== Full Demo Completed ===\n";
+    simulationPause("Starting Citizens Component...");
+    demonstrateCitizens();
+
+    simulationPause("Starting Buildings Component...");
+    demonstrateBuildings();
+
+    simulationPause("Starting Transportation Component...");
+    demonstrateTransportation();
+
+    std::cout << "\n=== Full City Simulation Complete ===\n";
+    waitForEnter();
 }
+void testGovernment()
+{
+    FinanceDepartment *financeDept = new FinanceDepartment();
+    std::cout << "It is the 25th day of the month 😊 Finance Department is about to do its monthly duties..." << std::endl;
+    std::cout << "Finance Department setting Income ,Property , Business and Sales tax rates  "<< std::endl;
+    financeDept->setResidentialIncomeTaxRate(0.10);
+    financeDept->setResidentialPropertyTaxRate(0.012);
+    financeDept->setCommercialBusinessTaxRate(0.25);
+    financeDept->setCommercialSalesTaxRate(0.08);
+    financeDept->setAvailableFunds(40000000.00);
+    Government *government = new Government(financeDept);
+    for (int i = 0; i < 10; ++i)
+    {
+        CitizenInterface *citizen = new Citizen();
+        government->attach(citizen);
+    }
+    // Set the government budget
+    government->setBudget(40000000.00);
 
-int main() {
-    while (true) {
-        std::cout << "\n\e[1mCitizen System Demo\e[0m\n";
-        std::cout << "1. Basic Citizen Management\n";
-        std::cout << "2. Citizen Type Decorators\n";
-        std::cout << "3. Use Utilities\n";
-        std::cout << "4. Full Demo\n";
-        std::cout << "5. Exit\n";
+    // Simulate tax collection and fund allocation
+    double propertyTaxCollected = government->requestCollectionOfPropertyTax();
+    double incomeTaxCollected = government->requestCollectionOfIncomeTax();
+    double businessTaxCollected = government->requestCollectionOfBusinessTax();
+    double salesTaxCollected = government->requestCollectionOfSalesTax();
+
+    std::cout << "😊 Government is now requesting Finance Department to collect Income ,Property , Business and Sales taxes  "<< std::endl;
+    std::cout << "🏡 Property Tax Collected: R" << propertyTaxCollected << std::endl;
+    std::cout << "💰 Income Tax Collected: R" << incomeTaxCollected << std::endl;
+    std::cout << "🏢 Business Tax Collected: R" << businessTaxCollected << std::endl;
+    std::cout << "🛍️ Sales Tax Collected: R" << salesTaxCollected << std::endl;
+
+
+    // Allocate funds and test all allocations
+    /*double utilitiesFunds = government->requestAllocationOfUtilitiesFunds();
+    std::cout << "Allocated Utilities Funds: R" << utilitiesFunds << std::endl;
+
+    double publicServiceBuildingsFunds = government->requestAllocationOfPublicServiceBuildingsFunds();
+    std::cout << "Allocated Public Service Buildings Funds: R" << publicServiceBuildingsFunds << std::endl;
+
+    double transportInfrastructureFunds = government->requestAllocationOfTransportFunds();
+    std::cout << "Allocated Transport Infrastructure Funds: R" << transportInfrastructureFunds << std::endl;
+
+    double educationFunds = government->requestAllocationOfEducationFunds();
+    std::cout << "Allocated Education Funds: R" << educationFunds << std::endl;
+
+    double recreationFunds = government->requestAllocationOfRecreationFunds();
+    std::cout << "Allocated Recreation Funds: R" << recreationFunds << std::endl;*/
+    std::cout << "😊 Government is now requesting Finance Department to allocate funds for Utilities, Public Service Buildings , Transport Infrastructure , Education Buildings and Recreation Buildings "<< std::endl;
+    std::cout << government->requestAllocationOfUtilitiesFunds()<< std::endl;
+    std::cout << government->requestAllocationOfPublicServiceBuildingsFunds() << std::endl;
+    std::cout << government->requestAllocationOfTransportFunds() << std::endl;
+    std::cout << government->requestAllocationOfEducationFunds() << std::endl;
+    std::cout << government->requestAllocationOfRecreationFunds()  << std::endl;
+
+}
+int main()
+{
+    srand(time(0));
+
+    std::cout << "\033[35m" << " _____ _ _         ____        _ _     _\n"
+                               "|     |_| |_ _ ___|    \\ ___ _|_| |___| |___ ___\n"
+                               "|   --| |  _| | | |  |  | . | | | | -_| |  _| -_|\n"
+                               "|_____|_|_| |_____|____/|___|_|_|_|___|_|_| |___|\n"
+                               "\033[0m"
+              << std::endl;
+
+    while (true)
+    {
+        std::cout << "\n\e[1mCity Builder Simulation\e[0m\n";
+        std::cout << "1. Government Management\n";
+        std::cout << "2. Citizens Management\n";
+        std::cout << "3. Building Management\n";
+        std::cout << "4. Transportation Management\n";
+        std::cout << "5. Taxation and Budget Allocation Management\n";
+        std::cout << "6. Run Full City Simulation\n";
+        std::cout << "7. Exit\n";
         std::cout << "Enter your choice: ";
 
         int choice;
         std::cin >> choice;
         clearInput();
 
-        switch (choice) {
-            case 1: demoBasicCitizen(); break;
-            case 2: demoCitizenDecorators(); break;
-            case 3: useUtilities(); break;
-            case 4: runFullDemo(); break; 
-            case 5:
-                std::cout << "Demo complete. Goodbye!\n";
-                return 0;
-            default:
-                std::cout << "Invalid choice. Please try again.\n";
+        switch (choice)
+        {
+        case 1:
+            demonstrateGovernment();
+            break;
+        case 2:
+            demonstrateCitizens();
+            break;
+        case 3:
+            demonstrateBuildings();
+            break;
+        case 4:
+            demonstrateTransportation();
+            break;
+        case 5:
+            testGovernment();
+            break;
+        case 6:
+            runFullSimulation();
+            break;
+        case 7:
+            std::cout << "Exiting City Builder Simulation. Goodbye!\n";
+            return 0;
+        default:
+            std::cout << "Invalid choice. Please try again.\n";
         }
     }
-
+    testGovernment();
     return 0;
 }

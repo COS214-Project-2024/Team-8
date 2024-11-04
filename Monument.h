@@ -24,7 +24,7 @@ class Monument : public LandmarkBuilding {
     int waste;                    /**< Waste produced by the monument. */
 
     // Mediator and state objects
-    ResourceMediator* resources;  /**< Mediator for managing resources. */
+    Utility* resources;  /**< Mediator for managing resources. */
     State* state;                 /**< Current state of the monument. */
 
 public:
@@ -38,18 +38,6 @@ public:
      * @param waste Waste produced.
      */
     Monument(string bName,int pReq, int wReq, double mCost, int sCost, int waste);
-
-    /**
-     * @brief Cleans the sewage of the monument.
-     * @return true if sewage cleaning was successful, false otherwise.
-     */
-    virtual bool cleanSewage();
-
-    /**
-     * @brief Cleans the waste of the monument.
-     * @return true if waste cleaning was successful, false otherwise.
-     */
-    virtual bool cleanWaste();
 
     /**
      * @brief Gets the type of the monument.
@@ -93,23 +81,6 @@ public:
      */
     virtual int getWaterReq();
 
-    /**
-     * @brief Pays the maintenance cost for the monument.
-     * @return true if payment was successful, false otherwise.
-     */
-    virtual bool payMaintenance();
-
-    /**
-     * @brief Receives power for the monument.
-     * @return true if power was received successfully, false otherwise.
-     */
-    virtual bool receivePower();
-
-    /**
-     * @brief Receives water for the monument.
-     * @return true if water was received successfully, false otherwise.
-     */
-    virtual bool receiveWater();
 
     /**
      * @brief Requests the current state of the monument.

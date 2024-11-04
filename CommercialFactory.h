@@ -31,6 +31,7 @@ public:
 	 * @return A pointer to a newly created commercial Buildings object.
 	 */
 	virtual Buildings* createBuilding() = 0;
+	virtual ~CommercialFactory(){}
 };
 
 #endif

@@ -21,21 +21,10 @@ protected:
     int waterReq;                 /**< Water requirement of the building. */
     int sewageCost;               /**< Sewage cost for the building. */
 
-    ResourceMediator* resources;  /**< Mediator for managing resources. */
+    Utility* resources;  /**< Mediator for managing resources. */
     State* state;                 /**< Current state of the building. */
 
 public:
-    /**
-     * @brief Cleans the sewage of the landmark building.
-     * @return true if sewage cleaning was successful, false otherwise.
-     */
-    virtual bool cleanSewage() = 0;
-
-    /**
-     * @brief Cleans the waste of the landmark building.
-     * @return true if waste cleaning was successful, false otherwise.
-     */
-    virtual bool cleanWaste() = 0;
 
     /**
      * @brief Gets the type of the landmark building.
@@ -78,24 +67,6 @@ public:
      * @return The water requirement as an integer.
      */
     virtual int getWaterReq() = 0;
-
-    /**
-     * @brief Pays the maintenance cost for the landmark building.
-     * @return true if payment was successful, false otherwise.
-     */
-    virtual bool payMaintenance() = 0;
-
-    /**
-     * @brief Receives power for the landmark building.
-     * @return true if power was received successfully, false otherwise.
-     */
-    virtual bool receivePower() = 0;
-
-    /**
-     * @brief Receives water for the landmark building.
-     * @return true if water was received successfully, false otherwise.
-     */
-    virtual bool receiveWater() = 0;
 
     /**
      * @brief Requests the current state of the landmark building.

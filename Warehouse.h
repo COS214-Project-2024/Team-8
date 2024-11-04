@@ -24,7 +24,7 @@ protected:
     int waterReq; ///< The water requirement for the warehouse.
     int sewageCost; ///< The sewage cost for the warehouse.
     int waste; ///< The waste produced by the warehouse.
-    ResourceMediator* resources; ///< Mediator for handling resource management.
+    Utility* resources; ///< Mediator for handling resource management.
 
     // Business metrics
     float sales; ///< Total sales made by the warehouse.
@@ -47,22 +47,6 @@ public:
      */
     Warehouse(string bName, int pReq, int wReq, double mCost, int sCost, int waste, int employment);
 
-    /**
-     * @brief Cleans the sewage of the warehouse.
-     * @return True if sewage is successfully cleaned, false otherwise.
-     */
-    virtual bool cleanSewage();
-
-    /**
-     * @brief Cleans the waste of the warehouse.
-     * @return True if waste is successfully cleaned, false otherwise.
-     */
-    virtual bool cleanWaste();
-
-    /**
-     * @brief Gets the type of the building.
-     * @return The building type as a string.
-     */
     virtual string getBuildingType();
 
     /**
@@ -101,28 +85,6 @@ public:
      */
     virtual int getWaterReq();
 
-    /**
-     * @brief Performs an operation related to the warehouse.
-     */
-    virtual void operation();
-
-    /**
-     * @brief Pays the maintenance cost of the warehouse.
-     * @return True if payment is successful, false otherwise.
-     */
-    virtual bool payMaintenance();
-
-    /**
-     * @brief Receives power for the warehouse.
-     * @return True if power is successfully received, false otherwise.
-     */
-    virtual bool receivePower();
-
-    /**
-     * @brief Receives water for the warehouse.
-     * @return True if water is successfully received, false otherwise.
-     */
-    virtual bool receiveWater();
 
     /**
      * @brief Requests the current state of the warehouse.

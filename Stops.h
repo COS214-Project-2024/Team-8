@@ -15,6 +15,7 @@ protected:
 
 public:
 	virtual float getCost();
+	virtual ~Stops(){}
 
 	virtual char getSymbol() = 0;
 

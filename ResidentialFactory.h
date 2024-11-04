@@ -25,6 +25,7 @@ public:
 	 * @return A pointer to a newly created residential Buildings object.
 	 */
 	virtual Buildings* createBuilding() = 0;
+	virtual ~ResidentialFactory(){}
 };
 
 #endif

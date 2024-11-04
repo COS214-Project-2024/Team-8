@@ -27,7 +27,7 @@ protected:
     int waste; ///< The amount of waste produced
 
     // Mediator and state
-    ResourceMediator* resources; ///< Pointer to the resource mediator
+    Utility* resources; ///< Pointer to the resource mediator
     State* state; ///< Pointer to the current state of the townhouse
 
 public:
@@ -42,18 +42,6 @@ public:
      * @param capacity Maximum capacity of the townhouse
      */
     TownHouse(string bName, int pReq, int wReq, double mCost, int sCost, int waste, int capacity);
-    
-    /**
-     * @brief Cleans the sewage of the townhouse.
-     * @return True if successful, otherwise false.
-     */
-    virtual bool cleanSewage();
-    
-    /**
-     * @brief Cleans the waste of the townhouse.
-     * @return True if successful, otherwise false.
-     */
-    virtual bool cleanWaste();
     
     /**
      * @brief Gets the type of building.
@@ -96,24 +84,6 @@ public:
      * @return The water requirement.
      */
     virtual int getWaterReq();
-    
-    /**
-     * @brief Pays for maintenance of the townhouse.
-     * @return True if the payment was successful, otherwise false.
-     */
-    virtual bool payMaintenance();
-    
-    /**
-     * @brief Receives power for the townhouse.
-     * @return True if power is successfully received, otherwise false.
-     */
-    virtual bool receivePower();
-    
-    /**
-     * @brief Receives water for the townhouse.
-     * @return True if water is successfully received, otherwise false.
-     */
-    virtual bool receiveWater();
     
     /**
      * @brief Requests the current state of the townhouse.

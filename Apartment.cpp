@@ -1,12 +1,12 @@
 #include <iostream>
 #include <memory>
 #include <exception>
+
 using namespace std;
 
 #include "Apartment.h"
 #include "State.h"
 #include "UnderConstruction.h"
-#include "ResourceMediator.h"
 #include "Citizen.h"
 
 Apartment::Apartment(string bName,int pReq, int wReq, double mCost, int sCost, int waste, int capacity)
@@ -70,89 +70,13 @@ string Apartment::getName()
 	return this->buildingName;
 }
 
-bool Apartment::payMaintenance()
-{
-	if(this->maintenanceCost > 200)
-	{
-		this->resources->useRevenue(100, this);
-		this->maintenanceCost = this->maintenanceCost - 100;
-		cout<<"successfully paid maintenance."<<endl;
-		return true;
-	}
-	else
-	{
-		cout<<"insufficient funds to pay maintenance"<<endl;
-		this->state->changeState();
-		return false;
-	}
+// Added missing functions
+string Apartment::getBuildingType() {
+    return this->buildingType;
 }
 
-bool Apartment::receivePower()
-{
-		if(this->maintenanceCost > 200)
-	{
-		this->resources->useRevenue(100, this);
-		this->maintenanceCost = this->maintenanceCost - 100;
-		cout<<"successfully paid maintenance."<<endl;
-		return true;
-	}
-	else
-	{
-		cout<<"insufficient funds to pay maintenance"<<endl;
-		this->state->changeState();
-		return false;
-	}
-}
-
-bool Apartment::receiveWater()
-{
-		if(this->waterReq > 200)
-	{
-		this->resources->useWater(100, this);
-		this->maintenanceCost = this->maintenanceCost - 100;
-		cout<<"successfully recieved water."<<endl;
-		return true;
-	}
-	else
-	{
-		cout<<"insufficient funds to recieve water."<<endl;
-		this->state->changeState();
-		return false;
-	}
-}
-
-bool Apartment::cleanSewage()
-{
-		if(this->maintenanceCost > 200)
-	{
-		this->resources->cleanSewage(100, this);
-		this->maintenanceCost = this->maintenanceCost - 100;
-		cout<<"successfully cleaned sewage."<<endl;
-		return true;
-	}
-	else
-	{
-		cout<<"insufficient funds to clean sewage."<<endl;
-		this->state->changeState();
-		return false;
-	}
-}
-    
-bool Apartment::cleanWaste()
-{
-		if(this->maintenanceCost > 200)
-	{
-		this->resources->cleanWaste(100, this);
-		this->maintenanceCost = this->maintenanceCost - 100;
-		cout<<"successfully cleaned waste."<<endl;
-		return true;
-	}
-	else
-	{
-		cout<<"insufficient funds to clean waste"<<endl;
-		this->state->changeState();
-		return false;
-	}
+int Apartment::getJobsCreated() {
+    return 5;  // Each apartment creates maintenance, management, and security jobs
 }
 // Added missing functions
 string Apartment::getBuildingType() {
