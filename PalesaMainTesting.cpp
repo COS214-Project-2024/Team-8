@@ -5,15 +5,8 @@
 #include "CommercialFactory.h"
 #include "BuildingFactory.h"
 #include "Buildings.h"
-#include "ShopFactory.h"
-#include "MallFactory.h"
-#include "OfficeFactory.h"
-#include "CommercialFactory.h"
 #include "FinanceDepartment.h"
 #include <vector>
-#include "Shop.h"
-#include "Mall.h"
-#include "Office.h"
 #include "Citizen.h"
 #include "CitizenInterface.h"
 
