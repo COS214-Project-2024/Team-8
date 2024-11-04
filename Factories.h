@@ -43,17 +43,6 @@ public:
      */
     Factories(string bName, int pReq, int wReq, double mCost, int sCost, int waste, int employment);
 
-    /**
-     * @brief Cleans the sewage of the factory.
-     * @return true if sewage cleaning was successful, false otherwise.
-     */
-    virtual bool cleanSewage();
-
-    /**
-     * @brief Cleans the waste of the factory.
-     * @return true if waste cleaning was successful, false otherwise.
-     */
-    virtual bool cleanWaste();
 
     /**
      * @brief Gets the type of the factory.
@@ -96,29 +85,6 @@ public:
      * @return The water requirement as an integer.
      */
     virtual int getWaterReq();
-
-    /**
-     * @brief Performs the main operation of the factory.
-     */
-    virtual void operation();
-
-    /**
-     * @brief Pays the maintenance cost for the factory.
-     * @return true if payment was successful, false otherwise.
-     */
-    virtual bool payMaintenance();
-
-    /**
-     * @brief Receives power for the factory.
-     * @return true if power was received successfully, false otherwise.
-     */
-    virtual bool receivePower();
-
-    /**
-     * @brief Receives water for the factory.
-     * @return true if water was received successfully, false otherwise.
-     */
-    virtual bool receiveWater();
 
     /**
      * @brief Requests the current state of the factory.
