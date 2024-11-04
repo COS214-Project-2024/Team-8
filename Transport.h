@@ -36,7 +36,10 @@ public:
 	virtual float getWeight() = 0;
 
 	virtual int getPassengers() = 0;
-
+/**
+ * @brief Destructor for the Transport object
+ * Virtual destructor of the Transport object
+ */
 	virtual ~Transport();
 
 };
