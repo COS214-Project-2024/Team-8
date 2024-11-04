@@ -44,7 +44,7 @@ public:
      * @brief Clones the citizen object.
      * @return A unique pointer to a new CitizenInterface object that is a clone of this object.
      */
-    //std::unique_ptr<CitizenInterface> clone() override;
+    std::unique_ptr<CitizenInterface> clone() override;
 
     /**
      * @brief Updates the citizen with information from a governing authority.

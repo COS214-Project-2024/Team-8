@@ -17,10 +17,10 @@ Citizen::Citizen(std::string name, float salary, int age, float satisfaction,
 Citizen::Citizen(std::string name, float salary, int age, float satisfaction)
     : Citizen(name, salary, age, satisfaction, nullptr) {}
 
-/*std::unique_ptr<CitizenInterface> Citizen::clone() {
+std::unique_ptr<CitizenInterface> Citizen::clone() {
     popControl->increasePopulation();
     return std::make_unique<Citizen>(*this);
-}*/
+}
 
 Citizen::~Citizen() {
     std::cout << "Citizen " << name << " has been destroyed." << std::endl;
