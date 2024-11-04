@@ -1,5 +1,5 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
-#include "doctest.h" //saved in the doctest folder
+#include <doctest/doctest.h> //saved in the doctest folder
 
 #include <iostream>
 #include <sstream>
