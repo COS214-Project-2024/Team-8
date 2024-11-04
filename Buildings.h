@@ -4,7 +4,6 @@ using namespace std;
 #ifndef BUILDINGS_H
 #define BUILDINGS_H
 
-
 class State;
 class ResourceMediator;
 class Citizen;
@@ -13,22 +12,28 @@ class Citizen;
  * @class Buildings
  * @brief Abstract base class representing a building with basic utilities and resource requirements.
  */
-class Buildings {
+class Buildings
+{
+protected:
+    double profit;
+    double sales;
+    double balance;
+
 public:
-    State* state; /**< Pointer to the state of the building. */
+    State *state; /**< Pointer to the state of the building. */
 
 protected:
-     /**< Pointer to the resource mediator for managing resources. */
-    int powerReq;                /**< Power requirement of the building. */
-    int waterReq;                /**< Water requirement of the building. */
-    int sewageCost;              /**< Sewage cost associated with the building. */
-    double maintenanceCost;      /**< Maintenance cost of the building. */
-    string buildingName;         /**< Name of the building. */
-    string buildingType;         /**< Type of the building. */
-    Citizen* listOfCitizens;     /**< List of citizens associated with the building. */
+    /**< Pointer to the resource mediator for managing resources. */
+    int powerReq;            /**< Power requirement of the building. */
+    int waterReq;            /**< Water requirement of the building. */
+    int sewageCost;          /**< Sewage cost associated with the building. */
+    double maintenanceCost;  /**< Maintenance cost of the building. */
+    string buildingName;     /**< Name of the building. */
+    string buildingType;     /**< Type of the building. */
+    Citizen *listOfCitizens; /**< List of citizens associated with the building. */
 
 public:
-    ResourceMediator* resources;
+    ResourceMediator *resources;
     /**
      * @brief Requests the current state of the building.
      * @note Pure virtual function to be implemented by derived classes.
@@ -110,25 +115,33 @@ public:
     /**
      * @brief Sets the state of the building.
      */
-    virtual void setState(State* newState) = 0;
+    virtual void setState(State *newState) = 0;
 
     /**
      * @brief Returns the list of residents in a building
      * @return list of residents in the building
      */
-    Citizen* getlistOfResidence()
+    Citizen *getlistOfResidence()
     {
         return this->listOfCitizens;
     }
- 
+
     /**
      * @brief sets the resource mediator of the class
      */
-    void setResources(ResourceMediator* resources)
+    void setResources(ResourceMediator *resources)
     {
         this->resources = resources;
     }
+    // Setters
+    void setProfit(double newProfit) { profit = newProfit; }
+    void setSales(double newSales) { sales = newSales; }
+    void setBalance(double newBalance) { balance = newBalance; }
 
+    // Getters
+    double getProfit() const { return profit; }
+    double getSales() const { return sales; }
+    double getBalance() const { return balance; }
 };
 
 #endif

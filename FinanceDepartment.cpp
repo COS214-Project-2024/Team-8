@@ -34,7 +34,7 @@ FinanceDepartment::~FinanceDepartment()
         delete resident;
     }
 
-    for (CommercialBuilding *building : commercialBuildingsList)
+    for (Buildings *building : commercialBuildingsList)
     {
         delete building;
     }
@@ -133,7 +133,7 @@ double FinanceDepartment::delegateRequestForCollectionOffIncomeTax()
 double FinanceDepartment::delegateRequestForCollectionOfBusinessTax()
 {
     double totalBusinessTaxCollected = 0.0;
-    for (CommercialBuilding *building : commercialBuildingsList)
+    for (Buildings *building : commercialBuildingsList)
     {
         if (building)
         {
@@ -150,7 +150,7 @@ double FinanceDepartment::delegateRequestForCollectionOfBusinessTax()
 double FinanceDepartment::delegateRequestForCollectionOfSalesTax()
 {
     double totalSalesTaxCollected = 0.0;
-    for (CommercialBuilding *building : commercialBuildingsList)
+    for (Buildings *building : commercialBuildingsList)
     {
         if (building)
         {
@@ -220,7 +220,7 @@ double FinanceDepartment::calculateTotalResidentsIncome()
 double FinanceDepartment::calculateTotalBusinessProfit()
 {
     double totalProfit = 0.0;
-    for (CommercialBuilding *building : commercialBuildingsList)
+    for (Buildings *building : commercialBuildingsList)
     {
         if (building)
         {
@@ -233,7 +233,7 @@ double FinanceDepartment::calculateTotalBusinessProfit()
 double FinanceDepartment::calculateTotalBusinessSale()
 {
     double totalSale = 0.0;
-    for (CommercialBuilding *building : commercialBuildingsList)
+    for (Buildings *building : commercialBuildingsList)
     {
         if (building)
         {
@@ -251,7 +251,7 @@ void FinanceDepartment::addResidents(CitizenInterface *resident)
     }
 }
 
-void FinanceDepartment::addCommercialBuilding(CommercialBuilding *commercialBuilding)
+void FinanceDepartment::addCommercialBuilding(Buildings *commercialBuilding)
 {
     commercialBuildingsList.push_back(commercialBuilding);
 }
