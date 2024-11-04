@@ -47,18 +47,6 @@ public:
     MedicalCenter(string bName,int pReq, int wReq, double mCost, int sCost, int waste, int employment, float hCov);
 
     /**
-     * @brief Cleans the sewage of the medical center.
-     * @return true if sewage cleaning was successful, false otherwise.
-     */
-    virtual bool cleanSewage();
-
-    /**
-     * @brief Cleans the waste of the medical center.
-     * @return true if waste cleaning was successful, false otherwise.
-     */
-    virtual bool cleanWaste();
-
-    /**
      * @brief Gets the type of the medical center.
      * @return The type of the medical center as a string.
      */
@@ -105,24 +93,6 @@ public:
      * @return The waste cost as an integer.
      */
     virtual int getWasteCost();
-
-    /**
-     * @brief Pays the maintenance cost for the medical center.
-     * @return true if payment was successful, false otherwise.
-     */
-    virtual bool payMaintenance();
-
-    /**
-     * @brief Receives power for the medical center.
-     * @return true if power was received successfully, false otherwise.
-     */
-    virtual bool receivePower();
-
-    /**
-     * @brief Receives water for the medical center.
-     * @return true if water was received successfully, false otherwise.
-     */
-    virtual bool receiveWater();
 
     /**
      * @brief Requests the current state of the medical center.
