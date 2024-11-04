@@ -31,7 +31,7 @@ public:
      * @brief Clones the citizen object.
      * @return A unique pointer to a new CitizenInterface object that is a clone of this object.
      */
-    virtual std::unique_ptr<CitizenInterface> clone() = 0;
+    //virtual std::unique_ptr<CitizenInterface> clone() = 0;
 
     /**
      * @brief Updates the citizen with information from a governing authority.
