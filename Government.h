@@ -168,7 +168,7 @@ virtual double requestAllocationOfEducationFunds();  // Changed from float to do
      * @brief Handles citizen requests
      * @param requestDetails Details of the request
      */
-    virtual void handleRequest(std::string requestDetails) = 0;
+    virtual void handleRequest(std::string requestDetails) ;
 
 };
 
