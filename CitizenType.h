@@ -31,9 +31,9 @@ public:
      * @brief Clones the current CitizenType object.
      * @return A unique pointer to a new CitizenType object that is a clone of this instance.
      */
-    //std::unique_ptr<CitizenInterface> clone() override {
-        //return std::make_unique<CitizenType>(baseCitizen->clone());
-    //}
+    std::unique_ptr<CitizenInterface> clone() override {
+        return std::make_unique<CitizenType>(baseCitizen->clone());
+    }
 
     /**
      * @brief Updates the citizen's status based on a new tax rate.
