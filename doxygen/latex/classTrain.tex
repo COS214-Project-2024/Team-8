@@ -1,0 +1,212 @@
+\hypertarget{classTrain}{}\doxysection{Train Class Reference}
+\label{classTrain}\index{Train@{Train}}
+
+
+Inheritance diagram for Train\+:
+% FIG 0
+
+
+Collaboration diagram for Train\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTrain_aa2f13a913dae4ad4ed0b201efec5b19f}{Train}} (int capacity)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classTrain}{Train}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTrain_a7dc0c9ea34f2f994ccd712f66c644d41}{set\+Num\+Passenger}} (int pass)
+\begin{DoxyCompactList}\small\item\em Set the number of passengers on the train. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTrain_a625461d30a50a62221eeb4e738503833}{set\+Cargo\+Weight}} (float weight)
+\begin{DoxyCompactList}\small\item\em Set the weight of the cargo on the train. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classTrain_ab9a3744fcd4cd80353a2380e8f78b8bb}{travel}} (\mbox{\hyperlink{classStops}{Stops}} $\ast$stop, \mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$head, bool best=0)
+\begin{DoxyCompactList}\small\item\em Travels to the stop using the route accessible through the travel manager. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classTrain_a7e45373d2223fdaaf61cfbf95f285867}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get the type of the train. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTrain_a84d10b3cd05ef144ec3cf219517cb962}{set\+Capacity}} (int capacity)
+\begin{DoxyCompactList}\small\item\em Set the capacity of the train. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTrain_ac0e66f207335cdecba0b4c57115fdc62}{get\+Capacity}} ()
+\begin{DoxyCompactList}\small\item\em Get the capacity of the train. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classTrain_ab36bbf7cc2bc772348ef045c2b0c2bff}{get\+Weight}} ()
+\begin{DoxyCompactList}\small\item\em Set the weight of the cargo on the train. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTrain_a59bb0fc2d26443e601225eb880ce17c7}{get\+Passengers}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of passengers on the train. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTrain_aa2f13a913dae4ad4ed0b201efec5b19f}\label{classTrain_aa2f13a913dae4ad4ed0b201efec5b19f}} 
+\index{Train@{Train}!Train@{Train}}
+\index{Train@{Train}!Train@{Train}}
+\doxysubsubsection{\texorpdfstring{Train()}{Train()}}
+{\footnotesize\ttfamily Train\+::\+Train (\begin{DoxyParamCaption}\item[{int}]{capacity }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classTrain}{Train}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & \\
+\hline
+\end{DoxyParams}
+Sets the capacity of the train to the given capacity Sets the train to not be cargo by default Sets the number of passengers to 1 by default Sets the weight of the cargo to 0 by default because it is not cargo 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTrain_ac0e66f207335cdecba0b4c57115fdc62}\label{classTrain_ac0e66f207335cdecba0b4c57115fdc62}} 
+\index{Train@{Train}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!Train@{Train}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily int Train\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the capacity of the train. 
+
+\begin{DoxyReturn}{Returns}
+int the capacity of the train 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classTrain_a59bb0fc2d26443e601225eb880ce17c7}\label{classTrain_a59bb0fc2d26443e601225eb880ce17c7}} 
+\index{Train@{Train}!getPassengers@{getPassengers}}
+\index{getPassengers@{getPassengers}!Train@{Train}}
+\doxysubsubsection{\texorpdfstring{getPassengers()}{getPassengers()}}
+{\footnotesize\ttfamily int Train\+::get\+Passengers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the number of passengers on the train. 
+
+\begin{DoxyReturn}{Returns}
+int the number of passengers 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classTrain_a7e45373d2223fdaaf61cfbf95f285867}\label{classTrain_a7e45373d2223fdaaf61cfbf95f285867}} 
+\index{Train@{Train}!getType@{getType}}
+\index{getType@{getType}!Train@{Train}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily std\+::string Train\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the type of the train. 
+
+\begin{DoxyReturn}{Returns}
+string the type of the train 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classTrain_ab36bbf7cc2bc772348ef045c2b0c2bff}\label{classTrain_ab36bbf7cc2bc772348ef045c2b0c2bff}} 
+\index{Train@{Train}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!Train@{Train}}
+\doxysubsubsection{\texorpdfstring{getWeight()}{getWeight()}}
+{\footnotesize\ttfamily float Train\+::get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the weight of the cargo on the train. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weight} & is the weight of the cargo \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classTrain_a84d10b3cd05ef144ec3cf219517cb962}\label{classTrain_a84d10b3cd05ef144ec3cf219517cb962}} 
+\index{Train@{Train}!setCapacity@{setCapacity}}
+\index{setCapacity@{setCapacity}!Train@{Train}}
+\doxysubsubsection{\texorpdfstring{setCapacity()}{setCapacity()}}
+{\footnotesize\ttfamily void Train\+::set\+Capacity (\begin{DoxyParamCaption}\item[{int}]{capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the capacity of the train. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & is the capacity of the train \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classTrain_a625461d30a50a62221eeb4e738503833}\label{classTrain_a625461d30a50a62221eeb4e738503833}} 
+\index{Train@{Train}!setCargoWeight@{setCargoWeight}}
+\index{setCargoWeight@{setCargoWeight}!Train@{Train}}
+\doxysubsubsection{\texorpdfstring{setCargoWeight()}{setCargoWeight()}}
+{\footnotesize\ttfamily void Train\+::set\+Cargo\+Weight (\begin{DoxyParamCaption}\item[{float}]{weight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the weight of the cargo on the train. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weight} & is the weight of the cargo\\
+\hline
+\end{DoxyParams}
+Sets the weight of the cargo on the train Sets the train to be cargo Sets the number of passengers to 1 by default 
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classTrain_a7dc0c9ea34f2f994ccd712f66c644d41}\label{classTrain_a7dc0c9ea34f2f994ccd712f66c644d41}} 
+\index{Train@{Train}!setNumPassenger@{setNumPassenger}}
+\index{setNumPassenger@{setNumPassenger}!Train@{Train}}
+\doxysubsubsection{\texorpdfstring{setNumPassenger()}{setNumPassenger()}}
+{\footnotesize\ttfamily void Train\+::set\+Num\+Passenger (\begin{DoxyParamCaption}\item[{int}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the number of passengers on the train. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pass} & is the number of passengers\\
+\hline
+\end{DoxyParams}
+Sets the number of passengers on the train Sets the train to not be cargo Don\textquotesingle{}t confuse weight with the weight of the train, this is the weight of the cargo 
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classTrain_ab9a3744fcd4cd80353a2380e8f78b8bb}\label{classTrain_ab9a3744fcd4cd80353a2380e8f78b8bb}} 
+\index{Train@{Train}!travel@{travel}}
+\index{travel@{travel}!Train@{Train}}
+\doxysubsubsection{\texorpdfstring{travel()}{travel()}}
+{\footnotesize\ttfamily float Train\+::travel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStops}{Stops}} $\ast$}]{stop,  }\item[{\mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$}]{head,  }\item[{bool}]{best = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Travels to the stop using the route accessible through the travel manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stop} & is the stop to travel to \\
+\hline
+{\em head} & is the head of the route \\
+\hline
+{\em best} & is the flag to travel on \char`\"{}\+T\char`\"{} symbols(best route)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float the distance traveled 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{Train_8h}{Train.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{Train_8cpp}{Train.\+cpp}}\end{DoxyCompactItemize}

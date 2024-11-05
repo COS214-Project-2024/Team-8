@@ -8,7 +8,7 @@
 #include "Road.h"
 #include "Plane.h"
 #include "Train.h"
-#include "Airpot.h"
+#include "Airport.h"
 #include "BestRouteNode.h"
 #include "AccesibleRoute.h"
 #include "TrainStation.h"
@@ -26,7 +26,7 @@
  */
 TEST_CASE("Testing the MapIterator"){
     Stops* stop1 = new Road("HighWay", 10.0f);
-    Stops* stop2 = new Airpot("LAX", 10.0f);
+    Stops* stop2 = new Airport("LAX", 10.0f);
     Stops* stop3 = new TrainStation("Union Station", 10.0f);
     RouteNode* head = new BestRouteNode();
     head->add(stop1);
@@ -58,10 +58,10 @@ TEST_CASE("Testing the MapIterator"){
 TEST_CASE("Testing Best Route Travel"){
     TravelManager* manager = new TravelManager();
     Stops* stop1 = new Road("HighWay", 10.0f);
-    Stops* stop2 = new Airpot("LAX", 10.0f);
+    Stops* stop2 = new Airport("LAX", 10.0f);
     Stops* stop3 = new TrainStation("Union Station", 10.0f);
     Stops* stop4 = new Road("N2", 10.0f);
-    Stops* stop5 = new Airpot("OR Tambo", 10.0f);
+    Stops* stop5 = new Airport("OR Tambo", 10.0f);
     Stops* stop6 = new TrainStation("Gauteng Station", 10.0f);
     Stops* stop7 = new Road("N1", 10.0f);
 

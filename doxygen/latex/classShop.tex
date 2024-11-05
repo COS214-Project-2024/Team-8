@@ -1,0 +1,440 @@
+\hypertarget{classShop}{}\doxysection{Shop Class Reference}
+\label{classShop}\index{Shop@{Shop}}
+
+
+Class representing a shop, inheriting from \mbox{\hyperlink{classCommercialBuilding}{Commercial\+Building}}.  
+
+
+
+
+{\ttfamily \#include $<$Shop.\+h$>$}
+
+
+
+Inheritance diagram for Shop\+:
+% FIG 0
+
+
+Collaboration diagram for Shop\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classShop_a4bc9f71dbc234bb78798cbab94da97c7}{Shop}} (string b\+Name, int p\+Req, int w\+Req, double m\+Cost, int s\+Cost, int \mbox{\hyperlink{classCommercialBuilding_a3b4753ca12a2e066500379854623176e}{waste}}, float \mbox{\hyperlink{classCommercialBuilding_ad74a205cf4b2a7c13d257819143b0f24}{sales}}, float \mbox{\hyperlink{classCommercialBuilding_a9c872f01effc2ccb37a94444da2d7712}{profit}}, int emp)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classShop}{Shop}} object. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classShop_a084fd7aad71f4b8c72e7ce8d68acc689}{get\+Building\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Gets the type of building. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classShop_af94d5d055af855dfa8690076423282d1}{get\+Jobs\+Created}} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of jobs created by the shop. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classShop_aa90829bc6635f83e9c3746cac2177023}{get\+Maintenance\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the maintenance cost of the shop. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classShop_a43a344cea2213650d1f0f103f00690e8}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the shop. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classShop_a69daf8ea3fb5728c5ab9e7f86964f9dd}{get\+Power\+Req}} ()
+\begin{DoxyCompactList}\small\item\em Gets the power requirement of the shop. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classShop_a807d0fe43f8dbadc43d593dd5d1362fc}{get\+Sewage\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the sewage cost of the shop. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classShop_af6b2e80ee72d930ebb7965b01f9298de}{get\+Water\+Req}} ()
+\begin{DoxyCompactList}\small\item\em Gets the water requirement of the shop. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classShop_a60bf3c5eb5591d6fa221da7f2afbd986}\label{classShop_a60bf3c5eb5591d6fa221da7f2afbd986}} 
+virtual void \mbox{\hyperlink{classShop_a60bf3c5eb5591d6fa221da7f2afbd986}{request\+State}} ()
+\begin{DoxyCompactList}\small\item\em Requests the current state of the shop. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classShop_a66737f453c2158eeea77021235120673}\label{classShop_a66737f453c2158eeea77021235120673}} 
+void \mbox{\hyperlink{classShop_a66737f453c2158eeea77021235120673}{set\+State}} (\mbox{\hyperlink{classState}{State}} $\ast$new\+State)
+\begin{DoxyCompactList}\small\item\em sets the state of the building \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classShop_acb12379ff875f5d34734f1ea913e52e4}{get\+Waste\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the waste cost associated with the shop. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classShop_a38f043da1988090615fa81d18abaa159}{get\+Sales}} ()
+\begin{DoxyCompactList}\small\item\em Gets the total sales made by the shop. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classShop_a19e8b7ad4a220fc7f7d792eb31f22d3d}{get\+Profit}} ()
+\begin{DoxyCompactList}\small\item\em Gets the total profit made by the shop. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classShop_a78b0065549ab2c6bdd24f64aababc7ae}{pay\+Citizen}} ()
+\begin{DoxyCompactList}\small\item\em Pays a citizen associated with the shop. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classShop_a5468648015a4ecfbfa5b728088d31f06}{get\+Commercial\+Income}} ()
+\begin{DoxyCompactList}\small\item\em gets the current income of a commercial building \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classShop_aa17740ce746a83876ade483a83d8e143}{get\+Balance}} ()
+\begin{DoxyCompactList}\small\item\em gets the current income of a commercial building \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classShop_ad47e74adfbb01b41ea8017cff3528ef6}{set\+Balance}} (double b)
+\begin{DoxyCompactList}\small\item\em gets the current income of a commercial building \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classShop_a84c3ef714bbea1526ffc7d10816065fc}{get\+Power}} ()
+\begin{DoxyCompactList}\small\item\em Receives power for the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classShop_aef532e592b365c055d4cfcacf271b348}{get\+Water}} ()
+\begin{DoxyCompactList}\small\item\em Receives water for the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classShop_a4788fd8231258f31b0862b75d90865d5}{clean\+Waste}} ()
+\begin{DoxyCompactList}\small\item\em Cleans the waste of the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classShop_aef7c267ce54cd6760eba39cc705316ab}{clean\+Sewage}} ()
+\begin{DoxyCompactList}\small\item\em Cleans the sewage of the building. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classShop_a4ab804b362879f0d8d3bdba6031ae555}{add\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Add a building to the \mbox{\hyperlink{classUtility}{Utility}} resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class representing a shop, inheriting from \mbox{\hyperlink{classCommercialBuilding}{Commercial\+Building}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classShop_a4bc9f71dbc234bb78798cbab94da97c7}\label{classShop_a4bc9f71dbc234bb78798cbab94da97c7}} 
+\index{Shop@{Shop}!Shop@{Shop}}
+\index{Shop@{Shop}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{Shop()}{Shop()}}
+{\footnotesize\ttfamily Shop\+::\+Shop (\begin{DoxyParamCaption}\item[{string}]{b\+Name,  }\item[{int}]{p\+Req,  }\item[{int}]{w\+Req,  }\item[{double}]{m\+Cost,  }\item[{int}]{s\+Cost,  }\item[{int}]{waste,  }\item[{float}]{sales,  }\item[{float}]{profit,  }\item[{int}]{emp }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classShop}{Shop}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+Name} & Name of the shop. \\
+\hline
+{\em p\+Req} & Power requirement. \\
+\hline
+{\em w\+Req} & Water requirement. \\
+\hline
+{\em m\+Cost} & Maintenance cost. \\
+\hline
+{\em s\+Cost} & Sewage cost. \\
+\hline
+{\em waste} & Waste produced. \\
+\hline
+{\em sales} & Total sales made by the shop. \\
+\hline
+{\em profit} & Total profit made by the shop. \\
+\hline
+{\em emp} & Employment opportunities created by the shop. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classShop_a4ab804b362879f0d8d3bdba6031ae555}\label{classShop_a4ab804b362879f0d8d3bdba6031ae555}} 
+\index{Shop@{Shop}!addBuilding@{addBuilding}}
+\index{addBuilding@{addBuilding}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{addBuilding()}{addBuilding()}}
+{\footnotesize\ttfamily void Shop\+::add\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Add a building to the \mbox{\hyperlink{classUtility}{Utility}} resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & The building to add to the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classCommercialBuilding_a079544eb7848e26b567efcb1d73fd303}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classShop_aef7c267ce54cd6760eba39cc705316ab}\label{classShop_aef7c267ce54cd6760eba39cc705316ab}} 
+\index{Shop@{Shop}!cleanSewage@{cleanSewage}}
+\index{cleanSewage@{cleanSewage}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{cleanSewage()}{cleanSewage()}}
+{\footnotesize\ttfamily bool Shop\+::clean\+Sewage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cleans the sewage of the building. 
+
+\begin{DoxyReturn}{Returns}
+true if sewage cleaning was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCommercialBuilding_aa6e46234e1cfa37f5bb3ba8b304b5ef7}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classShop_a4788fd8231258f31b0862b75d90865d5}\label{classShop_a4788fd8231258f31b0862b75d90865d5}} 
+\index{Shop@{Shop}!cleanWaste@{cleanWaste}}
+\index{cleanWaste@{cleanWaste}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{cleanWaste()}{cleanWaste()}}
+{\footnotesize\ttfamily bool Shop\+::clean\+Waste (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cleans the waste of the building. 
+
+\begin{DoxyReturn}{Returns}
+true if waste cleaning was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCommercialBuilding_a59e9259b25798a7d754feffb13567370}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classShop_aa17740ce746a83876ade483a83d8e143}\label{classShop_aa17740ce746a83876ade483a83d8e143}} 
+\index{Shop@{Shop}!getBalance@{getBalance}}
+\index{getBalance@{getBalance}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{getBalance()}{getBalance()}}
+{\footnotesize\ttfamily double Shop\+::get\+Balance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+gets the current income of a commercial building 
+
+\begin{DoxyReturn}{Returns}
+the income as an integer 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classCommercialBuilding_a77ce6bb30a4f595867ed3be7dc9e0f17}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classShop_a084fd7aad71f4b8c72e7ce8d68acc689}\label{classShop_a084fd7aad71f4b8c72e7ce8d68acc689}} 
+\index{Shop@{Shop}!getBuildingType@{getBuildingType}}
+\index{getBuildingType@{getBuildingType}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{getBuildingType()}{getBuildingType()}}
+{\footnotesize\ttfamily string Shop\+::get\+Building\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the type of building. 
+
+\begin{DoxyReturn}{Returns}
+Type of the building as a string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCommercialBuilding_a2bc59aed3639b1ddc8985ab71cc13579}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classShop_a5468648015a4ecfbfa5b728088d31f06}\label{classShop_a5468648015a4ecfbfa5b728088d31f06}} 
+\index{Shop@{Shop}!getCommercialIncome@{getCommercialIncome}}
+\index{getCommercialIncome@{getCommercialIncome}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{getCommercialIncome()}{getCommercialIncome()}}
+{\footnotesize\ttfamily int Shop\+::get\+Commercial\+Income (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+gets the current income of a commercial building 
+
+\begin{DoxyReturn}{Returns}
+the income as an integer 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classCommercialBuilding_ae827061bd272d37402e9d5cb9f961363}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classShop_af94d5d055af855dfa8690076423282d1}\label{classShop_af94d5d055af855dfa8690076423282d1}} 
+\index{Shop@{Shop}!getJobsCreated@{getJobsCreated}}
+\index{getJobsCreated@{getJobsCreated}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{getJobsCreated()}{getJobsCreated()}}
+{\footnotesize\ttfamily int Shop\+::get\+Jobs\+Created (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the number of jobs created by the shop. 
+
+\begin{DoxyReturn}{Returns}
+Number of jobs created. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classCommercialBuilding_afaf183aab243dea40e25690e8b7b5ebc}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classShop_aa90829bc6635f83e9c3746cac2177023}\label{classShop_aa90829bc6635f83e9c3746cac2177023}} 
+\index{Shop@{Shop}!getMaintenanceCost@{getMaintenanceCost}}
+\index{getMaintenanceCost@{getMaintenanceCost}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{getMaintenanceCost()}{getMaintenanceCost()}}
+{\footnotesize\ttfamily double Shop\+::get\+Maintenance\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the maintenance cost of the shop. 
+
+\begin{DoxyReturn}{Returns}
+Maintenance cost as a double. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCommercialBuilding_a67781a6b655a1c5bbd7f7192bf4fae51}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classShop_a43a344cea2213650d1f0f103f00690e8}\label{classShop_a43a344cea2213650d1f0f103f00690e8}} 
+\index{Shop@{Shop}!getName@{getName}}
+\index{getName@{getName}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Shop\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the name of the shop. 
+
+\begin{DoxyReturn}{Returns}
+Name of the shop as a string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCommercialBuilding_ab24328311662c377deb43ccfdb83dbab}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classShop_a84c3ef714bbea1526ffc7d10816065fc}\label{classShop_a84c3ef714bbea1526ffc7d10816065fc}} 
+\index{Shop@{Shop}!getPower@{getPower}}
+\index{getPower@{getPower}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{getPower()}{getPower()}}
+{\footnotesize\ttfamily bool Shop\+::get\+Power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Receives power for the building. 
+
+\begin{DoxyReturn}{Returns}
+true if power was received successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCommercialBuilding_a0dbff6c0c9a198adb9a7a69b07b1bd76}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classShop_a69daf8ea3fb5728c5ab9e7f86964f9dd}\label{classShop_a69daf8ea3fb5728c5ab9e7f86964f9dd}} 
+\index{Shop@{Shop}!getPowerReq@{getPowerReq}}
+\index{getPowerReq@{getPowerReq}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{getPowerReq()}{getPowerReq()}}
+{\footnotesize\ttfamily int Shop\+::get\+Power\+Req (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the power requirement of the shop. 
+
+\begin{DoxyReturn}{Returns}
+Power requirement as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCommercialBuilding_a0b192a6a070bf0f907b83cf45c53d11c}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classShop_a19e8b7ad4a220fc7f7d792eb31f22d3d}\label{classShop_a19e8b7ad4a220fc7f7d792eb31f22d3d}} 
+\index{Shop@{Shop}!getProfit@{getProfit}}
+\index{getProfit@{getProfit}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{getProfit()}{getProfit()}}
+{\footnotesize\ttfamily float Shop\+::get\+Profit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the total profit made by the shop. 
+
+\begin{DoxyReturn}{Returns}
+Total profit as a float. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classCommercialBuilding_acc4395bf128e80842b3ae76da0f4b2d8}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classShop_a38f043da1988090615fa81d18abaa159}\label{classShop_a38f043da1988090615fa81d18abaa159}} 
+\index{Shop@{Shop}!getSales@{getSales}}
+\index{getSales@{getSales}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{getSales()}{getSales()}}
+{\footnotesize\ttfamily float Shop\+::get\+Sales (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the total sales made by the shop. 
+
+\begin{DoxyReturn}{Returns}
+Total sales as a float. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classCommercialBuilding_ab69ce9a94734ece60e08f51262aed158}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classShop_a807d0fe43f8dbadc43d593dd5d1362fc}\label{classShop_a807d0fe43f8dbadc43d593dd5d1362fc}} 
+\index{Shop@{Shop}!getSewageCost@{getSewageCost}}
+\index{getSewageCost@{getSewageCost}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{getSewageCost()}{getSewageCost()}}
+{\footnotesize\ttfamily int Shop\+::get\+Sewage\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the sewage cost of the shop. 
+
+\begin{DoxyReturn}{Returns}
+Sewage cost as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCommercialBuilding_aa7b21c407ff71a2f360ec1c30d59c3e7}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classShop_acb12379ff875f5d34734f1ea913e52e4}\label{classShop_acb12379ff875f5d34734f1ea913e52e4}} 
+\index{Shop@{Shop}!getWasteCost@{getWasteCost}}
+\index{getWasteCost@{getWasteCost}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{getWasteCost()}{getWasteCost()}}
+{\footnotesize\ttfamily int Shop\+::get\+Waste\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the waste cost associated with the shop. 
+
+\begin{DoxyReturn}{Returns}
+Waste cost as an integer. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a94e15ba281ac20d60e1a4632f7be1292}{Buildings}}.
+
+\mbox{\Hypertarget{classShop_aef532e592b365c055d4cfcacf271b348}\label{classShop_aef532e592b365c055d4cfcacf271b348}} 
+\index{Shop@{Shop}!getWater@{getWater}}
+\index{getWater@{getWater}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{getWater()}{getWater()}}
+{\footnotesize\ttfamily bool Shop\+::get\+Water (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Receives water for the building. 
+
+\begin{DoxyReturn}{Returns}
+true if water was received successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCommercialBuilding_a804eb1be891988cb585bd48c0ab09635}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classShop_af6b2e80ee72d930ebb7965b01f9298de}\label{classShop_af6b2e80ee72d930ebb7965b01f9298de}} 
+\index{Shop@{Shop}!getWaterReq@{getWaterReq}}
+\index{getWaterReq@{getWaterReq}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{getWaterReq()}{getWaterReq()}}
+{\footnotesize\ttfamily int Shop\+::get\+Water\+Req (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the water requirement of the shop. 
+
+\begin{DoxyReturn}{Returns}
+Water requirement as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCommercialBuilding_ac35a6efffcba448cc807778397020b55}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classShop_a78b0065549ab2c6bdd24f64aababc7ae}\label{classShop_a78b0065549ab2c6bdd24f64aababc7ae}} 
+\index{Shop@{Shop}!payCitizen@{payCitizen}}
+\index{payCitizen@{payCitizen}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{payCitizen()}{payCitizen()}}
+{\footnotesize\ttfamily int Shop\+::pay\+Citizen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Pays a citizen associated with the shop. 
+
+\begin{DoxyReturn}{Returns}
+The amount paid to the citizen as an integer. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classCommercialBuilding_ad0e3cc060d90ba7fb925efdc1649b894}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classShop_ad47e74adfbb01b41ea8017cff3528ef6}\label{classShop_ad47e74adfbb01b41ea8017cff3528ef6}} 
+\index{Shop@{Shop}!setBalance@{setBalance}}
+\index{setBalance@{setBalance}!Shop@{Shop}}
+\doxysubsubsection{\texorpdfstring{setBalance()}{setBalance()}}
+{\footnotesize\ttfamily void Shop\+::set\+Balance (\begin{DoxyParamCaption}\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+gets the current income of a commercial building 
+
+\begin{DoxyReturn}{Returns}
+the income as an integer 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classCommercialBuilding_ae3d75fa3195c1808f68c1e165bee053b}{Commercial\+Building}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Shop.\+h\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Shop.\+cpp\end{DoxyCompactItemize}

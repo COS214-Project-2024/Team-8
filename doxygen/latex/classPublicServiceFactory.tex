@@ -1,0 +1,74 @@
+\hypertarget{classPublicServiceFactory}{}\doxysection{Public\+Service\+Factory Class Reference}
+\label{classPublicServiceFactory}\index{PublicServiceFactory@{PublicServiceFactory}}
+
+
+A factory class for creating public service buildings.  
+
+
+
+
+{\ttfamily \#include $<$Public\+Service\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Public\+Service\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for Public\+Service\+Factory\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classPublicServiceFactory_a01bc339cd89079c83630cda53be4a33b}{create\+Building}} ()=0
+\begin{DoxyCompactList}\small\item\em Creates a new public service building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classPublicServiceFactory_a1cc8ba5b91f69ff4fef172c1d64c9756}{buildings}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A factory class for creating public service buildings. 
+
+This class inherits from \mbox{\hyperlink{classBuildingFactory}{Building\+Factory}} and provides an interface for creating public service building objects. Derived classes must implement the \mbox{\hyperlink{classPublicServiceFactory_a01bc339cd89079c83630cda53be4a33b}{create\+Building()}} method to produce specific types of public service buildings. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPublicServiceFactory_a01bc339cd89079c83630cda53be4a33b}\label{classPublicServiceFactory_a01bc339cd89079c83630cda53be4a33b}} 
+\index{PublicServiceFactory@{PublicServiceFactory}!createBuilding@{createBuilding}}
+\index{createBuilding@{createBuilding}!PublicServiceFactory@{PublicServiceFactory}}
+\doxysubsubsection{\texorpdfstring{createBuilding()}{createBuilding()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classBuildings}{Buildings}}$\ast$ Public\+Service\+Factory\+::create\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Creates a new public service building. 
+
+Pure virtual function that must be implemented by derived classes to create and return a pointer to a new public service \mbox{\hyperlink{classBuildings}{Buildings}} object.
+
+\begin{DoxyReturn}{Returns}
+A pointer to a newly created public service \mbox{\hyperlink{classBuildings}{Buildings}} object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBuildingFactory_a553d8ca955c6e4421ea2de7a616fe9e6}{Building\+Factory}}.
+
+
+
+Implemented in \mbox{\hyperlink{classSchoolFactory_a74f0a46ecf394a4a81d341d57226e9af}{School\+Factory}}, \mbox{\hyperlink{classPoliceStationFactory_a0bfbed7aa4a4a466d9f37e341a5af34d}{Police\+Station\+Factory}}, and \mbox{\hyperlink{classMedicalCenterFactory_aae5dd6fbe298c9dad53917692e7d47d7}{Medical\+Center\+Factory}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classPublicServiceFactory_a1cc8ba5b91f69ff4fef172c1d64c9756}\label{classPublicServiceFactory_a1cc8ba5b91f69ff4fef172c1d64c9756}} 
+\index{PublicServiceFactory@{PublicServiceFactory}!buildings@{buildings}}
+\index{buildings@{buildings}!PublicServiceFactory@{PublicServiceFactory}}
+\doxysubsubsection{\texorpdfstring{buildings}{buildings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}}$\ast$ Public\+Service\+Factory\+::buildings}
+
+Pointer to a \mbox{\hyperlink{classBuildings}{Buildings}} object, representing the public service building instance managed by the factory. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Public\+Service\+Factory.\+h\end{DoxyCompactItemize}

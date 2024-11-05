@@ -1,0 +1,132 @@
+\hypertarget{classPlaneBuilder}{}\doxysection{Plane\+Builder Class Reference}
+\label{classPlaneBuilder}\index{PlaneBuilder@{PlaneBuilder}}
+
+
+Inheritance diagram for Plane\+Builder\+:
+% FIG 0
+
+
+Collaboration diagram for Plane\+Builder\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlaneBuilder_a64ed603fa368065aacabd12f4a922523}{Plane\+Builder}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classPlane}{Plane}} Builder\+:\+: \mbox{\hyperlink{classPlane}{Plane}} Builder object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}} $\ast$ \mbox{\hyperlink{classPlaneBuilder_aed2686d43178e58ce93d8192d48dee24}{set\+Capacity}} (int capacity)
+\begin{DoxyCompactList}\small\item\em Used to set the capacity of the plane. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}} $\ast$ \mbox{\hyperlink{classPlaneBuilder_af9ae0a6df7dda7d1157c8e0172006473}{set\+Cargo\+Weight}} (float weight)
+\begin{DoxyCompactList}\small\item\em Set the Cargo Weight object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}} $\ast$ \mbox{\hyperlink{classPlaneBuilder_a00dcc42fee4f7e0f58f9bafa3a10b12b}{set\+Num\+Passengers}} (int num)
+\begin{DoxyCompactList}\small\item\em Set the Num Passengers object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransport}{Transport}} $\ast$ \mbox{\hyperlink{classPlaneBuilder_a1f2acaae2bd673b786d5106bd540de6d}{build}} ()
+\begin{DoxyCompactList}\small\item\em Build the \mbox{\hyperlink{classPlane}{Plane}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlaneBuilder_a64ed603fa368065aacabd12f4a922523}\label{classPlaneBuilder_a64ed603fa368065aacabd12f4a922523}} 
+\index{PlaneBuilder@{PlaneBuilder}!PlaneBuilder@{PlaneBuilder}}
+\index{PlaneBuilder@{PlaneBuilder}!PlaneBuilder@{PlaneBuilder}}
+\doxysubsubsection{\texorpdfstring{PlaneBuilder()}{PlaneBuilder()}}
+{\footnotesize\ttfamily Plane\+Builder\+::\+Plane\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classPlane}{Plane}} Builder\+:\+: \mbox{\hyperlink{classPlane}{Plane}} Builder object. 
+
+Creates a new \mbox{\hyperlink{classPlane}{Plane}} object with a capacity of 0(place holder) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlaneBuilder_a1f2acaae2bd673b786d5106bd540de6d}\label{classPlaneBuilder_a1f2acaae2bd673b786d5106bd540de6d}} 
+\index{PlaneBuilder@{PlaneBuilder}!build@{build}}
+\index{build@{build}!PlaneBuilder@{PlaneBuilder}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransport}{Transport}} $\ast$ Plane\+Builder\+::build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Build the \mbox{\hyperlink{classPlane}{Plane}} object. 
+
+\begin{DoxyPrecond}{Precondition}
+The \mbox{\hyperlink{classPlaneBuilder}{Plane\+Builder}} object has been constructed 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+Transport$\ast$ pointer to the \mbox{\hyperlink{classPlane}{Plane}} object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}}.
+
+\mbox{\Hypertarget{classPlaneBuilder_aed2686d43178e58ce93d8192d48dee24}\label{classPlaneBuilder_aed2686d43178e58ce93d8192d48dee24}} 
+\index{PlaneBuilder@{PlaneBuilder}!setCapacity@{setCapacity}}
+\index{setCapacity@{setCapacity}!PlaneBuilder@{PlaneBuilder}}
+\doxysubsubsection{\texorpdfstring{setCapacity()}{setCapacity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}} $\ast$ Plane\+Builder\+::set\+Capacity (\begin{DoxyParamCaption}\item[{int}]{capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Used to set the capacity of the plane. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & integer value of the capacity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Plane\+Builder$\ast$ pointer to the \mbox{\hyperlink{classPlaneBuilder}{Plane\+Builder}} object for chaining 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}}.
+
+\mbox{\Hypertarget{classPlaneBuilder_af9ae0a6df7dda7d1157c8e0172006473}\label{classPlaneBuilder_af9ae0a6df7dda7d1157c8e0172006473}} 
+\index{PlaneBuilder@{PlaneBuilder}!setCargoWeight@{setCargoWeight}}
+\index{setCargoWeight@{setCargoWeight}!PlaneBuilder@{PlaneBuilder}}
+\doxysubsubsection{\texorpdfstring{setCargoWeight()}{setCargoWeight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}} $\ast$ Plane\+Builder\+::set\+Cargo\+Weight (\begin{DoxyParamCaption}\item[{float}]{weight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the Cargo Weight object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weight} & float value of the weight \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Plane\+Builder$\ast$ pointer to the \mbox{\hyperlink{classPlaneBuilder}{Plane\+Builder}} object for chaining 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}}.
+
+\mbox{\Hypertarget{classPlaneBuilder_a00dcc42fee4f7e0f58f9bafa3a10b12b}\label{classPlaneBuilder_a00dcc42fee4f7e0f58f9bafa3a10b12b}} 
+\index{PlaneBuilder@{PlaneBuilder}!setNumPassengers@{setNumPassengers}}
+\index{setNumPassengers@{setNumPassengers}!PlaneBuilder@{PlaneBuilder}}
+\doxysubsubsection{\texorpdfstring{setNumPassengers()}{setNumPassengers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}} $\ast$ Plane\+Builder\+::set\+Num\+Passengers (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the Num Passengers object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & integer value of the number of passengers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Plane\+Builder$\ast$ pointer to the \mbox{\hyperlink{classPlaneBuilder}{Plane\+Builder}} object for chaining 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{PlaneBuilder_8h}{Plane\+Builder.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{PlaneBuilder_8cpp}{Plane\+Builder.\+cpp}}\end{DoxyCompactItemize}

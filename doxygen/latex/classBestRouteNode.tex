@@ -1,0 +1,132 @@
+\hypertarget{classBestRouteNode}{}\doxysection{Best\+Route\+Node Class Reference}
+\label{classBestRouteNode}\index{BestRouteNode@{BestRouteNode}}
+
+
+A node in the route tree that keeps track of the best route.  
+
+
+
+
+{\ttfamily \#include $<$Best\+Route\+Node.\+h$>$}
+
+
+
+Inheritance diagram for Best\+Route\+Node\+:
+% FIG 0
+
+
+Collaboration diagram for Best\+Route\+Node\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBestRouteNode_ab28e72a7181a18b3309631b23990b2be}{Best\+Route\+Node}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \mbox{\hyperlink{classBestRouteNode}{Best\+Route\+Node}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBestRouteNode_abb322f242ba85b4c3e4bd58bb4d58e55}{add}} (\mbox{\hyperlink{classStops}{Stops}} $\ast$data)
+\begin{DoxyCompactList}\small\item\em Adds a stop to the best route. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBestRouteNode_a33aa80757ff6627d67f5ef98ffbf779f}{get\+Distance}} ()
+\begin{DoxyCompactList}\small\item\em Gets the distance of the best route. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStops}{Stops}} $\ast$ \mbox{\hyperlink{classBestRouteNode_aa2918fca630dc33b3c77969d0a9e83bf}{get\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Gets the stop data of the best route. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$ \mbox{\hyperlink{classBestRouteNode_adeeb54925a0578ef8af6d46ec45532cf}{travel}} ()
+\begin{DoxyCompactList}\small\item\em Travels to the next stop in the best route. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A node in the route tree that keeps track of the best route. 
+
+The \mbox{\hyperlink{classBestRouteNode}{Best\+Route\+Node}} class is a subclass of \mbox{\hyperlink{classRouteNode}{Route\+Node}} that keeps track of the best route to add Specific stops to the route and calculate the distance based in stops. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBestRouteNode_ab28e72a7181a18b3309631b23990b2be}\label{classBestRouteNode_ab28e72a7181a18b3309631b23990b2be}} 
+\index{BestRouteNode@{BestRouteNode}!BestRouteNode@{BestRouteNode}}
+\index{BestRouteNode@{BestRouteNode}!BestRouteNode@{BestRouteNode}}
+\doxysubsubsection{\texorpdfstring{BestRouteNode()}{BestRouteNode()}}
+{\footnotesize\ttfamily Best\+Route\+Node\+::\+Best\+Route\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for \mbox{\hyperlink{classBestRouteNode}{Best\+Route\+Node}}. 
+
+Initializes a \mbox{\hyperlink{classBestRouteNode}{Best\+Route\+Node}} instance with default parameters 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBestRouteNode_abb322f242ba85b4c3e4bd58bb4d58e55}\label{classBestRouteNode_abb322f242ba85b4c3e4bd58bb4d58e55}} 
+\index{BestRouteNode@{BestRouteNode}!add@{add}}
+\index{add@{add}!BestRouteNode@{BestRouteNode}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Best\+Route\+Node\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStops}{Stops}} $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds a stop to the best route. 
+
+Adds a stop to the best route and calculates the distance based on the stops.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The stop to add to the best route \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classRouteNode}{Route\+Node}}.
+
+\mbox{\Hypertarget{classBestRouteNode_aa2918fca630dc33b3c77969d0a9e83bf}\label{classBestRouteNode_aa2918fca630dc33b3c77969d0a9e83bf}} 
+\index{BestRouteNode@{BestRouteNode}!getData@{getData}}
+\index{getData@{getData}!BestRouteNode@{BestRouteNode}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStops}{Stops}} $\ast$ Best\+Route\+Node\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the stop data of the best route. 
+
+\begin{DoxyReturn}{Returns}
+Stops$\ast$ The stop data of the best route 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classRouteNode}{Route\+Node}}.
+
+\mbox{\Hypertarget{classBestRouteNode_a33aa80757ff6627d67f5ef98ffbf779f}\label{classBestRouteNode_a33aa80757ff6627d67f5ef98ffbf779f}} 
+\index{BestRouteNode@{BestRouteNode}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!BestRouteNode@{BestRouteNode}}
+\doxysubsubsection{\texorpdfstring{getDistance()}{getDistance()}}
+{\footnotesize\ttfamily float Best\+Route\+Node\+::get\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the distance of the best route. 
+
+\begin{DoxyReturn}{Returns}
+float The distance of the best route 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classRouteNode}{Route\+Node}}.
+
+\mbox{\Hypertarget{classBestRouteNode_adeeb54925a0578ef8af6d46ec45532cf}\label{classBestRouteNode_adeeb54925a0578ef8af6d46ec45532cf}} 
+\index{BestRouteNode@{BestRouteNode}!travel@{travel}}
+\index{travel@{travel}!BestRouteNode@{BestRouteNode}}
+\doxysubsubsection{\texorpdfstring{travel()}{travel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$ Best\+Route\+Node\+::travel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Travels to the next stop in the best route. 
+
+\begin{DoxyReturn}{Returns}
+Route\+Node$\ast$ The next stop in the best route 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classRouteNode}{Route\+Node}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Best\+Route\+Node.\+h\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Best\+Route\+Node.\+cpp\end{DoxyCompactItemize}

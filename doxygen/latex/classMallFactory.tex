@@ -1,0 +1,62 @@
+\hypertarget{classMallFactory}{}\doxysection{Mall\+Factory Class Reference}
+\label{classMallFactory}\index{MallFactory@{MallFactory}}
+
+
+Factory class for creating mall buildings.  
+
+
+
+
+{\ttfamily \#include $<$Mall\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Mall\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for Mall\+Factory\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMallFactory_a303810cc8fe89c917e43448f1b20db83}\label{classMallFactory_a303810cc8fe89c917e43448f1b20db83}} 
+\mbox{\hyperlink{classMallFactory_a303810cc8fe89c917e43448f1b20db83}{Mall\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMallFactory_ad6cac81e482b666c2d1794e62b0682cd}\label{classMallFactory_ad6cac81e482b666c2d1794e62b0682cd}} 
+virtual \mbox{\hyperlink{classMallFactory_ad6cac81e482b666c2d1794e62b0682cd}{$\sim$\+Mall\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classMallFactory_ae95129f3755356ef32e1c336729a5970}{create\+Building}} () override
+\begin{DoxyCompactList}\small\item\em Creates a new mall building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Factory class for creating mall buildings. 
+
+This class implements the \mbox{\hyperlink{classCommercialFactory}{Commercial\+Factory}} interface to create \mbox{\hyperlink{classMall}{Mall}} objects 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMallFactory_ae95129f3755356ef32e1c336729a5970}\label{classMallFactory_ae95129f3755356ef32e1c336729a5970}} 
+\index{MallFactory@{MallFactory}!createBuilding@{createBuilding}}
+\index{createBuilding@{createBuilding}!MallFactory@{MallFactory}}
+\doxysubsubsection{\texorpdfstring{createBuilding()}{createBuilding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ Mall\+Factory\+::create\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Creates a new mall building. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to a newly created \mbox{\hyperlink{classMall}{Mall}} object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCommercialFactory_a06ff168b783133fad993bc6579fe5a00}{Commercial\+Factory}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{MallFactory_8h}{Mall\+Factory.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{MallFactory_8cpp}{Mall\+Factory.\+cpp}}\end{DoxyCompactItemize}

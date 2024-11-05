@@ -1,0 +1,320 @@
+\hypertarget{classPark}{}\doxysection{Park Class Reference}
+\label{classPark}\index{Park@{Park}}
+
+
+Represents a park as a type of landmark building.  
+
+
+
+
+{\ttfamily \#include $<$Park.\+h$>$}
+
+
+
+Inheritance diagram for Park\+:
+% FIG 0
+
+
+Collaboration diagram for Park\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPark_a455b9a72692e8b2bf2f8e0ddead48b21}{Park}} (string b\+Name, int p\+Req, int w\+Req, double m\+Cost, int s\+Cost, int waste)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classPark}{Park}} class. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classPark_a2c89a3de0a83ca1928651a3afa672f39}{get\+Building\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Gets the type of the building. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classPark_a22513f1e99d55418de7e889a2ed56806}{get\+Jobs\+Created}} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of jobs created by the park. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classPark_af812e134e0b512ab1fca97db97472423}{get\+Maintenance\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the maintenance cost of the park. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classPark_a056d317a7474449c932f56c8ec703764}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the park. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classPark_a67bb1c291999a2f84b7aefa48a149529}{get\+Power\+Req}} ()
+\begin{DoxyCompactList}\small\item\em Gets the power requirements of the park. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classPark_a9321f126205b260775abcea15d4e3e6f}{get\+Sewage\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the sewage cost of the park. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classPark_af4e0a5f69702b0454f241acf528d56a7}{get\+Water\+Req}} ()
+\begin{DoxyCompactList}\small\item\em Gets the water requirements of the park. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPark_aacde897f3b78869e5e834d6d3e647fdb}\label{classPark_aacde897f3b78869e5e834d6d3e647fdb}} 
+virtual void \mbox{\hyperlink{classPark_aacde897f3b78869e5e834d6d3e647fdb}{request\+State}} ()
+\begin{DoxyCompactList}\small\item\em Requests the current state of the park. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPark_ab5b7777dcc40a83ad3829a9ccd0d6108}\label{classPark_ab5b7777dcc40a83ad3829a9ccd0d6108}} 
+void \mbox{\hyperlink{classPark_ab5b7777dcc40a83ad3829a9ccd0d6108}{set\+State}} (\mbox{\hyperlink{classState}{State}} $\ast$new\+State)
+\begin{DoxyCompactList}\small\item\em sets the state of the building \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPark_a64bb85198d48756c7b16254831df1ecb}{get\+Waste\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the waste cost for the park. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPark_a9026ffbf64514400d81218e970f7aeef}{add\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Add a building to the \mbox{\hyperlink{classUtility}{Utility}} resource. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPark_ab8559c1bdf4ba7cdb3ffc7d7f2a84648}{get\+Power}} ()
+\begin{DoxyCompactList}\small\item\em Receives power for the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPark_a56586b6fbccdf996174469ec27663374}{get\+Water}} ()
+\begin{DoxyCompactList}\small\item\em Receives water for the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPark_ac5ea570943ee58b803c919033ef0c3bf}{clean\+Waste}} ()
+\begin{DoxyCompactList}\small\item\em Cleans the waste of the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPark_a52b7b6d0e8d7795e133346be8706ccff}{clean\+Sewage}} ()
+\begin{DoxyCompactList}\small\item\em Cleans the sewage of the building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a park as a type of landmark building. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPark_a455b9a72692e8b2bf2f8e0ddead48b21}\label{classPark_a455b9a72692e8b2bf2f8e0ddead48b21}} 
+\index{Park@{Park}!Park@{Park}}
+\index{Park@{Park}!Park@{Park}}
+\doxysubsubsection{\texorpdfstring{Park()}{Park()}}
+{\footnotesize\ttfamily Park\+::\+Park (\begin{DoxyParamCaption}\item[{string}]{b\+Name,  }\item[{int}]{p\+Req,  }\item[{int}]{w\+Req,  }\item[{double}]{m\+Cost,  }\item[{int}]{s\+Cost,  }\item[{int}]{waste }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classPark}{Park}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+Name} & Name of the park. \\
+\hline
+{\em p\+Req} & Power requirements. \\
+\hline
+{\em w\+Req} & Water requirements. \\
+\hline
+{\em m\+Cost} & Maintenance cost. \\
+\hline
+{\em s\+Cost} & Sewage cost. \\
+\hline
+{\em waste} & Waste generated. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPark_a9026ffbf64514400d81218e970f7aeef}\label{classPark_a9026ffbf64514400d81218e970f7aeef}} 
+\index{Park@{Park}!addBuilding@{addBuilding}}
+\index{addBuilding@{addBuilding}!Park@{Park}}
+\doxysubsubsection{\texorpdfstring{addBuilding()}{addBuilding()}}
+{\footnotesize\ttfamily void Park\+::add\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Add a building to the \mbox{\hyperlink{classUtility}{Utility}} resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & The building to add to the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_aa8179defd14ed585752076b6d407aada}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classPark_a52b7b6d0e8d7795e133346be8706ccff}\label{classPark_a52b7b6d0e8d7795e133346be8706ccff}} 
+\index{Park@{Park}!cleanSewage@{cleanSewage}}
+\index{cleanSewage@{cleanSewage}!Park@{Park}}
+\doxysubsubsection{\texorpdfstring{cleanSewage()}{cleanSewage()}}
+{\footnotesize\ttfamily bool Park\+::clean\+Sewage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cleans the sewage of the building. 
+
+\begin{DoxyReturn}{Returns}
+true if sewage cleaning was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a4b58e301fe9f6d3dc400aad1650e3db2}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classPark_ac5ea570943ee58b803c919033ef0c3bf}\label{classPark_ac5ea570943ee58b803c919033ef0c3bf}} 
+\index{Park@{Park}!cleanWaste@{cleanWaste}}
+\index{cleanWaste@{cleanWaste}!Park@{Park}}
+\doxysubsubsection{\texorpdfstring{cleanWaste()}{cleanWaste()}}
+{\footnotesize\ttfamily bool Park\+::clean\+Waste (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cleans the waste of the building. 
+
+\begin{DoxyReturn}{Returns}
+true if waste cleaning was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a53f41bc4fe9ccb241e6619463296c405}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classPark_a2c89a3de0a83ca1928651a3afa672f39}\label{classPark_a2c89a3de0a83ca1928651a3afa672f39}} 
+\index{Park@{Park}!getBuildingType@{getBuildingType}}
+\index{getBuildingType@{getBuildingType}!Park@{Park}}
+\doxysubsubsection{\texorpdfstring{getBuildingType()}{getBuildingType()}}
+{\footnotesize\ttfamily string Park\+::get\+Building\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the type of the building. 
+
+\begin{DoxyReturn}{Returns}
+The building type as a string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a10edeac1cd62dd4519d196b873bb7cc0}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classPark_a22513f1e99d55418de7e889a2ed56806}\label{classPark_a22513f1e99d55418de7e889a2ed56806}} 
+\index{Park@{Park}!getJobsCreated@{getJobsCreated}}
+\index{getJobsCreated@{getJobsCreated}!Park@{Park}}
+\doxysubsubsection{\texorpdfstring{getJobsCreated()}{getJobsCreated()}}
+{\footnotesize\ttfamily virtual int Park\+::get\+Jobs\+Created (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the number of jobs created by the park. 
+
+\begin{DoxyReturn}{Returns}
+The number of jobs as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a92abe6deecb03d320f0afdde7916f6ce}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classPark_af812e134e0b512ab1fca97db97472423}\label{classPark_af812e134e0b512ab1fca97db97472423}} 
+\index{Park@{Park}!getMaintenanceCost@{getMaintenanceCost}}
+\index{getMaintenanceCost@{getMaintenanceCost}!Park@{Park}}
+\doxysubsubsection{\texorpdfstring{getMaintenanceCost()}{getMaintenanceCost()}}
+{\footnotesize\ttfamily double Park\+::get\+Maintenance\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the maintenance cost of the park. 
+
+\begin{DoxyReturn}{Returns}
+The maintenance cost as a double. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a3f6e6849c9a5f5d29ea16e51bff37006}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classPark_a056d317a7474449c932f56c8ec703764}\label{classPark_a056d317a7474449c932f56c8ec703764}} 
+\index{Park@{Park}!getName@{getName}}
+\index{getName@{getName}!Park@{Park}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Park\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the name of the park. 
+
+\begin{DoxyReturn}{Returns}
+The name of the park as a string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a25b9ca973c81578065f8cece37de00d4}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classPark_ab8559c1bdf4ba7cdb3ffc7d7f2a84648}\label{classPark_ab8559c1bdf4ba7cdb3ffc7d7f2a84648}} 
+\index{Park@{Park}!getPower@{getPower}}
+\index{getPower@{getPower}!Park@{Park}}
+\doxysubsubsection{\texorpdfstring{getPower()}{getPower()}}
+{\footnotesize\ttfamily bool Park\+::get\+Power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Receives power for the building. 
+
+\begin{DoxyReturn}{Returns}
+true if power was received successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_aecef730ab43b09f8d9a3cb423a46f94a}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classPark_a67bb1c291999a2f84b7aefa48a149529}\label{classPark_a67bb1c291999a2f84b7aefa48a149529}} 
+\index{Park@{Park}!getPowerReq@{getPowerReq}}
+\index{getPowerReq@{getPowerReq}!Park@{Park}}
+\doxysubsubsection{\texorpdfstring{getPowerReq()}{getPowerReq()}}
+{\footnotesize\ttfamily int Park\+::get\+Power\+Req (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the power requirements of the park. 
+
+\begin{DoxyReturn}{Returns}
+The power requirements as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_ac8df4603f8786f441a3aa50a3cd7a75c}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classPark_a9321f126205b260775abcea15d4e3e6f}\label{classPark_a9321f126205b260775abcea15d4e3e6f}} 
+\index{Park@{Park}!getSewageCost@{getSewageCost}}
+\index{getSewageCost@{getSewageCost}!Park@{Park}}
+\doxysubsubsection{\texorpdfstring{getSewageCost()}{getSewageCost()}}
+{\footnotesize\ttfamily int Park\+::get\+Sewage\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the sewage cost of the park. 
+
+\begin{DoxyReturn}{Returns}
+The sewage cost as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a780ade236d79adb8007752c718867639}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classPark_a64bb85198d48756c7b16254831df1ecb}\label{classPark_a64bb85198d48756c7b16254831df1ecb}} 
+\index{Park@{Park}!getWasteCost@{getWasteCost}}
+\index{getWasteCost@{getWasteCost}!Park@{Park}}
+\doxysubsubsection{\texorpdfstring{getWasteCost()}{getWasteCost()}}
+{\footnotesize\ttfamily int Park\+::get\+Waste\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the waste cost for the park. 
+
+\begin{DoxyReturn}{Returns}
+The waste cost as an integer. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a94e15ba281ac20d60e1a4632f7be1292}{Buildings}}.
+
+\mbox{\Hypertarget{classPark_a56586b6fbccdf996174469ec27663374}\label{classPark_a56586b6fbccdf996174469ec27663374}} 
+\index{Park@{Park}!getWater@{getWater}}
+\index{getWater@{getWater}!Park@{Park}}
+\doxysubsubsection{\texorpdfstring{getWater()}{getWater()}}
+{\footnotesize\ttfamily bool Park\+::get\+Water (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Receives water for the building. 
+
+\begin{DoxyReturn}{Returns}
+true if water was received successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a661c42eb0bd712f50eb10cfba131f0e5}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classPark_af4e0a5f69702b0454f241acf528d56a7}\label{classPark_af4e0a5f69702b0454f241acf528d56a7}} 
+\index{Park@{Park}!getWaterReq@{getWaterReq}}
+\index{getWaterReq@{getWaterReq}!Park@{Park}}
+\doxysubsubsection{\texorpdfstring{getWaterReq()}{getWaterReq()}}
+{\footnotesize\ttfamily int Park\+::get\+Water\+Req (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the water requirements of the park. 
+
+\begin{DoxyReturn}{Returns}
+The water requirements as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_acb64ab79a07960d7bec6491f2a026315}{Landmark\+Building}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Park.\+h\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Park.\+cpp\end{DoxyCompactItemize}

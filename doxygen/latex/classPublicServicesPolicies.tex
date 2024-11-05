@@ -1,0 +1,82 @@
+\hypertarget{classPublicServicesPolicies}{}\doxysection{Public\+Services\+Policies Class Reference}
+\label{classPublicServicesPolicies}\index{PublicServicesPolicies@{PublicServicesPolicies}}
+
+
+Concrete implementation of public services policies.  
+
+
+
+
+{\ttfamily \#include $<$Public\+Services\+Policies.\+h$>$}
+
+
+
+Inheritance diagram for Public\+Services\+Policies\+:
+% FIG 0
+
+
+Collaboration diagram for Public\+Services\+Policies\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPublicServicesPolicies_a5e0f5ccda8c8076c1d1f951a589e666d}{Public\+Services\+Policies}} (\mbox{\hyperlink{classGovernment}{Government}} $\ast$govt)
+\begin{DoxyCompactList}\small\item\em Construct a new Public Services \mbox{\hyperlink{classPolicies}{Policies}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPublicServicesPolicies_a7451e849d707aa83f183796868c8f7a8}{execute\+Policy}} () override
+\begin{DoxyCompactList}\small\item\em Implementation of policy execution for public services. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPublicServicesPolicies_a88ca0ed17e994b7cdeb0489a627c2ea7}\label{classPublicServicesPolicies_a88ca0ed17e994b7cdeb0489a627c2ea7}} 
+\mbox{\hyperlink{classCitizen}{Citizen}} $\ast$ \mbox{\hyperlink{classPublicServicesPolicies_a88ca0ed17e994b7cdeb0489a627c2ea7}{citizen}}
+\begin{DoxyCompactList}\small\item\em Affected citizen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPublicServicesPolicies_a44d7f634f10fec89cd5c8996edef0812}\label{classPublicServicesPolicies_a44d7f634f10fec89cd5c8996edef0812}} 
+\mbox{\hyperlink{classEconomicPolicies}{Economic\+Policies}} $\ast$ \mbox{\hyperlink{classPublicServicesPolicies_a44d7f634f10fec89cd5c8996edef0812}{economic\+Policies}}
+\begin{DoxyCompactList}\small\item\em Related economic policies. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Concrete implementation of public services policies. 
+
+This class handles the execution of policies related to public services. It acts as a Concrete\+Command in the \mbox{\hyperlink{classCommand}{Command}} pattern hierarchy and coordinates with economic policies. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPublicServicesPolicies_a5e0f5ccda8c8076c1d1f951a589e666d}\label{classPublicServicesPolicies_a5e0f5ccda8c8076c1d1f951a589e666d}} 
+\index{PublicServicesPolicies@{PublicServicesPolicies}!PublicServicesPolicies@{PublicServicesPolicies}}
+\index{PublicServicesPolicies@{PublicServicesPolicies}!PublicServicesPolicies@{PublicServicesPolicies}}
+\doxysubsubsection{\texorpdfstring{PublicServicesPolicies()}{PublicServicesPolicies()}}
+{\footnotesize\ttfamily Public\+Services\+Policies\+::\+Public\+Services\+Policies (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGovernment}{Government}} $\ast$}]{govt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Construct a new Public Services \mbox{\hyperlink{classPolicies}{Policies}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em govt} & Pointer to the government executing the policies \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPublicServicesPolicies_a7451e849d707aa83f183796868c8f7a8}\label{classPublicServicesPolicies_a7451e849d707aa83f183796868c8f7a8}} 
+\index{PublicServicesPolicies@{PublicServicesPolicies}!executePolicy@{executePolicy}}
+\index{executePolicy@{executePolicy}!PublicServicesPolicies@{PublicServicesPolicies}}
+\doxysubsubsection{\texorpdfstring{executePolicy()}{executePolicy()}}
+{\footnotesize\ttfamily void Public\+Services\+Policies\+::execute\+Policy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implementation of policy execution for public services. 
+
+Defines the specific behavior for executing public services policies. 
+
+Implements \mbox{\hyperlink{classPolicies_a700b4645c03eb16767a67a98953fd64f}{Policies}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{PublicServicesPolicies_8h}{Public\+Services\+Policies.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Public\+Services\+Policies.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,71 @@
+\hypertarget{classShopFactory}{}\doxysection{Shop\+Factory Class Reference}
+\label{classShopFactory}\index{ShopFactory@{ShopFactory}}
+
+
+A factory class for creating shop buildings.  
+
+
+
+
+{\ttfamily \#include $<$Shop\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Shop\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for Shop\+Factory\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classShopFactory_aacea60a9db7a627f226b6e4e2ae15a9e}{create\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new shop building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classShopFactory_a00d6ab2e83c74d06173b6d75d005e9fa}{buildings}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A factory class for creating shop buildings. 
+
+This class inherits from \mbox{\hyperlink{classCommercialFactory}{Commercial\+Factory}} and provides a method for creating shop building objects. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classShopFactory_aacea60a9db7a627f226b6e4e2ae15a9e}\label{classShopFactory_aacea60a9db7a627f226b6e4e2ae15a9e}} 
+\index{ShopFactory@{ShopFactory}!createBuilding@{createBuilding}}
+\index{createBuilding@{createBuilding}!ShopFactory@{ShopFactory}}
+\doxysubsubsection{\texorpdfstring{createBuilding()}{createBuilding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ Shop\+Factory\+::create\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a new shop building. 
+
+This function creates and returns a pointer to a new shop \mbox{\hyperlink{classBuildings}{Buildings}} object.
+
+\begin{DoxyReturn}{Returns}
+A pointer to a newly created shop \mbox{\hyperlink{classBuildings}{Buildings}} object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCommercialFactory_a06ff168b783133fad993bc6579fe5a00}{Commercial\+Factory}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classShopFactory_a00d6ab2e83c74d06173b6d75d005e9fa}\label{classShopFactory_a00d6ab2e83c74d06173b6d75d005e9fa}} 
+\index{ShopFactory@{ShopFactory}!buildings@{buildings}}
+\index{buildings@{buildings}!ShopFactory@{ShopFactory}}
+\doxysubsubsection{\texorpdfstring{buildings}{buildings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}}$\ast$ Shop\+Factory\+::buildings}
+
+Pointer to a \mbox{\hyperlink{classBuildings}{Buildings}} object, representing the shop building instance managed by the factory. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{ShopFactory_8h}{Shop\+Factory.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Shop\+Factory.\+cpp\end{DoxyCompactItemize}

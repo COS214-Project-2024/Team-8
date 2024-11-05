@@ -1,0 +1,132 @@
+\hypertarget{classTrainBuilder}{}\doxysection{Train\+Builder Class Reference}
+\label{classTrainBuilder}\index{TrainBuilder@{TrainBuilder}}
+
+
+Inheritance diagram for Train\+Builder\+:
+% FIG 0
+
+
+Collaboration diagram for Train\+Builder\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTrainBuilder_a5151113490f826ca573be80dae5cbc9f}{Train\+Builder}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classTrain}{Train}} Builder\+:\+: \mbox{\hyperlink{classTrain}{Train}} Builder object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}} $\ast$ \mbox{\hyperlink{classTrainBuilder_a18b610ed849a1063a2399063e8144ceb}{set\+Capacity}} (int capacity)
+\begin{DoxyCompactList}\small\item\em Used to set the capacity of the train. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}} $\ast$ \mbox{\hyperlink{classTrainBuilder_a1fed73e60fd4ad3b9a7ab8a6de7c7d1c}{set\+Cargo\+Weight}} (float weight)
+\begin{DoxyCompactList}\small\item\em Set the Cargo Weight object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}} $\ast$ \mbox{\hyperlink{classTrainBuilder_a283c4870954092d8ffb14c9936ace913}{set\+Num\+Passengers}} (int num)
+\begin{DoxyCompactList}\small\item\em Set the Num Passengers object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransport}{Transport}} $\ast$ \mbox{\hyperlink{classTrainBuilder_a0bd563ac68d08afefe1fe9871b07a3d7}{build}} ()
+\begin{DoxyCompactList}\small\item\em Build the \mbox{\hyperlink{classTrain}{Train}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTrainBuilder_a5151113490f826ca573be80dae5cbc9f}\label{classTrainBuilder_a5151113490f826ca573be80dae5cbc9f}} 
+\index{TrainBuilder@{TrainBuilder}!TrainBuilder@{TrainBuilder}}
+\index{TrainBuilder@{TrainBuilder}!TrainBuilder@{TrainBuilder}}
+\doxysubsubsection{\texorpdfstring{TrainBuilder()}{TrainBuilder()}}
+{\footnotesize\ttfamily Train\+Builder\+::\+Train\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classTrain}{Train}} Builder\+:\+: \mbox{\hyperlink{classTrain}{Train}} Builder object. 
+
+Creates a new \mbox{\hyperlink{classTrain}{Train}} object with a capacity of 0(place holder) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTrainBuilder_a0bd563ac68d08afefe1fe9871b07a3d7}\label{classTrainBuilder_a0bd563ac68d08afefe1fe9871b07a3d7}} 
+\index{TrainBuilder@{TrainBuilder}!build@{build}}
+\index{build@{build}!TrainBuilder@{TrainBuilder}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransport}{Transport}} $\ast$ Train\+Builder\+::build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Build the \mbox{\hyperlink{classTrain}{Train}} object. 
+
+\begin{DoxyPrecond}{Precondition}
+The transport object has been constructed 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+Transport$\ast$ pointer to the \mbox{\hyperlink{classTrain}{Train}} object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}}.
+
+\mbox{\Hypertarget{classTrainBuilder_a18b610ed849a1063a2399063e8144ceb}\label{classTrainBuilder_a18b610ed849a1063a2399063e8144ceb}} 
+\index{TrainBuilder@{TrainBuilder}!setCapacity@{setCapacity}}
+\index{setCapacity@{setCapacity}!TrainBuilder@{TrainBuilder}}
+\doxysubsubsection{\texorpdfstring{setCapacity()}{setCapacity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}} $\ast$ Train\+Builder\+::set\+Capacity (\begin{DoxyParamCaption}\item[{int}]{capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Used to set the capacity of the train. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & integer value of the capacity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Train\+Builder$\ast$ pointer to the \mbox{\hyperlink{classTrainBuilder}{Train\+Builder}} object for chaining 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}}.
+
+\mbox{\Hypertarget{classTrainBuilder_a1fed73e60fd4ad3b9a7ab8a6de7c7d1c}\label{classTrainBuilder_a1fed73e60fd4ad3b9a7ab8a6de7c7d1c}} 
+\index{TrainBuilder@{TrainBuilder}!setCargoWeight@{setCargoWeight}}
+\index{setCargoWeight@{setCargoWeight}!TrainBuilder@{TrainBuilder}}
+\doxysubsubsection{\texorpdfstring{setCargoWeight()}{setCargoWeight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}} $\ast$ Train\+Builder\+::set\+Cargo\+Weight (\begin{DoxyParamCaption}\item[{float}]{weight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the Cargo Weight object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weight} & float value of the weight \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Train\+Builder$\ast$ pointer to the \mbox{\hyperlink{classTrainBuilder}{Train\+Builder}} object for chaining 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}}.
+
+\mbox{\Hypertarget{classTrainBuilder_a283c4870954092d8ffb14c9936ace913}\label{classTrainBuilder_a283c4870954092d8ffb14c9936ace913}} 
+\index{TrainBuilder@{TrainBuilder}!setNumPassengers@{setNumPassengers}}
+\index{setNumPassengers@{setNumPassengers}!TrainBuilder@{TrainBuilder}}
+\doxysubsubsection{\texorpdfstring{setNumPassengers()}{setNumPassengers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}} $\ast$ Train\+Builder\+::set\+Num\+Passengers (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the Num Passengers object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & integer value of the number of passengers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Train\+Builder$\ast$ pointer to the \mbox{\hyperlink{classTrainBuilder}{Train\+Builder}} object for chaining 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{TrainBuilder_8h}{Train\+Builder.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{TrainBuilder_8cpp}{Train\+Builder.\+cpp}}\end{DoxyCompactItemize}

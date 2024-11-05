@@ -1,0 +1,414 @@
+\hypertarget{classFinanceDepartment}{}\doxysection{Finance\+Department Class Reference}
+\label{classFinanceDepartment}\index{FinanceDepartment@{FinanceDepartment}}
+
+
+Represents the finance department of a government that manages taxation and budget allocation.  
+
+
+
+
+{\ttfamily \#include $<$Finance\+Department.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFinanceDepartment_ae7d9257ecc1e1d2507985c5fb48ca8ed}\label{classFinanceDepartment_ae7d9257ecc1e1d2507985c5fb48ca8ed}} 
+\mbox{\hyperlink{classFinanceDepartment_ae7d9257ecc1e1d2507985c5fb48ca8ed}{Finance\+Department}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classFinanceDepartment}{Finance\+Department}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFinanceDepartment_a2d38ee3067f27f02ce728bc336ef499b}\label{classFinanceDepartment_a2d38ee3067f27f02ce728bc336ef499b}} 
+\mbox{\hyperlink{classFinanceDepartment_a2d38ee3067f27f02ce728bc336ef499b}{$\sim$\+Finance\+Department}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classFinanceDepartment}{Finance\+Department}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFinanceDepartment_a01ce6eee00d82e55b95bc4e5ae4f7240}{set\+Available\+Funds}} (double total\+Revenue)
+\begin{DoxyCompactList}\small\item\em Sets the available funds for the finance department. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFinanceDepartment_ad22f9b22ab034bd4592c760faae9ef1a}{set\+Residential\+Income\+Tax\+Rate}} (double income\+Tax\+Rate)
+\begin{DoxyCompactList}\small\item\em Sets the residential income tax rate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFinanceDepartment_a1a1274b5ca5921202b3f2ee6f29fb135}{set\+Residential\+Property\+Tax\+Rate}} (double property\+Tax\+Rate)
+\begin{DoxyCompactList}\small\item\em Sets the residential property tax rate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFinanceDepartment_a9975ab6cc5c10e8d3bf671f6f8330218}{set\+Commercial\+Business\+Tax\+Rate}} (double business\+Tax\+Rate)
+\begin{DoxyCompactList}\small\item\em Sets the commercial business tax rate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFinanceDepartment_a884ad41f8e62c3e4ab42591c93332212}{set\+Commercial\+Sales\+Tax\+Rate}} (double sales\+Tax\+Rate)
+\begin{DoxyCompactList}\small\item\em Sets the commercial sales tax rate. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFinanceDepartment_a35f626c660c396e0b9206e8d55a79fa1}{get\+Residential\+Income\+Tax\+Rate}} ()
+\begin{DoxyCompactList}\small\item\em Gets the residential income tax rate. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFinanceDepartment_a2e2939cbe5b4261d0ffb0db6a43bb456}{get\+Residential\+Property\+Tax\+Rate}} ()
+\begin{DoxyCompactList}\small\item\em Gets the residential property tax rate. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFinanceDepartment_a87d1a1ae340beb1a1b432b3f953e8350}{get\+Commercial\+Business\+Tax\+Rate}} ()
+\begin{DoxyCompactList}\small\item\em Gets the commercial business tax rate. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFinanceDepartment_accd27a568e62f4d963f73f5ed4e3d1e6}{get\+Commercial\+Sales\+Tax\+Rate}} ()
+\begin{DoxyCompactList}\small\item\em Gets the commercial sales tax rate. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFinanceDepartment_af2ea5238f8099bc20b85a23afd776b15}{get\+Available\+Funds}} ()
+\begin{DoxyCompactList}\small\item\em Gets the available funds. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFinanceDepartment_a6b91c32dfff3d045fcb7d77a9ba80dbb}{delegate\+Request\+For\+Collection\+Off\+Property\+Tax}} ()
+\begin{DoxyCompactList}\small\item\em Delegates the request for collection of property tax. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFinanceDepartment_a8ac998b8b16c2f4702a87026d71b509c}{delegate\+Request\+For\+Collection\+Off\+Income\+Tax}} ()
+\begin{DoxyCompactList}\small\item\em Delegates the request for collection of income tax. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFinanceDepartment_afdd6132919201f95f00488d7667f4c34}{delegate\+Request\+For\+Collection\+Of\+Business\+Tax}} ()
+\begin{DoxyCompactList}\small\item\em Delegates the request for collection of business tax. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFinanceDepartment_a121e817acdb25f91f0f33cbcc04cafb6}{delegate\+Request\+For\+Collection\+Of\+Sales\+Tax}} ()
+\begin{DoxyCompactList}\small\item\em Delegates the request for collection of sales tax. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFinanceDepartment_a28d09fe347e09fe37ee460f6cfc72eec}{delegate\+Request\+For\+Allocation\+Of\+Public\+Service\+Buildings\+Funds}} ()
+\begin{DoxyCompactList}\small\item\em Delegates the request for allocation of funds for public service buildings. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFinanceDepartment_a68c8c38897f69ab694e4a4ecf512953a}{delegate\+Request\+For\+Allocation\+Of\+Utilities\+Funds}} ()
+\begin{DoxyCompactList}\small\item\em Delegates the request for allocation of funds for utilities. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFinanceDepartment_a42d5278160589be6772abf7493c6700c}{delegate\+Request\+For\+Allocation\+Of\+Transport\+Infrastructure\+Funds}} ()
+\begin{DoxyCompactList}\small\item\em Delegates the request for allocation of funds for transport infrastructure. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFinanceDepartment_a44ac508d1dd2274e487b7c5200bbc82e}{delegate\+Request\+For\+Allocation\+Of\+Landmark\+Buildings\+Funds}} ()
+\begin{DoxyCompactList}\small\item\em Delegates the request for allocation of funds for landmark buildings (synonymous with recreation) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFinanceDepartment_a2a6597b80445fad431907cc4cfd32f25}{calculate\+Total\+Residents\+Income}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the total residents\textquotesingle{} income. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFinanceDepartment_a28055279efa7e2157464d71ada82e741}{calculate\+Total\+Business\+Profit}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the total business profit. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFinanceDepartment_a04e1df2d505d52a8eb27ab61d6e2134c}{calculate\+Total\+Business\+Sale}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the total business sales. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFinanceDepartment_a4300c2de72b7f201dc057a207b5038d4}{add\+Residents}} (\mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}} $\ast$resident)
+\begin{DoxyCompactList}\small\item\em Adds a new resident to the residents list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFinanceDepartment_a3d36328489b964a07edecd6502169dcc}{add\+Commercial\+Building}} (\mbox{\hyperlink{classCommercialBuilding}{Commercial\+Building}} $\ast$commercial\+Building)
+\begin{DoxyCompactList}\small\item\em Adds a new commercial building to the commercial buildings list. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFinanceDepartment_a692c4774b8714966111a31abb3a9807f}{delegate\+Request\+For\+Allocation\+Of\+Education\+Funds}} ()
+\begin{DoxyCompactList}\small\item\em Delegates the request for allocation of funds for education. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the finance department of a government that manages taxation and budget allocation. 
+
+The \mbox{\hyperlink{classFinanceDepartment}{Finance\+Department}} class is responsible for collecting taxes from residential and commercial entities, maintaining financial records, and allocating funds for various public services and infrastructure projects. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFinanceDepartment_a3d36328489b964a07edecd6502169dcc}\label{classFinanceDepartment_a3d36328489b964a07edecd6502169dcc}} 
+\index{FinanceDepartment@{FinanceDepartment}!addCommercialBuilding@{addCommercialBuilding}}
+\index{addCommercialBuilding@{addCommercialBuilding}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{addCommercialBuilding()}{addCommercialBuilding()}}
+{\footnotesize\ttfamily void Finance\+Department\+::add\+Commercial\+Building (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCommercialBuilding}{Commercial\+Building}} $\ast$}]{commercial\+Building }\end{DoxyParamCaption})}
+
+
+
+Adds a new commercial building to the commercial buildings list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em commercial\+Building} & Pointer to the \mbox{\hyperlink{classCommercialBuilding}{Commercial\+Building}} object to be added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFinanceDepartment_a4300c2de72b7f201dc057a207b5038d4}\label{classFinanceDepartment_a4300c2de72b7f201dc057a207b5038d4}} 
+\index{FinanceDepartment@{FinanceDepartment}!addResidents@{addResidents}}
+\index{addResidents@{addResidents}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{addResidents()}{addResidents()}}
+{\footnotesize\ttfamily void Finance\+Department\+::add\+Residents (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}} $\ast$}]{resident }\end{DoxyParamCaption})}
+
+
+
+Adds a new resident to the residents list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resident} & Pointer to the \mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}} object to be added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFinanceDepartment_a28055279efa7e2157464d71ada82e741}\label{classFinanceDepartment_a28055279efa7e2157464d71ada82e741}} 
+\index{FinanceDepartment@{FinanceDepartment}!calculateTotalBusinessProfit@{calculateTotalBusinessProfit}}
+\index{calculateTotalBusinessProfit@{calculateTotalBusinessProfit}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{calculateTotalBusinessProfit()}{calculateTotalBusinessProfit()}}
+{\footnotesize\ttfamily double Finance\+Department\+::calculate\+Total\+Business\+Profit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calculates the total business profit. 
+
+\begin{DoxyReturn}{Returns}
+The total business profit 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFinanceDepartment_a04e1df2d505d52a8eb27ab61d6e2134c}\label{classFinanceDepartment_a04e1df2d505d52a8eb27ab61d6e2134c}} 
+\index{FinanceDepartment@{FinanceDepartment}!calculateTotalBusinessSale@{calculateTotalBusinessSale}}
+\index{calculateTotalBusinessSale@{calculateTotalBusinessSale}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{calculateTotalBusinessSale()}{calculateTotalBusinessSale()}}
+{\footnotesize\ttfamily double Finance\+Department\+::calculate\+Total\+Business\+Sale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calculates the total business sales. 
+
+\begin{DoxyReturn}{Returns}
+The total business sales 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFinanceDepartment_a2a6597b80445fad431907cc4cfd32f25}\label{classFinanceDepartment_a2a6597b80445fad431907cc4cfd32f25}} 
+\index{FinanceDepartment@{FinanceDepartment}!calculateTotalResidentsIncome@{calculateTotalResidentsIncome}}
+\index{calculateTotalResidentsIncome@{calculateTotalResidentsIncome}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{calculateTotalResidentsIncome()}{calculateTotalResidentsIncome()}}
+{\footnotesize\ttfamily double Finance\+Department\+::calculate\+Total\+Residents\+Income (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calculates the total residents\textquotesingle{} income. 
+
+\begin{DoxyReturn}{Returns}
+The total residents\textquotesingle{} income 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFinanceDepartment_a692c4774b8714966111a31abb3a9807f}\label{classFinanceDepartment_a692c4774b8714966111a31abb3a9807f}} 
+\index{FinanceDepartment@{FinanceDepartment}!delegateRequestForAllocationOfEducationFunds@{delegateRequestForAllocationOfEducationFunds}}
+\index{delegateRequestForAllocationOfEducationFunds@{delegateRequestForAllocationOfEducationFunds}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{delegateRequestForAllocationOfEducationFunds()}{delegateRequestForAllocationOfEducationFunds()}}
+{\footnotesize\ttfamily double Finance\+Department\+::delegate\+Request\+For\+Allocation\+Of\+Education\+Funds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Delegates the request for allocation of funds for education. 
+
+\begin{DoxyReturn}{Returns}
+The amount of funds allocated for education 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFinanceDepartment_a44ac508d1dd2274e487b7c5200bbc82e}\label{classFinanceDepartment_a44ac508d1dd2274e487b7c5200bbc82e}} 
+\index{FinanceDepartment@{FinanceDepartment}!delegateRequestForAllocationOfLandmarkBuildingsFunds@{delegateRequestForAllocationOfLandmarkBuildingsFunds}}
+\index{delegateRequestForAllocationOfLandmarkBuildingsFunds@{delegateRequestForAllocationOfLandmarkBuildingsFunds}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{delegateRequestForAllocationOfLandmarkBuildingsFunds()}{delegateRequestForAllocationOfLandmarkBuildingsFunds()}}
+{\footnotesize\ttfamily double Finance\+Department\+::delegate\+Request\+For\+Allocation\+Of\+Landmark\+Buildings\+Funds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Delegates the request for allocation of funds for landmark buildings (synonymous with recreation) 
+
+\begin{DoxyReturn}{Returns}
+The amount of funds allocated 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFinanceDepartment_a28d09fe347e09fe37ee460f6cfc72eec}\label{classFinanceDepartment_a28d09fe347e09fe37ee460f6cfc72eec}} 
+\index{FinanceDepartment@{FinanceDepartment}!delegateRequestForAllocationOfPublicServiceBuildingsFunds@{delegateRequestForAllocationOfPublicServiceBuildingsFunds}}
+\index{delegateRequestForAllocationOfPublicServiceBuildingsFunds@{delegateRequestForAllocationOfPublicServiceBuildingsFunds}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{delegateRequestForAllocationOfPublicServiceBuildingsFunds()}{delegateRequestForAllocationOfPublicServiceBuildingsFunds()}}
+{\footnotesize\ttfamily double Finance\+Department\+::delegate\+Request\+For\+Allocation\+Of\+Public\+Service\+Buildings\+Funds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Delegates the request for allocation of funds for public service buildings. 
+
+\begin{DoxyReturn}{Returns}
+The amount of funds allocated 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFinanceDepartment_a42d5278160589be6772abf7493c6700c}\label{classFinanceDepartment_a42d5278160589be6772abf7493c6700c}} 
+\index{FinanceDepartment@{FinanceDepartment}!delegateRequestForAllocationOfTransportInfrastructureFunds@{delegateRequestForAllocationOfTransportInfrastructureFunds}}
+\index{delegateRequestForAllocationOfTransportInfrastructureFunds@{delegateRequestForAllocationOfTransportInfrastructureFunds}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{delegateRequestForAllocationOfTransportInfrastructureFunds()}{delegateRequestForAllocationOfTransportInfrastructureFunds()}}
+{\footnotesize\ttfamily double Finance\+Department\+::delegate\+Request\+For\+Allocation\+Of\+Transport\+Infrastructure\+Funds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Delegates the request for allocation of funds for transport infrastructure. 
+
+\begin{DoxyReturn}{Returns}
+The amount of funds allocated 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFinanceDepartment_a68c8c38897f69ab694e4a4ecf512953a}\label{classFinanceDepartment_a68c8c38897f69ab694e4a4ecf512953a}} 
+\index{FinanceDepartment@{FinanceDepartment}!delegateRequestForAllocationOfUtilitiesFunds@{delegateRequestForAllocationOfUtilitiesFunds}}
+\index{delegateRequestForAllocationOfUtilitiesFunds@{delegateRequestForAllocationOfUtilitiesFunds}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{delegateRequestForAllocationOfUtilitiesFunds()}{delegateRequestForAllocationOfUtilitiesFunds()}}
+{\footnotesize\ttfamily double Finance\+Department\+::delegate\+Request\+For\+Allocation\+Of\+Utilities\+Funds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Delegates the request for allocation of funds for utilities. 
+
+\begin{DoxyReturn}{Returns}
+The amount of funds allocated 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFinanceDepartment_afdd6132919201f95f00488d7667f4c34}\label{classFinanceDepartment_afdd6132919201f95f00488d7667f4c34}} 
+\index{FinanceDepartment@{FinanceDepartment}!delegateRequestForCollectionOfBusinessTax@{delegateRequestForCollectionOfBusinessTax}}
+\index{delegateRequestForCollectionOfBusinessTax@{delegateRequestForCollectionOfBusinessTax}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{delegateRequestForCollectionOfBusinessTax()}{delegateRequestForCollectionOfBusinessTax()}}
+{\footnotesize\ttfamily double Finance\+Department\+::delegate\+Request\+For\+Collection\+Of\+Business\+Tax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Delegates the request for collection of business tax. 
+
+\begin{DoxyReturn}{Returns}
+The total business tax collected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFinanceDepartment_a8ac998b8b16c2f4702a87026d71b509c}\label{classFinanceDepartment_a8ac998b8b16c2f4702a87026d71b509c}} 
+\index{FinanceDepartment@{FinanceDepartment}!delegateRequestForCollectionOffIncomeTax@{delegateRequestForCollectionOffIncomeTax}}
+\index{delegateRequestForCollectionOffIncomeTax@{delegateRequestForCollectionOffIncomeTax}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{delegateRequestForCollectionOffIncomeTax()}{delegateRequestForCollectionOffIncomeTax()}}
+{\footnotesize\ttfamily double Finance\+Department\+::delegate\+Request\+For\+Collection\+Off\+Income\+Tax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Delegates the request for collection of income tax. 
+
+\begin{DoxyReturn}{Returns}
+The total income tax collected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFinanceDepartment_a6b91c32dfff3d045fcb7d77a9ba80dbb}\label{classFinanceDepartment_a6b91c32dfff3d045fcb7d77a9ba80dbb}} 
+\index{FinanceDepartment@{FinanceDepartment}!delegateRequestForCollectionOffPropertyTax@{delegateRequestForCollectionOffPropertyTax}}
+\index{delegateRequestForCollectionOffPropertyTax@{delegateRequestForCollectionOffPropertyTax}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{delegateRequestForCollectionOffPropertyTax()}{delegateRequestForCollectionOffPropertyTax()}}
+{\footnotesize\ttfamily double Finance\+Department\+::delegate\+Request\+For\+Collection\+Off\+Property\+Tax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Delegates the request for collection of property tax. 
+
+\begin{DoxyReturn}{Returns}
+The total property tax collected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFinanceDepartment_a121e817acdb25f91f0f33cbcc04cafb6}\label{classFinanceDepartment_a121e817acdb25f91f0f33cbcc04cafb6}} 
+\index{FinanceDepartment@{FinanceDepartment}!delegateRequestForCollectionOfSalesTax@{delegateRequestForCollectionOfSalesTax}}
+\index{delegateRequestForCollectionOfSalesTax@{delegateRequestForCollectionOfSalesTax}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{delegateRequestForCollectionOfSalesTax()}{delegateRequestForCollectionOfSalesTax()}}
+{\footnotesize\ttfamily double Finance\+Department\+::delegate\+Request\+For\+Collection\+Of\+Sales\+Tax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Delegates the request for collection of sales tax. 
+
+\begin{DoxyReturn}{Returns}
+The total sales tax collected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFinanceDepartment_af2ea5238f8099bc20b85a23afd776b15}\label{classFinanceDepartment_af2ea5238f8099bc20b85a23afd776b15}} 
+\index{FinanceDepartment@{FinanceDepartment}!getAvailableFunds@{getAvailableFunds}}
+\index{getAvailableFunds@{getAvailableFunds}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{getAvailableFunds()}{getAvailableFunds()}}
+{\footnotesize\ttfamily double Finance\+Department\+::get\+Available\+Funds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the available funds. 
+
+\begin{DoxyReturn}{Returns}
+The current available funds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFinanceDepartment_a87d1a1ae340beb1a1b432b3f953e8350}\label{classFinanceDepartment_a87d1a1ae340beb1a1b432b3f953e8350}} 
+\index{FinanceDepartment@{FinanceDepartment}!getCommercialBusinessTaxRate@{getCommercialBusinessTaxRate}}
+\index{getCommercialBusinessTaxRate@{getCommercialBusinessTaxRate}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{getCommercialBusinessTaxRate()}{getCommercialBusinessTaxRate()}}
+{\footnotesize\ttfamily double Finance\+Department\+::get\+Commercial\+Business\+Tax\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the commercial business tax rate. 
+
+\begin{DoxyReturn}{Returns}
+The current commercial business tax rate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFinanceDepartment_accd27a568e62f4d963f73f5ed4e3d1e6}\label{classFinanceDepartment_accd27a568e62f4d963f73f5ed4e3d1e6}} 
+\index{FinanceDepartment@{FinanceDepartment}!getCommercialSalesTaxRate@{getCommercialSalesTaxRate}}
+\index{getCommercialSalesTaxRate@{getCommercialSalesTaxRate}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{getCommercialSalesTaxRate()}{getCommercialSalesTaxRate()}}
+{\footnotesize\ttfamily double Finance\+Department\+::get\+Commercial\+Sales\+Tax\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the commercial sales tax rate. 
+
+\begin{DoxyReturn}{Returns}
+The current commercial sales tax rate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFinanceDepartment_a35f626c660c396e0b9206e8d55a79fa1}\label{classFinanceDepartment_a35f626c660c396e0b9206e8d55a79fa1}} 
+\index{FinanceDepartment@{FinanceDepartment}!getResidentialIncomeTaxRate@{getResidentialIncomeTaxRate}}
+\index{getResidentialIncomeTaxRate@{getResidentialIncomeTaxRate}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{getResidentialIncomeTaxRate()}{getResidentialIncomeTaxRate()}}
+{\footnotesize\ttfamily double Finance\+Department\+::get\+Residential\+Income\+Tax\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the residential income tax rate. 
+
+\begin{DoxyReturn}{Returns}
+The current residential income tax rate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFinanceDepartment_a2e2939cbe5b4261d0ffb0db6a43bb456}\label{classFinanceDepartment_a2e2939cbe5b4261d0ffb0db6a43bb456}} 
+\index{FinanceDepartment@{FinanceDepartment}!getResidentialPropertyTaxRate@{getResidentialPropertyTaxRate}}
+\index{getResidentialPropertyTaxRate@{getResidentialPropertyTaxRate}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{getResidentialPropertyTaxRate()}{getResidentialPropertyTaxRate()}}
+{\footnotesize\ttfamily double Finance\+Department\+::get\+Residential\+Property\+Tax\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the residential property tax rate. 
+
+\begin{DoxyReturn}{Returns}
+The current residential property tax rate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFinanceDepartment_a01ce6eee00d82e55b95bc4e5ae4f7240}\label{classFinanceDepartment_a01ce6eee00d82e55b95bc4e5ae4f7240}} 
+\index{FinanceDepartment@{FinanceDepartment}!setAvailableFunds@{setAvailableFunds}}
+\index{setAvailableFunds@{setAvailableFunds}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{setAvailableFunds()}{setAvailableFunds()}}
+{\footnotesize\ttfamily void Finance\+Department\+::set\+Available\+Funds (\begin{DoxyParamCaption}\item[{double}]{total\+Revenue }\end{DoxyParamCaption})}
+
+
+
+Sets the available funds for the finance department. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em total\+Revenue} & The total revenue collected \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFinanceDepartment_a9975ab6cc5c10e8d3bf671f6f8330218}\label{classFinanceDepartment_a9975ab6cc5c10e8d3bf671f6f8330218}} 
+\index{FinanceDepartment@{FinanceDepartment}!setCommercialBusinessTaxRate@{setCommercialBusinessTaxRate}}
+\index{setCommercialBusinessTaxRate@{setCommercialBusinessTaxRate}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{setCommercialBusinessTaxRate()}{setCommercialBusinessTaxRate()}}
+{\footnotesize\ttfamily void Finance\+Department\+::set\+Commercial\+Business\+Tax\+Rate (\begin{DoxyParamCaption}\item[{double}]{business\+Tax\+Rate }\end{DoxyParamCaption})}
+
+
+
+Sets the commercial business tax rate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em business\+Tax\+Rate} & The new business tax rate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFinanceDepartment_a884ad41f8e62c3e4ab42591c93332212}\label{classFinanceDepartment_a884ad41f8e62c3e4ab42591c93332212}} 
+\index{FinanceDepartment@{FinanceDepartment}!setCommercialSalesTaxRate@{setCommercialSalesTaxRate}}
+\index{setCommercialSalesTaxRate@{setCommercialSalesTaxRate}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{setCommercialSalesTaxRate()}{setCommercialSalesTaxRate()}}
+{\footnotesize\ttfamily void Finance\+Department\+::set\+Commercial\+Sales\+Tax\+Rate (\begin{DoxyParamCaption}\item[{double}]{sales\+Tax\+Rate }\end{DoxyParamCaption})}
+
+
+
+Sets the commercial sales tax rate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sales\+Tax\+Rate} & The new sales tax rate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFinanceDepartment_ad22f9b22ab034bd4592c760faae9ef1a}\label{classFinanceDepartment_ad22f9b22ab034bd4592c760faae9ef1a}} 
+\index{FinanceDepartment@{FinanceDepartment}!setResidentialIncomeTaxRate@{setResidentialIncomeTaxRate}}
+\index{setResidentialIncomeTaxRate@{setResidentialIncomeTaxRate}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{setResidentialIncomeTaxRate()}{setResidentialIncomeTaxRate()}}
+{\footnotesize\ttfamily void Finance\+Department\+::set\+Residential\+Income\+Tax\+Rate (\begin{DoxyParamCaption}\item[{double}]{income\+Tax\+Rate }\end{DoxyParamCaption})}
+
+
+
+Sets the residential income tax rate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em income\+Tax\+Rate} & The new income tax rate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFinanceDepartment_a1a1274b5ca5921202b3f2ee6f29fb135}\label{classFinanceDepartment_a1a1274b5ca5921202b3f2ee6f29fb135}} 
+\index{FinanceDepartment@{FinanceDepartment}!setResidentialPropertyTaxRate@{setResidentialPropertyTaxRate}}
+\index{setResidentialPropertyTaxRate@{setResidentialPropertyTaxRate}!FinanceDepartment@{FinanceDepartment}}
+\doxysubsubsection{\texorpdfstring{setResidentialPropertyTaxRate()}{setResidentialPropertyTaxRate()}}
+{\footnotesize\ttfamily void Finance\+Department\+::set\+Residential\+Property\+Tax\+Rate (\begin{DoxyParamCaption}\item[{double}]{property\+Tax\+Rate }\end{DoxyParamCaption})}
+
+
+
+Sets the residential property tax rate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+Tax\+Rate} & The new property tax rate \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{FinanceDepartment_8h}{Finance\+Department.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Finance\+Department.\+cpp\end{DoxyCompactItemize}

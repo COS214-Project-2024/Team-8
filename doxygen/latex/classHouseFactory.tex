@@ -1,0 +1,71 @@
+\hypertarget{classHouseFactory}{}\doxysection{House\+Factory Class Reference}
+\label{classHouseFactory}\index{HouseFactory@{HouseFactory}}
+
+
+A factory class for creating house buildings.  
+
+
+
+
+{\ttfamily \#include $<$House\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for House\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for House\+Factory\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classHouseFactory_abf0c32547edfbd56d56d8d8a26b90313}{create\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new house building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classHouseFactory_aca494bf32509395563398ac8a98573cd}{buildings}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A factory class for creating house buildings. 
+
+This class inherits from \mbox{\hyperlink{classResidentialFactory}{Residential\+Factory}} and provides a method for creating house building objects. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHouseFactory_abf0c32547edfbd56d56d8d8a26b90313}\label{classHouseFactory_abf0c32547edfbd56d56d8d8a26b90313}} 
+\index{HouseFactory@{HouseFactory}!createBuilding@{createBuilding}}
+\index{createBuilding@{createBuilding}!HouseFactory@{HouseFactory}}
+\doxysubsubsection{\texorpdfstring{createBuilding()}{createBuilding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ House\+Factory\+::create\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a new house building. 
+
+This function creates and returns a pointer to a new house \mbox{\hyperlink{classBuildings}{Buildings}} object.
+
+\begin{DoxyReturn}{Returns}
+A pointer to a newly created house \mbox{\hyperlink{classBuildings}{Buildings}} object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialFactory_af98fef03d68b3ccda81dcd27e922d680}{Residential\+Factory}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHouseFactory_aca494bf32509395563398ac8a98573cd}\label{classHouseFactory_aca494bf32509395563398ac8a98573cd}} 
+\index{HouseFactory@{HouseFactory}!buildings@{buildings}}
+\index{buildings@{buildings}!HouseFactory@{HouseFactory}}
+\doxysubsubsection{\texorpdfstring{buildings}{buildings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}}$\ast$ House\+Factory\+::buildings}
+
+Pointer to a \mbox{\hyperlink{classBuildings}{Buildings}} object, representing the house building instance managed by the factory. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{HouseFactory_8h}{House\+Factory.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/House\+Factory.\+cpp\end{DoxyCompactItemize}

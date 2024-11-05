@@ -1,0 +1,79 @@
+\hypertarget{classwasteManagementResource}{}\doxysection{waste\+Management\+Resource Class Reference}
+\label{classwasteManagementResource}\index{wasteManagementResource@{wasteManagementResource}}
+
+
+Inheritance diagram for waste\+Management\+Resource\+:
+% FIG 0
+
+
+Collaboration diagram for waste\+Management\+Resource\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classwasteManagementResource_a712071fbb7abc0addb0af8e9374c19db}\label{classwasteManagementResource_a712071fbb7abc0addb0af8e9374c19db}} 
+\mbox{\hyperlink{classwasteManagementResource_a712071fbb7abc0addb0af8e9374c19db}{waste\+Management\+Resource}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new power Resource\+::power Resource object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classwasteManagementResource_ab9cd360d75a841d8d824a440f99fa830}{give\+Resource}} (float units) override
+\begin{DoxyCompactList}\small\item\em Return true if the requested units of waste cleaning can be supplied and subtract the available resource, otherwise return false if it can not be supplied. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classwasteManagementResource_ad7af92147bf263ed6c03b3a2b0dbc811}{receive\+Resource}} () override
+\begin{DoxyCompactList}\small\item\em Get waste cleaning capabilities from waste Management, increase the available capabilities for waste cleaning by the amount received from said waste Management. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classwasteManagementResource_a9020e05760e272dcc575f5e99cb0406a}{get\+Available\+Amount}} () override
+\begin{DoxyCompactList}\small\item\em Get the available amount of waste cleaning resources available. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classwasteManagementResource_a9020e05760e272dcc575f5e99cb0406a}\label{classwasteManagementResource_a9020e05760e272dcc575f5e99cb0406a}} 
+\index{wasteManagementResource@{wasteManagementResource}!getAvailableAmount@{getAvailableAmount}}
+\index{getAvailableAmount@{getAvailableAmount}!wasteManagementResource@{wasteManagementResource}}
+\doxysubsubsection{\texorpdfstring{getAvailableAmount()}{getAvailableAmount()}}
+{\footnotesize\ttfamily float waste\+Management\+Resource\+::get\+Available\+Amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Get the available amount of waste cleaning resources available. 
+
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwasteManagementResource_ab9cd360d75a841d8d824a440f99fa830}\label{classwasteManagementResource_ab9cd360d75a841d8d824a440f99fa830}} 
+\index{wasteManagementResource@{wasteManagementResource}!giveResource@{giveResource}}
+\index{giveResource@{giveResource}!wasteManagementResource@{wasteManagementResource}}
+\doxysubsubsection{\texorpdfstring{giveResource()}{giveResource()}}
+{\footnotesize\ttfamily bool waste\+Management\+Resource\+::give\+Resource (\begin{DoxyParamCaption}\item[{float}]{units }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Return true if the requested units of waste cleaning can be supplied and subtract the available resource, otherwise return false if it can not be supplied. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em units} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwasteManagementResource_ad7af92147bf263ed6c03b3a2b0dbc811}\label{classwasteManagementResource_ad7af92147bf263ed6c03b3a2b0dbc811}} 
+\index{wasteManagementResource@{wasteManagementResource}!receiveResource@{receiveResource}}
+\index{receiveResource@{receiveResource}!wasteManagementResource@{wasteManagementResource}}
+\doxysubsubsection{\texorpdfstring{receiveResource()}{receiveResource()}}
+{\footnotesize\ttfamily void waste\+Management\+Resource\+::receive\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Get waste cleaning capabilities from waste Management, increase the available capabilities for waste cleaning by the amount received from said waste Management. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em units} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/waste\+Management\+Resource.\+h\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/waste\+Management\+Resource.\+cpp\end{DoxyCompactItemize}

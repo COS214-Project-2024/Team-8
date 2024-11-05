@@ -1,0 +1,96 @@
+\hypertarget{classPolicies}{}\doxysection{Policies Class Reference}
+\label{classPolicies}\index{Policies@{Policies}}
+
+
+Abstract base class for policy commands.  
+
+
+
+
+{\ttfamily \#include $<$Policies.\+h$>$}
+
+
+
+Inheritance diagram for Policies\+:
+% FIG 0
+
+
+Collaboration diagram for Policies\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPolicies_a28eefe9839704a54b83c508d9f9d07dd}{Policies}} (\mbox{\hyperlink{classGovernment}{Government}} $\ast$govt)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classPolicies}{Policies}} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPolicies_a700b4645c03eb16767a67a98953fd64f}{execute\+Policy}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function for policy execution logic. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPolicies_a4c5ed3d962bebd23141d4f1714be94fc}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Implementation of \mbox{\hyperlink{classCommand}{Command}} pattern\textquotesingle{}s execute method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPolicies_aa46b712a7a7e830eaccde7e6ce52a1ee}\label{classPolicies_aa46b712a7a7e830eaccde7e6ce52a1ee}} 
+virtual \mbox{\hyperlink{classPolicies_aa46b712a7a7e830eaccde7e6ce52a1ee}{$\sim$\+Policies}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPolicies_a2444bba6849f79b85bee359bf2bab8f8}\label{classPolicies_a2444bba6849f79b85bee359bf2bab8f8}} 
+\mbox{\hyperlink{classGovernment}{Government}} $\ast$ \mbox{\hyperlink{classPolicies_a2444bba6849f79b85bee359bf2bab8f8}{government}}
+\begin{DoxyCompactList}\small\item\em Pointer to the government (Invoker) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for policy commands. 
+
+This class serves as the Concrete\+Command in the \mbox{\hyperlink{classCommand}{Command}} pattern, providing a base interface for different types of government policies. Each policy type inherits from this class and implements its specific execution logic. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPolicies_a28eefe9839704a54b83c508d9f9d07dd}\label{classPolicies_a28eefe9839704a54b83c508d9f9d07dd}} 
+\index{Policies@{Policies}!Policies@{Policies}}
+\index{Policies@{Policies}!Policies@{Policies}}
+\doxysubsubsection{\texorpdfstring{Policies()}{Policies()}}
+{\footnotesize\ttfamily Policies\+::\+Policies (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGovernment}{Government}} $\ast$}]{govt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Construct a new \mbox{\hyperlink{classPolicies}{Policies}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em govt} & Pointer to the government that will execute the policies \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPolicies_a4c5ed3d962bebd23141d4f1714be94fc}\label{classPolicies_a4c5ed3d962bebd23141d4f1714be94fc}} 
+\index{Policies@{Policies}!execute@{execute}}
+\index{execute@{execute}!Policies@{Policies}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Policies\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implementation of \mbox{\hyperlink{classCommand}{Command}} pattern\textquotesingle{}s execute method. 
+
+Calls the policy-\/specific \mbox{\hyperlink{classPolicies_a700b4645c03eb16767a67a98953fd64f}{execute\+Policy()}} method. 
+
+Implements \mbox{\hyperlink{classCommand}{Command}}.
+
+\mbox{\Hypertarget{classPolicies_a700b4645c03eb16767a67a98953fd64f}\label{classPolicies_a700b4645c03eb16767a67a98953fd64f}} 
+\index{Policies@{Policies}!executePolicy@{executePolicy}}
+\index{executePolicy@{executePolicy}!Policies@{Policies}}
+\doxysubsubsection{\texorpdfstring{executePolicy()}{executePolicy()}}
+{\footnotesize\ttfamily virtual void Policies\+::execute\+Policy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function for policy execution logic. 
+
+This function must be implemented by derived policy classes to define their specific execution behavior. 
+
+Implemented in \mbox{\hyperlink{classPublicServicesPolicies_a7451e849d707aa83f183796868c8f7a8}{Public\+Services\+Policies}}, and \mbox{\hyperlink{classEconomicPolicies_a969b4d01a62a58089d7a998c2685aa2f}{Economic\+Policies}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{Policies_8h}{Policies.\+h}}\end{DoxyCompactItemize}

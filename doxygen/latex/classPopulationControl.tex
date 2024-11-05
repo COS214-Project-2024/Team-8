@@ -1,0 +1,102 @@
+\hypertarget{classPopulationControl}{}\doxysection{Population\+Control Class Reference}
+\label{classPopulationControl}\index{PopulationControl@{PopulationControl}}
+
+
+Class for managing population dynamics in a city.  
+
+
+
+
+{\ttfamily \#include $<$Population\+Control.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPopulationControl_a9cbb47a4eafa75880181bea13a966d6b}\label{classPopulationControl_a9cbb47a4eafa75880181bea13a966d6b}} 
+\mbox{\hyperlink{classPopulationControl_a9cbb47a4eafa75880181bea13a966d6b}{Population\+Control}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classPopulationControl}{Population\+Control}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPopulationControl_aad0a98111a28fb0c88f8e1630e0c7c58}\label{classPopulationControl_aad0a98111a28fb0c88f8e1630e0c7c58}} 
+\mbox{\hyperlink{classPopulationControl_aad0a98111a28fb0c88f8e1630e0c7c58}{$\sim$\+Population\+Control}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classPopulationControl}{Population\+Control}} class, cleans up dynamically allocated buildings. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPopulationControl_a0b75ec3579f92354070dc22f8af7de28}{update\+Population}} (\mbox{\hyperlink{classResidentialBuilding}{Residential\+Building}} $\ast$building)
+\begin{DoxyCompactList}\small\item\em Updates the population based on the building being added. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPopulationControl_a555ccf6e293d46e09d899397045552af}{get\+Total\+Population}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current total population. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPopulationControl_a8f97b92c902501a54bd0f8756ca44387}\label{classPopulationControl_a8f97b92c902501a54bd0f8756ca44387}} 
+void \mbox{\hyperlink{classPopulationControl_a8f97b92c902501a54bd0f8756ca44387}{simulate\+Population\+Growth}} ()
+\begin{DoxyCompactList}\small\item\em Simulates population growth based on hospitals\textquotesingle{} birth rates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPopulationControl_a21352ac64581f9f9bb339413fd1f8ea2}{simulate\+Migration}} (int jobs\+Created)
+\begin{DoxyCompactList}\small\item\em Calculates migration based on commercial buildings\textquotesingle{} job creation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPopulationControl_abe28a7322cdc9074cd22ad6136971a6c}\label{classPopulationControl_abe28a7322cdc9074cd22ad6136971a6c}} 
+void {\bfseries increase\+Population} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPopulationControl_ad02435e5816a9905fa85b7f8f4f1d0e3}\label{classPopulationControl_ad02435e5816a9905fa85b7f8f4f1d0e3}} 
+int \mbox{\hyperlink{classPopulationControl_ad02435e5816a9905fa85b7f8f4f1d0e3}{total\+Population}}
+\begin{DoxyCompactList}\small\item\em Current total population. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPopulationControl_a6042d94cf077dae8be734cefd5afd9fd}\label{classPopulationControl_a6042d94cf077dae8be734cefd5afd9fd}} 
+static const int \mbox{\hyperlink{classPopulationControl_a6042d94cf077dae8be734cefd5afd9fd}{MAX\+\_\+\+POPULATION}} = 1000000
+\begin{DoxyCompactList}\small\item\em Maximum allowable population. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPopulationControl_a8d9d3eb15ffe0bd7611881bf27d2aaa1}\label{classPopulationControl_a8d9d3eb15ffe0bd7611881bf27d2aaa1}} 
+static const float {\bfseries MIGRATION\+\_\+\+RATE\+\_\+\+MULTIPLIER} = 0.\+05f
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for managing population dynamics in a city. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPopulationControl_a555ccf6e293d46e09d899397045552af}\label{classPopulationControl_a555ccf6e293d46e09d899397045552af}} 
+\index{PopulationControl@{PopulationControl}!getTotalPopulation@{getTotalPopulation}}
+\index{getTotalPopulation@{getTotalPopulation}!PopulationControl@{PopulationControl}}
+\doxysubsubsection{\texorpdfstring{getTotalPopulation()}{getTotalPopulation()}}
+{\footnotesize\ttfamily int Population\+Control\+::get\+Total\+Population (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the current total population. 
+
+\begin{DoxyReturn}{Returns}
+Current population as an integer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPopulationControl_a21352ac64581f9f9bb339413fd1f8ea2}\label{classPopulationControl_a21352ac64581f9f9bb339413fd1f8ea2}} 
+\index{PopulationControl@{PopulationControl}!simulateMigration@{simulateMigration}}
+\index{simulateMigration@{simulateMigration}!PopulationControl@{PopulationControl}}
+\doxysubsubsection{\texorpdfstring{simulateMigration()}{simulateMigration()}}
+{\footnotesize\ttfamily void Population\+Control\+::simulate\+Migration (\begin{DoxyParamCaption}\item[{int}]{jobs\+Created }\end{DoxyParamCaption})}
+
+
+
+Calculates migration based on commercial buildings\textquotesingle{} job creation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jobs\+Created} & The number of jobs created by new commercial buildings. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPopulationControl_a0b75ec3579f92354070dc22f8af7de28}\label{classPopulationControl_a0b75ec3579f92354070dc22f8af7de28}} 
+\index{PopulationControl@{PopulationControl}!updatePopulation@{updatePopulation}}
+\index{updatePopulation@{updatePopulation}!PopulationControl@{PopulationControl}}
+\doxysubsubsection{\texorpdfstring{updatePopulation()}{updatePopulation()}}
+{\footnotesize\ttfamily void Population\+Control\+::update\+Population (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classResidentialBuilding}{Residential\+Building}} $\ast$}]{building }\end{DoxyParamCaption})}
+
+
+
+Updates the population based on the building being added. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & Pointer to the building being added. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Population\+Control.\+h\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Population\+Control.\+cpp\end{DoxyCompactItemize}

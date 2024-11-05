@@ -1,0 +1,252 @@
+\hypertarget{classWaterSupply}{}\doxysection{Water\+Supply Class Reference}
+\label{classWaterSupply}\index{WaterSupply@{WaterSupply}}
+
+
+Inheritance diagram for Water\+Supply\+:
+% FIG 0
+
+
+Collaboration diagram for Water\+Supply\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWaterSupply_aaefc256bc47f1fa477b69a6a52a19063}{Water\+Supply}} (float cur\+Supply)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWaterSupply_a47b5e13660622578bcee6bd178b52ad9}\label{classWaterSupply_a47b5e13660622578bcee6bd178b52ad9}} 
+void {\bfseries add\+Command} (\mbox{\hyperlink{classCommand}{Command}} $\ast$com)
+\item 
+std\+::string \mbox{\hyperlink{classWaterSupply_a011141b9936a59e54da24e75b0939b23}{get\+Status}} ()
+\begin{DoxyCompactList}\small\item\em returns the status of the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaterSupply_ac1da1e246d6fafda8da477822083b92f}{repair\+Utility}} ()
+\begin{DoxyCompactList}\small\item\em Repairs the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaterSupply_a164cb73bad6a0e7ac5033b87d345f313}{pause\+Operation}} ()
+\begin{DoxyCompactList}\small\item\em Pauses the operation of the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaterSupply_aeb5ba606ff598b1c920263ed995ff726}{execute\+Operation}} ()
+\begin{DoxyCompactList}\small\item\em Executes the operation of the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaterSupply_a4b6b582224a7a939301b0b3d23e34e3c}{set\+Max\+Gallons}} (float max)
+\begin{DoxyCompactList}\small\item\em Sets the max gallons of the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classWaterSupply_ac6adc6685cbaa9d25d73168659dc166c}{get\+Output}} ()
+\begin{DoxyCompactList}\small\item\em Gets the output of the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaterSupply_a191a2a76a909253c82d6aee54f5bd827}{undo\+Change}} ()
+\begin{DoxyCompactList}\small\item\em Undoes the last change to the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUtility}{Utility}} $\ast$ \mbox{\hyperlink{classWaterSupply_a64c5ba72d02bd615548f5335f5253831}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Clones the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classWaterSupply_aed83df44db415900a94c03e4b4a84d5b}{get\+Utility\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get the utility type of the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaterSupply_a30f1224f871132916a61cfbb316295d9}{add\+Building}} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$building)
+\begin{DoxyCompactList}\small\item\em Add a building to the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classWaterSupply_a45241d103ac35cfc769174c7bef16d09}{get\+Water}} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$sender)
+\begin{DoxyCompactList}\small\item\em Get water from the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWaterSupply_aaefc256bc47f1fa477b69a6a52a19063}\label{classWaterSupply_aaefc256bc47f1fa477b69a6a52a19063}} 
+\index{WaterSupply@{WaterSupply}!WaterSupply@{WaterSupply}}
+\index{WaterSupply@{WaterSupply}!WaterSupply@{WaterSupply}}
+\doxysubsubsection{\texorpdfstring{WaterSupply()}{WaterSupply()}}
+{\footnotesize\ttfamily Water\+Supply\+::\+Water\+Supply (\begin{DoxyParamCaption}\item[{float}]{cur\+Supply }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cur\+Supply} & The current supply of the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWaterSupply_a30f1224f871132916a61cfbb316295d9}\label{classWaterSupply_a30f1224f871132916a61cfbb316295d9}} 
+\index{WaterSupply@{WaterSupply}!addBuilding@{addBuilding}}
+\index{addBuilding@{addBuilding}!WaterSupply@{WaterSupply}}
+\doxysubsubsection{\texorpdfstring{addBuilding()}{addBuilding()}}
+{\footnotesize\ttfamily void Water\+Supply\+::add\+Building (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$}]{building }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Add a building to the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & The building to add to the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classUtility_a4ea6047493c471b470e4c392aa8c801b}{Utility}}.
+
+\mbox{\Hypertarget{classWaterSupply_a64c5ba72d02bd615548f5335f5253831}\label{classWaterSupply_a64c5ba72d02bd615548f5335f5253831}} 
+\index{WaterSupply@{WaterSupply}!clone@{clone}}
+\index{clone@{clone}!WaterSupply@{WaterSupply}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUtility}{Utility}} $\ast$ Water\+Supply\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Clones the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. 
+
+\begin{DoxyReturn}{Returns}
+Utility$\ast$ The cloned \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+\mbox{\Hypertarget{classWaterSupply_aeb5ba606ff598b1c920263ed995ff726}\label{classWaterSupply_aeb5ba606ff598b1c920263ed995ff726}} 
+\index{WaterSupply@{WaterSupply}!executeOperation@{executeOperation}}
+\index{executeOperation@{executeOperation}!WaterSupply@{WaterSupply}}
+\doxysubsubsection{\texorpdfstring{executeOperation()}{executeOperation()}}
+{\footnotesize\ttfamily void Water\+Supply\+::execute\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Executes the operation of the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. 
+
+Sets the status to operational 
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+\mbox{\Hypertarget{classWaterSupply_ac6adc6685cbaa9d25d73168659dc166c}\label{classWaterSupply_ac6adc6685cbaa9d25d73168659dc166c}} 
+\index{WaterSupply@{WaterSupply}!getOutput@{getOutput}}
+\index{getOutput@{getOutput}!WaterSupply@{WaterSupply}}
+\doxysubsubsection{\texorpdfstring{getOutput()}{getOutput()}}
+{\footnotesize\ttfamily float Water\+Supply\+::get\+Output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the output of the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. 
+
+\begin{DoxyReturn}{Returns}
+float The output of the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classUtility_a40b833bd8494fcddeb667a4705635b5f}{Utility}}.
+
+\mbox{\Hypertarget{classWaterSupply_a011141b9936a59e54da24e75b0939b23}\label{classWaterSupply_a011141b9936a59e54da24e75b0939b23}} 
+\index{WaterSupply@{WaterSupply}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!WaterSupply@{WaterSupply}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily std\+::string Water\+Supply\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns the status of the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} 
+
+\begin{DoxyReturn}{Returns}
+std\+::string The status of the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+\mbox{\Hypertarget{classWaterSupply_aed83df44db415900a94c03e4b4a84d5b}\label{classWaterSupply_aed83df44db415900a94c03e4b4a84d5b}} 
+\index{WaterSupply@{WaterSupply}!getUtilityType@{getUtilityType}}
+\index{getUtilityType@{getUtilityType}!WaterSupply@{WaterSupply}}
+\doxysubsubsection{\texorpdfstring{getUtilityType()}{getUtilityType()}}
+{\footnotesize\ttfamily std\+::string Water\+Supply\+::get\+Utility\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the utility type of the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string The utility type of the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+\mbox{\Hypertarget{classWaterSupply_a45241d103ac35cfc769174c7bef16d09}\label{classWaterSupply_a45241d103ac35cfc769174c7bef16d09}} 
+\index{WaterSupply@{WaterSupply}!getWater@{getWater}}
+\index{getWater@{getWater}!WaterSupply@{WaterSupply}}
+\doxysubsubsection{\texorpdfstring{getWater()}{getWater()}}
+{\footnotesize\ttfamily bool Water\+Supply\+::get\+Water (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$}]{sender }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get water from the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The building requesting water\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if water was sent, false otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classUtility_a9df345da6df3d01c77fe330c90b39311}{Utility}}.
+
+\mbox{\Hypertarget{classWaterSupply_a164cb73bad6a0e7ac5033b87d345f313}\label{classWaterSupply_a164cb73bad6a0e7ac5033b87d345f313}} 
+\index{WaterSupply@{WaterSupply}!pauseOperation@{pauseOperation}}
+\index{pauseOperation@{pauseOperation}!WaterSupply@{WaterSupply}}
+\doxysubsubsection{\texorpdfstring{pauseOperation()}{pauseOperation()}}
+{\footnotesize\ttfamily void Water\+Supply\+::pause\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Pauses the operation of the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. 
+
+Sets the status to paused 
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+\mbox{\Hypertarget{classWaterSupply_ac1da1e246d6fafda8da477822083b92f}\label{classWaterSupply_ac1da1e246d6fafda8da477822083b92f}} 
+\index{WaterSupply@{WaterSupply}!repairUtility@{repairUtility}}
+\index{repairUtility@{repairUtility}!WaterSupply@{WaterSupply}}
+\doxysubsubsection{\texorpdfstring{repairUtility()}{repairUtility()}}
+{\footnotesize\ttfamily void Water\+Supply\+::repair\+Utility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Repairs the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. 
+
+Repairs the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} Also sets the status to operational 
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+\mbox{\Hypertarget{classWaterSupply_a4b6b582224a7a939301b0b3d23e34e3c}\label{classWaterSupply_a4b6b582224a7a939301b0b3d23e34e3c}} 
+\index{WaterSupply@{WaterSupply}!setMaxGallons@{setMaxGallons}}
+\index{setMaxGallons@{setMaxGallons}!WaterSupply@{WaterSupply}}
+\doxysubsubsection{\texorpdfstring{setMaxGallons()}{setMaxGallons()}}
+{\footnotesize\ttfamily void Water\+Supply\+::set\+Max\+Gallons (\begin{DoxyParamCaption}\item[{float}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the max gallons of the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & The max gallons of the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classUtility_ab705aff598d1b89f04d9a31c47456cac}{Utility}}.
+
+\mbox{\Hypertarget{classWaterSupply_a191a2a76a909253c82d6aee54f5bd827}\label{classWaterSupply_a191a2a76a909253c82d6aee54f5bd827}} 
+\index{WaterSupply@{WaterSupply}!undoChange@{undoChange}}
+\index{undoChange@{undoChange}!WaterSupply@{WaterSupply}}
+\doxysubsubsection{\texorpdfstring{undoChange()}{undoChange()}}
+{\footnotesize\ttfamily void Water\+Supply\+::undo\+Change (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Undoes the last change to the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}}. 
+
+Undoes the last change to the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} Also sets the status to paused 
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{WaterSupply_8h}{Water\+Supply.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Water\+Supply.\+cpp\end{DoxyCompactItemize}

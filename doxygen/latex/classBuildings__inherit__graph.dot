@@ -1,0 +1,48 @@
+digraph "Buildings"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Buildings",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Abstract base class representing a building with basic utilities and resource requirements."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="CommercialBuilding",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCommercialBuilding.html",tooltip="Represents a commercial building with specific business-related attributes."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Mall",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMall.html",tooltip="Represents a mall, inheriting from CommercialBuilding."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Office",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOffice.html",tooltip="Represents an office building, inheriting from the CommercialBuilding class."];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Shop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classShop.html",tooltip="Class representing a shop, inheriting from CommercialBuilding."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="IndustrialBuilding",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classIndustrialBuilding.html",tooltip="Represents an industrial building, inheriting from Buildings."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Factories",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFactories.html",tooltip="Represents an industrial building that functions as a factory, inheriting from IndustrialBuilding."];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="PowerPlant",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPowerPlant.html",tooltip="Class representing a power plant, inheriting from IndustrialBuilding."];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Warehouse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classWarehouse.html",tooltip="Represents a warehouse building, inheriting from IndustrialBuilding."];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="LandmarkBuilding",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLandmarkBuilding.html",tooltip="Represents a landmark building, inheriting from Buildings."];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="CulturalCenter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCulturalCenter.html",tooltip="Represents a cultural center building, inheriting from LandmarkBuilding."];
+  Node10 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Monument",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMonument.html",tooltip="Represents a monument, inheriting from LandmarkBuilding."];
+  Node10 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Park",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPark.html",tooltip="Represents a park as a type of landmark building."];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="PublicServiceBuilding",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPublicServiceBuilding.html",tooltip="Abstract class representing a public service building, inheriting from Buildings."];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="MedicalCenter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMedicalCenter.html",tooltip="Represents a medical center, inheriting from PublicServiceBuilding."];
+  Node14 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="PoliceStation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoliceStation.html",tooltip="Represents a police station as a type of public service building."];
+  Node14 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="School",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSchool.html",tooltip="Class representing a school, inheriting from PublicServiceBuilding."];
+  Node1 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="ResidentialBuilding",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classResidentialBuilding.html",tooltip="Abstract class representing a residential building, inheriting from Buildings."];
+  Node18 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node19 [label="Apartment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classApartment.html",tooltip="Represents an apartment building that inherits from ResidentialBuilding."];
+  Node18 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node20 [label="House",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHouse.html",tooltip="Represents a house, inheriting from ResidentialBuilding."];
+  Node18 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node21 [label="TownHouse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTownHouse.html",tooltip="Represents a townhouse, a type of residential building."];
+}

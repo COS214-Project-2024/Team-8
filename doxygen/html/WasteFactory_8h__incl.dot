@@ -1,0 +1,25 @@
+digraph "/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteFactory.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="/home/nev/cos214/Project\l/finalpush/Team-8-Design\l-Wits/System/WasteFactory.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="The header file for the WasteFactory class."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="UtilityFactory.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$UtilityFactory_8h.html",tooltip="The header file for the UtilityFactory class."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Utility.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Utility_8h.html",tooltip="The header file for the Utility class, interface for the utilities."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="iostream",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="thread",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="chrono",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="vector",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="EnergySource.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$EnergySource_8h.html",tooltip="The header file for the EnergySource class."];
+  Node8 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="WasteManagement.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$WasteManagement_8h.html",tooltip="The header file for the WasteManagement class."];
+  Node9 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

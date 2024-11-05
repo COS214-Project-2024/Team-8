@@ -1,0 +1,212 @@
+\hypertarget{classPlane}{}\doxysection{Plane Class Reference}
+\label{classPlane}\index{Plane@{Plane}}
+
+
+Inheritance diagram for Plane\+:
+% FIG 0
+
+
+Collaboration diagram for Plane\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlane_a1bd27f3752b2ef7bb99abe2a56c4d143}{Plane}} (int capacity)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classPlane}{Plane}}\+:\+: \mbox{\hyperlink{classPlane}{Plane}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlane_adcac2f8b24cf80da8ba4f1aaa32b3c74}{set\+Num\+Passenger}} (int pass)
+\begin{DoxyCompactList}\small\item\em Set the Num Passenger object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlane_af486e2e9b094c57dbbeb6956db58dcc8}{set\+Cargo\+Weight}} (float weight)
+\begin{DoxyCompactList}\small\item\em Set the Cargo Weight object. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classPlane_ac93de5fe1bcefa477ad33c5d4f01dcf7}{travel}} (\mbox{\hyperlink{classStops}{Stops}} $\ast$stop, \mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$head, bool best=0)
+\begin{DoxyCompactList}\small\item\em Travels to the stop using the route accessible through the travel manager. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPlane_a0cebc4f04e80ab168fcfbee4069b66e7}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get the Type object(\+Transport type) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlane_ad0df222c4207b7a46e772c58a579d443}{set\+Capacity}} (int capacity)
+\begin{DoxyCompactList}\small\item\em Set the Capacity object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPlane_a7f2b8e19f1d0482d6b6fa5fe7b071c56}{get\+Capacity}} ()
+\begin{DoxyCompactList}\small\item\em Get the Capacity object. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classPlane_ae3fd29c3865ceaefadffbdda4929396f}{get\+Weight}} ()
+\begin{DoxyCompactList}\small\item\em Get the Weight object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPlane_a29ba3ebc182fbd2d9c655024b5d85b57}{get\+Passengers}} ()
+\begin{DoxyCompactList}\small\item\em Get the Passengers object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlane_a1bd27f3752b2ef7bb99abe2a56c4d143}\label{classPlane_a1bd27f3752b2ef7bb99abe2a56c4d143}} 
+\index{Plane@{Plane}!Plane@{Plane}}
+\index{Plane@{Plane}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{Plane()}{Plane()}}
+{\footnotesize\ttfamily Plane\+::\+Plane (\begin{DoxyParamCaption}\item[{int}]{capacity }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classPlane}{Plane}}\+:\+: \mbox{\hyperlink{classPlane}{Plane}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & is the capacity of the plane\\
+\hline
+\end{DoxyParams}
+Set the capacity of the plane and set the passengers to 2(co-\/pilot and pilot)
+
+Don\textquotesingle{}t confuse weight with the weight of the plane, this is the weight of the cargo 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlane_a7f2b8e19f1d0482d6b6fa5fe7b071c56}\label{classPlane_a7f2b8e19f1d0482d6b6fa5fe7b071c56}} 
+\index{Plane@{Plane}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily int Plane\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Capacity object. 
+
+\begin{DoxyReturn}{Returns}
+int the capacity of the plane 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classPlane_a29ba3ebc182fbd2d9c655024b5d85b57}\label{classPlane_a29ba3ebc182fbd2d9c655024b5d85b57}} 
+\index{Plane@{Plane}!getPassengers@{getPassengers}}
+\index{getPassengers@{getPassengers}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{getPassengers()}{getPassengers()}}
+{\footnotesize\ttfamily int Plane\+::get\+Passengers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Passengers object. 
+
+\begin{DoxyReturn}{Returns}
+int the number of passengers 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classPlane_a0cebc4f04e80ab168fcfbee4069b66e7}\label{classPlane_a0cebc4f04e80ab168fcfbee4069b66e7}} 
+\index{Plane@{Plane}!getType@{getType}}
+\index{getType@{getType}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily std\+::string Plane\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Type object(\+Transport type) 
+
+\begin{DoxyReturn}{Returns}
+string the type of the transport 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classPlane_ae3fd29c3865ceaefadffbdda4929396f}\label{classPlane_ae3fd29c3865ceaefadffbdda4929396f}} 
+\index{Plane@{Plane}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{getWeight()}{getWeight()}}
+{\footnotesize\ttfamily float Plane\+::get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Weight object. 
+
+\begin{DoxyReturn}{Returns}
+float the weight of the cargo 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classPlane_ad0df222c4207b7a46e772c58a579d443}\label{classPlane_ad0df222c4207b7a46e772c58a579d443}} 
+\index{Plane@{Plane}!setCapacity@{setCapacity}}
+\index{setCapacity@{setCapacity}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{setCapacity()}{setCapacity()}}
+{\footnotesize\ttfamily void Plane\+::set\+Capacity (\begin{DoxyParamCaption}\item[{int}]{capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the Capacity object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & is the capacity of the plane\\
+\hline
+\end{DoxyParams}
+Sets the capacity of the plane 
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classPlane_af486e2e9b094c57dbbeb6956db58dcc8}\label{classPlane_af486e2e9b094c57dbbeb6956db58dcc8}} 
+\index{Plane@{Plane}!setCargoWeight@{setCargoWeight}}
+\index{setCargoWeight@{setCargoWeight}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{setCargoWeight()}{setCargoWeight()}}
+{\footnotesize\ttfamily void Plane\+::set\+Cargo\+Weight (\begin{DoxyParamCaption}\item[{float}]{weight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the Cargo Weight object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weight} & is the weight of the cargo\\
+\hline
+\end{DoxyParams}
+Sets the weight of the cargo and sets the plane to cargo plane(disabling passenger type) 
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classPlane_adcac2f8b24cf80da8ba4f1aaa32b3c74}\label{classPlane_adcac2f8b24cf80da8ba4f1aaa32b3c74}} 
+\index{Plane@{Plane}!setNumPassenger@{setNumPassenger}}
+\index{setNumPassenger@{setNumPassenger}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{setNumPassenger()}{setNumPassenger()}}
+{\footnotesize\ttfamily void Plane\+::set\+Num\+Passenger (\begin{DoxyParamCaption}\item[{int}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the Num Passenger object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pass} & is the number of passengers\\
+\hline
+\end{DoxyParams}
+Sets the number of passengers and sets the plane to passenger plane(disabling cargo type) Don\textquotesingle{}t confuse weight with the weight of the plane, this is the weight of the cargo 
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classPlane_ac93de5fe1bcefa477ad33c5d4f01dcf7}\label{classPlane_ac93de5fe1bcefa477ad33c5d4f01dcf7}} 
+\index{Plane@{Plane}!travel@{travel}}
+\index{travel@{travel}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{travel()}{travel()}}
+{\footnotesize\ttfamily float Plane\+::travel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStops}{Stops}} $\ast$}]{stop,  }\item[{\mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$}]{head,  }\item[{bool}]{best = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Travels to the stop using the route accessible through the travel manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stop} & is the stop to travel to \\
+\hline
+{\em head} & is the head of the route \\
+\hline
+{\em best} & is the flag to skip symbols \textquotesingle{}T\textquotesingle{} in the route\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float the distance traveled 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{Plane_8h}{Plane.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{Plane_8cpp}{Plane.\+cpp}}\end{DoxyCompactItemize}

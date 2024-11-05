@@ -10,7 +10,7 @@ OBJECTS = TebogosMain.o Citizen.o PopulationControl.o Utility.o WaterSupply.o \
     UnderConstruction.o Operational.o Damaged.o CitizenType.o EmployedCitizen.o \
     PropertyOwner.o BuildingController.o OfficeFactory.o Office.o HouseFactory.o \
     House.o ApartmentFactory.o Apartment.o ShopFactory.o Shop.o MallFactory.o Mall.o \
-    Stops.o TrainStation.o Airpot.o Road.o RouteNode.o BestRouteNode.o AccesibleRoute.o \
+    Stops.o TrainStation.o Airport.o Road.o RouteNode.o BestRouteNode.o AccesibleRoute.o \
     MapIterator.o Transport.o Train.o Vehicle.o Plane.o TransportBuilder.o PlaneBuilder.o \
     TrainBuilder.o VehicleBuilder.o TravelManager.o Government.o FinanceDepartment.o \
     FinanceSector.o UtilitiesSector.o GeneralSector.o Command.o Policies.o \

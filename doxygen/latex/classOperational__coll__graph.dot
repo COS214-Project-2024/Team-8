@@ -1,0 +1,27 @@
+digraph "Operational"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Operational",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Represents the operational state of a building or system."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="State",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classState.html",tooltip="Abstract class representing the state of a building."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" building" ];
+  Node3 [label="Buildings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuildings.html",tooltip="Abstract base class representing a building with basic utilities and resource requirements."];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" listOfCitizens" ];
+  Node4 [label="Citizen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCitizen.html",tooltip="Represents a citizen in the government system."];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="CitizenInterface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCitizenInterface.html",tooltip="An abstract base class that defines the interface for Citizen components."];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" government" ];
+  Node6 [label="Government",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGovernment.html",tooltip="Base class for government sectors implementing Observer pattern for citizen notifications."];
+  Node7 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" popControl" ];
+  Node7 [label="PopulationControl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPopulationControl.html",tooltip="Class for managing population dynamics in a city."];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" government" ];
+  Node8 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tm" ];
+  Node8 [label="TravelManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTravelManager.html",tooltip=" "];
+  Node7 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" popControl" ];
+  Node9 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" resources" ];
+  Node9 [label="Utility",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classUtility.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" state" ];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" building" ];
+}

@@ -1,0 +1,129 @@
+\hypertarget{classVehicleBuilder}{}\doxysection{Vehicle\+Builder Class Reference}
+\label{classVehicleBuilder}\index{VehicleBuilder@{VehicleBuilder}}
+
+
+Inheritance diagram for Vehicle\+Builder\+:
+% FIG 0
+
+
+Collaboration diagram for Vehicle\+Builder\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVehicleBuilder_a9c4e1bb2bd2fa160918b5682dea5867c}{Vehicle\+Builder}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classVehicle}{Vehicle}} Builder\+:\+: \mbox{\hyperlink{classVehicle}{Vehicle}} Builder object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}} $\ast$ \mbox{\hyperlink{classVehicleBuilder_a366aea9a248bb04c3d6b558ef754b719}{set\+Capacity}} (int capacity)
+\begin{DoxyCompactList}\small\item\em Used to set the capacity of the vehicle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}} $\ast$ \mbox{\hyperlink{classVehicleBuilder_a6d98939592a01bc349004ad84c2dfb45}{set\+Cargo\+Weight}} (float weight)
+\begin{DoxyCompactList}\small\item\em Used to set the weight of the cargo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}} $\ast$ \mbox{\hyperlink{classVehicleBuilder_a156c5167493c8f971d5a18c0b66c0136}{set\+Num\+Passengers}} (int num)
+\begin{DoxyCompactList}\small\item\em Used to set the number of passengers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransport}{Transport}} $\ast$ \mbox{\hyperlink{classVehicleBuilder_ad708c66b842c51b31c7fc14b7604deb9}{build}} ()
+\begin{DoxyCompactList}\small\item\em Used to build the vehicle object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVehicleBuilder_a9c4e1bb2bd2fa160918b5682dea5867c}\label{classVehicleBuilder_a9c4e1bb2bd2fa160918b5682dea5867c}} 
+\index{VehicleBuilder@{VehicleBuilder}!VehicleBuilder@{VehicleBuilder}}
+\index{VehicleBuilder@{VehicleBuilder}!VehicleBuilder@{VehicleBuilder}}
+\doxysubsubsection{\texorpdfstring{VehicleBuilder()}{VehicleBuilder()}}
+{\footnotesize\ttfamily Vehicle\+Builder\+::\+Vehicle\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classVehicle}{Vehicle}} Builder\+:\+: \mbox{\hyperlink{classVehicle}{Vehicle}} Builder object. 
+
+Creates a new \mbox{\hyperlink{classVehicle}{Vehicle}} object with a capacity of 0(place holder) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classVehicleBuilder_ad708c66b842c51b31c7fc14b7604deb9}\label{classVehicleBuilder_ad708c66b842c51b31c7fc14b7604deb9}} 
+\index{VehicleBuilder@{VehicleBuilder}!build@{build}}
+\index{build@{build}!VehicleBuilder@{VehicleBuilder}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransport}{Transport}} $\ast$ Vehicle\+Builder\+::build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Used to build the vehicle object. 
+
+\begin{DoxyReturn}{Returns}
+Transport$\ast$ pointer to the vehicle object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}}.
+
+\mbox{\Hypertarget{classVehicleBuilder_a366aea9a248bb04c3d6b558ef754b719}\label{classVehicleBuilder_a366aea9a248bb04c3d6b558ef754b719}} 
+\index{VehicleBuilder@{VehicleBuilder}!setCapacity@{setCapacity}}
+\index{setCapacity@{setCapacity}!VehicleBuilder@{VehicleBuilder}}
+\doxysubsubsection{\texorpdfstring{setCapacity()}{setCapacity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}} $\ast$ Vehicle\+Builder\+::set\+Capacity (\begin{DoxyParamCaption}\item[{int}]{capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Used to set the capacity of the vehicle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & integer value of the capacity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vehicle\+Builder$\ast$ pointer to the \mbox{\hyperlink{classVehicleBuilder}{Vehicle\+Builder}} object for chaining 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}}.
+
+\mbox{\Hypertarget{classVehicleBuilder_a6d98939592a01bc349004ad84c2dfb45}\label{classVehicleBuilder_a6d98939592a01bc349004ad84c2dfb45}} 
+\index{VehicleBuilder@{VehicleBuilder}!setCargoWeight@{setCargoWeight}}
+\index{setCargoWeight@{setCargoWeight}!VehicleBuilder@{VehicleBuilder}}
+\doxysubsubsection{\texorpdfstring{setCargoWeight()}{setCargoWeight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}} $\ast$ Vehicle\+Builder\+::set\+Cargo\+Weight (\begin{DoxyParamCaption}\item[{float}]{weight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Used to set the weight of the cargo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weight} & float value of the weight \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vehicle\+Builder$\ast$ pointer to the \mbox{\hyperlink{classVehicleBuilder}{Vehicle\+Builder}} object for chaining 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}}.
+
+\mbox{\Hypertarget{classVehicleBuilder_a156c5167493c8f971d5a18c0b66c0136}\label{classVehicleBuilder_a156c5167493c8f971d5a18c0b66c0136}} 
+\index{VehicleBuilder@{VehicleBuilder}!setNumPassengers@{setNumPassengers}}
+\index{setNumPassengers@{setNumPassengers}!VehicleBuilder@{VehicleBuilder}}
+\doxysubsubsection{\texorpdfstring{setNumPassengers()}{setNumPassengers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}} $\ast$ Vehicle\+Builder\+::set\+Num\+Passengers (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Used to set the number of passengers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & integer value of the number of passengers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vehicle\+Builder$\ast$ pointer to the \mbox{\hyperlink{classVehicleBuilder}{Vehicle\+Builder}} object for chaining 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransportBuilder}{Transport\+Builder}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{VehicleBuilder_8h}{Vehicle\+Builder.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{VehicleBuilder_8cpp}{Vehicle\+Builder.\+cpp}}\end{DoxyCompactItemize}

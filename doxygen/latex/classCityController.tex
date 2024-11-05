@@ -1,0 +1,417 @@
+\hypertarget{classCityController}{}\doxysection{City\+Controller Class Reference}
+\label{classCityController}\index{CityController@{CityController}}
+
+
+Collaboration diagram for City\+Controller\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCityController_aea3b7b297b5892df0429c0c131000b8e}\label{classCityController_aea3b7b297b5892df0429c0c131000b8e}} 
+void {\bfseries Update} ()
+\item 
+\mbox{\Hypertarget{classCityController_a308cf8b105cb53c6cf7233af6517afc0}\label{classCityController_a308cf8b105cb53c6cf7233af6517afc0}} 
+\mbox{\hyperlink{classPolicies}{Policies}} $\ast$ {\bfseries evaluate\+Policies} ()
+\item 
+\mbox{\Hypertarget{classCityController_a03147253f6388e1fdb88de2459b87ec0}\label{classCityController_a03147253f6388e1fdb88de2459b87ec0}} 
+\mbox{\hyperlink{classCitizen}{Citizen}} $\ast$ {\bfseries handle\+Citizen\+Needs\+And\+Satisfaction} ()
+\item 
+\mbox{\Hypertarget{classCityController_a865782f9d0d80e0d75168d3ef692b743}\label{classCityController_a865782f9d0d80e0d75168d3ef692b743}} 
+\mbox{\hyperlink{classPopulationControl}{Population\+Control}} $\ast$ {\bfseries evaluate\+Population\+Control} ()
+\item 
+\mbox{\Hypertarget{classCityController_a5004b3e818075e6624d7261a877fde37}\label{classCityController_a5004b3e818075e6624d7261a877fde37}} 
+void {\bfseries add\+Decorations} ()
+\item 
+\mbox{\Hypertarget{classCityController_a0dbbc1e3bfa9e0af22a760b9f2a21ab9}\label{classCityController_a0dbbc1e3bfa9e0af22a760b9f2a21ab9}} 
+void {\bfseries Provide\+Utilities} ()
+\item 
+\mbox{\Hypertarget{classCityController_ad10db82fa642cc6a7d06d47b9ede891b}\label{classCityController_ad10db82fa642cc6a7d06d47b9ede891b}} 
+Resource $\ast$ {\bfseries build\+Infrastructure} ()
+\item 
+void \mbox{\hyperlink{classCityController_a81d05adb21cb4e0a66898072ef1dd0cc}{add\+Building}} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$B)
+\begin{DoxyCompactList}\small\item\em Adds a building to the management system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCityController_a93d73b27246f19bd3295837738528154}{rem\+Building}} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$B)
+\begin{DoxyCompactList}\small\item\em Removes a building from the management system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCityController_ae8b5fde288b8343534170cbac00a6f98}{add\+Citizen}} (\mbox{\hyperlink{classCitizen}{Citizen}} $\ast$C)
+\begin{DoxyCompactList}\small\item\em Adds a citizen to the population. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCityController_a60c46c44f40228bf3e9f58bfc8464103}{rem\+Citizen}} (\mbox{\hyperlink{classCitizen}{Citizen}} $\ast$C)
+\begin{DoxyCompactList}\small\item\em Removes a citizen from the population. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCityController_af61b1c3f1d8555e4a2e4793960e3087c}{add\+Utility}} (\mbox{\hyperlink{classUtility}{Utility}} $\ast$U)
+\begin{DoxyCompactList}\small\item\em Adds a utility to the management system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCityController_a0d478d998e1c7f4ae8214e78b0ff4c01}{rem\+Utility}} (\mbox{\hyperlink{classUtility}{Utility}} $\ast$U)
+\begin{DoxyCompactList}\small\item\em Removes a utility from the management system. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCityController_abc2526338c947161dc268e40de1addd4}{get\+Current\+Energy\+Supply}} ()
+\begin{DoxyCompactList}\small\item\em Gets total Energy Supply. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCityController_a4c52a296b20fe2696514e5166d450018}{get\+Current\+Waste\+Supply}} ()
+\begin{DoxyCompactList}\small\item\em Gets total Waste\+Managment. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCityController_a4b132d2f16bd08972706e4e57d22b57d}{get\+Current\+Water\+Supply}} ()
+\begin{DoxyCompactList}\small\item\em Gets total Water Supply. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCityController_a275575124f0489861679c47b9d5f7f67}{get\+Current\+Sewage\+Supply}} ()
+\begin{DoxyCompactList}\small\item\em Gets total Sewage Managment. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCityController_acc2cccfec593c6dfc19b2b6b6ba094f5}{get\+Amount\+Of\+Utilities}} ()
+\begin{DoxyCompactList}\small\item\em Gets total Amount of \mbox{\hyperlink{classUtility}{Utility}} \mbox{\hyperlink{classBuildings}{Buildings}}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classCityController_a7cd44d2e4d3f926036a9f1c21593c31a}{get\+Total\+Income}} ()
+\begin{DoxyCompactList}\small\item\em Gets total Amount of Income of the \mbox{\hyperlink{classCity}{City}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCityController_add4e8076d1310d4d305092dbbb85b7ff}{get\+Building\+Water\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets total Cost of Water for All \mbox{\hyperlink{classBuildings}{Buildings}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCityController_a845dc0bec5b99d3a0798c0bc0e26b2d0}{get\+Building\+Power\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets total Cost of Power for All \mbox{\hyperlink{classBuildings}{Buildings}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCityController_a9604984ac9fd9c30dcda1c0f98e4725a}{get\+Building\+Waste\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets total Cost of Waste Recycling for All \mbox{\hyperlink{classBuildings}{Buildings}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCityController_aec786bf76b0efb9c1fb35f69a80da924}{get\+Building\+Sewage\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets total Cost of Sewage Recycling for All \mbox{\hyperlink{classBuildings}{Buildings}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCitizen}{Citizen}} $\ast$$\ast$ \mbox{\hyperlink{classCityController_a028c26b7fc2aab3d416877f3cec87265}{get\+Building\+Citizen\+In\+Res}} ()
+\begin{DoxyCompactList}\small\item\em Gets the list of Citizens in Homes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCityController_abd06aec56708a58fd328c98248534a12}{get\+Building\+Commercial\+Income}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Amount of income of Commercial \mbox{\hyperlink{classBuildings}{Buildings}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCityController_ab206150498eb80f915424238ca0979e2}{Amount\+Of\+Citizens}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Total Population of the \mbox{\hyperlink{classCity}{City}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCityController_ac064af32f06c5c1a9842666896c33909}{Employed\+Citizens}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Total Employed Population of the \mbox{\hyperlink{classCity}{City}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCityController_aa04b0f70fae492b953f1ab042b8653d3}{Property\+Owners}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Total Home Owners Population of the \mbox{\hyperlink{classCity}{City}}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classCityController_a42236175e1293fa50685ff8f49049660}{Avg\+Satisfaction}} ()
+\begin{DoxyCompactList}\small\item\em Calculates Satisfaction. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classCityController_aa5c8068d18eddae1dde532d6a0f31769}{Taxable\+Income}} ()
+\begin{DoxyCompactList}\small\item\em Returns Taxable Income. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCitizen}{Citizen}} $\ast$$\ast$ \mbox{\hyperlink{classCityController_a1e3252ab949fd773b6f968be06aadd32}{get\+List\+Of\+Citizens}} ()
+\begin{DoxyCompactList}\small\item\em Returns The Citizens. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCityController_a0fe74900cbeaef74f90b194b5533b207}\label{classCityController_a0fe74900cbeaef74f90b194b5533b207}} 
+\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ {\bfseries create\+Building}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCityController_a81d05adb21cb4e0a66898072ef1dd0cc}\label{classCityController_a81d05adb21cb4e0a66898072ef1dd0cc}} 
+\index{CityController@{CityController}!addBuilding@{addBuilding}}
+\index{addBuilding@{addBuilding}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{addBuilding()}{addBuilding()}}
+{\footnotesize\ttfamily void City\+Controller\+::add\+Building (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$}]{B }\end{DoxyParamCaption})}
+
+
+
+Adds a building to the management system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em B} & Pointer to the building to be added. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCityController_ae8b5fde288b8343534170cbac00a6f98}\label{classCityController_ae8b5fde288b8343534170cbac00a6f98}} 
+\index{CityController@{CityController}!addCitizen@{addCitizen}}
+\index{addCitizen@{addCitizen}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{addCitizen()}{addCitizen()}}
+{\footnotesize\ttfamily void City\+Controller\+::add\+Citizen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCitizen}{Citizen}} $\ast$}]{C }\end{DoxyParamCaption})}
+
+
+
+Adds a citizen to the population. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C} & Pointer to the citizen to be added. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCityController_af61b1c3f1d8555e4a2e4793960e3087c}\label{classCityController_af61b1c3f1d8555e4a2e4793960e3087c}} 
+\index{CityController@{CityController}!addUtility@{addUtility}}
+\index{addUtility@{addUtility}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{addUtility()}{addUtility()}}
+{\footnotesize\ttfamily void City\+Controller\+::add\+Utility (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUtility}{Utility}} $\ast$}]{U }\end{DoxyParamCaption})}
+
+
+
+Adds a utility to the management system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em U} & Pointer to the utility to be added. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCityController_ab206150498eb80f915424238ca0979e2}\label{classCityController_ab206150498eb80f915424238ca0979e2}} 
+\index{CityController@{CityController}!AmountOfCitizens@{AmountOfCitizens}}
+\index{AmountOfCitizens@{AmountOfCitizens}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{AmountOfCitizens()}{AmountOfCitizens()}}
+{\footnotesize\ttfamily int City\+Controller\+::\+Amount\+Of\+Citizens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the Total Population of the \mbox{\hyperlink{classCity}{City}}. 
+
+\begin{DoxyReturn}{Returns}
+Calls the function of the Citizen\+Manager and returns the total amount of Citizens in the city 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCityController_a42236175e1293fa50685ff8f49049660}\label{classCityController_a42236175e1293fa50685ff8f49049660}} 
+\index{CityController@{CityController}!AvgSatisfaction@{AvgSatisfaction}}
+\index{AvgSatisfaction@{AvgSatisfaction}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{AvgSatisfaction()}{AvgSatisfaction()}}
+{\footnotesize\ttfamily double City\+Controller\+::\+Avg\+Satisfaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calculates Satisfaction. 
+
+\begin{DoxyReturn}{Returns}
+Calls the function of the Citizen\+Manager that Calculates the average Satisfaction of the Citizens in the \mbox{\hyperlink{classCity}{City}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCityController_ac064af32f06c5c1a9842666896c33909}\label{classCityController_ac064af32f06c5c1a9842666896c33909}} 
+\index{CityController@{CityController}!EmployedCitizens@{EmployedCitizens}}
+\index{EmployedCitizens@{EmployedCitizens}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{EmployedCitizens()}{EmployedCitizens()}}
+{\footnotesize\ttfamily int City\+Controller\+::\+Employed\+Citizens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the Total Employed Population of the \mbox{\hyperlink{classCity}{City}}. 
+
+\begin{DoxyReturn}{Returns}
+Calls the function of the Citizen\+Manager and returns the total amount of Employed Citizens in the city 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCityController_acc2cccfec593c6dfc19b2b6b6ba094f5}\label{classCityController_acc2cccfec593c6dfc19b2b6b6ba094f5}} 
+\index{CityController@{CityController}!getAmountOfUtilities@{getAmountOfUtilities}}
+\index{getAmountOfUtilities@{getAmountOfUtilities}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{getAmountOfUtilities()}{getAmountOfUtilities()}}
+{\footnotesize\ttfamily int City\+Controller\+::get\+Amount\+Of\+Utilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets total Amount of \mbox{\hyperlink{classUtility}{Utility}} \mbox{\hyperlink{classBuildings}{Buildings}}. 
+
+\begin{DoxyReturn}{Returns}
+Calls the function of the Utilities\+Manager and Returns the total amount of \mbox{\hyperlink{classUtility}{Utility}} buildings in the city 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCityController_a028c26b7fc2aab3d416877f3cec87265}\label{classCityController_a028c26b7fc2aab3d416877f3cec87265}} 
+\index{CityController@{CityController}!getBuildingCitizenInRes@{getBuildingCitizenInRes}}
+\index{getBuildingCitizenInRes@{getBuildingCitizenInRes}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{getBuildingCitizenInRes()}{getBuildingCitizenInRes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCitizen}{Citizen}} $\ast$$\ast$ City\+Controller\+::get\+Building\+Citizen\+In\+Res (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the list of Citizens in Homes. 
+
+\begin{DoxyReturn}{Returns}
+Calls the function of the Building\+Manager and Returns a List of Citizens that reside in Residential \mbox{\hyperlink{classBuildings}{Buildings}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCityController_abd06aec56708a58fd328c98248534a12}\label{classCityController_abd06aec56708a58fd328c98248534a12}} 
+\index{CityController@{CityController}!getBuildingCommercialIncome@{getBuildingCommercialIncome}}
+\index{getBuildingCommercialIncome@{getBuildingCommercialIncome}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{getBuildingCommercialIncome()}{getBuildingCommercialIncome()}}
+{\footnotesize\ttfamily int City\+Controller\+::get\+Building\+Commercial\+Income (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the Amount of income of Commercial \mbox{\hyperlink{classBuildings}{Buildings}}. 
+
+\begin{DoxyReturn}{Returns}
+Calls the function of the Building\+Manager and The total amount of Income that all Commercial \mbox{\hyperlink{classBuildings}{Buildings}} Generate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCityController_a845dc0bec5b99d3a0798c0bc0e26b2d0}\label{classCityController_a845dc0bec5b99d3a0798c0bc0e26b2d0}} 
+\index{CityController@{CityController}!getBuildingPowerCost@{getBuildingPowerCost}}
+\index{getBuildingPowerCost@{getBuildingPowerCost}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{getBuildingPowerCost()}{getBuildingPowerCost()}}
+{\footnotesize\ttfamily int City\+Controller\+::get\+Building\+Power\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets total Cost of Power for All \mbox{\hyperlink{classBuildings}{Buildings}}. 
+
+\begin{DoxyReturn}{Returns}
+Calls the function of the Building\+Manager and Returns the total amount of Power Demand in the city 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCityController_aec786bf76b0efb9c1fb35f69a80da924}\label{classCityController_aec786bf76b0efb9c1fb35f69a80da924}} 
+\index{CityController@{CityController}!getBuildingSewageCost@{getBuildingSewageCost}}
+\index{getBuildingSewageCost@{getBuildingSewageCost}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{getBuildingSewageCost()}{getBuildingSewageCost()}}
+{\footnotesize\ttfamily int City\+Controller\+::get\+Building\+Sewage\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets total Cost of Sewage Recycling for All \mbox{\hyperlink{classBuildings}{Buildings}}. 
+
+\begin{DoxyReturn}{Returns}
+Calls the function of the Building\+Manager and Returns the total amount of Sewage Recycling Demand in the city 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCityController_a9604984ac9fd9c30dcda1c0f98e4725a}\label{classCityController_a9604984ac9fd9c30dcda1c0f98e4725a}} 
+\index{CityController@{CityController}!getBuildingWasteCost@{getBuildingWasteCost}}
+\index{getBuildingWasteCost@{getBuildingWasteCost}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{getBuildingWasteCost()}{getBuildingWasteCost()}}
+{\footnotesize\ttfamily int City\+Controller\+::get\+Building\+Waste\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets total Cost of Waste Recycling for All \mbox{\hyperlink{classBuildings}{Buildings}}. 
+
+\begin{DoxyReturn}{Returns}
+Calls the function of the Building\+Manager and Returns the total amount of Waste Recycling Demand in the city 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCityController_add4e8076d1310d4d305092dbbb85b7ff}\label{classCityController_add4e8076d1310d4d305092dbbb85b7ff}} 
+\index{CityController@{CityController}!getBuildingWaterCost@{getBuildingWaterCost}}
+\index{getBuildingWaterCost@{getBuildingWaterCost}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{getBuildingWaterCost()}{getBuildingWaterCost()}}
+{\footnotesize\ttfamily int City\+Controller\+::get\+Building\+Water\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets total Cost of Water for All \mbox{\hyperlink{classBuildings}{Buildings}}. 
+
+\begin{DoxyReturn}{Returns}
+Calls the function of the Building\+Manager and Returns the total amount of Water Demand in the city 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCityController_abc2526338c947161dc268e40de1addd4}\label{classCityController_abc2526338c947161dc268e40de1addd4}} 
+\index{CityController@{CityController}!getCurrentEnergySupply@{getCurrentEnergySupply}}
+\index{getCurrentEnergySupply@{getCurrentEnergySupply}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{getCurrentEnergySupply()}{getCurrentEnergySupply()}}
+{\footnotesize\ttfamily int City\+Controller\+::get\+Current\+Energy\+Supply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets total Energy Supply. 
+
+\begin{DoxyReturn}{Returns}
+Calls the function of the Utilities\+Manager to calculate total power in the city 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCityController_a275575124f0489861679c47b9d5f7f67}\label{classCityController_a275575124f0489861679c47b9d5f7f67}} 
+\index{CityController@{CityController}!getCurrentSewageSupply@{getCurrentSewageSupply}}
+\index{getCurrentSewageSupply@{getCurrentSewageSupply}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{getCurrentSewageSupply()}{getCurrentSewageSupply()}}
+{\footnotesize\ttfamily int City\+Controller\+::get\+Current\+Sewage\+Supply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets total Sewage Managment. 
+
+\begin{DoxyReturn}{Returns}
+Calls the function of the Utilities\+Manager to calculate total Sewage Managment in the city 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCityController_a4c52a296b20fe2696514e5166d450018}\label{classCityController_a4c52a296b20fe2696514e5166d450018}} 
+\index{CityController@{CityController}!getCurrentWasteSupply@{getCurrentWasteSupply}}
+\index{getCurrentWasteSupply@{getCurrentWasteSupply}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{getCurrentWasteSupply()}{getCurrentWasteSupply()}}
+{\footnotesize\ttfamily int City\+Controller\+::get\+Current\+Waste\+Supply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets total Waste\+Managment. 
+
+\begin{DoxyReturn}{Returns}
+Calls the function of the Utilities\+Manager to calculate total Waste Managment in the city 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCityController_a4b132d2f16bd08972706e4e57d22b57d}\label{classCityController_a4b132d2f16bd08972706e4e57d22b57d}} 
+\index{CityController@{CityController}!getCurrentWaterSupply@{getCurrentWaterSupply}}
+\index{getCurrentWaterSupply@{getCurrentWaterSupply}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{getCurrentWaterSupply()}{getCurrentWaterSupply()}}
+{\footnotesize\ttfamily int City\+Controller\+::get\+Current\+Water\+Supply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets total Water Supply. 
+
+\begin{DoxyReturn}{Returns}
+Calls the function of the Utilities\+Manager to calculate total Water in the city 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCityController_a1e3252ab949fd773b6f968be06aadd32}\label{classCityController_a1e3252ab949fd773b6f968be06aadd32}} 
+\index{CityController@{CityController}!getListOfCitizens@{getListOfCitizens}}
+\index{getListOfCitizens@{getListOfCitizens}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{getListOfCitizens()}{getListOfCitizens()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCitizen}{Citizen}} $\ast$$\ast$ City\+Controller\+::get\+List\+Of\+Citizens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns The Citizens. 
+
+\begin{DoxyReturn}{Returns}
+Calls the function of the Citizen\+Manager and Returns a List of all Citizens in the \mbox{\hyperlink{classCity}{City}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCityController_a7cd44d2e4d3f926036a9f1c21593c31a}\label{classCityController_a7cd44d2e4d3f926036a9f1c21593c31a}} 
+\index{CityController@{CityController}!getTotalIncome@{getTotalIncome}}
+\index{getTotalIncome@{getTotalIncome}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{getTotalIncome()}{getTotalIncome()}}
+{\footnotesize\ttfamily double City\+Controller\+::get\+Total\+Income (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets total Amount of Income of the \mbox{\hyperlink{classCity}{City}}. 
+
+\begin{DoxyReturn}{Returns}
+Calls The functions to get the Tax Rate of the citizens and adds it to the income of the Commercial \mbox{\hyperlink{classBuildings}{Buildings}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCityController_aa04b0f70fae492b953f1ab042b8653d3}\label{classCityController_aa04b0f70fae492b953f1ab042b8653d3}} 
+\index{CityController@{CityController}!PropertyOwners@{PropertyOwners}}
+\index{PropertyOwners@{PropertyOwners}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{PropertyOwners()}{PropertyOwners()}}
+{\footnotesize\ttfamily int City\+Controller\+::\+Property\+Owners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the Total Home Owners Population of the \mbox{\hyperlink{classCity}{City}}. 
+
+\begin{DoxyReturn}{Returns}
+Calls the function of the Citizen\+Manager and returns the total amount of Property Owners in the city 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCityController_a93d73b27246f19bd3295837738528154}\label{classCityController_a93d73b27246f19bd3295837738528154}} 
+\index{CityController@{CityController}!remBuilding@{remBuilding}}
+\index{remBuilding@{remBuilding}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{remBuilding()}{remBuilding()}}
+{\footnotesize\ttfamily void City\+Controller\+::rem\+Building (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$}]{B }\end{DoxyParamCaption})}
+
+
+
+Removes a building from the management system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em B} & Pointer to the building to be removed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCityController_a60c46c44f40228bf3e9f58bfc8464103}\label{classCityController_a60c46c44f40228bf3e9f58bfc8464103}} 
+\index{CityController@{CityController}!remCitizen@{remCitizen}}
+\index{remCitizen@{remCitizen}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{remCitizen()}{remCitizen()}}
+{\footnotesize\ttfamily void City\+Controller\+::rem\+Citizen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCitizen}{Citizen}} $\ast$}]{C }\end{DoxyParamCaption})}
+
+
+
+Removes a citizen from the population. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C} & Pointer to the citizen to be removed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCityController_a0d478d998e1c7f4ae8214e78b0ff4c01}\label{classCityController_a0d478d998e1c7f4ae8214e78b0ff4c01}} 
+\index{CityController@{CityController}!remUtility@{remUtility}}
+\index{remUtility@{remUtility}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{remUtility()}{remUtility()}}
+{\footnotesize\ttfamily void City\+Controller\+::rem\+Utility (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUtility}{Utility}} $\ast$}]{U }\end{DoxyParamCaption})}
+
+
+
+Removes a utility from the management system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em U} & Pointer to the utility to be removed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCityController_aa5c8068d18eddae1dde532d6a0f31769}\label{classCityController_aa5c8068d18eddae1dde532d6a0f31769}} 
+\index{CityController@{CityController}!TaxableIncome@{TaxableIncome}}
+\index{TaxableIncome@{TaxableIncome}!CityController@{CityController}}
+\doxysubsubsection{\texorpdfstring{TaxableIncome()}{TaxableIncome()}}
+{\footnotesize\ttfamily float City\+Controller\+::\+Taxable\+Income (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns Taxable Income. 
+
+\begin{DoxyReturn}{Returns}
+Calls the function of the Citizen\+Manager that Calculates Total amount of Taxable Income of the Citizens 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/City\+Controller.\+h\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/City\+Controller.\+cpp\end{DoxyCompactItemize}

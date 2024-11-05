@@ -1,0 +1,79 @@
+\hypertarget{classpowerResource}{}\doxysection{power\+Resource Class Reference}
+\label{classpowerResource}\index{powerResource@{powerResource}}
+
+
+Inheritance diagram for power\+Resource\+:
+% FIG 0
+
+
+Collaboration diagram for power\+Resource\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpowerResource_a0b52ebf713c56c21c6aedde62292cc64}\label{classpowerResource_a0b52ebf713c56c21c6aedde62292cc64}} 
+\mbox{\hyperlink{classpowerResource_a0b52ebf713c56c21c6aedde62292cc64}{power\+Resource}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new power Resource\+::power Resource object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpowerResource_ad9c3c374cb064c8ecb502bc430ab0730}{give\+Resource}} (float units) override
+\begin{DoxyCompactList}\small\item\em Return true if the requested amount of power can be supplied and subtract the available power, otherwise return false if it can not be supplied. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpowerResource_ad5a1e83b728b7cac0303a4c96abd4265}{receive\+Resource}} () override
+\begin{DoxyCompactList}\small\item\em Get Power from a Power Plant, increase the available Power by the amount received from said Power Plant. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classpowerResource_a88e1db78f010e5d85953a97d952c1bbc}{get\+Available\+Amount}} () override
+\begin{DoxyCompactList}\small\item\em Get the available amount of power available. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpowerResource_a88e1db78f010e5d85953a97d952c1bbc}\label{classpowerResource_a88e1db78f010e5d85953a97d952c1bbc}} 
+\index{powerResource@{powerResource}!getAvailableAmount@{getAvailableAmount}}
+\index{getAvailableAmount@{getAvailableAmount}!powerResource@{powerResource}}
+\doxysubsubsection{\texorpdfstring{getAvailableAmount()}{getAvailableAmount()}}
+{\footnotesize\ttfamily float power\+Resource\+::get\+Available\+Amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Get the available amount of power available. 
+
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpowerResource_ad9c3c374cb064c8ecb502bc430ab0730}\label{classpowerResource_ad9c3c374cb064c8ecb502bc430ab0730}} 
+\index{powerResource@{powerResource}!giveResource@{giveResource}}
+\index{giveResource@{giveResource}!powerResource@{powerResource}}
+\doxysubsubsection{\texorpdfstring{giveResource()}{giveResource()}}
+{\footnotesize\ttfamily bool power\+Resource\+::give\+Resource (\begin{DoxyParamCaption}\item[{float}]{units }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Return true if the requested amount of power can be supplied and subtract the available power, otherwise return false if it can not be supplied. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em units} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpowerResource_ad5a1e83b728b7cac0303a4c96abd4265}\label{classpowerResource_ad5a1e83b728b7cac0303a4c96abd4265}} 
+\index{powerResource@{powerResource}!receiveResource@{receiveResource}}
+\index{receiveResource@{receiveResource}!powerResource@{powerResource}}
+\doxysubsubsection{\texorpdfstring{receiveResource()}{receiveResource()}}
+{\footnotesize\ttfamily void power\+Resource\+::receive\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Get Power from a Power Plant, increase the available Power by the amount received from said Power Plant. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em units} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/power\+Resource.\+h\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/power\+Resource.\+cpp\end{DoxyCompactItemize}

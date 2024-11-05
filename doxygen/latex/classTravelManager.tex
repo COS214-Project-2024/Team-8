@@ -1,0 +1,141 @@
+\hypertarget{classTravelManager}{}\doxysection{Travel\+Manager Class Reference}
+\label{classTravelManager}\index{TravelManager@{TravelManager}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTravelManager_aa5fbb7bae39a66e46414952cc587fa7a}\label{classTravelManager_aa5fbb7bae39a66e46414952cc587fa7a}} 
+void {\bfseries Travel} (int capacity, \mbox{\hyperlink{classStops}{Stops}} $\ast$destination, float weight=0)
+\item 
+void \mbox{\hyperlink{classTravelManager_acca4e31ec9819790fc13cb6080ed3c68}{add\+Stops}} (\mbox{\hyperlink{classStops}{Stops}} $\ast$stop)
+\begin{DoxyCompactList}\small\item\em Add a stop to the route. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTravelManager_a55fad5ecec4c3bd806abf60081f1d2a7}{$\sim$\+Travel\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Travel Manager object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTravelManager_a3eb3e7f790fcb77db03b0d1aba123061}{Travel\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Travel Manager object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTravelManager_ad6f91d50ae036a8f602ff820f4aea4d2}{Best\+Route}} (int capacity, \mbox{\hyperlink{classStops}{Stops}} $\ast$destination, float weight=0)
+\begin{DoxyCompactList}\small\item\em Travel to the destination using the constructed transport ny nest route. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTravelManager_ae69640c1d671faf455a8578d9d7fad93}{Travel}} (\mbox{\hyperlink{classTransport}{Transport}} $\ast$trans, \mbox{\hyperlink{classStops}{Stops}} $\ast$destination)
+\begin{DoxyCompactList}\small\item\em Travel to the destination using the given transport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTravelManager_aa8383ebbff5d198b486d767dbc2a6de3}{Best\+Route}} (\mbox{\hyperlink{classTransport}{Transport}} $\ast$trans, \mbox{\hyperlink{classStops}{Stops}} $\ast$destination)
+\begin{DoxyCompactList}\small\item\em Travel to the destination using the given transport by using the shortest distance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTravelManager_a55fad5ecec4c3bd806abf60081f1d2a7}\label{classTravelManager_a55fad5ecec4c3bd806abf60081f1d2a7}} 
+\index{TravelManager@{TravelManager}!````~TravelManager@{$\sim$TravelManager}}
+\index{````~TravelManager@{$\sim$TravelManager}!TravelManager@{TravelManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$TravelManager()}{~TravelManager()}}
+{\footnotesize\ttfamily Travel\+Manager\+::$\sim$\+Travel\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the Travel Manager object. 
+
+\begin{DoxyPrecond}{Precondition}
+The route is not null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The route is deleted The transport is deleted if it exists The builder is deleted if it exists 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classTravelManager_a3eb3e7f790fcb77db03b0d1aba123061}\label{classTravelManager_a3eb3e7f790fcb77db03b0d1aba123061}} 
+\index{TravelManager@{TravelManager}!TravelManager@{TravelManager}}
+\index{TravelManager@{TravelManager}!TravelManager@{TravelManager}}
+\doxysubsubsection{\texorpdfstring{TravelManager()}{TravelManager()}}
+{\footnotesize\ttfamily Travel\+Manager\+::\+Travel\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new Travel Manager object. 
+
+\begin{DoxyPostcond}{Postcondition}
+The route is constructed The distance travelled is set to 0 The transport is set to null 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTravelManager_acca4e31ec9819790fc13cb6080ed3c68}\label{classTravelManager_acca4e31ec9819790fc13cb6080ed3c68}} 
+\index{TravelManager@{TravelManager}!addStops@{addStops}}
+\index{addStops@{addStops}!TravelManager@{TravelManager}}
+\doxysubsubsection{\texorpdfstring{addStops()}{addStops()}}
+{\footnotesize\ttfamily void Travel\+Manager\+::add\+Stops (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStops}{Stops}} $\ast$}]{stop }\end{DoxyParamCaption})}
+
+
+
+Add a stop to the route. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stop} & is the stop to add\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+The stop is added to the route 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classTravelManager_ad6f91d50ae036a8f602ff820f4aea4d2}\label{classTravelManager_ad6f91d50ae036a8f602ff820f4aea4d2}} 
+\index{TravelManager@{TravelManager}!BestRoute@{BestRoute}}
+\index{BestRoute@{BestRoute}!TravelManager@{TravelManager}}
+\doxysubsubsection{\texorpdfstring{BestRoute()}{BestRoute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Travel\+Manager\+::\+Best\+Route (\begin{DoxyParamCaption}\item[{int}]{capacity,  }\item[{\mbox{\hyperlink{classStops}{Stops}} $\ast$}]{destination,  }\item[{float}]{weight = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Travel to the destination using the constructed transport ny nest route. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & the capacity of the vehicle \\
+\hline
+{\em destination} & the destination to travel to \\
+\hline
+{\em weight} & the weight of the cargo\\
+\hline
+\end{DoxyParams}
+This function is used to travel to the destination using the constructed transport using the shortest distance \begin{DoxyPostcond}{Postcondition}
+The vehicle travels to the destination 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classTravelManager_aa8383ebbff5d198b486d767dbc2a6de3}\label{classTravelManager_aa8383ebbff5d198b486d767dbc2a6de3}} 
+\index{TravelManager@{TravelManager}!BestRoute@{BestRoute}}
+\index{BestRoute@{BestRoute}!TravelManager@{TravelManager}}
+\doxysubsubsection{\texorpdfstring{BestRoute()}{BestRoute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Travel\+Manager\+::\+Best\+Route (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTransport}{Transport}} $\ast$}]{trans,  }\item[{\mbox{\hyperlink{classStops}{Stops}} $\ast$}]{destination }\end{DoxyParamCaption})}
+
+
+
+Travel to the destination using the given transport by using the shortest distance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Transport$\ast$} & trans a pointer to the transport to use \\
+\hline
+{\em Stops$\ast$} & destination the destination to travel to\\
+\hline
+\end{DoxyParams}
+This function is used to travel to the destination using the given transport using the shortest distance \begin{DoxyPostcond}{Postcondition}
+The vehicle travels to the destination 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classTravelManager_ae69640c1d671faf455a8578d9d7fad93}\label{classTravelManager_ae69640c1d671faf455a8578d9d7fad93}} 
+\index{TravelManager@{TravelManager}!Travel@{Travel}}
+\index{Travel@{Travel}!TravelManager@{TravelManager}}
+\doxysubsubsection{\texorpdfstring{Travel()}{Travel()}}
+{\footnotesize\ttfamily void Travel\+Manager\+::\+Travel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTransport}{Transport}} $\ast$}]{trans,  }\item[{\mbox{\hyperlink{classStops}{Stops}} $\ast$}]{destination }\end{DoxyParamCaption})}
+
+
+
+Travel to the destination using the given transport. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Transport$\ast$} & trans a pointer to the transport to use \\
+\hline
+{\em Stops$\ast$} & destination the destination to travel to\\
+\hline
+\end{DoxyParams}
+This function is used to travel to the destination using the given transport \begin{DoxyPostcond}{Postcondition}
+The vehicle travels to the destination 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{TravelManager_8h}{Travel\+Manager.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{TravelManager_8cpp}{Travel\+Manager.\+cpp}}\end{DoxyCompactItemize}

@@ -4,7 +4,7 @@
 #include "Road.h"
 #include "Plane.h"
 #include "Train.h"
-#include "Airpot.h"
+#include "Airport.h"
 #include "BestRouteNode.h"
 #include "AccesibleRoute.h"
 #include "TrainStation.h"
@@ -37,7 +37,7 @@
  */
 void checkStopIterator(){
     Stops* stop1 = new Road("HighWay", 10.0f);
-    Stops* stop2 = new Airpot("LAX", 10.0f);
+    Stops* stop2 = new Airport("LAX", 10.0f);
     Stops* stop3 = new TrainStation("Union Station", 10.0f);
     RouteNode* head = new BestRouteNode();
     head->add(stop1);
@@ -63,10 +63,10 @@ void checkStopIterator(){
 void TravelManagerTest(){
     TravelManager* manager = new TravelManager();
     Stops* stop1 = new Road("HighWay", 10.0f);
-    Stops* stop2 = new Airpot("LAX", 10.0f);
+    Stops* stop2 = new Airport("LAX", 10.0f);
     Stops* stop3 = new TrainStation("Union Station", 10.0f);
     Stops* stop4 = new Road("N2", 10.0f);
-    Stops* stop5 = new Airpot("OR Tambo", 10.0f);
+    Stops* stop5 = new Airport("OR Tambo", 10.0f);
     Stops* stop6 = new TrainStation("Gauteng Station", 10.0f);
 
     manager->addStops(stop1);
@@ -92,10 +92,10 @@ void TravelManagerTest(){
 void checkBestRoute(){
     TravelManager* manager = new TravelManager();
     Stops* stop1 = new Road("HighWay", 10.0f);
-    Stops* stop2 = new Airpot("LAX", 10.0f);
+    Stops* stop2 = new Airport("LAX", 10.0f);
     Stops* stop3 = new TrainStation("Union Station", 10.0f);
     Stops* stop4 = new Road("N2", 10.0f);
-    Stops* stop5 = new Airpot("OR Tambo", 10.0f);
+    Stops* stop5 = new Airport("OR Tambo", 10.0f);
     Stops* stop6 = new TrainStation("Gauteng Station", 10.0f);
 
     manager->addStops(stop1);

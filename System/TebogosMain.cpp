@@ -46,7 +46,7 @@
 #include "Road.h"
 #include "Plane.h"
 #include "Train.h"
-#include "Airpot.h"
+#include "Airport.h"
 #include "BestRouteNode.h"
 #include "AccesibleRoute.h"
 #include "TrainStation.h"
@@ -235,7 +235,7 @@ void demonstrateTransportation()
     TravelManager *manager = new TravelManager();
 
     Stops *highway = new Road("Highway-101", 10.0f);
-    Stops *airport = new Airpot("City International", 10.0f);
+    Stops *airport = new Airport("City International", 10.0f);
     Stops *trainStation = new TrainStation("Central Station", 10.0f);
     Stops *suburb = new Road("Suburban Route", 10.0f);
 

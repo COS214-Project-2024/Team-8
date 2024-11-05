@@ -1,0 +1,82 @@
+\hypertarget{classEconomicPolicies}{}\doxysection{Economic\+Policies Class Reference}
+\label{classEconomicPolicies}\index{EconomicPolicies@{EconomicPolicies}}
+
+
+Concrete implementation of economic policies.  
+
+
+
+
+{\ttfamily \#include $<$Economic\+Policies.\+h$>$}
+
+
+
+Inheritance diagram for Economic\+Policies\+:
+% FIG 0
+
+
+Collaboration diagram for Economic\+Policies\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEconomicPolicies_a1ff4fd246e4f7d5158206696b8b6c995}{Economic\+Policies}} (\mbox{\hyperlink{classGovernment}{Government}} $\ast$govt)
+\begin{DoxyCompactList}\small\item\em Construct a new Economic \mbox{\hyperlink{classPolicies}{Policies}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEconomicPolicies_a969b4d01a62a58089d7a998c2685aa2f}{execute\+Policy}} () override
+\begin{DoxyCompactList}\small\item\em Implementation of policy execution for economic policies. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEconomicPolicies_a3364bc6064cfb5714146286ae4c648da}\label{classEconomicPolicies_a3364bc6064cfb5714146286ae4c648da}} 
+\mbox{\hyperlink{classPublicServicesPolicies}{Public\+Services\+Policies}} $\ast$ \mbox{\hyperlink{classEconomicPolicies_a3364bc6064cfb5714146286ae4c648da}{ps\+Policies}}
+\begin{DoxyCompactList}\small\item\em Related public services policies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEconomicPolicies_a084dbcc4300a44da4d7da50247d5adf9}\label{classEconomicPolicies_a084dbcc4300a44da4d7da50247d5adf9}} 
+\mbox{\hyperlink{classCitizen}{Citizen}} $\ast$ \mbox{\hyperlink{classEconomicPolicies_a084dbcc4300a44da4d7da50247d5adf9}{citizen}}
+\begin{DoxyCompactList}\small\item\em Affected citizen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Concrete implementation of economic policies. 
+
+This class handles the execution of economic policies affecting citizens and public services. It acts as a Concrete\+Command in the \mbox{\hyperlink{classCommand}{Command}} pattern hierarchy. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEconomicPolicies_a1ff4fd246e4f7d5158206696b8b6c995}\label{classEconomicPolicies_a1ff4fd246e4f7d5158206696b8b6c995}} 
+\index{EconomicPolicies@{EconomicPolicies}!EconomicPolicies@{EconomicPolicies}}
+\index{EconomicPolicies@{EconomicPolicies}!EconomicPolicies@{EconomicPolicies}}
+\doxysubsubsection{\texorpdfstring{EconomicPolicies()}{EconomicPolicies()}}
+{\footnotesize\ttfamily Economic\+Policies\+::\+Economic\+Policies (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGovernment}{Government}} $\ast$}]{govt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Economic \mbox{\hyperlink{classPolicies}{Policies}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em govt} & Pointer to the government executing the policies \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEconomicPolicies_a969b4d01a62a58089d7a998c2685aa2f}\label{classEconomicPolicies_a969b4d01a62a58089d7a998c2685aa2f}} 
+\index{EconomicPolicies@{EconomicPolicies}!executePolicy@{executePolicy}}
+\index{executePolicy@{executePolicy}!EconomicPolicies@{EconomicPolicies}}
+\doxysubsubsection{\texorpdfstring{executePolicy()}{executePolicy()}}
+{\footnotesize\ttfamily void Economic\+Policies\+::execute\+Policy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implementation of policy execution for economic policies. 
+
+Defines the specific behavior for executing economic policies. 
+
+Implements \mbox{\hyperlink{classPolicies_a700b4645c03eb16767a67a98953fd64f}{Policies}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{EconomicPolicies_8h}{Economic\+Policies.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Economic\+Policies.\+cpp\end{DoxyCompactItemize}

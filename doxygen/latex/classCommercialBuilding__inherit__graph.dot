@@ -1,0 +1,15 @@
+digraph "CommercialBuilding"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="CommercialBuilding",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Represents a commercial building with specific business-related attributes."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Buildings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuildings.html",tooltip="Abstract base class representing a building with basic utilities and resource requirements."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Mall",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMall.html",tooltip="Represents a mall, inheriting from CommercialBuilding."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Office",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOffice.html",tooltip="Represents an office building, inheriting from the CommercialBuilding class."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Shop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classShop.html",tooltip="Class representing a shop, inheriting from CommercialBuilding."];
+}

@@ -1,0 +1,71 @@
+\hypertarget{classParkFactory}{}\doxysection{Park\+Factory Class Reference}
+\label{classParkFactory}\index{ParkFactory@{ParkFactory}}
+
+
+A factory class for creating park buildings.  
+
+
+
+
+{\ttfamily \#include $<$Park\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Park\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for Park\+Factory\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classParkFactory_aeaedb6dd22846a59da4066279c7e6b43}{create\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new park building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classParkFactory_a68dade1a3e76bfba0e5d3768825bd84d}{buildings}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A factory class for creating park buildings. 
+
+This class inherits from \mbox{\hyperlink{classLandmarkFactory}{Landmark\+Factory}} and provides a method for creating park building objects. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classParkFactory_aeaedb6dd22846a59da4066279c7e6b43}\label{classParkFactory_aeaedb6dd22846a59da4066279c7e6b43}} 
+\index{ParkFactory@{ParkFactory}!createBuilding@{createBuilding}}
+\index{createBuilding@{createBuilding}!ParkFactory@{ParkFactory}}
+\doxysubsubsection{\texorpdfstring{createBuilding()}{createBuilding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ Park\+Factory\+::create\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a new park building. 
+
+This function creates and returns a pointer to a new park \mbox{\hyperlink{classBuildings}{Buildings}} object.
+
+\begin{DoxyReturn}{Returns}
+A pointer to a newly created park \mbox{\hyperlink{classBuildings}{Buildings}} object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkFactory_af0a8e396c38942baed18814cc7504119}{Landmark\+Factory}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classParkFactory_a68dade1a3e76bfba0e5d3768825bd84d}\label{classParkFactory_a68dade1a3e76bfba0e5d3768825bd84d}} 
+\index{ParkFactory@{ParkFactory}!buildings@{buildings}}
+\index{buildings@{buildings}!ParkFactory@{ParkFactory}}
+\doxysubsubsection{\texorpdfstring{buildings}{buildings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}}$\ast$ Park\+Factory\+::buildings}
+
+Pointer to a \mbox{\hyperlink{classBuildings}{Buildings}} object, representing the park building instance managed by the factory. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{ParkFactory_8h}{Park\+Factory.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Park\+Factory.\+cpp\end{DoxyCompactItemize}

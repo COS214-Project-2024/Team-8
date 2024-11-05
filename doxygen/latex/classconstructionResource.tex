@@ -1,0 +1,79 @@
+\hypertarget{classconstructionResource}{}\doxysection{construction\+Resource Class Reference}
+\label{classconstructionResource}\index{constructionResource@{constructionResource}}
+
+
+Inheritance diagram for construction\+Resource\+:
+% FIG 0
+
+
+Collaboration diagram for construction\+Resource\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconstructionResource_a596308e42f814ae17e302a4b79aca6c8}\label{classconstructionResource_a596308e42f814ae17e302a4b79aca6c8}} 
+\mbox{\hyperlink{classconstructionResource_a596308e42f814ae17e302a4b79aca6c8}{construction\+Resource}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new power Resource\+::power Resource object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classconstructionResource_ab53468234a67f956e5c6093e13238e6b}{give\+Resource}} (float units) override
+\begin{DoxyCompactList}\small\item\em Return true if the requested amount of construction material can be supplied and subtract the available material, otherwise return false if it can not be supplied. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classconstructionResource_ab326272baadfacb71e2d067a58581c0e}{receive\+Resource}} () override
+\begin{DoxyCompactList}\small\item\em Get Construction Material from the \mbox{\hyperlink{classCity}{City}}, increase the available Construction by the amount received. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classconstructionResource_ad2ca081985f1db7b9e62fa2e2fa2ae95}{get\+Available\+Amount}} () override
+\begin{DoxyCompactList}\small\item\em Get the available amount of construction material available. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconstructionResource_ad2ca081985f1db7b9e62fa2e2fa2ae95}\label{classconstructionResource_ad2ca081985f1db7b9e62fa2e2fa2ae95}} 
+\index{constructionResource@{constructionResource}!getAvailableAmount@{getAvailableAmount}}
+\index{getAvailableAmount@{getAvailableAmount}!constructionResource@{constructionResource}}
+\doxysubsubsection{\texorpdfstring{getAvailableAmount()}{getAvailableAmount()}}
+{\footnotesize\ttfamily float construction\+Resource\+::get\+Available\+Amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Get the available amount of construction material available. 
+
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classconstructionResource_ab53468234a67f956e5c6093e13238e6b}\label{classconstructionResource_ab53468234a67f956e5c6093e13238e6b}} 
+\index{constructionResource@{constructionResource}!giveResource@{giveResource}}
+\index{giveResource@{giveResource}!constructionResource@{constructionResource}}
+\doxysubsubsection{\texorpdfstring{giveResource()}{giveResource()}}
+{\footnotesize\ttfamily bool construction\+Resource\+::give\+Resource (\begin{DoxyParamCaption}\item[{float}]{units }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Return true if the requested amount of construction material can be supplied and subtract the available material, otherwise return false if it can not be supplied. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em units} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classconstructionResource_ab326272baadfacb71e2d067a58581c0e}\label{classconstructionResource_ab326272baadfacb71e2d067a58581c0e}} 
+\index{constructionResource@{constructionResource}!receiveResource@{receiveResource}}
+\index{receiveResource@{receiveResource}!constructionResource@{constructionResource}}
+\doxysubsubsection{\texorpdfstring{receiveResource()}{receiveResource()}}
+{\footnotesize\ttfamily void construction\+Resource\+::receive\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Get Construction Material from the \mbox{\hyperlink{classCity}{City}}, increase the available Construction by the amount received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em units} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/construction\+Resource.\+h\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/construction\+Resource.\+cpp\end{DoxyCompactItemize}

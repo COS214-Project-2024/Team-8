@@ -1,0 +1,116 @@
+\hypertarget{classAccesibleRoute}{}\doxysection{Accesible\+Route Class Reference}
+\label{classAccesibleRoute}\index{AccesibleRoute@{AccesibleRoute}}
+
+
+Inheritance diagram for Accesible\+Route\+:
+% FIG 0
+
+
+Collaboration diagram for Accesible\+Route\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAccesibleRoute_a1576e555109b2e4935d6be08bc2db7fe}{Accesible\+Route}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classAccesibleRoute}{Accesible\+Route}}\+:\+: \mbox{\hyperlink{classAccesibleRoute}{Accesible\+Route}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAccesibleRoute_aabc866243c16b25859b899fd93d88c95}{add}} (\mbox{\hyperlink{classStops}{Stops}} $\ast$data)
+\begin{DoxyCompactList}\small\item\em Add a \mbox{\hyperlink{classStops}{Stops}} object to the \mbox{\hyperlink{classAccesibleRoute}{Accesible\+Route}} object. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classAccesibleRoute_ab3ec45d0bead7a3028b5302218b1cf85}{get\+Distance}} ()
+\begin{DoxyCompactList}\small\item\em Get the Distance object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStops}{Stops}} $\ast$ \mbox{\hyperlink{classAccesibleRoute_aa38f20bc1b6cb956e902494c3dbed214}{get\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Get the Data object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$ \mbox{\hyperlink{classAccesibleRoute_a1831adcd8e1875ebbca96104fc6619f3}{travel}} ()
+\begin{DoxyCompactList}\small\item\em Travel to the next \mbox{\hyperlink{classRouteNode}{Route\+Node}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAccesibleRoute_a1576e555109b2e4935d6be08bc2db7fe}\label{classAccesibleRoute_a1576e555109b2e4935d6be08bc2db7fe}} 
+\index{AccesibleRoute@{AccesibleRoute}!AccesibleRoute@{AccesibleRoute}}
+\index{AccesibleRoute@{AccesibleRoute}!AccesibleRoute@{AccesibleRoute}}
+\doxysubsubsection{\texorpdfstring{AccesibleRoute()}{AccesibleRoute()}}
+{\footnotesize\ttfamily Accesible\+Route\+::\+Accesible\+Route (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classAccesibleRoute}{Accesible\+Route}}\+:\+: \mbox{\hyperlink{classAccesibleRoute}{Accesible\+Route}} object. 
+
+Creates a new \mbox{\hyperlink{classAccesibleRoute}{Accesible\+Route}} object Sets the data and successor to nullptr 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAccesibleRoute_aabc866243c16b25859b899fd93d88c95}\label{classAccesibleRoute_aabc866243c16b25859b899fd93d88c95}} 
+\index{AccesibleRoute@{AccesibleRoute}!add@{add}}
+\index{add@{add}!AccesibleRoute@{AccesibleRoute}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Accesible\+Route\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStops}{Stops}} $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Add a \mbox{\hyperlink{classStops}{Stops}} object to the \mbox{\hyperlink{classAccesibleRoute}{Accesible\+Route}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & a \mbox{\hyperlink{classStops}{Stops}} object\\
+\hline
+\end{DoxyParams}
+Adds a Stop to current object or delegates to the successor 
+
+Implements \mbox{\hyperlink{classRouteNode}{Route\+Node}}.
+
+\mbox{\Hypertarget{classAccesibleRoute_aa38f20bc1b6cb956e902494c3dbed214}\label{classAccesibleRoute_aa38f20bc1b6cb956e902494c3dbed214}} 
+\index{AccesibleRoute@{AccesibleRoute}!getData@{getData}}
+\index{getData@{getData}!AccesibleRoute@{AccesibleRoute}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStops}{Stops}} $\ast$ Accesible\+Route\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Data object. 
+
+\begin{DoxyReturn}{Returns}
+Stops$\ast$ the data of the \mbox{\hyperlink{classAccesibleRoute}{Accesible\+Route}} object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classRouteNode}{Route\+Node}}.
+
+\mbox{\Hypertarget{classAccesibleRoute_ab3ec45d0bead7a3028b5302218b1cf85}\label{classAccesibleRoute_ab3ec45d0bead7a3028b5302218b1cf85}} 
+\index{AccesibleRoute@{AccesibleRoute}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!AccesibleRoute@{AccesibleRoute}}
+\doxysubsubsection{\texorpdfstring{getDistance()}{getDistance()}}
+{\footnotesize\ttfamily float Accesible\+Route\+::get\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Distance object. 
+
+\begin{DoxyReturn}{Returns}
+float the distance of the \mbox{\hyperlink{classAccesibleRoute}{Accesible\+Route}} object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classRouteNode}{Route\+Node}}.
+
+\mbox{\Hypertarget{classAccesibleRoute_a1831adcd8e1875ebbca96104fc6619f3}\label{classAccesibleRoute_a1831adcd8e1875ebbca96104fc6619f3}} 
+\index{AccesibleRoute@{AccesibleRoute}!travel@{travel}}
+\index{travel@{travel}!AccesibleRoute@{AccesibleRoute}}
+\doxysubsubsection{\texorpdfstring{travel()}{travel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$ Accesible\+Route\+::travel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Travel to the next \mbox{\hyperlink{classRouteNode}{Route\+Node}} object. 
+
+\begin{DoxyReturn}{Returns}
+Route\+Node$\ast$ the successor of the current object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classRouteNode}{Route\+Node}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{AccesibleRoute_8h}{Accesible\+Route.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{AccesibleRoute_8cpp}{Accesible\+Route.\+cpp}}\end{DoxyCompactItemize}

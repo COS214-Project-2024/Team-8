@@ -1,0 +1,71 @@
+\hypertarget{classSchoolFactory}{}\doxysection{School\+Factory Class Reference}
+\label{classSchoolFactory}\index{SchoolFactory@{SchoolFactory}}
+
+
+A factory class for creating school buildings.  
+
+
+
+
+{\ttfamily \#include $<$School\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for School\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for School\+Factory\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classSchoolFactory_a74f0a46ecf394a4a81d341d57226e9af}{create\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new school building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classSchoolFactory_a6e6581279466426f6e8019774d072e5a}{buildings}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A factory class for creating school buildings. 
+
+This class inherits from \mbox{\hyperlink{classPublicServiceFactory}{Public\+Service\+Factory}} and provides a method for creating school building objects. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSchoolFactory_a74f0a46ecf394a4a81d341d57226e9af}\label{classSchoolFactory_a74f0a46ecf394a4a81d341d57226e9af}} 
+\index{SchoolFactory@{SchoolFactory}!createBuilding@{createBuilding}}
+\index{createBuilding@{createBuilding}!SchoolFactory@{SchoolFactory}}
+\doxysubsubsection{\texorpdfstring{createBuilding()}{createBuilding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ School\+Factory\+::create\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a new school building. 
+
+This function creates and returns a pointer to a new school \mbox{\hyperlink{classBuildings}{Buildings}} object.
+
+\begin{DoxyReturn}{Returns}
+A pointer to a newly created school \mbox{\hyperlink{classBuildings}{Buildings}} object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classPublicServiceFactory_a01bc339cd89079c83630cda53be4a33b}{Public\+Service\+Factory}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classSchoolFactory_a6e6581279466426f6e8019774d072e5a}\label{classSchoolFactory_a6e6581279466426f6e8019774d072e5a}} 
+\index{SchoolFactory@{SchoolFactory}!buildings@{buildings}}
+\index{buildings@{buildings}!SchoolFactory@{SchoolFactory}}
+\doxysubsubsection{\texorpdfstring{buildings}{buildings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}}$\ast$ School\+Factory\+::buildings}
+
+Pointer to a \mbox{\hyperlink{classBuildings}{Buildings}} object, representing the school building instance managed by the factory. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{SchoolFactory_8h}{School\+Factory.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/School\+Factory.\+cpp\end{DoxyCompactItemize}

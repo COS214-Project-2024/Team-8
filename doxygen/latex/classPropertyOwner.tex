@@ -1,0 +1,96 @@
+\hypertarget{classPropertyOwner}{}\doxysection{Property\+Owner Class Reference}
+\label{classPropertyOwner}\index{PropertyOwner@{PropertyOwner}}
+
+
+Concrete decorator class for citizens with residential property.  
+
+
+
+
+{\ttfamily \#include $<$Property\+Owner.\+h$>$}
+
+
+
+Inheritance diagram for Property\+Owner\+:
+% FIG 0
+
+
+Collaboration diagram for Property\+Owner\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPropertyOwner_ac23bbf4852a160771529a0daf455d962}{Property\+Owner}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}} $>$ \mbox{\hyperlink{classCitizenType_ab7fb7c1a14eeb44fa2ea6b6a0084f4b2}{base\+Citizen}})
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classPropertyOwner}{Property\+Owner}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPropertyOwner_aba837c1c664a0453c30b6042efe26de8}{move\+Into\+Residence}} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$building)
+\begin{DoxyCompactList}\small\item\em Allows the citizen to move into a residence. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPropertyOwner_aa1d5573c40884586f9e413ae5fd81a2b}{upgrade\+Residence}} (float satisfaction\+Boost)
+\begin{DoxyCompactList}\small\item\em Enhances citizen\textquotesingle{}s satisfaction level through residence upgrade. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPropertyOwner_adca229fc250fac76b34409b3111e02f2}\label{classPropertyOwner_adca229fc250fac76b34409b3111e02f2}} 
+std\+::string {\bfseries citizen\+Type} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Concrete decorator class for citizens with residential property. 
+
+Enhances the base \mbox{\hyperlink{classCitizen}{Citizen}} functionality with specific attributes and behaviors related to residential property ownership and residence management. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPropertyOwner_ac23bbf4852a160771529a0daf455d962}\label{classPropertyOwner_ac23bbf4852a160771529a0daf455d962}} 
+\index{PropertyOwner@{PropertyOwner}!PropertyOwner@{PropertyOwner}}
+\index{PropertyOwner@{PropertyOwner}!PropertyOwner@{PropertyOwner}}
+\doxysubsubsection{\texorpdfstring{PropertyOwner()}{PropertyOwner()}}
+{\footnotesize\ttfamily Property\+Owner\+::\+Property\+Owner (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}} $>$}]{base\+Citizen }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classPropertyOwner}{Property\+Owner}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Citizen} & A unique pointer to the base citizen object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPropertyOwner_aba837c1c664a0453c30b6042efe26de8}\label{classPropertyOwner_aba837c1c664a0453c30b6042efe26de8}} 
+\index{PropertyOwner@{PropertyOwner}!moveIntoResidence@{moveIntoResidence}}
+\index{moveIntoResidence@{moveIntoResidence}!PropertyOwner@{PropertyOwner}}
+\doxysubsubsection{\texorpdfstring{moveIntoResidence()}{moveIntoResidence()}}
+{\footnotesize\ttfamily void Property\+Owner\+::move\+Into\+Residence (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$}]{building }\end{DoxyParamCaption})}
+
+
+
+Allows the citizen to move into a residence. 
+
+Adjusts the citizen’s status to indicate residence and boosts satisfaction.
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & A pointer to the building the citizen is moving into. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPropertyOwner_aa1d5573c40884586f9e413ae5fd81a2b}\label{classPropertyOwner_aa1d5573c40884586f9e413ae5fd81a2b}} 
+\index{PropertyOwner@{PropertyOwner}!upgradeResidence@{upgradeResidence}}
+\index{upgradeResidence@{upgradeResidence}!PropertyOwner@{PropertyOwner}}
+\doxysubsubsection{\texorpdfstring{upgradeResidence()}{upgradeResidence()}}
+{\footnotesize\ttfamily void Property\+Owner\+::upgrade\+Residence (\begin{DoxyParamCaption}\item[{float}]{satisfaction\+Boost }\end{DoxyParamCaption})}
+
+
+
+Enhances citizen\textquotesingle{}s satisfaction level through residence upgrade. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em satisfaction\+Boost} & The amount by which to increase satisfaction. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Property\+Owner.\+h\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Property\+Owner.\+cpp\end{DoxyCompactItemize}
