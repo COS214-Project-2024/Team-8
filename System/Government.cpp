@@ -9,9 +9,9 @@ Government::Government()
       successor(nullptr),
       requestee(nullptr),
       commands(),
-      budget(0.0),
-      totalRevenue(0.0),
-      currentTaxRate(0.0),
+      budget(503830.0),
+      totalRevenue(106500.0),
+      currentTaxRate(0.15),
       financeDepartment(nullptr)
 {
 }
@@ -22,9 +22,9 @@ Government::Government(FinanceDepartment *financeDepartment)
       successor(nullptr),
       requestee(nullptr),
       commands(),
-      budget(0.0),
-      totalRevenue(0.0),
-      currentTaxRate(0.0),
+      budget(503830.0),
+      totalRevenue(106500.0),
+      currentTaxRate(0.15),
       financeDepartment(financeDepartment)
 {
 }
