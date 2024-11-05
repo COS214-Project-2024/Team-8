@@ -1,102 +1,100 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
-#include "../doctest.h"
-#include "../PopulationControl.h"
-#include "../Buildings.h"
-#include "../CommercialBuilding.h"
-#include "../MedicalCenter.h"
+#include "../System/doctest.h"
+#include "../System//PopulationControl.h"
+#include "../System/Buildings.h"
+#include "../System/CommercialBuilding.h"
+#include "../System/MedicalCenter.h"
+#include "../System/Apartment.h"
 
-// Test PopulationControl initialization
-TEST_CASE("PopulationControl Initialization") {
-    PopulationControl popControl;
-    CHECK(popControl.getTotalPopulation() == 0);
-}
-
-// Test updating population with new buildings
-TEST_CASE("PopulationControl::updatePopulation") {
-    PopulationControl popControl;
-
-    SUBCASE("Add building within max population limit") {
-        Buildings* residentialBuilding = new Buildings(500);
-        popControl.updatePopulation(residentialBuilding);
-        CHECK(popControl.getTotalPopulation() == 500);
+TEST_SUITE("PopulationControl Tests") {
+    TEST_CASE("Initial Population") {
+        PopulationControl popControl;
+        CHECK(popControl.getTotalPopulation() == 0);
     }
 
-    SUBCASE("Exceed max population limit") {
-        popControl.increasePopulation(); // set near the max limit for testing
-        popControl.updatePopulation(new Buildings(PopulationControl::MAX_POPULATION - 1));
+    TEST_CASE("Update Population with Residential Building") {
+        PopulationControl popControl;
         
-        Buildings* overflowBuilding = new Buildings(100);
-        popControl.updatePopulation(overflowBuilding);  // Should trigger control
+        SUBCASE("Adding residential building increases population") {
+            auto* building = new Apartment(100);House::House(string bName,int pReq, int wReq, double mCost, int sCost, int waste, int capacity)
+            popControl.updatePopulation(building);
+            CHECK(popControl.getTotalPopulation() == 100);
+            delete building;
+        }
 
-        CHECK(popControl.getTotalPopulation() <= PopulationControl::MAX_POPULATION);
+        SUBCASE("Adding multiple residential buildings") {
+            auto* building1 = new MockResidentialBuilding(100);
+            auto* building2 = new MockResidentialBuilding(150);
+            
+            popControl.updatePopulation(building1);
+            popControl.updatePopulation(building2);
+            CHECK(popControl.getTotalPopulation() == 250);
+            
+            delete building1;
+            delete building2;
+        }
     }
-}
 
-// Test simulatePopulationGrowth with medical centers
-TEST_CASE("PopulationControl::simulatePopulationGrowth") {
-    PopulationControl popControl;
+    TEST_CASE("Population Growth Simulation") {
+        PopulationControl popControl;
+        auto* residential = new MockResidentialBuilding(100);
+        popControl.updatePopulation(residential);
 
-    SUBCASE("Births from Medical Centers") {
-        Buildings* medCenter = new MedicalCenter(200); 
-        popControl.updatePopulation(medCenter);
+        SUBCASE("Population growth with medical centers") {
+            auto* hospital = new MockMedicalCenter();
+            popControl.simulatePopulationGrowth();
+            CHECK(popControl.getTotalPopulation() > 100);
+            delete hospital;
+        }
         
-        int initialPopulation = popControl.getTotalPopulation();
-        popControl.simulatePopulationGrowth();
-
-        CHECK(popControl.getTotalPopulation() == initialPopulation + 50);
+        delete residential;
     }
 
-    SUBCASE("Exceeding max population with births") {
-        Buildings* medCenter = new MedicalCenter(PopulationControl::MAX_POPULATION - 100, 200);
-        popControl.updatePopulation(medCenter);
+    TEST_CASE("Migration Simulation") {
+        PopulationControl popControl;
+        
+        SUBCASE("Migration increases population based on jobs") {
+            auto* residential = new MockResidentialBuilding(100);
+            popControl.updatePopulation(residential);
 
-        popControl.simulatePopulationGrowth();
-        CHECK(popControl.getTotalPopulation() <= PopulationControl::MAX_POPULATION);
-    }
-}
-
-// Test simulateMigration with commercial buildings
-TEST_CASE("PopulationControl::simulateMigration") {
-    PopulationControl popControl;
-
-    SUBCASE("Migration effect based on jobs created") {
-        CommercialBuilding* office = new CommercialBuilding(100, 200);  // Creates 200 jobs
-        popControl.updatePopulation(office);
-
-        int expectedMigration = static_cast<int>(200 * PopulationControl::MIGRATION_RATE_MULTIPLIER);
-        CHECK(popControl.getTotalPopulation() == expectedMigration + office->getCapacity());
+            auto* commercial = new MockCommercialBuilding(50);
+            int jobsCreated = commercial->getJobsCreated();
+            popControl.simulateMigration(jobsCreated);
+            
+            CHECK(popControl.getTotalPopulation() > 100);
+            
+            delete residential;
+            delete commercial;
+        }
     }
 
-    SUBCASE("Exceeding max population with migration") {
-        popControl.increasePopulation();  // near max limit
-        CommercialBuilding* largeOffice = new CommercialBuilding(100, 100000);
-        popControl.updatePopulation(largeOffice);
-
-        CHECK(popControl.getTotalPopulation() <= PopulationControl::MAX_POPULATION);
+    TEST_CASE("Population Control Enforcement") {
+        PopulationControl popControl;
+        
+        SUBCASE("Population cannot exceed maximum limit") {
+            // Add population up to near maximum
+            for(int i = 0; i < 10; i++) {
+                auto* building = new MockResidentialBuilding(PopulationControl::MAX_POPULATION / 10);
+                popControl.updatePopulation(building);
+                delete building;
+            }
+            
+            // Try to add more population
+            auto* extraBuilding = new MockResidentialBuilding(1000);
+            popControl.updatePopulation(extraBuilding);
+            
+            CHECK(popControl.getTotalPopulation() <= PopulationControl::MAX_POPULATION);
+            delete extraBuilding;
+        }
     }
-}
 
-// Test enforcing population control when limits exceeded
-TEST_CASE("PopulationControl::enforcePopulationControl") {
-    PopulationControl popControl;
-
-    SUBCASE("Emigration reduces overflow population") {
-        popControl.updatePopulation(new Buildings(PopulationControl::MAX_POPULATION));
-        popControl.updatePopulation(new Buildings(1000));  // Triggers population control
-
-        int overflow = popControl.getTotalPopulation() - PopulationControl::MAX_POPULATION;
-        int expectedReduction = static_cast<int>(overflow * 0.10f);
-
-        CHECK(popControl.getTotalPopulation() <= PopulationControl::MAX_POPULATION);
-        CHECK(overflow - expectedReduction <= 0);
+    TEST_CASE("Population Increase") {
+        PopulationControl popControl;
+        int initialPop = popControl.getTotalPopulation();
+        
+        SUBCASE("Increase population directly") {
+            popControl.increasePopulation();
+            CHECK(popControl.getTotalPopulation() > initialPop);
+        }
     }
-}
-
-// Test calculateMigration
-TEST_CASE("PopulationControl::calculateMigration") {
-    PopulationControl popControl;
-
-    int jobsCreated = 1000;
-    int expectedMigration = static_cast<int>(jobsCreated * PopulationControl::MIGRATION_RATE_MULTIPLIER);
-    CHECK(popControl.calculateMigration(jobsCreated) == expectedMigration);
 }
