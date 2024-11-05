@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacedoctest_1_1detail_1_1types" kind="namespace" language="C++">
+    <compoundname>doctest::detail::types</compoundname>
+    <innerclass refid="structdoctest_1_1detail_1_1types_1_1enable__if" prot="public">doctest::detail::types::enable_if</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1types_1_1enable__if_3_01true_00_01T_01_4" prot="public">doctest::detail::types::enable_if&lt; true, T &gt;</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1types_1_1true__type" prot="public">doctest::detail::types::true_type</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1types_1_1false__type" prot="public">doctest::detail::types::false_type</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1types_1_1remove__reference" prot="public">doctest::detail::types::remove_reference</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1types_1_1remove__reference_3_01T_01_6_01_4" prot="public">doctest::detail::types::remove_reference&lt; T &amp; &gt;</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1types_1_1remove__reference_3_01T_01_6_6_01_4" prot="public">doctest::detail::types::remove_reference&lt; T &amp;&amp; &gt;</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1types_1_1is__rvalue__reference" prot="public">doctest::detail::types::is_rvalue_reference</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1types_1_1is__rvalue__reference_3_01T_01_6_6_01_4" prot="public">doctest::detail::types::is_rvalue_reference&lt; T &amp;&amp; &gt;</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1types_1_1remove__const" prot="public">doctest::detail::types::remove_const</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1types_1_1remove__const_3_01const_01T_01_4" prot="public">doctest::detail::types::remove_const&lt; const T &gt;</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1types_1_1is__enum" prot="public">doctest::detail::types::is_enum</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1types_1_1underlying__type" prot="public">doctest::detail::types::underlying_type</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1types_1_1is__pointer" prot="public">doctest::detail::types::is_pointer</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1types_1_1is__pointer_3_01T_01_5_01_4" prot="public">doctest::detail::types::is_pointer&lt; T * &gt;</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1types_1_1is__array" prot="public">doctest::detail::types::is_array</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1types_1_1is__array_3_01T_0fSIZE_0e_4" prot="public">doctest::detail::types::is_array&lt; T[SIZE]&gt;</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="942" column="5"/>
+  </compounddef>
+</doxygen>

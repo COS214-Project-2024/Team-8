@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classMonumentFactory" kind="class" language="C++" prot="public">
+    <compoundname>MonumentFactory</compoundname>
+    <basecompoundref refid="classLandmarkFactory" prot="public" virt="non-virtual">LandmarkFactory</basecompoundref>
+    <includes refid="MonumentFactory_8h" local="no">MonumentFactory.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classMonumentFactory_1a0dffec13fc2e5bf01b55c14ee511653d" prot="public" static="no" mutable="no">
+        <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+        <definition>Buildings* MonumentFactory::buildings</definition>
+        <argsstring></argsstring>
+        <name>buildings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to a <ref refid="classBuildings" kindref="compound">Buildings</ref> object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MonumentFactory.h" line="14" column="15" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MonumentFactory.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMonumentFactory_1a678e56c8090db1f3577c3501cd63aa29" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+        <definition>Buildings * MonumentFactory::createBuilding</definition>
+        <argsstring>()</argsstring>
+        <name>createBuilding</name>
+        <reimplements refid="classLandmarkFactory_1af0a8e396c38942baed18814cc7504119">createBuilding</reimplements>
+        <briefdescription>
+<para>Pure virtual function to create a building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to a <ref refid="classBuildings" kindref="compound">Buildings</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MonumentFactory.h" line="20" column="23" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MonumentFactory.cpp" bodystart="5" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract factory class for creating <ref refid="classMonument" kindref="compound">Monument</ref> objects. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>BuildingFactory</label>
+        <link refid="classBuildingFactory"/>
+      </node>
+      <node id="1">
+        <label>MonumentFactory</label>
+        <link refid="classMonumentFactory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LandmarkFactory</label>
+        <link refid="classLandmarkFactory"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>listOfCitizens</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="3">
+        <label>BuildingFactory</label>
+        <link refid="classBuildingFactory"/>
+      </node>
+      <node id="1">
+        <label>MonumentFactory</label>
+        <link refid="classMonumentFactory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>buildings</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>State</label>
+        <link refid="classState"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>building</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Citizen</label>
+        <link refid="classCitizen"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>tm</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LandmarkFactory</label>
+        <link refid="classLandmarkFactory"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>buildings</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>TravelManager</label>
+        <link refid="classTravelManager"/>
+      </node>
+      <node id="10">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="8">
+        <label>PopulationControl</label>
+        <link refid="classPopulationControl"/>
+      </node>
+      <node id="6">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MonumentFactory.h" line="11" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MonumentFactory.h" bodystart="11" bodyend="21"/>
+    <listofallmembers>
+      <member refid="classMonumentFactory_1a0dffec13fc2e5bf01b55c14ee511653d" prot="public" virt="non-virtual"><scope>MonumentFactory</scope><name>buildings</name></member>
+      <member refid="classMonumentFactory_1a678e56c8090db1f3577c3501cd63aa29" prot="public" virt="virtual"><scope>MonumentFactory</scope><name>createBuilding</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

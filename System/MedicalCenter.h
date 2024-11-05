@@ -7,6 +7,8 @@ using namespace std;
 #ifndef MEDICALCENTER_H
 #define MEDICALCENTER_H
 
+class PublicServiceBuilding;
+
 /**
  * @class MedicalCenter
  * @brief Represents a medical center, inheriting from PublicServiceBuilding.
@@ -130,6 +132,12 @@ public:
      * @return The birth rate as an integer.
      */
     int getBirthRate();
+    /**
+     * @brief Destroy the MedicalCenter object
+     * 
+     * Virtual destructor to ensure proper cleanup of derived classes
+     */
+    virtual ~MedicalCenter();
 };
 
 #endif

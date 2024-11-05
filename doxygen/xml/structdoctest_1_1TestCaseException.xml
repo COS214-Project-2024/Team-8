@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1TestCaseException" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::TestCaseException</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoctest_1_1TestCaseException_1a656c8971ccbedc7d3a0a38f7c6af927e" prot="public" static="no" mutable="no">
+        <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref></type>
+        <definition>String doctest::TestCaseException::error_string</definition>
+        <argsstring></argsstring>
+        <name>error_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2028" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2028" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1TestCaseException_1af30d801dae6dd2f4ea01690bbf5faeca" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::TestCaseException::is_crash</definition>
+        <argsstring></argsstring>
+        <name>is_crash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2029" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2029" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>doctest::TestCaseException</label>
+        <link refid="structdoctest_1_1TestCaseException"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>error_string</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>doctest::String::view</label>
+      </node>
+      <node id="2">
+        <label>doctest::String</label>
+        <link refid="classdoctest_1_1String"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2026" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2027" bodyend="2030"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1TestCaseException_1a656c8971ccbedc7d3a0a38f7c6af927e" prot="public" virt="non-virtual"><scope>doctest::TestCaseException</scope><name>error_string</name></member>
+      <member refid="structdoctest_1_1TestCaseException_1af30d801dae6dd2f4ea01690bbf5faeca" prot="public" virt="non-virtual"><scope>doctest::TestCaseException</scope><name>is_crash</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

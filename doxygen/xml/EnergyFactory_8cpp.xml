@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="EnergyFactory_8cpp" kind="file" language="C++">
+    <compoundname>EnergyFactory.cpp</compoundname>
+    <includes refid="EnergyFactory_8h" local="yes">EnergyFactory.h</includes>
+    <includes refid="EnergySource_8h" local="yes">EnergySource.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>EnergyFactory.h</label>
+        <link refid="EnergyFactory_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>EnergySource.h</label>
+        <link refid="EnergySource_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EnergyFactory.cpp</label>
+        <link refid="EnergyFactory_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="EnergyFactory_8h" kindref="compound">EnergyFactory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="EnergySource_8h" kindref="compound">EnergySource.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><ref refid="classEnergySource" kindref="compound">EnergySource</ref>*<sp/>EnergyFactory::createEnergySource(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>output)<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Not<sp/>yet<sp/>implemented&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EnergyFactory.cpp"/>
+  </compounddef>
+</doxygen>

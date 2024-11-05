@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Train_8h" kind="file" language="C++">
+    <compoundname>Train.h</compoundname>
+    <includes refid="Transport_8h" local="yes">Transport.h</includes>
+    <includedby refid="DemoMain_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/DemoMain.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp</includedby>
+    <includedby refid="TebogosMain_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TebogosMain.cpp</includedby>
+    <includedby refid="TestingMain_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TestingMain.cpp</includedby>
+    <includedby refid="Train_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Train.cpp</includedby>
+    <includedby refid="TrainBuilder_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainBuilder.h</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>MapIterator.h</label>
+        <link refid="MapIterator_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Transport.h</label>
+        <link refid="Transport_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Stops.h</label>
+        <link refid="Stops_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sstream</label>
+      </node>
+      <node id="6">
+        <label>RouteNode.h</label>
+        <link refid="RouteNode_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Train.h</label>
+        <link refid="Train_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="25">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.cpp</label>
+        <link refid="TravelManager_8cpp"/>
+      </node>
+      <node id="6">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainBuilder.cpp</label>
+        <link refid="TrainBuilder_8cpp"/>
+      </node>
+      <node id="20">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h</label>
+        <link refid="Government_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h</label>
+        <link refid="CitizenInterface_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitiesSector.h</label>
+        <link refid="UtilitiesSector_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EconomicPolicies.h</label>
+        <link refid="EconomicPolicies_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PropertyOwner.h</label>
+        <link refid="PropertyOwner_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/GeneralSector.h</label>
+        <link refid="GeneralSector_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h</label>
+        <link refid="CitizenController_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="14">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PublicServicesPolicies.h</label>
+        <link refid="PublicServicesPolicies_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceSector.h</label>
+        <link refid="FinanceSector_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EmployedCitizen.h</label>
+        <link refid="EmployedCitizen_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Policies.h</label>
+        <link refid="Policies_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenType.h</label>
+        <link refid="CitizenType_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Train.cpp</label>
+        <link refid="Train_8cpp"/>
+      </node>
+      <node id="8">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Citizen.h</label>
+        <link refid="Citizen_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h</label>
+        <link refid="TravelManager_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h</label>
+        <link refid="City_8h_source"/>
+      </node>
+      <node id="9">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h</label>
+        <link refid="BuildingController_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h</label>
+        <link refid="FinanceDepartment_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/DemoMain.cpp</label>
+        <link refid="DemoMain_8cpp"/>
+      </node>
+      <node id="5">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainBuilder.h</label>
+        <link refid="TrainBuilder_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Train.h</label>
+        <link refid="Train_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CityController.h</label>
+        <link refid="CityController_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classTrain" prot="public">Train</innerclass>
+    <briefdescription>
+<para>This file implements the <ref refid="classTrain" kindref="compound">Train</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TRAIN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRAIN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Transport_8h" kindref="compound">Transport.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classTrain" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTrain" kindref="compound">Train</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classTransport" kindref="compound">Transport</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTrain_1aa2f13a913dae4ad4ed0b201efec5b19f" kindref="member">Train</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>capacity);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTrain_1a7dc0c9ea34f2f994ccd712f66c644d41" kindref="member">setNumPassenger</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pass);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTrain_1a625461d30a50a62221eeb4e738503833" kindref="member">setCargoWeight</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>weight);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classTrain_1ab9a3744fcd4cd80353a2380e8f78b8bb" kindref="member">travel</ref>(<ref refid="classStops" kindref="compound">Stops</ref>*<sp/>stop,<sp/><ref refid="classRouteNode" kindref="compound">RouteNode</ref>*<sp/>head,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>best<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classTrain_1a7e45373d2223fdaaf61cfbf95f285867" kindref="member">getType</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTrain_1a84d10b3cd05ef144ec3cf219517cb962" kindref="member">setCapacity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>capacity);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classTrain_1ac0e66f207335cdecba0b4c57115fdc62" kindref="member">getCapacity</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classTrain_1ab36bbf7cc2bc772348ef045c2b0c2bff" kindref="member">getWeight</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classTrain_1a59bb0fc2d26443e601225eb880ce17c7" kindref="member">getPassengers</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Train.h"/>
+  </compounddef>
+</doxygen>

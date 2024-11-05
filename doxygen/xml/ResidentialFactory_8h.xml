@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ResidentialFactory_8h" kind="file" language="C++">
+    <compoundname>ResidentialFactory.h</compoundname>
+    <includes refid="BuildingFactory_8h" local="yes">BuildingFactory.h</includes>
+    <includedby refid="ApartmentFactory_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ApartmentFactory.h</includedby>
+    <includedby refid="HouseFactory_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/HouseFactory.h</includedby>
+    <includedby refid="main_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp</includedby>
+    <includedby refid="TebogosMain_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TebogosMain.cpp</includedby>
+    <includedby refid="TownHouseFactory_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouseFactory.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>Buildings.h</label>
+        <link refid="Buildings_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>BuildingFactory.h</label>
+        <link refid="BuildingFactory_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialFactory.h</label>
+        <link refid="ResidentialFactory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ApartmentFactory.h</label>
+        <link refid="ApartmentFactory_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/HouseFactory.h</label>
+        <link refid="HouseFactory_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouseFactory.h</label>
+        <link refid="TownHouseFactory_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialFactory.h</label>
+        <link refid="ResidentialFactory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h</label>
+        <link refid="City_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classResidentialFactory" prot="public">ResidentialFactory</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>RESIDENTIALFACTORY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RESIDENTIALFACTORY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="BuildingFactory_8h" kindref="compound">BuildingFactory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classResidentialFactory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classResidentialFactory" kindref="compound">ResidentialFactory</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classBuildingFactory" kindref="compound">BuildingFactory</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="classResidentialFactory_1afa01c3ca59725cff5486bc0f94e20fa7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBuildings" kindref="compound">Buildings</ref>*<sp/><ref refid="classResidentialFactory_1afa01c3ca59725cff5486bc0f94e20fa7" kindref="member">buildings</ref>;<sp/></highlight></codeline>
+<codeline lineno="27" refid="classResidentialFactory_1af98fef03d68b3ccda81dcd27e922d680" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classBuildings" kindref="compound">Buildings</ref>*<sp/><ref refid="classResidentialFactory_1af98fef03d68b3ccda81dcd27e922d680" kindref="member">createBuilding</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classResidentialFactory" kindref="compound">ResidentialFactory</ref>(){}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialFactory.h"/>
+  </compounddef>
+</doxygen>

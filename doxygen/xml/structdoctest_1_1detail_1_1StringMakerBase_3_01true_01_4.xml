@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1detail_1_1StringMakerBase_3_01true_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::detail::StringMakerBase&lt; true &gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1StringMakerBase_3_01true_01_4_1ae1a11dee413117f36e335677589b047f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref></type>
+        <definition>static String doctest::detail::StringMakerBase&lt; true &gt;::convert</definition>
+        <argsstring>(const DOCTEST_REF_WRAP(T) in)</argsstring>
+        <name>convert</name>
+        <param>
+          <type>const DOCTEST_REF_WRAP(T)</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1073" column="23" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1073" bodyend="1075"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1071" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1071" bodyend="1076"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1detail_1_1StringMakerBase_3_01true_01_4_1ae1a11dee413117f36e335677589b047f" prot="public" virt="non-virtual"><scope>doctest::detail::StringMakerBase&lt; true &gt;</scope><name>convert</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

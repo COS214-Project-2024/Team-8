@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['waste_1147',['waste',['../classCommercialBuilding.html#a3b4753ca12a2e066500379854623176e',1,'CommercialBuilding::waste()'],['../classMedicalCenter.html#a9c34189c188635d506fcc9401ac93431',1,'MedicalCenter::waste()']]],
-  ['waterreq_1148',['waterReq',['../classBuildings.html#ac8c0debb07dcf0555a28be710377fc36',1,'Buildings']]]
+  ['waste_1148',['waste',['../classCommercialBuilding.html#a3b4753ca12a2e066500379854623176e',1,'CommercialBuilding::waste()'],['../classMedicalCenter.html#a9c34189c188635d506fcc9401ac93431',1,'MedicalCenter::waste()']]],
+  ['waterreq_1149',['waterReq',['../classBuildings.html#ac8c0debb07dcf0555a28be710377fc36',1,'Buildings']]]
 ];

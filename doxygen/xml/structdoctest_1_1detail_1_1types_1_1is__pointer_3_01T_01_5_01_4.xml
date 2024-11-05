@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1detail_1_1types_1_1is__pointer_3_01T_01_5_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::detail::types::is_pointer&lt; T * &gt;</compoundname>
+    <basecompoundref refid="structdoctest_1_1detail_1_1types_1_1true__type" prot="public" virt="non-virtual">doctest::detail::types::true_type</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>doctest::detail::types::true_type</label>
+        <link refid="structdoctest_1_1detail_1_1types_1_1true__type"/>
+      </node>
+      <node id="1">
+        <label>doctest::detail::types::is_pointer&lt; T * &gt;</label>
+        <link refid="structdoctest_1_1detail_1_1types_1_1is__pointer_3_01T_01_5_01_4"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>doctest::detail::types::true_type</label>
+        <link refid="structdoctest_1_1detail_1_1types_1_1true__type"/>
+      </node>
+      <node id="1">
+        <label>doctest::detail::types::is_pointer&lt; T * &gt;</label>
+        <link refid="structdoctest_1_1detail_1_1types_1_1is__pointer_3_01T_01_5_01_4"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="970" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="970" bodyend="970"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1detail_1_1types_1_1true__type_1a5ad232af56ff87690d552f77e0413f02" prot="public" virt="non-virtual"><scope>doctest::detail::types::is_pointer&lt; T * &gt;</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

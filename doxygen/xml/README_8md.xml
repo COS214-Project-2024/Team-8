@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>&lt;p<sp/>style=&quot;text-align:<sp/>center;&quot;&gt;<sp/>COS<sp/>214<sp/>Project<sp/>:<sp/>City<sp/>Builder<sp/>&lt;/p&gt;</highlight></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">&lt;br&gt;&lt;img<sp/>src=&quot;./images/logolandscape.png&quot;&gt;&lt;/br&gt;</highlight></codeline>
+<codeline><highlight class="normal">##<sp/><sp/>&lt;p<sp/>style=&quot;text-align:<sp/>center;&quot;&gt;<sp/>*Team<sp/>8<sp/>:<sp/>Design<sp/>Wits*<sp/>&lt;/p&gt;</highlight></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Contents:</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Description](#description)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[How<sp/>to<sp/>Run](#how-to-run)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Documentation](#documentation)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Team](#team)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Description:</highlight></codeline>
+<codeline><highlight class="normal">TBD.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>How<sp/>to<sp/>Run:</highlight></codeline>
+<codeline><highlight class="normal">TBD.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Documentation:</highlight></codeline>
+<codeline><highlight class="normal">TBD.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Team:</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Name<sp/>|<sp/>Links<sp/>|<sp/>Description<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|----------------|------|-------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Tebogo<sp/>Hamese&lt;br&gt;<sp/>*u21532941*&lt;br&gt;&lt;img<sp/>src=&quot;./images/tebogo.jpg&quot;<sp/>width=&quot;100&quot;&gt;<sp/>|<sp/>&lt;br&gt;[&lt;img<sp/>src=&quot;https://github.com/favicon.ico&quot;<sp/>width=&quot;16&quot;<sp/>height=&quot;16&quot;&gt;](https://github.com/tibbyhm)<sp/>|Computer<sp/>Science<sp/>student<sp/>exploring<sp/>cybersecurity<sp/>and<sp/>cloud<sp/>computing.<sp/>I<sp/>keep<sp/>my<sp/>head<sp/>in<sp/>the<sp/>clouds...<sp/>but<sp/>at<sp/>least<sp/>this<sp/>way,<sp/>I<sp/>know<sp/>they’re<sp/>secure!|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Nevan<sp/>Rahman&lt;br&gt;*u21572993*&lt;br&gt;&lt;img<sp/>src=&quot;./images/nev.JPEG&quot;<sp/>width=&quot;100&quot;&gt;<sp/>|<sp/>&lt;br&gt;[&lt;img<sp/>src=&quot;https://github.com/favicon.ico&quot;<sp/>width=&quot;16&quot;<sp/>height=&quot;16&quot;&gt;](https://github.com/rsnevan)<sp/>[&lt;img<sp/>src=&quot;https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/linkedin.svg&quot;<sp/>width=&quot;16&quot;<sp/>height=&quot;16&quot;&gt;](https://linkedin.com/in/nevanrahman)<sp/>|<sp/>BSc<sp/>Computer<sp/>Science<sp/>student<sp/>and<sp/>IT<sp/>Lab<sp/>Technician<sp/>with<sp/>a<sp/>passion<sp/>for<sp/>data.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Unathi<sp/>Dlamini&lt;br&gt;*u22553402*&lt;br&gt;&lt;img<sp/>src=&quot;./images/unathi.jpg&quot;<sp/>width=&quot;100&quot;&gt;<sp/>|<sp/>&lt;br&gt;[&lt;img<sp/>src=&quot;https://github.com/favicon.ico&quot;<sp/>width=&quot;16&quot;<sp/>height=&quot;16&quot;&gt;](https://github.com/unathi3)<sp/>[&lt;img<sp/>src=&quot;https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/linkedin.svg&quot;<sp/>width=&quot;16&quot;<sp/>height=&quot;16&quot;&gt;](https://www.linkedin.com/in/unathi-dlamini-237007224/)<sp/>|A<sp/>second-year<sp/>computer<sp/>science<sp/>student<sp/>at<sp/>the<sp/>University<sp/>of<sp/>Pretoria<sp/>with<sp/>a<sp/>passion<sp/>for<sp/>programming,<sp/>web<sp/>design,<sp/>and<sp/>learning new skills.|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Palesa<sp/>Thabane&lt;br&gt;*u21540838*&lt;br&gt;&lt;img<sp/>src=&quot;./images/palesa.jpg&quot;<sp/>width=&quot;100&quot;&gt;<sp/>|<sp/>&lt;br&gt;[&lt;img<sp/>src=&quot;https://github.com/favicon.ico&quot;<sp/>width=&quot;16&quot;<sp/>height=&quot;16&quot;&gt;](https://github.com/ms-thabane)<sp/>|<sp/>Shy<sp/>shell-dweller<sp/>BSc<sp/>Computer<sp/>Science<sp/>student<sp/>with<sp/>an<sp/>interest<sp/>in<sp/>cybersecurity.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Reinhard<sp/>Pretorius&lt;br&gt;*u22509578*&lt;br&gt;&lt;img<sp/>src=&quot;./images/reinhard.jpg&quot;<sp/>width=&quot;100&quot;&gt;<sp/>|<sp/>&lt;br&gt;[&lt;img<sp/>src=&quot;https://github.com/favicon.ico&quot;<sp/>width=&quot;16&quot;<sp/>height=&quot;16&quot;&gt;](https://github.com/WizardOfGold)<sp/>|Computer<sp/>Science<sp/>student<sp/>with<sp/>a<sp/>passion<sp/>for<sp/>Machine<sp/>Learning<sp/>and<sp/>Complex Data structures|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Mthawelanga<sp/>Gomba&lt;br&gt;*u21664707*&lt;br&gt;&lt;img<sp/>src=&quot;./images/mtha.jpg&quot;<sp/>width=&quot;100&quot;&gt;<sp/>|&lt;br&gt;[&lt;img<sp/>src=&quot;https://github.com/favicon.ico&quot;<sp/>width=&quot;16&quot;<sp/>height=&quot;16&quot;&gt;](https://github.com/AuraBlack123)|<sp/>Average<sp/>dude<sp/>doing<sp/>what<sp/>he<sp/>can<sp/>and<sp/>having<sp/>fun<sp/>along<sp/>the<sp/>way.|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Philemon<sp/>Muleya&lt;br&gt;*u23629810*&lt;br&gt;&lt;img<sp/>src=&quot;./images/philemon.jpg&quot;<sp/>width=&quot;100&quot;&gt;<sp/>|<sp/>&lt;br&gt;[&lt;img<sp/>src=&quot;https://github.com/favicon.ico&quot;<sp/>width=&quot;16&quot;<sp/>height=&quot;16&quot;&gt;](https://github.com/UML23)<sp/>|Second<sp/>year<sp/>student<sp/>with<sp/>interest<sp/>in<sp/>operating<sp/>systems.<sp/>Sudo<sp/>apt-get<sp/>install<sp/>Knowledge... Error|</highlight></codeline>
+    </programlisting>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/README.md"/>
+  </compounddef>
+</doxygen>

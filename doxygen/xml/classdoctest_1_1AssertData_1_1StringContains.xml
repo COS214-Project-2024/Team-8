@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classdoctest_1_1AssertData_1_1StringContains" kind="class" language="C++" prot="public">
+    <compoundname>doctest::AssertData::StringContains</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdoctest_1_1AssertData_1_1StringContains_1a3a2d3db7290d877d30d7cfb609d521bc" prot="private" static="no" mutable="no">
+        <type><ref refid="classdoctest_1_1Contains" kindref="compound">Contains</ref></type>
+        <definition>Contains doctest::AssertData::StringContains::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="847" column="22" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="847" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoctest_1_1AssertData_1_1StringContains_1a7814d2be785feae1103300939f477168" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::AssertData::StringContains::isContains</definition>
+        <argsstring></argsstring>
+        <name>isContains</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="848" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="848" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdoctest_1_1AssertData_1_1StringContains_1a6a88dee0e03ef22a1e425696c3070e16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>doctest::AssertData::StringContains::StringContains</definition>
+        <argsstring>(const String &amp;str)</argsstring>
+        <name>StringContains</name>
+        <param>
+          <type>const <ref refid="classdoctest_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="851" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="851" bodyend="851"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1AssertData_1_1StringContains_1ae8b0e70648c2863d986b3ca053a78078" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>doctest::AssertData::StringContains::StringContains</definition>
+        <argsstring>(Contains cntn)</argsstring>
+        <name>StringContains</name>
+        <param>
+          <type><ref refid="classdoctest_1_1Contains" kindref="compound">Contains</ref></type>
+          <declname>cntn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="852" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="852" bodyend="852"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1AssertData_1_1StringContains_1af784258b8b4f99b8665e090d74610b26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool doctest::AssertData::StringContains::check</definition>
+        <argsstring>(const String &amp;str)</argsstring>
+        <name>check</name>
+        <param>
+          <type>const <ref refid="classdoctest_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="854" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="854" bodyend="854"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1AssertData_1_1StringContains_1ab84e1359927f01f0c625b6d405d79e77" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>doctest::AssertData::StringContains::operator const String &amp;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator const String &amp;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="856" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="856" bodyend="856"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1AssertData_1_1StringContains_1aed2f43aeb1b9182254187eefc61f8176" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* doctest::AssertData::StringContains::c_str</definition>
+        <argsstring>() const</argsstring>
+        <name>c_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="858" column="24" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="858" bodyend="858"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="845" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="845" bodyend="859"/>
+    <listofallmembers>
+      <member refid="classdoctest_1_1AssertData_1_1StringContains_1aed2f43aeb1b9182254187eefc61f8176" prot="public" virt="non-virtual"><scope>doctest::AssertData::StringContains</scope><name>c_str</name></member>
+      <member refid="classdoctest_1_1AssertData_1_1StringContains_1af784258b8b4f99b8665e090d74610b26" prot="public" virt="non-virtual"><scope>doctest::AssertData::StringContains</scope><name>check</name></member>
+      <member refid="classdoctest_1_1AssertData_1_1StringContains_1a3a2d3db7290d877d30d7cfb609d521bc" prot="private" virt="non-virtual"><scope>doctest::AssertData::StringContains</scope><name>content</name></member>
+      <member refid="classdoctest_1_1AssertData_1_1StringContains_1a7814d2be785feae1103300939f477168" prot="private" virt="non-virtual"><scope>doctest::AssertData::StringContains</scope><name>isContains</name></member>
+      <member refid="classdoctest_1_1AssertData_1_1StringContains_1ab84e1359927f01f0c625b6d405d79e77" prot="public" virt="non-virtual"><scope>doctest::AssertData::StringContains</scope><name>operator const String &amp;</name></member>
+      <member refid="classdoctest_1_1AssertData_1_1StringContains_1a6a88dee0e03ef22a1e425696c3070e16" prot="public" virt="non-virtual"><scope>doctest::AssertData::StringContains</scope><name>StringContains</name></member>
+      <member refid="classdoctest_1_1AssertData_1_1StringContains_1ae8b0e70648c2863d986b3ca053a78078" prot="public" virt="non-virtual"><scope>doctest::AssertData::StringContains</scope><name>StringContains</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

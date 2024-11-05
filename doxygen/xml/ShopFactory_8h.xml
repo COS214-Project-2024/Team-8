@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ShopFactory_8h" kind="file" language="C++">
+    <compoundname>ShopFactory.h</compoundname>
+    <includes refid="Buildings_8h" local="yes">Buildings.h</includes>
+    <includes refid="CommercialFactory_8h" local="yes">CommercialFactory.h</includes>
+    <includedby refid="main_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp</includedby>
+    <includedby refid="ShopFactory_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ShopFactory.cpp</includedby>
+    <includedby refid="TebogosMain_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TebogosMain.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>CommercialFactory.h</label>
+        <link refid="CommercialFactory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Buildings.h</label>
+        <link refid="Buildings_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ShopFactory.h</label>
+        <link refid="ShopFactory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>BuildingFactory.h</label>
+        <link refid="BuildingFactory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ShopFactory.h</label>
+        <link refid="ShopFactory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classShopFactory" prot="public">ShopFactory</innerclass>
+    <briefdescription>
+<para>Defines the <ref refid="classShopFactory" kindref="compound">ShopFactory</ref> class interface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SHOPFACTORY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHOPFACTORY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Buildings_8h" kindref="compound">Buildings.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="CommercialFactory_8h" kindref="compound">CommercialFactory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classShopFactory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classShopFactory" kindref="compound">ShopFactory</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classCommercialFactory" kindref="compound">CommercialFactory</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22" refid="classShopFactory_1a00d6ab2e83c74d06173b6d75d005e9fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBuildings" kindref="compound">Buildings</ref>*<sp/><ref refid="classShopFactory_1a00d6ab2e83c74d06173b6d75d005e9fa" kindref="member">buildings</ref>;<sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classBuildings" kindref="compound">Buildings</ref>*<sp/><ref refid="classShopFactory_1aacea60a9db7a627f226b6e4e2ae15a9e" kindref="member">createBuilding</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ShopFactory.h"/>
+  </compounddef>
+</doxygen>

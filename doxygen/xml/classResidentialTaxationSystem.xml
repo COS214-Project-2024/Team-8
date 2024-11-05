@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classResidentialTaxationSystem" kind="class" language="C++" prot="public">
+    <compoundname>ResidentialTaxationSystem</compoundname>
+    <includes refid="ResidentialTaxationSystem_8h" local="no">ResidentialTaxationSystem.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classResidentialTaxationSystem_1aafc16304cdc598b799450189aba7de9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ResidentialTaxationSystem::ResidentialTaxationSystem</definition>
+        <argsstring>()</argsstring>
+        <name>ResidentialTaxationSystem</name>
+        <briefdescription>
+<para>Constructs a new <ref refid="classResidentialTaxationSystem" kindref="compound">ResidentialTaxationSystem</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialTaxationSystem.h" line="25" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialTaxationSystem.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classResidentialTaxationSystem_1a01b4717dc272555cb468b32e564ebc5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ResidentialTaxationSystem::collectIncomeTax</definition>
+        <argsstring>(double incomeTaxRate, double residentsIncome)</argsstring>
+        <name>collectIncomeTax</name>
+        <param>
+          <type>double</type>
+          <declname>incomeTaxRate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>residentsIncome</declname>
+        </param>
+        <briefdescription>
+<para>Collects income tax from residents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>incomeTaxRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current income tax rate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>residentsIncome</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total income of the residents </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The total income tax collected </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialTaxationSystem.h" line="33" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialTaxationSystem.cpp" bodystart="5" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classResidentialTaxationSystem_1ac0ec295cbffd81bc21c2f03a95965207" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ResidentialTaxationSystem::collectPropertyTax</definition>
+        <argsstring>(double propertyTaxRate, double residentsIncome)</argsstring>
+        <name>collectPropertyTax</name>
+        <param>
+          <type>double</type>
+          <declname>propertyTaxRate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>residentsIncome</declname>
+        </param>
+        <briefdescription>
+<para>Collects property tax from residents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>propertyTaxRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current property tax rate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>residentsIncome</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total income of the residents </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The total property tax collected </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialTaxationSystem.h" line="41" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialTaxationSystem.cpp" bodystart="12" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents the residential taxation system that collects income and property taxes from residents. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classResidentialTaxationSystem" kindref="compound">ResidentialTaxationSystem</ref> class is responsible for calculating and collecting income tax and property tax from the residential population. </para>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialTaxationSystem.h" line="19" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialTaxationSystem.h" bodystart="20" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classResidentialTaxationSystem_1a01b4717dc272555cb468b32e564ebc5c" prot="public" virt="non-virtual"><scope>ResidentialTaxationSystem</scope><name>collectIncomeTax</name></member>
+      <member refid="classResidentialTaxationSystem_1ac0ec295cbffd81bc21c2f03a95965207" prot="public" virt="non-virtual"><scope>ResidentialTaxationSystem</scope><name>collectPropertyTax</name></member>
+      <member refid="classResidentialTaxationSystem_1aafc16304cdc598b799450189aba7de9f" prot="public" virt="non-virtual"><scope>ResidentialTaxationSystem</scope><name>ResidentialTaxationSystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

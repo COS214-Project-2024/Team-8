@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Plane_8h" kind="file" language="C++">
+    <compoundname>Plane.h</compoundname>
+    <includes refid="Transport_8h" local="yes">Transport.h</includes>
+    <includedby refid="DemoMain_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/DemoMain.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp</includedby>
+    <includedby refid="Plane_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.cpp</includedby>
+    <includedby refid="PlaneBuilder_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PlaneBuilder.h</includedby>
+    <includedby refid="TebogosMain_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TebogosMain.cpp</includedby>
+    <includedby refid="TestingMain_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TestingMain.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.h</label>
+        <link refid="Plane_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>MapIterator.h</label>
+        <link refid="MapIterator_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Transport.h</label>
+        <link refid="Transport_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Stops.h</label>
+        <link refid="Stops_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sstream</label>
+      </node>
+      <node id="6">
+        <label>RouteNode.h</label>
+        <link refid="RouteNode_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="25">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.cpp</label>
+        <link refid="TravelManager_8cpp"/>
+      </node>
+      <node id="20">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h</label>
+        <link refid="Government_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h</label>
+        <link refid="CitizenInterface_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.h</label>
+        <link refid="Plane_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitiesSector.h</label>
+        <link refid="UtilitiesSector_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EconomicPolicies.h</label>
+        <link refid="EconomicPolicies_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PropertyOwner.h</label>
+        <link refid="PropertyOwner_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/GeneralSector.h</label>
+        <link refid="GeneralSector_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h</label>
+        <link refid="CitizenController_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PlaneBuilder.cpp</label>
+        <link refid="PlaneBuilder_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="14">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PublicServicesPolicies.h</label>
+        <link refid="PublicServicesPolicies_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceSector.h</label>
+        <link refid="FinanceSector_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EmployedCitizen.h</label>
+        <link refid="EmployedCitizen_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Policies.h</label>
+        <link refid="Policies_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenType.h</label>
+        <link refid="CitizenType_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Citizen.h</label>
+        <link refid="Citizen_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h</label>
+        <link refid="TravelManager_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.cpp</label>
+        <link refid="Plane_8cpp"/>
+      </node>
+      <node id="11">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h</label>
+        <link refid="City_8h_source"/>
+      </node>
+      <node id="9">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h</label>
+        <link refid="BuildingController_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PlaneBuilder.h</label>
+        <link refid="PlaneBuilder_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h</label>
+        <link refid="FinanceDepartment_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/DemoMain.cpp</label>
+        <link refid="DemoMain_8cpp"/>
+      </node>
+      <node id="10">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CityController.h</label>
+        <link refid="CityController_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classPlane" prot="public">Plane</innerclass>
+    <briefdescription>
+<para>This file implements the <ref refid="classPlane" kindref="compound">Plane</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The plane is a type of transport that can travel to stops </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PLANE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PLANE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Transport_8h" kindref="compound">Transport.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classPlane" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPlane" kindref="compound">Plane</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classTransport" kindref="compound">Transport</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPlane_1a1bd27f3752b2ef7bb99abe2a56c4d143" kindref="member">Plane</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>capacity);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlane_1adcac2f8b24cf80da8ba4f1aaa32b3c74" kindref="member">setNumPassenger</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pass);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlane_1af486e2e9b094c57dbbeb6956db58dcc8" kindref="member">setCargoWeight</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>weight);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classPlane_1ac93de5fe1bcefa477ad33c5d4f01dcf7" kindref="member">travel</ref>(<ref refid="classStops" kindref="compound">Stops</ref>*<sp/>stop,<sp/><ref refid="classRouteNode" kindref="compound">RouteNode</ref>*<sp/>head,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>best<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classPlane_1a0cebc4f04e80ab168fcfbee4069b66e7" kindref="member">getType</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlane_1ad0df222c4207b7a46e772c58a579d443" kindref="member">setCapacity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>capacity);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlane_1a7f2b8e19f1d0482d6b6fa5fe7b071c56" kindref="member">getCapacity</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classPlane_1ae3fd29c3865ceaefadffbdda4929396f" kindref="member">getWeight</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlane_1a29ba3ebc182fbd2d9c655024b5d85b57" kindref="member">getPassengers</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.h"/>
+  </compounddef>
+</doxygen>

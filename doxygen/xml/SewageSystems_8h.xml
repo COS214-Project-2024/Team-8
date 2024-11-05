@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="SewageSystems_8h" kind="file" language="C++">
+    <compoundname>SewageSystems.h</compoundname>
+    <includes refid="Utility_8h" local="yes">Utility.h</includes>
+    <includedby refid="SewageFactory_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageFactory.h</includedby>
+    <includedby refid="SewageSystems_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.cpp</includedby>
+    <includedby refid="TestingMain_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TestingMain.cpp</includedby>
+    <includedby refid="UtilitesControl_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitesControl.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h</label>
+        <link refid="SewageSystems_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>EnergySource.h</label>
+        <link refid="EnergySource_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>chrono</label>
+      </node>
+      <node id="4">
+        <label>thread</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h</label>
+        <link refid="SewageSystems_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageFactory.h</label>
+        <link refid="SewageFactory_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitesControl.h</label>
+        <link refid="UtilitesControl_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h</label>
+        <link refid="City_8h_source"/>
+      </node>
+      <node id="5">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CityController.h</label>
+        <link refid="CityController_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classSewageSystems" prot="public">SewageSystems</innerclass>
+    <briefdescription>
+<para>The header file for the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SEWAGESYSTEMS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SEWAGESYSTEMS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Utility_8h" kindref="compound">Utility.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classSewageSystems" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSewageSystems" kindref="compound">SewageSystems</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classUtility" kindref="compound">Utility</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxWaste;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>blockagepercentage;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSewageSystems_1ab53177265b9da63f67a339d4ce933a29" kindref="member">SewageSystems</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>output);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classSewageSystems_1ae49f42bdab9a540700687e1e057dd16a" kindref="member">getStatus</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSewageSystems_1ac8f9acf837402ea3fad02b42ff6063f9" kindref="member">executeOperation</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classSewageSystems_1a390667d56ab969144e08e3e5778e9a39" kindref="member">getOutput</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSewageSystems_1a6d0ec43da3fe9edb9732f11d5bef4cec" kindref="member">pauseOperation</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSewageSystems_1acf5c2be3686331135698ef9dbcde15c5" kindref="member">setmaxWaste</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSewageSystems_1aab1ed6964d6e259067d1305fe8a20cd2" kindref="member">undoChange</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classSewageSystems_1a58d6c2b7a78ee701772d44efb30ddee9" kindref="member">getUtilityType</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUtility" kindref="compound">Utility</ref>*<sp/><ref refid="classSewageSystems_1ac2c0e0ae189c173a5a9596251b6537e3" kindref="member">clone</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSewageSystems_1a1c5bad0443ff2c05e44432d08f074c97" kindref="member">repairUtility</ref>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSewageSystems_1a388d3ef2329b6f97b454cf9640ce6539" kindref="member">setOutput</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Output);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSewageSystems_1a019a3a6808d52bd5b87209c4fd127c53" kindref="member">addBuilding</ref>(<ref refid="classBuildings" kindref="compound">Buildings</ref>*<sp/>building);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSewageSystems_1affcbc6b4d39ab909ec5334f2d0703b4c" kindref="member">cleanSewage</ref>(<ref refid="classBuildings" kindref="compound">Buildings</ref>*<sp/>sender);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h"/>
+  </compounddef>
+</doxygen>

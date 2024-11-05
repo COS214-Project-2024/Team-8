@@ -1,0 +1,838 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCitizenInterface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>CitizenInterface</compoundname>
+    <derivedcompoundref refid="classCitizen" prot="public" virt="non-virtual">Citizen</derivedcompoundref>
+    <derivedcompoundref refid="classCitizenType" prot="public" virt="non-virtual">CitizenType</derivedcompoundref>
+    <includes refid="CitizenInterface_8h" local="no">CitizenInterface.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCitizenInterface_1ada5892a64a6cac5a27a313735f6f7ef8" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CitizenInterface::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of the citizen. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="148" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCitizenInterface_1ae295a5670ab4e6f5ede3ba3914c95322" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CitizenInterface::salary</definition>
+        <argsstring></argsstring>
+        <name>salary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Salary of the citizen. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="149" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCitizenInterface_1ae04673c435d951b25d841c24456297c0" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CitizenInterface::satisfaction</definition>
+        <argsstring></argsstring>
+        <name>satisfaction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Satisfaction level of the citizen. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="150" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCitizenInterface_1ae89f359a99f0c4c603ca8590b780582b" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CitizenInterface::age</definition>
+        <argsstring></argsstring>
+        <name>age</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="151" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCitizenInterface_1a1949f7d399a688e2d7cdf1c7de81b02e" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CitizenInterface::isEmployed</definition>
+        <argsstring></argsstring>
+        <name>isEmployed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Employment status of the citizen. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="152" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCitizenInterface_1a2277bd8cf0f5deeeb2edcb5fb8c88357" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CitizenInterface::ownsProperty</definition>
+        <argsstring></argsstring>
+        <name>ownsProperty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Property ownership status of the citizen. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="153" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCitizenInterface_1a8f1062120fb4edff8be1ff2282692149" prot="protected" static="no" mutable="no">
+        <type><ref refid="classGovernment" kindref="compound">Government</ref> *</type>
+        <definition>Government* CitizenInterface::government</definition>
+        <argsstring></argsstring>
+        <name>government</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the <ref refid="classGovernment" kindref="compound">Government</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="154" column="16" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCitizenInterface_1a81e269098f1a81dd046773e520e0065f" prot="protected" static="no" mutable="no">
+        <type><ref refid="classPopulationControl" kindref="compound">PopulationControl</ref></type>
+        <definition>PopulationControl CitizenInterface::popControl</definition>
+        <argsstring></argsstring>
+        <name>popControl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Manages population metrics and demographics. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="155" column="23" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCitizenInterface_1a0932e90d5917ea2d80cc545943eee930" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CitizenInterface::currTaxRate</definition>
+        <argsstring></argsstring>
+        <name>currTaxRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="156" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCitizenInterface_1a24e22f118e15014583962f2dd71d4ca5" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CitizenInterface::balance</definition>
+        <argsstring></argsstring>
+        <name>balance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="157" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCitizenInterface_1ad7cec6aa7c9c96c45ea18062790736b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual CitizenInterface::~CitizenInterface</definition>
+        <argsstring>()=default</argsstring>
+        <name>~CitizenInterface</name>
+        <briefdescription>
+<para>Virtual destructor to allow for polymorphic deletion. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="28" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1ac523798722c1850f01e09f70bd8b0763" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::unique_ptr&lt; <ref refid="classCitizenInterface" kindref="compound">CitizenInterface</ref> &gt;</type>
+        <definition>virtual std::unique_ptr&lt;CitizenInterface&gt; CitizenInterface::clone</definition>
+        <argsstring>()=0</argsstring>
+        <name>clone</name>
+        <reimplementedby refid="classCitizen_1ade11673566d466af3e785829df29a484">clone</reimplementedby>
+        <reimplementedby refid="classCitizenType_1a6d6ee37de29e2791fb3ef2bc6a01e18c">clone</reimplementedby>
+        <briefdescription>
+<para>Clones the citizen object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A unique pointer to a new <ref refid="classCitizenInterface" kindref="compound">CitizenInterface</ref> object that is a clone of this object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="34" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1ad6b01b1e47b2c0f08aad5b074cdd7feb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CitizenInterface::update</definition>
+        <argsstring>(float newTaxRate)=0</argsstring>
+        <name>update</name>
+        <reimplementedby refid="classCitizen_1a8e8aa3ad0de003d19a835f7cb2972e2b">update</reimplementedby>
+        <reimplementedby refid="classCitizenType_1ab753df3909b5c4bb09a6a6092d78eac4">update</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>newTaxRate</declname>
+        </param>
+        <briefdescription>
+<para>Updates the citizen with information from a governing authority. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newTaxRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new tax rate to be applied. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="40" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1a497d1327d92721e95f570bfb264c0f14" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CitizenInterface::makeRequest</definition>
+        <argsstring>(Government *government, std::string requestDetails)=0</argsstring>
+        <name>makeRequest</name>
+        <reimplementedby refid="classCitizen_1a913dbea7ecf2b87951908c9554db652a">makeRequest</reimplementedby>
+        <reimplementedby refid="classCitizenType_1aae53050c5e3c66c8978db9defc2746e6">makeRequest</reimplementedby>
+        <param>
+          <type><ref refid="classGovernment" kindref="compound">Government</ref> *</type>
+          <declname>government</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>requestDetails</declname>
+        </param>
+        <briefdescription>
+<para>Submits a request to the government. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>government</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The government entity to receive the request. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>requestDetails</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The details of the request. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="47" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1a627fc1401d87e5c5740b3a7b435891fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CitizenInterface::useTransport</definition>
+        <argsstring>(Stops *stop, int capacity, bool bestRoute=false)=0</argsstring>
+        <name>useTransport</name>
+        <reimplementedby refid="classCitizen_1a7431f43a1090664ca3a0c75f1860c7f4">useTransport</reimplementedby>
+        <reimplementedby refid="classCitizenType_1a035d71e5fbd61e0e491f10812643f1de">useTransport</reimplementedby>
+        <param>
+          <type><ref refid="classStops" kindref="compound">Stops</ref> *</type>
+          <declname>stop</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bestRoute</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Uses transport by calling travel method in <ref refid="classTransport" kindref="compound">Transport</ref> hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>transport</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transport system to be used. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="53" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1af41f54c047a6090e91cce78fd482dc00" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CitizenInterface::addKnownLocations</definition>
+        <argsstring>(Stops *stop)=0</argsstring>
+        <name>addKnownLocations</name>
+        <reimplementedby refid="classCitizen_1a0898b8b98a35a1744d5d4c235ab4681d">addKnownLocations</reimplementedby>
+        <reimplementedby refid="classCitizenType_1aafbc7e228dd2fb4da91059a7ab13365f">addKnownLocations</reimplementedby>
+        <param>
+          <type><ref refid="classStops" kindref="compound">Stops</ref> *</type>
+          <declname>stop</declname>
+        </param>
+        <briefdescription>
+<para>Adds known locations to the citizen&apos;s travel manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stop to be added to the travel manager. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="59" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1ac43523f4ed8709b965c96278a3d09393" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CitizenInterface::adjustCitizenSatisfaction</definition>
+        <argsstring>(float newSatisfaction)=0</argsstring>
+        <name>adjustCitizenSatisfaction</name>
+        <reimplementedby refid="classCitizen_1a68c89f916d8b94096d89d7b605e959cb">adjustCitizenSatisfaction</reimplementedby>
+        <reimplementedby refid="classCitizenType_1a0d0d82ba2482a2343f2089f9ab40c6de">adjustCitizenSatisfaction</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>newSatisfaction</declname>
+        </param>
+        <briefdescription>
+<para>Adjusts the satisfaction level of the citizen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newSatisfaction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new satisfaction level. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="65" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1ae8fec0392ec8735c6146fbfdc1cae18f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CitizenInterface::requestPublicService</definition>
+        <argsstring>(std::string serviceType, float impact)=0</argsstring>
+        <name>requestPublicService</name>
+        <reimplementedby refid="classCitizen_1a6af6fe4dae318e5747424c055a3b8bd9">requestPublicService</reimplementedby>
+        <reimplementedby refid="classCitizenType_1abbfb3180ef46dc4a39d60c2e7b021fc7">requestPublicService</reimplementedby>
+        <param>
+          <type>std::string</type>
+          <declname>serviceType</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>impact</declname>
+        </param>
+        <briefdescription>
+<para>Requests access to a public service, affecting citizen satisfaction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serviceType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of public service requested (e.g., &quot;Healthcare&quot;, &quot;Education&quot;). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>impact</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Satisfaction impact of using this service. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="72" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1ad58560caff8a0cc1329054e95c9491f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CitizenInterface::attendEvent</definition>
+        <argsstring>(std::string eventName, float impact)=0</argsstring>
+        <name>attendEvent</name>
+        <reimplementedby refid="classCitizen_1a1c6324eadadad370567f8af2f6b04f27">attendEvent</reimplementedby>
+        <reimplementedby refid="classCitizenType_1a568146357029967143e17b44dcb1c318">attendEvent</reimplementedby>
+        <param>
+          <type>std::string</type>
+          <declname>eventName</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>impact</declname>
+        </param>
+        <briefdescription>
+<para>Attends a city event, potentially boosting satisfaction and engagement. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eventName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the event. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>impact</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The impact of the event on citizen satisfaction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="79" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1a7b16a6f570cb6dfca1e53d01d9cdf9ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float CitizenInterface::evaluateHappiness</definition>
+        <argsstring>()=0</argsstring>
+        <name>evaluateHappiness</name>
+        <reimplementedby refid="classCitizen_1a264073daff7d319ecb2cd3ef06a794e9">evaluateHappiness</reimplementedby>
+        <reimplementedby refid="classCitizenType_1af3f22949052e155ce0b7582fd747e606">evaluateHappiness</reimplementedby>
+        <briefdescription>
+<para>Evaluates the happiness level of the citizen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An overall happiness level considering satisfaction and other personal factors. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="85" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1a32bdf4369e9973f2ff9f712e8ca55b24" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CitizenInterface::setEmploymentStatus</definition>
+        <argsstring>(bool employmentStatus)=0</argsstring>
+        <name>setEmploymentStatus</name>
+        <reimplementedby refid="classCitizen_1a67360b9651e7a5503c920eca85c0d79e">setEmploymentStatus</reimplementedby>
+        <reimplementedby refid="classCitizenType_1acb51eaee56333a56e4b3531f6e601d1c">setEmploymentStatus</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>employmentStatus</declname>
+        </param>
+        <briefdescription>
+<para>Sets the employment status of the citizen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>employmentStatus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The employment status (true for employed, false for unemployed). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="90" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1a1899f3d8d3f1bba8f59fc435e06a7c31" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CitizenInterface::setPropertyOwnership</definition>
+        <argsstring>(bool ownsProperty)=0</argsstring>
+        <name>setPropertyOwnership</name>
+        <reimplementedby refid="classCitizen_1a1aa1eca1f2adfc51f109637b4c6c4892">setPropertyOwnership</reimplementedby>
+        <reimplementedby refid="classCitizenType_1a588493f6810dda6ff5e74290e9e1b5dc">setPropertyOwnership</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>ownsProperty</declname>
+        </param>
+        <briefdescription>
+<para>Sets the property ownership status of the citizen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ownsProperty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ownership status (true if owns property, false otherwise). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="96" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1a371d2c7ffc1fdb5b36f9487ef0ca9c1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float CitizenInterface::getSalary</definition>
+        <argsstring>()=0</argsstring>
+        <name>getSalary</name>
+        <reimplementedby refid="classCitizen_1ab34564a3430b1fa5574e4a4409b38115">getSalary</reimplementedby>
+        <reimplementedby refid="classCitizenType_1a51be73da5f42dec3c719337e7011146a">getSalary</reimplementedby>
+        <briefdescription>
+<para>Returns the citizen&apos;s current salary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The citizen&apos;s salary. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="102" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1a6fae53c2d69484f043c9af10f15161c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CitizenInterface::setSalary</definition>
+        <argsstring>(float newSalary)=0</argsstring>
+        <name>setSalary</name>
+        <reimplementedby refid="classCitizen_1ac2d947f929d253b87b64485c9a7498c3">setSalary</reimplementedby>
+        <reimplementedby refid="classCitizenType_1a4e277d8f603503921079cc4d2465a4e7">setSalary</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>newSalary</declname>
+        </param>
+        <briefdescription>
+<para>Sets a new salary for the citizen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newSalary</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new salary amount. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="108" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1a9bd7f8f5288eadfdb2b59c049792aaf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float CitizenInterface::getSatisfaction</definition>
+        <argsstring>()=0</argsstring>
+        <name>getSatisfaction</name>
+        <reimplementedby refid="classCitizen_1a0a875195b487daf901eceaf3e7dc6914">getSatisfaction</reimplementedby>
+        <reimplementedby refid="classCitizenType_1a83a94fc8b3f4c8b1e8ad3bc2a6d42588">getSatisfaction</reimplementedby>
+        <briefdescription>
+<para>Gets the satisfaction of the citizen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The satisfaction of the citizen. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="113" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1aaead4dfe58d130b52c76836ce5d7cefe" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool CitizenInterface::getEmployementStatus</definition>
+        <argsstring>()=0</argsstring>
+        <name>getEmployementStatus</name>
+        <reimplementedby refid="classCitizen_1a27e24c005f0d75caa6e33275c3dbc887">getEmployementStatus</reimplementedby>
+        <reimplementedby refid="classCitizenType_1af9d568d82c39f39812483123bae2d69b">getEmployementStatus</reimplementedby>
+        <briefdescription>
+<para>Gets the employment status of the citizen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The employment status of the citizen. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="118" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1a2ea81b15184bd333b7c60aaffb1d7e05" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool CitizenInterface::getPropertyOwnershipStatus</definition>
+        <argsstring>()=0</argsstring>
+        <name>getPropertyOwnershipStatus</name>
+        <reimplementedby refid="classCitizen_1aaa81a0d5850c26dcfdfd1ca6f808fa35">getPropertyOwnershipStatus</reimplementedby>
+        <reimplementedby refid="classCitizenType_1a922ffa635257b3130fd5d823096aeb4a">getPropertyOwnershipStatus</reimplementedby>
+        <briefdescription>
+<para>Gets the property ownership status of the citizen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The property ownership status of the citizen. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="123" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1a4799289b2011f0fcb72ce991aa17650f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int CitizenInterface::getAge</definition>
+        <argsstring>()=0</argsstring>
+        <name>getAge</name>
+        <reimplementedby refid="classCitizen_1a96e445dc5c4468d9c85faa49475c329a">getAge</reimplementedby>
+        <reimplementedby refid="classCitizenType_1ad85a22568685a326686adc0eef92df2b">getAge</reimplementedby>
+        <briefdescription>
+<para>Gets the age of the citizen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The age of the citizen. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="129" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1a9044492e21959c0ff353e1b3c68046fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string CitizenInterface::getName</definition>
+        <argsstring>()=0</argsstring>
+        <name>getName</name>
+        <reimplementedby refid="classCitizen_1a6cb8c93c800efcb4abbfe25e63c68317">getName</reimplementedby>
+        <reimplementedby refid="classCitizenType_1a0450b71e06dba458705c9d0782ea6859">getName</reimplementedby>
+        <briefdescription>
+<para>Gets the name of the citizen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The name of the citizen. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="134" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1af7fade8a9ab0d1c2e97a88837c30f927" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CitizenInterface::displayDetails</definition>
+        <argsstring>()=0</argsstring>
+        <name>displayDetails</name>
+        <reimplementedby refid="classCitizen_1acdf4737fdc5e63a32a7de1163bbbc09d">displayDetails</reimplementedby>
+        <reimplementedby refid="classCitizenType_1a97d6b7055f9f4bb46b87d14d5a7ec7bf">displayDetails</reimplementedby>
+        <briefdescription>
+<para>Displays the details of the citizen in a formatted manner. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="138" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1a98940f52ade08a1096cac7517eb77f40" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float CitizenInterface::getTaxRate</definition>
+        <argsstring>()=0</argsstring>
+        <name>getTaxRate</name>
+        <reimplementedby refid="classCitizen_1a9fa1557495535202d0df1978159b2f0c">getTaxRate</reimplementedby>
+        <reimplementedby refid="classCitizenType_1ae79d14e7f2721f6c689b3522d1877f24">getTaxRate</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="140" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1af59ea950baf56ca6bf72bb60c5fe210c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double CitizenInterface::getBalance</definition>
+        <argsstring>()=0</argsstring>
+        <name>getBalance</name>
+        <reimplementedby refid="classCitizen_1aa6c1699fdd802b00df7f24f7bfb01a5a">getBalance</reimplementedby>
+        <reimplementedby refid="classCitizenType_1ab2890232f3e35f300a9071769985db0b">getBalance</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="141" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1a4bbee357e479349ee4dae70efae6798b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CitizenInterface::setBalance</definition>
+        <argsstring>(double newBalance)=0</argsstring>
+        <name>setBalance</name>
+        <reimplementedby refid="classCitizen_1a2198874c44e84e0f306270de394fa6e5">setBalance</reimplementedby>
+        <reimplementedby refid="classCitizenType_1ae6a9f47fbb35bd9df0c9e05be79b9cce">setBalance</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>newBalance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="142" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenInterface_1a5d103f160f7ee36a20a60366ab3285e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CitizenInterface::setSatisfaction</definition>
+        <argsstring>(int newSatisfaction)=0</argsstring>
+        <name>setSatisfaction</name>
+        <reimplementedby refid="classCitizen_1a8146ecbe7197b7e8fc14939d4251dd2d">setSatisfaction</reimplementedby>
+        <reimplementedby refid="classCitizenType_1adb536cada3b9f68c146b64534e30ef83">setSatisfaction</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>newSatisfaction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="144" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An abstract base class that defines the interface for <ref refid="classCitizen" kindref="compound">Citizen</ref> components. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This interface provides a common structure for all citizen-related classes, including functions for tax calculation, salary adjustments, public service requests, and cloning capabilities. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>EmployedCitizen</label>
+        <link refid="classEmployedCitizen"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Citizen</label>
+        <link refid="classCitizen"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>PropertyOwner</label>
+        <link refid="classPropertyOwner"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CitizenType</label>
+        <link refid="classCitizenType"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="3">
+        <label>PopulationControl</label>
+        <link refid="classPopulationControl"/>
+      </node>
+      <node id="1">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" line="23" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenInterface.h" bodystart="23" bodyend="158"/>
+    <listofallmembers>
+      <member refid="classCitizenInterface_1af41f54c047a6090e91cce78fd482dc00" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>addKnownLocations</name></member>
+      <member refid="classCitizenInterface_1ac43523f4ed8709b965c96278a3d09393" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>adjustCitizenSatisfaction</name></member>
+      <member refid="classCitizenInterface_1ae89f359a99f0c4c603ca8590b780582b" prot="protected" virt="non-virtual"><scope>CitizenInterface</scope><name>age</name></member>
+      <member refid="classCitizenInterface_1ad58560caff8a0cc1329054e95c9491f9" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>attendEvent</name></member>
+      <member refid="classCitizenInterface_1a24e22f118e15014583962f2dd71d4ca5" prot="protected" virt="non-virtual"><scope>CitizenInterface</scope><name>balance</name></member>
+      <member refid="classCitizenInterface_1ac523798722c1850f01e09f70bd8b0763" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>clone</name></member>
+      <member refid="classCitizenInterface_1a0932e90d5917ea2d80cc545943eee930" prot="protected" virt="non-virtual"><scope>CitizenInterface</scope><name>currTaxRate</name></member>
+      <member refid="classCitizenInterface_1af7fade8a9ab0d1c2e97a88837c30f927" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>displayDetails</name></member>
+      <member refid="classCitizenInterface_1a7b16a6f570cb6dfca1e53d01d9cdf9ca" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>evaluateHappiness</name></member>
+      <member refid="classCitizenInterface_1a4799289b2011f0fcb72ce991aa17650f" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>getAge</name></member>
+      <member refid="classCitizenInterface_1af59ea950baf56ca6bf72bb60c5fe210c" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>getBalance</name></member>
+      <member refid="classCitizenInterface_1aaead4dfe58d130b52c76836ce5d7cefe" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>getEmployementStatus</name></member>
+      <member refid="classCitizenInterface_1a9044492e21959c0ff353e1b3c68046fe" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>getName</name></member>
+      <member refid="classCitizenInterface_1a2ea81b15184bd333b7c60aaffb1d7e05" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>getPropertyOwnershipStatus</name></member>
+      <member refid="classCitizenInterface_1a371d2c7ffc1fdb5b36f9487ef0ca9c1c" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>getSalary</name></member>
+      <member refid="classCitizenInterface_1a9bd7f8f5288eadfdb2b59c049792aaf6" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>getSatisfaction</name></member>
+      <member refid="classCitizenInterface_1a98940f52ade08a1096cac7517eb77f40" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>getTaxRate</name></member>
+      <member refid="classCitizenInterface_1a8f1062120fb4edff8be1ff2282692149" prot="protected" virt="non-virtual"><scope>CitizenInterface</scope><name>government</name></member>
+      <member refid="classCitizenInterface_1a1949f7d399a688e2d7cdf1c7de81b02e" prot="protected" virt="non-virtual"><scope>CitizenInterface</scope><name>isEmployed</name></member>
+      <member refid="classCitizenInterface_1a497d1327d92721e95f570bfb264c0f14" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>makeRequest</name></member>
+      <member refid="classCitizenInterface_1ada5892a64a6cac5a27a313735f6f7ef8" prot="protected" virt="non-virtual"><scope>CitizenInterface</scope><name>name</name></member>
+      <member refid="classCitizenInterface_1a2277bd8cf0f5deeeb2edcb5fb8c88357" prot="protected" virt="non-virtual"><scope>CitizenInterface</scope><name>ownsProperty</name></member>
+      <member refid="classCitizenInterface_1a81e269098f1a81dd046773e520e0065f" prot="protected" virt="non-virtual"><scope>CitizenInterface</scope><name>popControl</name></member>
+      <member refid="classCitizenInterface_1ae8fec0392ec8735c6146fbfdc1cae18f" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>requestPublicService</name></member>
+      <member refid="classCitizenInterface_1ae295a5670ab4e6f5ede3ba3914c95322" prot="protected" virt="non-virtual"><scope>CitizenInterface</scope><name>salary</name></member>
+      <member refid="classCitizenInterface_1ae04673c435d951b25d841c24456297c0" prot="protected" virt="non-virtual"><scope>CitizenInterface</scope><name>satisfaction</name></member>
+      <member refid="classCitizenInterface_1a4bbee357e479349ee4dae70efae6798b" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>setBalance</name></member>
+      <member refid="classCitizenInterface_1a32bdf4369e9973f2ff9f712e8ca55b24" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>setEmploymentStatus</name></member>
+      <member refid="classCitizenInterface_1a1899f3d8d3f1bba8f59fc435e06a7c31" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>setPropertyOwnership</name></member>
+      <member refid="classCitizenInterface_1a6fae53c2d69484f043c9af10f15161c6" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>setSalary</name></member>
+      <member refid="classCitizenInterface_1a5d103f160f7ee36a20a60366ab3285e6" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>setSatisfaction</name></member>
+      <member refid="classCitizenInterface_1ad6b01b1e47b2c0f08aad5b074cdd7feb" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>update</name></member>
+      <member refid="classCitizenInterface_1a627fc1401d87e5c5740b3a7b435891fd" prot="public" virt="pure-virtual"><scope>CitizenInterface</scope><name>useTransport</name></member>
+      <member refid="classCitizenInterface_1ad7cec6aa7c9c96c45ea18062790736b2" prot="public" virt="virtual"><scope>CitizenInterface</scope><name>~CitizenInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

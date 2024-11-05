@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1StringMaker" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::StringMaker</compoundname>
+    <basecompoundref refid="structdoctest_1_1detail_1_1StringMakerBase" prot="public" virt="non-virtual">doctest::detail::StringMakerBase&lt; detail::has_insertion_operator&lt; T &gt;::value||detail::types::is_pointer&lt; T &gt;::value||detail::types::is_array&lt; T &gt;::value &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>doctest::StringMaker&lt; T &gt;</label>
+        <link refid="structdoctest_1_1StringMaker"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>doctest::detail::StringMakerBase&lt; detail::has_insertion_operator&lt; T &gt;::value||detail::types::is_pointer&lt; T &gt;::value||detail::types::is_array&lt; T &gt;::value &gt;</label>
+        <link refid="structdoctest_1_1detail_1_1StringMakerBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>doctest::StringMaker&lt; T &gt;</label>
+        <link refid="structdoctest_1_1StringMaker"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>doctest::detail::StringMakerBase&lt; detail::has_insertion_operator&lt; T &gt;::value||detail::types::is_pointer&lt; T &gt;::value||detail::types::is_array&lt; T &gt;::value &gt;</label>
+        <link refid="structdoctest_1_1detail_1_1StringMakerBase"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1080" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1082" bodyend="1082"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1detail_1_1StringMakerBase_1a67d29f2a5de9a522d8e8607c1a39db9b" prot="public" virt="non-virtual"><scope>doctest::StringMaker</scope><name>convert</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

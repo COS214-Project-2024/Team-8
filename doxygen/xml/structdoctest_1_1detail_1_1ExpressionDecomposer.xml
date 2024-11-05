@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1detail_1_1ExpressionDecomposer" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::detail::ExpressionDecomposer</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoctest_1_1detail_1_1ExpressionDecomposer_1a1a71b19bd41d2cbd1c8b4006412870c4" prot="public" static="no" mutable="no">
+        <type>assertType::Enum</type>
+        <definition>assertType::Enum doctest::detail::ExpressionDecomposer::m_at</definition>
+        <argsstring></argsstring>
+        <name>m_at</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1572" column="26" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1572" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1ExpressionDecomposer_1a6bf2c46ebf0dc68106be801a90776e65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doctest::detail::ExpressionDecomposer::ExpressionDecomposer</definition>
+        <argsstring>(assertType::Enum at)</argsstring>
+        <name>ExpressionDecomposer</name>
+        <param>
+          <type>assertType::Enum</type>
+          <declname>at</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1574" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1ExpressionDecomposer_1a8c191e7ee6b397e01f8680a9eff78aff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename L</type>
+          </param>
+        </templateparamlist>
+        <type>Expression_lhs&lt; L &gt;</type>
+        <definition>Expression_lhs&lt;L&gt; doctest::detail::ExpressionDecomposer::operator&lt;&lt;</definition>
+        <argsstring>(L &amp;&amp;operand)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>L &amp;&amp;</type>
+          <declname>operand</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1574" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1581" bodyend="1583"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1ExpressionDecomposer_1a09ed8c1fba2149a967d236bc2519823a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename L</type>
+          </param>
+          <param>
+            <type>typename <ref refid="structdoctest_1_1detail_1_1types_1_1enable__if" kindref="compound">types::enable_if</ref>&lt;!<ref refid="structdoctest_1_1detail_1_1types_1_1is__rvalue__reference" kindref="compound">doctest::detail::types::is_rvalue_reference</ref>&lt; L &gt;::value, void &gt;::type *</type>
+            <defval>nullptr</defval>
+          </param>
+        </templateparamlist>
+        <type>Expression_lhs&lt; const L &amp; &gt;</type>
+        <definition>Expression_lhs&lt;const L&amp;&gt; doctest::detail::ExpressionDecomposer::operator&lt;&lt;</definition>
+        <argsstring>(const L &amp;operand)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const L &amp;</type>
+          <declname>operand</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1574" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1586" bodyend="1588"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1570" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1571" bodyend="1589"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1detail_1_1ExpressionDecomposer_1a6bf2c46ebf0dc68106be801a90776e65" prot="public" virt="non-virtual"><scope>doctest::detail::ExpressionDecomposer</scope><name>ExpressionDecomposer</name></member>
+      <member refid="structdoctest_1_1detail_1_1ExpressionDecomposer_1a1a71b19bd41d2cbd1c8b4006412870c4" prot="public" virt="non-virtual"><scope>doctest::detail::ExpressionDecomposer</scope><name>m_at</name></member>
+      <member refid="structdoctest_1_1detail_1_1ExpressionDecomposer_1a8c191e7ee6b397e01f8680a9eff78aff" prot="public" virt="non-virtual"><scope>doctest::detail::ExpressionDecomposer</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structdoctest_1_1detail_1_1ExpressionDecomposer_1a09ed8c1fba2149a967d236bc2519823a" prot="public" virt="non-virtual"><scope>doctest::detail::ExpressionDecomposer</scope><name>operator&lt;&lt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classResidentialFactory" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>ResidentialFactory</compoundname>
+    <basecompoundref refid="classBuildingFactory" prot="public" virt="non-virtual">BuildingFactory</basecompoundref>
+    <derivedcompoundref refid="classApartmentFactory" prot="public" virt="non-virtual">ApartmentFactory</derivedcompoundref>
+    <derivedcompoundref refid="classHouseFactory" prot="public" virt="non-virtual">HouseFactory</derivedcompoundref>
+    <derivedcompoundref refid="classTownHouseFactory" prot="public" virt="non-virtual">TownHouseFactory</derivedcompoundref>
+    <includes refid="ResidentialFactory_8h" local="no">ResidentialFactory.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classResidentialFactory_1afa01c3ca59725cff5486bc0f94e20fa7" prot="public" static="no" mutable="no">
+        <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+        <definition>Buildings* ResidentialFactory::buildings</definition>
+        <argsstring></argsstring>
+        <name>buildings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to a <ref refid="classBuildings" kindref="compound">Buildings</ref> object, representing the residential building instance managed by the factory. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialFactory.h" line="17" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialFactory.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classResidentialFactory_1af98fef03d68b3ccda81dcd27e922d680" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+        <definition>virtual Buildings* ResidentialFactory::createBuilding</definition>
+        <argsstring>()=0</argsstring>
+        <name>createBuilding</name>
+        <reimplements refid="classBuildingFactory_1a553d8ca955c6e4421ea2de7a616fe9e6">createBuilding</reimplements>
+        <reimplementedby refid="classApartmentFactory_1a5ba1cdad1ffba9037af6884b90d02b64">createBuilding</reimplementedby>
+        <reimplementedby refid="classHouseFactory_1abf0c32547edfbd56d56d8d8a26b90313">createBuilding</reimplementedby>
+        <reimplementedby refid="classTownHouseFactory_1affb57bb18b82c25d73730a85a19bed4f">createBuilding</reimplementedby>
+        <briefdescription>
+<para>Creates a new residential building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pure virtual function that must be implemented by derived classes to create and return a pointer to a new residential <ref refid="classBuildings" kindref="compound">Buildings</ref> object.</para>
+<para><simplesect kind="return"><para>A pointer to a newly created residential <ref refid="classBuildings" kindref="compound">Buildings</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialFactory.h" line="27" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classResidentialFactory_1ab6fa39b28a83ec7c5b9a00defc517e93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ResidentialFactory::~ResidentialFactory</definition>
+        <argsstring>()</argsstring>
+        <name>~ResidentialFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialFactory.h" line="28" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialFactory.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A factory class for creating residential buildings. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class inherits from <ref refid="classBuildingFactory" kindref="compound">BuildingFactory</ref> and provides an interface for creating residential building objects. Derived classes must implement the <ref refid="classResidentialFactory_1af98fef03d68b3ccda81dcd27e922d680" kindref="member">createBuilding()</ref> method to produce specific types of residential buildings. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ApartmentFactory</label>
+        <link refid="classApartmentFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BuildingFactory</label>
+        <link refid="classBuildingFactory"/>
+      </node>
+      <node id="5">
+        <label>TownHouseFactory</label>
+        <link refid="classTownHouseFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>HouseFactory</label>
+        <link refid="classHouseFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ResidentialFactory</label>
+        <link refid="classResidentialFactory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>listOfCitizens</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="2">
+        <label>BuildingFactory</label>
+        <link refid="classBuildingFactory"/>
+      </node>
+      <node id="10">
+        <label>State</label>
+        <link refid="classState"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>building</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Citizen</label>
+        <link refid="classCitizen"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>tm</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>TravelManager</label>
+        <link refid="classTravelManager"/>
+      </node>
+      <node id="9">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="7">
+        <label>PopulationControl</label>
+        <link refid="classPopulationControl"/>
+      </node>
+      <node id="5">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ResidentialFactory</label>
+        <link refid="classResidentialFactory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>buildings</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialFactory.h" line="14" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialFactory.h" bodystart="14" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classResidentialFactory_1afa01c3ca59725cff5486bc0f94e20fa7" prot="public" virt="non-virtual"><scope>ResidentialFactory</scope><name>buildings</name></member>
+      <member refid="classResidentialFactory_1af98fef03d68b3ccda81dcd27e922d680" prot="public" virt="pure-virtual"><scope>ResidentialFactory</scope><name>createBuilding</name></member>
+      <member refid="classResidentialFactory_1ab6fa39b28a83ec7c5b9a00defc517e93" prot="public" virt="virtual"><scope>ResidentialFactory</scope><name>~ResidentialFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

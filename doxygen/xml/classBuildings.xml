@@ -1,0 +1,1283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classBuildings" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Buildings</compoundname>
+    <derivedcompoundref refid="classCommercialBuilding" prot="public" virt="non-virtual">CommercialBuilding</derivedcompoundref>
+    <derivedcompoundref refid="classIndustrialBuilding" prot="public" virt="non-virtual">IndustrialBuilding</derivedcompoundref>
+    <derivedcompoundref refid="classLandmarkBuilding" prot="public" virt="non-virtual">LandmarkBuilding</derivedcompoundref>
+    <derivedcompoundref refid="classPublicServiceBuilding" prot="public" virt="non-virtual">PublicServiceBuilding</derivedcompoundref>
+    <derivedcompoundref refid="classResidentialBuilding" prot="public" virt="non-virtual">ResidentialBuilding</derivedcompoundref>
+    <includes refid="Buildings_8h" local="no">Buildings.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classBuildings_1a4f41883b0ba36ed4840bc905cc19ea3d" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Buildings::profit</definition>
+        <argsstring></argsstring>
+        <name>profit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="32" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBuildings_1a2c3680425e9cd1526d1c4c834c017690" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Buildings::sales</definition>
+        <argsstring></argsstring>
+        <name>sales</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="33" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBuildings_1afc21c459782fab5d58a3517c09474df0" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Buildings::balance</definition>
+        <argsstring></argsstring>
+        <name>balance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="34" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBuildings_1a572094ecc5a5d844acbfe6f18650ed9d" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Buildings::powerReq</definition>
+        <argsstring></argsstring>
+        <name>powerReq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt; Pointer to the resource mediator for managing resources. Power requirement of the building in kWh. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="60" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBuildings_1ac8c0debb07dcf0555a28be710377fc36" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Buildings::waterReq</definition>
+        <argsstring></argsstring>
+        <name>waterReq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Water requirement of the building in liters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="61" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBuildings_1aae45243bbcd3ac7c47e9cbb83162f1f8" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Buildings::sewageCost</definition>
+        <argsstring></argsstring>
+        <name>sewageCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sewage cost associated with the building in currency units. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="62" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBuildings_1a7320201a32ce9541b3aeddac32d9988a" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Buildings::maintenanceCost</definition>
+        <argsstring></argsstring>
+        <name>maintenanceCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maintenance cost of the building in currency units. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="63" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBuildings_1a0702b3d14494ac145aaa428aa4e01afb" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Buildings::buildingName</definition>
+        <argsstring></argsstring>
+        <name>buildingName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of the building for identification. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="64" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBuildings_1a010d594842ce60f01bdf00f939ea2011" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Buildings::buildingType</definition>
+        <argsstring></argsstring>
+        <name>buildingType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of the building (e.g., residential, commercial). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="65" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBuildings_1a7497cf317a1deb55c35864bc08c82443" prot="protected" static="no" mutable="no">
+        <type><ref refid="classCitizen" kindref="compound">Citizen</ref> *</type>
+        <definition>Citizen* Buildings::listOfCitizens</definition>
+        <argsstring></argsstring>
+        <name>listOfCitizens</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of citizens associated with the building. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="66" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classBuildings_1a4befd4aa1ecedd685f1792e9d9cab4c8" prot="public" static="no" mutable="no">
+        <type><ref refid="classState" kindref="compound">State</ref> *</type>
+        <definition>State* Buildings::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the state of the building. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="56" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBuildings_1aabc1cfaf764d4c41889ecf1f0320fa8e" prot="public" static="no" mutable="no">
+        <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+        <definition>Utility* Buildings::resources</definition>
+        <argsstring></argsstring>
+        <name>resources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mediator for handling resource distribution. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="69" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBuildings_1af5b874917cf6e1dbe90dbcf5b9b37326" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Buildings::Buildings</definition>
+        <argsstring>()</argsstring>
+        <name>Buildings</name>
+        <briefdescription>
+<para>Construct a new <ref refid="classBuildings" kindref="compound">Buildings</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes a <ref refid="classBuildings" kindref="compound">Buildings</ref> object with default values for all member variables. All numeric values are set to 0, pointers to nullptr, and strings to empty. This constructor serves as the base constructor for all derived building types.</para>
+<para><simplesect kind="note"><para>This is an abstract class constructor, and objects cannot be instantiated directly. It is called by derived class constructors to initialize the base class members. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="47" column="4" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.cpp" bodystart="6" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1a60b14d2c02c2424eeb0ba52bd9fee170" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type></type>
+        <definition>Buildings::~Buildings</definition>
+        <argsstring>()=0</argsstring>
+        <name>~Buildings</name>
+        <briefdescription>
+<para>Virtual destructor to ensure proper cleanup of derived classes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This virtual destructor is necessary because the class hierarchy uses polymorphism and objects may be deleted through pointers to the base class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="54" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.cpp" bodystart="22" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1a4dd777c9c3963d8fd5a74ad1fee76ddf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Buildings::requestState</definition>
+        <argsstring>()=0</argsstring>
+        <name>requestState</name>
+        <reimplementedby refid="classApartment_1affcb8a09e65a8012aa5f588c27f902ee">requestState</reimplementedby>
+        <reimplementedby refid="classCulturalCenter_1aa3596183413552b908c8638cc90a8ee0">requestState</reimplementedby>
+        <reimplementedby refid="classFactories_1a3eebb40baf0cf6e22efb8be5e9568ecd">requestState</reimplementedby>
+        <reimplementedby refid="classHouse_1a42449a82d26e123f9e6bdf12af76f20d">requestState</reimplementedby>
+        <reimplementedby refid="classMall_1ac14edf6de3e9827261ae3101fb36c2f0">requestState</reimplementedby>
+        <reimplementedby refid="classMedicalCenter_1a1d22b5454e36a8858baac477c3af4004">requestState</reimplementedby>
+        <reimplementedby refid="classMonument_1af01f5c96f40adbc481bff5a6df48719d">requestState</reimplementedby>
+        <reimplementedby refid="classOffice_1af66bbd5b2581b1aacd05f641315d26e0">requestState</reimplementedby>
+        <reimplementedby refid="classPark_1aacde897f3b78869e5e834d6d3e647fdb">requestState</reimplementedby>
+        <reimplementedby refid="classPoliceStation_1a8a6f71d83d71a995c239d51e9d5ce2a8">requestState</reimplementedby>
+        <reimplementedby refid="classPowerPlant_1a650c7f0f4f18141c8ec2256d6cc725fa">requestState</reimplementedby>
+        <reimplementedby refid="classSchool_1a2b0f1b0df69144e47964d77ccaf9a45e">requestState</reimplementedby>
+        <reimplementedby refid="classShop_1a60bf3c5eb5591d6fa221da7f2afbd986">requestState</reimplementedby>
+        <reimplementedby refid="classTownHouse_1adbcc420d2864717c39f2536f343a373b">requestState</reimplementedby>
+        <reimplementedby refid="classWarehouse_1a4ee94c67326320a3f7e22b65f556cb3b">requestState</reimplementedby>
+        <reimplementedby refid="classCommercialBuilding_1ae8ddedfb93a3d0a88e5179f8aaa60fa1">requestState</reimplementedby>
+        <reimplementedby refid="classIndustrialBuilding_1a2780822b6de99570b5f31e405b71e0fe">requestState</reimplementedby>
+        <reimplementedby refid="classLandmarkBuilding_1a6aa7b601c577fa2114df4c826fd00517">requestState</reimplementedby>
+        <reimplementedby refid="classPublicServiceBuilding_1a2cdf45047029ed49264c52130c1d9aab">requestState</reimplementedby>
+        <reimplementedby refid="classResidentialBuilding_1a4450dc123c2872db779adea553c197ab">requestState</reimplementedby>
+        <briefdescription>
+<para>Requests the current state of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Pure virtual function to be implemented by derived classes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="75" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1a196e5dc7d116d8df481fe16ffb40756f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double Buildings::getMaintenanceCost</definition>
+        <argsstring>()=0</argsstring>
+        <name>getMaintenanceCost</name>
+        <reimplementedby refid="classApartment_1acd246138d22db5dcdd45e753ce8fbdba">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classCulturalCenter_1af6f3e3d6a89356d20626201e351dd2ee">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classFactories_1a129aee786480dc025e0abd8b497a44db">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classHouse_1a6bccca3ce5e25636d63d8f1c137388e8">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classMall_1a1b82e5b2448863742d3348eeb48a17ab">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classMedicalCenter_1a00227998395267fe807c43b215d7556d">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classMonument_1ae0d8787c2f668483df0acb8f5dabd369">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classOffice_1a0b2d5062396b2fb129e5996c33c67a16">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classPark_1af812e134e0b512ab1fca97db97472423">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classPoliceStation_1a63ba87e33e55ddc39386b30509e03225">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classPowerPlant_1a68a975238c2b79518ef0111fae91380f">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classSchool_1a496b0ccbb3c8965250824ed0b54232bf">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classShop_1aa90829bc6635f83e9c3746cac2177023">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classTownHouse_1af316bbcc836847c146f3a2c6aeb29e63">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classWarehouse_1a8ebf665f7afe095650212fd301128f4f">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classCommercialBuilding_1a67781a6b655a1c5bbd7f7192bf4fae51">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classIndustrialBuilding_1a8fed6194bff88b6cb1f8721b0bbaf1bd">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classLandmarkBuilding_1a3f6e6849c9a5f5d29ea16e51bff37006">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classPublicServiceBuilding_1aa1a510bf9a576b0699a4828a5d2eadcb">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classResidentialBuilding_1ae086cdd073cc6055e5423353828eebec">getMaintenanceCost</reimplementedby>
+        <briefdescription>
+<para>Retrieves the maintenance cost of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The maintenance cost as a double, representing currency units. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="81" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1a4254206fe0f1f565e269e1e543cba834" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>virtual double Buildings::getBalance</definition>
+        <argsstring>()</argsstring>
+        <name>getBalance</name>
+        <reimplementedby refid="classCommercialBuilding_1a77ce6bb30a4f595867ed3be7dc9e0f17">getBalance</reimplementedby>
+        <reimplementedby refid="classMall_1a20ec3420d8ffb92073d2276304bc01a7">getBalance</reimplementedby>
+        <reimplementedby refid="classOffice_1a7c31b2634837a3d662476e4b183a4837">getBalance</reimplementedby>
+        <reimplementedby refid="classShop_1aa17740ce746a83876ade483a83d8e143">getBalance</reimplementedby>
+        <briefdescription>
+<para>gets the current income of a commercial building </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the income as an integer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="87" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1a6c02963e37bf20ef827f063209901a3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Buildings::setBalance</definition>
+        <argsstring>(double b)</argsstring>
+        <name>setBalance</name>
+        <reimplementedby refid="classCommercialBuilding_1ae3d75fa3195c1808f68c1e165bee053b">setBalance</reimplementedby>
+        <reimplementedby refid="classMall_1a9cf46334f78b14ff9cedf91f981f4ab7">setBalance</reimplementedby>
+        <reimplementedby refid="classOffice_1ad36eee398fd6c7585b26b2302a5a3e8d">setBalance</reimplementedby>
+        <reimplementedby refid="classShop_1ad47e74adfbb01b41ea8017cff3528ef6">setBalance</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>gets the current income of a commercial building </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the income as an integer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="93" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1a291fa645584d52be99367ba4796ebe14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Buildings::payCitizen</definition>
+        <argsstring>()</argsstring>
+        <name>payCitizen</name>
+        <reimplementedby refid="classCommercialBuilding_1ad0e3cc060d90ba7fb925efdc1649b894">payCitizen</reimplementedby>
+        <reimplementedby refid="classFactories_1a9e3500a01fc8554a3ccad884d9a1a89a">payCitizen</reimplementedby>
+        <reimplementedby refid="classIndustrialBuilding_1a2a71408fa7a0b51294abbc205fb308c1">payCitizen</reimplementedby>
+        <reimplementedby refid="classMall_1a226434653403f076011ba131cfdf1574">payCitizen</reimplementedby>
+        <reimplementedby refid="classOffice_1a3b4cf5058c58500b2b0c020be99922ad">payCitizen</reimplementedby>
+        <reimplementedby refid="classPowerPlant_1af7955cfca6b38edf5096e73631b176e2">payCitizen</reimplementedby>
+        <reimplementedby refid="classShop_1a78b0065549ab2c6bdd24f64aababc7ae">payCitizen</reimplementedby>
+        <reimplementedby refid="classWarehouse_1a3038e34d1d0c0dfb238ac51c8257cb66">payCitizen</reimplementedby>
+        <briefdescription>
+<para>Pays a citizen employed in the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The payment amount as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="99" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1ae6dc450a35fe3e5ae789357b921b0c72" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int Buildings::getPowerReq</definition>
+        <argsstring>()=0</argsstring>
+        <name>getPowerReq</name>
+        <reimplementedby refid="classApartment_1ab64e953d286580dedd22b35eb80c8be7">getPowerReq</reimplementedby>
+        <reimplementedby refid="classCulturalCenter_1a21c8b4defdcca7bf79ae4e859062f3cc">getPowerReq</reimplementedby>
+        <reimplementedby refid="classFactories_1a5c41401b10bf6edd1d8e7cd82503c413">getPowerReq</reimplementedby>
+        <reimplementedby refid="classHouse_1a12985418a1776d2140022f237e6a4157">getPowerReq</reimplementedby>
+        <reimplementedby refid="classMall_1abddc782e00da2d1d9961852cf5c4c351">getPowerReq</reimplementedby>
+        <reimplementedby refid="classMedicalCenter_1a4a1209e2f0c525b1e77f94c32ced237b">getPowerReq</reimplementedby>
+        <reimplementedby refid="classMonument_1aa5d16f88a8b1f0518d2845dbb0bd4f15">getPowerReq</reimplementedby>
+        <reimplementedby refid="classOffice_1a16e1936910d08fbfb4c08a3dc0f5e293">getPowerReq</reimplementedby>
+        <reimplementedby refid="classPark_1a67bb1c291999a2f84b7aefa48a149529">getPowerReq</reimplementedby>
+        <reimplementedby refid="classPoliceStation_1a1905c0a99110be7df49d8bd05ab7f983">getPowerReq</reimplementedby>
+        <reimplementedby refid="classPowerPlant_1abd58e51dee3337e25a96155f2bfe2468">getPowerReq</reimplementedby>
+        <reimplementedby refid="classSchool_1abbb95759f584ba0752ace26169e4cf7e">getPowerReq</reimplementedby>
+        <reimplementedby refid="classShop_1a69daf8ea3fb5728c5ab9e7f86964f9dd">getPowerReq</reimplementedby>
+        <reimplementedby refid="classTownHouse_1a1bd58ca5b8c72911f4e315d83dc80460">getPowerReq</reimplementedby>
+        <reimplementedby refid="classWarehouse_1a8ab6c9cfb36bd8dc4b7c4447932c9aa7">getPowerReq</reimplementedby>
+        <reimplementedby refid="classCommercialBuilding_1a0b192a6a070bf0f907b83cf45c53d11c">getPowerReq</reimplementedby>
+        <reimplementedby refid="classIndustrialBuilding_1a854b562505de3d341cf9503d5f42d145">getPowerReq</reimplementedby>
+        <reimplementedby refid="classLandmarkBuilding_1ac8df4603f8786f441a3aa50a3cd7a75c">getPowerReq</reimplementedby>
+        <reimplementedby refid="classPublicServiceBuilding_1a821f578fb5baef18294123a88772e283">getPowerReq</reimplementedby>
+        <reimplementedby refid="classResidentialBuilding_1a4b05dc85c1b4578df1c77bfa8b54592b">getPowerReq</reimplementedby>
+        <briefdescription>
+<para>Retrieves the power requirement of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The power requirement in kilowatt-hours (kWh). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="105" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1acd98a1879efc8be4e3fc27eddce6f56b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int Buildings::getSewageCost</definition>
+        <argsstring>()=0</argsstring>
+        <name>getSewageCost</name>
+        <reimplementedby refid="classApartment_1a2e07a4fbc93507e19a7054100797ba72">getSewageCost</reimplementedby>
+        <reimplementedby refid="classCulturalCenter_1a86f287ecf3dcac7cd6a4ba63dd11b7c6">getSewageCost</reimplementedby>
+        <reimplementedby refid="classFactories_1a95e6fa78cd2cbabbe724be6dc1c9ed8a">getSewageCost</reimplementedby>
+        <reimplementedby refid="classHouse_1af997cf84529a0746ee2620ef26ece769">getSewageCost</reimplementedby>
+        <reimplementedby refid="classMall_1ad399e511790a082c3a7b6cc3ca3e8e31">getSewageCost</reimplementedby>
+        <reimplementedby refid="classMedicalCenter_1a39922a070eb7664c5706181ee9726334">getSewageCost</reimplementedby>
+        <reimplementedby refid="classMonument_1a9c004de50ec736e06bbc2eb9253af7e1">getSewageCost</reimplementedby>
+        <reimplementedby refid="classOffice_1a83256cb36fc427127abc7b502ee4581c">getSewageCost</reimplementedby>
+        <reimplementedby refid="classPark_1a9321f126205b260775abcea15d4e3e6f">getSewageCost</reimplementedby>
+        <reimplementedby refid="classPoliceStation_1a879630b72881ba49227cf9af6da80908">getSewageCost</reimplementedby>
+        <reimplementedby refid="classPowerPlant_1a5aab0d2bc6ea32a8c5e59be3df48e261">getSewageCost</reimplementedby>
+        <reimplementedby refid="classSchool_1a28fd46601ea54ddd2c1aded1531a7e2b">getSewageCost</reimplementedby>
+        <reimplementedby refid="classShop_1a807d0fe43f8dbadc43d593dd5d1362fc">getSewageCost</reimplementedby>
+        <reimplementedby refid="classTownHouse_1abcc0f59ac66c8853df44186cb548cb40">getSewageCost</reimplementedby>
+        <reimplementedby refid="classWarehouse_1a4c9c087cf42b8c31733ba0c436c0c43c">getSewageCost</reimplementedby>
+        <reimplementedby refid="classCommercialBuilding_1aa7b21c407ff71a2f360ec1c30d59c3e7">getSewageCost</reimplementedby>
+        <reimplementedby refid="classIndustrialBuilding_1afd9c59a327c6609e1ed941200260192a">getSewageCost</reimplementedby>
+        <reimplementedby refid="classLandmarkBuilding_1a780ade236d79adb8007752c718867639">getSewageCost</reimplementedby>
+        <reimplementedby refid="classPublicServiceBuilding_1a0a0c1691bca3825f058b86c2b8e307a7">getSewageCost</reimplementedby>
+        <reimplementedby refid="classResidentialBuilding_1a1a8b12239511450428c00d1872390264">getSewageCost</reimplementedby>
+        <briefdescription>
+<para>Retrieves the sewage cost of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The sewage cost in currency units. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="111" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1aa9f8088da3c065b05208ea0565bcff6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int Buildings::getWaterReq</definition>
+        <argsstring>()=0</argsstring>
+        <name>getWaterReq</name>
+        <reimplementedby refid="classApartment_1a32d7aee406a3f6bd0127f118397167bf">getWaterReq</reimplementedby>
+        <reimplementedby refid="classCulturalCenter_1a197cc0d976a16755e6116b5bcd421caf">getWaterReq</reimplementedby>
+        <reimplementedby refid="classFactories_1aab5713b947b47a64fa94f3d43bb8530a">getWaterReq</reimplementedby>
+        <reimplementedby refid="classHouse_1ad67e4678fc1a4ed3456ec67c477ef59c">getWaterReq</reimplementedby>
+        <reimplementedby refid="classMall_1afdc55e02fd226ba7a86e14ee883ae4f8">getWaterReq</reimplementedby>
+        <reimplementedby refid="classMedicalCenter_1aa0f1f54a790c63c5114280c9807d5725">getWaterReq</reimplementedby>
+        <reimplementedby refid="classMonument_1a9d0f9952cde9be9625d514c7adf17f27">getWaterReq</reimplementedby>
+        <reimplementedby refid="classOffice_1a325edec8536a6b94e944f5a4c53e0fd1">getWaterReq</reimplementedby>
+        <reimplementedby refid="classPark_1af4e0a5f69702b0454f241acf528d56a7">getWaterReq</reimplementedby>
+        <reimplementedby refid="classPoliceStation_1a99204bd730ebf2953b9a594e7be2d89a">getWaterReq</reimplementedby>
+        <reimplementedby refid="classPowerPlant_1aab2f90b19bfeb31e687ff5b3a8385ebc">getWaterReq</reimplementedby>
+        <reimplementedby refid="classSchool_1ac4dbe987e7a7a298c81a190e49afa690">getWaterReq</reimplementedby>
+        <reimplementedby refid="classShop_1af6b2e80ee72d930ebb7965b01f9298de">getWaterReq</reimplementedby>
+        <reimplementedby refid="classTownHouse_1a24aadb15b792516d7ce8b1c2f75a2d57">getWaterReq</reimplementedby>
+        <reimplementedby refid="classWarehouse_1acaf16f31b6f234bc43d3188ff148b270">getWaterReq</reimplementedby>
+        <reimplementedby refid="classCommercialBuilding_1ac35a6efffcba448cc807778397020b55">getWaterReq</reimplementedby>
+        <reimplementedby refid="classIndustrialBuilding_1a8464c7913ac4fa3a61865877b31bc75f">getWaterReq</reimplementedby>
+        <reimplementedby refid="classLandmarkBuilding_1acb64ab79a07960d7bec6491f2a026315">getWaterReq</reimplementedby>
+        <reimplementedby refid="classPublicServiceBuilding_1a9e3f6145fc21d7664d0b7b3258c13555">getWaterReq</reimplementedby>
+        <reimplementedby refid="classResidentialBuilding_1aed397e7f9cc0e3f76879b3f92a212313">getWaterReq</reimplementedby>
+        <briefdescription>
+<para>Retrieves the water requirement of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The water requirement in liters. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="117" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1a58fd91cee048b410265d2e8dab88894e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>string</type>
+        <definition>virtual string Buildings::getName</definition>
+        <argsstring>()=0</argsstring>
+        <name>getName</name>
+        <reimplementedby refid="classApartment_1a56ab06079df6252187c3a2a70cb36066">getName</reimplementedby>
+        <reimplementedby refid="classCulturalCenter_1a84ef150d247f633355270e3baa5638ca">getName</reimplementedby>
+        <reimplementedby refid="classFactories_1a4d5f18ed07963a697c0b6e8d6565ba9a">getName</reimplementedby>
+        <reimplementedby refid="classHouse_1a079149ba1dbe764bb378a045f8c6cb40">getName</reimplementedby>
+        <reimplementedby refid="classMall_1ae77f2296986c54b8a7fbf7ca5adbfdf3">getName</reimplementedby>
+        <reimplementedby refid="classMedicalCenter_1aff73a62d67ec1b53bd8a8e659dd1942e">getName</reimplementedby>
+        <reimplementedby refid="classMonument_1ade1e6dfa17591c2e90418d1dd470d595">getName</reimplementedby>
+        <reimplementedby refid="classOffice_1a866456b277c1b43e2ede47ec93313e5a">getName</reimplementedby>
+        <reimplementedby refid="classPark_1a056d317a7474449c932f56c8ec703764">getName</reimplementedby>
+        <reimplementedby refid="classPoliceStation_1abcddda6770383112b4b12630ed1118b8">getName</reimplementedby>
+        <reimplementedby refid="classPowerPlant_1aba983606b8f9d86e60e4177e51ada42b">getName</reimplementedby>
+        <reimplementedby refid="classSchool_1a80950c9e4d50374ef755b6adab05a88a">getName</reimplementedby>
+        <reimplementedby refid="classShop_1a43a344cea2213650d1f0f103f00690e8">getName</reimplementedby>
+        <reimplementedby refid="classTownHouse_1a9a862362539fcabdcbfbab9525115b76">getName</reimplementedby>
+        <reimplementedby refid="classWarehouse_1a6f52790e1a77a0b6f2ad2ae12f5a8287">getName</reimplementedby>
+        <reimplementedby refid="classCommercialBuilding_1ab24328311662c377deb43ccfdb83dbab">getName</reimplementedby>
+        <reimplementedby refid="classIndustrialBuilding_1a87cbab2b37fccd8140b874b16eef3981">getName</reimplementedby>
+        <reimplementedby refid="classLandmarkBuilding_1a25b9ca973c81578065f8cece37de00d4">getName</reimplementedby>
+        <reimplementedby refid="classPublicServiceBuilding_1a6795238154c334e4e5ed3148f23ffe96">getName</reimplementedby>
+        <reimplementedby refid="classResidentialBuilding_1aaf571c879f3912a84df4fbcb3710e00f">getName</reimplementedby>
+        <briefdescription>
+<para>Retrieves the name of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The building&apos;s name as a string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="123" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1a99ed74a589fe28f98eed08ba0d8dc339" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>string</type>
+        <definition>virtual string Buildings::getBuildingType</definition>
+        <argsstring>()=0</argsstring>
+        <name>getBuildingType</name>
+        <reimplementedby refid="classApartment_1a392a887e59559a83927bba479aaab2ad">getBuildingType</reimplementedby>
+        <reimplementedby refid="classCulturalCenter_1aee7c0cebb5ae6b32faaeb17a2461109e">getBuildingType</reimplementedby>
+        <reimplementedby refid="classFactories_1ad29f750bb10a766d30a840b37310034b">getBuildingType</reimplementedby>
+        <reimplementedby refid="classHouse_1a822b5940f76b7e87814ece9ea643b89f">getBuildingType</reimplementedby>
+        <reimplementedby refid="classMall_1a434c468b4615bb7e17de3d56b6767027">getBuildingType</reimplementedby>
+        <reimplementedby refid="classMedicalCenter_1aa302e910a8e18ca176cbeb50e2cba201">getBuildingType</reimplementedby>
+        <reimplementedby refid="classMonument_1a7348eb3e86de17228f0ca50d7c5fe48a">getBuildingType</reimplementedby>
+        <reimplementedby refid="classOffice_1a5e01bcb4191ce145fe31aa28d451bce3">getBuildingType</reimplementedby>
+        <reimplementedby refid="classPark_1a2c89a3de0a83ca1928651a3afa672f39">getBuildingType</reimplementedby>
+        <reimplementedby refid="classPoliceStation_1a0c2a8e9ccb9ff15a02a075294714d081">getBuildingType</reimplementedby>
+        <reimplementedby refid="classPowerPlant_1ad6186c546ea67f15cd570979cd9349c4">getBuildingType</reimplementedby>
+        <reimplementedby refid="classSchool_1acc5740a04cb2e9232bb812868b406844">getBuildingType</reimplementedby>
+        <reimplementedby refid="classShop_1a084fd7aad71f4b8c72e7ce8d68acc689">getBuildingType</reimplementedby>
+        <reimplementedby refid="classTownHouse_1a6271d646da88bd504a6594a1a344416d">getBuildingType</reimplementedby>
+        <reimplementedby refid="classWarehouse_1a662648756b6ddb561d98cb69a6cc4b51">getBuildingType</reimplementedby>
+        <reimplementedby refid="classCommercialBuilding_1a2bc59aed3639b1ddc8985ab71cc13579">getBuildingType</reimplementedby>
+        <reimplementedby refid="classIndustrialBuilding_1a91003a6e0e299aaf14e71b300d260626">getBuildingType</reimplementedby>
+        <reimplementedby refid="classLandmarkBuilding_1a10edeac1cd62dd4519d196b873bb7cc0">getBuildingType</reimplementedby>
+        <reimplementedby refid="classPublicServiceBuilding_1a5f2c3b660e2ff931490c89e81f5fbcfc">getBuildingType</reimplementedby>
+        <reimplementedby refid="classResidentialBuilding_1aee6ea83d6f70ac8db9c5960db42e88b7">getBuildingType</reimplementedby>
+        <briefdescription>
+<para>Retrieves the type of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The building type as a string (e.g., &quot;residential&quot;, &quot;commercial&quot;). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="129" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1adb4f64849474dce9ded072e712658fc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Buildings::addBuilding</definition>
+        <argsstring>()=0</argsstring>
+        <name>addBuilding</name>
+        <reimplementedby refid="classApartment_1ae9a71432c8b9856ddd79c176ec6348aa">addBuilding</reimplementedby>
+        <reimplementedby refid="classCulturalCenter_1a4b403e088feac2d38c56b6c10e921326">addBuilding</reimplementedby>
+        <reimplementedby refid="classHouse_1abb209a0bfda0dff1b6357dc0bc687916">addBuilding</reimplementedby>
+        <reimplementedby refid="classMall_1a0bcad38364e49a125ebf8c40646d7a86">addBuilding</reimplementedby>
+        <reimplementedby refid="classMedicalCenter_1a5de729befc8861441b9884725cb669e1">addBuilding</reimplementedby>
+        <reimplementedby refid="classMonument_1af1e7e849c3d1ea1d9f9232ba3d9bfe29">addBuilding</reimplementedby>
+        <reimplementedby refid="classOffice_1ab934310c5e470b591b9f279be4a149cc">addBuilding</reimplementedby>
+        <reimplementedby refid="classPark_1a9026ffbf64514400d81218e970f7aeef">addBuilding</reimplementedby>
+        <reimplementedby refid="classPoliceStation_1a20a8287e18756b2b18684f391cd70df5">addBuilding</reimplementedby>
+        <reimplementedby refid="classPowerPlant_1a8bfcd5d4102dc9ad15c874465d3c0486">addBuilding</reimplementedby>
+        <reimplementedby refid="classSchool_1a1e50a275926685f922da2c131d1abdbe">addBuilding</reimplementedby>
+        <reimplementedby refid="classShop_1a4ab804b362879f0d8d3bdba6031ae555">addBuilding</reimplementedby>
+        <reimplementedby refid="classTownHouse_1a95e14dce352464977e74c68d95556ffa">addBuilding</reimplementedby>
+        <reimplementedby refid="classWarehouse_1a3d090301006d7ce9416c75f825ff19a9">addBuilding</reimplementedby>
+        <reimplementedby refid="classCommercialBuilding_1a079544eb7848e26b567efcb1d73fd303">addBuilding</reimplementedby>
+        <reimplementedby refid="classFactories_1a86a826dfa8241122dcb36d62610099a6">addBuilding</reimplementedby>
+        <reimplementedby refid="classIndustrialBuilding_1aa42e018c319aa9dd49ef6b54495ee9ab">addBuilding</reimplementedby>
+        <reimplementedby refid="classLandmarkBuilding_1aa8179defd14ed585752076b6d407aada">addBuilding</reimplementedby>
+        <reimplementedby refid="classPublicServiceBuilding_1ae676c53bdf61d79461cc43addda6b239">addBuilding</reimplementedby>
+        <reimplementedby refid="classResidentialBuilding_1ae484947db4eea1a9e2858f47db5ee43d">addBuilding</reimplementedby>
+        <briefdescription>
+<para>Add a building to the <ref refid="classUtility" kindref="compound">Utility</ref> resource. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>building</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The building to add to the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="136" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1a903e19ef9d878d5714b8ab5de9f71fc1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Buildings::getJobsCreated</definition>
+        <argsstring>()</argsstring>
+        <name>getJobsCreated</name>
+        <reimplementedby refid="classCommercialBuilding_1afaf183aab243dea40e25690e8b7b5ebc">getJobsCreated</reimplementedby>
+        <reimplementedby refid="classCulturalCenter_1a9a78019d21bc323cefd6331a9ee7dc7a">getJobsCreated</reimplementedby>
+        <reimplementedby refid="classFactories_1adaa9a99d56011f52a7f0dfa851d2cd86">getJobsCreated</reimplementedby>
+        <reimplementedby refid="classIndustrialBuilding_1a73c3da89be7477e72f8c7eb55d751311">getJobsCreated</reimplementedby>
+        <reimplementedby refid="classMall_1a00e1555ccec450d6492fcfed59898ca3">getJobsCreated</reimplementedby>
+        <reimplementedby refid="classMedicalCenter_1af726a9c952e9e47aaf6bb82a4f877fde">getJobsCreated</reimplementedby>
+        <reimplementedby refid="classMonument_1a87eed9efb406ba75400b89553a49350a">getJobsCreated</reimplementedby>
+        <reimplementedby refid="classOffice_1af071576c48b32facf2566a622d27514f">getJobsCreated</reimplementedby>
+        <reimplementedby refid="classPark_1a22513f1e99d55418de7e889a2ed56806">getJobsCreated</reimplementedby>
+        <reimplementedby refid="classPoliceStation_1af632ea789b1aa614efbbb96fe5a9e17c">getJobsCreated</reimplementedby>
+        <reimplementedby refid="classPowerPlant_1a9ddad0d7f41de4d1d237f58acfe59307">getJobsCreated</reimplementedby>
+        <reimplementedby refid="classResidentialBuilding_1a7a6d78e7b5d798d8f9c6221afcb19e7b">getJobsCreated</reimplementedby>
+        <reimplementedby refid="classSchool_1a49bc14e2ccc98d0339bcfd983fe06d96">getJobsCreated</reimplementedby>
+        <reimplementedby refid="classShop_1af94d5d055af855dfa8690076423282d1">getJobsCreated</reimplementedby>
+        <reimplementedby refid="classWarehouse_1a5f8a70d3414656b322bcda13745baa22">getJobsCreated</reimplementedby>
+        <reimplementedby refid="classLandmarkBuilding_1a92abe6deecb03d320f0afdde7916f6ce">getJobsCreated</reimplementedby>
+        <reimplementedby refid="classPublicServiceBuilding_1a98fddf51928e1caf68ed7686e76f1f3b">getJobsCreated</reimplementedby>
+        <briefdescription>
+<para>Gets the number of jobs created by the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of jobs as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="142" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="142" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1a98266f291367e42bb44f49a8949ea8b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Buildings::getPower</definition>
+        <argsstring>()=0</argsstring>
+        <name>getPower</name>
+        <reimplementedby refid="classApartment_1a590afeb39aca36e740b51290bf6bd739">getPower</reimplementedby>
+        <reimplementedby refid="classCulturalCenter_1abb59ff3dcaa5b2fcbcdc7372ecce0c9e">getPower</reimplementedby>
+        <reimplementedby refid="classFactories_1a0e6428cae803e8e25166dcca690774fe">getPower</reimplementedby>
+        <reimplementedby refid="classHouse_1acb75268c56b49dcf246f268442f6e2ad">getPower</reimplementedby>
+        <reimplementedby refid="classMall_1aad29bf553999aa09007a83f4b408b2bc">getPower</reimplementedby>
+        <reimplementedby refid="classMedicalCenter_1ac63f0e957cad47c2f52bae1846ca1c6c">getPower</reimplementedby>
+        <reimplementedby refid="classMonument_1aa820b40523a786099a0aa438eef37786">getPower</reimplementedby>
+        <reimplementedby refid="classOffice_1a5b5865beb905a7fd9c4aca46bba368ad">getPower</reimplementedby>
+        <reimplementedby refid="classPark_1ab8559c1bdf4ba7cdb3ffc7d7f2a84648">getPower</reimplementedby>
+        <reimplementedby refid="classPoliceStation_1a06fd6f49e8d03aba97c2ccb407ea6f83">getPower</reimplementedby>
+        <reimplementedby refid="classPowerPlant_1a8234c364754cd65b1b14e8aa0399980e">getPower</reimplementedby>
+        <reimplementedby refid="classSchool_1a96ec441105ed008687afcc59f66ceb77">getPower</reimplementedby>
+        <reimplementedby refid="classShop_1a84c3ef714bbea1526ffc7d10816065fc">getPower</reimplementedby>
+        <reimplementedby refid="classTownHouse_1a32b925d3ecbda9a5e6e0a7c404cf3957">getPower</reimplementedby>
+        <reimplementedby refid="classWarehouse_1a6e50639a770ab0dc58ad31ab883b2e05">getPower</reimplementedby>
+        <reimplementedby refid="classCommercialBuilding_1a0dbff6c0c9a198adb9a7a69b07b1bd76">getPower</reimplementedby>
+        <reimplementedby refid="classIndustrialBuilding_1a202d90a14e43d4d22da5477dfcbeadbc">getPower</reimplementedby>
+        <reimplementedby refid="classLandmarkBuilding_1aecef730ab43b09f8d9a3cb423a46f94a">getPower</reimplementedby>
+        <reimplementedby refid="classPublicServiceBuilding_1a79959b7de7d22398e25f2c35d9de6e26">getPower</reimplementedby>
+        <reimplementedby refid="classResidentialBuilding_1ae867db795935c20c2c5a45463ac33fb0">getPower</reimplementedby>
+        <briefdescription>
+<para>Receives power for the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if power was received successfully, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="148" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1a100a3abba32013b317fe08d78de2d9ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Buildings::getWater</definition>
+        <argsstring>()=0</argsstring>
+        <name>getWater</name>
+        <reimplementedby refid="classApartment_1a9ad3ecbc187e2132c19f18169009d949">getWater</reimplementedby>
+        <reimplementedby refid="classCulturalCenter_1a49c3c84e133607c5882759b3f48311e3">getWater</reimplementedby>
+        <reimplementedby refid="classFactories_1a26dc8f8a536d9c06a4eb007e3615a9bc">getWater</reimplementedby>
+        <reimplementedby refid="classHouse_1a52dcc19d6a9ec492485ab86b5c2056a1">getWater</reimplementedby>
+        <reimplementedby refid="classMall_1a21707250243b897c62ee15b65df54f0a">getWater</reimplementedby>
+        <reimplementedby refid="classMedicalCenter_1af19dc09a9a539927e83474e3ae64c0a8">getWater</reimplementedby>
+        <reimplementedby refid="classMonument_1a6cc1e997c14352ab89b2ae70ad87c710">getWater</reimplementedby>
+        <reimplementedby refid="classOffice_1a174f5049e93dad96be8f710bca45e275">getWater</reimplementedby>
+        <reimplementedby refid="classPark_1a56586b6fbccdf996174469ec27663374">getWater</reimplementedby>
+        <reimplementedby refid="classPoliceStation_1a5fe46073e7d060c57d550336c21c31b6">getWater</reimplementedby>
+        <reimplementedby refid="classPowerPlant_1a5e31eff9c53dd6786168ed3ccce35084">getWater</reimplementedby>
+        <reimplementedby refid="classSchool_1a72a8c14555bb4889325a56b24a2c7dc4">getWater</reimplementedby>
+        <reimplementedby refid="classShop_1aef532e592b365c055d4cfcacf271b348">getWater</reimplementedby>
+        <reimplementedby refid="classTownHouse_1a024e646590e992803d8b2b4403d5f45a">getWater</reimplementedby>
+        <reimplementedby refid="classWarehouse_1ac1af38b2549e45d129ecbcce9f7de920">getWater</reimplementedby>
+        <reimplementedby refid="classCommercialBuilding_1a804eb1be891988cb585bd48c0ab09635">getWater</reimplementedby>
+        <reimplementedby refid="classIndustrialBuilding_1a0f2fd085a8552d767ca0cc2cc7e0888f">getWater</reimplementedby>
+        <reimplementedby refid="classLandmarkBuilding_1a661c42eb0bd712f50eb10cfba131f0e5">getWater</reimplementedby>
+        <reimplementedby refid="classPublicServiceBuilding_1a29b779f6c94a907e7dc74ba24e688ee9">getWater</reimplementedby>
+        <reimplementedby refid="classResidentialBuilding_1aae44b69bdedffbb41c78205bcfb712e1">getWater</reimplementedby>
+        <briefdescription>
+<para>Receives water for the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if water was received successfully, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="154" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1aaaeb748113337669c224c2293d2f0d82" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Buildings::cleanWaste</definition>
+        <argsstring>()=0</argsstring>
+        <name>cleanWaste</name>
+        <reimplementedby refid="classApartment_1a0787841d537df8e435ec3f0abac715c9">cleanWaste</reimplementedby>
+        <reimplementedby refid="classCulturalCenter_1a5332fe7bb7e4082780f6f1747b80c627">cleanWaste</reimplementedby>
+        <reimplementedby refid="classFactories_1aaca41e9268e380c5c30f041df8b8dabe">cleanWaste</reimplementedby>
+        <reimplementedby refid="classHouse_1a26a4ff9f04c00ea9a1d6f7814e0af2de">cleanWaste</reimplementedby>
+        <reimplementedby refid="classMall_1a0e7c8475d906facbcb43051845fd0931">cleanWaste</reimplementedby>
+        <reimplementedby refid="classMedicalCenter_1a0f7e9af6c47c27947edd138d607c9839">cleanWaste</reimplementedby>
+        <reimplementedby refid="classMonument_1a2f01e07c1ce7f901b505baaa55bbc584">cleanWaste</reimplementedby>
+        <reimplementedby refid="classOffice_1a242ea321fb9d49f13f7025a4d2df1480">cleanWaste</reimplementedby>
+        <reimplementedby refid="classPark_1ac5ea570943ee58b803c919033ef0c3bf">cleanWaste</reimplementedby>
+        <reimplementedby refid="classPoliceStation_1ac2d8b365d6c375c8f6d816890e7e4ecb">cleanWaste</reimplementedby>
+        <reimplementedby refid="classPowerPlant_1a8e6b825918715596d537857e0b574988">cleanWaste</reimplementedby>
+        <reimplementedby refid="classSchool_1a2ad7b7017e9ea9fe0fb61bf56afb4345">cleanWaste</reimplementedby>
+        <reimplementedby refid="classShop_1a4788fd8231258f31b0862b75d90865d5">cleanWaste</reimplementedby>
+        <reimplementedby refid="classTownHouse_1a8b3a6871c11491c2427bd03c6a547624">cleanWaste</reimplementedby>
+        <reimplementedby refid="classWarehouse_1a42ae4d592353831e30be8454d0657080">cleanWaste</reimplementedby>
+        <reimplementedby refid="classCommercialBuilding_1a59e9259b25798a7d754feffb13567370">cleanWaste</reimplementedby>
+        <reimplementedby refid="classIndustrialBuilding_1a0d0e0ff8c30a3c839b8c0d16f0e52474">cleanWaste</reimplementedby>
+        <reimplementedby refid="classLandmarkBuilding_1a53f41bc4fe9ccb241e6619463296c405">cleanWaste</reimplementedby>
+        <reimplementedby refid="classPublicServiceBuilding_1a5ade12051e423ea1174c4d0a8c3d7451">cleanWaste</reimplementedby>
+        <reimplementedby refid="classResidentialBuilding_1a9fef368fd52003c9bcef6956b20a41ad">cleanWaste</reimplementedby>
+        <briefdescription>
+<para>Cleans the waste of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if waste cleaning was successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="160" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1a80e812e9003bff1371df778942ecfb36" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Buildings::cleanSewage</definition>
+        <argsstring>()=0</argsstring>
+        <name>cleanSewage</name>
+        <reimplementedby refid="classApartment_1ade0ae9dc5bb6be2c2ed1109abad47322">cleanSewage</reimplementedby>
+        <reimplementedby refid="classCulturalCenter_1a2653e24f61254c62d017c3cc8b3d45db">cleanSewage</reimplementedby>
+        <reimplementedby refid="classFactories_1a587c6b34ab87e63b8fe1e3da1515a180">cleanSewage</reimplementedby>
+        <reimplementedby refid="classHouse_1a023f323dd947bdf509380c5e69f35397">cleanSewage</reimplementedby>
+        <reimplementedby refid="classMall_1a8954d409b4c93dbb269aedfe79afcf45">cleanSewage</reimplementedby>
+        <reimplementedby refid="classMedicalCenter_1a804712792d653350e1fdfec59c992144">cleanSewage</reimplementedby>
+        <reimplementedby refid="classMonument_1ab1d8a96cfcdf7c0cbe2ffdc7a2513f73">cleanSewage</reimplementedby>
+        <reimplementedby refid="classOffice_1a85ca9888dc598a93e466986a7da935e4">cleanSewage</reimplementedby>
+        <reimplementedby refid="classPark_1a52b7b6d0e8d7795e133346be8706ccff">cleanSewage</reimplementedby>
+        <reimplementedby refid="classPoliceStation_1adf4b327c83c676ec1cf3c6f6eb589691">cleanSewage</reimplementedby>
+        <reimplementedby refid="classPowerPlant_1a9de1811022b64b28d348a84b8b1017d5">cleanSewage</reimplementedby>
+        <reimplementedby refid="classSchool_1a3b30ae3d6b0e373b2f0eb58ab31518a5">cleanSewage</reimplementedby>
+        <reimplementedby refid="classShop_1aef7c267ce54cd6760eba39cc705316ab">cleanSewage</reimplementedby>
+        <reimplementedby refid="classTownHouse_1ae046e54305fbb5979640e7fece84dcb9">cleanSewage</reimplementedby>
+        <reimplementedby refid="classWarehouse_1a330dd0417684cd266e5d561021d44659">cleanSewage</reimplementedby>
+        <reimplementedby refid="classCommercialBuilding_1aa6e46234e1cfa37f5bb3ba8b304b5ef7">cleanSewage</reimplementedby>
+        <reimplementedby refid="classIndustrialBuilding_1ad003aa661ac7d5fb1f37ccd89c438841">cleanSewage</reimplementedby>
+        <reimplementedby refid="classLandmarkBuilding_1a4b58e301fe9f6d3dc400aad1650e3db2">cleanSewage</reimplementedby>
+        <reimplementedby refid="classPublicServiceBuilding_1aec458fbe0aba9fc65e6a7f233c7d8335">cleanSewage</reimplementedby>
+        <reimplementedby refid="classResidentialBuilding_1af409d286d0d15a39c1e4c835b502205c">cleanSewage</reimplementedby>
+        <briefdescription>
+<para>Cleans the sewage of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if sewage cleaning was successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="166" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1ae4f56a3ae5658097bee10dc48e130a75" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Buildings::setState</definition>
+        <argsstring>(State *newState)=0</argsstring>
+        <name>setState</name>
+        <reimplementedby refid="classApartment_1a6448965db3b10a9c24ce82bb1d52f291">setState</reimplementedby>
+        <reimplementedby refid="classCulturalCenter_1a4978e28654afed90e7c04830eb18e054">setState</reimplementedby>
+        <reimplementedby refid="classFactories_1a7876eee75708ed75b78a40f03fb3d410">setState</reimplementedby>
+        <reimplementedby refid="classHouse_1a8fd19c1f1de8175df8795362a6e5db8e">setState</reimplementedby>
+        <reimplementedby refid="classMall_1a1cad54db87d7520ef707192b42ec160d">setState</reimplementedby>
+        <reimplementedby refid="classMedicalCenter_1ac84340f4ef9f08425b47027d70886604">setState</reimplementedby>
+        <reimplementedby refid="classMonument_1a0e8131d72fc1b7cfeaea419ced2f78fa">setState</reimplementedby>
+        <reimplementedby refid="classOffice_1a8b738a2b5c7c0c4e810f9b510b72cacd">setState</reimplementedby>
+        <reimplementedby refid="classPark_1ab5b7777dcc40a83ad3829a9ccd0d6108">setState</reimplementedby>
+        <reimplementedby refid="classPoliceStation_1ac9a18ff4bed23b85e20a6fb7d3a8808e">setState</reimplementedby>
+        <reimplementedby refid="classPowerPlant_1a30cf2d974a37c7957e00cce4e3194c0e">setState</reimplementedby>
+        <reimplementedby refid="classSchool_1a4c61b6459be118f7cb4213e1d38fefd9">setState</reimplementedby>
+        <reimplementedby refid="classShop_1a66737f453c2158eeea77021235120673">setState</reimplementedby>
+        <reimplementedby refid="classTownHouse_1a27163316a08110418294ceef588b5b1c">setState</reimplementedby>
+        <reimplementedby refid="classWarehouse_1a697be13b3bcd886611c3eebc671fec79">setState</reimplementedby>
+        <reimplementedby refid="classCommercialBuilding_1a16e612d08679f4451fd2ae773251132b">setState</reimplementedby>
+        <reimplementedby refid="classIndustrialBuilding_1a8c21b62b5e41a4282202cb02d88bac57">setState</reimplementedby>
+        <reimplementedby refid="classLandmarkBuilding_1af8cf4edaa6c0609969d781448365186d">setState</reimplementedby>
+        <reimplementedby refid="classPublicServiceBuilding_1a519abe8c233f2ba95faa7478b395d743">setState</reimplementedby>
+        <reimplementedby refid="classResidentialBuilding_1a389cda02037710dc3e3fb378cd81e87f">setState</reimplementedby>
+        <param>
+          <type><ref refid="classState" kindref="compound">State</ref> *</type>
+          <declname>newState</declname>
+        </param>
+        <briefdescription>
+<para>Sets the state of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the new state object to be assigned. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="172" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1ae0a010f94a01d180d1a6e4d023b54561" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classCitizen" kindref="compound">Citizen</ref> *</type>
+        <definition>virtual Citizen* Buildings::getlistOfResidence</definition>
+        <argsstring>()</argsstring>
+        <name>getlistOfResidence</name>
+        <briefdescription>
+<para>Returns the list of residents in a building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to the list of citizens residing in or associated with the building. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="178" column="21" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="178" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1a329450878a0e655e4a59f29e24bd3202" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>virtual float Buildings::getSales</definition>
+        <argsstring>()</argsstring>
+        <name>getSales</name>
+        <reimplementedby refid="classCommercialBuilding_1ab69ce9a94734ece60e08f51262aed158">getSales</reimplementedby>
+        <reimplementedby refid="classFactories_1a42c6ad596824634560a45acc12edc9e9">getSales</reimplementedby>
+        <reimplementedby refid="classIndustrialBuilding_1aa82d8ef5360d6c7d4b0babaeae81d8a9">getSales</reimplementedby>
+        <reimplementedby refid="classMall_1a113c7507987173f4eae574d86824c3e9">getSales</reimplementedby>
+        <reimplementedby refid="classOffice_1aa2fa64dd88cdc7e8e6289b0e645c4657">getSales</reimplementedby>
+        <reimplementedby refid="classPowerPlant_1a85f7a213cdf15c44c097230f075a0aad">getSales</reimplementedby>
+        <reimplementedby refid="classShop_1a38f043da1988090615fa81d18abaa159">getSales</reimplementedby>
+        <reimplementedby refid="classWarehouse_1a9f7b9bef2902ff1feff5bff90afd443d">getSales</reimplementedby>
+        <briefdescription>
+<para>Gets the sales generated by the commercial building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Sales amount as a float. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="186" column="19" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="186" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1ad063833f87a3337b6ed6f1f3686a6e45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>virtual float Buildings::getProfit</definition>
+        <argsstring>()</argsstring>
+        <name>getProfit</name>
+        <reimplementedby refid="classCommercialBuilding_1acc4395bf128e80842b3ae76da0f4b2d8">getProfit</reimplementedby>
+        <reimplementedby refid="classFactories_1ab98541a01fd38a5d48083e0596e2b6ea">getProfit</reimplementedby>
+        <reimplementedby refid="classIndustrialBuilding_1a31bd258f6b522895cebec66f58bce212">getProfit</reimplementedby>
+        <reimplementedby refid="classMall_1a0558a2b36d4aa77d603d4e2afdd95ab4">getProfit</reimplementedby>
+        <reimplementedby refid="classOffice_1a7f45354d12f8a8232ab73489a15ff7b0">getProfit</reimplementedby>
+        <reimplementedby refid="classPowerPlant_1a1912ac5bbf2c681f3ae9b240fa81d213">getProfit</reimplementedby>
+        <reimplementedby refid="classShop_1a19e8b7ad4a220fc7f7d792eb31f22d3d">getProfit</reimplementedby>
+        <reimplementedby refid="classWarehouse_1aca67729b4ea03792269e39ede0277595">getProfit</reimplementedby>
+        <briefdescription>
+<para>Gets the profit generated by the commercial building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Profit amount as a float. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="192" column="19" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="192" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1a14a35e8d36b717014241a9f416324ae5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Buildings::getCommercialIncome</definition>
+        <argsstring>()</argsstring>
+        <name>getCommercialIncome</name>
+        <reimplementedby refid="classCommercialBuilding_1ae827061bd272d37402e9d5cb9f961363">getCommercialIncome</reimplementedby>
+        <reimplementedby refid="classMall_1ace6d4591ab21f6ebca91fe4d35a0eb92">getCommercialIncome</reimplementedby>
+        <reimplementedby refid="classOffice_1a98e2c74e20d99e2651ab70b4348fa989">getCommercialIncome</reimplementedby>
+        <reimplementedby refid="classShop_1a5468648015a4ecfbfa5b728088d31f06">getCommercialIncome</reimplementedby>
+        <briefdescription>
+<para>gets the current income of a commercial building </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the income as an integer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="198" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="198" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1af3184f3602e4c1dd6ac010900770cd57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Buildings::setResources</definition>
+        <argsstring>(Utility *resources)</argsstring>
+        <name>setResources</name>
+        <param>
+          <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+          <declname>resources</declname>
+        </param>
+        <briefdescription>
+<para>Sets the resource mediator for the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resources</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <ref refid="classUtility" kindref="compound">Utility</ref> object to be used. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="204" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.cpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1aea12268287656270eb98cd2f22b82e02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>virtual float Buildings::getEducationalCoverage</definition>
+        <argsstring>()</argsstring>
+        <name>getEducationalCoverage</name>
+        <reimplementedby refid="classPublicServiceBuilding_1ab0ea2553fccec1f477947ddc2752742a">getEducationalCoverage</reimplementedby>
+        <reimplementedby refid="classSchool_1aca5c98be2987bc54467f0bf4b63cba28">getEducationalCoverage</reimplementedby>
+        <briefdescription>
+<para>Gets the security coverage provided by the police station. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The security coverage as a float. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="210" column="19" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="210" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1a647c790019850fd479ac20fcbd21d873" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>virtual float Buildings::getSecurityCoverage</definition>
+        <argsstring>()</argsstring>
+        <name>getSecurityCoverage</name>
+        <reimplementedby refid="classPoliceStation_1a402b7564352c402bc254e05a4d12055d">getSecurityCoverage</reimplementedby>
+        <reimplementedby refid="classPublicServiceBuilding_1af359df4946165e797919bfb731551905">getSecurityCoverage</reimplementedby>
+        <briefdescription>
+<para>Gets the security coverage provided by the police station. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The security coverage as a float. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="216" column="19" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="216" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1a94e15ba281ac20d60e1a4632f7be1292" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Buildings::getWasteCost</definition>
+        <argsstring>()</argsstring>
+        <name>getWasteCost</name>
+        <reimplementedby refid="classApartment_1a00359e6e1dd29b3f781cb79a26569fc3">getWasteCost</reimplementedby>
+        <reimplementedby refid="classCulturalCenter_1aa2c53e92cf1ceb2970e906739c8a7c27">getWasteCost</reimplementedby>
+        <reimplementedby refid="classFactories_1a3c94946cfc8278af3231ac1fba1981be">getWasteCost</reimplementedby>
+        <reimplementedby refid="classHouse_1a4279dd1d6b45bf7e0a03d18678f2c957">getWasteCost</reimplementedby>
+        <reimplementedby refid="classMall_1aab7fc06fd03fb4a112213c50acc57abe">getWasteCost</reimplementedby>
+        <reimplementedby refid="classMedicalCenter_1a2eddb52accdad63880ab435e9cf2ca7f">getWasteCost</reimplementedby>
+        <reimplementedby refid="classMonument_1a90c94d6f5e749e62ff836cc73a909d41">getWasteCost</reimplementedby>
+        <reimplementedby refid="classOffice_1a54fec4263affb4fa50a09153ef393cc9">getWasteCost</reimplementedby>
+        <reimplementedby refid="classPark_1a64bb85198d48756c7b16254831df1ecb">getWasteCost</reimplementedby>
+        <reimplementedby refid="classPoliceStation_1a672299941faa26ffb9350e7c7a8aaeb9">getWasteCost</reimplementedby>
+        <reimplementedby refid="classPowerPlant_1a3530dadff8f05e747a806a642147ee02">getWasteCost</reimplementedby>
+        <reimplementedby refid="classPublicServiceBuilding_1a3d3ddf9f07152f367628755a50b88396">getWasteCost</reimplementedby>
+        <reimplementedby refid="classSchool_1adeee816aa612f5f5d79f0a67e906089b">getWasteCost</reimplementedby>
+        <reimplementedby refid="classShop_1acb12379ff875f5d34734f1ea913e52e4">getWasteCost</reimplementedby>
+        <reimplementedby refid="classTownHouse_1a2c9a1f2a819253e4a86ad6cb57d40edd">getWasteCost</reimplementedby>
+        <reimplementedby refid="classWarehouse_1a3485f269f5e36667291825d29b7eef68">getWasteCost</reimplementedby>
+        <briefdescription>
+<para>Gets the waste cost of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Waste cost as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="222" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="222" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1a993a9340e25a58e2e2912090742f5ba6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>virtual float Buildings::getHealthCoverage</definition>
+        <argsstring>()</argsstring>
+        <name>getHealthCoverage</name>
+        <reimplementedby refid="classMedicalCenter_1a20d4a6fdb121abb26251a1b7daf0991e">getHealthCoverage</reimplementedby>
+        <reimplementedby refid="classPublicServiceBuilding_1adf20d12307adb2ce794f25cb008b9dc8">getHealthCoverage</reimplementedby>
+        <briefdescription>
+<para>Gets the health coverage provided by the medical center. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The health coverage as a float. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="228" column="19" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="228" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildings_1a038e1c1d7a924c97fc3cdc5954ccd72b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Buildings::getBirthRate</definition>
+        <argsstring>()</argsstring>
+        <name>getBirthRate</name>
+        <reimplementedby refid="classMedicalCenter_1a576620240d995a01356151b82688a47a">getBirthRate</reimplementedby>
+        <briefdescription>
+<para>Gets the birth rate supported by the medical center. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The birth rate as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="234" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.cpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract base class representing a building with basic utilities and resource requirements. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class serves as the foundation for all building types in the city simulation, defining common attributes and interfaces for resource management and state handling. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+      </node>
+      <node id="3">
+        <label>Mall</label>
+        <link refid="classMall"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Office</label>
+        <link refid="classOffice"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>CulturalCenter</label>
+        <link refid="classCulturalCenter"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>PowerPlant</label>
+        <link refid="classPowerPlant"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>ResidentialBuilding</label>
+        <link refid="classResidentialBuilding"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Shop</label>
+        <link refid="classShop"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Park</label>
+        <link refid="classPark"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Factories</label>
+        <link refid="classFactories"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CommercialBuilding</label>
+        <link refid="classCommercialBuilding"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Apartment</label>
+        <link refid="classApartment"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>LandmarkBuilding</label>
+        <link refid="classLandmarkBuilding"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>MedicalCenter</label>
+        <link refid="classMedicalCenter"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>House</label>
+        <link refid="classHouse"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Warehouse</label>
+        <link refid="classWarehouse"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>IndustrialBuilding</label>
+        <link refid="classIndustrialBuilding"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>PoliceStation</label>
+        <link refid="classPoliceStation"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>TownHouse</label>
+        <link refid="classTownHouse"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>PublicServiceBuilding</label>
+        <link refid="classPublicServiceBuilding"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>School</label>
+        <link refid="classSchool"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Monument</label>
+        <link refid="classMonument"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>listOfCitizens</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="8">
+        <label>State</label>
+        <link refid="classState"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>building</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Citizen</label>
+        <link refid="classCitizen"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>tm</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TravelManager</label>
+        <link refid="classTravelManager"/>
+      </node>
+      <node id="7">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="5">
+        <label>PopulationControl</label>
+        <link refid="classPopulationControl"/>
+      </node>
+      <node id="3">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" line="29" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.h" bodystart="30" bodyend="236"/>
+    <listofallmembers>
+      <member refid="classBuildings_1adb4f64849474dce9ded072e712658fc2" prot="public" virt="pure-virtual"><scope>Buildings</scope><name>addBuilding</name></member>
+      <member refid="classBuildings_1afc21c459782fab5d58a3517c09474df0" prot="protected" virt="non-virtual"><scope>Buildings</scope><name>balance</name></member>
+      <member refid="classBuildings_1a0702b3d14494ac145aaa428aa4e01afb" prot="protected" virt="non-virtual"><scope>Buildings</scope><name>buildingName</name></member>
+      <member refid="classBuildings_1af5b874917cf6e1dbe90dbcf5b9b37326" prot="public" virt="non-virtual"><scope>Buildings</scope><name>Buildings</name></member>
+      <member refid="classBuildings_1a010d594842ce60f01bdf00f939ea2011" prot="protected" virt="non-virtual"><scope>Buildings</scope><name>buildingType</name></member>
+      <member refid="classBuildings_1a80e812e9003bff1371df778942ecfb36" prot="public" virt="pure-virtual"><scope>Buildings</scope><name>cleanSewage</name></member>
+      <member refid="classBuildings_1aaaeb748113337669c224c2293d2f0d82" prot="public" virt="pure-virtual"><scope>Buildings</scope><name>cleanWaste</name></member>
+      <member refid="classBuildings_1a4254206fe0f1f565e269e1e543cba834" prot="public" virt="virtual"><scope>Buildings</scope><name>getBalance</name></member>
+      <member refid="classBuildings_1a038e1c1d7a924c97fc3cdc5954ccd72b" prot="public" virt="virtual"><scope>Buildings</scope><name>getBirthRate</name></member>
+      <member refid="classBuildings_1a99ed74a589fe28f98eed08ba0d8dc339" prot="public" virt="pure-virtual"><scope>Buildings</scope><name>getBuildingType</name></member>
+      <member refid="classBuildings_1a14a35e8d36b717014241a9f416324ae5" prot="public" virt="virtual"><scope>Buildings</scope><name>getCommercialIncome</name></member>
+      <member refid="classBuildings_1aea12268287656270eb98cd2f22b82e02" prot="public" virt="virtual"><scope>Buildings</scope><name>getEducationalCoverage</name></member>
+      <member refid="classBuildings_1a993a9340e25a58e2e2912090742f5ba6" prot="public" virt="virtual"><scope>Buildings</scope><name>getHealthCoverage</name></member>
+      <member refid="classBuildings_1a903e19ef9d878d5714b8ab5de9f71fc1" prot="public" virt="virtual"><scope>Buildings</scope><name>getJobsCreated</name></member>
+      <member refid="classBuildings_1ae0a010f94a01d180d1a6e4d023b54561" prot="public" virt="virtual"><scope>Buildings</scope><name>getlistOfResidence</name></member>
+      <member refid="classBuildings_1a196e5dc7d116d8df481fe16ffb40756f" prot="public" virt="pure-virtual"><scope>Buildings</scope><name>getMaintenanceCost</name></member>
+      <member refid="classBuildings_1a58fd91cee048b410265d2e8dab88894e" prot="public" virt="pure-virtual"><scope>Buildings</scope><name>getName</name></member>
+      <member refid="classBuildings_1a98266f291367e42bb44f49a8949ea8b2" prot="public" virt="pure-virtual"><scope>Buildings</scope><name>getPower</name></member>
+      <member refid="classBuildings_1ae6dc450a35fe3e5ae789357b921b0c72" prot="public" virt="pure-virtual"><scope>Buildings</scope><name>getPowerReq</name></member>
+      <member refid="classBuildings_1ad063833f87a3337b6ed6f1f3686a6e45" prot="public" virt="virtual"><scope>Buildings</scope><name>getProfit</name></member>
+      <member refid="classBuildings_1a329450878a0e655e4a59f29e24bd3202" prot="public" virt="virtual"><scope>Buildings</scope><name>getSales</name></member>
+      <member refid="classBuildings_1a647c790019850fd479ac20fcbd21d873" prot="public" virt="virtual"><scope>Buildings</scope><name>getSecurityCoverage</name></member>
+      <member refid="classBuildings_1acd98a1879efc8be4e3fc27eddce6f56b" prot="public" virt="pure-virtual"><scope>Buildings</scope><name>getSewageCost</name></member>
+      <member refid="classBuildings_1a94e15ba281ac20d60e1a4632f7be1292" prot="public" virt="virtual"><scope>Buildings</scope><name>getWasteCost</name></member>
+      <member refid="classBuildings_1a100a3abba32013b317fe08d78de2d9ab" prot="public" virt="pure-virtual"><scope>Buildings</scope><name>getWater</name></member>
+      <member refid="classBuildings_1aa9f8088da3c065b05208ea0565bcff6b" prot="public" virt="pure-virtual"><scope>Buildings</scope><name>getWaterReq</name></member>
+      <member refid="classBuildings_1a7497cf317a1deb55c35864bc08c82443" prot="protected" virt="non-virtual"><scope>Buildings</scope><name>listOfCitizens</name></member>
+      <member refid="classBuildings_1a7320201a32ce9541b3aeddac32d9988a" prot="protected" virt="non-virtual"><scope>Buildings</scope><name>maintenanceCost</name></member>
+      <member refid="classBuildings_1a291fa645584d52be99367ba4796ebe14" prot="public" virt="virtual"><scope>Buildings</scope><name>payCitizen</name></member>
+      <member refid="classBuildings_1a572094ecc5a5d844acbfe6f18650ed9d" prot="protected" virt="non-virtual"><scope>Buildings</scope><name>powerReq</name></member>
+      <member refid="classBuildings_1a4f41883b0ba36ed4840bc905cc19ea3d" prot="protected" virt="non-virtual"><scope>Buildings</scope><name>profit</name></member>
+      <member refid="classBuildings_1a4dd777c9c3963d8fd5a74ad1fee76ddf" prot="public" virt="pure-virtual"><scope>Buildings</scope><name>requestState</name></member>
+      <member refid="classBuildings_1aabc1cfaf764d4c41889ecf1f0320fa8e" prot="public" virt="non-virtual"><scope>Buildings</scope><name>resources</name></member>
+      <member refid="classBuildings_1a2c3680425e9cd1526d1c4c834c017690" prot="protected" virt="non-virtual"><scope>Buildings</scope><name>sales</name></member>
+      <member refid="classBuildings_1a6c02963e37bf20ef827f063209901a3a" prot="public" virt="virtual"><scope>Buildings</scope><name>setBalance</name></member>
+      <member refid="classBuildings_1af3184f3602e4c1dd6ac010900770cd57" prot="public" virt="non-virtual"><scope>Buildings</scope><name>setResources</name></member>
+      <member refid="classBuildings_1ae4f56a3ae5658097bee10dc48e130a75" prot="public" virt="pure-virtual"><scope>Buildings</scope><name>setState</name></member>
+      <member refid="classBuildings_1aae45243bbcd3ac7c47e9cbb83162f1f8" prot="protected" virt="non-virtual"><scope>Buildings</scope><name>sewageCost</name></member>
+      <member refid="classBuildings_1a4befd4aa1ecedd685f1792e9d9cab4c8" prot="public" virt="non-virtual"><scope>Buildings</scope><name>state</name></member>
+      <member refid="classBuildings_1ac8c0debb07dcf0555a28be710377fc36" prot="protected" virt="non-virtual"><scope>Buildings</scope><name>waterReq</name></member>
+      <member refid="classBuildings_1a60b14d2c02c2424eeb0ba52bd9fee170" prot="public" virt="pure-virtual"><scope>Buildings</scope><name>~Buildings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

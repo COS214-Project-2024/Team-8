@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1IsNaN" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::IsNaN</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename F</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoctest_1_1IsNaN_1a6a490d3d5f5561bcf019fefc88291475" prot="public" static="no" mutable="no">
+        <type>F</type>
+        <definition>F doctest::IsNaN&lt; F &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1293" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1IsNaN_1a3c25335f2708d9360b8e92813b3ac17d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::IsNaN&lt; F &gt;::flipped</definition>
+        <argsstring></argsstring>
+        <name>flipped</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1293" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1293" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdoctest_1_1IsNaN_1a47f3957c504f7d8bc40dd4014cce5ee1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>doctest::IsNaN&lt; F &gt;::IsNaN</definition>
+        <argsstring>(F f, bool flip=false)</argsstring>
+        <name>IsNaN</name>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>flip</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1294" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1294" bodyend="1294"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1IsNaN_1abf06b17534333aff6f5f48556cbb4588" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdoctest_1_1IsNaN" kindref="compound">IsNaN</ref>&lt; F &gt;</type>
+        <definition>IsNaN&lt;F&gt; doctest::IsNaN&lt; F &gt;::operator!</definition>
+        <argsstring>() const</argsstring>
+        <name>operator!</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1295" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1295" bodyend="1295"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1IsNaN_1a902478ded2e500009cf2e7a4412965ed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doctest::IsNaN&lt; F &gt;::operator bool</definition>
+        <argsstring>() const</argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1296" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1291" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1292" bodyend="1297"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1IsNaN_1a3c25335f2708d9360b8e92813b3ac17d" prot="public" virt="non-virtual"><scope>doctest::IsNaN</scope><name>flipped</name></member>
+      <member refid="structdoctest_1_1IsNaN_1a47f3957c504f7d8bc40dd4014cce5ee1" prot="public" virt="non-virtual"><scope>doctest::IsNaN</scope><name>IsNaN</name></member>
+      <member refid="structdoctest_1_1IsNaN_1a902478ded2e500009cf2e7a4412965ed" prot="public" virt="non-virtual"><scope>doctest::IsNaN</scope><name>operator bool</name></member>
+      <member refid="structdoctest_1_1IsNaN_1abf06b17534333aff6f5f48556cbb4588" prot="public" virt="non-virtual"><scope>doctest::IsNaN</scope><name>operator!</name></member>
+      <member refid="structdoctest_1_1IsNaN_1a6a490d3d5f5561bcf019fefc88291475" prot="public" virt="non-virtual"><scope>doctest::IsNaN</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

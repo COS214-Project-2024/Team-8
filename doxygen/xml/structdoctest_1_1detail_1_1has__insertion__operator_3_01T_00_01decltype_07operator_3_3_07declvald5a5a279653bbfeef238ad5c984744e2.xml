@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1detail_1_1has__insertion__operator_3_01T_00_01decltype_07operator_3_3_07declvald5a5a279653bbfeef238ad5c984744e2" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::detail::has_insertion_operator&lt; T, decltype(operator&lt;&lt;(declval&lt; std::ostream &amp; &gt;(), declval&lt; const T &amp; &gt;()), void())&gt;</compoundname>
+    <basecompoundref refid="structdoctest_1_1detail_1_1types_1_1true__type" prot="public" virt="non-virtual">doctest::detail::types::true_type</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>doctest::detail::has_insertion_operator&lt; T, decltype(operator&lt;&lt;(declval&lt; std::ostream &amp; &gt;(), declval&lt; const T &amp; &gt;()), void())&gt;</label>
+        <link refid="structdoctest_1_1detail_1_1has__insertion__operator_3_01T_00_01decltype_07operator_3_3_07declvald5a5a279653bbfeef238ad5c984744e2"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>doctest::detail::types::true_type</label>
+        <link refid="structdoctest_1_1detail_1_1types_1_1true__type"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>doctest::detail::has_insertion_operator&lt; T, decltype(operator&lt;&lt;(declval&lt; std::ostream &amp; &gt;(), declval&lt; const T &amp; &gt;()), void())&gt;</label>
+        <link refid="structdoctest_1_1detail_1_1has__insertion__operator_3_01T_00_01decltype_07operator_3_3_07declvald5a5a279653bbfeef238ad5c984744e2"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>doctest::detail::types::true_type</label>
+        <link refid="structdoctest_1_1detail_1_1types_1_1true__type"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1027" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1027" bodyend="1027"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1detail_1_1types_1_1true__type_1a5ad232af56ff87690d552f77e0413f02" prot="public" virt="non-virtual"><scope>doctest::detail::has_insertion_operator&lt; T, decltype(operator&lt;&lt;(declval&lt; std::ostream &amp; &gt;(), declval&lt; const T &amp; &gt;()), void())&gt;</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

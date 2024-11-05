@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classEmployedCitizen" kind="class" language="C++" prot="public">
+    <compoundname>EmployedCitizen</compoundname>
+    <basecompoundref refid="classCitizenType" prot="public" virt="non-virtual">CitizenType</basecompoundref>
+    <includes refid="EmployedCitizen_8h" local="no">EmployedCitizen.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEmployedCitizen_1a63ab0b212b04667e5d6b59f806bb6fe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EmployedCitizen::EmployedCitizen</definition>
+        <argsstring>(std::unique_ptr&lt; CitizenInterface &gt; baseCitizen)</argsstring>
+        <name>EmployedCitizen</name>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="classCitizenInterface" kindref="compound">CitizenInterface</ref> &gt;</type>
+          <declname>baseCitizen</declname>
+        </param>
+        <briefdescription>
+<para>Constructs an <ref refid="classEmployedCitizen" kindref="compound">EmployedCitizen</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>baseCitizen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A unique pointer to the base citizen. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EmployedCitizen.h" line="22" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EmployedCitizen.cpp" bodystart="5" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classEmployedCitizen_1a007a91a3800e6b8cbd3c67595ef55a83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EmployedCitizen::getEmployed</definition>
+        <argsstring>(Buildings *building)</argsstring>
+        <name>getEmployed</name>
+        <param>
+          <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+          <declname>building</declname>
+        </param>
+        <briefdescription>
+<para>Sets employment for the citizen at a specified building. Adjusts the salary and updates satisfaction based on employment status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>building</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the building offering employment. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EmployedCitizen.h" line="30" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EmployedCitizen.cpp" bodystart="12" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classEmployedCitizen_1a4ddbdab109b18b7608bd1a821e41386d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EmployedCitizen::jobPromotion</definition>
+        <argsstring>(float percentage)</argsstring>
+        <name>jobPromotion</name>
+        <param>
+          <type>float</type>
+          <declname>percentage</declname>
+        </param>
+        <briefdescription>
+<para>Increases the citizen&apos;s salary by a given percentage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>percentage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The percentage increase. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EmployedCitizen.h" line="37" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EmployedCitizen.cpp" bodystart="31" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classEmployedCitizen_1a73c8059734741498393294056f6c58be" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string EmployedCitizen::citizenType</definition>
+        <argsstring>() override</argsstring>
+        <name>citizenType</name>
+        <reimplements refid="classCitizenType_1a9ecf4837eb58c8de674c2531768f7d8a">citizenType</reimplements>
+        <briefdescription>
+<para>Returns the type of the citizen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A string representing the type of the citizen. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EmployedCitizen.h" line="43" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EmployedCitizen.cpp" bodystart="43" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Concrete decorator class for employed citizens. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class adds specific attributes and behaviors related to employed citizens, enhancing the base <ref refid="classCitizen" kindref="compound">Citizen</ref> functionality. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EmployedCitizen</label>
+        <link refid="classEmployedCitizen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CitizenType</label>
+        <link refid="classCitizenType"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>EmployedCitizen</label>
+        <link refid="classEmployedCitizen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="5">
+        <label>PopulationControl</label>
+        <link refid="classPopulationControl"/>
+      </node>
+      <node id="2">
+        <label>CitizenType</label>
+        <link refid="classCitizenType"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EmployedCitizen.h" line="15" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EmployedCitizen.h" bodystart="15" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classCitizenType_1aafbc7e228dd2fb4da91059a7ab13365f" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>addKnownLocations</name></member>
+      <member refid="classCitizenType_1a0d0d82ba2482a2343f2089f9ab40c6de" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>adjustCitizenSatisfaction</name></member>
+      <member refid="classCitizenInterface_1ae89f359a99f0c4c603ca8590b780582b" prot="protected" virt="non-virtual"><scope>EmployedCitizen</scope><name>age</name></member>
+      <member refid="classCitizenType_1a568146357029967143e17b44dcb1c318" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>attendEvent</name></member>
+      <member refid="classCitizenInterface_1a24e22f118e15014583962f2dd71d4ca5" prot="protected" virt="non-virtual"><scope>EmployedCitizen</scope><name>balance</name></member>
+      <member refid="classCitizenType_1ab7fb7c1a14eeb44fa2ea6b6a0084f4b2" prot="protected" virt="non-virtual"><scope>EmployedCitizen</scope><name>baseCitizen</name></member>
+      <member refid="classCitizenType_1a89f38abd000edc71bd0066131fbbbb9f" prot="protected" virt="non-virtual"><scope>EmployedCitizen</scope><name>CitizenList</name></member>
+      <member refid="classEmployedCitizen_1a73c8059734741498393294056f6c58be" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>citizenType</name></member>
+      <member refid="classCitizenType_1a9a3a767a09b4fb03e3de65e345e77a4a" prot="public" virt="non-virtual"><scope>EmployedCitizen</scope><name>CitizenType</name></member>
+      <member refid="classCitizenType_1a7a59c0fb85ff12df2e399dc179334f31" prot="public" virt="non-virtual"><scope>EmployedCitizen</scope><name>CitizenType</name></member>
+      <member refid="classCitizenType_1a0865d4c7bd7e481424c46c94e7ac1eeb" prot="public" virt="non-virtual"><scope>EmployedCitizen</scope><name>CitizenType</name></member>
+      <member refid="classCitizenType_1a6d6ee37de29e2791fb3ef2bc6a01e18c" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>clone</name></member>
+      <member refid="classCitizenInterface_1a0932e90d5917ea2d80cc545943eee930" prot="protected" virt="non-virtual"><scope>EmployedCitizen</scope><name>currTaxRate</name></member>
+      <member refid="classCitizenType_1a97d6b7055f9f4bb46b87d14d5a7ec7bf" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>displayDetails</name></member>
+      <member refid="classEmployedCitizen_1a63ab0b212b04667e5d6b59f806bb6fe2" prot="public" virt="non-virtual"><scope>EmployedCitizen</scope><name>EmployedCitizen</name></member>
+      <member refid="classCitizenType_1af3f22949052e155ce0b7582fd747e606" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>evaluateHappiness</name></member>
+      <member refid="classCitizenType_1ad85a22568685a326686adc0eef92df2b" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>getAge</name></member>
+      <member refid="classCitizenType_1ab2890232f3e35f300a9071769985db0b" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>getBalance</name></member>
+      <member refid="classEmployedCitizen_1a007a91a3800e6b8cbd3c67595ef55a83" prot="public" virt="non-virtual"><scope>EmployedCitizen</scope><name>getEmployed</name></member>
+      <member refid="classCitizenType_1af9d568d82c39f39812483123bae2d69b" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>getEmployementStatus</name></member>
+      <member refid="classCitizenType_1a0450b71e06dba458705c9d0782ea6859" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>getName</name></member>
+      <member refid="classCitizenType_1a922ffa635257b3130fd5d823096aeb4a" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>getPropertyOwnershipStatus</name></member>
+      <member refid="classCitizenType_1a51be73da5f42dec3c719337e7011146a" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>getSalary</name></member>
+      <member refid="classCitizenType_1a83a94fc8b3f4c8b1e8ad3bc2a6d42588" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>getSatisfaction</name></member>
+      <member refid="classCitizenType_1ae79d14e7f2721f6c689b3522d1877f24" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>getTaxRate</name></member>
+      <member refid="classCitizenInterface_1a8f1062120fb4edff8be1ff2282692149" prot="protected" virt="non-virtual"><scope>EmployedCitizen</scope><name>government</name></member>
+      <member refid="classCitizenInterface_1a1949f7d399a688e2d7cdf1c7de81b02e" prot="protected" virt="non-virtual"><scope>EmployedCitizen</scope><name>isEmployed</name></member>
+      <member refid="classEmployedCitizen_1a4ddbdab109b18b7608bd1a821e41386d" prot="public" virt="non-virtual"><scope>EmployedCitizen</scope><name>jobPromotion</name></member>
+      <member refid="classCitizenType_1aae53050c5e3c66c8978db9defc2746e6" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>makeRequest</name></member>
+      <member refid="classCitizenInterface_1ada5892a64a6cac5a27a313735f6f7ef8" prot="protected" virt="non-virtual"><scope>EmployedCitizen</scope><name>name</name></member>
+      <member refid="classCitizenType_1a73d465833a5ca394bdc55ba89508def6" prot="public" virt="non-virtual"><scope>EmployedCitizen</scope><name>operator=</name></member>
+      <member refid="classCitizenType_1ace056555b74a7624911950e211722a97" prot="public" virt="non-virtual"><scope>EmployedCitizen</scope><name>operator=</name></member>
+      <member refid="classCitizenInterface_1a2277bd8cf0f5deeeb2edcb5fb8c88357" prot="protected" virt="non-virtual"><scope>EmployedCitizen</scope><name>ownsProperty</name></member>
+      <member refid="classCitizenInterface_1a81e269098f1a81dd046773e520e0065f" prot="protected" virt="non-virtual"><scope>EmployedCitizen</scope><name>popControl</name></member>
+      <member refid="classCitizenType_1abbfb3180ef46dc4a39d60c2e7b021fc7" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>requestPublicService</name></member>
+      <member refid="classCitizenInterface_1ae295a5670ab4e6f5ede3ba3914c95322" prot="protected" virt="non-virtual"><scope>EmployedCitizen</scope><name>salary</name></member>
+      <member refid="classCitizenInterface_1ae04673c435d951b25d841c24456297c0" prot="protected" virt="non-virtual"><scope>EmployedCitizen</scope><name>satisfaction</name></member>
+      <member refid="classCitizenType_1ae6a9f47fbb35bd9df0c9e05be79b9cce" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>setBalance</name></member>
+      <member refid="classCitizenType_1acb51eaee56333a56e4b3531f6e601d1c" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>setEmploymentStatus</name></member>
+      <member refid="classCitizenType_1a588493f6810dda6ff5e74290e9e1b5dc" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>setPropertyOwnership</name></member>
+      <member refid="classCitizenType_1a4e277d8f603503921079cc4d2465a4e7" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>setSalary</name></member>
+      <member refid="classCitizenType_1adb536cada3b9f68c146b64534e30ef83" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>setSatisfaction</name></member>
+      <member refid="classCitizenType_1ad426f1dab8b6cc20a7f80ee4e0aae86e" prot="public" virt="non-virtual"><scope>EmployedCitizen</scope><name>Test</name></member>
+      <member refid="classCitizenType_1ab753df3909b5c4bb09a6a6092d78eac4" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>update</name></member>
+      <member refid="classCitizenType_1a035d71e5fbd61e0e491f10812643f1de" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>useTransport</name></member>
+      <member refid="classCitizenInterface_1ad7cec6aa7c9c96c45ea18062790736b2" prot="public" virt="virtual"><scope>EmployedCitizen</scope><name>~CitizenInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

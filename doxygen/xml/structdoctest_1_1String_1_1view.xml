@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1String_1_1view" kind="struct" language="C++" prot="private">
+    <compoundname>doctest::String::view</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoctest_1_1String_1_1view_1a18a399abb1e4be67bcc6d6557837a98c" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* doctest::String::view::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="598" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="598" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1String_1_1view_1ab2ec6ca2c53190109565fa5bace8ebd2" prot="public" static="no" mutable="no">
+        <type>size_type</type>
+        <definition>size_type doctest::String::view::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="599" column="19" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="599" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1String_1_1view_1a8959fca28b32505b62b535634a369de3" prot="public" static="no" mutable="no">
+        <type>size_type</type>
+        <definition>size_type doctest::String::view::capacity</definition>
+        <argsstring></argsstring>
+        <name>capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="600" column="19" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="600" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>OCLINT avoid private static members. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="596" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="597" bodyend="601"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1String_1_1view_1a8959fca28b32505b62b535634a369de3" prot="public" virt="non-virtual"><scope>doctest::String::view</scope><name>capacity</name></member>
+      <member refid="structdoctest_1_1String_1_1view_1a18a399abb1e4be67bcc6d6557837a98c" prot="public" virt="non-virtual"><scope>doctest::String::view</scope><name>ptr</name></member>
+      <member refid="structdoctest_1_1String_1_1view_1ab2ec6ca2c53190109565fa5bace8ebd2" prot="public" virt="non-virtual"><scope>doctest::String::view</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

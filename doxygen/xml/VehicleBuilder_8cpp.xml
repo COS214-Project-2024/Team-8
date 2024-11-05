@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="VehicleBuilder_8cpp" kind="file" language="C++">
+    <compoundname>VehicleBuilder.cpp</compoundname>
+    <includes refid="VehicleBuilder_8h" local="yes">VehicleBuilder.h</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>MapIterator.h</label>
+        <link refid="MapIterator_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>VehicleBuilder.h</label>
+        <link refid="VehicleBuilder_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Transport.h</label>
+        <link refid="Transport_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Stops.h</label>
+        <link refid="Stops_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TransportBuilder.h</label>
+        <link refid="TransportBuilder_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>sstream</label>
+      </node>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/VehicleBuilder.cpp</label>
+        <link refid="VehicleBuilder_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>RouteNode.h</label>
+        <link refid="RouteNode_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="10">
+        <label>Vehicle.h</label>
+        <link refid="Vehicle_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>This file implements the <ref refid="classVehicleBuilder" kindref="compound">VehicleBuilder</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="VehicleBuilder_8h" kindref="compound">VehicleBuilder.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><ref refid="classTransportBuilder" kindref="compound">TransportBuilder</ref>*<sp/><ref refid="classVehicleBuilder_1a366aea9a248bb04c3d6b558ef754b719" kindref="member">VehicleBuilder::setCapacity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>capacity)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;transport-&gt;setCapacity(capacity);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><ref refid="classTransportBuilder" kindref="compound">TransportBuilder</ref>*<sp/><ref refid="classVehicleBuilder_1a6d98939592a01bc349004ad84c2dfb45" kindref="member">VehicleBuilder::setCargoWeight</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>weight)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;transport-&gt;setCargoWeight(weight);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="classTransportBuilder" kindref="compound">TransportBuilder</ref>*<sp/><ref refid="classVehicleBuilder_1a156c5167493c8f971d5a18c0b66c0136" kindref="member">VehicleBuilder::setNumPassengers</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num)<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;transport-&gt;setNumPassenger(num);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><ref refid="classTransport" kindref="compound">Transport</ref>*<sp/><ref refid="classVehicleBuilder_1ad708c66b842c51b31c7fc14b7604deb9" kindref="member">VehicleBuilder::build</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;transport;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><ref refid="classVehicleBuilder_1a9c4e1bb2bd2fa160918b5682dea5867c" kindref="member">VehicleBuilder::VehicleBuilder</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;transport<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classVehicle" kindref="compound">Vehicle</ref>(0);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/VehicleBuilder.cpp"/>
+  </compounddef>
+</doxygen>

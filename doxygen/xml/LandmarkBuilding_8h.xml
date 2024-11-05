@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="LandmarkBuilding_8h" kind="file" language="C++">
+    <compoundname>LandmarkBuilding.h</compoundname>
+    <includes refid="Buildings_8h" local="yes">Buildings.h</includes>
+    <includes local="no">string</includes>
+    <includedby refid="CulturalCenter_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CulturalCenter.h</includedby>
+    <includedby refid="main_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp</includedby>
+    <includedby refid="Monument_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h</includedby>
+    <includedby refid="Park_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h</label>
+        <link refid="LandmarkBuilding_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Buildings.h</label>
+        <link refid="Buildings_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h</label>
+        <link refid="LandmarkBuilding_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h</label>
+        <link refid="Monument_8h_source"/>
+      </node>
+      <node id="3">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="2">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CulturalCenter.h</label>
+        <link refid="CulturalCenter_8h_source"/>
+      </node>
+      <node id="5">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h</label>
+        <link refid="Park_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classLandmarkBuilding" prot="public">LandmarkBuilding</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Buildings_8h" kindref="compound">Buildings.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LANDMARKBUILDING_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LANDMARKBUILDING_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classLandmarkBuilding" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classLandmarkBuilding" kindref="compound">LandmarkBuilding</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classBuildings" kindref="compound">Buildings</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classLandmarkBuilding_1a10edeac1cd62dd4519d196b873bb7cc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classLandmarkBuilding_1a10edeac1cd62dd4519d196b873bb7cc0" kindref="member">getBuildingType</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="classLandmarkBuilding_1a92abe6deecb03d320f0afdde7916f6ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLandmarkBuilding_1a92abe6deecb03d320f0afdde7916f6ce" kindref="member">getJobsCreated</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classLandmarkBuilding_1a3f6e6849c9a5f5d29ea16e51bff37006" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classLandmarkBuilding_1a3f6e6849c9a5f5d29ea16e51bff37006" kindref="member">getMaintenanceCost</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classLandmarkBuilding_1a25b9ca973c81578065f8cece37de00d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classLandmarkBuilding_1a25b9ca973c81578065f8cece37de00d4" kindref="member">getName</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classLandmarkBuilding_1ac8df4603f8786f441a3aa50a3cd7a75c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLandmarkBuilding_1ac8df4603f8786f441a3aa50a3cd7a75c" kindref="member">getPowerReq</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classLandmarkBuilding_1a780ade236d79adb8007752c718867639" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLandmarkBuilding_1a780ade236d79adb8007752c718867639" kindref="member">getSewageCost</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classLandmarkBuilding_1acb64ab79a07960d7bec6491f2a026315" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLandmarkBuilding_1acb64ab79a07960d7bec6491f2a026315" kindref="member">getWaterReq</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classLandmarkBuilding_1a6aa7b601c577fa2114df4c826fd00517" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLandmarkBuilding_1a6aa7b601c577fa2114df4c826fd00517" kindref="member">requestState</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classLandmarkBuilding_1af8cf4edaa6c0609969d781448365186d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLandmarkBuilding_1af8cf4edaa6c0609969d781448365186d" kindref="member">setState</ref>(<ref refid="classState" kindref="compound">State</ref>*<sp/>newState)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73" refid="classLandmarkBuilding_1aa8179defd14ed585752076b6d407aada" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLandmarkBuilding_1aa8179defd14ed585752076b6d407aada" kindref="member">addBuilding</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classLandmarkBuilding_1aecef730ab43b09f8d9a3cb423a46f94a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classLandmarkBuilding_1aecef730ab43b09f8d9a3cb423a46f94a" kindref="member">getPower</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="classLandmarkBuilding_1a661c42eb0bd712f50eb10cfba131f0e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classLandmarkBuilding_1a661c42eb0bd712f50eb10cfba131f0e5" kindref="member">getWater</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classLandmarkBuilding_1a53f41bc4fe9ccb241e6619463296c405" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classLandmarkBuilding_1a53f41bc4fe9ccb241e6619463296c405" kindref="member">cleanWaste</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="classLandmarkBuilding_1a4b58e301fe9f6d3dc400aad1650e3db2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classLandmarkBuilding_1a4b58e301fe9f6d3dc400aad1650e3db2" kindref="member">cleanSewage</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h"/>
+  </compounddef>
+</doxygen>

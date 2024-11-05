@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classTransportBuilder" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>TransportBuilder</compoundname>
+    <derivedcompoundref refid="classPlaneBuilder" prot="public" virt="non-virtual">PlaneBuilder</derivedcompoundref>
+    <derivedcompoundref refid="classTrainBuilder" prot="public" virt="non-virtual">TrainBuilder</derivedcompoundref>
+    <derivedcompoundref refid="classVehicleBuilder" prot="public" virt="non-virtual">VehicleBuilder</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classTransportBuilder_1ac42b4edef812e1c65eb2a07c17d16f5b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classTransport" kindref="compound">Transport</ref> *</type>
+        <definition>Transport* TransportBuilder::transport</definition>
+        <argsstring></argsstring>
+        <name>transport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TransportBuilder.h" line="12" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TransportBuilder.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTransportBuilder_1a30c8d8950e157b81274b22568e3e9a19" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classTransportBuilder" kindref="compound">TransportBuilder</ref> *</type>
+        <definition>virtual TransportBuilder* TransportBuilder::setCapacity</definition>
+        <argsstring>(int capacity)=0</argsstring>
+        <name>setCapacity</name>
+        <reimplementedby refid="classPlaneBuilder_1aed2686d43178e58ce93d8192d48dee24">setCapacity</reimplementedby>
+        <reimplementedby refid="classTrainBuilder_1a18b610ed849a1063a2399063e8144ceb">setCapacity</reimplementedby>
+        <reimplementedby refid="classVehicleBuilder_1a366aea9a248bb04c3d6b558ef754b719">setCapacity</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TransportBuilder.h" line="15" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransportBuilder_1a7dc350335f09aa796b77541f0bcc025c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classTransport" kindref="compound">Transport</ref> *</type>
+        <definition>virtual Transport* TransportBuilder::build</definition>
+        <argsstring>()=0</argsstring>
+        <name>build</name>
+        <reimplementedby refid="classPlaneBuilder_1a1f2acaae2bd673b786d5106bd540de6d">build</reimplementedby>
+        <reimplementedby refid="classTrainBuilder_1a0bd563ac68d08afefe1fe9871b07a3d7">build</reimplementedby>
+        <reimplementedby refid="classVehicleBuilder_1ad708c66b842c51b31c7fc14b7604deb9">build</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TransportBuilder.h" line="17" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransportBuilder_1aeb17e11e9207930294b3f0920ce67c41" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classTransportBuilder" kindref="compound">TransportBuilder</ref> *</type>
+        <definition>virtual TransportBuilder* TransportBuilder::setCargoWeight</definition>
+        <argsstring>(float weight)=0</argsstring>
+        <name>setCargoWeight</name>
+        <reimplementedby refid="classPlaneBuilder_1af9ae0a6df7dda7d1157c8e0172006473">setCargoWeight</reimplementedby>
+        <reimplementedby refid="classTrainBuilder_1a1fed73e60fd4ad3b9a7ab8a6de7c7d1c">setCargoWeight</reimplementedby>
+        <reimplementedby refid="classVehicleBuilder_1a6d98939592a01bc349004ad84c2dfb45">setCargoWeight</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TransportBuilder.h" line="19" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransportBuilder_1a4e14b217344b0b3b0c56602e1d2d004a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classTransportBuilder" kindref="compound">TransportBuilder</ref> *</type>
+        <definition>virtual TransportBuilder* TransportBuilder::setNumPassengers</definition>
+        <argsstring>(int num)=0</argsstring>
+        <name>setNumPassengers</name>
+        <reimplementedby refid="classPlaneBuilder_1a00dcc42fee4f7e0f58f9bafa3a10b12b">setNumPassengers</reimplementedby>
+        <reimplementedby refid="classTrainBuilder_1a283c4870954092d8ffb14c9936ace913">setNumPassengers</reimplementedby>
+        <reimplementedby refid="classVehicleBuilder_1a156c5167493c8f971d5a18c0b66c0136">setNumPassengers</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TransportBuilder.h" line="21" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransportBuilder_1a2f24be878963ce150493f4acb109a229" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>TransportBuilder::~TransportBuilder</definition>
+        <argsstring>()</argsstring>
+        <name>~TransportBuilder</name>
+        <briefdescription>
+<para>Destructor for the <ref refid="classTransportBuilder" kindref="compound">TransportBuilder</ref> object Virtual destructor of the <ref refid="classTransportBuilder" kindref="compound">TransportBuilder</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TransportBuilder.h" line="23" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TransportBuilder.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PlaneBuilder</label>
+        <link refid="classPlaneBuilder"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>VehicleBuilder</label>
+        <link refid="classVehicleBuilder"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TransportBuilder</label>
+        <link refid="classTransportBuilder"/>
+      </node>
+      <node id="3">
+        <label>TrainBuilder</label>
+        <link refid="classTrainBuilder"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>TransportBuilder</label>
+        <link refid="classTransportBuilder"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>transport</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Transport</label>
+        <link refid="classTransport"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TransportBuilder.h" line="10" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TransportBuilder.h" bodystart="10" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classTransportBuilder_1a7dc350335f09aa796b77541f0bcc025c" prot="public" virt="pure-virtual"><scope>TransportBuilder</scope><name>build</name></member>
+      <member refid="classTransportBuilder_1a30c8d8950e157b81274b22568e3e9a19" prot="public" virt="pure-virtual"><scope>TransportBuilder</scope><name>setCapacity</name></member>
+      <member refid="classTransportBuilder_1aeb17e11e9207930294b3f0920ce67c41" prot="public" virt="pure-virtual"><scope>TransportBuilder</scope><name>setCargoWeight</name></member>
+      <member refid="classTransportBuilder_1a4e14b217344b0b3b0c56602e1d2d004a" prot="public" virt="pure-virtual"><scope>TransportBuilder</scope><name>setNumPassengers</name></member>
+      <member refid="classTransportBuilder_1ac42b4edef812e1c65eb2a07c17d16f5b" prot="protected" virt="non-virtual"><scope>TransportBuilder</scope><name>transport</name></member>
+      <member refid="classTransportBuilder_1a2f24be878963ce150493f4acb109a229" prot="public" virt="virtual"><scope>TransportBuilder</scope><name>~TransportBuilder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacedoctest_1_1TestCaseFailureReason" kind="namespace" language="C++">
+    <compoundname>doctest::TestCaseFailureReason</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="doctest_8h_1aecb2ca1f80416d60f0d6b96f65859d3c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Enum</name>
+        <enumvalue id="doctest_8h_1aecb2ca1f80416d60f0d6b96f65859d3ca768cf3716f713edcf20c442607c403b2" prot="public">
+          <name>None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1aecb2ca1f80416d60f0d6b96f65859d3ca06ab32ff93cacaa65c6a2667ddde64e9" prot="public">
+          <name>AssertFailure</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1aecb2ca1f80416d60f0d6b96f65859d3ca0474331a35ec33aefa287574dbe9a142" prot="public">
+          <name>Exception</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1aecb2ca1f80416d60f0d6b96f65859d3ca362a350971c370e7bf89f1993aeb2eeb" prot="public">
+          <name>Crash</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1aecb2ca1f80416d60f0d6b96f65859d3cab87a56a01139c003c5f90678c37a0cb3" prot="public">
+          <name>TooManyFailedAsserts</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1aecb2ca1f80416d60f0d6b96f65859d3ca90b6713d67ca5273d0b7aa2d2ac60ab1" prot="public">
+          <name>Timeout</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1aecb2ca1f80416d60f0d6b96f65859d3ca214290d44846106400115f44d2d21cb9" prot="public">
+          <name>ShouldHaveFailedButDidnt</name>
+          <initializer>= 32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1aecb2ca1f80416d60f0d6b96f65859d3ca0ea1283c0437f975df930c28820a3920" prot="public">
+          <name>ShouldHaveFailedAndDid</name>
+          <initializer>= 64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1aecb2ca1f80416d60f0d6b96f65859d3caaab68fabc66bf5c3a606985f59a11afe" prot="public">
+          <name>DidntFailExactlyNumTimes</name>
+          <initializer>= 128</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1aecb2ca1f80416d60f0d6b96f65859d3cab0e5ba77e37e755a83a01fdb2ad57b4d" prot="public">
+          <name>FailedExactlyNumTimes</name>
+          <initializer>= 256</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1aecb2ca1f80416d60f0d6b96f65859d3caa038bc08a903185cf809dd05056d6a75" prot="public">
+          <name>CouldHaveFailedAndDid</name>
+          <initializer>= 512</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2001" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2002" bodyend="2014"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2000" column="1"/>
+  </compounddef>
+</doxygen>

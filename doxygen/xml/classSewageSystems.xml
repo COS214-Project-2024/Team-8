@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classSewageSystems" kind="class" language="C++" prot="public">
+    <compoundname>SewageSystems</compoundname>
+    <basecompoundref refid="classUtility" prot="public" virt="non-virtual">Utility</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSewageSystems_1ae943cf5e21c089c1cdcefd6bb1bf2ce3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SewageSystems::maxWaste</definition>
+        <argsstring></argsstring>
+        <name>maxWaste</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h" line="12" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSewageSystems_1ad0359aa968f27b256680bc1b67d8615a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SewageSystems::blockagepercentage</definition>
+        <argsstring></argsstring>
+        <name>blockagepercentage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h" line="13" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSewageSystems_1ab53177265b9da63f67a339d4ce933a29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SewageSystems::SewageSystems</definition>
+        <argsstring>(float output)</argsstring>
+        <name>SewageSystems</name>
+        <param>
+          <type>float</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+<para>Create a <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output of the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Sets the status to &quot;Operational&quot; and adds the status to the commandHistory <ref refid="classCommand" kindref="compound">Command</ref> history is used to keep track of the operations done on the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h" line="24" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.cpp" bodystart="4" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classSewageSystems_1ae49f42bdab9a540700687e1e057dd16a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string SewageSystems::getStatus</definition>
+        <argsstring>()</argsstring>
+        <name>getStatus</name>
+        <reimplements refid="classUtility_1aa5e24ae315185bd1d736a50fa4aee21d">getStatus</reimplements>
+        <briefdescription>
+<para>Repare the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the status to &quot;Operational&quot; and adds the status to the commandHistory Simulates a repair operation by printing a series of &apos;#&apos; to the console </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h" line="31" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classSewageSystems_1ac8f9acf837402ea3fad02b42ff6063f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SewageSystems::executeOperation</definition>
+        <argsstring>()</argsstring>
+        <name>executeOperation</name>
+        <reimplements refid="classUtility_1a30f0d3aa2c132e33a0ea7e47debbb974">executeOperation</reimplements>
+        <briefdescription>
+<para>Execute the operation of the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the status to &quot;Operational&quot; and adds the status to the commandHistory </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h" line="37" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.cpp" bodystart="32" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classSewageSystems_1a390667d56ab969144e08e3e5778e9a39" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float SewageSystems::getOutput</definition>
+        <argsstring>()</argsstring>
+        <name>getOutput</name>
+        <reimplements refid="classUtility_1a40b833bd8494fcddeb667a4705635b5f">getOutput</reimplements>
+        <briefdescription>
+<para>Get the output of the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float The output of the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h" line="43" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.cpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classSewageSystems_1a6d0ec43da3fe9edb9732f11d5bef4cec" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SewageSystems::pauseOperation</definition>
+        <argsstring>()</argsstring>
+        <name>pauseOperation</name>
+        <reimplements refid="classUtility_1a27c39caf66558263047b2c10fda15174">pauseOperation</reimplements>
+        <briefdescription>
+<para>Pause the operation of the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the status to &quot;Paused&quot; and adds the status to the commandHistory </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h" line="49" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.cpp" bodystart="45" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classSewageSystems_1acf5c2be3686331135698ef9dbcde15c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SewageSystems::setmaxWaste</definition>
+        <argsstring>(int max)</argsstring>
+        <name>setmaxWaste</name>
+        <reimplements refid="classUtility_1ae20563a384347c5bcd52809ed52983fa">setmaxWaste</reimplements>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Set the maximum waste of the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum waste of the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h" line="55" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.cpp" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classSewageSystems_1aab1ed6964d6e259067d1305fe8a20cd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SewageSystems::undoChange</definition>
+        <argsstring>()</argsstring>
+        <name>undoChange</name>
+        <reimplements refid="classUtility_1a345b48a57c1716c1756d874c17fc2aba">undoChange</reimplements>
+        <briefdescription>
+<para>Undo the last operation done on the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the last operation was &quot;Operational&quot;, the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref> is paused If the last operation was &quot;Paused&quot;, the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref> is set to operational If there are no more operations to undo, a message is printed to the console </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h" line="63" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.cpp" bodystart="58" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classSewageSystems_1a58d6c2b7a78ee701772d44efb30ddee9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string SewageSystems::getUtilityType</definition>
+        <argsstring>()</argsstring>
+        <name>getUtilityType</name>
+        <reimplements refid="classUtility_1a05241d457a3eeb2c4e1508e5ca89ea56">getUtilityType</reimplements>
+        <briefdescription>
+<para>Get the type of the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string The type of the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h" line="69" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.cpp" bodystart="85" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classSewageSystems_1ac2c0e0ae189c173a5a9596251b6537e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+        <definition>Utility * SewageSystems::clone</definition>
+        <argsstring>()</argsstring>
+        <name>clone</name>
+        <reimplements refid="classUtility_1a4a793297c2d99d8d5c689276a973b518">clone</reimplements>
+        <briefdescription>
+<para>Clone the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Utility* The cloned <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h" line="75" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.cpp" bodystart="90" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classSewageSystems_1a1c5bad0443ff2c05e44432d08f074c97" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SewageSystems::repairUtility</definition>
+        <argsstring>()</argsstring>
+        <name>repairUtility</name>
+        <reimplements refid="classUtility_1ae5bd09fa1f3c74c562b1c7d5f6e3c770">repairUtility</reimplements>
+        <briefdescription>
+<para>Repare the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the status to &quot;Operational&quot; and adds the status to the commandHistory Simulates a repair operation by printing a series of &apos;#&apos; to the console </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h" line="82" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.cpp" bodystart="17" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classSewageSystems_1a388d3ef2329b6f97b454cf9640ce6539" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SewageSystems::setOutput</definition>
+        <argsstring>(float Output)</argsstring>
+        <name>setOutput</name>
+        <reimplements refid="classUtility_1a8e87df51780eefefc9df53a98569fe70">setOutput</reimplements>
+        <param>
+          <type>float</type>
+          <declname>Output</declname>
+        </param>
+        <briefdescription>
+<para>Set the output of the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output of the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h" line="88" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.cpp" bodystart="97" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classSewageSystems_1a019a3a6808d52bd5b87209c4fd127c53" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SewageSystems::addBuilding</definition>
+        <argsstring>(Buildings *building)</argsstring>
+        <name>addBuilding</name>
+        <reimplements refid="classUtility_1a4ea6047493c471b470e4c392aa8c801b">addBuilding</reimplements>
+        <param>
+          <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+          <declname>building</declname>
+        </param>
+        <briefdescription>
+<para>Add a building to the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>building</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The building to add to the <ref refid="classSewageSystems" kindref="compound">SewageSystems</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h" line="94" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.cpp" bodystart="102" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classSewageSystems_1affcbc6b4d39ab909ec5334f2d0703b4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool SewageSystems::cleanSewage</definition>
+        <argsstring>(Buildings *sender)</argsstring>
+        <name>cleanSewage</name>
+        <reimplements refid="classUtility_1aa6e79e1fbe644bf131adb5d4acc3689d">cleanSewage</reimplements>
+        <param>
+          <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+          <declname>sender</declname>
+        </param>
+        <briefdescription>
+<para>Clean the sewage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The building that sent the sewage</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool True if the sewage was cleaned, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h" line="102" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.cpp" bodystart="107" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SewageSystems</label>
+        <link refid="classSewageSystems"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SewageSystems</label>
+        <link refid="classSewageSystems"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h" line="10" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SewageSystems.h" bodystart="10" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classSewageSystems_1a019a3a6808d52bd5b87209c4fd127c53" prot="public" virt="virtual"><scope>SewageSystems</scope><name>addBuilding</name></member>
+      <member refid="classSewageSystems_1ad0359aa968f27b256680bc1b67d8615a" prot="private" virt="non-virtual"><scope>SewageSystems</scope><name>blockagepercentage</name></member>
+      <member refid="classUtility_1ac79531e37704bf46de18d608f977b95c" prot="protected" virt="non-virtual"><scope>SewageSystems</scope><name>buildings</name></member>
+      <member refid="classSewageSystems_1affcbc6b4d39ab909ec5334f2d0703b4c" prot="public" virt="virtual"><scope>SewageSystems</scope><name>cleanSewage</name></member>
+      <member refid="classUtility_1a46770e0e3a9d147b17bd7f373db58fac" prot="public" virt="virtual"><scope>SewageSystems</scope><name>cleanWaste</name></member>
+      <member refid="classSewageSystems_1ac2c0e0ae189c173a5a9596251b6537e3" prot="public" virt="virtual"><scope>SewageSystems</scope><name>clone</name></member>
+      <member refid="classUtility_1a199e63168af1a70654715e55cfdaaadd" prot="protected" virt="non-virtual"><scope>SewageSystems</scope><name>commandHistory</name></member>
+      <member refid="classSewageSystems_1ac8f9acf837402ea3fad02b42ff6063f9" prot="public" virt="virtual"><scope>SewageSystems</scope><name>executeOperation</name></member>
+      <member refid="classUtility_1a6f8eec7ad0199ab9223d8f57f2108e25" prot="public" virt="virtual"><scope>SewageSystems</scope><name>getEnergyType</name></member>
+      <member refid="classSewageSystems_1a390667d56ab969144e08e3e5778e9a39" prot="public" virt="virtual"><scope>SewageSystems</scope><name>getOutput</name></member>
+      <member refid="classUtility_1abd93d41bd72298acda7fe3950dab16d2" prot="public" virt="virtual"><scope>SewageSystems</scope><name>getPower</name></member>
+      <member refid="classSewageSystems_1ae49f42bdab9a540700687e1e057dd16a" prot="public" virt="virtual"><scope>SewageSystems</scope><name>getStatus</name></member>
+      <member refid="classSewageSystems_1a58d6c2b7a78ee701772d44efb30ddee9" prot="public" virt="virtual"><scope>SewageSystems</scope><name>getUtilityType</name></member>
+      <member refid="classUtility_1a9df345da6df3d01c77fe330c90b39311" prot="public" virt="virtual"><scope>SewageSystems</scope><name>getWater</name></member>
+      <member refid="classSewageSystems_1ae943cf5e21c089c1cdcefd6bb1bf2ce3" prot="private" virt="non-virtual"><scope>SewageSystems</scope><name>maxWaste</name></member>
+      <member refid="classUtility_1a77e31318778f334c044fd7bbd7521118" prot="protected" virt="non-virtual"><scope>SewageSystems</scope><name>Output</name></member>
+      <member refid="classSewageSystems_1a6d0ec43da3fe9edb9732f11d5bef4cec" prot="public" virt="virtual"><scope>SewageSystems</scope><name>pauseOperation</name></member>
+      <member refid="classSewageSystems_1a1c5bad0443ff2c05e44432d08f074c97" prot="public" virt="virtual"><scope>SewageSystems</scope><name>repairUtility</name></member>
+      <member refid="classUtility_1aa9261d8034152c1fc5618d35f5d70c38" prot="public" virt="virtual"><scope>SewageSystems</scope><name>setFuel</name></member>
+      <member refid="classUtility_1ab705aff598d1b89f04d9a31c47456cac" prot="public" virt="virtual"><scope>SewageSystems</scope><name>setMaxGallons</name></member>
+      <member refid="classSewageSystems_1acf5c2be3686331135698ef9dbcde15c5" prot="public" virt="virtual"><scope>SewageSystems</scope><name>setmaxWaste</name></member>
+      <member refid="classUtility_1a946a24d4473791f62941221c63f67a25" prot="public" virt="virtual"><scope>SewageSystems</scope><name>setMaxWatts</name></member>
+      <member refid="classSewageSystems_1a388d3ef2329b6f97b454cf9640ce6539" prot="public" virt="virtual"><scope>SewageSystems</scope><name>setOutput</name></member>
+      <member refid="classUtility_1a72a5b065755157aee43eaf0373da87bd" prot="public" virt="virtual"><scope>SewageSystems</scope><name>setProcessCapacity</name></member>
+      <member refid="classSewageSystems_1ab53177265b9da63f67a339d4ce933a29" prot="public" virt="non-virtual"><scope>SewageSystems</scope><name>SewageSystems</name></member>
+      <member refid="classUtility_1a2022354933e1799f6138636b81d902db" prot="protected" virt="non-virtual"><scope>SewageSystems</scope><name>status</name></member>
+      <member refid="classUtility_1ad29972cb0be49835b747eb6bc667a198" prot="public" virt="virtual"><scope>SewageSystems</scope><name>switchFuel</name></member>
+      <member refid="classSewageSystems_1aab1ed6964d6e259067d1305fe8a20cd2" prot="public" virt="virtual"><scope>SewageSystems</scope><name>undoChange</name></member>
+      <member refid="classUtility_1a96b929cc62f8fc5b367cb6814d2fd93c" prot="public" virt="virtual"><scope>SewageSystems</scope><name>~Utility</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

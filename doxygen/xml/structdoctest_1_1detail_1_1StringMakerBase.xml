@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1detail_1_1StringMakerBase" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::detail::StringMakerBase</compoundname>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>C</declname>
+        <defname>C</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1StringMakerBase_1a67d29f2a5de9a522d8e8607c1a39db9b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref></type>
+        <definition>static String doctest::detail::StringMakerBase&lt; C &gt;::convert</definition>
+        <argsstring>(const DOCTEST_REF_WRAP(T))</argsstring>
+        <name>convert</name>
+        <param>
+          <type>const </type>
+          <declname>DOCTEST_REF_WRAP</declname>
+          <array>T</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1040" column="23" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1040" bodyend="1045"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1038" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1038" bodyend="1046"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1detail_1_1StringMakerBase_1a67d29f2a5de9a522d8e8607c1a39db9b" prot="public" virt="non-virtual"><scope>doctest::detail::StringMakerBase</scope><name>convert</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

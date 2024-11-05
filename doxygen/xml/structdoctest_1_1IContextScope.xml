@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1IContextScope" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>doctest::IContextScope</compoundname>
+    <derivedcompoundref refid="structdoctest_1_1detail_1_1ContextScopeBase" prot="public" virt="non-virtual">doctest::detail::ContextScopeBase</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdoctest_1_1IContextScope_1affbf0f9bf8107a4a8a805d237288141d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void doctest::IContextScope::stringify</definition>
+        <argsstring>(std::ostream *) const =0</argsstring>
+        <name>stringify</name>
+        <reimplementedby refid="classdoctest_1_1detail_1_1ContextScope_1a4636ac32ae41ae108c7ada4a164ffaeb">stringify</reimplementedby>
+        <param>
+          <type><ref refid="classstd_1_1basic__ostream" kindref="compound">std::ostream</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="886" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>doctest::IContextScope</label>
+        <link refid="structdoctest_1_1IContextScope"/>
+      </node>
+      <node id="2">
+        <label>doctest::detail::ContextScopeBase</label>
+        <link refid="structdoctest_1_1detail_1_1ContextScopeBase"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>doctest::detail::ContextScope&lt; L &gt;</label>
+        <link refid="classdoctest_1_1detail_1_1ContextScope"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="883" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="884" bodyend="887"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1IContextScope_1affbf0f9bf8107a4a8a805d237288141d" prot="public" virt="pure-virtual"><scope>doctest::IContextScope</scope><name>stringify</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

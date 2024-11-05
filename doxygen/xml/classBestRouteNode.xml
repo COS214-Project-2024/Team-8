@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classBestRouteNode" kind="class" language="C++" prot="public">
+    <compoundname>BestRouteNode</compoundname>
+    <basecompoundref refid="classRouteNode" prot="public" virt="non-virtual">RouteNode</basecompoundref>
+    <includes refid="BestRouteNode_8h" local="no">BestRouteNode.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBestRouteNode_1ab28e72a7181a18b3309631b23990b2be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BestRouteNode::BestRouteNode</definition>
+        <argsstring>()</argsstring>
+        <name>BestRouteNode</name>
+        <briefdescription>
+<para>Default constructor for <ref refid="classBestRouteNode" kindref="compound">BestRouteNode</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes a <ref refid="classBestRouteNode" kindref="compound">BestRouteNode</ref> instance with default parameters </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BestRouteNode.h" line="15" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BestRouteNode.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classBestRouteNode_1abb322f242ba85b4c3e4bd58bb4d58e55" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BestRouteNode::add</definition>
+        <argsstring>(Stops *data)</argsstring>
+        <name>add</name>
+        <reimplements refid="classRouteNode_1a8aefec5bea301557e88cb27472890f34">add</reimplements>
+        <param>
+          <type><ref refid="classStops" kindref="compound">Stops</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Adds a stop to the best route. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a stop to the best route and calculates the distance based on the stops.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stop to add to the best route </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BestRouteNode.h" line="17" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BestRouteNode.cpp" bodystart="20" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classBestRouteNode_1a33aa80757ff6627d67f5ef98ffbf779f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float BestRouteNode::getDistance</definition>
+        <argsstring>()</argsstring>
+        <name>getDistance</name>
+        <reimplements refid="classRouteNode_1a34e100eed23cf5de8b9e8adb140c1ca5">getDistance</reimplements>
+        <briefdescription>
+<para>Gets the distance of the best route. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float The distance of the best route </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BestRouteNode.h" line="19" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BestRouteNode.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classBestRouteNode_1aa2918fca630dc33b3c77969d0a9e83bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classStops" kindref="compound">Stops</ref> *</type>
+        <definition>Stops * BestRouteNode::getData</definition>
+        <argsstring>()</argsstring>
+        <name>getData</name>
+        <reimplements refid="classRouteNode_1a847b801c3dabaa5f907528546aafc6f1">getData</reimplements>
+        <briefdescription>
+<para>Gets the stop data of the best route. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Stops* The stop data of the best route </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BestRouteNode.h" line="21" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BestRouteNode.cpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classBestRouteNode_1adeeb54925a0578ef8af6d46ec45532cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classRouteNode" kindref="compound">RouteNode</ref> *</type>
+        <definition>RouteNode * BestRouteNode::travel</definition>
+        <argsstring>()</argsstring>
+        <name>travel</name>
+        <reimplements refid="classRouteNode_1aae0416bf0f83e9b47f59824944dfe4fc">travel</reimplements>
+        <briefdescription>
+<para>Travels to the next stop in the best route. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>RouteNode* The next stop in the best route </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BestRouteNode.h" line="23" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BestRouteNode.cpp" bodystart="59" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A node in the route tree that keeps track of the best route. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classBestRouteNode" kindref="compound">BestRouteNode</ref> class is a subclass of <ref refid="classRouteNode" kindref="compound">RouteNode</ref> that keeps track of the best route to add Specific stops to the route and calculate the distance based in stops. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>BestRouteNode</label>
+        <link refid="classBestRouteNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RouteNode</label>
+        <link refid="classRouteNode"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>BestRouteNode</label>
+        <link refid="classBestRouteNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RouteNode</label>
+        <link refid="classRouteNode"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>successor</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Stops</label>
+        <link refid="classStops"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BestRouteNode.h" line="13" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BestRouteNode.h" bodystart="13" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classBestRouteNode_1abb322f242ba85b4c3e4bd58bb4d58e55" prot="public" virt="virtual"><scope>BestRouteNode</scope><name>add</name></member>
+      <member refid="classBestRouteNode_1ab28e72a7181a18b3309631b23990b2be" prot="public" virt="non-virtual"><scope>BestRouteNode</scope><name>BestRouteNode</name></member>
+      <member refid="classRouteNode_1a9f927f22047fcf81bb445d71be42ee9d" prot="protected" virt="non-virtual"><scope>BestRouteNode</scope><name>data</name></member>
+      <member refid="classBestRouteNode_1aa2918fca630dc33b3c77969d0a9e83bf" prot="public" virt="virtual"><scope>BestRouteNode</scope><name>getData</name></member>
+      <member refid="classBestRouteNode_1a33aa80757ff6627d67f5ef98ffbf779f" prot="public" virt="virtual"><scope>BestRouteNode</scope><name>getDistance</name></member>
+      <member refid="classRouteNode_1a54c74d771a873516bf7f0afb91c5c5a5" prot="protected" virt="non-virtual"><scope>BestRouteNode</scope><name>successor</name></member>
+      <member refid="classBestRouteNode_1adeeb54925a0578ef8af6d46ec45532cf" prot="public" virt="virtual"><scope>BestRouteNode</scope><name>travel</name></member>
+      <member refid="classRouteNode_1a61eaf6805377c0612d8ec8e9b4026148" prot="public" virt="virtual"><scope>BestRouteNode</scope><name>~RouteNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

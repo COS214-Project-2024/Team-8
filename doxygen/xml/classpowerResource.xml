@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classpowerResource" kind="class" language="C++" prot="public">
+    <compoundname>powerResource</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Resource</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpowerResource_1a4a1fbf0a39dbc95079f47f6e6ff3cc8e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int powerResource::availablePower</definition>
+        <argsstring></argsstring>
+        <name>availablePower</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/powerResource.h" line="9" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/powerResource.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpowerResource_1a0b52ebf713c56c21c6aedde62292cc64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>powerResource::powerResource</definition>
+        <argsstring>()</argsstring>
+        <name>powerResource</name>
+        <briefdescription>
+<para>Construct a new power Resource::power Resource object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/powerResource.h" line="12" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/powerResource.cpp" bodystart="6" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classpowerResource_1ad9c3c374cb064c8ecb502bc430ab0730" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool powerResource::giveResource</definition>
+        <argsstring>(float units) override</argsstring>
+        <name>giveResource</name>
+        <param>
+          <type>float</type>
+          <declname>units</declname>
+        </param>
+        <briefdescription>
+<para>Return true if the requested amount of power can be supplied and subtract the available power, otherwise return false if it can not be supplied. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>units</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/powerResource.h" line="13" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/powerResource.cpp" bodystart="16" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classpowerResource_1ad5a1e83b728b7cac0303a4c96abd4265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void powerResource::receiveResource</definition>
+        <argsstring>() override</argsstring>
+        <name>receiveResource</name>
+        <briefdescription>
+<para>Get Power from a Power Plant, increase the available Power by the amount received from said Power Plant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>units</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/powerResource.h" line="14" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/powerResource.cpp" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classpowerResource_1a88e1db78f010e5d85953a97d952c1bbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float powerResource::getAvailableAmount</definition>
+        <argsstring>() override</argsstring>
+        <name>getAvailableAmount</name>
+        <briefdescription>
+<para>Get the available amount of power available. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/powerResource.h" line="15" column="15" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/powerResource.cpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classpowerResource_1a9e5c73a203f1288bc2aad7f9c9debb3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>powerResource::~powerResource</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~powerResource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/powerResource.h" line="17" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>powerResource</label>
+        <link refid="classpowerResource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Resource</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>powerResource</label>
+        <link refid="classpowerResource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Resource</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/powerResource.h" line="6" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/powerResource.h" bodystart="6" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classpowerResource_1a4a1fbf0a39dbc95079f47f6e6ff3cc8e" prot="private" virt="non-virtual"><scope>powerResource</scope><name>availablePower</name></member>
+      <member refid="classpowerResource_1a88e1db78f010e5d85953a97d952c1bbc" prot="public" virt="non-virtual"><scope>powerResource</scope><name>getAvailableAmount</name></member>
+      <member refid="classpowerResource_1ad9c3c374cb064c8ecb502bc430ab0730" prot="public" virt="non-virtual"><scope>powerResource</scope><name>giveResource</name></member>
+      <member refid="classpowerResource_1a0b52ebf713c56c21c6aedde62292cc64" prot="public" virt="non-virtual"><scope>powerResource</scope><name>powerResource</name></member>
+      <member refid="classpowerResource_1ad5a1e83b728b7cac0303a4c96abd4265" prot="public" virt="non-virtual"><scope>powerResource</scope><name>receiveResource</name></member>
+      <member refid="classpowerResource_1a9e5c73a203f1288bc2aad7f9c9debb3b" prot="public" virt="non-virtual"><scope>powerResource</scope><name>~powerResource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

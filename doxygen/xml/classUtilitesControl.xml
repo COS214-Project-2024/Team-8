@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUtilitesControl" kind="class" language="C++" prot="private">
+    <compoundname>UtilitesControl</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUtilitesControl_1ad3522c1d1162769739bc08d2a0347ae5" prot="private" static="no" mutable="no">
+        <type><ref refid="classUtility" kindref="compound">Utility</ref> **</type>
+        <definition>Utility** UtilitesControl::ListOfUtilites</definition>
+        <argsstring></argsstring>
+        <name>ListOfUtilites</name>
+        <briefdescription>
+<para>A dynamic array of pointers to <ref refid="classUtility" kindref="compound">Utility</ref> objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitesControl.h" line="21" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitesControl.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitesControl_1af2e160a680508a3465216ed6d5428b94" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UtilitesControl::amountOfUtil</definition>
+        <argsstring></argsstring>
+        <name>amountOfUtil</name>
+        <briefdescription>
+<para>The current number of <ref refid="classUtility" kindref="compound">Utility</ref> objects in the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitesControl.h" line="22" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitesControl.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUtilitesControl_1a4931beb884a610fea2c99b543595560a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UtilitesControl::UtilitesControl</definition>
+        <argsstring>()</argsstring>
+        <name>UtilitesControl</name>
+        <briefdescription>
+<para>Default constructor for the <ref refid="classUtilitiesControl" kindref="compound">UtilitiesControl</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the internal array for utilities and sets the amount of utilities to 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitesControl.h" line="30" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitiesControl.cpp" bodystart="6" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitesControl_1a273bdfcf97f0d68ea4107beb13f2dea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UtilitesControl::~UtilitesControl</definition>
+        <argsstring>()</argsstring>
+        <name>~UtilitesControl</name>
+        <briefdescription>
+<para>Destructor for the <ref refid="classUtilitiesControl" kindref="compound">UtilitiesControl</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cleans up any dynamically allocated memory (e.g., deletes the array of utilities). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitesControl.h" line="37" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitiesControl.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitesControl_1a2328748c36dfcf5e7e98dd393428a153" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int UtilitesControl::getTotalPower</definition>
+        <argsstring>()</argsstring>
+        <name>getTotalPower</name>
+        <briefdescription>
+<para>Gets the total power usage from all utilities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method iterates through the list of utilities and sums up their individual power usage.</para>
+<para><simplesect kind="return"><para>The total power usage (int). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitesControl.h" line="46" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitiesControl.cpp" bodystart="16" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitesControl_1a179ced90dd1b264e8f1d6f8079e9e2e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int UtilitesControl::getTotalSewage</definition>
+        <argsstring>()</argsstring>
+        <name>getTotalSewage</name>
+        <briefdescription>
+<para>Gets the total sewage usage from all utilities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method iterates through the list of utilities and sums up their individual sewage usage.</para>
+<para><simplesect kind="return"><para>The total sewage usage (int). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitesControl.h" line="55" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitiesControl.cpp" bodystart="29" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitesControl_1abc7a961fad9d8c0da16cd69f4cc1102a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int UtilitesControl::getTotalWaste</definition>
+        <argsstring>()</argsstring>
+        <name>getTotalWaste</name>
+        <briefdescription>
+<para>Gets the total waste produced by all utilities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method iterates through the list of utilities and sums up their individual waste production.</para>
+<para><simplesect kind="return"><para>The total waste produced (int). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitesControl.h" line="64" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitiesControl.cpp" bodystart="43" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitesControl_1a22274ab1e5e2304d71114105b5203446" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int UtilitesControl::getTotalWater</definition>
+        <argsstring>()</argsstring>
+        <name>getTotalWater</name>
+        <briefdescription>
+<para>Gets the total water usage from all utilities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method iterates through the list of utilities and sums up their individual water usage.</para>
+<para><simplesect kind="return"><para>The total water usage (int). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitesControl.h" line="73" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitiesControl.cpp" bodystart="57" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitesControl_1ae8a8946f13ae607bc624576d76f5e4b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UtilitesControl::addUtilities</definition>
+        <argsstring>(Utility *add)</argsstring>
+        <name>addUtilities</name>
+        <param>
+          <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+          <declname>add</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new utility to the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method adds a new utility to the dynamic array of utilities, expanding the array if necessary.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>add</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the <ref refid="classUtility" kindref="compound">Utility</ref> object to be added. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitesControl.h" line="82" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitiesControl.cpp" bodystart="71" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitesControl_1a2a42ebb2c2bc30904b5748344eeba39f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UtilitesControl::removeUtilities</definition>
+        <argsstring>(Utility *rem)</argsstring>
+        <name>removeUtilities</name>
+        <param>
+          <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+          <declname>rem</declname>
+        </param>
+        <briefdescription>
+<para>Removes a utility from the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method removes the specified utility from the dynamic array of utilities and adjusts the array size.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the <ref refid="classUtility" kindref="compound">Utility</ref> object to be removed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitesControl.h" line="91" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitiesControl.cpp" bodystart="98" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitesControl_1a579dbbaef7e820e2615c9eba92fb3a11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int UtilitesControl::getAmountOfUtilities</definition>
+        <argsstring>()</argsstring>
+        <name>getAmountOfUtilities</name>
+        <briefdescription>
+<para>Gets the current number of utilities in the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method returns the current count of the utility objects in the list.</para>
+<para><simplesect kind="return"><para>The number of utilities (int). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitesControl.h" line="100" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitiesControl.cpp" bodystart="137" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Controls a List of Utilities. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This interface provides a common structure for all Utilities related functions Is in charge of getting the total amount of Power , Sewage , Water and Waste Supply </para>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitesControl.h" line="18" column="1"/>
+    <listofallmembers>
+      <member refid="classUtilitesControl_1ae8a8946f13ae607bc624576d76f5e4b1" prot="public" virt="non-virtual"><scope>UtilitesControl</scope><name>addUtilities</name></member>
+      <member refid="classUtilitesControl_1af2e160a680508a3465216ed6d5428b94" prot="private" virt="non-virtual"><scope>UtilitesControl</scope><name>amountOfUtil</name></member>
+      <member refid="classUtilitesControl_1a579dbbaef7e820e2615c9eba92fb3a11" prot="public" virt="non-virtual"><scope>UtilitesControl</scope><name>getAmountOfUtilities</name></member>
+      <member refid="classUtilitesControl_1a2328748c36dfcf5e7e98dd393428a153" prot="public" virt="non-virtual"><scope>UtilitesControl</scope><name>getTotalPower</name></member>
+      <member refid="classUtilitesControl_1a179ced90dd1b264e8f1d6f8079e9e2e8" prot="public" virt="non-virtual"><scope>UtilitesControl</scope><name>getTotalSewage</name></member>
+      <member refid="classUtilitesControl_1abc7a961fad9d8c0da16cd69f4cc1102a" prot="public" virt="non-virtual"><scope>UtilitesControl</scope><name>getTotalWaste</name></member>
+      <member refid="classUtilitesControl_1a22274ab1e5e2304d71114105b5203446" prot="public" virt="non-virtual"><scope>UtilitesControl</scope><name>getTotalWater</name></member>
+      <member refid="classUtilitesControl_1ad3522c1d1162769739bc08d2a0347ae5" prot="private" virt="non-virtual"><scope>UtilitesControl</scope><name>ListOfUtilites</name></member>
+      <member refid="classUtilitesControl_1a2a42ebb2c2bc30904b5748344eeba39f" prot="public" virt="non-virtual"><scope>UtilitesControl</scope><name>removeUtilities</name></member>
+      <member refid="classUtilitesControl_1a4931beb884a610fea2c99b543595560a" prot="public" virt="non-virtual"><scope>UtilitesControl</scope><name>UtilitesControl</name></member>
+      <member refid="classUtilitesControl_1a273bdfcf97f0d68ea4107beb13f2dea3" prot="public" virt="non-virtual"><scope>UtilitesControl</scope><name>~UtilitesControl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

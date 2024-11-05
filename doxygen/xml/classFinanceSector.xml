@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classFinanceSector" kind="class" language="C++" prot="public">
+    <compoundname>FinanceSector</compoundname>
+    <basecompoundref refid="classGovernment" prot="public" virt="non-virtual">Government</basecompoundref>
+    <includes refid="FinanceSector_8h" local="no">FinanceSector.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFinanceSector_1aca0f7552132d680c4d643bac12250f0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FinanceSector::FinanceSector</definition>
+        <argsstring>(FinanceDepartment *financeDepartment)</argsstring>
+        <name>FinanceSector</name>
+        <param>
+          <type><ref refid="classFinanceDepartment" kindref="compound">FinanceDepartment</ref> *</type>
+          <declname>financeDepartment</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="classFinanceSector" kindref="compound">FinanceSector</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>financeDepartment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the finance department </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceSector.h" line="28" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceSector.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceSector_1a066dbe4c307815a27112a5961c6befe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FinanceSector::handleRequest</definition>
+        <argsstring>(std::string requestDetails) override</argsstring>
+        <name>handleRequest</name>
+        <reimplements refid="classGovernment_1a8ebf14df569730e97b7016af3a00a0fc">handleRequest</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>requestDetails</declname>
+        </param>
+        <briefdescription>
+<para>Handles finance-specific requests. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>requestDetails</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Details of the finance request </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceSector.h" line="34" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceSector.cpp" bodystart="7" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Handles finance-related aspects of government operations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class specializes the <ref refid="classGovernment" kindref="compound">Government</ref> class to handle finance-specific requests and operations. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="1">
+        <label>FinanceSector</label>
+        <link refid="classFinanceSector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="1">
+        <label>FinanceSector</label>
+        <link refid="classFinanceSector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceSector.h" line="22" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceSector.h" bodystart="22" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classGovernment_1a38ba7d30972a89cbe0427c3e49bc3719" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>addCommand</name></member>
+      <member refid="classGovernment_1a7cbe1cdc8753c4fee0fb664b72741768" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>attach</name></member>
+      <member refid="classGovernment_1a8de647466bc53190f22811ce2f0db1f2" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>detach</name></member>
+      <member refid="classGovernment_1a6c95299d73b2ea48262fbd99f367d8be" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>executeCommands</name></member>
+      <member refid="classFinanceSector_1aca0f7552132d680c4d643bac12250f0b" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>FinanceSector</name></member>
+      <member refid="classGovernment_1ae925a4769f88e47de0cb4a08a3a50d35" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>getBudget</name></member>
+      <member refid="classGovernment_1aca02afeba5ccebde1a4393cd628cede6" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>getSuccessor</name></member>
+      <member refid="classGovernment_1ac3f3a94b6dbbecf6720e70953eda6046" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>getTotalRevenue</name></member>
+      <member refid="classGovernment_1ad06c951e706c3a9e43e18b11c75d8888" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>Government</name></member>
+      <member refid="classGovernment_1a759a1616da9713d8ca7beac89b4887c9" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>Government</name></member>
+      <member refid="classFinanceSector_1a066dbe4c307815a27112a5961c6befe9" prot="public" virt="virtual"><scope>FinanceSector</scope><name>handleRequest</name></member>
+      <member refid="classGovernment_1adf2258ede6292fa43349c97d70d72155" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>notify</name></member>
+      <member refid="classGovernment_1a8b8aa1f5de6bf7dd7ec441083aea4d86" prot="public" virt="virtual"><scope>FinanceSector</scope><name>requestAllocationOfEducationFunds</name></member>
+      <member refid="classGovernment_1ab216803dc0eb2d5faecde752af8d6adb" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>requestAllocationOfPublicServiceBuildingsFunds</name></member>
+      <member refid="classGovernment_1add6275ae12a9d9acd697d4694e56b38f" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>requestAllocationOfRecreationFunds</name></member>
+      <member refid="classGovernment_1aff679f05a074938efb99fb278df3843d" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>requestAllocationOfTransportFunds</name></member>
+      <member refid="classGovernment_1acfbd3701241813873f61ae5e21043956" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>requestAllocationOfUtilitiesFunds</name></member>
+      <member refid="classGovernment_1a4a473f2a53da2aeaf9b76c6fb8889276" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>requestCollectionOfBusinessTax</name></member>
+      <member refid="classGovernment_1a195d3cba2c94ef45165a0cba8ec967ae" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>requestCollectionOfIncomeTax</name></member>
+      <member refid="classGovernment_1a8a3ca8c70e12763cc3a44b67006240ec" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>requestCollectionOfPropertyTax</name></member>
+      <member refid="classGovernment_1a1891cd25c1c876e2784d1c57d5303b77" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>requestCollectionOfSalesTax</name></member>
+      <member refid="classGovernment_1a1e4bcb825fb5a42351e6cbac5750ee77" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>setBudget</name></member>
+      <member refid="classGovernment_1af812cedd72e563cb1e824e507eb64f06" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>setSuccessor</name></member>
+      <member refid="classGovernment_1ac472f1128c2f548cc1bd947b7f5c9e17" prot="public" virt="non-virtual"><scope>FinanceSector</scope><name>setTotalRevenue</name></member>
+      <member refid="classGovernment_1ad4b00db6938ff1ed64b22e3326e0b19c" prot="public" virt="virtual"><scope>FinanceSector</scope><name>~Government</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

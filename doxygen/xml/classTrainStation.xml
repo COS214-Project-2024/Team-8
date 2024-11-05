@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classTrainStation" kind="class" language="C++" prot="public">
+    <compoundname>TrainStation</compoundname>
+    <basecompoundref refid="classStops" prot="public" virt="non-virtual">Stops</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classTrainStation_1a2e8ea3bf47407ec8598a84cb87655c88" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TrainStation::ticketCost</definition>
+        <argsstring></argsstring>
+        <name>ticketCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainStation.h" line="13" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainStation.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTrainStation_1adc5b7e41ec7d6b2198dcc59c98e5b5ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TrainStation::TrainStation</definition>
+        <argsstring>(std::string name, float length)</argsstring>
+        <name>TrainStation</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classTrain" kindref="compound">Train</ref> Station:: <ref refid="classTrain" kindref="compound">Train</ref> Station object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string value of the name of the station </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>float value of the distance to the station Sets the name, length, and symbol of the station </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainStation.h" line="15" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainStation.cpp" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrainStation_1aeda226e8c41b4824588b8265e14cca72" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>char</type>
+        <definition>char TrainStation::getSymbol</definition>
+        <argsstring>()</argsstring>
+        <name>getSymbol</name>
+        <reimplements refid="classStops_1a7aabea9e534aaa8e0e9ee1bafe2f7428">getSymbol</reimplements>
+        <briefdescription>
+<para>Get the Symbol object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>char the symbol of the station </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainStation.h" line="17" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainStation.cpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrainStation_1af4e0d01cb369b0d66bd0be5b1609178a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float TrainStation::getDistance</definition>
+        <argsstring>()</argsstring>
+        <name>getDistance</name>
+        <reimplements refid="classStops_1a1d30fa6e72ca3d4676c2fc88dabb0983">getDistance</reimplements>
+        <briefdescription>
+<para>Get the Distance object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float the distance to the station </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainStation.h" line="19" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainStation.cpp" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrainStation_1adf4a160dc2f9e534c1bccb188064fff5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TrainStation::setTicketCost</definition>
+        <argsstring>(float cost)</argsstring>
+        <name>setTicketCost</name>
+        <reimplements refid="classStops_1a7f980311c40a9cecfe574407fb6bc298">setTicketCost</reimplements>
+        <param>
+          <type>float</type>
+          <declname>cost</declname>
+        </param>
+        <briefdescription>
+<para>Set the Ticket Cost object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>float value of the ticket cost </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainStation.h" line="21" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainStation.cpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrainStation_1aecf73e2dfa2c1ad027b229c5be50a6c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float TrainStation::getTicket</definition>
+        <argsstring>()</argsstring>
+        <name>getTicket</name>
+        <briefdescription>
+<para>Get the Ticket object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float the ticket cost </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainStation.h" line="23" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainStation.cpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrainStation_1a4182b60fe3ae7cc1d737876f83fd298c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string TrainStation::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <reimplements refid="classStops_1a6b78497b94cf1f1f9b13924c2998cdb7">getName</reimplements>
+        <briefdescription>
+<para>Get the Name object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string the name of the station </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainStation.h" line="25" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainStation.cpp" bodystart="63" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>TrainStation</label>
+        <link refid="classTrainStation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Stops</label>
+        <link refid="classStops"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>TrainStation</label>
+        <link refid="classTrainStation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Stops</label>
+        <link refid="classStops"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainStation.h" line="10" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainStation.h" bodystart="10" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classStops_1a14813638d7fb2714b56dc2532958c98d" prot="public" virt="virtual"><scope>TrainStation</scope><name>getCost</name></member>
+      <member refid="classTrainStation_1af4e0d01cb369b0d66bd0be5b1609178a" prot="public" virt="virtual"><scope>TrainStation</scope><name>getDistance</name></member>
+      <member refid="classTrainStation_1a4182b60fe3ae7cc1d737876f83fd298c" prot="public" virt="virtual"><scope>TrainStation</scope><name>getName</name></member>
+      <member refid="classStops_1ada6e61a4a80fac50ea65a4665cb4404b" prot="public" virt="virtual"><scope>TrainStation</scope><name>getSpeedLimit</name></member>
+      <member refid="classTrainStation_1aeda226e8c41b4824588b8265e14cca72" prot="public" virt="virtual"><scope>TrainStation</scope><name>getSymbol</name></member>
+      <member refid="classTrainStation_1aecf73e2dfa2c1ad027b229c5be50a6c9" prot="public" virt="non-virtual"><scope>TrainStation</scope><name>getTicket</name></member>
+      <member refid="classStops_1a70d5f66434cb4b88ea8d26ad1b2c3024" prot="public" virt="virtual"><scope>TrainStation</scope><name>getTicketCost</name></member>
+      <member refid="classStops_1a8e2f1ad6f7ffc407221f7a86787e7c2e" prot="protected" virt="non-virtual"><scope>TrainStation</scope><name>length</name></member>
+      <member refid="classStops_1ad54a0cacf3247d10ffde221f111dd25e" prot="protected" virt="non-virtual"><scope>TrainStation</scope><name>name</name></member>
+      <member refid="classStops_1a416292d229a532c7cd9e2590db50c988" prot="public" virt="virtual"><scope>TrainStation</scope><name>setSpeedLimit</name></member>
+      <member refid="classTrainStation_1adf4a160dc2f9e534c1bccb188064fff5" prot="public" virt="virtual"><scope>TrainStation</scope><name>setTicketCost</name></member>
+      <member refid="classStops_1a2f759d0b7f248f4331fb8b75111bb616" prot="protected" virt="non-virtual"><scope>TrainStation</scope><name>symbol</name></member>
+      <member refid="classTrainStation_1a2e8ea3bf47407ec8598a84cb87655c88" prot="public" virt="non-virtual"><scope>TrainStation</scope><name>ticketCost</name></member>
+      <member refid="classTrainStation_1adc5b7e41ec7d6b2198dcc59c98e5b5ca" prot="public" virt="non-virtual"><scope>TrainStation</scope><name>TrainStation</name></member>
+      <member refid="classStops_1aeb2fb5d83ca33fcf87ded4ebd63b30ac" prot="public" virt="virtual"><scope>TrainStation</scope><name>~Stops</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

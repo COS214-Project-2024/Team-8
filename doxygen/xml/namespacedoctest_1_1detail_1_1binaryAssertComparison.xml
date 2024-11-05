@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacedoctest_1_1detail_1_1binaryAssertComparison" kind="namespace" language="C++">
+    <compoundname>doctest::detail::binaryAssertComparison</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="doctest_8h_1a2117cafa5b007d26f2e0988f3a081569" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Enum</name>
+        <enumvalue id="doctest_8h_1a2117cafa5b007d26f2e0988f3a081569af644d2e3091c342ab78b12da1fcb06dc" prot="public">
+          <name>eq</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1a2117cafa5b007d26f2e0988f3a081569a851b5dd9ab390a406621216da112ac9c" prot="public">
+          <name>ne</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1a2117cafa5b007d26f2e0988f3a081569a3efb665f41cd9490d9739e1ad228918e" prot="public">
+          <name>gt</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1a2117cafa5b007d26f2e0988f3a081569aea0e8621512e05d78d88ff2d2c164a6b" prot="public">
+          <name>lt</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1a2117cafa5b007d26f2e0988f3a081569a1de9460fcfb6a1681f13d54083f88313" prot="public">
+          <name>ge</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1a2117cafa5b007d26f2e0988f3a081569a58efccb94f787a00914adc6db077347b" prot="public">
+          <name>le</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1656" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1657" bodyend="1664"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1655" column="5"/>
+  </compounddef>
+</doxygen>

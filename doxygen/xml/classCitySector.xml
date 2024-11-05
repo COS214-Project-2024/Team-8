@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCitySector" kind="class" language="C++" prot="public">
+    <compoundname>CitySector</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCitySector_1a502d665f08d3796c023679ee9b0d5262" prot="private" static="no" mutable="no">
+        <type><ref refid="classUtility" kindref="compound">Utility</ref></type>
+        <definition>Utility CitySector::_resources</definition>
+        <argsstring></argsstring>
+        <name>_resources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitySector.h" line="12" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitySector.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCitySector_1a27740de1b7a6bc7a4e80cdbf97a2af07" prot="public" static="no" mutable="no">
+        <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+        <definition>Utility* CitySector::_unnamed_Utility_</definition>
+        <argsstring></argsstring>
+        <name>_unnamed_Utility_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitySector.h" line="13" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitySector.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>CitySector</label>
+        <link refid="classCitySector"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_unnamed_Utility_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitySector.h" line="10" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitySector.h" bodystart="11" bodyend="14"/>
+    <listofallmembers>
+      <member refid="classCitySector_1a502d665f08d3796c023679ee9b0d5262" prot="private" virt="non-virtual"><scope>CitySector</scope><name>_resources</name></member>
+      <member refid="classCitySector_1a27740de1b7a6bc7a4e80cdbf97a2af07" prot="public" virt="non-virtual"><scope>CitySector</scope><name>_unnamed_Utility_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classAccesibleRoute" kind="class" language="C++" prot="public">
+    <compoundname>AccesibleRoute</compoundname>
+    <basecompoundref refid="classRouteNode" prot="public" virt="non-virtual">RouteNode</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAccesibleRoute_1a1576e555109b2e4935d6be08bc2db7fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccesibleRoute::AccesibleRoute</definition>
+        <argsstring>()</argsstring>
+        <name>AccesibleRoute</name>
+        <briefdescription>
+<para>Construct a new <ref refid="classAccesibleRoute" kindref="compound">AccesibleRoute</ref>:: <ref refid="classAccesibleRoute" kindref="compound">AccesibleRoute</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a new <ref refid="classAccesibleRoute" kindref="compound">AccesibleRoute</ref> object Sets the data and successor to nullptr </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/AccesibleRoute.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/AccesibleRoute.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classAccesibleRoute_1aabc866243c16b25859b899fd93d88c95" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AccesibleRoute::add</definition>
+        <argsstring>(Stops *data)</argsstring>
+        <name>add</name>
+        <reimplements refid="classRouteNode_1a8aefec5bea301557e88cb27472890f34">add</reimplements>
+        <param>
+          <type><ref refid="classStops" kindref="compound">Stops</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Add a <ref refid="classStops" kindref="compound">Stops</ref> object to the <ref refid="classAccesibleRoute" kindref="compound">AccesibleRoute</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="classStops" kindref="compound">Stops</ref> object</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Adds a Stop to current object or delegates to the successor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/AccesibleRoute.h" line="14" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/AccesibleRoute.cpp" bodystart="28" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classAccesibleRoute_1ab3ec45d0bead7a3028b5302218b1cf85" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float AccesibleRoute::getDistance</definition>
+        <argsstring>()</argsstring>
+        <name>getDistance</name>
+        <reimplements refid="classRouteNode_1a34e100eed23cf5de8b9e8adb140c1ca5">getDistance</reimplements>
+        <briefdescription>
+<para>Get the Distance object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float the distance of the <ref refid="classAccesibleRoute" kindref="compound">AccesibleRoute</ref> object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/AccesibleRoute.h" line="16" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/AccesibleRoute.cpp" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classAccesibleRoute_1aa38f20bc1b6cb956e902494c3dbed214" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classStops" kindref="compound">Stops</ref> *</type>
+        <definition>Stops * AccesibleRoute::getData</definition>
+        <argsstring>()</argsstring>
+        <name>getData</name>
+        <reimplements refid="classRouteNode_1a847b801c3dabaa5f907528546aafc6f1">getData</reimplements>
+        <briefdescription>
+<para>Get the Data object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Stops* the data of the <ref refid="classAccesibleRoute" kindref="compound">AccesibleRoute</ref> object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/AccesibleRoute.h" line="18" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/AccesibleRoute.cpp" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classAccesibleRoute_1a1831adcd8e1875ebbca96104fc6619f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classRouteNode" kindref="compound">RouteNode</ref> *</type>
+        <definition>RouteNode * AccesibleRoute::travel</definition>
+        <argsstring>()</argsstring>
+        <name>travel</name>
+        <reimplements refid="classRouteNode_1aae0416bf0f83e9b47f59824944dfe4fc">travel</reimplements>
+        <briefdescription>
+<para>Travel to the next <ref refid="classRouteNode" kindref="compound">RouteNode</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>RouteNode* the successor of the current object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/AccesibleRoute.h" line="20" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/AccesibleRoute.cpp" bodystart="66" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AccesibleRoute</label>
+        <link refid="classAccesibleRoute"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RouteNode</label>
+        <link refid="classRouteNode"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AccesibleRoute</label>
+        <link refid="classAccesibleRoute"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RouteNode</label>
+        <link refid="classRouteNode"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>successor</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Stops</label>
+        <link refid="classStops"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/AccesibleRoute.h" line="10" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/AccesibleRoute.h" bodystart="10" bodyend="21"/>
+    <listofallmembers>
+      <member refid="classAccesibleRoute_1a1576e555109b2e4935d6be08bc2db7fe" prot="public" virt="non-virtual"><scope>AccesibleRoute</scope><name>AccesibleRoute</name></member>
+      <member refid="classAccesibleRoute_1aabc866243c16b25859b899fd93d88c95" prot="public" virt="virtual"><scope>AccesibleRoute</scope><name>add</name></member>
+      <member refid="classRouteNode_1a9f927f22047fcf81bb445d71be42ee9d" prot="protected" virt="non-virtual"><scope>AccesibleRoute</scope><name>data</name></member>
+      <member refid="classAccesibleRoute_1aa38f20bc1b6cb956e902494c3dbed214" prot="public" virt="virtual"><scope>AccesibleRoute</scope><name>getData</name></member>
+      <member refid="classAccesibleRoute_1ab3ec45d0bead7a3028b5302218b1cf85" prot="public" virt="virtual"><scope>AccesibleRoute</scope><name>getDistance</name></member>
+      <member refid="classRouteNode_1a54c74d771a873516bf7f0afb91c5c5a5" prot="protected" virt="non-virtual"><scope>AccesibleRoute</scope><name>successor</name></member>
+      <member refid="classAccesibleRoute_1a1831adcd8e1875ebbca96104fc6619f3" prot="public" virt="virtual"><scope>AccesibleRoute</scope><name>travel</name></member>
+      <member refid="classRouteNode_1a61eaf6805377c0612d8ec8e9b4026148" prot="public" virt="virtual"><scope>AccesibleRoute</scope><name>~RouteNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

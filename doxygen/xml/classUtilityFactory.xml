@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUtilityFactory" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>UtilityFactory</compoundname>
+    <derivedcompoundref refid="classPowerPlantFactory" prot="public" virt="non-virtual">PowerPlantFactory</derivedcompoundref>
+    <derivedcompoundref refid="classSewageFactory" prot="public" virt="non-virtual">SewageFactory</derivedcompoundref>
+    <derivedcompoundref refid="classWasteFactory" prot="public" virt="non-virtual">WasteFactory</derivedcompoundref>
+    <derivedcompoundref refid="classWaterFactory" prot="public" virt="non-virtual">WaterFactory</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUtilityFactory_1aa9a1efccb820e6720abae72b39db1408" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+        <definition>virtual Utility* UtilityFactory::createUtility</definition>
+        <argsstring>(float output)=0</argsstring>
+        <name>createUtility</name>
+        <reimplementedby refid="classPowerPlantFactory_1ac1eb40a7307fb94334e36ba729d4decb">createUtility</reimplementedby>
+        <reimplementedby refid="classSewageFactory_1a4ed67f56716cd9f54fda1dc6af1d3f15">createUtility</reimplementedby>
+        <reimplementedby refid="classWasteFactory_1adf1aec3fe90bbb10852b79d4b0ea35e2">createUtility</reimplementedby>
+        <reimplementedby refid="classWaterFactory_1a5ebee017411887a93493e7f490e8ea93">createUtility</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityFactory.h" line="12" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityFactory_1a0b3ba1ad421b3670aac7d693c159c793" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual UtilityFactory::~UtilityFactory</definition>
+        <argsstring>()</argsstring>
+        <name>~UtilityFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityFactory.h" line="13" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityFactory.h" bodystart="13" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>WaterFactory</label>
+        <link refid="classWaterFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>WasteFactory</label>
+        <link refid="classWasteFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PowerPlantFactory</label>
+        <link refid="classPowerPlantFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SewageFactory</label>
+        <link refid="classSewageFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>UtilityFactory</label>
+        <link refid="classUtilityFactory"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityFactory.h" line="10" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityFactory.h" bodystart="10" bodyend="14"/>
+    <listofallmembers>
+      <member refid="classUtilityFactory_1aa9a1efccb820e6720abae72b39db1408" prot="public" virt="pure-virtual"><scope>UtilityFactory</scope><name>createUtility</name></member>
+      <member refid="classUtilityFactory_1a0b3ba1ad421b3670aac7d693c159c793" prot="public" virt="virtual"><scope>UtilityFactory</scope><name>~UtilityFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

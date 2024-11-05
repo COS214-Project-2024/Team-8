@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classPlaneBuilder" kind="class" language="C++" prot="public">
+    <compoundname>PlaneBuilder</compoundname>
+    <basecompoundref refid="classTransportBuilder" prot="public" virt="non-virtual">TransportBuilder</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPlaneBuilder_1a64ed603fa368065aacabd12f4a922523" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PlaneBuilder::PlaneBuilder</definition>
+        <argsstring>()</argsstring>
+        <name>PlaneBuilder</name>
+        <briefdescription>
+<para>Construct a new <ref refid="classPlane" kindref="compound">Plane</ref> Builder:: <ref refid="classPlane" kindref="compound">Plane</ref> Builder object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a new <ref refid="classPlane" kindref="compound">Plane</ref> object with a capacity of 0(place holder) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PlaneBuilder.h" line="16" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PlaneBuilder.cpp" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlaneBuilder_1aed2686d43178e58ce93d8192d48dee24" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classTransportBuilder" kindref="compound">TransportBuilder</ref> *</type>
+        <definition>TransportBuilder * PlaneBuilder::setCapacity</definition>
+        <argsstring>(int capacity)</argsstring>
+        <name>setCapacity</name>
+        <reimplements refid="classTransportBuilder_1a30c8d8950e157b81274b22568e3e9a19">setCapacity</reimplements>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+<para>Used to set the capacity of the plane. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>integer value of the capacity </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>PlaneBuilder* pointer to the <ref refid="classPlaneBuilder" kindref="compound">PlaneBuilder</ref> object for chaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PlaneBuilder.h" line="18" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PlaneBuilder.cpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlaneBuilder_1af9ae0a6df7dda7d1157c8e0172006473" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classTransportBuilder" kindref="compound">TransportBuilder</ref> *</type>
+        <definition>TransportBuilder * PlaneBuilder::setCargoWeight</definition>
+        <argsstring>(float weight)</argsstring>
+        <name>setCargoWeight</name>
+        <reimplements refid="classTransportBuilder_1aeb17e11e9207930294b3f0920ce67c41">setCargoWeight</reimplements>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+<para>Set the Cargo Weight object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>float value of the weight </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>PlaneBuilder* pointer to the <ref refid="classPlaneBuilder" kindref="compound">PlaneBuilder</ref> object for chaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PlaneBuilder.h" line="20" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PlaneBuilder.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlaneBuilder_1a00dcc42fee4f7e0f58f9bafa3a10b12b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classTransportBuilder" kindref="compound">TransportBuilder</ref> *</type>
+        <definition>TransportBuilder * PlaneBuilder::setNumPassengers</definition>
+        <argsstring>(int num)</argsstring>
+        <name>setNumPassengers</name>
+        <reimplements refid="classTransportBuilder_1a4e14b217344b0b3b0c56602e1d2d004a">setNumPassengers</reimplements>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Set the Num Passengers object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>integer value of the number of passengers </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>PlaneBuilder* pointer to the <ref refid="classPlaneBuilder" kindref="compound">PlaneBuilder</ref> object for chaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PlaneBuilder.h" line="22" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PlaneBuilder.cpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlaneBuilder_1a1f2acaae2bd673b786d5106bd540de6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classTransport" kindref="compound">Transport</ref> *</type>
+        <definition>Transport * PlaneBuilder::build</definition>
+        <argsstring>()</argsstring>
+        <name>build</name>
+        <reimplements refid="classTransportBuilder_1a7dc350335f09aa796b77541f0bcc025c">build</reimplements>
+        <briefdescription>
+<para>Build the <ref refid="classPlane" kindref="compound">Plane</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The <ref refid="classPlaneBuilder" kindref="compound">PlaneBuilder</ref> object has been constructed </para>
+</simplesect>
+<simplesect kind="return"><para>Transport* pointer to the <ref refid="classPlane" kindref="compound">Plane</ref> object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PlaneBuilder.h" line="24" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PlaneBuilder.cpp" bodystart="46" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>PlaneBuilder</label>
+        <link refid="classPlaneBuilder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TransportBuilder</label>
+        <link refid="classTransportBuilder"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>PlaneBuilder</label>
+        <link refid="classPlaneBuilder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TransportBuilder</label>
+        <link refid="classTransportBuilder"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>transport</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Transport</label>
+        <link refid="classTransport"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PlaneBuilder.h" line="14" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PlaneBuilder.h" bodystart="14" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classPlaneBuilder_1a1f2acaae2bd673b786d5106bd540de6d" prot="public" virt="virtual"><scope>PlaneBuilder</scope><name>build</name></member>
+      <member refid="classPlaneBuilder_1a64ed603fa368065aacabd12f4a922523" prot="public" virt="non-virtual"><scope>PlaneBuilder</scope><name>PlaneBuilder</name></member>
+      <member refid="classPlaneBuilder_1aed2686d43178e58ce93d8192d48dee24" prot="public" virt="virtual"><scope>PlaneBuilder</scope><name>setCapacity</name></member>
+      <member refid="classPlaneBuilder_1af9ae0a6df7dda7d1157c8e0172006473" prot="public" virt="virtual"><scope>PlaneBuilder</scope><name>setCargoWeight</name></member>
+      <member refid="classPlaneBuilder_1a00dcc42fee4f7e0f58f9bafa3a10b12b" prot="public" virt="virtual"><scope>PlaneBuilder</scope><name>setNumPassengers</name></member>
+      <member refid="classTransportBuilder_1ac42b4edef812e1c65eb2a07c17d16f5b" prot="protected" virt="non-virtual"><scope>PlaneBuilder</scope><name>transport</name></member>
+      <member refid="classTransportBuilder_1a2f24be878963ce150493f4acb109a229" prot="public" virt="virtual"><scope>PlaneBuilder</scope><name>~TransportBuilder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

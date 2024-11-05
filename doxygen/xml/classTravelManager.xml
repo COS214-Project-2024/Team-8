@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classTravelManager" kind="class" language="C++" prot="public">
+    <compoundname>TravelManager</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTravelManager_1a47b6f6ac94da1668f95ceeca6144c9e2" prot="private" static="no" mutable="no">
+        <type><ref refid="classTransportBuilder" kindref="compound">TransportBuilder</ref> *</type>
+        <definition>TransportBuilder* TravelManager::builder</definition>
+        <argsstring></argsstring>
+        <name>builder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h" line="18" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTravelManager_1ac3b97c305d95ee8ebee37196e502d920" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TravelManager::distanceTravelled</definition>
+        <argsstring></argsstring>
+        <name>distanceTravelled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h" line="19" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTravelManager_1a59ab9bea3b336fa4edc1a80b3f5e90cf" prot="private" static="no" mutable="no">
+        <type><ref refid="classRouteNode" kindref="compound">RouteNode</ref> *</type>
+        <definition>RouteNode* TravelManager::route</definition>
+        <argsstring></argsstring>
+        <name>route</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h" line="20" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTravelManager_1a341bfdefd0dea555ba0200136796c220" prot="private" static="no" mutable="no">
+        <type><ref refid="classTransport" kindref="compound">Transport</ref> *</type>
+        <definition>Transport* TravelManager::transport</definition>
+        <argsstring></argsstring>
+        <name>transport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h" line="21" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classTravelManager_1a644cac837eb036fed587125cf03b38a7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TravelManager::constructCargo</definition>
+        <argsstring>(int capacity, float weight)</argsstring>
+        <name>constructCargo</name>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Cargo object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the capacity of the vehicle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the weight of the cargo</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="post"><para>The vehicle is constructed with the given capacity and weight </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h" line="23" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.cpp" bodystart="36" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classTravelManager_1ac64492948f709e4c4a56957d2e33043b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TravelManager::constructPassenger</definition>
+        <argsstring>(int capacity, int passengers)</argsstring>
+        <name>constructPassenger</name>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>passengers</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Passenger object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the capacity of the vehicle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>passengers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of passengers</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="post"><para>The vehicle is constructed with the given capacity and number of passengers </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h" line="25" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.cpp" bodystart="50" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTravelManager_1aa5fbb7bae39a66e46414952cc587fa7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TravelManager::Travel</definition>
+        <argsstring>(int capacity, Stops *destination, float weight=0)</argsstring>
+        <name>Travel</name>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <param>
+          <type><ref refid="classStops" kindref="compound">Stops</ref> *</type>
+          <declname>destination</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h" line="28" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.cpp" bodystart="10" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classTravelManager_1acca4e31ec9819790fc13cb6080ed3c68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TravelManager::addStops</definition>
+        <argsstring>(Stops *stop)</argsstring>
+        <name>addStops</name>
+        <param>
+          <type><ref refid="classStops" kindref="compound">Stops</ref> *</type>
+          <declname>stop</declname>
+        </param>
+        <briefdescription>
+<para>Add a stop to the route. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the stop to add</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="post"><para>The stop is added to the route </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h" line="30" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.cpp" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classTravelManager_1a55fad5ecec4c3bd806abf60081f1d2a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TravelManager::~TravelManager</definition>
+        <argsstring>()</argsstring>
+        <name>~TravelManager</name>
+        <briefdescription>
+<para>Destroy the Travel Manager object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The route is not null </para>
+</simplesect>
+<simplesect kind="post"><para>The route is deleted The transport is deleted if it exists The builder is deleted if it exists </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h" line="32" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.cpp" bodystart="74" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classTravelManager_1a3eb3e7f790fcb77db03b0d1aba123061" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TravelManager::TravelManager</definition>
+        <argsstring>()</argsstring>
+        <name>TravelManager</name>
+        <briefdescription>
+<para>Construct a new Travel Manager object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="post"><para>The route is constructed The distance travelled is set to 0 The transport is set to null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h" line="34" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.cpp" bodystart="87" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classTravelManager_1ad6f91d50ae036a8f602ff820f4aea4d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TravelManager::BestRoute</definition>
+        <argsstring>(int capacity, Stops *destination, float weight=0)</argsstring>
+        <name>BestRoute</name>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <param>
+          <type><ref refid="classStops" kindref="compound">Stops</ref> *</type>
+          <declname>destination</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Travel to the destination using the constructed transport ny nest route. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the capacity of the vehicle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destination</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the destination to travel to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the weight of the cargo</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This function is used to travel to the destination using the constructed transport using the shortest distance <simplesect kind="post"><para>The vehicle travels to the destination </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h" line="36" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.cpp" bodystart="103" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classTravelManager_1ae69640c1d671faf455a8578d9d7fad93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TravelManager::Travel</definition>
+        <argsstring>(Transport *trans, Stops *destination)</argsstring>
+        <name>Travel</name>
+        <param>
+          <type><ref refid="classTransport" kindref="compound">Transport</ref> *</type>
+          <declname>trans</declname>
+        </param>
+        <param>
+          <type><ref refid="classStops" kindref="compound">Stops</ref> *</type>
+          <declname>destination</declname>
+        </param>
+        <briefdescription>
+<para>Travel to the destination using the given transport. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Transport*</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>trans a pointer to the transport to use </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Stops*</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination the destination to travel to</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This function is used to travel to the destination using the given transport <simplesect kind="post"><para>The vehicle travels to the destination </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h" line="38" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.cpp" bodystart="129" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classTravelManager_1aa8383ebbff5d198b486d767dbc2a6de3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TravelManager::BestRoute</definition>
+        <argsstring>(Transport *trans, Stops *destination)</argsstring>
+        <name>BestRoute</name>
+        <param>
+          <type><ref refid="classTransport" kindref="compound">Transport</ref> *</type>
+          <declname>trans</declname>
+        </param>
+        <param>
+          <type><ref refid="classStops" kindref="compound">Stops</ref> *</type>
+          <declname>destination</declname>
+        </param>
+        <briefdescription>
+<para>Travel to the destination using the given transport by using the shortest distance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Transport*</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>trans a pointer to the transport to use </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Stops*</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination the destination to travel to</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This function is used to travel to the destination using the given transport using the shortest distance <simplesect kind="post"><para>The vehicle travels to the destination </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h" line="40" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.cpp" bodystart="155" bodyend="170"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h" line="15" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TravelManager.h" bodystart="15" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classTravelManager_1acca4e31ec9819790fc13cb6080ed3c68" prot="public" virt="non-virtual"><scope>TravelManager</scope><name>addStops</name></member>
+      <member refid="classTravelManager_1ad6f91d50ae036a8f602ff820f4aea4d2" prot="public" virt="non-virtual"><scope>TravelManager</scope><name>BestRoute</name></member>
+      <member refid="classTravelManager_1aa8383ebbff5d198b486d767dbc2a6de3" prot="public" virt="non-virtual"><scope>TravelManager</scope><name>BestRoute</name></member>
+      <member refid="classTravelManager_1a47b6f6ac94da1668f95ceeca6144c9e2" prot="private" virt="non-virtual"><scope>TravelManager</scope><name>builder</name></member>
+      <member refid="classTravelManager_1a644cac837eb036fed587125cf03b38a7" prot="private" virt="non-virtual"><scope>TravelManager</scope><name>constructCargo</name></member>
+      <member refid="classTravelManager_1ac64492948f709e4c4a56957d2e33043b" prot="private" virt="non-virtual"><scope>TravelManager</scope><name>constructPassenger</name></member>
+      <member refid="classTravelManager_1ac3b97c305d95ee8ebee37196e502d920" prot="private" virt="non-virtual"><scope>TravelManager</scope><name>distanceTravelled</name></member>
+      <member refid="classTravelManager_1a59ab9bea3b336fa4edc1a80b3f5e90cf" prot="private" virt="non-virtual"><scope>TravelManager</scope><name>route</name></member>
+      <member refid="classTravelManager_1a341bfdefd0dea555ba0200136796c220" prot="private" virt="non-virtual"><scope>TravelManager</scope><name>transport</name></member>
+      <member refid="classTravelManager_1aa5fbb7bae39a66e46414952cc587fa7a" prot="public" virt="non-virtual"><scope>TravelManager</scope><name>Travel</name></member>
+      <member refid="classTravelManager_1ae69640c1d671faf455a8578d9d7fad93" prot="public" virt="non-virtual"><scope>TravelManager</scope><name>Travel</name></member>
+      <member refid="classTravelManager_1a3eb3e7f790fcb77db03b0d1aba123061" prot="public" virt="non-virtual"><scope>TravelManager</scope><name>TravelManager</name></member>
+      <member refid="classTravelManager_1a55fad5ecec4c3bd806abf60081f1d2a7" prot="public" virt="non-virtual"><scope>TravelManager</scope><name>~TravelManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,701 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classOffice" kind="class" language="C++" prot="public">
+    <compoundname>Office</compoundname>
+    <basecompoundref refid="classCommercialBuilding" prot="public" virt="non-virtual">CommercialBuilding</basecompoundref>
+    <includes refid="Office_8h" local="no">Office.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOffice_1ab1877ec65b0128809295cd7f904b0b81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Office::Office</definition>
+        <argsstring>(string bName, int pReq, int wReq, double mCost, int sCost, int waste, float sales, float profit, int emp, int income)</argsstring>
+        <name>Office</name>
+        <param>
+          <type>string</type>
+          <declname>bName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pReq</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wReq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mCost</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sCost</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>waste</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sales</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>profit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>emp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>income</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="classOffice" kindref="compound">Office</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the building. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pReq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Power requirement. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wReq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Water requirement. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mCost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maintenance cost. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sCost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sewage cost. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>waste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Waste produced. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sales</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sales generated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>profit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Profit made. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>emp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of jobs created. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>income</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Income generated. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="28" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="11" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1a5e01bcb4191ce145fe31aa28d451bce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string Office::getBuildingType</definition>
+        <argsstring>()</argsstring>
+        <name>getBuildingType</name>
+        <reimplements refid="classCommercialBuilding_1a2bc59aed3639b1ddc8985ab71cc13579">getBuildingType</reimplements>
+        <briefdescription>
+<para>Gets the type of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>String representing the building type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="34" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1af071576c48b32facf2566a622d27514f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Office::getJobsCreated</definition>
+        <argsstring>()</argsstring>
+        <name>getJobsCreated</name>
+        <reimplements refid="classCommercialBuilding_1afaf183aab243dea40e25690e8b7b5ebc">getJobsCreated</reimplements>
+        <briefdescription>
+<para>Gets the number of jobs created by the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of jobs created. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="40" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1a0b2d5062396b2fb129e5996c33c67a16" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double Office::getMaintenanceCost</definition>
+        <argsstring>()</argsstring>
+        <name>getMaintenanceCost</name>
+        <reimplements refid="classCommercialBuilding_1a67781a6b655a1c5bbd7f7192bf4fae51">getMaintenanceCost</reimplements>
+        <briefdescription>
+<para>Gets the maintenance cost of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Maintenance cost. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="46" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1a866456b277c1b43e2ede47ec93313e5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string Office::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <reimplements refid="classCommercialBuilding_1ab24328311662c377deb43ccfdb83dbab">getName</reimplements>
+        <briefdescription>
+<para>Gets the name of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Name of the building. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="52" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1a16e1936910d08fbfb4c08a3dc0f5e293" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Office::getPowerReq</definition>
+        <argsstring>()</argsstring>
+        <name>getPowerReq</name>
+        <reimplements refid="classCommercialBuilding_1a0b192a6a070bf0f907b83cf45c53d11c">getPowerReq</reimplements>
+        <briefdescription>
+<para>Gets the power requirement of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Power requirement. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="58" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1a83256cb36fc427127abc7b502ee4581c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Office::getSewageCost</definition>
+        <argsstring>()</argsstring>
+        <name>getSewageCost</name>
+        <reimplements refid="classCommercialBuilding_1aa7b21c407ff71a2f360ec1c30d59c3e7">getSewageCost</reimplements>
+        <briefdescription>
+<para>Gets the sewage cost of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Sewage cost. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="64" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1a325edec8536a6b94e944f5a4c53e0fd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Office::getWaterReq</definition>
+        <argsstring>()</argsstring>
+        <name>getWaterReq</name>
+        <reimplements refid="classCommercialBuilding_1ac35a6efffcba448cc807778397020b55">getWaterReq</reimplements>
+        <briefdescription>
+<para>Gets the water requirement of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Water requirement. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="70" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1af66bbd5b2581b1aacd05f641315d26e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Office::requestState</definition>
+        <argsstring>()</argsstring>
+        <name>requestState</name>
+        <reimplements refid="classCommercialBuilding_1ae8ddedfb93a3d0a88e5179f8aaa60fa1">requestState</reimplements>
+        <briefdescription>
+<para>Requests the current state of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="75" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1a54fec4263affb4fa50a09153ef393cc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Office::getWasteCost</definition>
+        <argsstring>()</argsstring>
+        <name>getWasteCost</name>
+        <reimplements refid="classBuildings_1a94e15ba281ac20d60e1a4632f7be1292">getWasteCost</reimplements>
+        <briefdescription>
+<para>Gets the waste cost for the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Waste cost. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="81" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1a8b738a2b5c7c0c4e810f9b510b72cacd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Office::setState</definition>
+        <argsstring>(State *newState)</argsstring>
+        <name>setState</name>
+        <reimplements refid="classCommercialBuilding_1a16e612d08679f4451fd2ae773251132b">setState</reimplements>
+        <param>
+          <type><ref refid="classState" kindref="compound">State</ref> *</type>
+          <declname>newState</declname>
+        </param>
+        <briefdescription>
+<para>sets the state of the building </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="86" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1a25382769a51b2f0921f0d1fc80b0c710" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Office::getIncome</definition>
+        <argsstring>()</argsstring>
+        <name>getIncome</name>
+        <briefdescription>
+<para>Gets the income generated by the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Income. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="91" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1aa2fa64dd88cdc7e8e6289b0e645c4657" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float Office::getSales</definition>
+        <argsstring>()</argsstring>
+        <name>getSales</name>
+        <reimplements refid="classCommercialBuilding_1ab69ce9a94734ece60e08f51262aed158">getSales</reimplements>
+        <briefdescription>
+<para>Gets the sales generated by the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Sales amount. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="98" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1a7f45354d12f8a8232ab73489a15ff7b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float Office::getProfit</definition>
+        <argsstring>()</argsstring>
+        <name>getProfit</name>
+        <reimplements refid="classCommercialBuilding_1acc4395bf128e80842b3ae76da0f4b2d8">getProfit</reimplements>
+        <briefdescription>
+<para>Gets the profit generated by the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Profit amount. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="104" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1a3b4cf5058c58500b2b0c020be99922ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Office::payCitizen</definition>
+        <argsstring>()</argsstring>
+        <name>payCitizen</name>
+        <reimplements refid="classCommercialBuilding_1ad0e3cc060d90ba7fb925efdc1649b894">payCitizen</reimplements>
+        <briefdescription>
+<para>Pays a citizen associated with the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Amount paid to the citizen. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="110" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="87" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1a98e2c74e20d99e2651ab70b4348fa989" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Office::getCommercialIncome</definition>
+        <argsstring>()</argsstring>
+        <name>getCommercialIncome</name>
+        <reimplements refid="classCommercialBuilding_1ae827061bd272d37402e9d5cb9f961363">getCommercialIncome</reimplements>
+        <briefdescription>
+<para>gets the current income of a commercial building </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the income as an integer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="116" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1a7c31b2634837a3d662476e4b183a4837" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double Office::getBalance</definition>
+        <argsstring>()</argsstring>
+        <name>getBalance</name>
+        <reimplements refid="classCommercialBuilding_1a77ce6bb30a4f595867ed3be7dc9e0f17">getBalance</reimplements>
+        <briefdescription>
+<para>gets the current income of a commercial building </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the income as an integer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="122" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1ad36eee398fd6c7585b26b2302a5a3e8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Office::setBalance</definition>
+        <argsstring>(double b)</argsstring>
+        <name>setBalance</name>
+        <reimplements refid="classCommercialBuilding_1ae3d75fa3195c1808f68c1e165bee053b">setBalance</reimplements>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>gets the current income of a commercial building </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the income as an integer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="128" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1a5b5865beb905a7fd9c4aca46bba368ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Office::getPower</definition>
+        <argsstring>()</argsstring>
+        <name>getPower</name>
+        <reimplements refid="classCommercialBuilding_1a0dbff6c0c9a198adb9a7a69b07b1bd76">getPower</reimplements>
+        <briefdescription>
+<para>Receives power for the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if power was received successfully, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="133" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="115" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1a174f5049e93dad96be8f710bca45e275" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Office::getWater</definition>
+        <argsstring>()</argsstring>
+        <name>getWater</name>
+        <reimplements refid="classCommercialBuilding_1a804eb1be891988cb585bd48c0ab09635">getWater</reimplements>
+        <briefdescription>
+<para>Receives water for the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if water was received successfully, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="139" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="136" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1a242ea321fb9d49f13f7025a4d2df1480" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Office::cleanWaste</definition>
+        <argsstring>()</argsstring>
+        <name>cleanWaste</name>
+        <reimplements refid="classCommercialBuilding_1a59e9259b25798a7d754feffb13567370">cleanWaste</reimplements>
+        <briefdescription>
+<para>Cleans the waste of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if waste cleaning was successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="145" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="129" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1a85ca9888dc598a93e466986a7da935e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Office::cleanSewage</definition>
+        <argsstring>()</argsstring>
+        <name>cleanSewage</name>
+        <reimplements refid="classCommercialBuilding_1aa6e46234e1cfa37f5bb3ba8b304b5ef7">cleanSewage</reimplements>
+        <briefdescription>
+<para>Cleans the sewage of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if sewage cleaning was successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="151" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="122" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classOffice_1ab934310c5e470b591b9f279be4a149cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Office::addBuilding</definition>
+        <argsstring>()</argsstring>
+        <name>addBuilding</name>
+        <reimplements refid="classCommercialBuilding_1a079544eb7848e26b567efcb1d73fd303">addBuilding</reimplements>
+        <briefdescription>
+<para>Add a building to the Building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>building</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The building to add to the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="158" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp" bodystart="108" bodyend="113"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents an office building, inheriting from the <ref refid="classCommercialBuilding" kindref="compound">CommercialBuilding</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+      </node>
+      <node id="1">
+        <label>Office</label>
+        <link refid="classOffice"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CommercialBuilding</label>
+        <link refid="classCommercialBuilding"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>listOfCitizens</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Office</label>
+        <link refid="classOffice"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="10">
+        <label>State</label>
+        <link refid="classState"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>building</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Citizen</label>
+        <link refid="classCitizen"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>tm</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CommercialBuilding</label>
+        <link refid="classCommercialBuilding"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>TravelManager</label>
+        <link refid="classTravelManager"/>
+      </node>
+      <node id="9">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="7">
+        <label>PopulationControl</label>
+        <link refid="classPopulationControl"/>
+      </node>
+      <node id="5">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.h" bodystart="12" bodyend="161"/>
+    <listofallmembers>
+      <member refid="classOffice_1ab934310c5e470b591b9f279be4a149cc" prot="public" virt="virtual"><scope>Office</scope><name>addBuilding</name></member>
+      <member refid="classCommercialBuilding_1ad068ea036943a9c13d98b182d918be34" prot="protected" virt="non-virtual"><scope>Office</scope><name>balance</name></member>
+      <member refid="classBuildings_1a0702b3d14494ac145aaa428aa4e01afb" prot="protected" virt="non-virtual"><scope>Office</scope><name>buildingName</name></member>
+      <member refid="classBuildings_1af5b874917cf6e1dbe90dbcf5b9b37326" prot="public" virt="non-virtual"><scope>Office</scope><name>Buildings</name></member>
+      <member refid="classBuildings_1a010d594842ce60f01bdf00f939ea2011" prot="protected" virt="non-virtual"><scope>Office</scope><name>buildingType</name></member>
+      <member refid="classOffice_1a85ca9888dc598a93e466986a7da935e4" prot="public" virt="virtual"><scope>Office</scope><name>cleanSewage</name></member>
+      <member refid="classOffice_1a242ea321fb9d49f13f7025a4d2df1480" prot="public" virt="virtual"><scope>Office</scope><name>cleanWaste</name></member>
+      <member refid="classCommercialBuilding_1a72362a30505ac675f5a388641723e4e4" prot="protected" virt="non-virtual"><scope>Office</scope><name>employment</name></member>
+      <member refid="classOffice_1a7c31b2634837a3d662476e4b183a4837" prot="public" virt="virtual"><scope>Office</scope><name>getBalance</name></member>
+      <member refid="classBuildings_1a038e1c1d7a924c97fc3cdc5954ccd72b" prot="public" virt="virtual"><scope>Office</scope><name>getBirthRate</name></member>
+      <member refid="classOffice_1a5e01bcb4191ce145fe31aa28d451bce3" prot="public" virt="virtual"><scope>Office</scope><name>getBuildingType</name></member>
+      <member refid="classOffice_1a98e2c74e20d99e2651ab70b4348fa989" prot="public" virt="virtual"><scope>Office</scope><name>getCommercialIncome</name></member>
+      <member refid="classBuildings_1aea12268287656270eb98cd2f22b82e02" prot="public" virt="virtual"><scope>Office</scope><name>getEducationalCoverage</name></member>
+      <member refid="classBuildings_1a993a9340e25a58e2e2912090742f5ba6" prot="public" virt="virtual"><scope>Office</scope><name>getHealthCoverage</name></member>
+      <member refid="classOffice_1a25382769a51b2f0921f0d1fc80b0c710" prot="public" virt="non-virtual"><scope>Office</scope><name>getIncome</name></member>
+      <member refid="classOffice_1af071576c48b32facf2566a622d27514f" prot="public" virt="virtual"><scope>Office</scope><name>getJobsCreated</name></member>
+      <member refid="classBuildings_1ae0a010f94a01d180d1a6e4d023b54561" prot="public" virt="virtual"><scope>Office</scope><name>getlistOfResidence</name></member>
+      <member refid="classOffice_1a0b2d5062396b2fb129e5996c33c67a16" prot="public" virt="virtual"><scope>Office</scope><name>getMaintenanceCost</name></member>
+      <member refid="classOffice_1a866456b277c1b43e2ede47ec93313e5a" prot="public" virt="virtual"><scope>Office</scope><name>getName</name></member>
+      <member refid="classOffice_1a5b5865beb905a7fd9c4aca46bba368ad" prot="public" virt="virtual"><scope>Office</scope><name>getPower</name></member>
+      <member refid="classOffice_1a16e1936910d08fbfb4c08a3dc0f5e293" prot="public" virt="virtual"><scope>Office</scope><name>getPowerReq</name></member>
+      <member refid="classOffice_1a7f45354d12f8a8232ab73489a15ff7b0" prot="public" virt="virtual"><scope>Office</scope><name>getProfit</name></member>
+      <member refid="classOffice_1aa2fa64dd88cdc7e8e6289b0e645c4657" prot="public" virt="virtual"><scope>Office</scope><name>getSales</name></member>
+      <member refid="classBuildings_1a647c790019850fd479ac20fcbd21d873" prot="public" virt="virtual"><scope>Office</scope><name>getSecurityCoverage</name></member>
+      <member refid="classOffice_1a83256cb36fc427127abc7b502ee4581c" prot="public" virt="virtual"><scope>Office</scope><name>getSewageCost</name></member>
+      <member refid="classOffice_1a54fec4263affb4fa50a09153ef393cc9" prot="public" virt="virtual"><scope>Office</scope><name>getWasteCost</name></member>
+      <member refid="classOffice_1a174f5049e93dad96be8f710bca45e275" prot="public" virt="virtual"><scope>Office</scope><name>getWater</name></member>
+      <member refid="classOffice_1a325edec8536a6b94e944f5a4c53e0fd1" prot="public" virt="virtual"><scope>Office</scope><name>getWaterReq</name></member>
+      <member refid="classCommercialBuilding_1a09905ecc83004dc90a7b531304f0f2ab" prot="protected" virt="non-virtual"><scope>Office</scope><name>income</name></member>
+      <member refid="classBuildings_1a7497cf317a1deb55c35864bc08c82443" prot="protected" virt="non-virtual"><scope>Office</scope><name>listOfCitizens</name></member>
+      <member refid="classBuildings_1a7320201a32ce9541b3aeddac32d9988a" prot="protected" virt="non-virtual"><scope>Office</scope><name>maintenanceCost</name></member>
+      <member refid="classOffice_1ab1877ec65b0128809295cd7f904b0b81" prot="public" virt="non-virtual"><scope>Office</scope><name>Office</name></member>
+      <member refid="classOffice_1a3b4cf5058c58500b2b0c020be99922ad" prot="public" virt="virtual"><scope>Office</scope><name>payCitizen</name></member>
+      <member refid="classBuildings_1a572094ecc5a5d844acbfe6f18650ed9d" prot="protected" virt="non-virtual"><scope>Office</scope><name>powerReq</name></member>
+      <member refid="classCommercialBuilding_1a9c872f01effc2ccb37a94444da2d7712" prot="protected" virt="non-virtual"><scope>Office</scope><name>profit</name></member>
+      <member refid="classOffice_1af66bbd5b2581b1aacd05f641315d26e0" prot="public" virt="virtual"><scope>Office</scope><name>requestState</name></member>
+      <member refid="classBuildings_1aabc1cfaf764d4c41889ecf1f0320fa8e" prot="public" virt="non-virtual"><scope>Office</scope><name>resources</name></member>
+      <member refid="classCommercialBuilding_1ad74a205cf4b2a7c13d257819143b0f24" prot="protected" virt="non-virtual"><scope>Office</scope><name>sales</name></member>
+      <member refid="classOffice_1ad36eee398fd6c7585b26b2302a5a3e8d" prot="public" virt="virtual"><scope>Office</scope><name>setBalance</name></member>
+      <member refid="classBuildings_1af3184f3602e4c1dd6ac010900770cd57" prot="public" virt="non-virtual"><scope>Office</scope><name>setResources</name></member>
+      <member refid="classOffice_1a8b738a2b5c7c0c4e810f9b510b72cacd" prot="public" virt="virtual"><scope>Office</scope><name>setState</name></member>
+      <member refid="classBuildings_1aae45243bbcd3ac7c47e9cbb83162f1f8" prot="protected" virt="non-virtual"><scope>Office</scope><name>sewageCost</name></member>
+      <member refid="classCommercialBuilding_1a0cbfa79eb4bb10bc0af2ec34b489adc8" prot="protected" virt="non-virtual"><scope>Office</scope><name>state</name></member>
+      <member refid="classCommercialBuilding_1a3b4753ca12a2e066500379854623176e" prot="protected" virt="non-virtual"><scope>Office</scope><name>waste</name></member>
+      <member refid="classBuildings_1ac8c0debb07dcf0555a28be710377fc36" prot="protected" virt="non-virtual"><scope>Office</scope><name>waterReq</name></member>
+      <member refid="classBuildings_1a60b14d2c02c2424eeb0ba52bd9fee170" prot="public" virt="pure-virtual"><scope>Office</scope><name>~Buildings</name></member>
+      <member refid="classCommercialBuilding_1aee93bcc9efa7d1866b94b0df2bf7b923" prot="public" virt="virtual"><scope>Office</scope><name>~CommercialBuilding</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

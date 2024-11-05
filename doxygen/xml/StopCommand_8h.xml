@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="StopCommand_8h" kind="file" language="C++">
+    <compoundname>StopCommand.h</compoundname>
+    <includes refid="Command_8h" local="yes">Command.h</includes>
+    <includedby refid="StopCommand_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/StopCommand.cpp</includedby>
+    <includedby refid="TestingMain_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TestingMain.cpp</includedby>
+    <includedby refid="UtilityManager_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>EnergySource.h</label>
+        <link refid="EnergySource_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>Command.h</label>
+        <link refid="Command_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>chrono</label>
+      </node>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/StopCommand.h</label>
+        <link refid="StopCommand_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>thread</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.h</label>
+        <link refid="UtilityManager_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/StopCommand.h</label>
+        <link refid="StopCommand_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classStopCommand" prot="public">StopCommand</innerclass>
+    <briefdescription>
+<para>The header file for the <ref refid="classStopCommand" kindref="compound">StopCommand</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>STOPCOMMAND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STOPCOMMAND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Command_8h" kindref="compound">Command.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classStopCommand" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classStopCommand" kindref="compound">StopCommand</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classCommand" kindref="compound">Command</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classStopCommand_1a39c64383e2b645cb1008709a0e8cdb96" kindref="member">StopCommand</ref>(<ref refid="classUtility" kindref="compound">Utility</ref>*<sp/>utility);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classStopCommand_1a97d603c8a23c3c8ddf8309843b3cb808" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classStopCommand_1a3a4aef422615eddc35ca32350f91a4f9" kindref="member">getUtilityType</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUtility" kindref="compound">Utility</ref>*<sp/><ref refid="classStopCommand_1abc66c964d65117c1a8fdb9940b6af88e" kindref="member">getUtility</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/StopCommand.h"/>
+  </compounddef>
+</doxygen>

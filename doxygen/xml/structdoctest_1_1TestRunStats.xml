@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1TestRunStats" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::TestRunStats</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoctest_1_1TestRunStats_1a2f4b38f2f6225b798029b64c1d425999" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned doctest::TestRunStats::numTestCases</definition>
+        <argsstring></argsstring>
+        <name>numTestCases</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2034" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2034" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1TestRunStats_1afd49da305793d2c2622f0b33a63e87b6" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned doctest::TestRunStats::numTestCasesPassingFilters</definition>
+        <argsstring></argsstring>
+        <name>numTestCasesPassingFilters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2035" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2035" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1TestRunStats_1aecbf62d51a6c96875d72124c27096e1d" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned doctest::TestRunStats::numTestSuitesPassingFilters</definition>
+        <argsstring></argsstring>
+        <name>numTestSuitesPassingFilters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2036" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2036" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1TestRunStats_1adb4acfac3623bf752eff3f8d6ce2ffe7" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned doctest::TestRunStats::numTestCasesFailed</definition>
+        <argsstring></argsstring>
+        <name>numTestCasesFailed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2037" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2037" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1TestRunStats_1a58f52d165ab0af01acb7d69a7fc53c3a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int doctest::TestRunStats::numAsserts</definition>
+        <argsstring></argsstring>
+        <name>numAsserts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2038" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2038" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1TestRunStats_1a27c7ff2c0190e4bad60555cdc68d8f30" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int doctest::TestRunStats::numAssertsFailed</definition>
+        <argsstring></argsstring>
+        <name>numAssertsFailed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2039" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2039" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2032" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2033" bodyend="2040"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1TestRunStats_1a58f52d165ab0af01acb7d69a7fc53c3a" prot="public" virt="non-virtual"><scope>doctest::TestRunStats</scope><name>numAsserts</name></member>
+      <member refid="structdoctest_1_1TestRunStats_1a27c7ff2c0190e4bad60555cdc68d8f30" prot="public" virt="non-virtual"><scope>doctest::TestRunStats</scope><name>numAssertsFailed</name></member>
+      <member refid="structdoctest_1_1TestRunStats_1a2f4b38f2f6225b798029b64c1d425999" prot="public" virt="non-virtual"><scope>doctest::TestRunStats</scope><name>numTestCases</name></member>
+      <member refid="structdoctest_1_1TestRunStats_1adb4acfac3623bf752eff3f8d6ce2ffe7" prot="public" virt="non-virtual"><scope>doctest::TestRunStats</scope><name>numTestCasesFailed</name></member>
+      <member refid="structdoctest_1_1TestRunStats_1afd49da305793d2c2622f0b33a63e87b6" prot="public" virt="non-virtual"><scope>doctest::TestRunStats</scope><name>numTestCasesPassingFilters</name></member>
+      <member refid="structdoctest_1_1TestRunStats_1aecbf62d51a6c96875d72124c27096e1d" prot="public" virt="non-virtual"><scope>doctest::TestRunStats</scope><name>numTestSuitesPassingFilters</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

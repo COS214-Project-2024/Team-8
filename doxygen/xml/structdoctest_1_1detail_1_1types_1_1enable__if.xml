@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1detail_1_1types_1_1enable__if" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::detail::types::enable_if</compoundname>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>COND</declname>
+        <defname>COND</defname>
+      </param>
+      <param>
+        <type>typename T</type>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="947" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="947" bodyend="947"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

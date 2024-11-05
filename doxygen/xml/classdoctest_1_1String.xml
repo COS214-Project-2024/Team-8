@@ -1,0 +1,676 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classdoctest_1_1String" kind="class" language="C++" prot="public">
+    <compoundname>doctest::String</compoundname>
+    <innerclass refid="structdoctest_1_1String_1_1view" prot="private">doctest::String::view</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdoctest_1_1String_1a955471ce254dca78b33f8167bad6b0f0" prot="public" static="no">
+        <type>DOCTEST_CONFIG_STRING_SIZE_TYPE</type>
+        <definition>using doctest::String::size_type =  DOCTEST_CONFIG_STRING_SIZE_TYPE</definition>
+        <argsstring></argsstring>
+        <name>size_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="590" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="590" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classdoctest_1_1String_1a8b2b090627c2b829df8892ce82213a2a" prot="private" static="yes" mutable="no">
+        <type>DOCTEST_CONSTEXPR size_type</type>
+        <definition>DOCTEST_CONSTEXPR size_type doctest::String::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <initializer>= 24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="593" column="40" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="593" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoctest_1_1String_1a851ddfd0d6b457e7acbceff88d1d78d8" prot="private" static="yes" mutable="no">
+        <type>DOCTEST_CONSTEXPR size_type</type>
+        <definition>DOCTEST_CONSTEXPR size_type doctest::String::last</definition>
+        <argsstring></argsstring>
+        <name>last</name>
+        <initializer>= len - 1</initializer>
+        <briefdescription>
+<para>OCLINT avoid private static members. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="594" column="40" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="594" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdoctest_1_1String_1a7e031ced488588936a540eba26facf67" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char doctest::String::buf[len]</definition>
+        <argsstring>[len]</argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="605" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="605" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoctest_1_1String_1a5c77ed634a1b81aea739a73fb01d986a" prot="public" static="no" mutable="no">
+        <type>view</type>
+        <definition>view doctest::String::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="606" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="606" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdoctest_1_1String_1ab9310b7f606204c59b4dbcd112faa299" prot="private" static="no" mutable="no">
+        <type>union doctest::String::@0</type>
+        <definition>union doctest::String::@0 doctest::String::@1</definition>
+        <argsstring></argsstring>
+        <name>@1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="607" column="5"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdoctest_1_1String_1a29d41bba3eb99eb895aaf8227da09f3e" prot="public" static="yes" mutable="no">
+        <type>DOCTEST_CONSTEXPR size_type</type>
+        <definition>DOCTEST_CONSTEXPR size_type doctest::String::npos</definition>
+        <argsstring></argsstring>
+        <name>npos</name>
+        <initializer>= static_cast&lt;size_type&gt;(-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="619" column="40" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="619" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdoctest_1_1String_1a6f861e8ed006680f430dfc05844f44ca" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* doctest::String::allocate</definition>
+        <argsstring>(size_type sz)</argsstring>
+        <name>allocate</name>
+        <param>
+          <type>size_type</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="609" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1a3d0c1d8e0d27818235e0639f49d232e9" prot="private" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool doctest::String::isOnStack</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isOnStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="611" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="611" bodyend="611"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1ae81f4517c89c01eee8c750eddcf62197" prot="private" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void doctest::String::setOnHeap</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>setOnHeap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="612" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1a62268e72280c4eff28d92fe47a76828c" prot="private" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void doctest::String::setLast</definition>
+        <argsstring>(size_type in=last) noexcept</argsstring>
+        <name>setLast</name>
+        <param>
+          <type>size_type</type>
+          <declname>in</declname>
+          <defval>last</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="613" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1a72dcec3321fa6dd19f0463b574b05e8b" prot="private" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void doctest::String::setSize</definition>
+        <argsstring>(size_type sz) noexcept</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>size_type</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="614" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1a9adde1fae310e0d1a394cc1383495572" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doctest::String::copy</definition>
+        <argsstring>(const String &amp;other)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>const <ref refid="classdoctest_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="616" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdoctest_1_1String_1ac458ccc54bb0f2d66fe8ca14146ec5f0" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>doctest::String::String</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>String</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="621" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1af5dce5deeb8f25a4866efdff75e92975" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doctest::String::~String</definition>
+        <argsstring>()</argsstring>
+        <name>~String</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="622" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1abb4449cbc613cd973ae774c704fca5dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doctest::String::String</definition>
+        <argsstring>(const char *in)</argsstring>
+        <name>String</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="625" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1a0ce0a3e6a00b63b0a219a988fc42cec3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doctest::String::String</definition>
+        <argsstring>(const char *in, size_type in_size)</argsstring>
+        <name>String</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>size_type</type>
+          <declname>in_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="626" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1ac6e38dd40b68e19ef6898a13f60d2a07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doctest::String::String</definition>
+        <argsstring>(std::istream &amp;in, size_type in_size)</argsstring>
+        <name>String</name>
+        <param>
+          <type><ref refid="classstd_1_1basic__istream" kindref="compound">std::istream</ref> &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>size_type</type>
+          <declname>in_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="628" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1a27ca7976da20bdebbf225fa496c38ad1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doctest::String::String</definition>
+        <argsstring>(const String &amp;other)</argsstring>
+        <name>String</name>
+        <param>
+          <type>const <ref refid="classdoctest_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="630" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1a1979700c536cfe9b5fecc328245f74ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; doctest::String::operator=</definition>
+        <argsstring>(const String &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classdoctest_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="631" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1ad1df797f12cd140e3d1739f2b30b64d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; doctest::String::operator+=</definition>
+        <argsstring>(const String &amp;other)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="classdoctest_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="633" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1a2a0aa72649d92cb8da5b89b98bcff752" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>doctest::String::String</definition>
+        <argsstring>(String &amp;&amp;other) noexcept</argsstring>
+        <name>String</name>
+        <param>
+          <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="635" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1a852d08dab2a55334c5d933786136b009" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; doctest::String::operator=</definition>
+        <argsstring>(String &amp;&amp;other) noexcept</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="636" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1a15633c5d68057a07bccdadadd6acae05" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char doctest::String::operator[]</definition>
+        <argsstring>(size_type i) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_type</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="638" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1a2878225082f9f06484eb66d79c8ba010" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char &amp;</type>
+        <definition>char&amp; doctest::String::operator[]</definition>
+        <argsstring>(size_type i)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_type</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="639" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1a607c6977b193fecf29622110e6081625" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* doctest::String::c_str</definition>
+        <argsstring>() const</argsstring>
+        <name>c_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="642" column="16" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="642" bodyend="642"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1a35df67f11652bcc568ad3af470c344c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* doctest::String::c_str</definition>
+        <argsstring>()</argsstring>
+        <name>c_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="643" column="16" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="643" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1acc9888303b7330a8dc78d3d79eadcf7c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_type</type>
+        <definition>size_type doctest::String::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="650" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1a1592b42fc76438d5a87a94654a828ced" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_type</type>
+        <definition>size_type doctest::String::capacity</definition>
+        <argsstring>() const</argsstring>
+        <name>capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="651" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1a6fd53b95d33900d8a38a3a33c43c928e" prot="public" static="no" const="no" explicit="no" inline="no" refqual="rvalue" virt="non-virtual">
+        <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref></type>
+        <definition>String doctest::String::substr</definition>
+        <argsstring>(size_type pos, size_type cnt=npos) &amp;&amp;</argsstring>
+        <name>substr</name>
+        <param>
+          <type>size_type</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>size_type</type>
+          <declname>cnt</declname>
+          <defval>npos</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="653" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1ace5bc90d48d52944412addef185de9a6" prot="public" static="no" const="yes" explicit="no" inline="no" refqual="lvalue" virt="non-virtual">
+        <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref></type>
+        <definition>String doctest::String::substr</definition>
+        <argsstring>(size_type pos, size_type cnt=npos) const &amp;</argsstring>
+        <name>substr</name>
+        <param>
+          <type>size_type</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>size_type</type>
+          <declname>cnt</declname>
+          <defval>npos</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="654" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1aa7b27b07ca5bf081b3ec25a3224a7a05" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_type</type>
+        <definition>size_type doctest::String::find</definition>
+        <argsstring>(char ch, size_type pos=0) const</argsstring>
+        <name>find</name>
+        <param>
+          <type>char</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>size_type</type>
+          <declname>pos</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="656" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1a6e22f4f3820de5ffdf82e0acc6646759" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_type</type>
+        <definition>size_type doctest::String::rfind</definition>
+        <argsstring>(char ch, size_type pos=npos) const</argsstring>
+        <name>rfind</name>
+        <param>
+          <type>char</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>size_type</type>
+          <declname>pos</declname>
+          <defval>npos</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="657" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1aef87d1f106d32d8c31af87335b44164d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int doctest::String::compare</definition>
+        <argsstring>(const char *other, bool no_case=false) const</argsstring>
+        <name>compare</name>
+        <param>
+          <type>const char *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>no_case</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="659" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1String_1adb57becb56e054d981e7c2b967a7e359" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int doctest::String::compare</definition>
+        <argsstring>(const String &amp;other, bool no_case=false) const</argsstring>
+        <name>compare</name>
+        <param>
+          <type>const <ref refid="classdoctest_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>no_case</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="660" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdoctest_1_1String_1a3a016b962d47c9d44e99661f378727d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE <ref refid="classstd_1_1basic__ostream" kindref="compound">std::ostream</ref> &amp;</type>
+        <definition>DOCTEST_INTERFACE std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;s, const String &amp;in)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type><ref refid="classstd_1_1basic__ostream" kindref="compound">std::ostream</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdoctest_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="662" column="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>doctest::String::view</label>
+      </node>
+      <node id="1">
+        <label>doctest::String</label>
+        <link refid="classdoctest_1_1String"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="587" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="588" bodyend="663"/>
+    <listofallmembers>
+      <member refid="classdoctest_1_1String_1a6f861e8ed006680f430dfc05844f44ca" prot="private" virt="non-virtual"><scope>doctest::String</scope><name>allocate</name></member>
+      <member refid="classdoctest_1_1String_1a7e031ced488588936a540eba26facf67" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>buf</name></member>
+      <member refid="classdoctest_1_1String_1a607c6977b193fecf29622110e6081625" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>c_str</name></member>
+      <member refid="classdoctest_1_1String_1a35df67f11652bcc568ad3af470c344c0" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>c_str</name></member>
+      <member refid="classdoctest_1_1String_1a1592b42fc76438d5a87a94654a828ced" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>capacity</name></member>
+      <member refid="classdoctest_1_1String_1aef87d1f106d32d8c31af87335b44164d" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>compare</name></member>
+      <member refid="classdoctest_1_1String_1adb57becb56e054d981e7c2b967a7e359" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>compare</name></member>
+      <member refid="classdoctest_1_1String_1a9adde1fae310e0d1a394cc1383495572" prot="private" virt="non-virtual"><scope>doctest::String</scope><name>copy</name></member>
+      <member refid="classdoctest_1_1String_1a5c77ed634a1b81aea739a73fb01d986a" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>data</name></member>
+      <member refid="classdoctest_1_1String_1aa7b27b07ca5bf081b3ec25a3224a7a05" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>find</name></member>
+      <member refid="classdoctest_1_1String_1a3d0c1d8e0d27818235e0639f49d232e9" prot="private" virt="non-virtual"><scope>doctest::String</scope><name>isOnStack</name></member>
+      <member refid="classdoctest_1_1String_1a851ddfd0d6b457e7acbceff88d1d78d8" prot="private" virt="non-virtual"><scope>doctest::String</scope><name>last</name></member>
+      <member refid="classdoctest_1_1String_1a8b2b090627c2b829df8892ce82213a2a" prot="private" virt="non-virtual"><scope>doctest::String</scope><name>len</name></member>
+      <member refid="classdoctest_1_1String_1a29d41bba3eb99eb895aaf8227da09f3e" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>npos</name></member>
+      <member refid="classdoctest_1_1String_1ad1df797f12cd140e3d1739f2b30b64d2" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>operator+=</name></member>
+      <member refid="classdoctest_1_1String_1a3a016b962d47c9d44e99661f378727d5" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classdoctest_1_1String_1a1979700c536cfe9b5fecc328245f74ca" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>operator=</name></member>
+      <member refid="classdoctest_1_1String_1a852d08dab2a55334c5d933786136b009" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>operator=</name></member>
+      <member refid="classdoctest_1_1String_1a15633c5d68057a07bccdadadd6acae05" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>operator[]</name></member>
+      <member refid="classdoctest_1_1String_1a2878225082f9f06484eb66d79c8ba010" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>operator[]</name></member>
+      <member refid="classdoctest_1_1String_1a6e22f4f3820de5ffdf82e0acc6646759" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>rfind</name></member>
+      <member refid="classdoctest_1_1String_1a62268e72280c4eff28d92fe47a76828c" prot="private" virt="non-virtual"><scope>doctest::String</scope><name>setLast</name></member>
+      <member refid="classdoctest_1_1String_1ae81f4517c89c01eee8c750eddcf62197" prot="private" virt="non-virtual"><scope>doctest::String</scope><name>setOnHeap</name></member>
+      <member refid="classdoctest_1_1String_1a72dcec3321fa6dd19f0463b574b05e8b" prot="private" virt="non-virtual"><scope>doctest::String</scope><name>setSize</name></member>
+      <member refid="classdoctest_1_1String_1acc9888303b7330a8dc78d3d79eadcf7c" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>size</name></member>
+      <member refid="classdoctest_1_1String_1a955471ce254dca78b33f8167bad6b0f0" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>size_type</name></member>
+      <member refid="classdoctest_1_1String_1ac458ccc54bb0f2d66fe8ca14146ec5f0" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>String</name></member>
+      <member refid="classdoctest_1_1String_1abb4449cbc613cd973ae774c704fca5dd" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>String</name></member>
+      <member refid="classdoctest_1_1String_1a0ce0a3e6a00b63b0a219a988fc42cec3" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>String</name></member>
+      <member refid="classdoctest_1_1String_1ac6e38dd40b68e19ef6898a13f60d2a07" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>String</name></member>
+      <member refid="classdoctest_1_1String_1a27ca7976da20bdebbf225fa496c38ad1" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>String</name></member>
+      <member refid="classdoctest_1_1String_1a2a0aa72649d92cb8da5b89b98bcff752" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>String</name></member>
+      <member refid="classdoctest_1_1String_1a6fd53b95d33900d8a38a3a33c43c928e" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>substr</name></member>
+      <member refid="classdoctest_1_1String_1ace5bc90d48d52944412addef185de9a6" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>substr</name></member>
+      <member refid="classdoctest_1_1String_1af5dce5deeb8f25a4866efdff75e92975" prot="public" virt="non-virtual"><scope>doctest::String</scope><name>~String</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

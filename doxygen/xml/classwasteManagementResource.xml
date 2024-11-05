@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classwasteManagementResource" kind="class" language="C++" prot="public">
+    <compoundname>wasteManagementResource</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Resource</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classwasteManagementResource_1a69264d7da0dd9a945463c010bb0da90e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float wasteManagementResource::availableWasteManagment</definition>
+        <argsstring></argsstring>
+        <name>availableWasteManagment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/wasteManagementResource.h" line="9" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/wasteManagementResource.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classwasteManagementResource_1a712071fbb7abc0addb0af8e9374c19db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>wasteManagementResource::wasteManagementResource</definition>
+        <argsstring>()</argsstring>
+        <name>wasteManagementResource</name>
+        <briefdescription>
+<para>Construct a new power Resource::power Resource object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/wasteManagementResource.h" line="12" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/wasteManagementResource.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classwasteManagementResource_1ab9cd360d75a841d8d824a440f99fa830" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool wasteManagementResource::giveResource</definition>
+        <argsstring>(float units) override</argsstring>
+        <name>giveResource</name>
+        <param>
+          <type>float</type>
+          <declname>units</declname>
+        </param>
+        <briefdescription>
+<para>Return true if the requested units of waste cleaning can be supplied and subtract the available resource, otherwise return false if it can not be supplied. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>units</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/wasteManagementResource.h" line="13" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/wasteManagementResource.cpp" bodystart="17" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classwasteManagementResource_1ad7af92147bf263ed6c03b3a2b0dbc811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wasteManagementResource::receiveResource</definition>
+        <argsstring>() override</argsstring>
+        <name>receiveResource</name>
+        <briefdescription>
+<para>Get waste cleaning capabilities from waste Management, increase the available capabilities for waste cleaning by the amount received from said waste Management. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>units</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/wasteManagementResource.h" line="14" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/wasteManagementResource.cpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classwasteManagementResource_1a9020e05760e272dcc575f5e99cb0406a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float wasteManagementResource::getAvailableAmount</definition>
+        <argsstring>() override</argsstring>
+        <name>getAvailableAmount</name>
+        <briefdescription>
+<para>Get the available amount of waste cleaning resources available. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/wasteManagementResource.h" line="15" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/wasteManagementResource.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classwasteManagementResource_1ab7f1fe2a9ddd360af54283bb8e1e8cac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>wasteManagementResource::~wasteManagementResource</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~wasteManagementResource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/wasteManagementResource.h" line="17" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>wasteManagementResource</label>
+        <link refid="classwasteManagementResource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Resource</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>wasteManagementResource</label>
+        <link refid="classwasteManagementResource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Resource</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/wasteManagementResource.h" line="6" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/wasteManagementResource.h" bodystart="6" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classwasteManagementResource_1a69264d7da0dd9a945463c010bb0da90e" prot="private" virt="non-virtual"><scope>wasteManagementResource</scope><name>availableWasteManagment</name></member>
+      <member refid="classwasteManagementResource_1a9020e05760e272dcc575f5e99cb0406a" prot="public" virt="non-virtual"><scope>wasteManagementResource</scope><name>getAvailableAmount</name></member>
+      <member refid="classwasteManagementResource_1ab9cd360d75a841d8d824a440f99fa830" prot="public" virt="non-virtual"><scope>wasteManagementResource</scope><name>giveResource</name></member>
+      <member refid="classwasteManagementResource_1ad7af92147bf263ed6c03b3a2b0dbc811" prot="public" virt="non-virtual"><scope>wasteManagementResource</scope><name>receiveResource</name></member>
+      <member refid="classwasteManagementResource_1a712071fbb7abc0addb0af8e9374c19db" prot="public" virt="non-virtual"><scope>wasteManagementResource</scope><name>wasteManagementResource</name></member>
+      <member refid="classwasteManagementResource_1ab7f1fe2a9ddd360af54283bb8e1e8cac" prot="public" virt="non-virtual"><scope>wasteManagementResource</scope><name>~wasteManagementResource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

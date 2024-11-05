@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="PublicServiceFactory_8h" kind="file" language="C++">
+    <compoundname>PublicServiceFactory.h</compoundname>
+    <includes refid="BuildingFactory_8h" local="yes">BuildingFactory.h</includes>
+    <includedby refid="MedicalCenterFactory_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MedicalCenterFactory.h</includedby>
+    <includedby refid="PoliceStationFactory_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PoliceStationFactory.h</includedby>
+    <includedby refid="SchoolFactory_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SchoolFactory.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PublicServiceFactory.h</label>
+        <link refid="PublicServiceFactory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Buildings.h</label>
+        <link refid="Buildings_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>BuildingFactory.h</label>
+        <link refid="BuildingFactory_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PublicServiceFactory.h</label>
+        <link refid="PublicServiceFactory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MedicalCenterFactory.h</label>
+        <link refid="MedicalCenterFactory_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/SchoolFactory.h</label>
+        <link refid="SchoolFactory_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h</label>
+        <link refid="City_8h_source"/>
+      </node>
+      <node id="4">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PoliceStationFactory.h</label>
+        <link refid="PoliceStationFactory_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classPublicServiceFactory" prot="public">PublicServiceFactory</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PUBLICSERVICEFACTORY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PUBLICSERVICEFACTORY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="BuildingFactory_8h" kindref="compound">BuildingFactory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classPublicServiceFactory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPublicServiceFactory" kindref="compound">PublicServiceFactory</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classBuildingFactory" kindref="compound">BuildingFactory</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="classPublicServiceFactory_1a1cc8ba5b91f69ff4fef172c1d64c9756" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBuildings" kindref="compound">Buildings</ref>*<sp/><ref refid="classPublicServiceFactory_1a1cc8ba5b91f69ff4fef172c1d64c9756" kindref="member">buildings</ref>;<sp/></highlight></codeline>
+<codeline lineno="27" refid="classPublicServiceFactory_1a01bc339cd89079c83630cda53be4a33b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classBuildings" kindref="compound">Buildings</ref>*<sp/><ref refid="classPublicServiceFactory_1a01bc339cd89079c83630cda53be4a33b" kindref="member">createBuilding</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PublicServiceFactory.h"/>
+  </compounddef>
+</doxygen>

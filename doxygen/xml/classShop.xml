@@ -1,0 +1,671 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classShop" kind="class" language="C++" prot="public">
+    <compoundname>Shop</compoundname>
+    <basecompoundref refid="classCommercialBuilding" prot="public" virt="non-virtual">CommercialBuilding</basecompoundref>
+    <includes refid="Shop_8h" local="no">Shop.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classShop_1a4bc9f71dbc234bb78798cbab94da97c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Shop::Shop</definition>
+        <argsstring>(string bName, int pReq, int wReq, double mCost, int sCost, int waste, float sales, float profit, int emp)</argsstring>
+        <name>Shop</name>
+        <param>
+          <type>string</type>
+          <declname>bName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pReq</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wReq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mCost</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sCost</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>waste</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sales</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>profit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>emp</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="classShop" kindref="compound">Shop</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the shop. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pReq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Power requirement. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wReq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Water requirement. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mCost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maintenance cost. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sCost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sewage cost. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>waste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Waste produced. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sales</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total sales made by the shop. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>profit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total profit made by the shop. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>emp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Employment opportunities created by the shop. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="26" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="11" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1a084fd7aad71f4b8c72e7ce8d68acc689" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string Shop::getBuildingType</definition>
+        <argsstring>()</argsstring>
+        <name>getBuildingType</name>
+        <reimplements refid="classCommercialBuilding_1a2bc59aed3639b1ddc8985ab71cc13579">getBuildingType</reimplements>
+        <briefdescription>
+<para>Gets the type of building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Type of the building as a string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="32" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1af94d5d055af855dfa8690076423282d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Shop::getJobsCreated</definition>
+        <argsstring>()</argsstring>
+        <name>getJobsCreated</name>
+        <reimplements refid="classCommercialBuilding_1afaf183aab243dea40e25690e8b7b5ebc">getJobsCreated</reimplements>
+        <briefdescription>
+<para>Gets the number of jobs created by the shop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of jobs created. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="38" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1aa90829bc6635f83e9c3746cac2177023" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double Shop::getMaintenanceCost</definition>
+        <argsstring>()</argsstring>
+        <name>getMaintenanceCost</name>
+        <reimplements refid="classCommercialBuilding_1a67781a6b655a1c5bbd7f7192bf4fae51">getMaintenanceCost</reimplements>
+        <briefdescription>
+<para>Gets the maintenance cost of the shop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Maintenance cost as a double. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="44" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1a43a344cea2213650d1f0f103f00690e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string Shop::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <reimplements refid="classCommercialBuilding_1ab24328311662c377deb43ccfdb83dbab">getName</reimplements>
+        <briefdescription>
+<para>Gets the name of the shop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Name of the shop as a string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="50" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1a69daf8ea3fb5728c5ab9e7f86964f9dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Shop::getPowerReq</definition>
+        <argsstring>()</argsstring>
+        <name>getPowerReq</name>
+        <reimplements refid="classCommercialBuilding_1a0b192a6a070bf0f907b83cf45c53d11c">getPowerReq</reimplements>
+        <briefdescription>
+<para>Gets the power requirement of the shop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Power requirement as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="56" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1a807d0fe43f8dbadc43d593dd5d1362fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Shop::getSewageCost</definition>
+        <argsstring>()</argsstring>
+        <name>getSewageCost</name>
+        <reimplements refid="classCommercialBuilding_1aa7b21c407ff71a2f360ec1c30d59c3e7">getSewageCost</reimplements>
+        <briefdescription>
+<para>Gets the sewage cost of the shop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Sewage cost as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="62" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1af6b2e80ee72d930ebb7965b01f9298de" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Shop::getWaterReq</definition>
+        <argsstring>()</argsstring>
+        <name>getWaterReq</name>
+        <reimplements refid="classCommercialBuilding_1ac35a6efffcba448cc807778397020b55">getWaterReq</reimplements>
+        <briefdescription>
+<para>Gets the water requirement of the shop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Water requirement as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="68" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1a60bf3c5eb5591d6fa221da7f2afbd986" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Shop::requestState</definition>
+        <argsstring>()</argsstring>
+        <name>requestState</name>
+        <reimplements refid="classCommercialBuilding_1ae8ddedfb93a3d0a88e5179f8aaa60fa1">requestState</reimplements>
+        <briefdescription>
+<para>Requests the current state of the shop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="73" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1a66737f453c2158eeea77021235120673" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Shop::setState</definition>
+        <argsstring>(State *newState)</argsstring>
+        <name>setState</name>
+        <reimplements refid="classCommercialBuilding_1a16e612d08679f4451fd2ae773251132b">setState</reimplements>
+        <param>
+          <type><ref refid="classState" kindref="compound">State</ref> *</type>
+          <declname>newState</declname>
+        </param>
+        <briefdescription>
+<para>sets the state of the building </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="78" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1acb12379ff875f5d34734f1ea913e52e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Shop::getWasteCost</definition>
+        <argsstring>()</argsstring>
+        <name>getWasteCost</name>
+        <reimplements refid="classBuildings_1a94e15ba281ac20d60e1a4632f7be1292">getWasteCost</reimplements>
+        <briefdescription>
+<para>Gets the waste cost associated with the shop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Waste cost as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="84" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1a38f043da1988090615fa81d18abaa159" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float Shop::getSales</definition>
+        <argsstring>()</argsstring>
+        <name>getSales</name>
+        <reimplements refid="classCommercialBuilding_1ab69ce9a94734ece60e08f51262aed158">getSales</reimplements>
+        <briefdescription>
+<para>Gets the total sales made by the shop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Total sales as a float. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="92" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1a19e8b7ad4a220fc7f7d792eb31f22d3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float Shop::getProfit</definition>
+        <argsstring>()</argsstring>
+        <name>getProfit</name>
+        <reimplements refid="classCommercialBuilding_1acc4395bf128e80842b3ae76da0f4b2d8">getProfit</reimplements>
+        <briefdescription>
+<para>Gets the total profit made by the shop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Total profit as a float. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="98" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1a78b0065549ab2c6bdd24f64aababc7ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Shop::payCitizen</definition>
+        <argsstring>()</argsstring>
+        <name>payCitizen</name>
+        <reimplements refid="classCommercialBuilding_1ad0e3cc060d90ba7fb925efdc1649b894">payCitizen</reimplements>
+        <briefdescription>
+<para>Pays a citizen associated with the shop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The amount paid to the citizen as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="104" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="85" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1a5468648015a4ecfbfa5b728088d31f06" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Shop::getCommercialIncome</definition>
+        <argsstring>()</argsstring>
+        <name>getCommercialIncome</name>
+        <reimplements refid="classCommercialBuilding_1ae827061bd272d37402e9d5cb9f961363">getCommercialIncome</reimplements>
+        <briefdescription>
+<para>gets the current income of a commercial building </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the income as an integer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="110" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1aa17740ce746a83876ade483a83d8e143" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double Shop::getBalance</definition>
+        <argsstring>()</argsstring>
+        <name>getBalance</name>
+        <reimplements refid="classCommercialBuilding_1a77ce6bb30a4f595867ed3be7dc9e0f17">getBalance</reimplements>
+        <briefdescription>
+<para>gets the current income of a commercial building </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the income as an integer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="116" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1ad47e74adfbb01b41ea8017cff3528ef6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Shop::setBalance</definition>
+        <argsstring>(double b)</argsstring>
+        <name>setBalance</name>
+        <reimplements refid="classCommercialBuilding_1ae3d75fa3195c1808f68c1e165bee053b">setBalance</reimplements>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>gets the current income of a commercial building </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the income as an integer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="122" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1a84c3ef714bbea1526ffc7d10816065fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Shop::getPower</definition>
+        <argsstring>()</argsstring>
+        <name>getPower</name>
+        <reimplements refid="classCommercialBuilding_1a0dbff6c0c9a198adb9a7a69b07b1bd76">getPower</reimplements>
+        <briefdescription>
+<para>Receives power for the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if power was received successfully, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="128" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="113" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1aef532e592b365c055d4cfcacf271b348" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Shop::getWater</definition>
+        <argsstring>()</argsstring>
+        <name>getWater</name>
+        <reimplements refid="classCommercialBuilding_1a804eb1be891988cb585bd48c0ab09635">getWater</reimplements>
+        <briefdescription>
+<para>Receives water for the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if water was received successfully, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="134" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="134" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1a4788fd8231258f31b0862b75d90865d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Shop::cleanWaste</definition>
+        <argsstring>()</argsstring>
+        <name>cleanWaste</name>
+        <reimplements refid="classCommercialBuilding_1a59e9259b25798a7d754feffb13567370">cleanWaste</reimplements>
+        <briefdescription>
+<para>Cleans the waste of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if waste cleaning was successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="140" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="127" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1aef7c267ce54cd6760eba39cc705316ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Shop::cleanSewage</definition>
+        <argsstring>()</argsstring>
+        <name>cleanSewage</name>
+        <reimplements refid="classCommercialBuilding_1aa6e46234e1cfa37f5bb3ba8b304b5ef7">cleanSewage</reimplements>
+        <briefdescription>
+<para>Cleans the sewage of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if sewage cleaning was successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="146" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="120" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classShop_1a4ab804b362879f0d8d3bdba6031ae555" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Shop::addBuilding</definition>
+        <argsstring>()</argsstring>
+        <name>addBuilding</name>
+        <reimplements refid="classCommercialBuilding_1a079544eb7848e26b567efcb1d73fd303">addBuilding</reimplements>
+        <briefdescription>
+<para>Add a building to the <ref refid="classUtility" kindref="compound">Utility</ref> resource. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>building</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The building to add to the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="153" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp" bodystart="106" bodyend="111"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class representing a shop, inheriting from <ref refid="classCommercialBuilding" kindref="compound">CommercialBuilding</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+      </node>
+      <node id="1">
+        <label>Shop</label>
+        <link refid="classShop"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CommercialBuilding</label>
+        <link refid="classCommercialBuilding"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>listOfCitizens</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Shop</label>
+        <link refid="classShop"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="10">
+        <label>State</label>
+        <link refid="classState"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>building</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Citizen</label>
+        <link refid="classCitizen"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>tm</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CommercialBuilding</label>
+        <link refid="classCommercialBuilding"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>TravelManager</label>
+        <link refid="classTravelManager"/>
+      </node>
+      <node id="9">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="7">
+        <label>PopulationControl</label>
+        <link refid="classPopulationControl"/>
+      </node>
+      <node id="5">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.h" bodystart="12" bodyend="154"/>
+    <listofallmembers>
+      <member refid="classShop_1a4ab804b362879f0d8d3bdba6031ae555" prot="public" virt="virtual"><scope>Shop</scope><name>addBuilding</name></member>
+      <member refid="classCommercialBuilding_1ad068ea036943a9c13d98b182d918be34" prot="protected" virt="non-virtual"><scope>Shop</scope><name>balance</name></member>
+      <member refid="classBuildings_1a0702b3d14494ac145aaa428aa4e01afb" prot="protected" virt="non-virtual"><scope>Shop</scope><name>buildingName</name></member>
+      <member refid="classBuildings_1af5b874917cf6e1dbe90dbcf5b9b37326" prot="public" virt="non-virtual"><scope>Shop</scope><name>Buildings</name></member>
+      <member refid="classBuildings_1a010d594842ce60f01bdf00f939ea2011" prot="protected" virt="non-virtual"><scope>Shop</scope><name>buildingType</name></member>
+      <member refid="classShop_1aef7c267ce54cd6760eba39cc705316ab" prot="public" virt="virtual"><scope>Shop</scope><name>cleanSewage</name></member>
+      <member refid="classShop_1a4788fd8231258f31b0862b75d90865d5" prot="public" virt="virtual"><scope>Shop</scope><name>cleanWaste</name></member>
+      <member refid="classCommercialBuilding_1a72362a30505ac675f5a388641723e4e4" prot="protected" virt="non-virtual"><scope>Shop</scope><name>employment</name></member>
+      <member refid="classShop_1aa17740ce746a83876ade483a83d8e143" prot="public" virt="virtual"><scope>Shop</scope><name>getBalance</name></member>
+      <member refid="classBuildings_1a038e1c1d7a924c97fc3cdc5954ccd72b" prot="public" virt="virtual"><scope>Shop</scope><name>getBirthRate</name></member>
+      <member refid="classShop_1a084fd7aad71f4b8c72e7ce8d68acc689" prot="public" virt="virtual"><scope>Shop</scope><name>getBuildingType</name></member>
+      <member refid="classShop_1a5468648015a4ecfbfa5b728088d31f06" prot="public" virt="virtual"><scope>Shop</scope><name>getCommercialIncome</name></member>
+      <member refid="classBuildings_1aea12268287656270eb98cd2f22b82e02" prot="public" virt="virtual"><scope>Shop</scope><name>getEducationalCoverage</name></member>
+      <member refid="classBuildings_1a993a9340e25a58e2e2912090742f5ba6" prot="public" virt="virtual"><scope>Shop</scope><name>getHealthCoverage</name></member>
+      <member refid="classShop_1af94d5d055af855dfa8690076423282d1" prot="public" virt="virtual"><scope>Shop</scope><name>getJobsCreated</name></member>
+      <member refid="classBuildings_1ae0a010f94a01d180d1a6e4d023b54561" prot="public" virt="virtual"><scope>Shop</scope><name>getlistOfResidence</name></member>
+      <member refid="classShop_1aa90829bc6635f83e9c3746cac2177023" prot="public" virt="virtual"><scope>Shop</scope><name>getMaintenanceCost</name></member>
+      <member refid="classShop_1a43a344cea2213650d1f0f103f00690e8" prot="public" virt="virtual"><scope>Shop</scope><name>getName</name></member>
+      <member refid="classShop_1a84c3ef714bbea1526ffc7d10816065fc" prot="public" virt="virtual"><scope>Shop</scope><name>getPower</name></member>
+      <member refid="classShop_1a69daf8ea3fb5728c5ab9e7f86964f9dd" prot="public" virt="virtual"><scope>Shop</scope><name>getPowerReq</name></member>
+      <member refid="classShop_1a19e8b7ad4a220fc7f7d792eb31f22d3d" prot="public" virt="virtual"><scope>Shop</scope><name>getProfit</name></member>
+      <member refid="classShop_1a38f043da1988090615fa81d18abaa159" prot="public" virt="virtual"><scope>Shop</scope><name>getSales</name></member>
+      <member refid="classBuildings_1a647c790019850fd479ac20fcbd21d873" prot="public" virt="virtual"><scope>Shop</scope><name>getSecurityCoverage</name></member>
+      <member refid="classShop_1a807d0fe43f8dbadc43d593dd5d1362fc" prot="public" virt="virtual"><scope>Shop</scope><name>getSewageCost</name></member>
+      <member refid="classShop_1acb12379ff875f5d34734f1ea913e52e4" prot="public" virt="virtual"><scope>Shop</scope><name>getWasteCost</name></member>
+      <member refid="classShop_1aef532e592b365c055d4cfcacf271b348" prot="public" virt="virtual"><scope>Shop</scope><name>getWater</name></member>
+      <member refid="classShop_1af6b2e80ee72d930ebb7965b01f9298de" prot="public" virt="virtual"><scope>Shop</scope><name>getWaterReq</name></member>
+      <member refid="classCommercialBuilding_1a09905ecc83004dc90a7b531304f0f2ab" prot="protected" virt="non-virtual"><scope>Shop</scope><name>income</name></member>
+      <member refid="classBuildings_1a7497cf317a1deb55c35864bc08c82443" prot="protected" virt="non-virtual"><scope>Shop</scope><name>listOfCitizens</name></member>
+      <member refid="classBuildings_1a7320201a32ce9541b3aeddac32d9988a" prot="protected" virt="non-virtual"><scope>Shop</scope><name>maintenanceCost</name></member>
+      <member refid="classShop_1a78b0065549ab2c6bdd24f64aababc7ae" prot="public" virt="virtual"><scope>Shop</scope><name>payCitizen</name></member>
+      <member refid="classBuildings_1a572094ecc5a5d844acbfe6f18650ed9d" prot="protected" virt="non-virtual"><scope>Shop</scope><name>powerReq</name></member>
+      <member refid="classCommercialBuilding_1a9c872f01effc2ccb37a94444da2d7712" prot="protected" virt="non-virtual"><scope>Shop</scope><name>profit</name></member>
+      <member refid="classShop_1a60bf3c5eb5591d6fa221da7f2afbd986" prot="public" virt="virtual"><scope>Shop</scope><name>requestState</name></member>
+      <member refid="classBuildings_1aabc1cfaf764d4c41889ecf1f0320fa8e" prot="public" virt="non-virtual"><scope>Shop</scope><name>resources</name></member>
+      <member refid="classCommercialBuilding_1ad74a205cf4b2a7c13d257819143b0f24" prot="protected" virt="non-virtual"><scope>Shop</scope><name>sales</name></member>
+      <member refid="classShop_1ad47e74adfbb01b41ea8017cff3528ef6" prot="public" virt="virtual"><scope>Shop</scope><name>setBalance</name></member>
+      <member refid="classBuildings_1af3184f3602e4c1dd6ac010900770cd57" prot="public" virt="non-virtual"><scope>Shop</scope><name>setResources</name></member>
+      <member refid="classShop_1a66737f453c2158eeea77021235120673" prot="public" virt="virtual"><scope>Shop</scope><name>setState</name></member>
+      <member refid="classBuildings_1aae45243bbcd3ac7c47e9cbb83162f1f8" prot="protected" virt="non-virtual"><scope>Shop</scope><name>sewageCost</name></member>
+      <member refid="classShop_1a4bc9f71dbc234bb78798cbab94da97c7" prot="public" virt="non-virtual"><scope>Shop</scope><name>Shop</name></member>
+      <member refid="classCommercialBuilding_1a0cbfa79eb4bb10bc0af2ec34b489adc8" prot="protected" virt="non-virtual"><scope>Shop</scope><name>state</name></member>
+      <member refid="classCommercialBuilding_1a3b4753ca12a2e066500379854623176e" prot="protected" virt="non-virtual"><scope>Shop</scope><name>waste</name></member>
+      <member refid="classBuildings_1ac8c0debb07dcf0555a28be710377fc36" prot="protected" virt="non-virtual"><scope>Shop</scope><name>waterReq</name></member>
+      <member refid="classBuildings_1a60b14d2c02c2424eeb0ba52bd9fee170" prot="public" virt="pure-virtual"><scope>Shop</scope><name>~Buildings</name></member>
+      <member refid="classCommercialBuilding_1aee93bcc9efa7d1866b94b0df2bf7b923" prot="public" virt="virtual"><scope>Shop</scope><name>~CommercialBuilding</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

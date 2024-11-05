@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classConstructionCompany" kind="class" language="C++" prot="public">
+    <compoundname>ConstructionCompany</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classConstructionCompany_1a0ef3dd8ac46d690f987ac748e49bf730" prot="private" static="no" mutable="no">
+        <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+        <definition>Buildings* ConstructionCompany::_buildings</definition>
+        <argsstring></argsstring>
+        <name>_buildings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ConstructionCompany.h" line="14" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ConstructionCompany.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classConstructionCompany_1a5bfc7ec47bd4a14fbbac2fcaafa1ef4a" prot="public" static="no" mutable="no">
+        <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+        <definition>Buildings* ConstructionCompany::_unnamed_Buildings_</definition>
+        <argsstring></argsstring>
+        <name>_unnamed_Buildings_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ConstructionCompany.h" line="15" column="19" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ConstructionCompany.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classConstructionCompany_1ab0c063ce57db8ecae786be39f6735751" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConstructionCompany::construct</definition>
+        <argsstring>()</argsstring>
+        <name>construct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ConstructionCompany.h" line="17" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ConstructionCompany.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>listOfCitizens</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="1">
+        <label>ConstructionCompany</label>
+        <link refid="classConstructionCompany"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_unnamed_Buildings_</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>State</label>
+        <link refid="classState"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>building</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Citizen</label>
+        <link refid="classCitizen"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>tm</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>TravelManager</label>
+        <link refid="classTravelManager"/>
+      </node>
+      <node id="8">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="6">
+        <label>PopulationControl</label>
+        <link refid="classPopulationControl"/>
+      </node>
+      <node id="4">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ConstructionCompany.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ConstructionCompany.h" bodystart="13" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classConstructionCompany_1a0ef3dd8ac46d690f987ac748e49bf730" prot="private" virt="non-virtual"><scope>ConstructionCompany</scope><name>_buildings</name></member>
+      <member refid="classConstructionCompany_1a5bfc7ec47bd4a14fbbac2fcaafa1ef4a" prot="public" virt="non-virtual"><scope>ConstructionCompany</scope><name>_unnamed_Buildings_</name></member>
+      <member refid="classConstructionCompany_1ab0c063ce57db8ecae786be39f6735751" prot="public" virt="non-virtual"><scope>ConstructionCompany</scope><name>construct</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

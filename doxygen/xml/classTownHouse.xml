@@ -1,0 +1,554 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classTownHouse" kind="class" language="C++" prot="public">
+    <compoundname>TownHouse</compoundname>
+    <basecompoundref refid="classResidentialBuilding" prot="public" virt="non-virtual">ResidentialBuilding</basecompoundref>
+    <includes refid="TownHouse_8h" local="no">TownHouse.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTownHouse_1aec4c056db51e7e5fdee3b9222f8e33c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TownHouse::TownHouse</definition>
+        <argsstring>(string bName, int pReq, int wReq, double mCost, int sCost, int waste, int capacity)</argsstring>
+        <name>TownHouse</name>
+        <param>
+          <type>string</type>
+          <declname>bName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pReq</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wReq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mCost</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sCost</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>waste</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="classTownHouse" kindref="compound">TownHouse</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the townhouse </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pReq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Power requirement </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wReq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Water requirement </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mCost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maintenance cost </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sCost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sewage cost </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>waste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount of waste produced </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum capacity of the townhouse </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.h" line="25" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.cpp" bodystart="12" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classTownHouse_1a6271d646da88bd504a6594a1a344416d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>virtual string TownHouse::getBuildingType</definition>
+        <argsstring>()</argsstring>
+        <name>getBuildingType</name>
+        <reimplements refid="classResidentialBuilding_1aee6ea83d6f70ac8db9c5960db42e88b7">getBuildingType</reimplements>
+        <briefdescription>
+<para>Gets the type of building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The building type as a string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.h" line="31" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classTownHouse_1af316bbcc836847c146f3a2c6aeb29e63" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double TownHouse::getMaintenanceCost</definition>
+        <argsstring>()</argsstring>
+        <name>getMaintenanceCost</name>
+        <reimplements refid="classResidentialBuilding_1ae086cdd073cc6055e5423353828eebec">getMaintenanceCost</reimplements>
+        <briefdescription>
+<para>Gets the maintenance cost of the townhouse. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The maintenance cost. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.h" line="37" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.cpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classTownHouse_1a9a862362539fcabdcbfbab9525115b76" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string TownHouse::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <reimplements refid="classResidentialBuilding_1aaf571c879f3912a84df4fbcb3710e00f">getName</reimplements>
+        <briefdescription>
+<para>Gets the name of the townhouse. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The name of the townhouse as a string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.h" line="43" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.cpp" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classTownHouse_1a1bd58ca5b8c72911f4e315d83dc80460" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int TownHouse::getPowerReq</definition>
+        <argsstring>()</argsstring>
+        <name>getPowerReq</name>
+        <reimplements refid="classResidentialBuilding_1a4b05dc85c1b4578df1c77bfa8b54592b">getPowerReq</reimplements>
+        <briefdescription>
+<para>Gets the power requirement of the townhouse. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The power requirement. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.h" line="49" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.cpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classTownHouse_1abcc0f59ac66c8853df44186cb548cb40" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int TownHouse::getSewageCost</definition>
+        <argsstring>()</argsstring>
+        <name>getSewageCost</name>
+        <reimplements refid="classResidentialBuilding_1a1a8b12239511450428c00d1872390264">getSewageCost</reimplements>
+        <briefdescription>
+<para>Gets the sewage cost of the townhouse. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The sewage cost. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.h" line="55" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.cpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classTownHouse_1a24aadb15b792516d7ce8b1c2f75a2d57" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int TownHouse::getWaterReq</definition>
+        <argsstring>()</argsstring>
+        <name>getWaterReq</name>
+        <reimplements refid="classResidentialBuilding_1aed397e7f9cc0e3f76879b3f92a212313">getWaterReq</reimplements>
+        <briefdescription>
+<para>Gets the water requirement of the townhouse. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The water requirement. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.h" line="61" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.cpp" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classTownHouse_1adbcc420d2864717c39f2536f343a373b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TownHouse::requestState</definition>
+        <argsstring>()</argsstring>
+        <name>requestState</name>
+        <reimplements refid="classResidentialBuilding_1a4450dc123c2872db779adea553c197ab">requestState</reimplements>
+        <briefdescription>
+<para>Requests the current state of the townhouse. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.h" line="66" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.cpp" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classTownHouse_1a76d47d843bc1681c078db85513b3ad4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCitizen" kindref="compound">Citizen</ref> *</type>
+        <definition>Citizen * TownHouse::getListOfResidents</definition>
+        <argsstring>()</argsstring>
+        <name>getListOfResidents</name>
+        <briefdescription>
+<para>Gets the list of residents in the townhouse. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to the list of residents. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.h" line="72" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.cpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classTownHouse_1a039ffaf3b20dd029b68f5bf4aec7fb3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TownHouse::getCapacity</definition>
+        <argsstring>()</argsstring>
+        <name>getCapacity</name>
+        <briefdescription>
+<para>Gets the maximum capacity of the townhouse. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The capacity of the townhouse. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.h" line="78" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.cpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classTownHouse_1a2c9a1f2a819253e4a86ad6cb57d40edd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int TownHouse::getWasteCost</definition>
+        <argsstring>()</argsstring>
+        <name>getWasteCost</name>
+        <reimplements refid="classBuildings_1a94e15ba281ac20d60e1a4632f7be1292">getWasteCost</reimplements>
+        <briefdescription>
+<para>Gets the waste cost associated with the townhouse. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The waste cost. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.h" line="84" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.cpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classTownHouse_1a27163316a08110418294ceef588b5b1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TownHouse::setState</definition>
+        <argsstring>(State *newState)</argsstring>
+        <name>setState</name>
+        <reimplements refid="classResidentialBuilding_1a389cda02037710dc3e3fb378cd81e87f">setState</reimplements>
+        <param>
+          <type><ref refid="classState" kindref="compound">State</ref> *</type>
+          <declname>newState</declname>
+        </param>
+        <briefdescription>
+<para>sets the state of the building </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.h" line="89" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.cpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classTownHouse_1ae046e54305fbb5979640e7fece84dcb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool TownHouse::cleanSewage</definition>
+        <argsstring>()</argsstring>
+        <name>cleanSewage</name>
+        <reimplements refid="classResidentialBuilding_1af409d286d0d15a39c1e4c835b502205c">cleanSewage</reimplements>
+        <briefdescription>
+<para>Cleans the sewage of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the cleaning was successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.h" line="95" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.cpp" bodystart="87" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classTownHouse_1a8b3a6871c11491c2427bd03c6a547624" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool TownHouse::cleanWaste</definition>
+        <argsstring>()</argsstring>
+        <name>cleanWaste</name>
+        <reimplements refid="classResidentialBuilding_1a9fef368fd52003c9bcef6956b20a41ad">cleanWaste</reimplements>
+        <briefdescription>
+<para>Cleans the waste of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the cleaning was successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.h" line="101" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.cpp" bodystart="94" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classTownHouse_1a32b925d3ecbda9a5e6e0a7c404cf3957" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool TownHouse::getPower</definition>
+        <argsstring>()</argsstring>
+        <name>getPower</name>
+        <reimplements refid="classResidentialBuilding_1ae867db795935c20c2c5a45463ac33fb0">getPower</reimplements>
+        <briefdescription>
+<para>Receives power for the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if power was received successfully, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.h" line="107" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.cpp" bodystart="80" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classTownHouse_1a024e646590e992803d8b2b4403d5f45a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool TownHouse::getWater</definition>
+        <argsstring>()</argsstring>
+        <name>getWater</name>
+        <reimplements refid="classResidentialBuilding_1aae44b69bdedffbb41c78205bcfb712e1">getWater</reimplements>
+        <briefdescription>
+<para>Receives water for the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if water was received successfully, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.h" line="113" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.cpp" bodystart="101" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classTownHouse_1a95e14dce352464977e74c68d95556ffa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TownHouse::addBuilding</definition>
+        <argsstring>()</argsstring>
+        <name>addBuilding</name>
+        <reimplements refid="classResidentialBuilding_1ae484947db4eea1a9e2858f47db5ee43d">addBuilding</reimplements>
+        <briefdescription>
+<para>Add a building to the Building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>building</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The building to add to the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.h" line="120" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.cpp" bodystart="73" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a townhouse, a type of residential building. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+      </node>
+      <node id="2">
+        <label>ResidentialBuilding</label>
+        <link refid="classResidentialBuilding"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TownHouse</label>
+        <link refid="classTownHouse"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>listOfCitizens</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ResidentialBuilding</label>
+        <link refid="classResidentialBuilding"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="10">
+        <label>State</label>
+        <link refid="classState"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>building</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Citizen</label>
+        <link refid="classCitizen"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>tm</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>TravelManager</label>
+        <link refid="classTravelManager"/>
+      </node>
+      <node id="9">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="7">
+        <label>PopulationControl</label>
+        <link refid="classPopulationControl"/>
+      </node>
+      <node id="1">
+        <label>TownHouse</label>
+        <link refid="classTownHouse"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.h" line="13" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.h" bodystart="13" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classTownHouse_1a95e14dce352464977e74c68d95556ffa" prot="public" virt="virtual"><scope>TownHouse</scope><name>addBuilding</name></member>
+      <member refid="classBuildings_1afc21c459782fab5d58a3517c09474df0" prot="protected" virt="non-virtual"><scope>TownHouse</scope><name>balance</name></member>
+      <member refid="classBuildings_1a0702b3d14494ac145aaa428aa4e01afb" prot="protected" virt="non-virtual"><scope>TownHouse</scope><name>buildingName</name></member>
+      <member refid="classBuildings_1af5b874917cf6e1dbe90dbcf5b9b37326" prot="public" virt="non-virtual"><scope>TownHouse</scope><name>Buildings</name></member>
+      <member refid="classBuildings_1a010d594842ce60f01bdf00f939ea2011" prot="protected" virt="non-virtual"><scope>TownHouse</scope><name>buildingType</name></member>
+      <member refid="classResidentialBuilding_1a5a96a6a10da11b24be5336c719a28df6" prot="protected" virt="non-virtual"><scope>TownHouse</scope><name>capacity</name></member>
+      <member refid="classTownHouse_1ae046e54305fbb5979640e7fece84dcb9" prot="public" virt="virtual"><scope>TownHouse</scope><name>cleanSewage</name></member>
+      <member refid="classTownHouse_1a8b3a6871c11491c2427bd03c6a547624" prot="public" virt="virtual"><scope>TownHouse</scope><name>cleanWaste</name></member>
+      <member refid="classBuildings_1a4254206fe0f1f565e269e1e543cba834" prot="public" virt="virtual"><scope>TownHouse</scope><name>getBalance</name></member>
+      <member refid="classBuildings_1a038e1c1d7a924c97fc3cdc5954ccd72b" prot="public" virt="virtual"><scope>TownHouse</scope><name>getBirthRate</name></member>
+      <member refid="classTownHouse_1a6271d646da88bd504a6594a1a344416d" prot="public" virt="virtual"><scope>TownHouse</scope><name>getBuildingType</name></member>
+      <member refid="classTownHouse_1a039ffaf3b20dd029b68f5bf4aec7fb3e" prot="public" virt="non-virtual"><scope>TownHouse</scope><name>getCapacity</name></member>
+      <member refid="classBuildings_1a14a35e8d36b717014241a9f416324ae5" prot="public" virt="virtual"><scope>TownHouse</scope><name>getCommercialIncome</name></member>
+      <member refid="classBuildings_1aea12268287656270eb98cd2f22b82e02" prot="public" virt="virtual"><scope>TownHouse</scope><name>getEducationalCoverage</name></member>
+      <member refid="classBuildings_1a993a9340e25a58e2e2912090742f5ba6" prot="public" virt="virtual"><scope>TownHouse</scope><name>getHealthCoverage</name></member>
+      <member refid="classResidentialBuilding_1a7a6d78e7b5d798d8f9c6221afcb19e7b" prot="public" virt="virtual"><scope>TownHouse</scope><name>getJobsCreated</name></member>
+      <member refid="classBuildings_1ae0a010f94a01d180d1a6e4d023b54561" prot="public" virt="virtual"><scope>TownHouse</scope><name>getlistOfResidence</name></member>
+      <member refid="classTownHouse_1a76d47d843bc1681c078db85513b3ad4d" prot="public" virt="non-virtual"><scope>TownHouse</scope><name>getListOfResidents</name></member>
+      <member refid="classTownHouse_1af316bbcc836847c146f3a2c6aeb29e63" prot="public" virt="virtual"><scope>TownHouse</scope><name>getMaintenanceCost</name></member>
+      <member refid="classTownHouse_1a9a862362539fcabdcbfbab9525115b76" prot="public" virt="virtual"><scope>TownHouse</scope><name>getName</name></member>
+      <member refid="classTownHouse_1a32b925d3ecbda9a5e6e0a7c404cf3957" prot="public" virt="virtual"><scope>TownHouse</scope><name>getPower</name></member>
+      <member refid="classTownHouse_1a1bd58ca5b8c72911f4e315d83dc80460" prot="public" virt="virtual"><scope>TownHouse</scope><name>getPowerReq</name></member>
+      <member refid="classBuildings_1ad063833f87a3337b6ed6f1f3686a6e45" prot="public" virt="virtual"><scope>TownHouse</scope><name>getProfit</name></member>
+      <member refid="classBuildings_1a329450878a0e655e4a59f29e24bd3202" prot="public" virt="virtual"><scope>TownHouse</scope><name>getSales</name></member>
+      <member refid="classBuildings_1a647c790019850fd479ac20fcbd21d873" prot="public" virt="virtual"><scope>TownHouse</scope><name>getSecurityCoverage</name></member>
+      <member refid="classTownHouse_1abcc0f59ac66c8853df44186cb548cb40" prot="public" virt="virtual"><scope>TownHouse</scope><name>getSewageCost</name></member>
+      <member refid="classTownHouse_1a2c9a1f2a819253e4a86ad6cb57d40edd" prot="public" virt="virtual"><scope>TownHouse</scope><name>getWasteCost</name></member>
+      <member refid="classTownHouse_1a024e646590e992803d8b2b4403d5f45a" prot="public" virt="virtual"><scope>TownHouse</scope><name>getWater</name></member>
+      <member refid="classTownHouse_1a24aadb15b792516d7ce8b1c2f75a2d57" prot="public" virt="virtual"><scope>TownHouse</scope><name>getWaterReq</name></member>
+      <member refid="classBuildings_1a7497cf317a1deb55c35864bc08c82443" prot="protected" virt="non-virtual"><scope>TownHouse</scope><name>listOfCitizens</name></member>
+      <member refid="classBuildings_1a7320201a32ce9541b3aeddac32d9988a" prot="protected" virt="non-virtual"><scope>TownHouse</scope><name>maintenanceCost</name></member>
+      <member refid="classBuildings_1a291fa645584d52be99367ba4796ebe14" prot="public" virt="virtual"><scope>TownHouse</scope><name>payCitizen</name></member>
+      <member refid="classBuildings_1a572094ecc5a5d844acbfe6f18650ed9d" prot="protected" virt="non-virtual"><scope>TownHouse</scope><name>powerReq</name></member>
+      <member refid="classBuildings_1a4f41883b0ba36ed4840bc905cc19ea3d" prot="protected" virt="non-virtual"><scope>TownHouse</scope><name>profit</name></member>
+      <member refid="classTownHouse_1adbcc420d2864717c39f2536f343a373b" prot="public" virt="virtual"><scope>TownHouse</scope><name>requestState</name></member>
+      <member refid="classResidentialBuilding_1a811bccb2d9375f58b950471920a340ac" prot="protected" virt="non-virtual"><scope>TownHouse</scope><name>resources</name></member>
+      <member refid="classBuildings_1a2c3680425e9cd1526d1c4c834c017690" prot="protected" virt="non-virtual"><scope>TownHouse</scope><name>sales</name></member>
+      <member refid="classBuildings_1a6c02963e37bf20ef827f063209901a3a" prot="public" virt="virtual"><scope>TownHouse</scope><name>setBalance</name></member>
+      <member refid="classBuildings_1af3184f3602e4c1dd6ac010900770cd57" prot="public" virt="non-virtual"><scope>TownHouse</scope><name>setResources</name></member>
+      <member refid="classTownHouse_1a27163316a08110418294ceef588b5b1c" prot="public" virt="virtual"><scope>TownHouse</scope><name>setState</name></member>
+      <member refid="classBuildings_1aae45243bbcd3ac7c47e9cbb83162f1f8" prot="protected" virt="non-virtual"><scope>TownHouse</scope><name>sewageCost</name></member>
+      <member refid="classResidentialBuilding_1a6cc26a5041ab45770fdaa7da789b08d9" prot="protected" virt="non-virtual"><scope>TownHouse</scope><name>state</name></member>
+      <member refid="classTownHouse_1aec4c056db51e7e5fdee3b9222f8e33c6" prot="public" virt="non-virtual"><scope>TownHouse</scope><name>TownHouse</name></member>
+      <member refid="classResidentialBuilding_1ac98afb1860c6701fece560c9f7cb4097" prot="protected" virt="non-virtual"><scope>TownHouse</scope><name>waste</name></member>
+      <member refid="classBuildings_1ac8c0debb07dcf0555a28be710377fc36" prot="protected" virt="non-virtual"><scope>TownHouse</scope><name>waterReq</name></member>
+      <member refid="classBuildings_1a60b14d2c02c2424eeb0ba52bd9fee170" prot="public" virt="pure-virtual"><scope>TownHouse</scope><name>~Buildings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

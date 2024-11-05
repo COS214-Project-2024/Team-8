@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classwaterResource" kind="class" language="C++" prot="public">
+    <compoundname>waterResource</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Resource</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classwaterResource_1aa938b42890adaf86bf9dba0109c75077" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float waterResource::availableWater</definition>
+        <argsstring></argsstring>
+        <name>availableWater</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/waterResource.h" line="8" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/waterResource.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classwaterResource_1acf390f4b571f257b5d3262e366603849" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>waterResource::waterResource</definition>
+        <argsstring>()</argsstring>
+        <name>waterResource</name>
+        <briefdescription>
+<para>Construct a new power Resource:: Resource object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/waterResource.h" line="11" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/waterResource.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classwaterResource_1a36469699f6961fafcde63c7c3289e4f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool waterResource::giveResource</definition>
+        <argsstring>(float units) override</argsstring>
+        <name>giveResource</name>
+        <param>
+          <type>float</type>
+          <declname>units</declname>
+        </param>
+        <briefdescription>
+<para>Return true if the requested units of water can be supplied and subtract the available water, otherwise return false if it can not be supplied. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>units</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/waterResource.h" line="12" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/waterResource.cpp" bodystart="17" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classwaterResource_1a53b090ab9aacbfe0519ee41494c16d66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void waterResource::receiveResource</definition>
+        <argsstring>() override</argsstring>
+        <name>receiveResource</name>
+        <briefdescription>
+<para>Get water from the water utility object, increase the available water by the water received from said water utility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>units</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/waterResource.h" line="13" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/waterResource.cpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classwaterResource_1ae5bd1f7194d774e291705cfc503116f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float waterResource::getAvailableAmount</definition>
+        <argsstring>() override</argsstring>
+        <name>getAvailableAmount</name>
+        <briefdescription>
+<para>Get the available amount of water. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/waterResource.h" line="14" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/waterResource.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classwaterResource_1a821846ef03381c6da2bfd5085adf8c94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>waterResource::~waterResource</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~waterResource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/waterResource.h" line="16" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>waterResource</label>
+        <link refid="classwaterResource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Resource</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>waterResource</label>
+        <link refid="classwaterResource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Resource</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/waterResource.h" line="6" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/waterResource.h" bodystart="6" bodyend="17"/>
+    <listofallmembers>
+      <member refid="classwaterResource_1aa938b42890adaf86bf9dba0109c75077" prot="private" virt="non-virtual"><scope>waterResource</scope><name>availableWater</name></member>
+      <member refid="classwaterResource_1ae5bd1f7194d774e291705cfc503116f9" prot="public" virt="non-virtual"><scope>waterResource</scope><name>getAvailableAmount</name></member>
+      <member refid="classwaterResource_1a36469699f6961fafcde63c7c3289e4f7" prot="public" virt="non-virtual"><scope>waterResource</scope><name>giveResource</name></member>
+      <member refid="classwaterResource_1a53b090ab9aacbfe0519ee41494c16d66" prot="public" virt="non-virtual"><scope>waterResource</scope><name>receiveResource</name></member>
+      <member refid="classwaterResource_1acf390f4b571f257b5d3262e366603849" prot="public" virt="non-virtual"><scope>waterResource</scope><name>waterResource</name></member>
+      <member refid="classwaterResource_1a821846ef03381c6da2bfd5085adf8c94" prot="public" virt="non-virtual"><scope>waterResource</scope><name>~waterResource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

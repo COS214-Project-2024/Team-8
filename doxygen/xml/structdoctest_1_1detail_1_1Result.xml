@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1detail_1_1Result" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::detail::Result</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoctest_1_1detail_1_1Result_1a03ff571186856a429ada967ddfdf3006" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::detail::Result::m_passed</definition>
+        <argsstring></argsstring>
+        <name>m_passed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1397" column="16" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1detail_1_1Result_1a97968e037266580a799ab3deb9365b79" prot="public" static="no" mutable="no">
+        <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref></type>
+        <definition>String doctest::detail::Result::m_decomp</definition>
+        <argsstring></argsstring>
+        <name>m_decomp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1398" column="16" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1398" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1Result_1ae38382da1a2d2f8e33aebc7da15febc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doctest::detail::Result::Result</definition>
+        <argsstring>()=default</argsstring>
+        <name>Result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1400" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1Result_1ae4d2e8633aedaffa31f5c8b8530f522c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doctest::detail::Result::Result</definition>
+        <argsstring>(bool passed, const String &amp;decomposition=String())</argsstring>
+        <name>Result</name>
+        <param>
+          <type>bool</type>
+          <declname>passed</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdoctest_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>decomposition</declname>
+          <defval><ref refid="classdoctest_1_1String" kindref="compound">String</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1401" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>doctest::detail::Result</label>
+        <link refid="structdoctest_1_1detail_1_1Result"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_decomp</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>doctest::String::view</label>
+      </node>
+      <node id="2">
+        <label>doctest::String</label>
+        <link refid="classdoctest_1_1String"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1395" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1396" bodyend="1426"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1detail_1_1Result_1a97968e037266580a799ab3deb9365b79" prot="public" virt="non-virtual"><scope>doctest::detail::Result</scope><name>m_decomp</name></member>
+      <member refid="structdoctest_1_1detail_1_1Result_1a03ff571186856a429ada967ddfdf3006" prot="public" virt="non-virtual"><scope>doctest::detail::Result</scope><name>m_passed</name></member>
+      <member refid="structdoctest_1_1detail_1_1Result_1ae38382da1a2d2f8e33aebc7da15febc9" prot="public" virt="non-virtual"><scope>doctest::detail::Result</scope><name>Result</name></member>
+      <member refid="structdoctest_1_1detail_1_1Result_1ae4d2e8633aedaffa31f5c8b8530f522c" prot="public" virt="non-virtual"><scope>doctest::detail::Result</scope><name>Result</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

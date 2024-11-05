@@ -118,5 +118,9 @@ bool MedicalCenter::getWater(){
 return false;
 }
 
+MedicalCenter::~MedicalCenter() {
+    // Base class destructor will handle cleanup
+}
+
 
 

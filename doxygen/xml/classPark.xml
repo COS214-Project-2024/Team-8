@@ -1,0 +1,532 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classPark" kind="class" language="C++" prot="public">
+    <compoundname>Park</compoundname>
+    <basecompoundref refid="classLandmarkBuilding" prot="public" virt="non-virtual">LandmarkBuilding</basecompoundref>
+    <includes refid="Park_8h" local="no">Park.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPark_1afa45531425ee9dce5869488be3bb3e83" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Park::waste</definition>
+        <argsstring></argsstring>
+        <name>waste</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="13" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPark_1a455b9a72692e8b2bf2f8e0ddead48b21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Park::Park</definition>
+        <argsstring>(string bName, int pReq, int wReq, double mCost, int sCost, int waste)</argsstring>
+        <name>Park</name>
+        <param>
+          <type>string</type>
+          <declname>bName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pReq</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wReq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mCost</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sCost</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>waste</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="classPark" kindref="compound">Park</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the park. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pReq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Power requirements. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wReq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Water requirements. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mCost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maintenance cost. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sCost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sewage cost. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>waste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Waste generated. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="24" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="11" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classPark_1a2c89a3de0a83ca1928651a3afa672f39" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string Park::getBuildingType</definition>
+        <argsstring>()</argsstring>
+        <name>getBuildingType</name>
+        <reimplements refid="classLandmarkBuilding_1a10edeac1cd62dd4519d196b873bb7cc0">getBuildingType</reimplements>
+        <briefdescription>
+<para>Gets the type of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The building type as a string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="30" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classPark_1a22513f1e99d55418de7e889a2ed56806" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Park::getJobsCreated</definition>
+        <argsstring>()</argsstring>
+        <name>getJobsCreated</name>
+        <reimplements refid="classLandmarkBuilding_1a92abe6deecb03d320f0afdde7916f6ce">getJobsCreated</reimplements>
+        <briefdescription>
+<para>Gets the number of jobs created by the park. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of jobs as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="36" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classPark_1af812e134e0b512ab1fca97db97472423" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double Park::getMaintenanceCost</definition>
+        <argsstring>()</argsstring>
+        <name>getMaintenanceCost</name>
+        <reimplements refid="classLandmarkBuilding_1a3f6e6849c9a5f5d29ea16e51bff37006">getMaintenanceCost</reimplements>
+        <briefdescription>
+<para>Gets the maintenance cost of the park. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The maintenance cost as a double. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="42" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classPark_1a056d317a7474449c932f56c8ec703764" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string Park::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <reimplements refid="classLandmarkBuilding_1a25b9ca973c81578065f8cece37de00d4">getName</reimplements>
+        <briefdescription>
+<para>Gets the name of the park. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The name of the park as a string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="48" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classPark_1a67bb1c291999a2f84b7aefa48a149529" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Park::getPowerReq</definition>
+        <argsstring>()</argsstring>
+        <name>getPowerReq</name>
+        <reimplements refid="classLandmarkBuilding_1ac8df4603f8786f441a3aa50a3cd7a75c">getPowerReq</reimplements>
+        <briefdescription>
+<para>Gets the power requirements of the park. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The power requirements as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="54" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classPark_1a9321f126205b260775abcea15d4e3e6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Park::getSewageCost</definition>
+        <argsstring>()</argsstring>
+        <name>getSewageCost</name>
+        <reimplements refid="classLandmarkBuilding_1a780ade236d79adb8007752c718867639">getSewageCost</reimplements>
+        <briefdescription>
+<para>Gets the sewage cost of the park. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The sewage cost as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="60" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classPark_1af4e0a5f69702b0454f241acf528d56a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Park::getWaterReq</definition>
+        <argsstring>()</argsstring>
+        <name>getWaterReq</name>
+        <reimplements refid="classLandmarkBuilding_1acb64ab79a07960d7bec6491f2a026315">getWaterReq</reimplements>
+        <briefdescription>
+<para>Gets the water requirements of the park. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The water requirements as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="66" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classPark_1aacde897f3b78869e5e834d6d3e647fdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Park::requestState</definition>
+        <argsstring>()</argsstring>
+        <name>requestState</name>
+        <reimplements refid="classLandmarkBuilding_1a6aa7b601c577fa2114df4c826fd00517">requestState</reimplements>
+        <briefdescription>
+<para>Requests the current state of the park. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="71" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classPark_1ab5b7777dcc40a83ad3829a9ccd0d6108" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Park::setState</definition>
+        <argsstring>(State *newState)</argsstring>
+        <name>setState</name>
+        <reimplements refid="classLandmarkBuilding_1af8cf4edaa6c0609969d781448365186d">setState</reimplements>
+        <param>
+          <type><ref refid="classState" kindref="compound">State</ref> *</type>
+          <declname>newState</declname>
+        </param>
+        <briefdescription>
+<para>sets the state of the building </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="76" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classPark_1a64bb85198d48756c7b16254831df1ecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Park::getWasteCost</definition>
+        <argsstring>()</argsstring>
+        <name>getWasteCost</name>
+        <reimplements refid="classBuildings_1a94e15ba281ac20d60e1a4632f7be1292">getWasteCost</reimplements>
+        <briefdescription>
+<para>Gets the waste cost for the park. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The waste cost as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="82" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classPark_1a9026ffbf64514400d81218e970f7aeef" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Park::addBuilding</definition>
+        <argsstring>()</argsstring>
+        <name>addBuilding</name>
+        <reimplements refid="classLandmarkBuilding_1aa8179defd14ed585752076b6d407aada">addBuilding</reimplements>
+        <briefdescription>
+<para>Add a building to the <ref refid="classUtility" kindref="compound">Utility</ref> resource. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>building</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The building to add to the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="89" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="69" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classPark_1ab8559c1bdf4ba7cdb3ffc7d7f2a84648" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Park::getPower</definition>
+        <argsstring>()</argsstring>
+        <name>getPower</name>
+        <reimplements refid="classLandmarkBuilding_1aecef730ab43b09f8d9a3cb423a46f94a">getPower</reimplements>
+        <briefdescription>
+<para>Receives power for the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if power was received successfully, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="95" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="76" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classPark_1a56586b6fbccdf996174469ec27663374" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Park::getWater</definition>
+        <argsstring>()</argsstring>
+        <name>getWater</name>
+        <reimplements refid="classLandmarkBuilding_1a661c42eb0bd712f50eb10cfba131f0e5">getWater</reimplements>
+        <briefdescription>
+<para>Receives water for the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if water was received successfully, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="101" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="97" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classPark_1ac5ea570943ee58b803c919033ef0c3bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Park::cleanWaste</definition>
+        <argsstring>()</argsstring>
+        <name>cleanWaste</name>
+        <reimplements refid="classLandmarkBuilding_1a53f41bc4fe9ccb241e6619463296c405">cleanWaste</reimplements>
+        <briefdescription>
+<para>Cleans the waste of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if waste cleaning was successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="107" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="90" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classPark_1a52b7b6d0e8d7795e133346be8706ccff" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Park::cleanSewage</definition>
+        <argsstring>()</argsstring>
+        <name>cleanSewage</name>
+        <reimplements refid="classLandmarkBuilding_1a4b58e301fe9f6d3dc400aad1650e3db2">cleanSewage</reimplements>
+        <briefdescription>
+<para>Cleans the sewage of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if sewage cleaning was successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="113" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="83" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a park as a type of landmark building. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+      </node>
+      <node id="1">
+        <label>Park</label>
+        <link refid="classPark"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LandmarkBuilding</label>
+        <link refid="classLandmarkBuilding"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>listOfCitizens</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="1">
+        <label>Park</label>
+        <link refid="classPark"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>State</label>
+        <link refid="classState"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>building</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Citizen</label>
+        <link refid="classCitizen"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>tm</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>TravelManager</label>
+        <link refid="classTravelManager"/>
+      </node>
+      <node id="2">
+        <label>LandmarkBuilding</label>
+        <link refid="classLandmarkBuilding"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="7">
+        <label>PopulationControl</label>
+        <link refid="classPopulationControl"/>
+      </node>
+      <node id="5">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" bodystart="12" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classPark_1a9026ffbf64514400d81218e970f7aeef" prot="public" virt="virtual"><scope>Park</scope><name>addBuilding</name></member>
+      <member refid="classBuildings_1afc21c459782fab5d58a3517c09474df0" prot="protected" virt="non-virtual"><scope>Park</scope><name>balance</name></member>
+      <member refid="classBuildings_1a0702b3d14494ac145aaa428aa4e01afb" prot="protected" virt="non-virtual"><scope>Park</scope><name>buildingName</name></member>
+      <member refid="classBuildings_1af5b874917cf6e1dbe90dbcf5b9b37326" prot="public" virt="non-virtual"><scope>Park</scope><name>Buildings</name></member>
+      <member refid="classBuildings_1a010d594842ce60f01bdf00f939ea2011" prot="protected" virt="non-virtual"><scope>Park</scope><name>buildingType</name></member>
+      <member refid="classPark_1a52b7b6d0e8d7795e133346be8706ccff" prot="public" virt="virtual"><scope>Park</scope><name>cleanSewage</name></member>
+      <member refid="classPark_1ac5ea570943ee58b803c919033ef0c3bf" prot="public" virt="virtual"><scope>Park</scope><name>cleanWaste</name></member>
+      <member refid="classBuildings_1a4254206fe0f1f565e269e1e543cba834" prot="public" virt="virtual"><scope>Park</scope><name>getBalance</name></member>
+      <member refid="classBuildings_1a038e1c1d7a924c97fc3cdc5954ccd72b" prot="public" virt="virtual"><scope>Park</scope><name>getBirthRate</name></member>
+      <member refid="classPark_1a2c89a3de0a83ca1928651a3afa672f39" prot="public" virt="virtual"><scope>Park</scope><name>getBuildingType</name></member>
+      <member refid="classBuildings_1a14a35e8d36b717014241a9f416324ae5" prot="public" virt="virtual"><scope>Park</scope><name>getCommercialIncome</name></member>
+      <member refid="classBuildings_1aea12268287656270eb98cd2f22b82e02" prot="public" virt="virtual"><scope>Park</scope><name>getEducationalCoverage</name></member>
+      <member refid="classBuildings_1a993a9340e25a58e2e2912090742f5ba6" prot="public" virt="virtual"><scope>Park</scope><name>getHealthCoverage</name></member>
+      <member refid="classPark_1a22513f1e99d55418de7e889a2ed56806" prot="public" virt="virtual"><scope>Park</scope><name>getJobsCreated</name></member>
+      <member refid="classBuildings_1ae0a010f94a01d180d1a6e4d023b54561" prot="public" virt="virtual"><scope>Park</scope><name>getlistOfResidence</name></member>
+      <member refid="classPark_1af812e134e0b512ab1fca97db97472423" prot="public" virt="virtual"><scope>Park</scope><name>getMaintenanceCost</name></member>
+      <member refid="classPark_1a056d317a7474449c932f56c8ec703764" prot="public" virt="virtual"><scope>Park</scope><name>getName</name></member>
+      <member refid="classPark_1ab8559c1bdf4ba7cdb3ffc7d7f2a84648" prot="public" virt="virtual"><scope>Park</scope><name>getPower</name></member>
+      <member refid="classPark_1a67bb1c291999a2f84b7aefa48a149529" prot="public" virt="virtual"><scope>Park</scope><name>getPowerReq</name></member>
+      <member refid="classBuildings_1ad063833f87a3337b6ed6f1f3686a6e45" prot="public" virt="virtual"><scope>Park</scope><name>getProfit</name></member>
+      <member refid="classBuildings_1a329450878a0e655e4a59f29e24bd3202" prot="public" virt="virtual"><scope>Park</scope><name>getSales</name></member>
+      <member refid="classBuildings_1a647c790019850fd479ac20fcbd21d873" prot="public" virt="virtual"><scope>Park</scope><name>getSecurityCoverage</name></member>
+      <member refid="classPark_1a9321f126205b260775abcea15d4e3e6f" prot="public" virt="virtual"><scope>Park</scope><name>getSewageCost</name></member>
+      <member refid="classPark_1a64bb85198d48756c7b16254831df1ecb" prot="public" virt="virtual"><scope>Park</scope><name>getWasteCost</name></member>
+      <member refid="classPark_1a56586b6fbccdf996174469ec27663374" prot="public" virt="virtual"><scope>Park</scope><name>getWater</name></member>
+      <member refid="classPark_1af4e0a5f69702b0454f241acf528d56a7" prot="public" virt="virtual"><scope>Park</scope><name>getWaterReq</name></member>
+      <member refid="classBuildings_1a7497cf317a1deb55c35864bc08c82443" prot="protected" virt="non-virtual"><scope>Park</scope><name>listOfCitizens</name></member>
+      <member refid="classBuildings_1a7320201a32ce9541b3aeddac32d9988a" prot="protected" virt="non-virtual"><scope>Park</scope><name>maintenanceCost</name></member>
+      <member refid="classPark_1a455b9a72692e8b2bf2f8e0ddead48b21" prot="public" virt="non-virtual"><scope>Park</scope><name>Park</name></member>
+      <member refid="classBuildings_1a291fa645584d52be99367ba4796ebe14" prot="public" virt="virtual"><scope>Park</scope><name>payCitizen</name></member>
+      <member refid="classBuildings_1a572094ecc5a5d844acbfe6f18650ed9d" prot="protected" virt="non-virtual"><scope>Park</scope><name>powerReq</name></member>
+      <member refid="classBuildings_1a4f41883b0ba36ed4840bc905cc19ea3d" prot="protected" virt="non-virtual"><scope>Park</scope><name>profit</name></member>
+      <member refid="classPark_1aacde897f3b78869e5e834d6d3e647fdb" prot="public" virt="virtual"><scope>Park</scope><name>requestState</name></member>
+      <member refid="classBuildings_1aabc1cfaf764d4c41889ecf1f0320fa8e" prot="public" virt="non-virtual"><scope>Park</scope><name>resources</name></member>
+      <member refid="classBuildings_1a2c3680425e9cd1526d1c4c834c017690" prot="protected" virt="non-virtual"><scope>Park</scope><name>sales</name></member>
+      <member refid="classBuildings_1a6c02963e37bf20ef827f063209901a3a" prot="public" virt="virtual"><scope>Park</scope><name>setBalance</name></member>
+      <member refid="classBuildings_1af3184f3602e4c1dd6ac010900770cd57" prot="public" virt="non-virtual"><scope>Park</scope><name>setResources</name></member>
+      <member refid="classPark_1ab5b7777dcc40a83ad3829a9ccd0d6108" prot="public" virt="virtual"><scope>Park</scope><name>setState</name></member>
+      <member refid="classBuildings_1aae45243bbcd3ac7c47e9cbb83162f1f8" prot="protected" virt="non-virtual"><scope>Park</scope><name>sewageCost</name></member>
+      <member refid="classBuildings_1a4befd4aa1ecedd685f1792e9d9cab4c8" prot="public" virt="non-virtual"><scope>Park</scope><name>state</name></member>
+      <member refid="classPark_1afa45531425ee9dce5869488be3bb3e83" prot="private" virt="non-virtual"><scope>Park</scope><name>waste</name></member>
+      <member refid="classBuildings_1ac8c0debb07dcf0555a28be710377fc36" prot="protected" virt="non-virtual"><scope>Park</scope><name>waterReq</name></member>
+      <member refid="classBuildings_1a60b14d2c02c2424eeb0ba52bd9fee170" prot="public" virt="pure-virtual"><scope>Park</scope><name>~Buildings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

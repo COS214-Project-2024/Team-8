@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classBuildingController" kind="class" language="C++" prot="private">
+    <compoundname>BuildingController</compoundname>
+    <includes refid="BuildingController_8h" local="no">BuildingController.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBuildingController_1a60d07205d64c1da30f4d4772d4c34307" prot="private" static="no" mutable="no">
+        <type><ref refid="classBuildings" kindref="compound">Buildings</ref> **</type>
+        <definition>Buildings** BuildingController::ListOfBuildings</definition>
+        <argsstring></argsstring>
+        <name>ListOfBuildings</name>
+        <briefdescription>
+<para>A dynamic array of pointers to Building objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h" line="24" column="16" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBuildingController_1ae5a7050ecf96a3ca6590e7a0670e3e70" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BuildingController::amountOfBuildings</definition>
+        <argsstring></argsstring>
+        <name>amountOfBuildings</name>
+        <briefdescription>
+<para>The current number of buildings in the list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h" line="25" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBuildingController_1ae11e0d67d638fe5bf21b73dbc0863efe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BuildingController::BuildingController</definition>
+        <argsstring>()</argsstring>
+        <name>BuildingController</name>
+        <briefdescription>
+<para>Default constructor for the BuildingController class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes internal variables and allocates memory for the list of buildings. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h" line="33" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.cpp" bodystart="6" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildingController_1ae7cdde140f6f1c9c68d156add406ce74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BuildingController::~BuildingController</definition>
+        <argsstring>()</argsstring>
+        <name>~BuildingController</name>
+        <briefdescription>
+<para>Destructor for the BuildingController class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cleans up dynamically allocated memory (e.g., deletes the list of buildings). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h" line="40" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildingController_1abdc09deeb3a62bec01cae0d687a02b49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BuildingController::addBuilding</definition>
+        <argsstring>(Buildings *add)</argsstring>
+        <name>addBuilding</name>
+        <param>
+          <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+          <declname>add</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new building to the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method adds a new Building object to the dynamic array and updates the internal count of the number of buildings.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>add</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the Building object to be added. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h" line="50" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.cpp" bodystart="45" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildingController_1ac764ea7600c55216e702e81adff6aae9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BuildingController::removeBuilding</definition>
+        <argsstring>(Buildings *rem)</argsstring>
+        <name>removeBuilding</name>
+        <param>
+          <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+          <declname>rem</declname>
+        </param>
+        <briefdescription>
+<para>Removes a building from the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method removes a Building object from the dynamic array and updates the internal count of the number of buildings.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the Building object to be removed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h" line="60" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.cpp" bodystart="73" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildingController_1a16f9a985c778f4bd67a2014eb597243f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BuildingController::getAmountOfBuildings</definition>
+        <argsstring>()</argsstring>
+        <name>getAmountOfBuildings</name>
+        <briefdescription>
+<para>Gets the total number of buildings in the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method returns the current count of buildings managed by the controller.</para>
+<para><simplesect kind="return"><para>The number of buildings (int). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h" line="69" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.cpp" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildingController_1ae060b2e3bf2a988d5574af0674c4dab0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BuildingController::getTotalPowerReq</definition>
+        <argsstring>()</argsstring>
+        <name>getTotalPowerReq</name>
+        <briefdescription>
+<para>Gets the total power requirement of all buildings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method calculates the total power required by all buildings in the list by iterating through the buildings and summing their individual power requirements.</para>
+<para><simplesect kind="return"><para>The total power requirement (int). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h" line="79" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.cpp" bodystart="116" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildingController_1a2fd63fc3cc1e876087563fcae036c25a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BuildingController::getTotalSewageReq</definition>
+        <argsstring>()</argsstring>
+        <name>getTotalSewageReq</name>
+        <briefdescription>
+<para>Gets the total sewage requirement of all buildings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method calculates the total sewage requirement of all buildings by iterating through the list of buildings and summing their individual sewage requirements.</para>
+<para><simplesect kind="return"><para>The total sewage requirement (int). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h" line="89" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.cpp" bodystart="126" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildingController_1a7fa59924943c7121dadc7a8d822b376c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BuildingController::getTotalWasteReq</definition>
+        <argsstring>()</argsstring>
+        <name>getTotalWasteReq</name>
+        <briefdescription>
+<para>Gets the total waste requirement of all buildings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method calculates the total waste generated by all buildings in the list.</para>
+<para><simplesect kind="return"><para>The total waste requirement (int). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h" line="98" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.cpp" bodystart="136" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildingController_1ad699f36c12894b74ae03bc25bbc859a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BuildingController::getTotalWaterReq</definition>
+        <argsstring>()</argsstring>
+        <name>getTotalWaterReq</name>
+        <briefdescription>
+<para>Gets the total water requirement of all buildings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method calculates the total water required by all buildings in the list.</para>
+<para><simplesect kind="return"><para>The total water requirement (int). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h" line="107" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.cpp" bodystart="146" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildingController_1ae08b9d232b36938c96ac12034e385bae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BuildingController::getMaintenanceCost</definition>
+        <argsstring>()</argsstring>
+        <name>getMaintenanceCost</name>
+        <briefdescription>
+<para>Gets the total maintenance cost of all buildings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method calculates the total maintenance cost for all buildings in the list.</para>
+<para><simplesect kind="return"><para>The total maintenance cost (int). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h" line="116" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.cpp" bodystart="156" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildingController_1a8123e808c1e2eb18e43c6a413ed6f470" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCitizen" kindref="compound">Citizen</ref> **</type>
+        <definition>Citizen ** BuildingController::getListOfCitizens</definition>
+        <argsstring>()</argsstring>
+        <name>getListOfCitizens</name>
+        <briefdescription>
+<para>Gets a list of citizens associated with the buildings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method may return the list of citizens related to the buildings, assuming buildings have a link to citizens (e.g., tenants or residents).</para>
+<para><simplesect kind="return"><para>A pointer to an array of <ref refid="classCitizen" kindref="compound">Citizen</ref> objects (Citizen**). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h" line="126" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.cpp" bodystart="16" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classBuildingController_1a945404be429741ce97789776b38f55f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BuildingController::getCommercialIncome</definition>
+        <argsstring>()</argsstring>
+        <name>getCommercialIncome</name>
+        <briefdescription>
+<para>Gets the total commercial income from all commercial buildings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method sums the commercial income of all commercial buildings in the list.</para>
+<para><simplesect kind="return"><para>The total commercial income (int). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h" line="135" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.cpp" bodystart="166" bodyend="177"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to manage a collection of buildings and their resource requirements. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Controls a List of <ref refid="classBuildings" kindref="compound">Buildings</ref>.</para>
+<para>The BuildingController class manages a list of buildings and provides methods to add, remove, and query information about buildings, including resource requirements and costs. This class also provides some aggregated metrics like total power, sewage, water requirements, and maintenance costs for the buildings.</para>
+<para>This interface provides a common structure for all <ref refid="classBuildings" kindref="compound">Buildings</ref> related functions Is in charge of getting the total amount of Power , Sewage , Water and Waste Requirment of the <ref refid="classBuildings" kindref="compound">Buildings</ref> </para>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h" line="21" column="1"/>
+    <listofallmembers>
+      <member refid="classBuildingController_1abdc09deeb3a62bec01cae0d687a02b49" prot="public" virt="non-virtual"><scope>BuildingController</scope><name>addBuilding</name></member>
+      <member refid="classBuildingController_1ae5a7050ecf96a3ca6590e7a0670e3e70" prot="private" virt="non-virtual"><scope>BuildingController</scope><name>amountOfBuildings</name></member>
+      <member refid="classBuildingController_1ae11e0d67d638fe5bf21b73dbc0863efe" prot="public" virt="non-virtual"><scope>BuildingController</scope><name>BuildingController</name></member>
+      <member refid="classBuildingController_1a16f9a985c778f4bd67a2014eb597243f" prot="public" virt="non-virtual"><scope>BuildingController</scope><name>getAmountOfBuildings</name></member>
+      <member refid="classBuildingController_1a945404be429741ce97789776b38f55f7" prot="public" virt="non-virtual"><scope>BuildingController</scope><name>getCommercialIncome</name></member>
+      <member refid="classBuildingController_1a8123e808c1e2eb18e43c6a413ed6f470" prot="public" virt="non-virtual"><scope>BuildingController</scope><name>getListOfCitizens</name></member>
+      <member refid="classBuildingController_1ae08b9d232b36938c96ac12034e385bae" prot="public" virt="non-virtual"><scope>BuildingController</scope><name>getMaintenanceCost</name></member>
+      <member refid="classBuildingController_1ae060b2e3bf2a988d5574af0674c4dab0" prot="public" virt="non-virtual"><scope>BuildingController</scope><name>getTotalPowerReq</name></member>
+      <member refid="classBuildingController_1a2fd63fc3cc1e876087563fcae036c25a" prot="public" virt="non-virtual"><scope>BuildingController</scope><name>getTotalSewageReq</name></member>
+      <member refid="classBuildingController_1a7fa59924943c7121dadc7a8d822b376c" prot="public" virt="non-virtual"><scope>BuildingController</scope><name>getTotalWasteReq</name></member>
+      <member refid="classBuildingController_1ad699f36c12894b74ae03bc25bbc859a0" prot="public" virt="non-virtual"><scope>BuildingController</scope><name>getTotalWaterReq</name></member>
+      <member refid="classBuildingController_1a60d07205d64c1da30f4d4772d4c34307" prot="private" virt="non-virtual"><scope>BuildingController</scope><name>ListOfBuildings</name></member>
+      <member refid="classBuildingController_1ac764ea7600c55216e702e81adff6aae9" prot="public" virt="non-virtual"><scope>BuildingController</scope><name>removeBuilding</name></member>
+      <member refid="classBuildingController_1ae7cdde140f6f1c9c68d156add406ce74" prot="public" virt="non-virtual"><scope>BuildingController</scope><name>~BuildingController</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

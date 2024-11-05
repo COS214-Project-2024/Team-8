@@ -1,0 +1,647 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacedoctest_1_1detail" kind="namespace" language="C++">
+    <compoundname>doctest::detail</compoundname>
+    <innerclass refid="structdoctest_1_1detail_1_1deferred__false" prot="public">doctest::detail::deferred_false</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1has__insertion__operator" prot="public">doctest::detail::has_insertion_operator</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1has__insertion__operator_3_01T_00_01decltype_07operator_3_3_07declvald5a5a279653bbfeef238ad5c984744e2" prot="public">doctest::detail::has_insertion_operator&lt; T, decltype(operator&lt;&lt;(declval&lt; std::ostream &amp; &gt;(), declval&lt; const T &amp; &gt;()), void())&gt;</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1should__stringify__as__underlying__type" prot="public">doctest::detail::should_stringify_as_underlying_type</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1StringMakerBase" prot="public">doctest::detail::StringMakerBase</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1filldata" prot="public">doctest::detail::filldata</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1StringMakerBase_3_01true_01_4" prot="public">doctest::detail::StringMakerBase&lt; true &gt;</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1filldata_3_01T_0fN_0e_4" prot="public">doctest::detail::filldata&lt; T[N]&gt;</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1filldata_3_01const_01char_0fN_0e_4" prot="public">doctest::detail::filldata&lt; const char[N]&gt;</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1filldata_3_01const_01void_01_5_01_4" prot="public">doctest::detail::filldata&lt; const void * &gt;</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1filldata_3_01T_01_5_01_4" prot="public">doctest::detail::filldata&lt; T * &gt;</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1TestFailureException" prot="public">doctest::detail::TestFailureException</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1Subcase" prot="public">doctest::detail::Subcase</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1Result" prot="public">doctest::detail::Result</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1ExpressionDecomposer" prot="public">doctest::detail::ExpressionDecomposer</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1TestSuite" prot="public">doctest::detail::TestSuite</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1TestCase" prot="public">doctest::detail::TestCase</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1RelationalComparator" prot="public">doctest::detail::RelationalComparator</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1ResultBuilder" prot="public">doctest::detail::ResultBuilder</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1IExceptionTranslator" prot="public">doctest::detail::IExceptionTranslator</innerclass>
+    <innerclass refid="classdoctest_1_1detail_1_1ExceptionTranslator" prot="public">doctest::detail::ExceptionTranslator</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1ContextScopeBase" prot="public">doctest::detail::ContextScopeBase</innerclass>
+    <innerclass refid="classdoctest_1_1detail_1_1ContextScope" prot="public">doctest::detail::ContextScope</innerclass>
+    <innerclass refid="structdoctest_1_1detail_1_1MessageBuilder" prot="public">doctest::detail::MessageBuilder</innerclass>
+    <innernamespace refid="namespacedoctest_1_1detail_1_1assertAction">doctest::detail::assertAction</innernamespace>
+    <innernamespace refid="namespacedoctest_1_1detail_1_1binaryAssertComparison">doctest::detail::binaryAssertComparison</innernamespace>
+    <innernamespace refid="namespacedoctest_1_1detail_1_1types">doctest::detail::types</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="doctest_8h_1a25b5e019078af59a5e84982fddfbc9c1" prot="public" static="no">
+        <type>void(*)()</type>
+        <definition>using doctest::detail::funcType = typedef void (*)()</definition>
+        <argsstring></argsstring>
+        <name>funcType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1612" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1612" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="doctest_8h_1a296151d397b21a9ce755b0e6ed2d1f0a" prot="public" static="no">
+        <type>void(*)(const <ref refid="structdoctest_1_1AssertData" kindref="compound">AssertData</ref> &amp;)</type>
+        <definition>using doctest::detail::assert_handler = typedef void (*)(const AssertData&amp;)</definition>
+        <argsstring></argsstring>
+        <name>assert_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1960" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1960" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="doctest_8h_1ae874422747acbc77c0d512f11800fdf9" prot="public" static="no">
+        <type><ref refid="structdoctest_1_1IReporter" kindref="compound">IReporter</ref> *(*)(const <ref refid="structdoctest_1_1ContextOptions" kindref="compound">ContextOptions</ref> &amp;)</type>
+        <definition>using doctest::detail::reporterCreatorFunc = typedef IReporter* (*)(const ContextOptions&amp;)</definition>
+        <argsstring></argsstring>
+        <name>reporterCreatorFunc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2099" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2099" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="doctest_8h_1ade1619b532a3d3e6f19ee1187ff3c514" prot="public" static="no" mutable="no">
+        <type>struct DOCTEST_INTERFACE</type>
+        <definition>struct DOCTEST_INTERFACE doctest::detail::TestCase</definition>
+        <argsstring></argsstring>
+        <name>TestCase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="886" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="890" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="doctest_8h_1ab60ed87072d57dc65559089d26c98327" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T &amp;&amp;</type>
+        <definition>T&amp;&amp; doctest::detail::declval</definition>
+        <argsstring>()</argsstring>
+        <name>declval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="980" column="7" declfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" declline="980" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a9817985488551f16ddd7be48bda0e186" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>DOCTEST_CONSTEXPR_FUNC T &amp;&amp;</type>
+        <definition>DOCTEST_CONSTEXPR_FUNC T&amp;&amp; doctest::detail::forward</definition>
+        <argsstring>(typename types::remove_reference&lt; T &gt;::type &amp;t) DOCTEST_NOEXCEPT</argsstring>
+        <name>forward</name>
+        <param>
+          <type>typename <ref refid="structdoctest_1_1detail_1_1types_1_1remove__reference" kindref="compound">types::remove_reference</ref>&lt; T &gt;::type &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="983" column="30" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="983" bodyend="985"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a5dc6fba20b3dbcaa5b9698e18e953129" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>DOCTEST_CONSTEXPR_FUNC T &amp;&amp;</type>
+        <definition>DOCTEST_CONSTEXPR_FUNC T&amp;&amp; doctest::detail::forward</definition>
+        <argsstring>(typename types::remove_reference&lt; T &gt;::type &amp;&amp;t) DOCTEST_NOEXCEPT</argsstring>
+        <name>forward</name>
+        <param>
+          <type>typename <ref refid="structdoctest_1_1detail_1_1types_1_1remove__reference" kindref="compound">types::remove_reference</ref>&lt; T &gt;::type &amp;&amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="988" column="30" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="988" bodyend="990"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a06d0e122cc3acfbadcfad03067c66854" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE <ref refid="classstd_1_1basic__ostream" kindref="compound">std::ostream</ref> *</type>
+        <definition>DOCTEST_INTERFACE std::ostream* doctest::detail::tlssPush</definition>
+        <argsstring>()</argsstring>
+        <name>tlssPush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1034" column="36" declfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" declline="1034" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a8304147da6105e3359ba7ec124837669" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE <ref refid="classdoctest_1_1String" kindref="compound">String</ref></type>
+        <definition>DOCTEST_INTERFACE String doctest::detail::tlssPop</definition>
+        <argsstring>()</argsstring>
+        <name>tlssPop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1035" column="30" declfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" declline="1035" declcolumn="30"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a2d66bdaf42017e18b4a08849c13a72bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void doctest::detail::filloss</definition>
+        <argsstring>(std::ostream *stream, const T &amp;in)</argsstring>
+        <name>filloss</name>
+        <param>
+          <type><ref refid="classstd_1_1basic__ostream" kindref="compound">std::ostream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1052" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1052" bodyend="1054"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a8c9475de1a743a6c4dcc991b979fad78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void doctest::detail::filloss</definition>
+        <argsstring>(std::ostream *stream, const T(&amp;in)[N])</argsstring>
+        <name>filloss</name>
+        <param>
+          <type><ref refid="classstd_1_1basic__ostream" kindref="compound">std::ostream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const T(&amp;)</type>
+          <declname>in</declname>
+          <array>[N]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1057" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1057" bodyend="1061"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a9b45a266999f027a4f3f96aabf31e06b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref></type>
+        <definition>String doctest::detail::toStream</definition>
+        <argsstring>(const T &amp;in)</argsstring>
+        <name>toStream</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1064" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1064" bodyend="1068"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1acec9ff072dd86af95225a8beb9c57298" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE bool</type>
+        <definition>DOCTEST_INTERFACE bool doctest::detail::checkIfShouldThrow</definition>
+        <argsstring>(assertType::Enum at)</argsstring>
+        <name>checkIfShouldThrow</name>
+        <param>
+          <type>assertType::Enum</type>
+          <declname>at</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1328" column="28" declfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" declline="1328" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a60ffd50b9ee7adfcafc078f333aac8b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE void</type>
+        <definition>DOCTEST_INTERFACE void doctest::detail::throwException</definition>
+        <argsstring>()</argsstring>
+        <name>throwException</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1333" column="28" declfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" declline="1333" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a6879a79aea397a22e296e4afd0a90e3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename L</type>
+          </param>
+          <param>
+            <type>typename R</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref></type>
+        <definition>String doctest::detail::stringifyBinaryExpr</definition>
+        <argsstring>(const DOCTEST_REF_WRAP(L) lhs, const char *op, const DOCTEST_REF_WRAP(R) rhs)</argsstring>
+        <name>stringifyBinaryExpr</name>
+        <param>
+          <type>const DOCTEST_REF_WRAP(L)</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>const DOCTEST_REF_WRAP(R)</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1354" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1354" bodyend="1357"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a3b966d87ac1e25498fae773355c43d90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_CLANG_SUPPRESS_WARNING_PUSH DOCTEST_GCC_SUPPRESS_WARNING_PUSH DOCTEST_MSVC_SUPPRESS_WARNING_PUSH</type>
+        <definition>DOCTEST_CLANG_SUPPRESS_WARNING_PUSH DOCTEST_GCC_SUPPRESS_WARNING_PUSH DOCTEST_MSVC_SUPPRESS_WARNING_PUSH doctest::detail::DOCTEST_MSVC_SUPPRESS_WARNING</definition>
+        <argsstring>(4388) DOCTEST_MSVC_SUPPRESS_WARNING(4389) DOCTEST_MSVC_SUPPRESS_WARNING(4018) template&lt; typename L &gt; struct Expression_lhs</argsstring>
+        <name>DOCTEST_MSVC_SUPPRESS_WARNING</name>
+        <param>
+          <type>4388</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>OCLINT bitwise operator in conditional</para>
+<para>OCLINT bitwise operator in conditional</para>
+<para>OCLINT bitwise operator in conditional</para>
+<para>OCLINT bitwise operator in conditional</para>
+<para>OCLINT bitwise operator in conditional</para>
+<para>OCLINT bitwise operator in conditional</para>
+<para>OCLINT bitwise operator in conditional</para>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1446" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1446" bodyend="1556"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a00f99edefb8490a8e2602d58c96431f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE int</type>
+        <definition>DOCTEST_INTERFACE int doctest::detail::regTest</definition>
+        <argsstring>(const TestCase &amp;tc)</argsstring>
+        <name>regTest</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1detail_1_1TestCase" kindref="compound">TestCase</ref> &amp;</type>
+          <declname>tc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1648" column="28" declfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" declline="1648" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1ae79cb8df06d35468dd0ba9f04c85802c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE int</type>
+        <definition>DOCTEST_INTERFACE int doctest::detail::setTestSuite</definition>
+        <argsstring>(const TestSuite &amp;ts)</argsstring>
+        <name>setTestSuite</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1detail_1_1TestSuite" kindref="compound">TestSuite</ref> &amp;</type>
+          <declname>ts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1649" column="28" declfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" declline="1649" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a013828c4e677241cc26aeea33f762710" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE bool</type>
+        <definition>DOCTEST_INTERFACE bool doctest::detail::isDebuggerActive</definition>
+        <argsstring>()</argsstring>
+        <name>isDebuggerActive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1650" column="28" declfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" declline="1650" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1aad401b097a9af4df1d4a9d0911957c0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>int</type>
+        <definition>int doctest::detail::instantiationHelper</definition>
+        <argsstring>(const T &amp;)</argsstring>
+        <name>instantiationHelper</name>
+        <param>
+          <type>const T &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1653" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1653" bodyend="1653"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a0ff832be68bf666d856aefd539e1ce81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE void</type>
+        <definition>DOCTEST_INTERFACE void doctest::detail::failed_out_of_a_testing_context</definition>
+        <argsstring>(const AssertData &amp;ad)</argsstring>
+        <name>failed_out_of_a_testing_context</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1AssertData" kindref="compound">AssertData</ref> &amp;</type>
+          <declname>ad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1731" column="28" declfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" declline="1731" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a2a562fae1586f144b6aa1506bb6f07bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE bool</type>
+        <definition>DOCTEST_INTERFACE bool doctest::detail::decomp_assert</definition>
+        <argsstring>(assertType::Enum at, const char *file, int line, const char *expr, const Result &amp;result)</argsstring>
+        <name>decomp_assert</name>
+        <param>
+          <type>assertType::Enum</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdoctest_1_1detail_1_1Result" kindref="compound">Result</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1733" column="28" declfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" declline="1733" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a1e295c708d2de0e47ac89c1632211159" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>comparison</declname>
+            <defname>comparison</defname>
+          </param>
+          <param>
+            <type>typename L</type>
+          </param>
+          <param>
+            <type>typename R</type>
+          </param>
+        </templateparamlist>
+        <type>DOCTEST_NOINLINE bool</type>
+        <definition>DOCTEST_NOINLINE bool doctest::detail::binary_assert</definition>
+        <argsstring>(assertType::Enum at, const char *file, int line, const char *expr, const DOCTEST_REF_WRAP(L) lhs, const DOCTEST_REF_WRAP(R) rhs)</argsstring>
+        <name>binary_assert</name>
+        <param>
+          <type>assertType::Enum</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>const DOCTEST_REF_WRAP(L)</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const DOCTEST_REF_WRAP(R)</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1764" column="27" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1764" bodyend="1776"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a0ffd8b760c2a9b355a1df02470fe2281" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename L</type>
+          </param>
+        </templateparamlist>
+        <type>DOCTEST_NOINLINE bool</type>
+        <definition>DOCTEST_NOINLINE bool doctest::detail::unary_assert</definition>
+        <argsstring>(assertType::Enum at, const char *file, int line, const char *expr, const DOCTEST_REF_WRAP(L) val)</argsstring>
+        <name>unary_assert</name>
+        <param>
+          <type>assertType::Enum</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>const DOCTEST_REF_WRAP(L)</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>OCLINT bitwise operator in conditional</para>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1779" column="27" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1779" bodyend="1793"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a3887426da16e0d12e6f0e270a767a6a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE void</type>
+        <definition>DOCTEST_INTERFACE void doctest::detail::registerExceptionTranslatorImpl</definition>
+        <argsstring>(const IExceptionTranslator *et)</argsstring>
+        <name>registerExceptionTranslatorImpl</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1detail_1_1IExceptionTranslator" kindref="compound">IExceptionTranslator</ref> *</type>
+          <declname>et</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1826" column="28" declfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" declline="1826" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a193493f40330f096b9e1b78557a832a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename L</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdoctest_1_1detail_1_1ContextScope" kindref="compound">ContextScope</ref>&lt; L &gt;</type>
+        <definition>ContextScope&lt;L&gt; doctest::detail::MakeContextScope</definition>
+        <argsstring>(const L &amp;lambda)</argsstring>
+        <name>MakeContextScope</name>
+        <param>
+          <type>const L &amp;</type>
+          <declname>lambda</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1909" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1909" bodyend="1911"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a828e011bb6028ab94eb14a3c7d8bd2c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE void</type>
+        <definition>DOCTEST_INTERFACE void doctest::detail::registerReporterImpl</definition>
+        <argsstring>(const char *name, int prio, reporterCreatorFunc c, bool isReporter)</argsstring>
+        <name>registerReporterImpl</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>prio</declname>
+        </param>
+        <param>
+          <type>reporterCreatorFunc</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isReporter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2101" column="28" declfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" declline="2101" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="doctest_8h_1a575cd92f018bfe3c702432a2144ebaca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Reporter</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structdoctest_1_1IReporter" kindref="compound">IReporter</ref> *</type>
+        <definition>IReporter* doctest::detail::reporterCreator</definition>
+        <argsstring>(const ContextOptions &amp;o)</argsstring>
+        <name>reporterCreator</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1ContextOptions" kindref="compound">ContextOptions</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2104" column="15" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2104" bodyend="2106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="889" column="1"/>
+  </compounddef>
+</doxygen>

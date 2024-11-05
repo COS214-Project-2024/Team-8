@@ -1,0 +1,368 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classWaterSupply" kind="class" language="C++" prot="public">
+    <compoundname>WaterSupply</compoundname>
+    <basecompoundref refid="classUtility" prot="public" virt="non-virtual">Utility</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classWaterSupply_1a8c1e6c6208a6f06a5fa0d7509eb46c0f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WaterSupply::maxGallons</definition>
+        <argsstring></argsstring>
+        <name>maxGallons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.h" line="15" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterSupply_1ab27ac7980716e5b19fd6f825f24f832c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float WaterSupply::puritypercentage</definition>
+        <argsstring></argsstring>
+        <name>puritypercentage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.h" line="16" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWaterSupply_1aaefc256bc47f1fa477b69a6a52a19063" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WaterSupply::WaterSupply</definition>
+        <argsstring>(float curSupply)</argsstring>
+        <name>WaterSupply</name>
+        <param>
+          <type>float</type>
+          <declname>curSupply</declname>
+        </param>
+        <briefdescription>
+<para>Create a <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>curSupply</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current supply of the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.h" line="24" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.cpp" bodystart="4" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterSupply_1a47b5e13660622578bcee6bd178b52ad9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterSupply::addCommand</definition>
+        <argsstring>(Command *com)</argsstring>
+        <name>addCommand</name>
+        <param>
+          <type><ref refid="classCommand" kindref="compound">Command</ref> *</type>
+          <declname>com</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.h" line="26" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterSupply_1a011141b9936a59e54da24e75b0939b23" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string WaterSupply::getStatus</definition>
+        <argsstring>()</argsstring>
+        <name>getStatus</name>
+        <reimplements refid="classUtility_1aa5e24ae315185bd1d736a50fa4aee21d">getStatus</reimplements>
+        <briefdescription>
+<para>returns the status of the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string The status of the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.h" line="32" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterSupply_1ac1da1e246d6fafda8da477822083b92f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void WaterSupply::repairUtility</definition>
+        <argsstring>()</argsstring>
+        <name>repairUtility</name>
+        <reimplements refid="classUtility_1ae5bd09fa1f3c74c562b1c7d5f6e3c770">repairUtility</reimplements>
+        <briefdescription>
+<para>Repairs the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Repairs the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> Also sets the status to operational </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.h" line="39" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.cpp" bodystart="17" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterSupply_1a164cb73bad6a0e7ac5033b87d345f313" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void WaterSupply::pauseOperation</definition>
+        <argsstring>()</argsstring>
+        <name>pauseOperation</name>
+        <reimplements refid="classUtility_1a27c39caf66558263047b2c10fda15174">pauseOperation</reimplements>
+        <briefdescription>
+<para>Pauses the operation of the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the status to paused </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.h" line="45" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.cpp" bodystart="34" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterSupply_1aeb5ba606ff598b1c920263ed995ff726" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void WaterSupply::executeOperation</definition>
+        <argsstring>()</argsstring>
+        <name>executeOperation</name>
+        <reimplements refid="classUtility_1a30f0d3aa2c132e33a0ea7e47debbb974">executeOperation</reimplements>
+        <briefdescription>
+<para>Executes the operation of the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the status to operational </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.h" line="51" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.cpp" bodystart="41" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterSupply_1a4b6b582224a7a939301b0b3d23e34e3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void WaterSupply::setMaxGallons</definition>
+        <argsstring>(float max)</argsstring>
+        <name>setMaxGallons</name>
+        <reimplements refid="classUtility_1ab705aff598d1b89f04d9a31c47456cac">setMaxGallons</reimplements>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Sets the max gallons of the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The max gallons of the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.h" line="57" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.cpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterSupply_1ac6adc6685cbaa9d25d73168659dc166c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float WaterSupply::getOutput</definition>
+        <argsstring>()</argsstring>
+        <name>getOutput</name>
+        <reimplements refid="classUtility_1a40b833bd8494fcddeb667a4705635b5f">getOutput</reimplements>
+        <briefdescription>
+<para>Gets the output of the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float The output of the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.h" line="63" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.cpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterSupply_1a191a2a76a909253c82d6aee54f5bd827" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void WaterSupply::undoChange</definition>
+        <argsstring>()</argsstring>
+        <name>undoChange</name>
+        <reimplements refid="classUtility_1a345b48a57c1716c1756d874c17fc2aba">undoChange</reimplements>
+        <briefdescription>
+<para>Undoes the last change to the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Undoes the last change to the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> Also sets the status to paused </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.h" line="70" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.cpp" bodystart="58" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterSupply_1a64c5ba72d02bd615548f5335f5253831" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+        <definition>Utility * WaterSupply::clone</definition>
+        <argsstring>()</argsstring>
+        <name>clone</name>
+        <reimplements refid="classUtility_1a4a793297c2d99d8d5c689276a973b518">clone</reimplements>
+        <briefdescription>
+<para>Clones the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Utility* The cloned <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.h" line="76" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.cpp" bodystart="85" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterSupply_1aed83df44db415900a94c03e4b4a84d5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string WaterSupply::getUtilityType</definition>
+        <argsstring>()</argsstring>
+        <name>getUtilityType</name>
+        <reimplements refid="classUtility_1a05241d457a3eeb2c4e1508e5ca89ea56">getUtilityType</reimplements>
+        <briefdescription>
+<para>Get the utility type of the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string The utility type of the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.h" line="82" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.cpp" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterSupply_1a30f1224f871132916a61cfbb316295d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void WaterSupply::addBuilding</definition>
+        <argsstring>(Buildings *building)</argsstring>
+        <name>addBuilding</name>
+        <reimplements refid="classUtility_1a4ea6047493c471b470e4c392aa8c801b">addBuilding</reimplements>
+        <param>
+          <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+          <declname>building</declname>
+        </param>
+        <briefdescription>
+<para>Add a building to the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>building</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The building to add to the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.h" line="88" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.cpp" bodystart="95" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterSupply_1a45241d103ac35cfc769174c7bef16d09" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool WaterSupply::getWater</definition>
+        <argsstring>(Buildings *sender)</argsstring>
+        <name>getWater</name>
+        <reimplements refid="classUtility_1a9df345da6df3d01c77fe330c90b39311">getWater</reimplements>
+        <param>
+          <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+          <declname>sender</declname>
+        </param>
+        <briefdescription>
+<para>Get water from the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The building requesting water</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool True if water was sent, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.h" line="96" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.cpp" bodystart="99" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="1">
+        <label>WaterSupply</label>
+        <link refid="classWaterSupply"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="1">
+        <label>WaterSupply</label>
+        <link refid="classWaterSupply"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterSupply.h" bodystart="12" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classWaterSupply_1a30f1224f871132916a61cfbb316295d9" prot="public" virt="virtual"><scope>WaterSupply</scope><name>addBuilding</name></member>
+      <member refid="classWaterSupply_1a47b5e13660622578bcee6bd178b52ad9" prot="public" virt="non-virtual"><scope>WaterSupply</scope><name>addCommand</name></member>
+      <member refid="classUtility_1ac79531e37704bf46de18d608f977b95c" prot="protected" virt="non-virtual"><scope>WaterSupply</scope><name>buildings</name></member>
+      <member refid="classUtility_1aa6e79e1fbe644bf131adb5d4acc3689d" prot="public" virt="virtual"><scope>WaterSupply</scope><name>cleanSewage</name></member>
+      <member refid="classUtility_1a46770e0e3a9d147b17bd7f373db58fac" prot="public" virt="virtual"><scope>WaterSupply</scope><name>cleanWaste</name></member>
+      <member refid="classWaterSupply_1a64c5ba72d02bd615548f5335f5253831" prot="public" virt="virtual"><scope>WaterSupply</scope><name>clone</name></member>
+      <member refid="classUtility_1a199e63168af1a70654715e55cfdaaadd" prot="protected" virt="non-virtual"><scope>WaterSupply</scope><name>commandHistory</name></member>
+      <member refid="classWaterSupply_1aeb5ba606ff598b1c920263ed995ff726" prot="public" virt="virtual"><scope>WaterSupply</scope><name>executeOperation</name></member>
+      <member refid="classUtility_1a6f8eec7ad0199ab9223d8f57f2108e25" prot="public" virt="virtual"><scope>WaterSupply</scope><name>getEnergyType</name></member>
+      <member refid="classWaterSupply_1ac6adc6685cbaa9d25d73168659dc166c" prot="public" virt="virtual"><scope>WaterSupply</scope><name>getOutput</name></member>
+      <member refid="classUtility_1abd93d41bd72298acda7fe3950dab16d2" prot="public" virt="virtual"><scope>WaterSupply</scope><name>getPower</name></member>
+      <member refid="classWaterSupply_1a011141b9936a59e54da24e75b0939b23" prot="public" virt="virtual"><scope>WaterSupply</scope><name>getStatus</name></member>
+      <member refid="classWaterSupply_1aed83df44db415900a94c03e4b4a84d5b" prot="public" virt="virtual"><scope>WaterSupply</scope><name>getUtilityType</name></member>
+      <member refid="classWaterSupply_1a45241d103ac35cfc769174c7bef16d09" prot="public" virt="virtual"><scope>WaterSupply</scope><name>getWater</name></member>
+      <member refid="classWaterSupply_1a8c1e6c6208a6f06a5fa0d7509eb46c0f" prot="private" virt="non-virtual"><scope>WaterSupply</scope><name>maxGallons</name></member>
+      <member refid="classUtility_1a77e31318778f334c044fd7bbd7521118" prot="protected" virt="non-virtual"><scope>WaterSupply</scope><name>Output</name></member>
+      <member refid="classWaterSupply_1a164cb73bad6a0e7ac5033b87d345f313" prot="public" virt="virtual"><scope>WaterSupply</scope><name>pauseOperation</name></member>
+      <member refid="classWaterSupply_1ab27ac7980716e5b19fd6f825f24f832c" prot="private" virt="non-virtual"><scope>WaterSupply</scope><name>puritypercentage</name></member>
+      <member refid="classWaterSupply_1ac1da1e246d6fafda8da477822083b92f" prot="public" virt="virtual"><scope>WaterSupply</scope><name>repairUtility</name></member>
+      <member refid="classUtility_1aa9261d8034152c1fc5618d35f5d70c38" prot="public" virt="virtual"><scope>WaterSupply</scope><name>setFuel</name></member>
+      <member refid="classWaterSupply_1a4b6b582224a7a939301b0b3d23e34e3c" prot="public" virt="virtual"><scope>WaterSupply</scope><name>setMaxGallons</name></member>
+      <member refid="classUtility_1ae20563a384347c5bcd52809ed52983fa" prot="public" virt="virtual"><scope>WaterSupply</scope><name>setmaxWaste</name></member>
+      <member refid="classUtility_1a946a24d4473791f62941221c63f67a25" prot="public" virt="virtual"><scope>WaterSupply</scope><name>setMaxWatts</name></member>
+      <member refid="classUtility_1a8e87df51780eefefc9df53a98569fe70" prot="public" virt="virtual"><scope>WaterSupply</scope><name>setOutput</name></member>
+      <member refid="classUtility_1a72a5b065755157aee43eaf0373da87bd" prot="public" virt="virtual"><scope>WaterSupply</scope><name>setProcessCapacity</name></member>
+      <member refid="classUtility_1a2022354933e1799f6138636b81d902db" prot="protected" virt="non-virtual"><scope>WaterSupply</scope><name>status</name></member>
+      <member refid="classUtility_1ad29972cb0be49835b747eb6bc667a198" prot="public" virt="virtual"><scope>WaterSupply</scope><name>switchFuel</name></member>
+      <member refid="classWaterSupply_1a191a2a76a909253c82d6aee54f5bd827" prot="public" virt="virtual"><scope>WaterSupply</scope><name>undoChange</name></member>
+      <member refid="classWaterSupply_1aaefc256bc47f1fa477b69a6a52a19063" prot="public" virt="non-virtual"><scope>WaterSupply</scope><name>WaterSupply</name></member>
+      <member refid="classUtility_1a96b929cc62f8fc5b367cb6814d2fd93c" prot="public" virt="virtual"><scope>WaterSupply</scope><name>~Utility</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

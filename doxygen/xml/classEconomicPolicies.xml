@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classEconomicPolicies" kind="class" language="C++" prot="public">
+    <compoundname>EconomicPolicies</compoundname>
+    <basecompoundref refid="classPolicies" prot="public" virt="non-virtual">Policies</basecompoundref>
+    <includes refid="EconomicPolicies_8h" local="no">EconomicPolicies.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classEconomicPolicies_1a3364bc6064cfb5714146286ae4c648da" prot="public" static="no" mutable="no">
+        <type><ref refid="classPublicServicesPolicies" kindref="compound">PublicServicesPolicies</ref> *</type>
+        <definition>PublicServicesPolicies* EconomicPolicies::psPolicies</definition>
+        <argsstring></argsstring>
+        <name>psPolicies</name>
+        <briefdescription>
+<para>Related public services policies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EconomicPolicies.h" line="34" column="28" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EconomicPolicies.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEconomicPolicies_1a084dbcc4300a44da4d7da50247d5adf9" prot="public" static="no" mutable="no">
+        <type><ref refid="classCitizen" kindref="compound">Citizen</ref> *</type>
+        <definition>Citizen* EconomicPolicies::citizen</definition>
+        <argsstring></argsstring>
+        <name>citizen</name>
+        <briefdescription>
+<para>Affected citizen. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EconomicPolicies.h" line="35" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EconomicPolicies.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEconomicPolicies_1a1ff4fd246e4f7d5158206696b8b6c995" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EconomicPolicies::EconomicPolicies</definition>
+        <argsstring>(Government *govt)</argsstring>
+        <name>EconomicPolicies</name>
+        <param>
+          <type><ref refid="classGovernment" kindref="compound">Government</ref> *</type>
+          <declname>govt</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Economic <ref refid="classPolicies" kindref="compound">Policies</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>govt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the government executing the policies </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EconomicPolicies.h" line="32" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EconomicPolicies.cpp" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classEconomicPolicies_1a969b4d01a62a58089d7a998c2685aa2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void EconomicPolicies::executePolicy</definition>
+        <argsstring>() override</argsstring>
+        <name>executePolicy</name>
+        <reimplements refid="classPolicies_1a700b4645c03eb16767a67a98953fd64f">executePolicy</reimplements>
+        <briefdescription>
+<para>Implementation of policy execution for economic policies. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the specific behavior for executing economic policies. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EconomicPolicies.h" line="42" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EconomicPolicies.cpp" bodystart="12" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Concrete implementation of economic policies. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class handles the execution of economic policies affecting citizens and public services. It acts as a ConcreteCommand in the <ref refid="classCommand" kindref="compound">Command</ref> pattern hierarchy. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Command</label>
+        <link refid="classCommand"/>
+      </node>
+      <node id="1">
+        <label>EconomicPolicies</label>
+        <link refid="classEconomicPolicies"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Policies</label>
+        <link refid="classPolicies"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Command</label>
+        <link refid="classCommand"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>utility</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="1">
+        <label>EconomicPolicies</label>
+        <link refid="classEconomicPolicies"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>citizen</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>psPolicies</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Policies</label>
+        <link refid="classPolicies"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Citizen</label>
+        <link refid="classCitizen"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>tm</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>PublicServicesPolicies</label>
+        <link refid="classPublicServicesPolicies"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>citizen</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>economicPolicies</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>TravelManager</label>
+        <link refid="classTravelManager"/>
+      </node>
+      <node id="4">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="8">
+        <label>PopulationControl</label>
+        <link refid="classPopulationControl"/>
+      </node>
+      <node id="7">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EconomicPolicies.h" line="26" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EconomicPolicies.h" bodystart="26" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classEconomicPolicies_1a084dbcc4300a44da4d7da50247d5adf9" prot="public" virt="non-virtual"><scope>EconomicPolicies</scope><name>citizen</name></member>
+      <member refid="classEconomicPolicies_1a1ff4fd246e4f7d5158206696b8b6c995" prot="public" virt="non-virtual"><scope>EconomicPolicies</scope><name>EconomicPolicies</name></member>
+      <member refid="classPolicies_1a4c5ed3d962bebd23141d4f1714be94fc" prot="public" virt="virtual"><scope>EconomicPolicies</scope><name>execute</name></member>
+      <member refid="classEconomicPolicies_1a969b4d01a62a58089d7a998c2685aa2f" prot="public" virt="virtual"><scope>EconomicPolicies</scope><name>executePolicy</name></member>
+      <member refid="classCommand_1a0606383bba658ef28073274a49859aa1" prot="public" virt="virtual"><scope>EconomicPolicies</scope><name>getUtility</name></member>
+      <member refid="classCommand_1a34de0246195437ab1f1c078e7c3488c6" prot="public" virt="virtual"><scope>EconomicPolicies</scope><name>getUtilityType</name></member>
+      <member refid="classPolicies_1a2444bba6849f79b85bee359bf2bab8f8" prot="protected" virt="non-virtual"><scope>EconomicPolicies</scope><name>government</name></member>
+      <member refid="classPolicies_1a28eefe9839704a54b83c508d9f9d07dd" prot="public" virt="non-virtual"><scope>EconomicPolicies</scope><name>Policies</name></member>
+      <member refid="classEconomicPolicies_1a3364bc6064cfb5714146286ae4c648da" prot="public" virt="non-virtual"><scope>EconomicPolicies</scope><name>psPolicies</name></member>
+      <member refid="classCommand_1af4cc0c69ccba769e7d910b90f111d78e" prot="protected" virt="non-virtual"><scope>EconomicPolicies</scope><name>utility</name></member>
+      <member refid="classCommand_1ab552bb3a07fdd1acbfd8ea76e69b2278" prot="public" virt="virtual"><scope>EconomicPolicies</scope><name>~Command</name></member>
+      <member refid="classPolicies_1aa46b712a7a7e830eaccde7e6ce52a1ee" prot="public" virt="virtual"><scope>EconomicPolicies</scope><name>~Policies</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

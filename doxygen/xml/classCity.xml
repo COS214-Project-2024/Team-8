@@ -1,0 +1,967 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCity" kind="class" language="C++" prot="public">
+    <compoundname>City</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCity_1a6789f6a1a178f50ed8796bec5f12ea12" prot="private" static="no" mutable="no">
+        <type><ref refid="classGovernment" kindref="compound">Government</ref></type>
+        <definition>Government City::DesignWits</definition>
+        <argsstring></argsstring>
+        <name>DesignWits</name>
+        <briefdescription>
+<para>Represents the government design or structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="39" column="16" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1aee0dcec69241e7767acc18fdbd76f3a7" prot="private" static="no" mutable="no">
+        <type><ref refid="classCityController" kindref="compound">CityController</ref></type>
+        <definition>CityController City::Controller</definition>
+        <argsstring></argsstring>
+        <name>Controller</name>
+        <briefdescription>
+<para>Controls the overall city management and operations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="44" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a8b5a5d0ba19c4e625a1d9578464c04f5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int City::AmountOfBuildings</definition>
+        <argsstring></argsstring>
+        <name>AmountOfBuildings</name>
+        <briefdescription>
+<para>The total number of buildings in the city. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="49" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a177a170dd25ad7b6fa8cf3e25da1f011" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int City::AmountOfUtilities</definition>
+        <argsstring></argsstring>
+        <name>AmountOfUtilities</name>
+        <briefdescription>
+<para>The total number of utilities in the city. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="54" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a961c6dcf1cc17a58b1bf6ffc88a7c94f" prot="private" static="no" mutable="no">
+        <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+        <definition>Buildings* City::buildings</definition>
+        <argsstring></argsstring>
+        <name>buildings</name>
+        <briefdescription>
+<para>Pointer to an array of buildings in the city. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="59" column="15" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a1409baee54f63a58754d7d11316c56b7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; Resource * &gt;</type>
+        <definition>std::vector&lt;Resource *&gt; City::resources</definition>
+        <argsstring></argsstring>
+        <name>resources</name>
+        <briefdescription>
+<para>A vector containing various resource objects used in the city. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="64" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a18a9337c3048bd5320f4f48fff1cd23b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int City::TotalWasteManagment</definition>
+        <argsstring></argsstring>
+        <name>TotalWasteManagment</name>
+        <briefdescription>
+<para>Total waste management capacity or performance indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="69" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a84e840c19ceb8b2f54d20de16c5eedc1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int City::TotalSewageManagment</definition>
+        <argsstring></argsstring>
+        <name>TotalSewageManagment</name>
+        <briefdescription>
+<para>Total sewage management capacity or performance indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="74" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a818bd359e60762c95455866caa684147" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int City::TotalWatersupply</definition>
+        <argsstring></argsstring>
+        <name>TotalWatersupply</name>
+        <briefdescription>
+<para>Total water supply capacity or performance indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="79" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a73698e98f046f931b0287a311fc5ecea" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double City::TotalIncome</definition>
+        <argsstring></argsstring>
+        <name>TotalIncome</name>
+        <briefdescription>
+<para>Total income generated by the city. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="84" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a84d4ec88fc698212af5210c975939cfa" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int City::TotalPower</definition>
+        <argsstring></argsstring>
+        <name>TotalPower</name>
+        <briefdescription>
+<para>Total power consumption or production in the city. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="89" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1aed6aa98ed1807fa68f725b13ac5c61de" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int City::TotalWasteReq</definition>
+        <argsstring></argsstring>
+        <name>TotalWasteReq</name>
+        <briefdescription>
+<para>Total waste management requirements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="94" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a6cf19209c6b0826082255065648de6f6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int City::TotalSewageReq</definition>
+        <argsstring></argsstring>
+        <name>TotalSewageReq</name>
+        <briefdescription>
+<para>Total sewage management requirements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="99" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1adf44072a7b2d3f537f31082cb2a5f7cd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int City::TotalReq</definition>
+        <argsstring></argsstring>
+        <name>TotalReq</name>
+        <briefdescription>
+<para>Total resource requirements for the city. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="104" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1aae124189b47bfcd9598fce0264733ee1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int City::TotalPowerReq</definition>
+        <argsstring></argsstring>
+        <name>TotalPowerReq</name>
+        <briefdescription>
+<para>Total power requirements for the city. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="109" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a1b476f5c0c9864d7b43dfbfc3eca6de3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int City::TaxableIncome</definition>
+        <argsstring></argsstring>
+        <name>TaxableIncome</name>
+        <briefdescription>
+<para>The income that is subject to taxation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="114" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a288a7ae9a51d74c12ca8bfc66e677c97" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int City::AvgSatisfaction</definition>
+        <argsstring></argsstring>
+        <name>AvgSatisfaction</name>
+        <briefdescription>
+<para>Average satisfaction level of the city&apos;s population. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="119" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a1c268947333f7a2ec5808edd79a52987" prot="private" static="no" mutable="no">
+        <type><ref refid="classPopulationControl" kindref="compound">PopulationControl</ref> *</type>
+        <definition>PopulationControl* City::Population</definition>
+        <argsstring></argsstring>
+        <name>Population</name>
+        <briefdescription>
+<para>Controls the population dynamics and management. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="124" column="23" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a58853fa897a1a07e89f28c4c9b71f2b9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int City::AmountOfPop</definition>
+        <argsstring></argsstring>
+        <name>AmountOfPop</name>
+        <briefdescription>
+<para>The total population of the city. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="129" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a79eb9744f44ff6a8d6cecdd770c53eb8" prot="private" static="no" mutable="no">
+        <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+        <definition>Utility* City::ListOfUtilityBuildings</definition>
+        <argsstring></argsstring>
+        <name>ListOfUtilityBuildings</name>
+        <briefdescription>
+<para>List of utility buildings present in the city. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="134" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1ac58a81bb68f2d5fff3b7a23ccfa3d17b" prot="private" static="no" mutable="no">
+        <type><ref refid="classFactoriesFactory" kindref="compound">FactoriesFactory</ref></type>
+        <definition>FactoriesFactory City::FactoryBuilder</definition>
+        <argsstring></argsstring>
+        <name>FactoryBuilder</name>
+        <briefdescription>
+<para>Factory for building various types of factories. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="139" column="22" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1ab0bbaf0ec4674be4909623d2bd5f3892" prot="private" static="no" mutable="no">
+        <type><ref refid="classWarehouseFactory" kindref="compound">WarehouseFactory</ref></type>
+        <definition>WarehouseFactory City::WarehouseBuilder</definition>
+        <argsstring></argsstring>
+        <name>WarehouseBuilder</name>
+        <briefdescription>
+<para>Factory for building warehouses. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="144" column="22" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a5409a71c91ee3d4c08dccaa8f9b3733b" prot="private" static="no" mutable="no">
+        <type><ref refid="classMedicalCenterFactory" kindref="compound">MedicalCenterFactory</ref></type>
+        <definition>MedicalCenterFactory City::MedicalCentreBuilder</definition>
+        <argsstring></argsstring>
+        <name>MedicalCentreBuilder</name>
+        <briefdescription>
+<para>Factory for building medical centers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="149" column="26" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a397fcdde4793e84737b37ff071c108f6" prot="private" static="no" mutable="no">
+        <type><ref refid="classSchoolFactory" kindref="compound">SchoolFactory</ref></type>
+        <definition>SchoolFactory City::SchoolBuilder</definition>
+        <argsstring></argsstring>
+        <name>SchoolBuilder</name>
+        <briefdescription>
+<para>Factory for building schools. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="154" column="19" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a9cc570d5f3cf632b1e6710d9bb7c9ecb" prot="private" static="no" mutable="no">
+        <type><ref refid="classPoliceStationFactory" kindref="compound">PoliceStationFactory</ref></type>
+        <definition>PoliceStationFactory City::PoliceStationBuilder</definition>
+        <argsstring></argsstring>
+        <name>PoliceStationBuilder</name>
+        <briefdescription>
+<para>Factory for building police stations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="159" column="26" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1af5a4448a2f82a29c734520074415838c" prot="private" static="no" mutable="no">
+        <type><ref refid="classOfficeFactory" kindref="compound">OfficeFactory</ref></type>
+        <definition>OfficeFactory City::OfficeBuilder</definition>
+        <argsstring></argsstring>
+        <name>OfficeBuilder</name>
+        <briefdescription>
+<para>Factory for building offices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="164" column="19" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1aae41831e244d6b2b35508385443e3303" prot="private" static="no" mutable="no">
+        <type><ref refid="classMallFactory" kindref="compound">MallFactory</ref></type>
+        <definition>MallFactory City::MallBuilder</definition>
+        <argsstring></argsstring>
+        <name>MallBuilder</name>
+        <briefdescription>
+<para>Factory for building shopping malls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="169" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a1cf3343569fd7ef676a946c5cd56af3e" prot="private" static="no" mutable="no">
+        <type><ref refid="classParkFactory" kindref="compound">ParkFactory</ref></type>
+        <definition>ParkFactory City::ParkBuilder</definition>
+        <argsstring></argsstring>
+        <name>ParkBuilder</name>
+        <briefdescription>
+<para>Factory for building parks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="174" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1ae97a9353633e1e92aa1a6b8db07c6631" prot="private" static="no" mutable="no">
+        <type><ref refid="classMonumentFactory" kindref="compound">MonumentFactory</ref></type>
+        <definition>MonumentFactory City::MonumentBuilder</definition>
+        <argsstring></argsstring>
+        <name>MonumentBuilder</name>
+        <briefdescription>
+<para>Factory for building monuments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="179" column="21" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1affe24b3164e80ee94f3803ac22fd5bba" prot="private" static="no" mutable="no">
+        <type><ref refid="classCulturalCenterFactory" kindref="compound">CulturalCenterFactory</ref></type>
+        <definition>CulturalCenterFactory City::CulturalCentreBuilder</definition>
+        <argsstring></argsstring>
+        <name>CulturalCentreBuilder</name>
+        <briefdescription>
+<para>Factory for building cultural centers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="184" column="27" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1af950140a0a8345517b3b56884f7b4625" prot="private" static="no" mutable="no">
+        <type><ref refid="classWaterFactory" kindref="compound">WaterFactory</ref></type>
+        <definition>WaterFactory City::WaterBuilder</definition>
+        <argsstring></argsstring>
+        <name>WaterBuilder</name>
+        <briefdescription>
+<para>Factory for building water supply facilities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="189" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1a00d131b6f17148351f91f544b80dedcd" prot="private" static="no" mutable="no">
+        <type><ref refid="classPowerPlantFactory" kindref="compound">PowerPlantFactory</ref></type>
+        <definition>PowerPlantFactory City::PowerBuilder</definition>
+        <argsstring></argsstring>
+        <name>PowerBuilder</name>
+        <briefdescription>
+<para>Factory for building power generation plants. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="194" column="23" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1ace5869254682a884daf02e029bc88371" prot="private" static="no" mutable="no">
+        <type><ref refid="classSewageFactory" kindref="compound">SewageFactory</ref></type>
+        <definition>SewageFactory City::SewageBuilder</definition>
+        <argsstring></argsstring>
+        <name>SewageBuilder</name>
+        <briefdescription>
+<para>Factory for building sewage treatment facilities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="199" column="19" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCity_1ae3e89eada226e4b49b0a647d7b957119" prot="private" static="no" mutable="no">
+        <type><ref refid="classWasteFactory" kindref="compound">WasteFactory</ref></type>
+        <definition>WasteFactory City::WasteBuilder</definition>
+        <argsstring></argsstring>
+        <name>WasteBuilder</name>
+        <briefdescription>
+<para>Factory for building waste management facilities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="204" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCity_1a1b1f549430f0a7ecd0ec7b1605415193" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>City::City</definition>
+        <argsstring>()</argsstring>
+        <name>City</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="207" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="5" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1aaec1bc3de89d30bf08a8a0c8afce475a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::runsimulation</definition>
+        <argsstring>()</argsstring>
+        <name>runsimulation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="208" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1a61ce1d4b05957c8b7a3bd4e4b1c6f90d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int City::CalculateTotalWaste</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateTotalWaste</name>
+        <briefdescription>
+<para>Calculates the total waste produced by all facilities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Total amount of waste. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="214" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="22" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1a81500ddb16c0c90aa23543aee4ef4bc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::createCitizens</definition>
+        <argsstring>(int amount)</argsstring>
+        <name>createCitizens</name>
+        <param>
+          <type>int</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+<para>Creates a specified number of citizens and adds them to the population. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of citizens to be created. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="220" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="28" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1a451c146c3af1ee80317fdca7cd18ccc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int City::CalculateTotalWater</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateTotalWater</name>
+        <briefdescription>
+<para>Calculates the total water usage in the area. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Total amount of water used. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="226" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1aef6301cbd6eac3a949253fe937d214c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int City::CalculateTotalSewage</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateTotalSewage</name>
+        <briefdescription>
+<para>Calculates the total sewage output from all sources. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Total amount of sewage produced. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="232" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="48" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1ab98b8b8e0854072788f873582c4d6b95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int City::CalculateTotalPower</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateTotalPower</name>
+        <briefdescription>
+<para>Calculates the total power consumption of all buildings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Total amount of power used. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="238" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="54" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1a76965c48cbaed336b45620a84170c1aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::BuildFactory</definition>
+        <argsstring>()</argsstring>
+        <name>BuildFactory</name>
+        <briefdescription>
+<para>Builds a factory to produce goods. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="243" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1addc5b95b096e92f82d8a0f1effd33d91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::BuildWarehouse</definition>
+        <argsstring>()</argsstring>
+        <name>BuildWarehouse</name>
+        <briefdescription>
+<para>Constructs a warehouse for storing goods and materials. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="248" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="66" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1a3491ce44a03eed6c74cf5c88eea043c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::BuildMedical</definition>
+        <argsstring>()</argsstring>
+        <name>BuildMedical</name>
+        <briefdescription>
+<para>Establishes a medical facility for healthcare services. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="253" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="72" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1a69479e0fb875e7e90f433d5ffc60ee43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::BuildSchool</definition>
+        <argsstring>()</argsstring>
+        <name>BuildSchool</name>
+        <briefdescription>
+<para>Builds a school for educational purposes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="258" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="78" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1afb6ae6f2e7881fd542660338b37b5ab5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::BuildPolice</definition>
+        <argsstring>()</argsstring>
+        <name>BuildPolice</name>
+        <briefdescription>
+<para>Constructs a police station for law enforcement. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="263" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="84" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1a78e06f2cc89a36601bfe569a7187e1d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::BuildOffice</definition>
+        <argsstring>()</argsstring>
+        <name>BuildOffice</name>
+        <briefdescription>
+<para>Sets up office buildings for administrative and commercial activities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="268" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="90" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1a49107bbf26f7cfecdb7ebf048930cf01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::BuildMall</definition>
+        <argsstring>()</argsstring>
+        <name>BuildMall</name>
+        <briefdescription>
+<para>Builds a shopping mall for retail and entertainment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="273" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="96" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1a532cea82dda722a79dd86eb485e627e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::BuildPark</definition>
+        <argsstring>()</argsstring>
+        <name>BuildPark</name>
+        <briefdescription>
+<para>Creates a park for recreational activities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="278" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="102" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1ad21cb6e7c711122a3d27f989d9dcc42d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::BuildMonument</definition>
+        <argsstring>()</argsstring>
+        <name>BuildMonument</name>
+        <briefdescription>
+<para>Constructs a monument for cultural or historical significance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="283" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="108" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1a89c8d4dfb9c335ef1ace023a63518708" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::BuildCulturalCenter</definition>
+        <argsstring>()</argsstring>
+        <name>BuildCulturalCenter</name>
+        <briefdescription>
+<para>Establishes a cultural center for community events and activities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="288" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="114" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1af365bae405b7ebdaaebc5d9763656d14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::BuildWaterUtility</definition>
+        <argsstring>()</argsstring>
+        <name>BuildWaterUtility</name>
+        <briefdescription>
+<para>Constructs a water utility facility for managing water supply. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="293" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="120" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1a66e5fa8564c9608c6118ec82a2019e18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::BuildPowerUtility</definition>
+        <argsstring>()</argsstring>
+        <name>BuildPowerUtility</name>
+        <briefdescription>
+<para>Sets up a power utility for generation and distribution of electricity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="298" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="126" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1a3f023b5f1c1c0f6530902b08f2dfda40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::BuildWasteUtility</definition>
+        <argsstring>()</argsstring>
+        <name>BuildWasteUtility</name>
+        <briefdescription>
+<para>Establishes a waste utility for managing waste disposal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="303" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="132" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1a2f2b06a748e39ab2df47e60f97293180" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::BuildSewageUtility</definition>
+        <argsstring>()</argsstring>
+        <name>BuildSewageUtility</name>
+        <briefdescription>
+<para>Constructs a sewage utility for treating and managing sewage. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="308" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="138" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1a2800d1ee81b8cac40a889985e2922ab3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::remUtility</definition>
+        <argsstring>(Utility *U)</argsstring>
+        <name>remUtility</name>
+        <param>
+          <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+<para>Removes a utility from the management system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>U</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the utility to be removed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="314" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1ae533af38aa60ca254c013a20046da12f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::remBuilding</definition>
+        <argsstring>(Buildings *B)</argsstring>
+        <name>remBuilding</name>
+        <param>
+          <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+<para>Removes a building from the management system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the building to be removed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="320" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="149" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1addf48ddd189766a8a652080a92564a11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::remCitizen</definition>
+        <argsstring>(Citizen *C)</argsstring>
+        <name>remCitizen</name>
+        <param>
+          <type><ref refid="classCitizen" kindref="compound">Citizen</ref> *</type>
+          <declname>C</declname>
+        </param>
+        <briefdescription>
+<para>Removes a citizen from the population. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the citizen to be removed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="326" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classCity_1ae95feee8a1d4e1f14ea41ec89b47304f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>City::~City</definition>
+        <argsstring>()</argsstring>
+        <name>~City</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="328" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.cpp" bodystart="159" bodyend="161"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" line="33" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h" bodystart="34" bodyend="329"/>
+    <listofallmembers>
+      <member refid="classCity_1a8b5a5d0ba19c4e625a1d9578464c04f5" prot="private" virt="non-virtual"><scope>City</scope><name>AmountOfBuildings</name></member>
+      <member refid="classCity_1a58853fa897a1a07e89f28c4c9b71f2b9" prot="private" virt="non-virtual"><scope>City</scope><name>AmountOfPop</name></member>
+      <member refid="classCity_1a177a170dd25ad7b6fa8cf3e25da1f011" prot="private" virt="non-virtual"><scope>City</scope><name>AmountOfUtilities</name></member>
+      <member refid="classCity_1a288a7ae9a51d74c12ca8bfc66e677c97" prot="private" virt="non-virtual"><scope>City</scope><name>AvgSatisfaction</name></member>
+      <member refid="classCity_1a89c8d4dfb9c335ef1ace023a63518708" prot="public" virt="non-virtual"><scope>City</scope><name>BuildCulturalCenter</name></member>
+      <member refid="classCity_1a76965c48cbaed336b45620a84170c1aa" prot="public" virt="non-virtual"><scope>City</scope><name>BuildFactory</name></member>
+      <member refid="classCity_1a961c6dcf1cc17a58b1bf6ffc88a7c94f" prot="private" virt="non-virtual"><scope>City</scope><name>buildings</name></member>
+      <member refid="classCity_1a49107bbf26f7cfecdb7ebf048930cf01" prot="public" virt="non-virtual"><scope>City</scope><name>BuildMall</name></member>
+      <member refid="classCity_1a3491ce44a03eed6c74cf5c88eea043c9" prot="public" virt="non-virtual"><scope>City</scope><name>BuildMedical</name></member>
+      <member refid="classCity_1ad21cb6e7c711122a3d27f989d9dcc42d" prot="public" virt="non-virtual"><scope>City</scope><name>BuildMonument</name></member>
+      <member refid="classCity_1a78e06f2cc89a36601bfe569a7187e1d0" prot="public" virt="non-virtual"><scope>City</scope><name>BuildOffice</name></member>
+      <member refid="classCity_1a532cea82dda722a79dd86eb485e627e1" prot="public" virt="non-virtual"><scope>City</scope><name>BuildPark</name></member>
+      <member refid="classCity_1afb6ae6f2e7881fd542660338b37b5ab5" prot="public" virt="non-virtual"><scope>City</scope><name>BuildPolice</name></member>
+      <member refid="classCity_1a66e5fa8564c9608c6118ec82a2019e18" prot="public" virt="non-virtual"><scope>City</scope><name>BuildPowerUtility</name></member>
+      <member refid="classCity_1a69479e0fb875e7e90f433d5ffc60ee43" prot="public" virt="non-virtual"><scope>City</scope><name>BuildSchool</name></member>
+      <member refid="classCity_1a2f2b06a748e39ab2df47e60f97293180" prot="public" virt="non-virtual"><scope>City</scope><name>BuildSewageUtility</name></member>
+      <member refid="classCity_1addc5b95b096e92f82d8a0f1effd33d91" prot="public" virt="non-virtual"><scope>City</scope><name>BuildWarehouse</name></member>
+      <member refid="classCity_1a3f023b5f1c1c0f6530902b08f2dfda40" prot="public" virt="non-virtual"><scope>City</scope><name>BuildWasteUtility</name></member>
+      <member refid="classCity_1af365bae405b7ebdaaebc5d9763656d14" prot="public" virt="non-virtual"><scope>City</scope><name>BuildWaterUtility</name></member>
+      <member refid="classCity_1ab98b8b8e0854072788f873582c4d6b95" prot="public" virt="non-virtual"><scope>City</scope><name>CalculateTotalPower</name></member>
+      <member refid="classCity_1aef6301cbd6eac3a949253fe937d214c0" prot="public" virt="non-virtual"><scope>City</scope><name>CalculateTotalSewage</name></member>
+      <member refid="classCity_1a61ce1d4b05957c8b7a3bd4e4b1c6f90d" prot="public" virt="non-virtual"><scope>City</scope><name>CalculateTotalWaste</name></member>
+      <member refid="classCity_1a451c146c3af1ee80317fdca7cd18ccc3" prot="public" virt="non-virtual"><scope>City</scope><name>CalculateTotalWater</name></member>
+      <member refid="classCity_1a1b1f549430f0a7ecd0ec7b1605415193" prot="public" virt="non-virtual"><scope>City</scope><name>City</name></member>
+      <member refid="classCity_1aee0dcec69241e7767acc18fdbd76f3a7" prot="private" virt="non-virtual"><scope>City</scope><name>Controller</name></member>
+      <member refid="classCity_1a81500ddb16c0c90aa23543aee4ef4bc7" prot="public" virt="non-virtual"><scope>City</scope><name>createCitizens</name></member>
+      <member refid="classCity_1affe24b3164e80ee94f3803ac22fd5bba" prot="private" virt="non-virtual"><scope>City</scope><name>CulturalCentreBuilder</name></member>
+      <member refid="classCity_1a6789f6a1a178f50ed8796bec5f12ea12" prot="private" virt="non-virtual"><scope>City</scope><name>DesignWits</name></member>
+      <member refid="classCity_1ac58a81bb68f2d5fff3b7a23ccfa3d17b" prot="private" virt="non-virtual"><scope>City</scope><name>FactoryBuilder</name></member>
+      <member refid="classCity_1a79eb9744f44ff6a8d6cecdd770c53eb8" prot="private" virt="non-virtual"><scope>City</scope><name>ListOfUtilityBuildings</name></member>
+      <member refid="classCity_1aae41831e244d6b2b35508385443e3303" prot="private" virt="non-virtual"><scope>City</scope><name>MallBuilder</name></member>
+      <member refid="classCity_1a5409a71c91ee3d4c08dccaa8f9b3733b" prot="private" virt="non-virtual"><scope>City</scope><name>MedicalCentreBuilder</name></member>
+      <member refid="classCity_1ae97a9353633e1e92aa1a6b8db07c6631" prot="private" virt="non-virtual"><scope>City</scope><name>MonumentBuilder</name></member>
+      <member refid="classCity_1af5a4448a2f82a29c734520074415838c" prot="private" virt="non-virtual"><scope>City</scope><name>OfficeBuilder</name></member>
+      <member refid="classCity_1a1cf3343569fd7ef676a946c5cd56af3e" prot="private" virt="non-virtual"><scope>City</scope><name>ParkBuilder</name></member>
+      <member refid="classCity_1a9cc570d5f3cf632b1e6710d9bb7c9ecb" prot="private" virt="non-virtual"><scope>City</scope><name>PoliceStationBuilder</name></member>
+      <member refid="classCity_1a1c268947333f7a2ec5808edd79a52987" prot="private" virt="non-virtual"><scope>City</scope><name>Population</name></member>
+      <member refid="classCity_1a00d131b6f17148351f91f544b80dedcd" prot="private" virt="non-virtual"><scope>City</scope><name>PowerBuilder</name></member>
+      <member refid="classCity_1ae533af38aa60ca254c013a20046da12f" prot="public" virt="non-virtual"><scope>City</scope><name>remBuilding</name></member>
+      <member refid="classCity_1addf48ddd189766a8a652080a92564a11" prot="public" virt="non-virtual"><scope>City</scope><name>remCitizen</name></member>
+      <member refid="classCity_1a2800d1ee81b8cac40a889985e2922ab3" prot="public" virt="non-virtual"><scope>City</scope><name>remUtility</name></member>
+      <member refid="classCity_1a1409baee54f63a58754d7d11316c56b7" prot="private" virt="non-virtual"><scope>City</scope><name>resources</name></member>
+      <member refid="classCity_1aaec1bc3de89d30bf08a8a0c8afce475a" prot="public" virt="non-virtual"><scope>City</scope><name>runsimulation</name></member>
+      <member refid="classCity_1a397fcdde4793e84737b37ff071c108f6" prot="private" virt="non-virtual"><scope>City</scope><name>SchoolBuilder</name></member>
+      <member refid="classCity_1ace5869254682a884daf02e029bc88371" prot="private" virt="non-virtual"><scope>City</scope><name>SewageBuilder</name></member>
+      <member refid="classCity_1a1b476f5c0c9864d7b43dfbfc3eca6de3" prot="private" virt="non-virtual"><scope>City</scope><name>TaxableIncome</name></member>
+      <member refid="classCity_1a73698e98f046f931b0287a311fc5ecea" prot="private" virt="non-virtual"><scope>City</scope><name>TotalIncome</name></member>
+      <member refid="classCity_1a84d4ec88fc698212af5210c975939cfa" prot="private" virt="non-virtual"><scope>City</scope><name>TotalPower</name></member>
+      <member refid="classCity_1aae124189b47bfcd9598fce0264733ee1" prot="private" virt="non-virtual"><scope>City</scope><name>TotalPowerReq</name></member>
+      <member refid="classCity_1adf44072a7b2d3f537f31082cb2a5f7cd" prot="private" virt="non-virtual"><scope>City</scope><name>TotalReq</name></member>
+      <member refid="classCity_1a84e840c19ceb8b2f54d20de16c5eedc1" prot="private" virt="non-virtual"><scope>City</scope><name>TotalSewageManagment</name></member>
+      <member refid="classCity_1a6cf19209c6b0826082255065648de6f6" prot="private" virt="non-virtual"><scope>City</scope><name>TotalSewageReq</name></member>
+      <member refid="classCity_1a18a9337c3048bd5320f4f48fff1cd23b" prot="private" virt="non-virtual"><scope>City</scope><name>TotalWasteManagment</name></member>
+      <member refid="classCity_1aed6aa98ed1807fa68f725b13ac5c61de" prot="private" virt="non-virtual"><scope>City</scope><name>TotalWasteReq</name></member>
+      <member refid="classCity_1a818bd359e60762c95455866caa684147" prot="private" virt="non-virtual"><scope>City</scope><name>TotalWatersupply</name></member>
+      <member refid="classCity_1ab0bbaf0ec4674be4909623d2bd5f3892" prot="private" virt="non-virtual"><scope>City</scope><name>WarehouseBuilder</name></member>
+      <member refid="classCity_1ae3e89eada226e4b49b0a647d7b957119" prot="private" virt="non-virtual"><scope>City</scope><name>WasteBuilder</name></member>
+      <member refid="classCity_1af950140a0a8345517b3b56884f7b4625" prot="private" virt="non-virtual"><scope>City</scope><name>WaterBuilder</name></member>
+      <member refid="classCity_1ae95feee8a1d4e1f14ea41ec89b47304f" prot="public" virt="non-virtual"><scope>City</scope><name>~City</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

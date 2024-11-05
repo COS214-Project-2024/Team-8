@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1detail_1_1ResultBuilder" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::detail::ResultBuilder</compoundname>
+    <basecompoundref refid="structdoctest_1_1AssertData" prot="public" virt="non-virtual">doctest::AssertData</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1ResultBuilder_1a135e00690002d376f3d050700a635680" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doctest::detail::ResultBuilder::ResultBuilder</definition>
+        <argsstring>(assertType::Enum at, const char *file, int line, const char *expr, const char *exception_type=&quot;&quot;, const String &amp;exception_string=&quot;&quot;)</argsstring>
+        <name>ResultBuilder</name>
+        <param>
+          <type>assertType::Enum</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>exception_type</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const <ref refid="classdoctest_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>exception_string</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1683" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1ResultBuilder_1ab55660e3aaa5d8fccbe19360f65bb1f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doctest::detail::ResultBuilder::ResultBuilder</definition>
+        <argsstring>(assertType::Enum at, const char *file, int line, const char *expr, const char *exception_type, const Contains &amp;exception_string)</argsstring>
+        <name>ResultBuilder</name>
+        <param>
+          <type>assertType::Enum</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>exception_type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdoctest_1_1Contains" kindref="compound">Contains</ref> &amp;</type>
+          <declname>exception_string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1686" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1ResultBuilder_1a86c0ca727fead43263de4a7e9a59ad23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doctest::detail::ResultBuilder::setResult</definition>
+        <argsstring>(const Result &amp;res)</argsstring>
+        <name>setResult</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1detail_1_1Result" kindref="compound">Result</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1689" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1ResultBuilder_1aa920a0617a26939d7adcd1ba2dec0e85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>comparison</declname>
+            <defname>comparison</defname>
+          </param>
+          <param>
+            <type>typename L</type>
+          </param>
+          <param>
+            <type>typename R</type>
+          </param>
+        </templateparamlist>
+        <type>DOCTEST_NOINLINE bool</type>
+        <definition>DOCTEST_NOINLINE bool doctest::detail::ResultBuilder::binary_assert</definition>
+        <argsstring>(const DOCTEST_REF_WRAP(L) lhs, const DOCTEST_REF_WRAP(R) rhs)</argsstring>
+        <name>binary_assert</name>
+        <param>
+          <type>const DOCTEST_REF_WRAP(L)</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const DOCTEST_REF_WRAP(R)</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1692" column="31" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1692" bodyend="1699"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1ResultBuilder_1a63a2a19638f4a761c70abd5563e2d23a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename L</type>
+          </param>
+        </templateparamlist>
+        <type>DOCTEST_NOINLINE bool</type>
+        <definition>DOCTEST_NOINLINE bool doctest::detail::ResultBuilder::unary_assert</definition>
+        <argsstring>(const DOCTEST_REF_WRAP(L) val)</argsstring>
+        <name>unary_assert</name>
+        <param>
+          <type>const DOCTEST_REF_WRAP(L)</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>OCLINT bitwise operator in conditional</para>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1702" column="31" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1702" bodyend="1714"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1ResultBuilder_1a5eece6aa3b1a2cb366cf5a0cc6c854a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doctest::detail::ResultBuilder::translateException</definition>
+        <argsstring>()</argsstring>
+        <name>translateException</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1716" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1ResultBuilder_1a2af75dd1d8db8d3aa949d78025854085" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool doctest::detail::ResultBuilder::log</definition>
+        <argsstring>()</argsstring>
+        <name>log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1718" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1ResultBuilder_1a03686f862471728c2980d72e02980213" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doctest::detail::ResultBuilder::react</definition>
+        <argsstring>() const</argsstring>
+        <name>react</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1719" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>doctest::detail::ResultBuilder</label>
+        <link refid="structdoctest_1_1detail_1_1ResultBuilder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>doctest::AssertData</label>
+        <link refid="structdoctest_1_1AssertData"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>doctest::detail::ResultBuilder</label>
+        <link refid="structdoctest_1_1detail_1_1ResultBuilder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>doctest::String::view</label>
+      </node>
+      <node id="6">
+        <label>doctest::AssertData::StringContains</label>
+        <link refid="classdoctest_1_1AssertData_1_1StringContains"/>
+      </node>
+      <node id="3">
+        <label>doctest::TestCaseData</label>
+        <link refid="structdoctest_1_1TestCaseData"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_file</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>doctest::AssertData</label>
+        <link refid="structdoctest_1_1AssertData"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_test_case</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_decomp</edgelabel>
+          <edgelabel>m_exception</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>m_exception_string</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>doctest::String</label>
+        <link refid="classdoctest_1_1String"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1681" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1682" bodyend="1720"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1AssertData_1ae1f9906888c2dd06b6291ab196f5074e" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>AssertData</name></member>
+      <member refid="structdoctest_1_1detail_1_1ResultBuilder_1aa920a0617a26939d7adcd1ba2dec0e85" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>binary_assert</name></member>
+      <member refid="structdoctest_1_1detail_1_1ResultBuilder_1a2af75dd1d8db8d3aa949d78025854085" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>log</name></member>
+      <member refid="structdoctest_1_1AssertData_1a0b3b2866b13ba048c0beea51bd798749" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>m_at</name></member>
+      <member refid="structdoctest_1_1AssertData_1a1c6b5804b7dd4d8ba70126cb598f30bd" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>m_decomp</name></member>
+      <member refid="structdoctest_1_1AssertData_1a1fdbef933ef26c0bc174f9ec716924cd" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>m_exception</name></member>
+      <member refid="structdoctest_1_1AssertData_1a86c189116f12eccc2d3362ec6d8862f4" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>m_exception_string</name></member>
+      <member refid="structdoctest_1_1AssertData_1a1c476dc606780aefdb7db2d7ca146199" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>m_exception_type</name></member>
+      <member refid="structdoctest_1_1AssertData_1af8fe9e24ffba3f575c7384a85f96297a" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>m_expr</name></member>
+      <member refid="structdoctest_1_1AssertData_1ac9ddaf3e6532fdadba3c1f74eb931d4a" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>m_failed</name></member>
+      <member refid="structdoctest_1_1AssertData_1ac22c9ed0d8c6edec58c4b26a0a00e714" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>m_file</name></member>
+      <member refid="structdoctest_1_1AssertData_1a1142f5fb5d171964b7677a9d23f81548" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>m_line</name></member>
+      <member refid="structdoctest_1_1AssertData_1ab26ee6e05feaefc982c4f5481458cbda" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>m_test_case</name></member>
+      <member refid="structdoctest_1_1AssertData_1a3e9d4c7eeff7c4fe310b0597bf7027b8" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>m_threw</name></member>
+      <member refid="structdoctest_1_1AssertData_1ace744d365532d299052c8a80a63f7079" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>m_threw_as</name></member>
+      <member refid="structdoctest_1_1detail_1_1ResultBuilder_1a03686f862471728c2980d72e02980213" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>react</name></member>
+      <member refid="structdoctest_1_1detail_1_1ResultBuilder_1a135e00690002d376f3d050700a635680" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>ResultBuilder</name></member>
+      <member refid="structdoctest_1_1detail_1_1ResultBuilder_1ab55660e3aaa5d8fccbe19360f65bb1f3" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>ResultBuilder</name></member>
+      <member refid="structdoctest_1_1detail_1_1ResultBuilder_1a86c0ca727fead43263de4a7e9a59ad23" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>setResult</name></member>
+      <member refid="structdoctest_1_1detail_1_1ResultBuilder_1a5eece6aa3b1a2cb366cf5a0cc6c854a3" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>translateException</name></member>
+      <member refid="structdoctest_1_1detail_1_1ResultBuilder_1a63a2a19638f4a761c70abd5563e2d23a" prot="public" virt="non-virtual"><scope>doctest::detail::ResultBuilder</scope><name>unary_assert</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

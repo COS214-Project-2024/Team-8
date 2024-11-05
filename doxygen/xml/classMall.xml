@@ -1,0 +1,689 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classMall" kind="class" language="C++" prot="public">
+    <compoundname>Mall</compoundname>
+    <basecompoundref refid="classCommercialBuilding" prot="public" virt="non-virtual">CommercialBuilding</basecompoundref>
+    <includes refid="Mall_8h" local="no">Mall.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMall_1a4a8d70cd3a55730dc0ea828959f1ff5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Mall::Mall</definition>
+        <argsstring>(string bName, int pReq, int wReq, double mCost, int sCost, int waste, float sales, float profit, int emp)</argsstring>
+        <name>Mall</name>
+        <param>
+          <type>string</type>
+          <declname>bName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pReq</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wReq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mCost</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sCost</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>waste</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sales</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>profit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>emp</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="classMall" kindref="compound">Mall</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the mall. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pReq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Power requirement. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wReq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Water requirement. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mCost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maintenance cost. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sCost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sewage cost. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>waste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Waste produced. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sales</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total sales. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>profit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total profit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>emp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of employees. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="26" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="12" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1a434c468b4615bb7e17de3d56b6767027" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string Mall::getBuildingType</definition>
+        <argsstring>()</argsstring>
+        <name>getBuildingType</name>
+        <reimplements refid="classCommercialBuilding_1a2bc59aed3639b1ddc8985ab71cc13579">getBuildingType</reimplements>
+        <briefdescription>
+<para>Gets the type of the mall. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The type of the mall as a string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="33" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1a00e1555ccec450d6492fcfed59898ca3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Mall::getJobsCreated</definition>
+        <argsstring>()</argsstring>
+        <name>getJobsCreated</name>
+        <reimplements refid="classCommercialBuilding_1afaf183aab243dea40e25690e8b7b5ebc">getJobsCreated</reimplements>
+        <briefdescription>
+<para>Gets the number of jobs created by the mall. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of jobs as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="39" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1a1b82e5b2448863742d3348eeb48a17ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double Mall::getMaintenanceCost</definition>
+        <argsstring>()</argsstring>
+        <name>getMaintenanceCost</name>
+        <reimplements refid="classCommercialBuilding_1a67781a6b655a1c5bbd7f7192bf4fae51">getMaintenanceCost</reimplements>
+        <briefdescription>
+<para>Gets the maintenance cost of the mall. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The maintenance cost as a double. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="45" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1ae77f2296986c54b8a7fbf7ca5adbfdf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string Mall::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <reimplements refid="classCommercialBuilding_1ab24328311662c377deb43ccfdb83dbab">getName</reimplements>
+        <briefdescription>
+<para>Gets the name of the mall. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The name of the mall as a string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="51" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1abddc782e00da2d1d9961852cf5c4c351" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Mall::getPowerReq</definition>
+        <argsstring>()</argsstring>
+        <name>getPowerReq</name>
+        <reimplements refid="classCommercialBuilding_1a0b192a6a070bf0f907b83cf45c53d11c">getPowerReq</reimplements>
+        <briefdescription>
+<para>Gets the power requirement of the mall. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The power requirement as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="57" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1ad399e511790a082c3a7b6cc3ca3e8e31" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Mall::getSewageCost</definition>
+        <argsstring>()</argsstring>
+        <name>getSewageCost</name>
+        <reimplements refid="classCommercialBuilding_1aa7b21c407ff71a2f360ec1c30d59c3e7">getSewageCost</reimplements>
+        <briefdescription>
+<para>Gets the sewage cost of the mall. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The sewage cost as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="63" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1afdc55e02fd226ba7a86e14ee883ae4f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Mall::getWaterReq</definition>
+        <argsstring>()</argsstring>
+        <name>getWaterReq</name>
+        <reimplements refid="classCommercialBuilding_1ac35a6efffcba448cc807778397020b55">getWaterReq</reimplements>
+        <briefdescription>
+<para>Gets the water requirement of the mall. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The water requirement as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="69" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1ac14edf6de3e9827261ae3101fb36c2f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Mall::requestState</definition>
+        <argsstring>()</argsstring>
+        <name>requestState</name>
+        <reimplements refid="classCommercialBuilding_1ae8ddedfb93a3d0a88e5179f8aaa60fa1">requestState</reimplements>
+        <briefdescription>
+<para>Requests the current state of the mall. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="74" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1a1cad54db87d7520ef707192b42ec160d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Mall::setState</definition>
+        <argsstring>(State *newState)</argsstring>
+        <name>setState</name>
+        <reimplements refid="classCommercialBuilding_1a16e612d08679f4451fd2ae773251132b">setState</reimplements>
+        <param>
+          <type><ref refid="classState" kindref="compound">State</ref> *</type>
+          <declname>newState</declname>
+        </param>
+        <briefdescription>
+<para>sets the state of the building </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="79" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1a06fb0e85c1423f4f69b1395539ec3e06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Mall::getIncome</definition>
+        <argsstring>()</argsstring>
+        <name>getIncome</name>
+        <briefdescription>
+<para>Gets the income generated by the mall. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The income as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="85" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1aab7fc06fd03fb4a112213c50acc57abe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Mall::getWasteCost</definition>
+        <argsstring>()</argsstring>
+        <name>getWasteCost</name>
+        <reimplements refid="classBuildings_1a94e15ba281ac20d60e1a4632f7be1292">getWasteCost</reimplements>
+        <briefdescription>
+<para>Gets the waste cost for the mall. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The waste cost as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="91" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1a113c7507987173f4eae574d86824c3e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float Mall::getSales</definition>
+        <argsstring>()</argsstring>
+        <name>getSales</name>
+        <reimplements refid="classCommercialBuilding_1ab69ce9a94734ece60e08f51262aed158">getSales</reimplements>
+        <briefdescription>
+<para>Gets the total sales of the mall. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The sales as a float. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="97" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1a0558a2b36d4aa77d603d4e2afdd95ab4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float Mall::getProfit</definition>
+        <argsstring>()</argsstring>
+        <name>getProfit</name>
+        <reimplements refid="classCommercialBuilding_1acc4395bf128e80842b3ae76da0f4b2d8">getProfit</reimplements>
+        <briefdescription>
+<para>Gets the total profit of the mall. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The profit as a float. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="103" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1a226434653403f076011ba131cfdf1574" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Mall::payCitizen</definition>
+        <argsstring>()</argsstring>
+        <name>payCitizen</name>
+        <reimplements refid="classCommercialBuilding_1ad0e3cc060d90ba7fb925efdc1649b894">payCitizen</reimplements>
+        <briefdescription>
+<para>Pays a citizen from the mall&apos;s profits. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The payment amount as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="109" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="89" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1ace6d4591ab21f6ebca91fe4d35a0eb92" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Mall::getCommercialIncome</definition>
+        <argsstring>()</argsstring>
+        <name>getCommercialIncome</name>
+        <reimplements refid="classCommercialBuilding_1ae827061bd272d37402e9d5cb9f961363">getCommercialIncome</reimplements>
+        <briefdescription>
+<para>gets the current income of a commercial building </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the income as an integer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="115" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1a20ec3420d8ffb92073d2276304bc01a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double Mall::getBalance</definition>
+        <argsstring>()</argsstring>
+        <name>getBalance</name>
+        <reimplements refid="classCommercialBuilding_1a77ce6bb30a4f595867ed3be7dc9e0f17">getBalance</reimplements>
+        <briefdescription>
+<para>gets the current income of a commercial building </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the income as an integer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="121" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1a9cf46334f78b14ff9cedf91f981f4ab7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Mall::setBalance</definition>
+        <argsstring>(double b)</argsstring>
+        <name>setBalance</name>
+        <reimplements refid="classCommercialBuilding_1ae3d75fa3195c1808f68c1e165bee053b">setBalance</reimplements>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>gets the current income of a commercial building </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the income as an integer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="127" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1aad29bf553999aa09007a83f4b408b2bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Mall::getPower</definition>
+        <argsstring>()</argsstring>
+        <name>getPower</name>
+        <reimplements refid="classCommercialBuilding_1a0dbff6c0c9a198adb9a7a69b07b1bd76">getPower</reimplements>
+        <briefdescription>
+<para>Receives power for the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if power was received successfully, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="133" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="116" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1a21707250243b897c62ee15b65df54f0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Mall::getWater</definition>
+        <argsstring>()</argsstring>
+        <name>getWater</name>
+        <reimplements refid="classCommercialBuilding_1a804eb1be891988cb585bd48c0ab09635">getWater</reimplements>
+        <briefdescription>
+<para>Receives water for the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if water was received successfully, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="139" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="137" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1a0e7c8475d906facbcb43051845fd0931" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Mall::cleanWaste</definition>
+        <argsstring>()</argsstring>
+        <name>cleanWaste</name>
+        <reimplements refid="classCommercialBuilding_1a59e9259b25798a7d754feffb13567370">cleanWaste</reimplements>
+        <briefdescription>
+<para>Cleans the waste of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if waste cleaning was successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="145" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="130" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1a8954d409b4c93dbb269aedfe79afcf45" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Mall::cleanSewage</definition>
+        <argsstring>()</argsstring>
+        <name>cleanSewage</name>
+        <reimplements refid="classCommercialBuilding_1aa6e46234e1cfa37f5bb3ba8b304b5ef7">cleanSewage</reimplements>
+        <briefdescription>
+<para>Cleans the sewage of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if sewage cleaning was successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="151" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="123" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classMall_1a0bcad38364e49a125ebf8c40646d7a86" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Mall::addBuilding</definition>
+        <argsstring>()</argsstring>
+        <name>addBuilding</name>
+        <reimplements refid="classCommercialBuilding_1a079544eb7848e26b567efcb1d73fd303">addBuilding</reimplements>
+        <briefdescription>
+<para>Add a building to the Building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>building</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The building to add to the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="158" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp" bodystart="110" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a mall, inheriting from <ref refid="classCommercialBuilding" kindref="compound">CommercialBuilding</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+      </node>
+      <node id="1">
+        <label>Mall</label>
+        <link refid="classMall"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CommercialBuilding</label>
+        <link refid="classCommercialBuilding"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>listOfCitizens</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Mall</label>
+        <link refid="classMall"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="10">
+        <label>State</label>
+        <link refid="classState"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>building</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Citizen</label>
+        <link refid="classCitizen"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>tm</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CommercialBuilding</label>
+        <link refid="classCommercialBuilding"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>TravelManager</label>
+        <link refid="classTravelManager"/>
+      </node>
+      <node id="9">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="7">
+        <label>PopulationControl</label>
+        <link refid="classPopulationControl"/>
+      </node>
+      <node id="5">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.h" bodystart="12" bodyend="159"/>
+    <listofallmembers>
+      <member refid="classMall_1a0bcad38364e49a125ebf8c40646d7a86" prot="public" virt="virtual"><scope>Mall</scope><name>addBuilding</name></member>
+      <member refid="classCommercialBuilding_1ad068ea036943a9c13d98b182d918be34" prot="protected" virt="non-virtual"><scope>Mall</scope><name>balance</name></member>
+      <member refid="classBuildings_1a0702b3d14494ac145aaa428aa4e01afb" prot="protected" virt="non-virtual"><scope>Mall</scope><name>buildingName</name></member>
+      <member refid="classBuildings_1af5b874917cf6e1dbe90dbcf5b9b37326" prot="public" virt="non-virtual"><scope>Mall</scope><name>Buildings</name></member>
+      <member refid="classBuildings_1a010d594842ce60f01bdf00f939ea2011" prot="protected" virt="non-virtual"><scope>Mall</scope><name>buildingType</name></member>
+      <member refid="classMall_1a8954d409b4c93dbb269aedfe79afcf45" prot="public" virt="virtual"><scope>Mall</scope><name>cleanSewage</name></member>
+      <member refid="classMall_1a0e7c8475d906facbcb43051845fd0931" prot="public" virt="virtual"><scope>Mall</scope><name>cleanWaste</name></member>
+      <member refid="classCommercialBuilding_1a72362a30505ac675f5a388641723e4e4" prot="protected" virt="non-virtual"><scope>Mall</scope><name>employment</name></member>
+      <member refid="classMall_1a20ec3420d8ffb92073d2276304bc01a7" prot="public" virt="virtual"><scope>Mall</scope><name>getBalance</name></member>
+      <member refid="classBuildings_1a038e1c1d7a924c97fc3cdc5954ccd72b" prot="public" virt="virtual"><scope>Mall</scope><name>getBirthRate</name></member>
+      <member refid="classMall_1a434c468b4615bb7e17de3d56b6767027" prot="public" virt="virtual"><scope>Mall</scope><name>getBuildingType</name></member>
+      <member refid="classMall_1ace6d4591ab21f6ebca91fe4d35a0eb92" prot="public" virt="virtual"><scope>Mall</scope><name>getCommercialIncome</name></member>
+      <member refid="classBuildings_1aea12268287656270eb98cd2f22b82e02" prot="public" virt="virtual"><scope>Mall</scope><name>getEducationalCoverage</name></member>
+      <member refid="classBuildings_1a993a9340e25a58e2e2912090742f5ba6" prot="public" virt="virtual"><scope>Mall</scope><name>getHealthCoverage</name></member>
+      <member refid="classMall_1a06fb0e85c1423f4f69b1395539ec3e06" prot="public" virt="non-virtual"><scope>Mall</scope><name>getIncome</name></member>
+      <member refid="classMall_1a00e1555ccec450d6492fcfed59898ca3" prot="public" virt="virtual"><scope>Mall</scope><name>getJobsCreated</name></member>
+      <member refid="classBuildings_1ae0a010f94a01d180d1a6e4d023b54561" prot="public" virt="virtual"><scope>Mall</scope><name>getlistOfResidence</name></member>
+      <member refid="classMall_1a1b82e5b2448863742d3348eeb48a17ab" prot="public" virt="virtual"><scope>Mall</scope><name>getMaintenanceCost</name></member>
+      <member refid="classMall_1ae77f2296986c54b8a7fbf7ca5adbfdf3" prot="public" virt="virtual"><scope>Mall</scope><name>getName</name></member>
+      <member refid="classMall_1aad29bf553999aa09007a83f4b408b2bc" prot="public" virt="virtual"><scope>Mall</scope><name>getPower</name></member>
+      <member refid="classMall_1abddc782e00da2d1d9961852cf5c4c351" prot="public" virt="virtual"><scope>Mall</scope><name>getPowerReq</name></member>
+      <member refid="classMall_1a0558a2b36d4aa77d603d4e2afdd95ab4" prot="public" virt="virtual"><scope>Mall</scope><name>getProfit</name></member>
+      <member refid="classMall_1a113c7507987173f4eae574d86824c3e9" prot="public" virt="virtual"><scope>Mall</scope><name>getSales</name></member>
+      <member refid="classBuildings_1a647c790019850fd479ac20fcbd21d873" prot="public" virt="virtual"><scope>Mall</scope><name>getSecurityCoverage</name></member>
+      <member refid="classMall_1ad399e511790a082c3a7b6cc3ca3e8e31" prot="public" virt="virtual"><scope>Mall</scope><name>getSewageCost</name></member>
+      <member refid="classMall_1aab7fc06fd03fb4a112213c50acc57abe" prot="public" virt="virtual"><scope>Mall</scope><name>getWasteCost</name></member>
+      <member refid="classMall_1a21707250243b897c62ee15b65df54f0a" prot="public" virt="virtual"><scope>Mall</scope><name>getWater</name></member>
+      <member refid="classMall_1afdc55e02fd226ba7a86e14ee883ae4f8" prot="public" virt="virtual"><scope>Mall</scope><name>getWaterReq</name></member>
+      <member refid="classCommercialBuilding_1a09905ecc83004dc90a7b531304f0f2ab" prot="protected" virt="non-virtual"><scope>Mall</scope><name>income</name></member>
+      <member refid="classBuildings_1a7497cf317a1deb55c35864bc08c82443" prot="protected" virt="non-virtual"><scope>Mall</scope><name>listOfCitizens</name></member>
+      <member refid="classBuildings_1a7320201a32ce9541b3aeddac32d9988a" prot="protected" virt="non-virtual"><scope>Mall</scope><name>maintenanceCost</name></member>
+      <member refid="classMall_1a4a8d70cd3a55730dc0ea828959f1ff5d" prot="public" virt="non-virtual"><scope>Mall</scope><name>Mall</name></member>
+      <member refid="classMall_1a226434653403f076011ba131cfdf1574" prot="public" virt="virtual"><scope>Mall</scope><name>payCitizen</name></member>
+      <member refid="classBuildings_1a572094ecc5a5d844acbfe6f18650ed9d" prot="protected" virt="non-virtual"><scope>Mall</scope><name>powerReq</name></member>
+      <member refid="classCommercialBuilding_1a9c872f01effc2ccb37a94444da2d7712" prot="protected" virt="non-virtual"><scope>Mall</scope><name>profit</name></member>
+      <member refid="classMall_1ac14edf6de3e9827261ae3101fb36c2f0" prot="public" virt="virtual"><scope>Mall</scope><name>requestState</name></member>
+      <member refid="classBuildings_1aabc1cfaf764d4c41889ecf1f0320fa8e" prot="public" virt="non-virtual"><scope>Mall</scope><name>resources</name></member>
+      <member refid="classCommercialBuilding_1ad74a205cf4b2a7c13d257819143b0f24" prot="protected" virt="non-virtual"><scope>Mall</scope><name>sales</name></member>
+      <member refid="classMall_1a9cf46334f78b14ff9cedf91f981f4ab7" prot="public" virt="virtual"><scope>Mall</scope><name>setBalance</name></member>
+      <member refid="classBuildings_1af3184f3602e4c1dd6ac010900770cd57" prot="public" virt="non-virtual"><scope>Mall</scope><name>setResources</name></member>
+      <member refid="classMall_1a1cad54db87d7520ef707192b42ec160d" prot="public" virt="virtual"><scope>Mall</scope><name>setState</name></member>
+      <member refid="classBuildings_1aae45243bbcd3ac7c47e9cbb83162f1f8" prot="protected" virt="non-virtual"><scope>Mall</scope><name>sewageCost</name></member>
+      <member refid="classCommercialBuilding_1a0cbfa79eb4bb10bc0af2ec34b489adc8" prot="protected" virt="non-virtual"><scope>Mall</scope><name>state</name></member>
+      <member refid="classCommercialBuilding_1a3b4753ca12a2e066500379854623176e" prot="protected" virt="non-virtual"><scope>Mall</scope><name>waste</name></member>
+      <member refid="classBuildings_1ac8c0debb07dcf0555a28be710377fc36" prot="protected" virt="non-virtual"><scope>Mall</scope><name>waterReq</name></member>
+      <member refid="classBuildings_1a60b14d2c02c2424eeb0ba52bd9fee170" prot="public" virt="pure-virtual"><scope>Mall</scope><name>~Buildings</name></member>
+      <member refid="classCommercialBuilding_1aee93bcc9efa7d1866b94b0df2bf7b923" prot="public" virt="virtual"><scope>Mall</scope><name>~CommercialBuilding</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

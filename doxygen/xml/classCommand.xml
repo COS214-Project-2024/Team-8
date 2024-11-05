@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCommand" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Command</compoundname>
+    <derivedcompoundref refid="classPolicies" prot="public" virt="non-virtual">Policies</derivedcompoundref>
+    <derivedcompoundref refid="classStartCommand" prot="public" virt="non-virtual">StartCommand</derivedcompoundref>
+    <derivedcompoundref refid="classStopCommand" prot="public" virt="non-virtual">StopCommand</derivedcompoundref>
+    <derivedcompoundref refid="classUndoCommand" prot="public" virt="non-virtual">UndoCommand</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCommand_1af4cc0c69ccba769e7d910b90f111d78e" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+        <definition>Utility* Command::utility</definition>
+        <argsstring></argsstring>
+        <name>utility</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Command.h" line="12" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Command.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCommand_1a6fd7d9bd8df8bfc881e4d6c7cd1878b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Command::execute</definition>
+        <argsstring>()=0</argsstring>
+        <name>execute</name>
+        <reimplementedby refid="classStartCommand_1a38aacdd6210d19d93833ab8447a980c1">execute</reimplementedby>
+        <reimplementedby refid="classStopCommand_1a97d603c8a23c3c8ddf8309843b3cb808">execute</reimplementedby>
+        <reimplementedby refid="classUndoCommand_1a0e1e25e20e345ccfc9095f805f4c3bb2">execute</reimplementedby>
+        <reimplementedby refid="classPolicies_1a4c5ed3d962bebd23141d4f1714be94fc">execute</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Command.h" line="15" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classCommand_1a34de0246195437ab1f1c078e7c3488c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string Command::getUtilityType</definition>
+        <argsstring>()</argsstring>
+        <name>getUtilityType</name>
+        <reimplementedby refid="classStartCommand_1a2653acf332ac690a85ad2a9168eb6d09">getUtilityType</reimplementedby>
+        <reimplementedby refid="classStopCommand_1a3a4aef422615eddc35ca32350f91a4f9">getUtilityType</reimplementedby>
+        <reimplementedby refid="classUndoCommand_1abeedb9edd3c7db14e6f718dcf35760ae">getUtilityType</reimplementedby>
+        <briefdescription>
+<para>Get the utility type of the command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string The utility type of the command </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Command.h" line="17" column="21" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Command.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classCommand_1a0606383bba658ef28073274a49859aa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+        <definition>Utility * Command::getUtility</definition>
+        <argsstring>()</argsstring>
+        <name>getUtility</name>
+        <reimplementedby refid="classStartCommand_1a0d75a9acd379cf750bc84f43a17c6ae8">getUtility</reimplementedby>
+        <reimplementedby refid="classStopCommand_1abc66c964d65117c1a8fdb9940b6af88e">getUtility</reimplementedby>
+        <reimplementedby refid="classUndoCommand_1ac87aba001d750b7c85ebfab2674bc4f6">getUtility</reimplementedby>
+        <briefdescription>
+<para>Get the utility of the command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Utility* The utility of the command </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Command.h" line="19" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Command.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classCommand_1ab552bb3a07fdd1acbfd8ea76e69b2278" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Command::~Command</definition>
+        <argsstring>()</argsstring>
+        <name>~Command</name>
+        <briefdescription>
+<para>Destroy the <ref refid="classCommand" kindref="compound">Command</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Command.h" line="21" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Command.cpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Command</label>
+        <link refid="classCommand"/>
+      </node>
+      <node id="5">
+        <label>StartCommand</label>
+        <link refid="classStartCommand"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>EconomicPolicies</label>
+        <link refid="classEconomicPolicies"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Policies</label>
+        <link refid="classPolicies"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>StopCommand</label>
+        <link refid="classStopCommand"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>PublicServicesPolicies</label>
+        <link refid="classPublicServicesPolicies"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>UndoCommand</label>
+        <link refid="classUndoCommand"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Command</label>
+        <link refid="classCommand"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>utility</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Command.h" line="10" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Command.h" bodystart="10" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classCommand_1a6fd7d9bd8df8bfc881e4d6c7cd1878b7" prot="public" virt="pure-virtual"><scope>Command</scope><name>execute</name></member>
+      <member refid="classCommand_1a0606383bba658ef28073274a49859aa1" prot="public" virt="virtual"><scope>Command</scope><name>getUtility</name></member>
+      <member refid="classCommand_1a34de0246195437ab1f1c078e7c3488c6" prot="public" virt="virtual"><scope>Command</scope><name>getUtilityType</name></member>
+      <member refid="classCommand_1af4cc0c69ccba769e7d910b90f111d78e" prot="protected" virt="non-virtual"><scope>Command</scope><name>utility</name></member>
+      <member refid="classCommand_1ab552bb3a07fdd1acbfd8ea76e69b2278" prot="public" virt="virtual"><scope>Command</scope><name>~Command</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

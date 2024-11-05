@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classWindSource" kind="class" language="C++" prot="public">
+    <compoundname>WindSource</compoundname>
+    <basecompoundref refid="classEnergySource" prot="public" virt="non-virtual">EnergySource</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWindSource_1a18b34ec505640dafa8ae8dc6f0e2a827" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WindSource::WindSource</definition>
+        <argsstring>(float output)</argsstring>
+        <name>WindSource</name>
+        <param>
+          <type>float</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+<para>Create a <ref refid="classWindSource" kindref="compound">WindSource</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output of the <ref refid="classWindSource" kindref="compound">WindSource</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WindSource.h" line="13" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WindSource.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classWindSource_1aada87c8405d0b211e25592fe03afc9c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float WindSource::getEnergyOutput</definition>
+        <argsstring>()</argsstring>
+        <name>getEnergyOutput</name>
+        <reimplements refid="classEnergySource_1a56b0363ed4d7375506c5d1d881bc314a">getEnergyOutput</reimplements>
+        <briefdescription>
+<para>Get the energy output of the <ref refid="classWindSource" kindref="compound">WindSource</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float The energy output of the <ref refid="classWindSource" kindref="compound">WindSource</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WindSource.h" line="15" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WindSource.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classWindSource_1aad3046c226aa0d066b18634e28fecc38" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string WindSource::getFuelType</definition>
+        <argsstring>()</argsstring>
+        <name>getFuelType</name>
+        <reimplements refid="classEnergySource_1a19f5e20094539ea26a5a81bc0bf88948">getFuelType</reimplements>
+        <briefdescription>
+<para>Get the fuel type of the <ref refid="classWindSource" kindref="compound">WindSource</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string The fuel type of the <ref refid="classWindSource" kindref="compound">WindSource</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WindSource.h" line="17" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WindSource.cpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>EnergySource</label>
+        <link refid="classEnergySource"/>
+      </node>
+      <node id="1">
+        <label>WindSource</label>
+        <link refid="classWindSource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>EnergySource</label>
+        <link refid="classEnergySource"/>
+      </node>
+      <node id="1">
+        <label>WindSource</label>
+        <link refid="classWindSource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WindSource.h" line="11" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WindSource.h" bodystart="11" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classEnergySource_1a92cf3ad074efdeeb66391742e1308d71" prot="protected" virt="non-virtual"><scope>WindSource</scope><name>energyOutput</name></member>
+      <member refid="classWindSource_1aada87c8405d0b211e25592fe03afc9c0" prot="public" virt="virtual"><scope>WindSource</scope><name>getEnergyOutput</name></member>
+      <member refid="classWindSource_1aad3046c226aa0d066b18634e28fecc38" prot="public" virt="virtual"><scope>WindSource</scope><name>getFuelType</name></member>
+      <member refid="classWindSource_1a18b34ec505640dafa8ae8dc6f0e2a827" prot="public" virt="non-virtual"><scope>WindSource</scope><name>WindSource</name></member>
+      <member refid="classEnergySource_1a22bdabfa86afba0713db5c6bc5df449f" prot="public" virt="virtual"><scope>WindSource</scope><name>~EnergySource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

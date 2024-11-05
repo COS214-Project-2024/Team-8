@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classDamaged" kind="class" language="C++" prot="public">
+    <compoundname>Damaged</compoundname>
+    <basecompoundref refid="classState" prot="public" virt="non-virtual">State</basecompoundref>
+    <includes refid="Damaged_8h" local="no">Damaged.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classDamaged_1a56d2946ac9a4bb655b75aceb41e362e7" prot="protected" static="no" mutable="no">
+        <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+        <definition>Buildings* Damaged::building</definition>
+        <argsstring></argsstring>
+        <name>building</name>
+        <briefdescription>
+<para>Pointer to the building associated with this state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Damaged.h" line="18" column="15" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Damaged.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDamaged_1a2f130e2647b9a89c064ffae551848858" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Damaged::stateName</definition>
+        <argsstring></argsstring>
+        <name>stateName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Damaged.h" line="19" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Damaged.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDamaged_1a6495cd106ad17b019c9bab812d977d26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Damaged::Damaged</definition>
+        <argsstring>()</argsstring>
+        <name>Damaged</name>
+        <briefdescription>
+<para>Constructs a new <ref refid="classDamaged" kindref="compound">Damaged</ref> state object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Damaged.h" line="25" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Damaged.cpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classDamaged_1ad1987d9fa720b135f33bb624d37f432b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Damaged::handle</definition>
+        <argsstring>()</argsstring>
+        <name>handle</name>
+        <reimplements refid="classState_1af1f6af5199e5952cacb9ed428b6310bf">handle</reimplements>
+        <briefdescription>
+<para>Handles operations specific to the <ref refid="classDamaged" kindref="compound">Damaged</ref> state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Damaged.h" line="30" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Damaged.cpp" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classDamaged_1a9116444699d129e5d5f71dea8606b701" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Damaged::changeState</definition>
+        <argsstring>()</argsstring>
+        <name>changeState</name>
+        <reimplements refid="classState_1a5dda824b77a0fa3f2a15a094693755f4">changeState</reimplements>
+        <briefdescription>
+<para>Changes the state from <ref refid="classDamaged" kindref="compound">Damaged</ref> to another state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Damaged.h" line="35" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Damaged.cpp" bodystart="23" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classDamaged_1a9f9c461598433c709bc37adb148d67df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Damaged::getStateName</definition>
+        <argsstring>()</argsstring>
+        <name>getStateName</name>
+        <briefdescription>
+<para>Retrieves the name of the current state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The name of the state as a string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Damaged.h" line="41" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Damaged.cpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a damaged state in a building&apos;s lifecycle, inheriting from the <ref refid="classState" kindref="compound">State</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Damaged</label>
+        <link refid="classDamaged"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>State</label>
+        <link refid="classState"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>listOfCitizens</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="1">
+        <label>Damaged</label>
+        <link refid="classDamaged"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>building</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>State</label>
+        <link refid="classState"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>building</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Citizen</label>
+        <link refid="classCitizen"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>tm</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>TravelManager</label>
+        <link refid="classTravelManager"/>
+      </node>
+      <node id="9">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="7">
+        <label>PopulationControl</label>
+        <link refid="classPopulationControl"/>
+      </node>
+      <node id="5">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Damaged.h" line="14" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Damaged.h" bodystart="15" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classDamaged_1a56d2946ac9a4bb655b75aceb41e362e7" prot="protected" virt="non-virtual"><scope>Damaged</scope><name>building</name></member>
+      <member refid="classDamaged_1a9116444699d129e5d5f71dea8606b701" prot="public" virt="virtual"><scope>Damaged</scope><name>changeState</name></member>
+      <member refid="classDamaged_1a6495cd106ad17b019c9bab812d977d26" prot="public" virt="non-virtual"><scope>Damaged</scope><name>Damaged</name></member>
+      <member refid="classDamaged_1a9f9c461598433c709bc37adb148d67df" prot="public" virt="non-virtual"><scope>Damaged</scope><name>getStateName</name></member>
+      <member refid="classDamaged_1ad1987d9fa720b135f33bb624d37f432b" prot="public" virt="virtual"><scope>Damaged</scope><name>handle</name></member>
+      <member refid="classDamaged_1a2f130e2647b9a89c064ffae551848858" prot="protected" virt="non-virtual"><scope>Damaged</scope><name>stateName</name></member>
+      <member refid="classState_1a783d52422b544bb226e13de8ecfd6ad6" prot="public" virt="virtual"><scope>Damaged</scope><name>~State</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

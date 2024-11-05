@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1MessageData" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::MessageData</compoundname>
+    <derivedcompoundref refid="structdoctest_1_1detail_1_1MessageBuilder" prot="public" virt="non-virtual">doctest::detail::MessageBuilder</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoctest_1_1MessageData_1a0ef5cfd7a399ee475d6357b6dcddfe53" prot="public" static="no" mutable="no">
+        <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref></type>
+        <definition>String doctest::MessageData::m_string</definition>
+        <argsstring></argsstring>
+        <name>m_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="867" column="22" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="867" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1MessageData_1acd1e6a5c4f03ed6e098cdab5956a3e17" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* doctest::MessageData::m_file</definition>
+        <argsstring></argsstring>
+        <name>m_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="868" column="21" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="868" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1MessageData_1a7c1cf03250a68db5befbba63b3824d93" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int doctest::MessageData::m_line</definition>
+        <argsstring></argsstring>
+        <name>m_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="869" column="22" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="869" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1MessageData_1a24e0a3f475609ce8e02cecc4cb0d3b48" prot="public" static="no" mutable="no">
+        <type>assertType::Enum</type>
+        <definition>assertType::Enum doctest::MessageData::m_severity</definition>
+        <argsstring></argsstring>
+        <name>m_severity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="870" column="22" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="870" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>doctest::MessageData</label>
+        <link refid="structdoctest_1_1MessageData"/>
+      </node>
+      <node id="2">
+        <label>doctest::detail::MessageBuilder</label>
+        <link refid="structdoctest_1_1detail_1_1MessageBuilder"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>doctest::String::view</label>
+      </node>
+      <node id="1">
+        <label>doctest::MessageData</label>
+        <link refid="structdoctest_1_1MessageData"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_string</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>doctest::String</label>
+        <link refid="classdoctest_1_1String"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="865" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="866" bodyend="871"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1MessageData_1acd1e6a5c4f03ed6e098cdab5956a3e17" prot="public" virt="non-virtual"><scope>doctest::MessageData</scope><name>m_file</name></member>
+      <member refid="structdoctest_1_1MessageData_1a7c1cf03250a68db5befbba63b3824d93" prot="public" virt="non-virtual"><scope>doctest::MessageData</scope><name>m_line</name></member>
+      <member refid="structdoctest_1_1MessageData_1a24e0a3f475609ce8e02cecc4cb0d3b48" prot="public" virt="non-virtual"><scope>doctest::MessageData</scope><name>m_severity</name></member>
+      <member refid="structdoctest_1_1MessageData_1a0ef5cfd7a399ee475d6357b6dcddfe53" prot="public" virt="non-virtual"><scope>doctest::MessageData</scope><name>m_string</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

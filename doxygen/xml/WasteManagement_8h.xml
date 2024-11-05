@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="WasteManagement_8h" kind="file" language="C++">
+    <compoundname>WasteManagement.h</compoundname>
+    <includes refid="Utility_8h" local="yes">Utility.h</includes>
+    <includedby refid="UtilitesControl_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitesControl.h</includedby>
+    <includedby refid="WasteFactory_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteFactory.h</includedby>
+    <includedby refid="WasteManagement_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>EnergySource.h</label>
+        <link refid="EnergySource_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h</label>
+        <link refid="WasteManagement_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>chrono</label>
+      </node>
+      <node id="4">
+        <label>thread</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteFactory.h</label>
+        <link refid="WasteFactory_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h</label>
+        <link refid="WasteManagement_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilitesControl.h</label>
+        <link refid="UtilitesControl_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h</label>
+        <link refid="City_8h_source"/>
+      </node>
+      <node id="3">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CityController.h</label>
+        <link refid="CityController_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classWasteManagement" prot="public">WasteManagement</innerclass>
+    <briefdescription>
+<para>The header file for the <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>WASTEMANAGEMENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WASTEMANAGEMENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Utility_8h" kindref="compound">Utility.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classWasteManagement" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classWasteManagement" kindref="compound">WasteManagement</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classUtility" kindref="compound">Utility</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>processCapacity;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>recycledperc;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWasteManagement_1a4442e7116f4b6afad686cf9343cc88ba" kindref="member">WasteManagement</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>output);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classWasteManagement_1a67a1bb876fae1d6b45db72a4761cbd66" kindref="member">getStatus</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWasteManagement_1aaa0972fb1af625e6bfac4f076721c930" kindref="member">repairUtility</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWasteManagement_1aef14afdcea9cdcffee36bb08185ebe69" kindref="member">executeOperation</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classWasteManagement_1a9b0ef5d23ea4505d36c16907bbfd1a42" kindref="member">getOutput</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWasteManagement_1aa5329c86e05b7b7205c409c964358649" kindref="member">pauseOperation</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classWasteManagement_1a8c7fd80a9055c10f2ac36d71b866fd70" kindref="member">getUtilityType</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUtility" kindref="compound">Utility</ref>*<sp/><ref refid="classWasteManagement_1a08c6d447494301c05413ac59b26eff02" kindref="member">clone</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWasteManagement_1ab6b5ef72863523a7f571a1bda289f42d" kindref="member">setProcessCapacity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pro);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWasteManagement_1a0575b4c2c2606d1f321cb06aed398a23" kindref="member">undoChange</ref>();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWasteManagement_1ab076e410d7c15e6389ded0485530fe76" kindref="member">addBuilding</ref>(<ref refid="classBuildings" kindref="compound">Buildings</ref>*<sp/>building);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classWasteManagement_1ae9c042ea0410aa4f082d9b556efdaf25" kindref="member">cleanWaste</ref>(<ref refid="classBuildings" kindref="compound">Buildings</ref>*<sp/>sender);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h"/>
+  </compounddef>
+</doxygen>
