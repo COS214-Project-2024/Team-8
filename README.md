@@ -19,7 +19,7 @@ A sophisticated city simulation system demonstrating advanced software design pa
 ### Documentation:
 - [Research Brief](Report/COS214_RESEARCH_BRIEF%20(2).pdf)
 - [Design Documentation](Report/Design%20Wits.pdf)
-- [API Documentation](doxygen/html/index.html)
+- [Doxygen](doxygen/html/index.html)
 ### Team:
 | Name | Links | Description |
 |----------------|------|-------------|
