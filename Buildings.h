@@ -5,8 +5,11 @@
  * @date 2024-04-29
  */
 
+#include <iostream>
 #include <string>
-#include "Utility.h"
+/*#include "State.h"
+#include "Citizen.h"
+//#include "Utility.h"*/
 
 using namespace std;
 #ifndef BUILDINGS_H
@@ -14,6 +17,7 @@ using namespace std;
 
 class State;
 class Citizen;
+class Utility;
 
 /**
  * @class Buildings
@@ -30,13 +34,24 @@ protected:
     double balance;
 
 public:
+/**
+    * @brief Construct a new Buildings object
+    * 
+    * Initializes a Buildings object with default values for all member variables.
+    * All numeric values are set to 0, pointers to nullptr, and strings to empty.
+    * This constructor serves as the base constructor for all derived building types.
+    * 
+    * @note This is an abstract class constructor, and objects cannot be instantiated directly.
+    * It is called by derived class constructors to initialize the base class members.
+    */
+   Buildings();
     /**
      * @brief Virtual destructor to ensure proper cleanup of derived classes
      * 
      * This virtual destructor is necessary because the class hierarchy uses polymorphism
      * and objects may be deleted through pointers to the base class.
      */
-    virtual ~Buildings() = default;
+  virtual ~Buildings() = 0;
 
     State* state; /**< Pointer to the state of the building. */
 
@@ -186,9 +201,7 @@ public:
      * @brief Sets the resource mediator for the building.
      * @param resources Pointer to the Utility object to be used.
      */
-    void setResources(Utility* resources) {
-        this->resources = resources;
-    }
+    void setResources(Utility* resources);
 
     /**
      * @brief Gets the security coverage provided by the police station.
@@ -220,7 +233,6 @@ public:
      */
     virtual int getBirthRate();
 
-    virtual ~Buildings(){ delete listOfCitizens; delete state; listOfCitizens = nullptr;}
 };
 
 #endif // BUILDINGS_H

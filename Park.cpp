@@ -24,7 +24,7 @@ Park::Park(string bName,int pReq, int wReq, double mCost, int sCost, int waste)
 	this->state->changeState();//in case it needs to change
 
 	this->listOfCitizens = new Citizen("NewCitizen",100,21,5.0);
-	this->listOfCitizens->adjustCitizenSatisfaction(5.0);
+	//this->listOfCitizens->adjustCitizenSatisfaction(5.0);
 }
 
 void Park::requestState() {
@@ -68,31 +68,36 @@ string Park::getBuildingType()
 
 void Park::addBuilding(){
 	if(resources){
-		resources->addBuilding(this);
+		 resources->addBuilding(this);
 	}
+
 }
 
 bool Park::getPower(){
 	if(resources){
-		resources->getPower(this);
+		return resources->getPower(this);
 	}
+return false;
 }
 
 bool Park::cleanSewage(){
 	if(resources){
-		resources->cleanSewage(this);
+		return resources->cleanSewage(this);
 	}
+return false;
 }
 
 bool Park::cleanWaste(){
 	if(resources){
-		resources->cleanWaste(this);
+		return resources->cleanWaste(this);
 	}
+return false;
 }
 
 bool Park::getWater(){
 	if(resources){
-		resources->getWater(this);
+		return resources->getWater(this);
 	}
+return false;
 }
 

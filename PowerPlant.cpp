@@ -87,30 +87,35 @@ float PowerPlant::getProfit() {
 
 void PowerPlant::addBuilding(){
 	if(resources){
-		resources->addBuilding(this);
+		 resources->addBuilding(this);
 	}
+
 }
 
 bool PowerPlant::getPower(){
 	if(resources){
-		resources->getPower(this);
+		return resources->getPower(this);
 	}
+return false;
 }
 
 bool PowerPlant::cleanSewage(){
 	if(resources){
-		resources->cleanSewage(this);
+		return resources->cleanSewage(this);
 	}
+return false;
 }
 
 bool PowerPlant::cleanWaste(){
 	if(resources){
-		resources->cleanWaste(this);
+		return resources->cleanWaste(this);
 	}
+return false;
 }
 
 bool PowerPlant::getWater(){
 	if(resources){
-		resources->getWater(this);
+		return resources->getWater(this);
 	}
+return false;
 }

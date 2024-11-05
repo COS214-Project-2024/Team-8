@@ -267,7 +267,7 @@ void FinanceDepartment::addResidents(CitizenInterface *resident)
     }
 }
 
-void FinanceDepartment::addCommercialBuilding(Buildings *commercialBuilding)
+void FinanceDepartment::addCommercialBuilding(CommercialBuilding *commercialBuilding)
 {
     commercialBuildingsList.push_back(commercialBuilding);
 }

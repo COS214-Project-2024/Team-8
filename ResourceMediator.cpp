@@ -21,7 +21,7 @@ Utility::Utility(){
  */
 
 bool Utility::usePower(float units, Buildings* sender){
-    if(resources->find("Power")->second->giveResource(units)){
+    if(return resources->find("Power")->second->giveResource(units)){
         std::cout << "There is enough power" << std::endl;
         return true;
     }
@@ -57,7 +57,7 @@ float Utility::replenishPower(){
  */
 
 bool Utility::useWater(float units, Buildings* sender){
-    if(resources->find("Water")->second->giveResource(units)){
+    if(return resources->find("Water")->second->giveResource(units)){
         std::cout << "There is enough Water" << std::endl;
         return true;
     }
@@ -94,7 +94,7 @@ float Utility::replenishWater(){
  */
 
 bool Utility::useRevenue(float units, Buildings* sender){
-    if(resources->find("Revenue")->second->giveResource(units)){
+    if(return resources->find("Revenue")->second->giveResource(units)){
         std::cout << "There is enough Money" << std::endl;
         return true;
     }
@@ -113,7 +113,7 @@ bool Utility::useRevenue(float units, Buildings* sender){
  */
 
 bool Utility::cleanWaste(float units, Buildings* sender){
-    if(resources->find("Waste")->second->giveResource(units)){
+    if(return resources->find("Waste")->second->giveResource(units)){
         std::cout << "There is enough Waste cleaning resources" << std::endl;
         return true;
     }
@@ -150,7 +150,7 @@ float Utility::gainWasteCleaning(){
  */
 
 bool Utility::cleanSewage(float units, Buildings* sender){
-    if(resources->find("Sewage")->second->giveResource(units)){
+    if(return resources->find("Sewage")->second->giveResource(units)){
         std::cout << "There is enough sewage cleaning resources" << std::endl;
         return true;
     }
@@ -207,7 +207,7 @@ float Utility::replenishRevenue(){
  */
 
 bool Utility::useConstResource(float units, Buildings* sender){
-    if(resources->find("Water")->second->giveResource(units)){
+    if(return resources->find("Water")->second->giveResource(units)){
         std::cout << "There is enough Water" << std::endl;
         return true;
     }

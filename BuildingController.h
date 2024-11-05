@@ -15,16 +15,16 @@ private:
 
     Buildings ** ListOfBuildings ; 
     int amountOfBuildings ; 
-    Utility* Utility;
+//    Utility* Utility;
 public:
     BuildingController(/* args */);
     ~BuildingController();
-    BuildingController(Utility* mediator) 
-        : Utility(mediator) {
+ /*   BuildingController(Utility* mediator) 
+       : Utility(mediator) {
         ListOfBuildings = new Buildings*[100];
         amountOfBuildings = 0;
     
-}
+}*/
 
     
     void addBuilding(Buildings * add) ;

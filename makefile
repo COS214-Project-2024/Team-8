@@ -6,7 +6,7 @@ TARGET = main
 
 # Object files for unified city management simulation
 OBJECTS = TebogosMain.o Citizen.o PopulationControl.o Utility.o WaterSupply.o \
-    WasteManagement.o SewageSystems.o Utility.o MedicalCenter.o State.o \
+    WasteManagement.o SewageSystems.o MedicalCenter.o State.o \
     UnderConstruction.o Operational.o Damaged.o CitizenType.o EmployedCitizen.o \
     PropertyOwner.o BuildingController.o OfficeFactory.o Office.o HouseFactory.o \
     House.o ApartmentFactory.o Apartment.o ShopFactory.o Shop.o MallFactory.o Mall.o \
@@ -15,7 +15,7 @@ OBJECTS = TebogosMain.o Citizen.o PopulationControl.o Utility.o WaterSupply.o \
     TrainBuilder.o VehicleBuilder.o TravelManager.o Government.o FinanceDepartment.o \
     FinanceSector.o UtilitiesSector.o GeneralSector.o Command.o Policies.o \
     EconomicPolicies.o PublicServicesPolicies.o ResidentialTaxationSystem.o \
-    CommercialTaxationSystem.o BudgetAllocationSystem.o
+    CommercialTaxationSystem.o BudgetAllocationSystem.o Buildings.o PublicServiceBuilding.o \
 
 # Pattern rule for compiling .cpp files to .o files
 %.o: %.cpp %.h

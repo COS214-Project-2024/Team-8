@@ -25,8 +25,8 @@ std::unique_ptr<CitizenInterface> Citizen::clone() {
 
 Citizen::~Citizen() {
     std::cout << "Citizen " << name << " has been destroyed." << std::endl;
-    delete tm;
-    tm = nullptr;
+  //  delete tm;
+   // tm = nullptr;
 }
 
 float Citizen::getTaxRate()
@@ -61,8 +61,13 @@ void Citizen::makeRequest(Government* government, std::string requestDetails) {
     }
 }
 
-void Citizen::useTransport(Stops *stop, int capacity){
-    tm->Travel(capacity,stop);
+void Citizen::useTransport(Stops *stop, int capacity, bool bestRoute) {
+    if(bestRoute){
+        tm->BestRoute(capacity,stop);
+    }
+    else{
+         tm->Travel(capacity,stop);
+    }
 }
 
 void Citizen::adjustCitizenSatisfaction(float newSatisfaction) {

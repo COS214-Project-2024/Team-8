@@ -146,3 +146,9 @@ void CitizenType::setSatisfaction(int newSatisfaction)
 {
     satisfaction = newSatisfaction;
 }
+
+void CitizenType::addKnownLocations(Stops* stop) {
+    if (baseCitizen && stop) {
+        baseCitizen->addKnownLocations(stop);
+    }
+}

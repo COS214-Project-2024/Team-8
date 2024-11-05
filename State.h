@@ -1,5 +1,4 @@
 #include <string>
-#include "Buildings.h"
 #ifndef STATE_H
 #define STATE_H
 
@@ -13,7 +12,7 @@ class State {
 
 protected:
     Buildings* building; ///< Pointer to the building associated with this state
-    string stateName;
+    std::string stateName;
 
 public:
     /**
@@ -25,6 +24,13 @@ public:
      * @brief Changes the state of the building.
      */
     virtual void changeState() = 0;
+    /**
+     * @brief Virtual destructor to ensure proper cleanup of derived classes
+     * 
+     * This virtual destructor is necessary because the class hierarchy uses polymorphism
+     * and objects may be deleted through pointers to the base class.
+     */
+  virtual ~State()= default;
 };
 
 #endif

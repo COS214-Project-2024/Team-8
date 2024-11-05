@@ -72,30 +72,35 @@ string TownHouse::getName()
 
 void TownHouse::addBuilding(){
 	if(resources){
-		resources->addBuilding(this);
+		 resources->addBuilding(this);
 	}
+
 }
 
 bool TownHouse::getPower(){
 	if(resources){
-		resources->getPower(this);
+		return resources->getPower(this);
 	}
+return false;
 }
 
 bool TownHouse::cleanSewage(){
 	if(resources){
-		resources->cleanSewage(this);
+		return resources->cleanSewage(this);
 	}
+return false;
 }
 
 bool TownHouse::cleanWaste(){
 	if(resources){
-		resources->cleanWaste(this);
+		return resources->cleanWaste(this);
 	}
+return false;
 }
 
 bool TownHouse::getWater(){
 	if(resources){
-		resources->getWater(this);
+		return resources->getWater(this);
 	}
+return false;
 }

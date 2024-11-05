@@ -128,66 +128,103 @@ void demonstrateGovernment()
     waitForEnter();
 }
 
-void demonstrateCitizens()
-{
-    std::cout << highlight << "Creating and Managing Citizens...\n"
-              << reset;
-    auto citizen = std::make_unique<Citizen>("John Doe", 50000, 30, 75);
-    citizen->displayDetails();
-    citizen->adjustCitizenSatisfaction(10);
+void demonstrateCitizens() {
+    std::cout << highlight << "Creating and Managing Citizens...\n" << reset;
+    
+    // Create citizens using unique_ptr for automatic cleanup
+    {
+        auto citizen = std::make_unique<Citizen>("John Doe", 50000, 30, 75);
+        citizen->displayDetails();
+        citizen->adjustCitizenSatisfaction(10);
+    }
 
-    auto employedCitizen = std::make_unique<Citizen>("Jane Smith", 60000, 35, 80);
-    employedCitizen->setEmploymentStatus(true);
-    employedCitizen->setPropertyOwnership(true);
-    employedCitizen->displayDetails();
+    {
+        auto employedCitizen = std::make_unique<Citizen>("Jane Smith", 60000, 35, 80);
+        employedCitizen->setEmploymentStatus(true);
+        employedCitizen->setPropertyOwnership(true);
+        employedCitizen->displayDetails();
+    }
 
-    CommercialFactory *officeFactory = new OfficeFactory();
-    Buildings *office = officeFactory->createBuilding();
+    // Create office with proper cleanup
+    std::unique_ptr<CommercialFactory> officeFactory(new OfficeFactory());
+    std::unique_ptr<Buildings> office(officeFactory->createBuilding());
 
-    auto worker = std::make_unique<EmployedCitizen>(std::make_unique<Citizen>("Bob Wilson", 45000, 28, 70));
-    worker->getEmployed(office);
-    worker->jobPromotion(10);
+    {
+        auto worker = std::make_unique<EmployedCitizen>(
+            std::make_unique<Citizen>("Bob Wilson", 45000, 28, 70)
+        );
+        worker->getEmployed(office.get());
+        worker->jobPromotion(10);
+    }
 
-    delete office;
-    delete officeFactory;
     waitForEnter();
 }
 
-void demonstrateBuildings()
-{
-    BuildingController controller;
-    std::cout << highlight << "Creating City Buildings...\n"
-              << reset;
+void demonstrateBuildings() {
+    try {
+        std::cout << highlight << "Creating City Buildings...\n" << reset;
 
-    ResidentialFactory *houseFactory = new HouseFactory();
-    Buildings *house = houseFactory->createBuilding();
-    controller.addBuilding(house);
+        std::vector<std::unique_ptr<Buildings>> buildings;
+        
+        // Create and store buildings in vector for managed cleanup
+        {
+            std::unique_ptr<ResidentialFactory> houseFactory(new HouseFactory());
+            auto house = std::unique_ptr<Buildings>(houseFactory->createBuilding());
+            house->addBuilding();
+            buildings.push_back(std::move(house));
+        }
+        std::cout << "House created successfully.\n";
 
-    ResidentialFactory *apartmentFactory = new ApartmentFactory();
-    Buildings *apartment = apartmentFactory->createBuilding();
-    controller.addBuilding(apartment);
+        {
+            std::unique_ptr<ResidentialFactory> apartmentFactory(new ApartmentFactory());
+            auto apartment = std::unique_ptr<Buildings>(apartmentFactory->createBuilding());
+            apartment->addBuilding();
+            buildings.push_back(std::move(apartment));
+        }
+        std::cout << "Apartment created successfully.\n";
 
-    CommercialFactory *officeFactory = new OfficeFactory();
-    Buildings *office = officeFactory->createBuilding();
-    controller.addBuilding(office);
+        {
+            std::unique_ptr<CommercialFactory> officeFactory(new OfficeFactory());
+            auto office = std::unique_ptr<Buildings>(officeFactory->createBuilding());
+            office->addBuilding();
+            buildings.push_back(std::move(office));
+        }
+        std::cout << "Office created successfully.\n";
 
-    CommercialFactory *shopFactory = new ShopFactory();
-    Buildings *shop = shopFactory->createBuilding();
-    controller.addBuilding(shop);
+        {
+            std::unique_ptr<CommercialFactory> shopFactory(new ShopFactory());
+            auto shop = std::unique_ptr<Buildings>(shopFactory->createBuilding());
+            shop->addBuilding();
+            buildings.push_back(std::move(shop));
+        }
+        std::cout << "Shop created successfully.\n";
 
-    std::cout << "\n=== Building Statistics ===\n";
-    std::cout << "Total Buildings: " << controller.getAmountOfBuildings() << "\n";
-    std::cout << "Power Required: " << controller.getTotalPowerReq() << " kWh per month\n";
-    std::cout << "Water Required: " << controller.getTotalWaterReq() << " Liters per day\n";
-    std::cout << "Sewage Produced: " << controller.getTotalSewageReq() << " Liters per day\n";
-    std::cout << "Waste Generated: " << controller.getTotalWasteReq() << " kg per week\n";
-    std::cout << "Total Maintenance Cost: $" << controller.getMaintenanceCost() << " per month\n";
-    std::cout << "Total Commercial Income: $" << controller.getCommercialIncome() << " per month\n";
+        // Calculate statistics
+        if (buildings.size() == 4) {
+            std::cout << "\n=== Building Statistics ===\n";
+            std::cout << "Total Buildings: " << buildings.size() << "\n";
+            
+            int totalPower = 0, totalWater = 0, totalSewage = 0, totalWaste = 0;
+            double totalMaintenance = 0;
+            
+            for (const auto& building : buildings) {
+                totalPower += building->getPowerReq();
+                totalWater += building->getWaterReq();
+                totalSewage += building->getSewageCost();
+                totalWaste += building->getWasteCost();
+                totalMaintenance += building->getMaintenanceCost();
+            }
 
-    delete shopFactory;
-    delete officeFactory;
-    delete apartmentFactory;
-    delete houseFactory;
+            std::cout << "Power Required: " << totalPower << " kWh per month\n"
+                     << "Water Required: " << totalWater << " Liters per day\n"
+                     << "Sewage Produced: " << totalSewage << " Liters per day\n"
+                     << "Waste Generated: " << totalWaste << " kg per week\n"
+                     << "Total Maintenance Cost: $" << totalMaintenance << " per month\n";
+        }
+
+    } catch (const std::exception& e) {
+        std::cerr << "Error in demonstrateBuildings: " << e.what() << std::endl;
+    }
     waitForEnter();
 }
 
@@ -236,21 +273,29 @@ void demonstrateTransportation()
 
 void runFullSimulation()
 {
-    std::cout << "\n=== Running Full City Simulation ===\n";
-    simulationPause("Starting Government Component...");
-    demonstrateGovernment();
+    try {
+        std::cout << "\n=== Running Full City Simulation ===\n";
+        simulationPause("Starting Government Component...");
+        demonstrateGovernment();
 
-    simulationPause("Starting Citizens Component...");
-    demonstrateCitizens();
+        simulationPause("Starting Citizens Component...");
+        demonstrateCitizens();
 
-    simulationPause("Starting Buildings Component...");
-    demonstrateBuildings();
+        simulationPause("Starting Buildings Component...");
+        demonstrateBuildings();
 
-    simulationPause("Starting Transportation Component...");
-    demonstrateTransportation();
+        simulationPause("Starting Transportation Component...");
+        demonstrateTransportation();
 
-    std::cout << "\n=== Full City Simulation Complete ===\n";
-    waitForEnter();
+        std::cout << "\n=== Full City Simulation Complete ===\n";
+        waitForEnter();
+    }
+    catch (const std::exception& e) {
+        std::cerr << "Simulation error: " << e.what() << std::endl;
+    }
+    catch (...) {
+        std::cerr << "Unknown error occurred during simulation" << std::endl;
+    }
 }
 void testGovernment()
 {

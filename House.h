@@ -23,17 +23,6 @@ public:
      */
     House(string bName, int pReq, int wReq, double mCost, int sCost, int waste, int capacity);
 
-    /**
-     * @brief Receives power for the building.
-     * @return True if power was received successfully, false otherwise.
-     */
-    virtual bool getPower() = 0;
-
-    /**
-     * @brief Receives water for the building.
-     * @return True if water was received successfully, false otherwise.
-     */
-    virtual bool getWater() = 0;
 
     /**
      * @brief Gets the type of the house.

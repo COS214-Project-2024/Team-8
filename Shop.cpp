@@ -25,7 +25,7 @@ Shop::Shop(string bName, int pReq, int wReq, double mCost, int sCost, int waste,
 	this->state->handle(); //handle the state;
 	this->state->changeState();//in case it needs to change
 
-	this->listOfCitizens->adjustCitizenSatisfaction(5.0);
+//	//this->listOfCitizens->adjustCitizenSatisfaction(5.0);
 }
 
 void Shop::requestState() {
@@ -105,31 +105,36 @@ double Shop::getBalance()
 
 void Shop::addBuilding(){
 	if(resources){
-		resources->addBuilding(this);
+		 resources->addBuilding(this);
 	}
+
 }
 
 bool Shop::getPower(){
 	if(resources){
-		resources->getPower(this);
+		return resources->getPower(this);
 	}
+return false;
 }
 
 bool Shop::cleanSewage(){
 	if(resources){
-		resources->cleanSewage(this);
+		return resources->cleanSewage(this);
 	}
+return false;
 }
 
 bool Shop::cleanWaste(){
 	if(resources){
-		resources->cleanWaste(this);
+		return resources->cleanWaste(this);
 	}
+return false;
 }
 
 bool Shop::getWater(){
 	if(resources){
-		resources->getWater(this);
+		return resources->getWater(this);
 	}
+return false;
 }
 

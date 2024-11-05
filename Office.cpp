@@ -27,7 +27,7 @@ Office::Office(string bName,int pReq, int wReq, double mCost, int sCost, int was
 	this->state->changeState();//in case it needs to change
 
 	this->listOfCitizens = new Citizen("NewCitizen",100,21,5.0);
-	this->listOfCitizens->adjustCitizenSatisfaction(5.0);
+	//this->listOfCitizens->adjustCitizenSatisfaction(5.0);
 }
 
 void Office::requestState() {
@@ -107,30 +107,35 @@ double Office::getBalance()
 
 void Office::addBuilding(){
 	if(resources){
-		resources->addBuilding(this);
+		 resources->addBuilding(this);
 	}
+
 }
 
 bool Office::getPower(){
 	if(resources){
-		resources->getPower(this);
+		return resources->getPower(this);
 	}
+return false;
 }
 
 bool Office::cleanSewage(){
 	if(resources){
-		resources->cleanSewage(this);
+		return resources->cleanSewage(this);
 	}
+return false;
 }
 
 bool Office::cleanWaste(){
 	if(resources){
-		resources->cleanWaste(this);
+		return resources->cleanWaste(this);
 	}
+return false;
 }
 
 bool Office::getWater(){
 	if(resources){
-		resources->getWater(this);
+		return resources->getWater(this);
 	}
+return false;
 }

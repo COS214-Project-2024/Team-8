@@ -6,9 +6,9 @@
 #include <chrono>
 #include <vector>
 
-#include "Utility.h"
 #include "EnergySource.h"
-#include "Buildings.h"
+class Buildings;
+
 /**
  * @file Utility.h
  * 

@@ -75,39 +75,38 @@ string Apartment::getBuildingType() {
     return this->buildingType;
 }
 
-// Added missing functions
-string Apartment::getBuildingType() {
-    return this->buildingType;
-}
-
 void Apartment::addBuilding(){
 	if(resources){
-		resources->addBuilding(this);
+	 resources->addBuilding(this);
 	}
 }
 
 bool Apartment::getPower(){
 	if(resources){
-		resources->getPower(this);
+		return resources->getPower(this);
 	}
+return false;
 }
 
 bool Apartment::cleanSewage(){
 	if(resources){
-		resources->cleanSewage(this);
+		return resources->cleanSewage(this);
 	}
+return false;
 }
 
 bool Apartment::cleanWaste(){
 	if(resources){
-		resources->cleanWaste(this);
+		return resources->cleanWaste(this);
 	}
+return false;
 }
 
 bool Apartment::getWater(){
 	if(resources){
-		resources->getWater(this);
+		return resources->getWater(this);
 	}
+return false;
 }
 
 

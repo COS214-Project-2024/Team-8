@@ -23,7 +23,7 @@ CulturalCenter::CulturalCenter(string bName,int pReq, int wReq, double mCost, in
     this->state->changeState();
 
     this->listOfCitizens = new Citizen("New Citizen", 100, 23, 5.0);
-    this->listOfCitizens->adjustCitizenSatisfaction(5.0);
+    //this->listOfCitizens->adjustCitizenSatisfaction(5.0);
 }
 
 void CulturalCenter::requestState() {
@@ -73,30 +73,34 @@ int CulturalCenter::getJobsCreated() {
 
 void CulturalCenter::addBuilding(){
 	if(resources){
-		resources->addBuilding(this);
+	 resources->addBuilding(this);
 	}
 }
 
 bool CulturalCenter::getPower(){
 	if(resources){
-		resources->getPower(this);
+		return resources->getPower(this);
 	}
+return false;
 }
 
 bool CulturalCenter::cleanSewage(){
 	if(resources){
-		resources->cleanSewage(this);
+		return resources->cleanSewage(this);
 	}
+return false;
 }
 
 bool CulturalCenter::cleanWaste(){
 	if(resources){
-		resources->cleanWaste(this);
+		return resources->cleanWaste(this);
 	}
+return false;
 }
 
 bool CulturalCenter::getWater(){
 	if(resources){
-		resources->getWater(this);
+		return resources->getWater(this);
 	}
+return false;
 }

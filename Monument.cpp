@@ -24,7 +24,7 @@ Monument::Monument(string bName,int pReq, int wReq, double mCost, int sCost, int
 	this->state->changeState();//in case it needs to change
 
 	this->listOfCitizens = new Citizen("NewCitizen",100,21,5.0);
-	this->listOfCitizens->adjustCitizenSatisfaction(5.0);
+	//this->listOfCitizens->adjustCitizenSatisfaction(5.0);
 }
 
 void Monument::requestState() {
@@ -68,32 +68,37 @@ string Monument::getBuildingType()
 
 void Monument::addBuilding(){
 	if(resources){
-		resources->addBuilding(this);
+		 resources->addBuilding(this);
 	}
+
 }
 
 bool Monument::getPower(){
 	if(resources){
-		resources->getPower(this);
+		return resources->getPower(this);
 	}
+return false;
 }
 
 bool Monument::cleanSewage(){
 	if(resources){
-		resources->cleanSewage(this);
+		return resources->cleanSewage(this);
 	}
+return false;
 }
 
 bool Monument::cleanWaste(){
 	if(resources){
-		resources->cleanWaste(this);
+		return resources->cleanWaste(this);
 	}
+return false;
 }
 
 bool Monument::getWater(){
 	if(resources){
-		resources->getWater(this);
+		return resources->getWater(this);
 	}
+return false;
 }
 
 

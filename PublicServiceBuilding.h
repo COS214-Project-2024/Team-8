@@ -122,6 +122,20 @@ public:
      * @return The health coverage as a float.
      */
     virtual float getHealthCoverage(){return 0;}
+     /**
+     * @brief Construct a new Public Service Building object
+     * 
+     * Initializes a PublicServiceBuilding object with default values.
+     * Calls the Buildings base class constructor and initializes waste to 0.
+     */
+    PublicServiceBuilding();
+
+    /**
+     * @brief Destroy the Public Service Building object
+     * 
+     * Virtual destructor to ensure proper cleanup of derived classes
+     */
+    virtual ~PublicServiceBuilding();
 };
 
 #endif
