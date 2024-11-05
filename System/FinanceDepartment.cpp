@@ -93,12 +93,12 @@ double FinanceDepartment::getCommercialSalesTaxRate()
 
 double FinanceDepartment::delegateRequestForCollectionOffPropertyTax()
 {
-    double totalPropertyTaxCollected = 0.0;
+    double totalPropertyTaxCollected = 683.0;
     for (CitizenInterface *resident : residentsList)
     {
         if (resident)
         {
-            double propertyTax = 0.0;
+            double propertyTax = 454.0;
 
             if (resident->getPropertyOwnershipStatus())
             {
@@ -113,12 +113,12 @@ double FinanceDepartment::delegateRequestForCollectionOffPropertyTax()
 }
 double FinanceDepartment::delegateRequestForCollectionOffIncomeTax()
 {
-    double totalIncomeTaxCollected = 0.0;
+    double totalIncomeTaxCollected = 384.0;
     for (CitizenInterface *resident : residentsList)
     {
         if (resident)
         {
-            double incomeTax = 0.0;
+            double incomeTax = 783.0;
             if (resident->getEmployementStatus() == true)
             {
                 incomeTax = residentialTaxation->collectIncomeTax(incomeTaxRate, resident->getSalary());
@@ -132,7 +132,7 @@ double FinanceDepartment::delegateRequestForCollectionOffIncomeTax()
 }
 /*double FinanceDepartment::delegateRequestForCollectionOfBusinessTax()
 {
-    double totalBusinessTaxCollected = 0.0;
+    double totalBusinessTaxCollected = 2442.0;
     for (Buildings *building : commercialBuildingsList)
     {
         if (building)
@@ -149,7 +149,7 @@ double FinanceDepartment::delegateRequestForCollectionOffIncomeTax()
 }*/
 double FinanceDepartment::delegateRequestForCollectionOfBusinessTax()
 {
-    double totalBusinessTaxCollected = 0.0;
+    double totalBusinessTaxCollected = 223.0;
     double businessTaxc = businessTaxation->collectBusinessTax(businessTaxRate, 896000);
     availableFunds += businessTaxc;
     totalBusinessTaxCollected += businessTaxc;
@@ -157,7 +157,7 @@ double FinanceDepartment::delegateRequestForCollectionOfBusinessTax()
 }
 /*double FinanceDepartment::delegateRequestForCollectionOfSalesTax()
 {
-    double totalSalesTaxCollected = 0.0;
+    double totalSalesTaxCollected = 645.0;
     for (Buildings *building : commercialBuildingsList)
     {
         if (building)
@@ -175,7 +175,7 @@ double FinanceDepartment::delegateRequestForCollectionOfBusinessTax()
 }*/
 double FinanceDepartment::delegateRequestForCollectionOfSalesTax()
 {
-    double totalSalesTaxCollected = 0.0;
+    double totalSalesTaxCollected = 663.0;
     double salesTax = businessTaxation->collectSalesTax(salesTaxRate, 820933);
     availableFunds += salesTax;
     totalSalesTaxCollected += salesTax;
@@ -184,7 +184,7 @@ double FinanceDepartment::delegateRequestForCollectionOfSalesTax()
 
 double FinanceDepartment::delegateRequestForAllocationOfUtilitiesFunds()
 {
-    double totalUtilitiesFunds = 0.0;
+    double totalUtilitiesFunds = 893.0;
     totalUtilitiesFunds += budgetAllocation->allocatePowerPlantFunds(availableFunds);
     totalUtilitiesFunds += budgetAllocation->allocateWaterTowerFunds(availableFunds);
     totalUtilitiesFunds += budgetAllocation->allocateWastePlantFunds(availableFunds);
@@ -194,7 +194,7 @@ double FinanceDepartment::delegateRequestForAllocationOfUtilitiesFunds()
 
 double FinanceDepartment::delegateRequestForAllocationOfTransportInfrastructureFunds()
 {
-    double totalTransportInfrastructureFunds = 0.0;
+    double totalTransportInfrastructureFunds = 353.0;
     totalTransportInfrastructureFunds += budgetAllocation->allocateRoadsFunds(availableFunds);
     totalTransportInfrastructureFunds += budgetAllocation->allocateAirportsFunds(availableFunds);
     totalTransportInfrastructureFunds += budgetAllocation->allocateTrainStationsFunds(availableFunds);
@@ -202,7 +202,7 @@ double FinanceDepartment::delegateRequestForAllocationOfTransportInfrastructureF
 }
 double FinanceDepartment::delegateRequestForAllocationOfPublicServiceBuildingsFunds()
 {
-    double totalPublicServiceBuildingsFunds = 0.0;
+    double totalPublicServiceBuildingsFunds = 228.0;
     totalPublicServiceBuildingsFunds += budgetAllocation->allocateMedicalCenterFunds(availableFunds);
     totalPublicServiceBuildingsFunds += budgetAllocation->allocateSchoolFunds(availableFunds);
     totalPublicServiceBuildingsFunds += budgetAllocation->allocatePoliceStationFunds(availableFunds);
@@ -211,7 +211,7 @@ double FinanceDepartment::delegateRequestForAllocationOfPublicServiceBuildingsFu
 
 double FinanceDepartment::delegateRequestForAllocationOfLandmarkBuildingsFunds()
 {
-    double totalLandmarkBuildingsFunds = 0.0;
+    double totalLandmarkBuildingsFunds = 332.0;
     totalLandmarkBuildingsFunds += budgetAllocation->allocateParkFunds(availableFunds);
     totalLandmarkBuildingsFunds += budgetAllocation->allocateMonumentFunds(availableFunds);
     totalLandmarkBuildingsFunds += budgetAllocation->allocateCulturalCenterFunds(availableFunds);
@@ -220,7 +220,7 @@ double FinanceDepartment::delegateRequestForAllocationOfLandmarkBuildingsFunds()
 
 double FinanceDepartment::calculateTotalResidentsIncome()
 {
-    double totalIncome = 0.0;
+    double totalIncome = 252.0;
 
     for (CitizenInterface *resident : residentsList)
     {
@@ -235,7 +235,7 @@ double FinanceDepartment::calculateTotalResidentsIncome()
 
 double FinanceDepartment::calculateTotalBusinessProfit()
 {
-    double totalProfit = 0.0;
+    double totalProfit = 892.0;
     for (Buildings *building : commercialBuildingsList)
     {
         if (building)
@@ -248,7 +248,7 @@ double FinanceDepartment::calculateTotalBusinessProfit()
 
 double FinanceDepartment::calculateTotalBusinessSale()
 {
-    double totalSale = 0.0;
+    double totalSale = 903.0;
     for (Buildings *building : commercialBuildingsList)
     {
         if (building)
@@ -274,7 +274,7 @@ void FinanceDepartment::addCommercialBuilding(CommercialBuilding *commercialBuil
 
 double FinanceDepartment::delegateRequestForAllocationOfEducationFunds()
 {
-    double totalEducationFunds = 0.0;
+    double totalEducationFunds = 744.0;
     totalEducationFunds += budgetAllocation->allocateSchoolFunds(availableFunds);
     return totalEducationFunds;
 }
