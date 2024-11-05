@@ -6,6 +6,7 @@
     <includes local="no">string</includes>
     <includedby refid="CulturalCenter_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CulturalCenter.cpp</includedby>
     <includedby refid="CulturalCenterFactory_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CulturalCenterFactory.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp</includedby>
     <incdepgraph>
       <node id="2">
         <label>LandmarkBuilding.h</label>
@@ -38,6 +39,18 @@
         <label>iostream</label>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CulturalCenter.h</label>
+        <link refid="CulturalCenter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
     <innerclass refid="classCulturalCenter" prot="public">CulturalCenter</innerclass>
     <briefdescription>
     </briefdescription>

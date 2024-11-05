@@ -9,8 +9,9 @@ var searchData=
   ['residentialbuilding_658',['ResidentialBuilding',['../classResidentialBuilding.html',1,'']]],
   ['residentialfactory_659',['ResidentialFactory',['../classResidentialFactory.html',1,'']]],
   ['residentialtaxationsystem_660',['ResidentialTaxationSystem',['../classResidentialTaxationSystem.html',1,'']]],
-  ['result_661',['Result',['../structdoctest_1_1detail_1_1Result.html',1,'doctest::detail']]],
-  ['resultbuilder_662',['ResultBuilder',['../structdoctest_1_1detail_1_1ResultBuilder.html',1,'doctest::detail']]],
-  ['road_663',['Road',['../classRoad.html',1,'']]],
-  ['routenode_664',['RouteNode',['../classRouteNode.html',1,'']]]
+  ['resourceconsumption_661',['ResourceConsumption',['../structResourceConsumption.html',1,'']]],
+  ['result_662',['Result',['../structdoctest_1_1detail_1_1Result.html',1,'doctest::detail']]],
+  ['resultbuilder_663',['ResultBuilder',['../structdoctest_1_1detail_1_1ResultBuilder.html',1,'doctest::detail']]],
+  ['road_664',['Road',['../classRoad.html',1,'']]],
+  ['routenode_665',['RouteNode',['../classRouteNode.html',1,'']]]
 ];

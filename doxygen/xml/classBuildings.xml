@@ -596,16 +596,13 @@
         <reimplementedby refid="classIndustrialBuilding_1a73c3da89be7477e72f8c7eb55d751311">getJobsCreated</reimplementedby>
         <reimplementedby refid="classMall_1a00e1555ccec450d6492fcfed59898ca3">getJobsCreated</reimplementedby>
         <reimplementedby refid="classMedicalCenter_1af726a9c952e9e47aaf6bb82a4f877fde">getJobsCreated</reimplementedby>
-        <reimplementedby refid="classMonument_1a87eed9efb406ba75400b89553a49350a">getJobsCreated</reimplementedby>
         <reimplementedby refid="classOffice_1af071576c48b32facf2566a622d27514f">getJobsCreated</reimplementedby>
-        <reimplementedby refid="classPark_1a22513f1e99d55418de7e889a2ed56806">getJobsCreated</reimplementedby>
         <reimplementedby refid="classPoliceStation_1af632ea789b1aa614efbbb96fe5a9e17c">getJobsCreated</reimplementedby>
         <reimplementedby refid="classPowerPlant_1a9ddad0d7f41de4d1d237f58acfe59307">getJobsCreated</reimplementedby>
         <reimplementedby refid="classResidentialBuilding_1a7a6d78e7b5d798d8f9c6221afcb19e7b">getJobsCreated</reimplementedby>
         <reimplementedby refid="classSchool_1a49bc14e2ccc98d0339bcfd983fe06d96">getJobsCreated</reimplementedby>
         <reimplementedby refid="classShop_1af94d5d055af855dfa8690076423282d1">getJobsCreated</reimplementedby>
         <reimplementedby refid="classWarehouse_1a5f8a70d3414656b322bcda13745baa22">getJobsCreated</reimplementedby>
-        <reimplementedby refid="classLandmarkBuilding_1a92abe6deecb03d320f0afdde7916f6ce">getJobsCreated</reimplementedby>
         <reimplementedby refid="classPublicServiceBuilding_1a98fddf51928e1caf68ed7686e76f1f3b">getJobsCreated</reimplementedby>
         <briefdescription>
 <para>Gets the number of jobs created by the building. </para>

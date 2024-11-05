@@ -126,24 +126,6 @@
         </inbodydescription>
         <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="32" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="64" bodyend="67"/>
       </memberdef>
-      <memberdef kind="function" id="classMonument_1a87eed9efb406ba75400b89553a49350a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>int</type>
-        <definition>virtual int Monument::getJobsCreated</definition>
-        <argsstring>()</argsstring>
-        <name>getJobsCreated</name>
-        <reimplements refid="classLandmarkBuilding_1a92abe6deecb03d320f0afdde7916f6ce">getJobsCreated</reimplements>
-        <briefdescription>
-<para>Gets the number of jobs created by the monument. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>The number of jobs as an integer. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="38" column="17"/>
-      </memberdef>
       <memberdef kind="function" id="classMonument_1ae0d8787c2f668483df0acb8f5dabd369" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>double</type>
         <definition>double Monument::getMaintenanceCost</definition>
@@ -160,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="44" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="34" bodyend="36"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="38" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="34" bodyend="36"/>
       </memberdef>
       <memberdef kind="function" id="classMonument_1ade1e6dfa17591c2e90418d1dd470d595" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>string</type>
@@ -178,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="50" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="59" bodyend="62"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="44" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="59" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="classMonument_1aa5d16f88a8b1f0518d2845dbb0bd4f15" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -196,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="56" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="38" bodyend="40"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="50" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="38" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="classMonument_1a9c004de50ec736e06bbc2eb9253af7e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -214,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="62" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="42" bodyend="44"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="56" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="42" bodyend="44"/>
       </memberdef>
       <memberdef kind="function" id="classMonument_1a9d0f9952cde9be9625d514c7adf17f27" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -232,7 +214,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="68" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="46" bodyend="48"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="62" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="46" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="classMonument_1af01f5c96f40adbc481bff5a6df48719d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -247,7 +229,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="74" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="30" bodyend="32"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="68" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="30" bodyend="32"/>
       </memberdef>
       <memberdef kind="function" id="classMonument_1a90c94d6f5e749e62ff836cc73a909d41" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -265,7 +247,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="80" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="50" bodyend="52"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="74" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="50" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="classMonument_1a0e8131d72fc1b7cfeaea419ced2f78fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -284,7 +266,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="85" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="54" bodyend="57"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="79" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="54" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="classMonument_1af1e7e849c3d1ea1d9f9232ba3d9bfe29" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -309,7 +291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="92" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="69" bodyend="74"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="86" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="69" bodyend="74"/>
       </memberdef>
       <memberdef kind="function" id="classMonument_1aa820b40523a786099a0aa438eef37786" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -327,7 +309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="98" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="76" bodyend="81"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="92" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="76" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="classMonument_1a6cc1e997c14352ab89b2ae70ad87c710" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -345,7 +327,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="104" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="97" bodyend="102"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="98" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="97" bodyend="102"/>
       </memberdef>
       <memberdef kind="function" id="classMonument_1a2f01e07c1ce7f901b505baaa55bbc584" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -363,7 +345,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="110" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="90" bodyend="95"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="104" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="90" bodyend="95"/>
       </memberdef>
       <memberdef kind="function" id="classMonument_1ab1d8a96cfcdf7c0cbe2ffdc7a2513f73" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -381,7 +363,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="116" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="83" bodyend="88"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="110" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp" bodystart="83" bodyend="88"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -482,7 +464,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" bodystart="12" bodyend="117"/>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.h" bodystart="12" bodyend="111"/>
     <listofallmembers>
       <member refid="classMonument_1af1e7e849c3d1ea1d9f9232ba3d9bfe29" prot="public" virt="virtual"><scope>Monument</scope><name>addBuilding</name></member>
       <member refid="classBuildings_1afc21c459782fab5d58a3517c09474df0" prot="protected" virt="non-virtual"><scope>Monument</scope><name>balance</name></member>
@@ -497,7 +479,7 @@
       <member refid="classBuildings_1a14a35e8d36b717014241a9f416324ae5" prot="public" virt="virtual"><scope>Monument</scope><name>getCommercialIncome</name></member>
       <member refid="classBuildings_1aea12268287656270eb98cd2f22b82e02" prot="public" virt="virtual"><scope>Monument</scope><name>getEducationalCoverage</name></member>
       <member refid="classBuildings_1a993a9340e25a58e2e2912090742f5ba6" prot="public" virt="virtual"><scope>Monument</scope><name>getHealthCoverage</name></member>
-      <member refid="classMonument_1a87eed9efb406ba75400b89553a49350a" prot="public" virt="virtual"><scope>Monument</scope><name>getJobsCreated</name></member>
+      <member refid="classBuildings_1a903e19ef9d878d5714b8ab5de9f71fc1" prot="public" virt="virtual"><scope>Monument</scope><name>getJobsCreated</name></member>
       <member refid="classBuildings_1ae0a010f94a01d180d1a6e4d023b54561" prot="public" virt="virtual"><scope>Monument</scope><name>getlistOfResidence</name></member>
       <member refid="classMonument_1ae0d8787c2f668483df0acb8f5dabd369" prot="public" virt="virtual"><scope>Monument</scope><name>getMaintenanceCost</name></member>
       <member refid="classMonument_1ade1e6dfa17591c2e90418d1dd470d595" prot="public" virt="virtual"><scope>Monument</scope><name>getName</name></member>

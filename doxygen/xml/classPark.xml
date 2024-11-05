@@ -126,24 +126,6 @@
         </inbodydescription>
         <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="30" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="64" bodyend="67"/>
       </memberdef>
-      <memberdef kind="function" id="classPark_1a22513f1e99d55418de7e889a2ed56806" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>int</type>
-        <definition>virtual int Park::getJobsCreated</definition>
-        <argsstring>()</argsstring>
-        <name>getJobsCreated</name>
-        <reimplements refid="classLandmarkBuilding_1a92abe6deecb03d320f0afdde7916f6ce">getJobsCreated</reimplements>
-        <briefdescription>
-<para>Gets the number of jobs created by the park. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>The number of jobs as an integer. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="36" column="17"/>
-      </memberdef>
       <memberdef kind="function" id="classPark_1af812e134e0b512ab1fca97db97472423" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>double</type>
         <definition>double Park::getMaintenanceCost</definition>
@@ -160,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="42" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="34" bodyend="36"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="37" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="34" bodyend="36"/>
       </memberdef>
       <memberdef kind="function" id="classPark_1a056d317a7474449c932f56c8ec703764" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>string</type>
@@ -178,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="48" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="59" bodyend="62"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="43" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="59" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="classPark_1a67bb1c291999a2f84b7aefa48a149529" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -196,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="54" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="38" bodyend="40"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="49" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="38" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="classPark_1a9321f126205b260775abcea15d4e3e6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -214,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="60" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="42" bodyend="44"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="55" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="42" bodyend="44"/>
       </memberdef>
       <memberdef kind="function" id="classPark_1af4e0a5f69702b0454f241acf528d56a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -232,7 +214,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="66" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="46" bodyend="48"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="61" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="46" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="classPark_1aacde897f3b78869e5e834d6d3e647fdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -247,7 +229,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="71" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="30" bodyend="32"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="66" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="30" bodyend="32"/>
       </memberdef>
       <memberdef kind="function" id="classPark_1ab5b7777dcc40a83ad3829a9ccd0d6108" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -266,7 +248,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="76" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="54" bodyend="57"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="71" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="54" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="classPark_1a64bb85198d48756c7b16254831df1ecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -284,7 +266,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="82" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="50" bodyend="52"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="77" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="50" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="classPark_1a9026ffbf64514400d81218e970f7aeef" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -309,7 +291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="89" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="69" bodyend="74"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="84" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="69" bodyend="74"/>
       </memberdef>
       <memberdef kind="function" id="classPark_1ab8559c1bdf4ba7cdb3ffc7d7f2a84648" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -327,7 +309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="95" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="76" bodyend="81"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="90" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="76" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="classPark_1a56586b6fbccdf996174469ec27663374" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -345,7 +327,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="101" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="97" bodyend="102"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="96" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="97" bodyend="102"/>
       </memberdef>
       <memberdef kind="function" id="classPark_1ac5ea570943ee58b803c919033ef0c3bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -363,7 +345,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="107" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="90" bodyend="95"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="102" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="90" bodyend="95"/>
       </memberdef>
       <memberdef kind="function" id="classPark_1a52b7b6d0e8d7795e133346be8706ccff" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -381,7 +363,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="113" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="83" bodyend="88"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="108" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp" bodystart="83" bodyend="88"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -482,7 +464,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" bodystart="12" bodyend="115"/>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.h" bodystart="12" bodyend="110"/>
     <listofallmembers>
       <member refid="classPark_1a9026ffbf64514400d81218e970f7aeef" prot="public" virt="virtual"><scope>Park</scope><name>addBuilding</name></member>
       <member refid="classBuildings_1afc21c459782fab5d58a3517c09474df0" prot="protected" virt="non-virtual"><scope>Park</scope><name>balance</name></member>
@@ -497,7 +479,7 @@
       <member refid="classBuildings_1a14a35e8d36b717014241a9f416324ae5" prot="public" virt="virtual"><scope>Park</scope><name>getCommercialIncome</name></member>
       <member refid="classBuildings_1aea12268287656270eb98cd2f22b82e02" prot="public" virt="virtual"><scope>Park</scope><name>getEducationalCoverage</name></member>
       <member refid="classBuildings_1a993a9340e25a58e2e2912090742f5ba6" prot="public" virt="virtual"><scope>Park</scope><name>getHealthCoverage</name></member>
-      <member refid="classPark_1a22513f1e99d55418de7e889a2ed56806" prot="public" virt="virtual"><scope>Park</scope><name>getJobsCreated</name></member>
+      <member refid="classBuildings_1a903e19ef9d878d5714b8ab5de9f71fc1" prot="public" virt="virtual"><scope>Park</scope><name>getJobsCreated</name></member>
       <member refid="classBuildings_1ae0a010f94a01d180d1a6e4d023b54561" prot="public" virt="virtual"><scope>Park</scope><name>getlistOfResidence</name></member>
       <member refid="classPark_1af812e134e0b512ab1fca97db97472423" prot="public" virt="virtual"><scope>Park</scope><name>getMaintenanceCost</name></member>
       <member refid="classPark_1a056d317a7474449c932f56c8ec703764" prot="public" virt="virtual"><scope>Park</scope><name>getName</name></member>

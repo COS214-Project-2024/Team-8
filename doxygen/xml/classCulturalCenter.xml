@@ -131,7 +131,7 @@
         <definition>int CulturalCenter::getJobsCreated</definition>
         <argsstring>()</argsstring>
         <name>getJobsCreated</name>
-        <reimplements refid="classLandmarkBuilding_1a92abe6deecb03d320f0afdde7916f6ce">getJobsCreated</reimplements>
+        <reimplements refid="classBuildings_1a903e19ef9d878d5714b8ab5de9f71fc1">getJobsCreated</reimplements>
         <briefdescription>
 <para>Gets the number of jobs created by the cultural center. </para>
         </briefdescription>

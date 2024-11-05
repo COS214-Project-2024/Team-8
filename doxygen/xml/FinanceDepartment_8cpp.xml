@@ -350,14 +350,14 @@
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>residentialTaxation(new<sp/><ref refid="classResidentialTaxationSystem" kindref="compound">ResidentialTaxationSystem</ref>()),</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>businessTaxation(new<sp/><ref refid="classCommercialTaxationSystem" kindref="compound">CommercialTaxationSystem</ref>()),</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>budgetAllocation(new<sp/><ref refid="classBudgetAllocationSystem" kindref="compound">BudgetAllocationSystem</ref>()),</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>incomeTaxRate(0.0),</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>propertyTaxRate(0.0),</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>businessTaxRate(0.0),</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>salesTaxRate(0.0),</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>totalBusinessSales(0.0),</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>totalBusinessProfits(0.0),</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>totalResidentsIncomes(0.0),</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>availableFunds(0.0)<sp/>{}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>incomeTaxRate(0.10),</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>propertyTaxRate(0.01),</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>businessTaxRate(0.12),</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>salesTaxRate(0.07),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>totalBusinessSales(5839000.0),</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>totalBusinessProfits(1593800.0),</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>totalResidentsIncomes(8003630.0),</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>availableFunds(5000000.0)<sp/>{}</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><ref refid="classFinanceDepartment_1a2d38ee3067f27f02ce728bc336ef499b" kindref="member">FinanceDepartment::~FinanceDepartment</ref>()</highlight></codeline>
 <codeline lineno="27"><highlight class="normal">{</highlight></codeline>
@@ -429,12 +429,12 @@
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFinanceDepartment_1a6b91c32dfff3d045fcb7d77a9ba80dbb" kindref="member">FinanceDepartment::delegateRequestForCollectionOffPropertyTax</ref>()</highlight></codeline>
 <codeline lineno="95"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalPropertyTaxCollected<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalPropertyTaxCollected<sp/>=<sp/>683.0;</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classCitizenInterface" kindref="compound">CitizenInterface</ref><sp/>*resident<sp/>:<sp/>residentsList)</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(resident)</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>propertyTax<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>propertyTax<sp/>=<sp/>454.0;</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(resident-&gt;getPropertyOwnershipStatus())</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -449,12 +449,12 @@
 <codeline lineno="113"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFinanceDepartment_1a8ac998b8b16c2f4702a87026d71b509c" kindref="member">FinanceDepartment::delegateRequestForCollectionOffIncomeTax</ref>()</highlight></codeline>
 <codeline lineno="115"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalIncomeTaxCollected<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalIncomeTaxCollected<sp/>=<sp/>384.0;</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classCitizenInterface" kindref="compound">CitizenInterface</ref><sp/>*resident<sp/>:<sp/>residentsList)</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(resident)</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>incomeTax<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>incomeTax<sp/>=<sp/>783.0;</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(resident-&gt;getEmployementStatus()<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>incomeTax<sp/>=<sp/>residentialTaxation-&gt;<ref refid="classResidentialTaxationSystem_1a01b4717dc272555cb468b32e564ebc5c" kindref="member">collectIncomeTax</ref>(incomeTaxRate,<sp/>resident-&gt;getSalary());</highlight></codeline>
@@ -468,7 +468,7 @@
 <codeline lineno="132"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment">/*double<sp/>FinanceDepartment::delegateRequestForCollectionOfBusinessTax()</highlight></codeline>
 <codeline lineno="134"><highlight class="comment">{</highlight></codeline>
-<codeline lineno="135"><highlight class="comment"><sp/><sp/><sp/><sp/>double<sp/>totalBusinessTaxCollected<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/><sp/><sp/><sp/>double<sp/>totalBusinessTaxCollected<sp/>=<sp/>2442.0;</highlight></codeline>
 <codeline lineno="136"><highlight class="comment"><sp/><sp/><sp/><sp/>for<sp/>(Buildings<sp/>*building<sp/>:<sp/>commercialBuildingsList)</highlight></codeline>
 <codeline lineno="137"><highlight class="comment"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="138"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(building)</highlight></codeline>
@@ -485,7 +485,7 @@
 <codeline lineno="149"><highlight class="comment">}*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="150"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFinanceDepartment_1afdd6132919201f95f00488d7667f4c34" kindref="member">FinanceDepartment::delegateRequestForCollectionOfBusinessTax</ref>()</highlight></codeline>
 <codeline lineno="151"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalBusinessTaxCollected<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalBusinessTaxCollected<sp/>=<sp/>223.0;</highlight></codeline>
 <codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>businessTaxc<sp/>=<sp/>businessTaxation-&gt;<ref refid="classCommercialTaxationSystem_1a72af614854a288d70abc07d9a47fb5aa" kindref="member">collectBusinessTax</ref>(businessTaxRate,<sp/>896000);</highlight></codeline>
 <codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>availableFunds<sp/>+=<sp/>businessTaxc;</highlight></codeline>
 <codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>totalBusinessTaxCollected<sp/>+=<sp/>businessTaxc;</highlight></codeline>
@@ -493,7 +493,7 @@
 <codeline lineno="157"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="158"><highlight class="normal"></highlight><highlight class="comment">/*double<sp/>FinanceDepartment::delegateRequestForCollectionOfSalesTax()</highlight></codeline>
 <codeline lineno="159"><highlight class="comment">{</highlight></codeline>
-<codeline lineno="160"><highlight class="comment"><sp/><sp/><sp/><sp/>double<sp/>totalSalesTaxCollected<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="160"><highlight class="comment"><sp/><sp/><sp/><sp/>double<sp/>totalSalesTaxCollected<sp/>=<sp/>645.0;</highlight></codeline>
 <codeline lineno="161"><highlight class="comment"><sp/><sp/><sp/><sp/>for<sp/>(Buildings<sp/>*building<sp/>:<sp/>commercialBuildingsList)</highlight></codeline>
 <codeline lineno="162"><highlight class="comment"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="163"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(building)</highlight></codeline>
@@ -511,7 +511,7 @@
 <codeline lineno="175"><highlight class="comment">}*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="176"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFinanceDepartment_1a121e817acdb25f91f0f33cbcc04cafb6" kindref="member">FinanceDepartment::delegateRequestForCollectionOfSalesTax</ref>()</highlight></codeline>
 <codeline lineno="177"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalSalesTaxCollected<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalSalesTaxCollected<sp/>=<sp/>663.0;</highlight></codeline>
 <codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>salesTax<sp/>=<sp/>businessTaxation-&gt;<ref refid="classCommercialTaxationSystem_1a6c339175c0965f4e1cf1f527ade9016c" kindref="member">collectSalesTax</ref>(salesTaxRate,<sp/>820933);</highlight></codeline>
 <codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>availableFunds<sp/>+=<sp/>salesTax;</highlight></codeline>
 <codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>totalSalesTaxCollected<sp/>+=<sp/>salesTax;</highlight></codeline>
@@ -520,7 +520,7 @@
 <codeline lineno="184"><highlight class="normal"></highlight></codeline>
 <codeline lineno="185"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFinanceDepartment_1a68c8c38897f69ab694e4a4ecf512953a" kindref="member">FinanceDepartment::delegateRequestForAllocationOfUtilitiesFunds</ref>()</highlight></codeline>
 <codeline lineno="186"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalUtilitiesFunds<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalUtilitiesFunds<sp/>=<sp/>893.0;</highlight></codeline>
 <codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>totalUtilitiesFunds<sp/>+=<sp/>budgetAllocation-&gt;<ref refid="classBudgetAllocationSystem_1ac24ffabbd32b4437f88595004a2b7f79" kindref="member">allocatePowerPlantFunds</ref>(availableFunds);</highlight></codeline>
 <codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>totalUtilitiesFunds<sp/>+=<sp/>budgetAllocation-&gt;<ref refid="classBudgetAllocationSystem_1a2e099729df3800044a23a49ab2195b4a" kindref="member">allocateWaterTowerFunds</ref>(availableFunds);</highlight></codeline>
 <codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>totalUtilitiesFunds<sp/>+=<sp/>budgetAllocation-&gt;<ref refid="classBudgetAllocationSystem_1a67ddf50ac970ca3a79d70879191de210" kindref="member">allocateWastePlantFunds</ref>(availableFunds);</highlight></codeline>
@@ -530,7 +530,7 @@
 <codeline lineno="194"><highlight class="normal"></highlight></codeline>
 <codeline lineno="195"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFinanceDepartment_1a42d5278160589be6772abf7493c6700c" kindref="member">FinanceDepartment::delegateRequestForAllocationOfTransportInfrastructureFunds</ref>()</highlight></codeline>
 <codeline lineno="196"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalTransportInfrastructureFunds<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalTransportInfrastructureFunds<sp/>=<sp/>353.0;</highlight></codeline>
 <codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>totalTransportInfrastructureFunds<sp/>+=<sp/>budgetAllocation-&gt;<ref refid="classBudgetAllocationSystem_1ac84e9fc232d8fc7f84897219dfcd1cce" kindref="member">allocateRoadsFunds</ref>(availableFunds);</highlight></codeline>
 <codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>totalTransportInfrastructureFunds<sp/>+=<sp/>budgetAllocation-&gt;<ref refid="classBudgetAllocationSystem_1a4bdc8ee50a6f2dbf4004617633ff57d4" kindref="member">allocateAirportsFunds</ref>(availableFunds);</highlight></codeline>
 <codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>totalTransportInfrastructureFunds<sp/>+=<sp/>budgetAllocation-&gt;<ref refid="classBudgetAllocationSystem_1ae0bd1b9f3292c656c30608a23e827f47" kindref="member">allocateTrainStationsFunds</ref>(availableFunds);</highlight></codeline>
@@ -538,7 +538,7 @@
 <codeline lineno="202"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="203"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFinanceDepartment_1a28d09fe347e09fe37ee460f6cfc72eec" kindref="member">FinanceDepartment::delegateRequestForAllocationOfPublicServiceBuildingsFunds</ref>()</highlight></codeline>
 <codeline lineno="204"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalPublicServiceBuildingsFunds<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalPublicServiceBuildingsFunds<sp/>=<sp/>228.0;</highlight></codeline>
 <codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>totalPublicServiceBuildingsFunds<sp/>+=<sp/>budgetAllocation-&gt;<ref refid="classBudgetAllocationSystem_1a4136810058e31ce6a5a9ed02b4fd68ad" kindref="member">allocateMedicalCenterFunds</ref>(availableFunds);</highlight></codeline>
 <codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>totalPublicServiceBuildingsFunds<sp/>+=<sp/>budgetAllocation-&gt;<ref refid="classBudgetAllocationSystem_1ac6b55f5aeecd93f73e2e06809884d9f4" kindref="member">allocateSchoolFunds</ref>(availableFunds);</highlight></codeline>
 <codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>totalPublicServiceBuildingsFunds<sp/>+=<sp/>budgetAllocation-&gt;<ref refid="classBudgetAllocationSystem_1a48ce04438fc0beac51dfe11465538db1" kindref="member">allocatePoliceStationFunds</ref>(availableFunds);</highlight></codeline>
@@ -547,7 +547,7 @@
 <codeline lineno="211"><highlight class="normal"></highlight></codeline>
 <codeline lineno="212"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFinanceDepartment_1a44ac508d1dd2274e487b7c5200bbc82e" kindref="member">FinanceDepartment::delegateRequestForAllocationOfLandmarkBuildingsFunds</ref>()</highlight></codeline>
 <codeline lineno="213"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalLandmarkBuildingsFunds<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalLandmarkBuildingsFunds<sp/>=<sp/>332.0;</highlight></codeline>
 <codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>totalLandmarkBuildingsFunds<sp/>+=<sp/>budgetAllocation-&gt;<ref refid="classBudgetAllocationSystem_1a08e0f2af67f6850a2c040563ca999076" kindref="member">allocateParkFunds</ref>(availableFunds);</highlight></codeline>
 <codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>totalLandmarkBuildingsFunds<sp/>+=<sp/>budgetAllocation-&gt;<ref refid="classBudgetAllocationSystem_1a11f3d4d04ef94bcbeac07e2482a08cb0" kindref="member">allocateMonumentFunds</ref>(availableFunds);</highlight></codeline>
 <codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>totalLandmarkBuildingsFunds<sp/>+=<sp/>budgetAllocation-&gt;<ref refid="classBudgetAllocationSystem_1a5e544a7c84b9ab99ccf736657b0270b0" kindref="member">allocateCulturalCenterFunds</ref>(availableFunds);</highlight></codeline>
@@ -556,7 +556,7 @@
 <codeline lineno="220"><highlight class="normal"></highlight></codeline>
 <codeline lineno="221"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFinanceDepartment_1a2a6597b80445fad431907cc4cfd32f25" kindref="member">FinanceDepartment::calculateTotalResidentsIncome</ref>()</highlight></codeline>
 <codeline lineno="222"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalIncome<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalIncome<sp/>=<sp/>252.0;</highlight></codeline>
 <codeline lineno="224"><highlight class="normal"></highlight></codeline>
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classCitizenInterface" kindref="compound">CitizenInterface</ref><sp/>*resident<sp/>:<sp/>residentsList)</highlight></codeline>
 <codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -571,7 +571,7 @@
 <codeline lineno="235"><highlight class="normal"></highlight></codeline>
 <codeline lineno="236"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFinanceDepartment_1a28055279efa7e2157464d71ada82e741" kindref="member">FinanceDepartment::calculateTotalBusinessProfit</ref>()</highlight></codeline>
 <codeline lineno="237"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalProfit<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalProfit<sp/>=<sp/>892.0;</highlight></codeline>
 <codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classBuildings" kindref="compound">Buildings</ref><sp/>*building<sp/>:<sp/>commercialBuildingsList)</highlight></codeline>
 <codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(building)</highlight></codeline>
@@ -584,7 +584,7 @@
 <codeline lineno="248"><highlight class="normal"></highlight></codeline>
 <codeline lineno="249"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFinanceDepartment_1a04e1df2d505d52a8eb27ab61d6e2134c" kindref="member">FinanceDepartment::calculateTotalBusinessSale</ref>()</highlight></codeline>
 <codeline lineno="250"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalSale<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalSale<sp/>=<sp/>903.0;</highlight></codeline>
 <codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classBuildings" kindref="compound">Buildings</ref><sp/>*building<sp/>:<sp/>commercialBuildingsList)</highlight></codeline>
 <codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(building)</highlight></codeline>
@@ -610,7 +610,7 @@
 <codeline lineno="274"><highlight class="normal"></highlight></codeline>
 <codeline lineno="275"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFinanceDepartment_1a692c4774b8714966111a31abb3a9807f" kindref="member">FinanceDepartment::delegateRequestForAllocationOfEducationFunds</ref>()</highlight></codeline>
 <codeline lineno="276"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalEducationFunds<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalEducationFunds<sp/>=<sp/>744.0;</highlight></codeline>
 <codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>totalEducationFunds<sp/>+=<sp/>budgetAllocation-&gt;<ref refid="classBudgetAllocationSystem_1ac6b55f5aeecd93f73e2e06809884d9f4" kindref="member">allocateSchoolFunds</ref>(availableFunds);</highlight></codeline>
 <codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>totalEducationFunds;</highlight></codeline>
 <codeline lineno="280"><highlight class="normal">}</highlight></codeline>

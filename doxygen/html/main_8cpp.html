@@ -67,6 +67,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -84,6 +86,7 @@ $(function() {
 <code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;ctime&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
 <code>#include &quot;<a class="el" href="Government_8h_source.html">Government.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="FinanceSector_8h_source.html">FinanceSector.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UtilitiesSector_8h_source.html">UtilitiesSector.h</a>&quot;</code><br />
@@ -110,7 +113,13 @@ $(function() {
 <code>#include &quot;BuildingController.h&quot;</code><br />
 <code>#include &quot;PublicServiceBuilding.h&quot;</code><br />
 <code>#include &quot;MedicalCenter.h&quot;</code><br />
+<code>#include &quot;School.h&quot;</code><br />
+<code>#include &quot;PoliceStation.h&quot;</code><br />
 <code>#include &quot;LandmarkBuilding.h&quot;</code><br />
+<code>#include &quot;Mall.h&quot;</code><br />
+<code>#include &quot;Monument.h&quot;</code><br />
+<code>#include &quot;Park.h&quot;</code><br />
+<code>#include &quot;CulturalCenter.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="TravelManager_8h_source.html">TravelManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Road_8h_source.html">Road.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Plane_8h_source.html">Plane.h</a>&quot;</code><br />
@@ -120,12 +129,24 @@ $(function() {
 <code>#include &quot;<a class="el" href="AccesibleRoute_8h_source.html">AccesibleRoute.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TrainStation_8h_source.html">TrainStation.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="MapIterator_8h_source.html">MapIterator.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for main.cpp:</div>
-<div class="dyncontent">
-<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#a_2home_2nev_2cos214_2Project_2finalpush_2Team-8-Design-Wits_2System_2main_8cpp" alt=""/></div>
-</div>
+<code>#include &quot;State.h&quot;</code><br />
+<code>#include &quot;UnderConstruction.h&quot;</code><br />
+<code>#include &quot;Operational.h&quot;</code><br />
+<code>#include &quot;Damaged.h&quot;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structResourceConsumption.html">ResourceConsumption</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:abdc3b24b9228430a8d639548d0399e14"><td class="memItemLeft" align="right" valign="top"><a id="abdc3b24b9228430a8d639548d0399e14"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>BuildingState</b> { <b>UnderConstruction</b>
+, <b>Operational</b>
+, <b>Damaged</b>
+ }</td></tr>
+<tr class="separator:abdc3b24b9228430a8d639548d0399e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a5d555657ce648c1a47abb70f1029589d"><td class="memItemLeft" align="right" valign="top"><a id="a5d555657ce648c1a47abb70f1029589d"></a>
@@ -140,6 +161,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>displayCitySkyline</b
 <tr class="memitem:a192bb9340ffb6234b48b055409fc3852"><td class="memItemLeft" align="right" valign="top"><a id="a192bb9340ffb6234b48b055409fc3852"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>displayStoryIntro</b> ()</td></tr>
 <tr class="separator:a192bb9340ffb6234b48b055409fc3852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8638917112276c7eb29cbebb83d4f360"><td class="memItemLeft" align="right" valign="top"><a id="a8638917112276c7eb29cbebb83d4f360"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateBuildingResources</b> (<a class="el" href="classBuildings.html">Buildings</a> *building)</td></tr>
+<tr class="separator:a8638917112276c7eb29cbebb83d4f360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90ce1f93397dcc5adbc254790055b96a"><td class="memItemLeft" align="right" valign="top"><a id="a90ce1f93397dcc5adbc254790055b96a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleBuildingState</b> (<a class="el" href="classBuildings.html">Buildings</a> *building, BuildingState newState)</td></tr>
+<tr class="separator:a90ce1f93397dcc5adbc254790055b96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87e56e096cedae8c62e7ea0fdbc2af09"><td class="memItemLeft" align="right" valign="top"><a id="a87e56e096cedae8c62e7ea0fdbc2af09"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>manageBuildingCapacity</b> (<a class="el" href="classBuildings.html">Buildings</a> *building)</td></tr>
+<tr class="separator:a87e56e096cedae8c62e7ea0fdbc2af09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a9d0a3fa4b8be93e2aac37c0a6e9e3"><td class="memItemLeft" align="right" valign="top"><a id="ad8a9d0a3fa4b8be93e2aac37c0a6e9e3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canAddOccupant</b> (<a class="el" href="classBuildings.html">Buildings</a> *building)</td></tr>
+<tr class="separator:ad8a9d0a3fa4b8be93e2aac37c0a6e9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c80bcc9391a1eff8376b7fc9f9035e3"><td class="memItemLeft" align="right" valign="top"><a id="a6c80bcc9391a1eff8376b7fc9f9035e3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addOccupant</b> (<a class="el" href="classBuildings.html">Buildings</a> *building, <a class="el" href="classCitizenInterface.html">CitizenInterface</a> *citizen)</td></tr>
+<tr class="separator:a6c80bcc9391a1eff8376b7fc9f9035e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98737e1b4489e5a367a2f6646a0f0c47"><td class="memItemLeft" align="right" valign="top"><a id="a98737e1b4489e5a367a2f6646a0f0c47"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleBuildingConstruction</b> (<a class="el" href="classBuildings.html">Buildings</a> *building)</td></tr>
+<tr class="separator:a98737e1b4489e5a367a2f6646a0f0c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dbdd60dee886652d58284e227a4c6e9"><td class="memItemLeft" align="right" valign="top"><a id="a8dbdd60dee886652d58284e227a4c6e9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>handlePublicServiceConstruction</b> ()</td></tr>
 <tr class="separator:a8dbdd60dee886652d58284e227a4c6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,12 +188,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>handleLandmarkConstru
 <tr class="memitem:a7f4718dea19bcfe5e1bcaff69d75e7c3"><td class="memItemLeft" align="right" valign="top"><a id="a7f4718dea19bcfe5e1bcaff69d75e7c3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>handleCitizenManagement</b> ()</td></tr>
 <tr class="separator:a7f4718dea19bcfe5e1bcaff69d75e7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a216ab7fd001c95da696c5a4c38e8a90f"><td class="memItemLeft" align="right" valign="top"><a id="a216ab7fd001c95da696c5a4c38e8a90f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handleTransportation</b> ()</td></tr>
-<tr class="separator:a216ab7fd001c95da696c5a4c38e8a90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac95479febb8a5e42155394d943d1cd50"><td class="memItemLeft" align="right" valign="top"><a id="ac95479febb8a5e42155394d943d1cd50"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>handleGovernment</b> ()</td></tr>
 <tr class="separator:ac95479febb8a5e42155394d943d1cd50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a216ab7fd001c95da696c5a4c38e8a90f"><td class="memItemLeft" align="right" valign="top"><a id="a216ab7fd001c95da696c5a4c38e8a90f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleTransportation</b> ()</td></tr>
+<tr class="separator:a216ab7fd001c95da696c5a4c38e8a90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59c2926dd9b0968badf463aaf4f91422"><td class="memItemLeft" align="right" valign="top"><a id="a59c2926dd9b0968badf463aaf4f91422"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>displayMenu</b> ()</td></tr>
 <tr class="separator:a59c2926dd9b0968badf463aaf4f91422"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,6 +227,18 @@ const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>highligh
 <tr class="memitem:a0cbe348a07d7e27c979db6d7a02484f9"><td class="memItemLeft" align="right" valign="top"><a id="a0cbe348a07d7e27c979db6d7a02484f9"></a>
 std::vector&lt; std::unique_ptr&lt; <a class="el" href="classBuildings.html">Buildings</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cityBuildings</b></td></tr>
 <tr class="separator:a0cbe348a07d7e27c979db6d7a02484f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae445c7144803717e8b2787f4b1f69a3d"><td class="memItemLeft" align="right" valign="top"><a id="ae445c7144803717e8b2787f4b1f69a3d"></a>
+std::vector&lt; std::unique_ptr&lt; <a class="el" href="classCitizenInterface.html">CitizenInterface</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>citizens</b></td></tr>
+<tr class="separator:ae445c7144803717e8b2787f4b1f69a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d14b207c423efe16af1de34bb86b532"><td class="memItemLeft" align="right" valign="top"><a id="a6d14b207c423efe16af1de34bb86b532"></a>
+std::map&lt; <a class="el" href="classBuildings.html">Buildings</a> *, std::vector&lt; <a class="el" href="classCitizenInterface.html">CitizenInterface</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buildingOccupants</b></td></tr>
+<tr class="separator:a6d14b207c423efe16af1de34bb86b532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7210aa7d4b30e8012d5eb1dff653bb2c"><td class="memItemLeft" align="right" valign="top"><a id="a7210aa7d4b30e8012d5eb1dff653bb2c"></a>
+std::map&lt; <a class="el" href="classBuildings.html">Buildings</a> *, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buildingCapacity</b></td></tr>
+<tr class="separator:a7210aa7d4b30e8012d5eb1dff653bb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe38eaf0cf8e3688598caa535f49c22"><td class="memItemLeft" align="right" valign="top"><a id="a9fe38eaf0cf8e3688598caa535f49c22"></a>
+std::map&lt; <a class="el" href="classBuildings.html">Buildings</a> *, <a class="el" href="structResourceConsumption.html">ResourceConsumption</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buildingResources</b></td></tr>
+<tr class="separator:a9fe38eaf0cf8e3688598caa535f49c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interactive <a class="el" href="classCity.html">City</a> Builder Simulation. </p>

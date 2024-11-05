@@ -13,6 +13,7 @@ Interactive \mbox{\hyperlink{classCity}{City}} Builder Simulation.
 {\ttfamily \#include $<$chrono$>$}\newline
 {\ttfamily \#include $<$ctime$>$}\newline
 {\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
 {\ttfamily \#include \char`\"{}Government.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Finance\+Sector.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Utilities\+Sector.\+h\char`\"{}}\newline
@@ -39,7 +40,13 @@ Interactive \mbox{\hyperlink{classCity}{City}} Builder Simulation.
 {\ttfamily \#include \char`\"{}Building\+Controller.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Public\+Service\+Building.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Medical\+Center.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}School.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Police\+Station.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Landmark\+Building.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Mall.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Monument.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Park.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Cultural\+Center.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Travel\+Manager.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Road.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Plane.\+h\char`\"{}}\newline
@@ -49,8 +56,24 @@ Interactive \mbox{\hyperlink{classCity}{City}} Builder Simulation.
 {\ttfamily \#include \char`\"{}Accesible\+Route.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Train\+Station.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Map\+Iterator.\+h\char`\"{}}\newline
-Include dependency graph for main.\+cpp\+:
-% FIG 0
+{\ttfamily \#include \char`\"{}State.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Under\+Construction.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Operational.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Damaged.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structResourceConsumption}{Resource\+Consumption}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_abdc3b24b9228430a8d639548d0399e14}\label{main_8cpp_abdc3b24b9228430a8d639548d0399e14}} 
+enum class {\bfseries Building\+State} \{ {\bfseries Under\+Construction}
+, {\bfseries Operational}
+, {\bfseries Damaged}
+ \}
+\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -66,6 +89,24 @@ void {\bfseries display\+City\+Skyline} ()
 \mbox{\Hypertarget{main_8cpp_a192bb9340ffb6234b48b055409fc3852}\label{main_8cpp_a192bb9340ffb6234b48b055409fc3852}} 
 void {\bfseries display\+Story\+Intro} ()
 \item 
+\mbox{\Hypertarget{main_8cpp_a8638917112276c7eb29cbebb83d4f360}\label{main_8cpp_a8638917112276c7eb29cbebb83d4f360}} 
+void {\bfseries update\+Building\+Resources} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$building)
+\item 
+\mbox{\Hypertarget{main_8cpp_a90ce1f93397dcc5adbc254790055b96a}\label{main_8cpp_a90ce1f93397dcc5adbc254790055b96a}} 
+void {\bfseries handle\+Building\+State} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$building, Building\+State new\+State)
+\item 
+\mbox{\Hypertarget{main_8cpp_a87e56e096cedae8c62e7ea0fdbc2af09}\label{main_8cpp_a87e56e096cedae8c62e7ea0fdbc2af09}} 
+void {\bfseries manage\+Building\+Capacity} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$building)
+\item 
+\mbox{\Hypertarget{main_8cpp_ad8a9d0a3fa4b8be93e2aac37c0a6e9e3}\label{main_8cpp_ad8a9d0a3fa4b8be93e2aac37c0a6e9e3}} 
+bool {\bfseries can\+Add\+Occupant} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$building)
+\item 
+\mbox{\Hypertarget{main_8cpp_a6c80bcc9391a1eff8376b7fc9f9035e3}\label{main_8cpp_a6c80bcc9391a1eff8376b7fc9f9035e3}} 
+void {\bfseries add\+Occupant} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$building, \mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}} $\ast$citizen)
+\item 
+\mbox{\Hypertarget{main_8cpp_a98737e1b4489e5a367a2f6646a0f0c47}\label{main_8cpp_a98737e1b4489e5a367a2f6646a0f0c47}} 
+void {\bfseries handle\+Building\+Construction} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$building)
+\item 
 \mbox{\Hypertarget{main_8cpp_a8dbdd60dee886652d58284e227a4c6e9}\label{main_8cpp_a8dbdd60dee886652d58284e227a4c6e9}} 
 void {\bfseries handle\+Public\+Service\+Construction} ()
 \item 
@@ -75,11 +116,11 @@ void {\bfseries handle\+Landmark\+Construction} ()
 \mbox{\Hypertarget{main_8cpp_a7f4718dea19bcfe5e1bcaff69d75e7c3}\label{main_8cpp_a7f4718dea19bcfe5e1bcaff69d75e7c3}} 
 void {\bfseries handle\+Citizen\+Management} ()
 \item 
-\mbox{\Hypertarget{main_8cpp_a216ab7fd001c95da696c5a4c38e8a90f}\label{main_8cpp_a216ab7fd001c95da696c5a4c38e8a90f}} 
-void {\bfseries handle\+Transportation} ()
-\item 
 \mbox{\Hypertarget{main_8cpp_ac95479febb8a5e42155394d943d1cd50}\label{main_8cpp_ac95479febb8a5e42155394d943d1cd50}} 
 void {\bfseries handle\+Government} ()
+\item 
+\mbox{\Hypertarget{main_8cpp_a216ab7fd001c95da696c5a4c38e8a90f}\label{main_8cpp_a216ab7fd001c95da696c5a4c38e8a90f}} 
+void {\bfseries handle\+Transportation} ()
 \item 
 \mbox{\Hypertarget{main_8cpp_a59c2926dd9b0968badf463aaf4f91422}\label{main_8cpp_a59c2926dd9b0968badf463aaf4f91422}} 
 void {\bfseries display\+Menu} ()
@@ -113,6 +154,18 @@ const std\+::string {\bfseries highlight} = \char`\"{}\textbackslash{}033\mbox{[
 \item 
 \mbox{\Hypertarget{main_8cpp_a0cbe348a07d7e27c979db6d7a02484f9}\label{main_8cpp_a0cbe348a07d7e27c979db6d7a02484f9}} 
 std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classBuildings}{Buildings}} $>$ $>$ {\bfseries city\+Buildings}
+\item 
+\mbox{\Hypertarget{main_8cpp_ae445c7144803717e8b2787f4b1f69a3d}\label{main_8cpp_ae445c7144803717e8b2787f4b1f69a3d}} 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}} $>$ $>$ {\bfseries citizens}
+\item 
+\mbox{\Hypertarget{main_8cpp_a6d14b207c423efe16af1de34bb86b532}\label{main_8cpp_a6d14b207c423efe16af1de34bb86b532}} 
+std\+::map$<$ \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$, std\+::vector$<$ \mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}} $\ast$ $>$ $>$ {\bfseries building\+Occupants}
+\item 
+\mbox{\Hypertarget{main_8cpp_a7210aa7d4b30e8012d5eb1dff653bb2c}\label{main_8cpp_a7210aa7d4b30e8012d5eb1dff653bb2c}} 
+std\+::map$<$ \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$, int $>$ {\bfseries building\+Capacity}
+\item 
+\mbox{\Hypertarget{main_8cpp_a9fe38eaf0cf8e3688598caa535f49c22}\label{main_8cpp_a9fe38eaf0cf8e3688598caa535f49c22}} 
+std\+::map$<$ \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$, \mbox{\hyperlink{structResourceConsumption}{Resource\+Consumption}} $>$ {\bfseries building\+Resources}
 \end{DoxyCompactItemize}
 
 

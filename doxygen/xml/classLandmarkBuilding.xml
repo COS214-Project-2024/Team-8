@@ -29,27 +29,6 @@
         </inbodydescription>
         <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="19" column="20"/>
       </memberdef>
-      <memberdef kind="function" id="classLandmarkBuilding_1a92abe6deecb03d320f0afdde7916f6ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>int</type>
-        <definition>virtual int LandmarkBuilding::getJobsCreated</definition>
-        <argsstring>()=0</argsstring>
-        <name>getJobsCreated</name>
-        <reimplements refid="classBuildings_1a903e19ef9d878d5714b8ab5de9f71fc1">getJobsCreated</reimplements>
-        <reimplementedby refid="classCulturalCenter_1a9a78019d21bc323cefd6331a9ee7dc7a">getJobsCreated</reimplementedby>
-        <reimplementedby refid="classMonument_1a87eed9efb406ba75400b89553a49350a">getJobsCreated</reimplementedby>
-        <reimplementedby refid="classPark_1a22513f1e99d55418de7e889a2ed56806">getJobsCreated</reimplementedby>
-        <briefdescription>
-<para>Gets the number of jobs created by the landmark building. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>The number of jobs as an integer. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="25" column="17"/>
-      </memberdef>
       <memberdef kind="function" id="classLandmarkBuilding_1a3f6e6849c9a5f5d29ea16e51bff37006" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>double</type>
         <definition>virtual double LandmarkBuilding::getMaintenanceCost</definition>
@@ -69,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="31" column="20"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="26" column="20"/>
       </memberdef>
       <memberdef kind="function" id="classLandmarkBuilding_1a25b9ca973c81578065f8cece37de00d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>string</type>
@@ -90,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="37" column="20"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="32" column="20"/>
       </memberdef>
       <memberdef kind="function" id="classLandmarkBuilding_1ac8df4603f8786f441a3aa50a3cd7a75c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>int</type>
@@ -111,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="43" column="17"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="38" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classLandmarkBuilding_1a780ade236d79adb8007752c718867639" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>int</type>
@@ -132,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="49" column="17"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="44" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classLandmarkBuilding_1acb64ab79a07960d7bec6491f2a026315" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>int</type>
@@ -153,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="55" column="17"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="50" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classLandmarkBuilding_1a6aa7b601c577fa2114df4c826fd00517" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -171,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="60" column="18"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="55" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classLandmarkBuilding_1af8cf4edaa6c0609969d781448365186d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -193,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="65" column="18"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="60" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classLandmarkBuilding_1aa8179defd14ed585752076b6d407aada" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -221,7 +200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="73" column="14"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="68" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classLandmarkBuilding_1aecef730ab43b09f8d9a3cb423a46f94a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>bool</type>
@@ -242,7 +221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="79" column="18"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="74" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classLandmarkBuilding_1a661c42eb0bd712f50eb10cfba131f0e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>bool</type>
@@ -263,7 +242,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="85" column="18"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="80" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classLandmarkBuilding_1a53f41bc4fe9ccb241e6619463296c405" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>bool</type>
@@ -284,7 +263,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="91" column="18"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="86" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classLandmarkBuilding_1a4b58e301fe9f6d3dc400aad1650e3db2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>bool</type>
@@ -305,7 +284,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="97" column="18"/>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="92" column="18"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -412,7 +391,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" bodystart="12" bodyend="99"/>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" bodystart="12" bodyend="94"/>
     <listofallmembers>
       <member refid="classLandmarkBuilding_1aa8179defd14ed585752076b6d407aada" prot="public" virt="pure-virtual"><scope>LandmarkBuilding</scope><name>addBuilding</name></member>
       <member refid="classBuildings_1afc21c459782fab5d58a3517c09474df0" prot="protected" virt="non-virtual"><scope>LandmarkBuilding</scope><name>balance</name></member>
@@ -427,7 +406,7 @@
       <member refid="classBuildings_1a14a35e8d36b717014241a9f416324ae5" prot="public" virt="virtual"><scope>LandmarkBuilding</scope><name>getCommercialIncome</name></member>
       <member refid="classBuildings_1aea12268287656270eb98cd2f22b82e02" prot="public" virt="virtual"><scope>LandmarkBuilding</scope><name>getEducationalCoverage</name></member>
       <member refid="classBuildings_1a993a9340e25a58e2e2912090742f5ba6" prot="public" virt="virtual"><scope>LandmarkBuilding</scope><name>getHealthCoverage</name></member>
-      <member refid="classLandmarkBuilding_1a92abe6deecb03d320f0afdde7916f6ce" prot="public" virt="pure-virtual"><scope>LandmarkBuilding</scope><name>getJobsCreated</name></member>
+      <member refid="classBuildings_1a903e19ef9d878d5714b8ab5de9f71fc1" prot="public" virt="virtual"><scope>LandmarkBuilding</scope><name>getJobsCreated</name></member>
       <member refid="classBuildings_1ae0a010f94a01d180d1a6e4d023b54561" prot="public" virt="virtual"><scope>LandmarkBuilding</scope><name>getlistOfResidence</name></member>
       <member refid="classLandmarkBuilding_1a3f6e6849c9a5f5d29ea16e51bff37006" prot="public" virt="pure-virtual"><scope>LandmarkBuilding</scope><name>getMaintenanceCost</name></member>
       <member refid="classLandmarkBuilding_1a25b9ca973c81578065f8cece37de00d4" prot="public" virt="pure-virtual"><scope>LandmarkBuilding</scope><name>getName</name></member>

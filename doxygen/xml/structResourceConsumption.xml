@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structResourceConsumption" kind="struct" language="C++" prot="public">
+    <compoundname>ResourceConsumption</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structResourceConsumption_1a6a04c8026abafef4c685c65878574c83" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ResourceConsumption::powerUsage</definition>
+        <argsstring></argsstring>
+        <name>powerUsage</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp" line="82" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structResourceConsumption_1a3a725c9de59686300c3d6319a92f5b7f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ResourceConsumption::waterUsage</definition>
+        <argsstring></argsstring>
+        <name>waterUsage</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp" line="83" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structResourceConsumption_1a09e839435aac6a3e4f8a756daef7558d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ResourceConsumption::wasteProduction</definition>
+        <argsstring></argsstring>
+        <name>wasteProduction</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp" line="84" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structResourceConsumption_1a7782ac95fd9b73db61df5c1c25620872" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ResourceConsumption::sewageProduction</definition>
+        <argsstring></argsstring>
+        <name>sewageProduction</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp" line="85" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structResourceConsumption_1acf781accfb77531d3792693f3c2829a0" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ResourceConsumption::maintenanceCost</definition>
+        <argsstring></argsstring>
+        <name>maintenanceCost</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp" line="86" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp" line="81" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp" bodystart="81" bodyend="87"/>
+    <listofallmembers>
+      <member refid="structResourceConsumption_1acf781accfb77531d3792693f3c2829a0" prot="public" virt="non-virtual"><scope>ResourceConsumption</scope><name>maintenanceCost</name></member>
+      <member refid="structResourceConsumption_1a6a04c8026abafef4c685c65878574c83" prot="public" virt="non-virtual"><scope>ResourceConsumption</scope><name>powerUsage</name></member>
+      <member refid="structResourceConsumption_1a7782ac95fd9b73db61df5c1c25620872" prot="public" virt="non-virtual"><scope>ResourceConsumption</scope><name>sewageProduction</name></member>
+      <member refid="structResourceConsumption_1a09e839435aac6a3e4f8a756daef7558d" prot="public" virt="non-virtual"><scope>ResourceConsumption</scope><name>wasteProduction</name></member>
+      <member refid="structResourceConsumption_1a3a725c9de59686300c3d6319a92f5b7f" prot="public" virt="non-virtual"><scope>ResourceConsumption</scope><name>waterUsage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

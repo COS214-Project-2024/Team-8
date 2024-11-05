@@ -98,10 +98,14 @@
       <node id="23">
         <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/School.h</label>
         <link refid="School_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
       </node>
       <node id="22">
         <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PoliceStation.h</label>
         <link refid="PoliceStation_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
       </node>
       <node id="19">
         <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/GeneralSector.h</label>

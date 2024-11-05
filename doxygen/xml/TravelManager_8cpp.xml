@@ -167,9 +167,9 @@
 <codeline lineno="65"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><ref refid="classTravelManager_1a55fad5ecec4c3bd806abf60081f1d2a7" kindref="member">TravelManager::~TravelManager</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>this-&gt;route;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(transport)<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>this-&gt;transport;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(builder)<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>this-&gt;builder;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*delete<sp/>this-&gt;route;</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/><sp/><sp/><sp/>if(transport)<sp/>delete<sp/>this-&gt;transport;</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/><sp/>if(builder)<sp/>delete<sp/>this-&gt;builder;*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight></codeline>
 <codeline lineno="87"><highlight class="normal"><ref refid="classTravelManager_1a3eb3e7f790fcb77db03b0d1aba123061" kindref="member">TravelManager::TravelManager</ref>()<sp/>{</highlight></codeline>

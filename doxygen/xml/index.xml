@@ -866,7 +866,6 @@
   </compound>
   <compound refid="classLandmarkBuilding" kind="class"><name>LandmarkBuilding</name>
     <member refid="classLandmarkBuilding_1a10edeac1cd62dd4519d196b873bb7cc0" kind="function"><name>getBuildingType</name></member>
-    <member refid="classLandmarkBuilding_1a92abe6deecb03d320f0afdde7916f6ce" kind="function"><name>getJobsCreated</name></member>
     <member refid="classLandmarkBuilding_1a3f6e6849c9a5f5d29ea16e51bff37006" kind="function"><name>getMaintenanceCost</name></member>
     <member refid="classLandmarkBuilding_1a25b9ca973c81578065f8cece37de00d4" kind="function"><name>getName</name></member>
     <member refid="classLandmarkBuilding_1ac8df4603f8786f441a3aa50a3cd7a75c" kind="function"><name>getPowerReq</name></member>
@@ -978,7 +977,6 @@
     <member refid="classMonument_1ace36eb723115c254a3b5a7a483fde209" kind="variable"><name>waste</name></member>
     <member refid="classMonument_1a3ac8cfac22f14ef5924d1396bba16112" kind="function"><name>Monument</name></member>
     <member refid="classMonument_1a7348eb3e86de17228f0ca50d7c5fe48a" kind="function"><name>getBuildingType</name></member>
-    <member refid="classMonument_1a87eed9efb406ba75400b89553a49350a" kind="function"><name>getJobsCreated</name></member>
     <member refid="classMonument_1ae0d8787c2f668483df0acb8f5dabd369" kind="function"><name>getMaintenanceCost</name></member>
     <member refid="classMonument_1ade1e6dfa17591c2e90418d1dd470d595" kind="function"><name>getName</name></member>
     <member refid="classMonument_1aa5d16f88a8b1f0518d2845dbb0bd4f15" kind="function"><name>getPowerReq</name></member>
@@ -1046,7 +1044,6 @@
     <member refid="classPark_1afa45531425ee9dce5869488be3bb3e83" kind="variable"><name>waste</name></member>
     <member refid="classPark_1a455b9a72692e8b2bf2f8e0ddead48b21" kind="function"><name>Park</name></member>
     <member refid="classPark_1a2c89a3de0a83ca1928651a3afa672f39" kind="function"><name>getBuildingType</name></member>
-    <member refid="classPark_1a22513f1e99d55418de7e889a2ed56806" kind="function"><name>getJobsCreated</name></member>
     <member refid="classPark_1af812e134e0b512ab1fca97db97472423" kind="function"><name>getMaintenanceCost</name></member>
     <member refid="classPark_1a056d317a7474449c932f56c8ec703764" kind="function"><name>getName</name></member>
     <member refid="classPark_1a67bb1c291999a2f84b7aefa48a149529" kind="function"><name>getPowerReq</name></member>
@@ -1254,6 +1251,13 @@
     <member refid="classResidentialTaxationSystem_1aafc16304cdc598b799450189aba7de9f" kind="function"><name>ResidentialTaxationSystem</name></member>
     <member refid="classResidentialTaxationSystem_1a01b4717dc272555cb468b32e564ebc5c" kind="function"><name>collectIncomeTax</name></member>
     <member refid="classResidentialTaxationSystem_1ac0ec295cbffd81bc21c2f03a95965207" kind="function"><name>collectPropertyTax</name></member>
+  </compound>
+  <compound refid="structResourceConsumption" kind="struct"><name>ResourceConsumption</name>
+    <member refid="structResourceConsumption_1a6a04c8026abafef4c685c65878574c83" kind="variable"><name>powerUsage</name></member>
+    <member refid="structResourceConsumption_1a3a725c9de59686300c3d6319a92f5b7f" kind="variable"><name>waterUsage</name></member>
+    <member refid="structResourceConsumption_1a09e839435aac6a3e4f8a756daef7558d" kind="variable"><name>wasteProduction</name></member>
+    <member refid="structResourceConsumption_1a7782ac95fd9b73db61df5c1c25620872" kind="variable"><name>sewageProduction</name></member>
+    <member refid="structResourceConsumption_1acf781accfb77531d3792693f3c2829a0" kind="variable"><name>maintenanceCost</name></member>
   </compound>
   <compound refid="structdoctest_1_1detail_1_1Result" kind="struct"><name>doctest::detail::Result</name>
     <member refid="structdoctest_1_1detail_1_1Result_1a03ff571186856a429ada967ddfdf3006" kind="variable"><name>m_passed</name></member>
@@ -2585,6 +2589,10 @@
   <compound refid="LandmarkFactory_8h" kind="file"><name>LandmarkFactory.h</name>
   </compound>
   <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1abdc3b24b9228430a8d639548d0399e14" kind="enum"><name>BuildingState</name></member>
+    <member refid="main_8cpp_1abdc3b24b9228430a8d639548d0399e14a4dd3b0cd2b660e7a3a937d08df4cf61c" kind="enumvalue"><name>UnderConstruction</name></member>
+    <member refid="main_8cpp_1abdc3b24b9228430a8d639548d0399e14a431accab7897f05b0424e002ca30391d" kind="enumvalue"><name>Operational</name></member>
+    <member refid="main_8cpp_1abdc3b24b9228430a8d639548d0399e14af7bd791aac4fda53ce6d08edc1a62e01" kind="enumvalue"><name>Damaged</name></member>
     <member refid="main_8cpp_1ace790543ffe3663a896a5f074bd2a3ef" kind="variable"><name>GREEN</name></member>
     <member refid="main_8cpp_1abe00a28b292cf705c5a54afc31c5d034" kind="variable"><name>BLUE</name></member>
     <member refid="main_8cpp_1a8bc779337e61d3ab6ad13f81e102f327" kind="variable"><name>YELLOW</name></member>
@@ -2592,15 +2600,25 @@
     <member refid="main_8cpp_1a2f0a977841de68d04e86bc84c57c3ff3" kind="variable"><name>RESET</name></member>
     <member refid="main_8cpp_1a6fa0bb2c6c221969a0fc82534d0f8b00" kind="variable"><name>highlight</name></member>
     <member refid="main_8cpp_1a0cbe348a07d7e27c979db6d7a02484f9" kind="variable"><name>cityBuildings</name></member>
+    <member refid="main_8cpp_1ae445c7144803717e8b2787f4b1f69a3d" kind="variable"><name>citizens</name></member>
+    <member refid="main_8cpp_1a6d14b207c423efe16af1de34bb86b532" kind="variable"><name>buildingOccupants</name></member>
+    <member refid="main_8cpp_1a7210aa7d4b30e8012d5eb1dff653bb2c" kind="variable"><name>buildingCapacity</name></member>
+    <member refid="main_8cpp_1a9fe38eaf0cf8e3688598caa535f49c22" kind="variable"><name>buildingResources</name></member>
     <member refid="main_8cpp_1a5d555657ce648c1a47abb70f1029589d" kind="function"><name>clearInput</name></member>
     <member refid="main_8cpp_1ab80f005039b55cdbdbea52bbbad3c622" kind="function"><name>waitForEnter</name></member>
     <member refid="main_8cpp_1a3fa5c01b369854cb12595c11531b3101" kind="function"><name>displayCitySkyline</name></member>
     <member refid="main_8cpp_1a192bb9340ffb6234b48b055409fc3852" kind="function"><name>displayStoryIntro</name></member>
+    <member refid="main_8cpp_1a8638917112276c7eb29cbebb83d4f360" kind="function"><name>updateBuildingResources</name></member>
+    <member refid="main_8cpp_1a90ce1f93397dcc5adbc254790055b96a" kind="function"><name>handleBuildingState</name></member>
+    <member refid="main_8cpp_1a87e56e096cedae8c62e7ea0fdbc2af09" kind="function"><name>manageBuildingCapacity</name></member>
+    <member refid="main_8cpp_1ad8a9d0a3fa4b8be93e2aac37c0a6e9e3" kind="function"><name>canAddOccupant</name></member>
+    <member refid="main_8cpp_1a6c80bcc9391a1eff8376b7fc9f9035e3" kind="function"><name>addOccupant</name></member>
+    <member refid="main_8cpp_1a98737e1b4489e5a367a2f6646a0f0c47" kind="function"><name>handleBuildingConstruction</name></member>
     <member refid="main_8cpp_1a8dbdd60dee886652d58284e227a4c6e9" kind="function"><name>handlePublicServiceConstruction</name></member>
     <member refid="main_8cpp_1acbb91ce63b28fb9c7e044618f8773921" kind="function"><name>handleLandmarkConstruction</name></member>
     <member refid="main_8cpp_1a7f4718dea19bcfe5e1bcaff69d75e7c3" kind="function"><name>handleCitizenManagement</name></member>
-    <member refid="main_8cpp_1a216ab7fd001c95da696c5a4c38e8a90f" kind="function"><name>handleTransportation</name></member>
     <member refid="main_8cpp_1ac95479febb8a5e42155394d943d1cd50" kind="function"><name>handleGovernment</name></member>
+    <member refid="main_8cpp_1a216ab7fd001c95da696c5a4c38e8a90f" kind="function"><name>handleTransportation</name></member>
     <member refid="main_8cpp_1a59c2926dd9b0968badf463aaf4f91422" kind="function"><name>displayMenu</name></member>
     <member refid="main_8cpp_1a40bd43134dc587ac7fe84c48278c2a9f" kind="function"><name>displayBuildingMenu</name></member>
     <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
