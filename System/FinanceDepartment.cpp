@@ -14,14 +14,14 @@ FinanceDepartment::FinanceDepartment()
     : residentialTaxation(new ResidentialTaxationSystem()),
       businessTaxation(new CommercialTaxationSystem()),
       budgetAllocation(new BudgetAllocationSystem()),
-      incomeTaxRate(0.0),
-      propertyTaxRate(0.0),
-      businessTaxRate(0.0),
-      salesTaxRate(0.0),
-      totalBusinessSales(0.0),
-      totalBusinessProfits(0.0),
-      totalResidentsIncomes(0.0),
-      availableFunds(0.0) {}
+      incomeTaxRate(0.10),
+      propertyTaxRate(0.01),
+      businessTaxRate(0.12),
+      salesTaxRate(0.07),
+      totalBusinessSales(5839000.0),
+      totalBusinessProfits(1593800.0),
+      totalResidentsIncomes(8003630.0),
+      availableFunds(390370000.0) {}
 
 FinanceDepartment::~FinanceDepartment()
 {
