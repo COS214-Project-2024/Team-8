@@ -12,9 +12,11 @@
 ### Description:
 TBD.
 ### How to Run:
-- Navigate to System `cd System`
-- Using your terminal, run the `make` command
-- After the program has compiled, run the `./citybuilder` command
+- Clone the repository: `git clone https://github.com/COS214-Project-2024/Team-8-Design-Wits.git`
+- Change into project directory: `cd Team-8-Design-Wits`
+- Navigate to System: `cd System`
+- Build the project: `make`
+- Run the program: `./citybuilder`
 
 ### Documentation:
 TBD.
