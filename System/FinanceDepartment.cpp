@@ -21,7 +21,7 @@ FinanceDepartment::FinanceDepartment()
       totalBusinessSales(5839000.0),
       totalBusinessProfits(1593800.0),
       totalResidentsIncomes(8003630.0),
-      availableFunds(390370000.0) {}
+      availableFunds(5000000.0) {}
 
 FinanceDepartment::~FinanceDepartment()
 {
