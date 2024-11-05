@@ -11,9 +11,10 @@
 
 ### Description:
 TBD.
-
 ### How to Run:
-TBD.
+- Navigate to System `cd System`
+- Using your terminal, run the `make` command
+- After the program has compiled, run the `./citybuilder` command
 
 ### Documentation:
 TBD.
