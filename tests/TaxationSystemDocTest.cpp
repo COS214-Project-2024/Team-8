@@ -1,14 +1,14 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
-#include "doctest.h"
-#include "BudgetAllocationSystem.h"
-#include "CommercialTaxationSystem.h"
-#include "ResidentialTaxationSystem.h"
-#include "FinanceDepartment.h"
-#include "Government.h"
-#include "Shop.h"
-#include "Mall.h"
-#include "Office.h"
-#include "Citizen.h"
+#include "System/doctest.h"
+#include "System/BudgetAllocationSystem.h"
+#include "System/CommercialTaxationSystem.h"
+#include "System/ResidentialTaxationSystem.h"
+#include "System/FinanceDepartment.h"
+#include "System/Government.h"
+#include "System/Shop.h"
+#include "System/Mall.h"
+#include "System/Office.h"
+#include "System/Citizen.h"
 
 TEST_CASE("Testing BudgetAllocationSystem") {
     BudgetAllocationSystem* budgetSystem = new BudgetAllocationSystem();
