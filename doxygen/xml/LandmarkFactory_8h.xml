@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="LandmarkFactory_8h" kind="file" language="C++">
+    <compoundname>LandmarkFactory.h</compoundname>
+    <includes refid="BuildingFactory_8h" local="yes">BuildingFactory.h</includes>
+    <includedby refid="CulturalCenterFactory_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CulturalCenterFactory.h</includedby>
+    <includedby refid="MonumentFactory_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MonumentFactory.h</includedby>
+    <includedby refid="ParkFactory_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ParkFactory.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkFactory.h</label>
+        <link refid="LandmarkFactory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Buildings.h</label>
+        <link refid="Buildings_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>BuildingFactory.h</label>
+        <link refid="BuildingFactory_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkFactory.h</label>
+        <link refid="LandmarkFactory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CulturalCenterFactory.h</label>
+        <link refid="CulturalCenterFactory_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MonumentFactory.h</label>
+        <link refid="MonumentFactory_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h</label>
+        <link refid="City_8h_source"/>
+      </node>
+      <node id="5">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ParkFactory.h</label>
+        <link refid="ParkFactory_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classLandmarkFactory" prot="public">LandmarkFactory</innerclass>
+    <briefdescription>
+<para>Defines the <ref refid="classLandmarkFactory" kindref="compound">LandmarkFactory</ref> class interface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LANDMARKFACTORY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LANDMARKFACTORY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="BuildingFactory_8h" kindref="compound">BuildingFactory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classLandmarkFactory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classLandmarkFactory" kindref="compound">LandmarkFactory</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classBuildingFactory" kindref="compound">BuildingFactory</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22" refid="classLandmarkFactory_1ac13b8496060ee1041fe788101cb5b7b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBuildings" kindref="compound">Buildings</ref>*<sp/><ref refid="classLandmarkFactory_1ac13b8496060ee1041fe788101cb5b7b7" kindref="member">buildings</ref>;<sp/></highlight></codeline>
+<codeline lineno="32" refid="classLandmarkFactory_1af0a8e396c38942baed18814cc7504119" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classBuildings" kindref="compound">Buildings</ref>*<sp/><ref refid="classLandmarkFactory_1af0a8e396c38942baed18814cc7504119" kindref="member">createBuilding</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkFactory.h"/>
+  </compounddef>
+</doxygen>

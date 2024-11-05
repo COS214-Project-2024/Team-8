@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classWasteManagement" kind="class" language="C++" prot="public">
+    <compoundname>WasteManagement</compoundname>
+    <basecompoundref refid="classUtility" prot="public" virt="non-virtual">Utility</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classWasteManagement_1a43130a2bc519d8b4600d01911f534cce" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WasteManagement::processCapacity</definition>
+        <argsstring></argsstring>
+        <name>processCapacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h" line="13" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWasteManagement_1a78bc56505da374b880416ee0abfa79e4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float WasteManagement::recycledperc</definition>
+        <argsstring></argsstring>
+        <name>recycledperc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h" line="14" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWasteManagement_1a4442e7116f4b6afad686cf9343cc88ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WasteManagement::WasteManagement</definition>
+        <argsstring>(float output)</argsstring>
+        <name>WasteManagement</name>
+        <param>
+          <type>float</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output of the <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+The constructor for the <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref> class </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h" line="26" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.cpp" bodystart="4" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classWasteManagement_1a67a1bb876fae1d6b45db72a4761cbd66" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string WasteManagement::getStatus</definition>
+        <argsstring>()</argsstring>
+        <name>getStatus</name>
+        <reimplements refid="classUtility_1aa5e24ae315185bd1d736a50fa4aee21d">getStatus</reimplements>
+        <briefdescription>
+<para>Get the status of the <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string The status of the <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h" line="32" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classWasteManagement_1aaa0972fb1af625e6bfac4f076721c930" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void WasteManagement::repairUtility</definition>
+        <argsstring>()</argsstring>
+        <name>repairUtility</name>
+        <reimplements refid="classUtility_1ae5bd09fa1f3c74c562b1c7d5f6e3c770">repairUtility</reimplements>
+        <briefdescription>
+<para>Repair the <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Repairs the <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref> Also sets the status to operational </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h" line="39" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.cpp" bodystart="17" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classWasteManagement_1aef14afdcea9cdcffee36bb08185ebe69" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void WasteManagement::executeOperation</definition>
+        <argsstring>()</argsstring>
+        <name>executeOperation</name>
+        <reimplements refid="classUtility_1a30f0d3aa2c132e33a0ea7e47debbb974">executeOperation</reimplements>
+        <briefdescription>
+<para>Execute the operation of the <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the status to operational </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h" line="45" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.cpp" bodystart="32" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classWasteManagement_1a9b0ef5d23ea4505d36c16907bbfd1a42" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float WasteManagement::getOutput</definition>
+        <argsstring>()</argsstring>
+        <name>getOutput</name>
+        <reimplements refid="classUtility_1a40b833bd8494fcddeb667a4705635b5f">getOutput</reimplements>
+        <briefdescription>
+<para>Get the output of the <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float The output of the <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h" line="51" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classWasteManagement_1aa5329c86e05b7b7205c409c964358649" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void WasteManagement::pauseOperation</definition>
+        <argsstring>()</argsstring>
+        <name>pauseOperation</name>
+        <reimplements refid="classUtility_1a27c39caf66558263047b2c10fda15174">pauseOperation</reimplements>
+        <briefdescription>
+<para>Pause the operation of the <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the status to paused </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h" line="57" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.cpp" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classWasteManagement_1a8c7fd80a9055c10f2ac36d71b866fd70" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string WasteManagement::getUtilityType</definition>
+        <argsstring>()</argsstring>
+        <name>getUtilityType</name>
+        <reimplements refid="classUtility_1a05241d457a3eeb2c4e1508e5ca89ea56">getUtilityType</reimplements>
+        <briefdescription>
+<para>Get the utility type of the <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string The utility type of the <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h" line="63" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.cpp" bodystart="85" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classWasteManagement_1a08c6d447494301c05413ac59b26eff02" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+        <definition>Utility * WasteManagement::clone</definition>
+        <argsstring>()</argsstring>
+        <name>clone</name>
+        <reimplements refid="classUtility_1a4a793297c2d99d8d5c689276a973b518">clone</reimplements>
+        <briefdescription>
+<para>Clone the <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Utility* The cloned <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h" line="69" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.cpp" bodystart="90" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classWasteManagement_1ab6b5ef72863523a7f571a1bda289f42d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void WasteManagement::setProcessCapacity</definition>
+        <argsstring>(int pro)</argsstring>
+        <name>setProcessCapacity</name>
+        <reimplements refid="classUtility_1a72a5b065755157aee43eaf0373da87bd">setProcessCapacity</reimplements>
+        <param>
+          <type>int</type>
+          <declname>pro</declname>
+        </param>
+        <briefdescription>
+<para>Set the process capacity of the <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pro</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The process capacity of the <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h" line="75" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.cpp" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classWasteManagement_1a0575b4c2c2606d1f321cb06aed398a23" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void WasteManagement::undoChange</definition>
+        <argsstring>()</argsstring>
+        <name>undoChange</name>
+        <reimplements refid="classUtility_1a345b48a57c1716c1756d874c17fc2aba">undoChange</reimplements>
+        <briefdescription>
+<para>Undo the last change to the <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Undoes the last change to the <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h" line="81" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.cpp" bodystart="58" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classWasteManagement_1ab076e410d7c15e6389ded0485530fe76" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void WasteManagement::addBuilding</definition>
+        <argsstring>(Buildings *building)</argsstring>
+        <name>addBuilding</name>
+        <reimplements refid="classUtility_1a4ea6047493c471b470e4c392aa8c801b">addBuilding</reimplements>
+        <param>
+          <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+          <declname>building</declname>
+        </param>
+        <briefdescription>
+<para>Add a building to the <ref refid="classWasteManagement" kindref="compound">WasteManagement</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>building</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The building to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h" line="87" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.cpp" bodystart="114" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classWasteManagement_1ae9c042ea0410aa4f082d9b556efdaf25" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool WasteManagement::cleanWaste</definition>
+        <argsstring>(Buildings *sender)</argsstring>
+        <name>cleanWaste</name>
+        <reimplements refid="classUtility_1a46770e0e3a9d147b17bd7f373db58fac">cleanWaste</reimplements>
+        <param>
+          <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+          <declname>sender</declname>
+        </param>
+        <briefdescription>
+<para>Clean Building that is registered/exists in the Waste Management vector object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h" line="95" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.cpp" bodystart="96" bodyend="111"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>WasteManagement</label>
+        <link refid="classWasteManagement"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>WasteManagement</label>
+        <link refid="classWasteManagement"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h" line="10" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WasteManagement.h" bodystart="10" bodyend="96"/>
+    <listofallmembers>
+      <member refid="classWasteManagement_1ab076e410d7c15e6389ded0485530fe76" prot="public" virt="virtual"><scope>WasteManagement</scope><name>addBuilding</name></member>
+      <member refid="classUtility_1ac79531e37704bf46de18d608f977b95c" prot="protected" virt="non-virtual"><scope>WasteManagement</scope><name>buildings</name></member>
+      <member refid="classUtility_1aa6e79e1fbe644bf131adb5d4acc3689d" prot="public" virt="virtual"><scope>WasteManagement</scope><name>cleanSewage</name></member>
+      <member refid="classWasteManagement_1ae9c042ea0410aa4f082d9b556efdaf25" prot="public" virt="virtual"><scope>WasteManagement</scope><name>cleanWaste</name></member>
+      <member refid="classWasteManagement_1a08c6d447494301c05413ac59b26eff02" prot="public" virt="virtual"><scope>WasteManagement</scope><name>clone</name></member>
+      <member refid="classUtility_1a199e63168af1a70654715e55cfdaaadd" prot="protected" virt="non-virtual"><scope>WasteManagement</scope><name>commandHistory</name></member>
+      <member refid="classWasteManagement_1aef14afdcea9cdcffee36bb08185ebe69" prot="public" virt="virtual"><scope>WasteManagement</scope><name>executeOperation</name></member>
+      <member refid="classUtility_1a6f8eec7ad0199ab9223d8f57f2108e25" prot="public" virt="virtual"><scope>WasteManagement</scope><name>getEnergyType</name></member>
+      <member refid="classWasteManagement_1a9b0ef5d23ea4505d36c16907bbfd1a42" prot="public" virt="virtual"><scope>WasteManagement</scope><name>getOutput</name></member>
+      <member refid="classUtility_1abd93d41bd72298acda7fe3950dab16d2" prot="public" virt="virtual"><scope>WasteManagement</scope><name>getPower</name></member>
+      <member refid="classWasteManagement_1a67a1bb876fae1d6b45db72a4761cbd66" prot="public" virt="virtual"><scope>WasteManagement</scope><name>getStatus</name></member>
+      <member refid="classWasteManagement_1a8c7fd80a9055c10f2ac36d71b866fd70" prot="public" virt="virtual"><scope>WasteManagement</scope><name>getUtilityType</name></member>
+      <member refid="classUtility_1a9df345da6df3d01c77fe330c90b39311" prot="public" virt="virtual"><scope>WasteManagement</scope><name>getWater</name></member>
+      <member refid="classUtility_1a77e31318778f334c044fd7bbd7521118" prot="protected" virt="non-virtual"><scope>WasteManagement</scope><name>Output</name></member>
+      <member refid="classWasteManagement_1aa5329c86e05b7b7205c409c964358649" prot="public" virt="virtual"><scope>WasteManagement</scope><name>pauseOperation</name></member>
+      <member refid="classWasteManagement_1a43130a2bc519d8b4600d01911f534cce" prot="private" virt="non-virtual"><scope>WasteManagement</scope><name>processCapacity</name></member>
+      <member refid="classWasteManagement_1a78bc56505da374b880416ee0abfa79e4" prot="private" virt="non-virtual"><scope>WasteManagement</scope><name>recycledperc</name></member>
+      <member refid="classWasteManagement_1aaa0972fb1af625e6bfac4f076721c930" prot="public" virt="virtual"><scope>WasteManagement</scope><name>repairUtility</name></member>
+      <member refid="classUtility_1aa9261d8034152c1fc5618d35f5d70c38" prot="public" virt="virtual"><scope>WasteManagement</scope><name>setFuel</name></member>
+      <member refid="classUtility_1ab705aff598d1b89f04d9a31c47456cac" prot="public" virt="virtual"><scope>WasteManagement</scope><name>setMaxGallons</name></member>
+      <member refid="classUtility_1ae20563a384347c5bcd52809ed52983fa" prot="public" virt="virtual"><scope>WasteManagement</scope><name>setmaxWaste</name></member>
+      <member refid="classUtility_1a946a24d4473791f62941221c63f67a25" prot="public" virt="virtual"><scope>WasteManagement</scope><name>setMaxWatts</name></member>
+      <member refid="classUtility_1a8e87df51780eefefc9df53a98569fe70" prot="public" virt="virtual"><scope>WasteManagement</scope><name>setOutput</name></member>
+      <member refid="classWasteManagement_1ab6b5ef72863523a7f571a1bda289f42d" prot="public" virt="virtual"><scope>WasteManagement</scope><name>setProcessCapacity</name></member>
+      <member refid="classUtility_1a2022354933e1799f6138636b81d902db" prot="protected" virt="non-virtual"><scope>WasteManagement</scope><name>status</name></member>
+      <member refid="classUtility_1ad29972cb0be49835b747eb6bc667a198" prot="public" virt="virtual"><scope>WasteManagement</scope><name>switchFuel</name></member>
+      <member refid="classWasteManagement_1a0575b4c2c2606d1f321cb06aed398a23" prot="public" virt="virtual"><scope>WasteManagement</scope><name>undoChange</name></member>
+      <member refid="classWasteManagement_1a4442e7116f4b6afad686cf9343cc88ba" prot="public" virt="non-virtual"><scope>WasteManagement</scope><name>WasteManagement</name></member>
+      <member refid="classUtility_1a96b929cc62f8fc5b367cb6814d2fd93c" prot="public" virt="virtual"><scope>WasteManagement</scope><name>~Utility</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

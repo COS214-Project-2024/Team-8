@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1SubcaseSignature" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::SubcaseSignature</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoctest_1_1SubcaseSignature_1a61081d1b920e862241e6f81731fb8a58" prot="public" static="no" mutable="no">
+        <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref></type>
+        <definition>String doctest::SubcaseSignature::m_name</definition>
+        <argsstring></argsstring>
+        <name>m_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="875" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="875" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1SubcaseSignature_1adc680b4597c89fb81ae8fed7fc41414d" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* doctest::SubcaseSignature::m_file</definition>
+        <argsstring></argsstring>
+        <name>m_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="876" column="16" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="876" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1SubcaseSignature_1a73fb5432d0f8b82ffbe262b86af5c643" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int doctest::SubcaseSignature::m_line</definition>
+        <argsstring></argsstring>
+        <name>m_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="877" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="877" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdoctest_1_1SubcaseSignature_1a4d973585305ed44c0f1436cd268ec678" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool doctest::SubcaseSignature::operator==</definition>
+        <argsstring>(const SubcaseSignature &amp;other) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1SubcaseSignature" kindref="compound">SubcaseSignature</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="879" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1SubcaseSignature_1a07364f9dddf615f51e15f09b994d4bef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool doctest::SubcaseSignature::operator&lt;</definition>
+        <argsstring>(const SubcaseSignature &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1SubcaseSignature" kindref="compound">SubcaseSignature</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="880" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>doctest::SubcaseSignature</label>
+        <link refid="structdoctest_1_1SubcaseSignature"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>doctest::String::view</label>
+      </node>
+      <node id="2">
+        <label>doctest::String</label>
+        <link refid="classdoctest_1_1String"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="873" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="874" bodyend="881"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1SubcaseSignature_1adc680b4597c89fb81ae8fed7fc41414d" prot="public" virt="non-virtual"><scope>doctest::SubcaseSignature</scope><name>m_file</name></member>
+      <member refid="structdoctest_1_1SubcaseSignature_1a73fb5432d0f8b82ffbe262b86af5c643" prot="public" virt="non-virtual"><scope>doctest::SubcaseSignature</scope><name>m_line</name></member>
+      <member refid="structdoctest_1_1SubcaseSignature_1a61081d1b920e862241e6f81731fb8a58" prot="public" virt="non-virtual"><scope>doctest::SubcaseSignature</scope><name>m_name</name></member>
+      <member refid="structdoctest_1_1SubcaseSignature_1a07364f9dddf615f51e15f09b994d4bef" prot="public" virt="non-virtual"><scope>doctest::SubcaseSignature</scope><name>operator&lt;</name></member>
+      <member refid="structdoctest_1_1SubcaseSignature_1a4d973585305ed44c0f1436cd268ec678" prot="public" virt="non-virtual"><scope>doctest::SubcaseSignature</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

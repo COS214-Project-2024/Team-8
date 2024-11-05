@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classWarehouseFactory" kind="class" language="C++" prot="public">
+    <compoundname>WarehouseFactory</compoundname>
+    <basecompoundref refid="classIndustrialFactory" prot="public" virt="non-virtual">IndustrialFactory</basecompoundref>
+    <includes refid="WarehouseFactory_8h" local="no">WarehouseFactory.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classWarehouseFactory_1a010b2e28d8b5b629ac2a43979cb1136b" prot="public" static="no" mutable="no">
+        <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+        <definition>Buildings* WarehouseFactory::buildings</definition>
+        <argsstring></argsstring>
+        <name>buildings</name>
+        <briefdescription>
+<para>Pointer to the created warehouse building. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WarehouseFactory.h" line="14" column="15" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WarehouseFactory.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWarehouseFactory_1af924a1ed67772b0a9850cf7c6302c6b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+        <definition>Buildings * WarehouseFactory::createBuilding</definition>
+        <argsstring>()</argsstring>
+        <name>createBuilding</name>
+        <reimplements refid="classIndustrialFactory_1ac1eba9a085eaf6c0a7ea915b6e95f83c">createBuilding</reimplements>
+        <briefdescription>
+<para>Creates a new <ref refid="classWarehouse" kindref="compound">Warehouse</ref> building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer to the newly created <ref refid="classWarehouse" kindref="compound">Warehouse</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WarehouseFactory.h" line="20" column="23" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WarehouseFactory.cpp" bodystart="5" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Factory class for creating <ref refid="classWarehouse" kindref="compound">Warehouse</ref> buildings. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IndustrialFactory</label>
+        <link refid="classIndustrialFactory"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>BuildingFactory</label>
+        <link refid="classBuildingFactory"/>
+      </node>
+      <node id="1">
+        <label>WarehouseFactory</label>
+        <link refid="classWarehouseFactory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>listOfCitizens</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="2">
+        <label>IndustrialFactory</label>
+        <link refid="classIndustrialFactory"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>buildings</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>BuildingFactory</label>
+        <link refid="classBuildingFactory"/>
+      </node>
+      <node id="11">
+        <label>State</label>
+        <link refid="classState"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>building</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Citizen</label>
+        <link refid="classCitizen"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>tm</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>TravelManager</label>
+        <link refid="classTravelManager"/>
+      </node>
+      <node id="10">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="8">
+        <label>PopulationControl</label>
+        <link refid="classPopulationControl"/>
+      </node>
+      <node id="6">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>WarehouseFactory</label>
+        <link refid="classWarehouseFactory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>buildings</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WarehouseFactory.h" line="11" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WarehouseFactory.h" bodystart="11" bodyend="21"/>
+    <listofallmembers>
+      <member refid="classWarehouseFactory_1a010b2e28d8b5b629ac2a43979cb1136b" prot="public" virt="non-virtual"><scope>WarehouseFactory</scope><name>buildings</name></member>
+      <member refid="classWarehouseFactory_1af924a1ed67772b0a9850cf7c6302c6b5" prot="public" virt="virtual"><scope>WarehouseFactory</scope><name>createBuilding</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

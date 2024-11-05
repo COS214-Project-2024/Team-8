@@ -1,0 +1,669 @@
+\hypertarget{classBuildings}{}\doxysection{Buildings Class Reference}
+\label{classBuildings}\index{Buildings@{Buildings}}
+
+
+Abstract base class representing a building with basic utilities and resource requirements.  
+
+
+
+
+{\ttfamily \#include $<$Buildings.\+h$>$}
+
+
+
+Inheritance diagram for Buildings\+:
+% FIG 0
+
+
+Collaboration diagram for Buildings\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBuildings_af5b874917cf6e1dbe90dbcf5b9b37326}{Buildings}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classBuildings}{Buildings}} object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classBuildings_a60b14d2c02c2424eeb0ba52bd9fee170}{$\sim$\+Buildings}} ()=0
+\begin{DoxyCompactList}\small\item\em Virtual destructor to ensure proper cleanup of derived classes. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBuildings_a4dd777c9c3963d8fd5a74ad1fee76ddf}{request\+State}} ()=0
+\begin{DoxyCompactList}\small\item\em Requests the current state of the building. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classBuildings_a196e5dc7d116d8df481fe16ffb40756f}{get\+Maintenance\+Cost}} ()=0
+\begin{DoxyCompactList}\small\item\em Retrieves the maintenance cost of the building. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classBuildings_a4254206fe0f1f565e269e1e543cba834}{get\+Balance}} ()
+\begin{DoxyCompactList}\small\item\em gets the current income of a commercial building \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBuildings_a6c02963e37bf20ef827f063209901a3a}{set\+Balance}} (double b)
+\begin{DoxyCompactList}\small\item\em gets the current income of a commercial building \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classBuildings_a291fa645584d52be99367ba4796ebe14}{pay\+Citizen}} ()
+\begin{DoxyCompactList}\small\item\em Pays a citizen employed in the building. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classBuildings_ae6dc450a35fe3e5ae789357b921b0c72}{get\+Power\+Req}} ()=0
+\begin{DoxyCompactList}\small\item\em Retrieves the power requirement of the building. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classBuildings_acd98a1879efc8be4e3fc27eddce6f56b}{get\+Sewage\+Cost}} ()=0
+\begin{DoxyCompactList}\small\item\em Retrieves the sewage cost of the building. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classBuildings_aa9f8088da3c065b05208ea0565bcff6b}{get\+Water\+Req}} ()=0
+\begin{DoxyCompactList}\small\item\em Retrieves the water requirement of the building. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classBuildings_a58fd91cee048b410265d2e8dab88894e}{get\+Name}} ()=0
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the building. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classBuildings_a99ed74a589fe28f98eed08ba0d8dc339}{get\+Building\+Type}} ()=0
+\begin{DoxyCompactList}\small\item\em Retrieves the type of the building. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBuildings_adb4f64849474dce9ded072e712658fc2}{add\+Building}} ()=0
+\begin{DoxyCompactList}\small\item\em Add a building to the \mbox{\hyperlink{classUtility}{Utility}} resource. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classBuildings_a903e19ef9d878d5714b8ab5de9f71fc1}{get\+Jobs\+Created}} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of jobs created by the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classBuildings_a98266f291367e42bb44f49a8949ea8b2}{get\+Power}} ()=0
+\begin{DoxyCompactList}\small\item\em Receives power for the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classBuildings_a100a3abba32013b317fe08d78de2d9ab}{get\+Water}} ()=0
+\begin{DoxyCompactList}\small\item\em Receives water for the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classBuildings_aaaeb748113337669c224c2293d2f0d82}{clean\+Waste}} ()=0
+\begin{DoxyCompactList}\small\item\em Cleans the waste of the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classBuildings_a80e812e9003bff1371df778942ecfb36}{clean\+Sewage}} ()=0
+\begin{DoxyCompactList}\small\item\em Cleans the sewage of the building. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBuildings_ae4f56a3ae5658097bee10dc48e130a75}{set\+State}} (\mbox{\hyperlink{classState}{State}} $\ast$new\+State)=0
+\begin{DoxyCompactList}\small\item\em Sets the state of the building. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classCitizen}{Citizen}} $\ast$ \mbox{\hyperlink{classBuildings_ae0a010f94a01d180d1a6e4d023b54561}{getlist\+Of\+Residence}} ()
+\begin{DoxyCompactList}\small\item\em Returns the list of residents in a building. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classBuildings_a329450878a0e655e4a59f29e24bd3202}{get\+Sales}} ()
+\begin{DoxyCompactList}\small\item\em Gets the sales generated by the commercial building. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classBuildings_ad063833f87a3337b6ed6f1f3686a6e45}{get\+Profit}} ()
+\begin{DoxyCompactList}\small\item\em Gets the profit generated by the commercial building. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classBuildings_a14a35e8d36b717014241a9f416324ae5}{get\+Commercial\+Income}} ()
+\begin{DoxyCompactList}\small\item\em gets the current income of a commercial building \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBuildings_af3184f3602e4c1dd6ac010900770cd57}{set\+Resources}} (\mbox{\hyperlink{classUtility}{Utility}} $\ast$\mbox{\hyperlink{classBuildings_aabc1cfaf764d4c41889ecf1f0320fa8e}{resources}})
+\begin{DoxyCompactList}\small\item\em Sets the resource mediator for the building. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classBuildings_aea12268287656270eb98cd2f22b82e02}{get\+Educational\+Coverage}} ()
+\begin{DoxyCompactList}\small\item\em Gets the security coverage provided by the police station. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classBuildings_a647c790019850fd479ac20fcbd21d873}{get\+Security\+Coverage}} ()
+\begin{DoxyCompactList}\small\item\em Gets the security coverage provided by the police station. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classBuildings_a94e15ba281ac20d60e1a4632f7be1292}{get\+Waste\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the waste cost of the building. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classBuildings_a993a9340e25a58e2e2912090742f5ba6}{get\+Health\+Coverage}} ()
+\begin{DoxyCompactList}\small\item\em Gets the health coverage provided by the medical center. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classBuildings_a038e1c1d7a924c97fc3cdc5954ccd72b}{get\+Birth\+Rate}} ()
+\begin{DoxyCompactList}\small\item\em Gets the birth rate supported by the medical center. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classState}{State}} $\ast$ \mbox{\hyperlink{classBuildings_a4befd4aa1ecedd685f1792e9d9cab4c8}{state}}
+\item 
+\mbox{\hyperlink{classUtility}{Utility}} $\ast$ \mbox{\hyperlink{classBuildings_aabc1cfaf764d4c41889ecf1f0320fa8e}{resources}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBuildings_a4f41883b0ba36ed4840bc905cc19ea3d}\label{classBuildings_a4f41883b0ba36ed4840bc905cc19ea3d}} 
+double {\bfseries profit}
+\item 
+\mbox{\Hypertarget{classBuildings_a2c3680425e9cd1526d1c4c834c017690}\label{classBuildings_a2c3680425e9cd1526d1c4c834c017690}} 
+double {\bfseries sales}
+\item 
+\mbox{\Hypertarget{classBuildings_afc21c459782fab5d58a3517c09474df0}\label{classBuildings_afc21c459782fab5d58a3517c09474df0}} 
+double {\bfseries balance}
+\item 
+int \mbox{\hyperlink{classBuildings_a572094ecc5a5d844acbfe6f18650ed9d}{power\+Req}}
+\item 
+int \mbox{\hyperlink{classBuildings_ac8c0debb07dcf0555a28be710377fc36}{water\+Req}}
+\item 
+int \mbox{\hyperlink{classBuildings_aae45243bbcd3ac7c47e9cbb83162f1f8}{sewage\+Cost}}
+\item 
+double \mbox{\hyperlink{classBuildings_a7320201a32ce9541b3aeddac32d9988a}{maintenance\+Cost}}
+\item 
+string \mbox{\hyperlink{classBuildings_a0702b3d14494ac145aaa428aa4e01afb}{building\+Name}}
+\item 
+string \mbox{\hyperlink{classBuildings_a010d594842ce60f01bdf00f939ea2011}{building\+Type}}
+\item 
+\mbox{\hyperlink{classCitizen}{Citizen}} $\ast$ \mbox{\hyperlink{classBuildings_a7497cf317a1deb55c35864bc08c82443}{list\+Of\+Citizens}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class representing a building with basic utilities and resource requirements. 
+
+This class serves as the foundation for all building types in the city simulation, defining common attributes and interfaces for resource management and state handling. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBuildings_af5b874917cf6e1dbe90dbcf5b9b37326}\label{classBuildings_af5b874917cf6e1dbe90dbcf5b9b37326}} 
+\index{Buildings@{Buildings}!Buildings@{Buildings}}
+\index{Buildings@{Buildings}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{Buildings()}{Buildings()}}
+{\footnotesize\ttfamily Buildings\+::\+Buildings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classBuildings}{Buildings}} object. 
+
+Initializes a \mbox{\hyperlink{classBuildings}{Buildings}} object with default values for all member variables. All numeric values are set to 0, pointers to nullptr, and strings to empty. This constructor serves as the base constructor for all derived building types.
+
+\begin{DoxyNote}{Note}
+This is an abstract class constructor, and objects cannot be instantiated directly. It is called by derived class constructors to initialize the base class members. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classBuildings_a60b14d2c02c2424eeb0ba52bd9fee170}\label{classBuildings_a60b14d2c02c2424eeb0ba52bd9fee170}} 
+\index{Buildings@{Buildings}!````~Buildings@{$\sim$Buildings}}
+\index{````~Buildings@{$\sim$Buildings}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{$\sim$Buildings()}{~Buildings()}}
+{\footnotesize\ttfamily Buildings\+::$\sim$\+Buildings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Virtual destructor to ensure proper cleanup of derived classes. 
+
+This virtual destructor is necessary because the class hierarchy uses polymorphism and objects may be deleted through pointers to the base class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBuildings_adb4f64849474dce9ded072e712658fc2}\label{classBuildings_adb4f64849474dce9ded072e712658fc2}} 
+\index{Buildings@{Buildings}!addBuilding@{addBuilding}}
+\index{addBuilding@{addBuilding}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{addBuilding()}{addBuilding()}}
+{\footnotesize\ttfamily virtual void Buildings\+::add\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Add a building to the \mbox{\hyperlink{classUtility}{Utility}} resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & The building to add to the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classResidentialBuilding_ae484947db4eea1a9e2858f47db5ee43d}{Residential\+Building}}, \mbox{\hyperlink{classPublicServiceBuilding_ae676c53bdf61d79461cc43addda6b239}{Public\+Service\+Building}}, \mbox{\hyperlink{classLandmarkBuilding_aa8179defd14ed585752076b6d407aada}{Landmark\+Building}}, \mbox{\hyperlink{classIndustrialBuilding_aa42e018c319aa9dd49ef6b54495ee9ab}{Industrial\+Building}}, \mbox{\hyperlink{classFactories_a86a826dfa8241122dcb36d62610099a6}{Factories}}, \mbox{\hyperlink{classCommercialBuilding_a079544eb7848e26b567efcb1d73fd303}{Commercial\+Building}}, \mbox{\hyperlink{classWarehouse_a3d090301006d7ce9416c75f825ff19a9}{Warehouse}}, \mbox{\hyperlink{classTownHouse_a95e14dce352464977e74c68d95556ffa}{Town\+House}}, \mbox{\hyperlink{classShop_a4ab804b362879f0d8d3bdba6031ae555}{Shop}}, \mbox{\hyperlink{classSchool_a1e50a275926685f922da2c131d1abdbe}{School}}, \mbox{\hyperlink{classPowerPlant_a8bfcd5d4102dc9ad15c874465d3c0486}{Power\+Plant}}, \mbox{\hyperlink{classPoliceStation_a20a8287e18756b2b18684f391cd70df5}{Police\+Station}}, \mbox{\hyperlink{classPark_a9026ffbf64514400d81218e970f7aeef}{Park}}, \mbox{\hyperlink{classOffice_ab934310c5e470b591b9f279be4a149cc}{Office}}, \mbox{\hyperlink{classMonument_af1e7e849c3d1ea1d9f9232ba3d9bfe29}{Monument}}, \mbox{\hyperlink{classMedicalCenter_a5de729befc8861441b9884725cb669e1}{Medical\+Center}}, \mbox{\hyperlink{classMall_a0bcad38364e49a125ebf8c40646d7a86}{Mall}}, \mbox{\hyperlink{classHouse_abb209a0bfda0dff1b6357dc0bc687916}{House}}, \mbox{\hyperlink{classCulturalCenter_a4b403e088feac2d38c56b6c10e921326}{Cultural\+Center}}, and \mbox{\hyperlink{classApartment_ae9a71432c8b9856ddd79c176ec6348aa}{Apartment}}.
+
+\mbox{\Hypertarget{classBuildings_a80e812e9003bff1371df778942ecfb36}\label{classBuildings_a80e812e9003bff1371df778942ecfb36}} 
+\index{Buildings@{Buildings}!cleanSewage@{cleanSewage}}
+\index{cleanSewage@{cleanSewage}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{cleanSewage()}{cleanSewage()}}
+{\footnotesize\ttfamily virtual bool Buildings\+::clean\+Sewage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Cleans the sewage of the building. 
+
+\begin{DoxyReturn}{Returns}
+true if sewage cleaning was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classResidentialBuilding_af409d286d0d15a39c1e4c835b502205c}{Residential\+Building}}, \mbox{\hyperlink{classPublicServiceBuilding_aec458fbe0aba9fc65e6a7f233c7d8335}{Public\+Service\+Building}}, \mbox{\hyperlink{classLandmarkBuilding_a4b58e301fe9f6d3dc400aad1650e3db2}{Landmark\+Building}}, \mbox{\hyperlink{classIndustrialBuilding_ad003aa661ac7d5fb1f37ccd89c438841}{Industrial\+Building}}, \mbox{\hyperlink{classCommercialBuilding_aa6e46234e1cfa37f5bb3ba8b304b5ef7}{Commercial\+Building}}, \mbox{\hyperlink{classWarehouse_a330dd0417684cd266e5d561021d44659}{Warehouse}}, \mbox{\hyperlink{classTownHouse_ae046e54305fbb5979640e7fece84dcb9}{Town\+House}}, \mbox{\hyperlink{classShop_aef7c267ce54cd6760eba39cc705316ab}{Shop}}, \mbox{\hyperlink{classSchool_a3b30ae3d6b0e373b2f0eb58ab31518a5}{School}}, \mbox{\hyperlink{classPowerPlant_a9de1811022b64b28d348a84b8b1017d5}{Power\+Plant}}, \mbox{\hyperlink{classPoliceStation_adf4b327c83c676ec1cf3c6f6eb589691}{Police\+Station}}, \mbox{\hyperlink{classPark_a52b7b6d0e8d7795e133346be8706ccff}{Park}}, \mbox{\hyperlink{classOffice_a85ca9888dc598a93e466986a7da935e4}{Office}}, \mbox{\hyperlink{classMonument_ab1d8a96cfcdf7c0cbe2ffdc7a2513f73}{Monument}}, \mbox{\hyperlink{classMedicalCenter_a804712792d653350e1fdfec59c992144}{Medical\+Center}}, \mbox{\hyperlink{classMall_a8954d409b4c93dbb269aedfe79afcf45}{Mall}}, \mbox{\hyperlink{classHouse_a023f323dd947bdf509380c5e69f35397}{House}}, \mbox{\hyperlink{classFactories_a587c6b34ab87e63b8fe1e3da1515a180}{Factories}}, \mbox{\hyperlink{classCulturalCenter_a2653e24f61254c62d017c3cc8b3d45db}{Cultural\+Center}}, and \mbox{\hyperlink{classApartment_ade0ae9dc5bb6be2c2ed1109abad47322}{Apartment}}.
+
+\mbox{\Hypertarget{classBuildings_aaaeb748113337669c224c2293d2f0d82}\label{classBuildings_aaaeb748113337669c224c2293d2f0d82}} 
+\index{Buildings@{Buildings}!cleanWaste@{cleanWaste}}
+\index{cleanWaste@{cleanWaste}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{cleanWaste()}{cleanWaste()}}
+{\footnotesize\ttfamily virtual bool Buildings\+::clean\+Waste (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Cleans the waste of the building. 
+
+\begin{DoxyReturn}{Returns}
+true if waste cleaning was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classResidentialBuilding_a9fef368fd52003c9bcef6956b20a41ad}{Residential\+Building}}, \mbox{\hyperlink{classPublicServiceBuilding_a5ade12051e423ea1174c4d0a8c3d7451}{Public\+Service\+Building}}, \mbox{\hyperlink{classLandmarkBuilding_a53f41bc4fe9ccb241e6619463296c405}{Landmark\+Building}}, \mbox{\hyperlink{classIndustrialBuilding_a0d0e0ff8c30a3c839b8c0d16f0e52474}{Industrial\+Building}}, \mbox{\hyperlink{classCommercialBuilding_a59e9259b25798a7d754feffb13567370}{Commercial\+Building}}, \mbox{\hyperlink{classWarehouse_a42ae4d592353831e30be8454d0657080}{Warehouse}}, \mbox{\hyperlink{classTownHouse_a8b3a6871c11491c2427bd03c6a547624}{Town\+House}}, \mbox{\hyperlink{classShop_a4788fd8231258f31b0862b75d90865d5}{Shop}}, \mbox{\hyperlink{classSchool_a2ad7b7017e9ea9fe0fb61bf56afb4345}{School}}, \mbox{\hyperlink{classPowerPlant_a8e6b825918715596d537857e0b574988}{Power\+Plant}}, \mbox{\hyperlink{classPoliceStation_ac2d8b365d6c375c8f6d816890e7e4ecb}{Police\+Station}}, \mbox{\hyperlink{classPark_ac5ea570943ee58b803c919033ef0c3bf}{Park}}, \mbox{\hyperlink{classOffice_a242ea321fb9d49f13f7025a4d2df1480}{Office}}, \mbox{\hyperlink{classMonument_a2f01e07c1ce7f901b505baaa55bbc584}{Monument}}, \mbox{\hyperlink{classMedicalCenter_a0f7e9af6c47c27947edd138d607c9839}{Medical\+Center}}, \mbox{\hyperlink{classMall_a0e7c8475d906facbcb43051845fd0931}{Mall}}, \mbox{\hyperlink{classHouse_a26a4ff9f04c00ea9a1d6f7814e0af2de}{House}}, \mbox{\hyperlink{classFactories_aaca41e9268e380c5c30f041df8b8dabe}{Factories}}, \mbox{\hyperlink{classCulturalCenter_a5332fe7bb7e4082780f6f1747b80c627}{Cultural\+Center}}, and \mbox{\hyperlink{classApartment_a0787841d537df8e435ec3f0abac715c9}{Apartment}}.
+
+\mbox{\Hypertarget{classBuildings_a4254206fe0f1f565e269e1e543cba834}\label{classBuildings_a4254206fe0f1f565e269e1e543cba834}} 
+\index{Buildings@{Buildings}!getBalance@{getBalance}}
+\index{getBalance@{getBalance}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getBalance()}{getBalance()}}
+{\footnotesize\ttfamily virtual double Buildings\+::get\+Balance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+gets the current income of a commercial building 
+
+\begin{DoxyReturn}{Returns}
+the income as an integer 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classShop_aa17740ce746a83876ade483a83d8e143}{Shop}}, \mbox{\hyperlink{classOffice_a7c31b2634837a3d662476e4b183a4837}{Office}}, \mbox{\hyperlink{classMall_a20ec3420d8ffb92073d2276304bc01a7}{Mall}}, and \mbox{\hyperlink{classCommercialBuilding_a77ce6bb30a4f595867ed3be7dc9e0f17}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classBuildings_a038e1c1d7a924c97fc3cdc5954ccd72b}\label{classBuildings_a038e1c1d7a924c97fc3cdc5954ccd72b}} 
+\index{Buildings@{Buildings}!getBirthRate@{getBirthRate}}
+\index{getBirthRate@{getBirthRate}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getBirthRate()}{getBirthRate()}}
+{\footnotesize\ttfamily int Buildings\+::get\+Birth\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the birth rate supported by the medical center. 
+
+\begin{DoxyReturn}{Returns}
+The birth rate as an integer. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classMedicalCenter_a576620240d995a01356151b82688a47a}{Medical\+Center}}.
+
+\mbox{\Hypertarget{classBuildings_a99ed74a589fe28f98eed08ba0d8dc339}\label{classBuildings_a99ed74a589fe28f98eed08ba0d8dc339}} 
+\index{Buildings@{Buildings}!getBuildingType@{getBuildingType}}
+\index{getBuildingType@{getBuildingType}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getBuildingType()}{getBuildingType()}}
+{\footnotesize\ttfamily virtual string Buildings\+::get\+Building\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the type of the building. 
+
+\begin{DoxyReturn}{Returns}
+The building type as a string (e.\+g., \char`\"{}residential\char`\"{}, \char`\"{}commercial\char`\"{}). 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classResidentialBuilding_aee6ea83d6f70ac8db9c5960db42e88b7}{Residential\+Building}}, \mbox{\hyperlink{classPublicServiceBuilding_a5f2c3b660e2ff931490c89e81f5fbcfc}{Public\+Service\+Building}}, \mbox{\hyperlink{classLandmarkBuilding_a10edeac1cd62dd4519d196b873bb7cc0}{Landmark\+Building}}, \mbox{\hyperlink{classIndustrialBuilding_a91003a6e0e299aaf14e71b300d260626}{Industrial\+Building}}, \mbox{\hyperlink{classCommercialBuilding_a2bc59aed3639b1ddc8985ab71cc13579}{Commercial\+Building}}, \mbox{\hyperlink{classWarehouse_a662648756b6ddb561d98cb69a6cc4b51}{Warehouse}}, \mbox{\hyperlink{classTownHouse_a6271d646da88bd504a6594a1a344416d}{Town\+House}}, \mbox{\hyperlink{classShop_a084fd7aad71f4b8c72e7ce8d68acc689}{Shop}}, \mbox{\hyperlink{classSchool_acc5740a04cb2e9232bb812868b406844}{School}}, \mbox{\hyperlink{classPowerPlant_ad6186c546ea67f15cd570979cd9349c4}{Power\+Plant}}, \mbox{\hyperlink{classPoliceStation_a0c2a8e9ccb9ff15a02a075294714d081}{Police\+Station}}, \mbox{\hyperlink{classPark_a2c89a3de0a83ca1928651a3afa672f39}{Park}}, \mbox{\hyperlink{classOffice_a5e01bcb4191ce145fe31aa28d451bce3}{Office}}, \mbox{\hyperlink{classMonument_a7348eb3e86de17228f0ca50d7c5fe48a}{Monument}}, \mbox{\hyperlink{classMedicalCenter_aa302e910a8e18ca176cbeb50e2cba201}{Medical\+Center}}, \mbox{\hyperlink{classMall_a434c468b4615bb7e17de3d56b6767027}{Mall}}, \mbox{\hyperlink{classHouse_a822b5940f76b7e87814ece9ea643b89f}{House}}, \mbox{\hyperlink{classFactories_ad29f750bb10a766d30a840b37310034b}{Factories}}, \mbox{\hyperlink{classCulturalCenter_aee7c0cebb5ae6b32faaeb17a2461109e}{Cultural\+Center}}, and \mbox{\hyperlink{classApartment_a392a887e59559a83927bba479aaab2ad}{Apartment}}.
+
+\mbox{\Hypertarget{classBuildings_a14a35e8d36b717014241a9f416324ae5}\label{classBuildings_a14a35e8d36b717014241a9f416324ae5}} 
+\index{Buildings@{Buildings}!getCommercialIncome@{getCommercialIncome}}
+\index{getCommercialIncome@{getCommercialIncome}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getCommercialIncome()}{getCommercialIncome()}}
+{\footnotesize\ttfamily virtual int Buildings\+::get\+Commercial\+Income (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+gets the current income of a commercial building 
+
+\begin{DoxyReturn}{Returns}
+the income as an integer 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classShop_a5468648015a4ecfbfa5b728088d31f06}{Shop}}, \mbox{\hyperlink{classOffice_a98e2c74e20d99e2651ab70b4348fa989}{Office}}, \mbox{\hyperlink{classMall_ace6d4591ab21f6ebca91fe4d35a0eb92}{Mall}}, and \mbox{\hyperlink{classCommercialBuilding_ae827061bd272d37402e9d5cb9f961363}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classBuildings_aea12268287656270eb98cd2f22b82e02}\label{classBuildings_aea12268287656270eb98cd2f22b82e02}} 
+\index{Buildings@{Buildings}!getEducationalCoverage@{getEducationalCoverage}}
+\index{getEducationalCoverage@{getEducationalCoverage}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getEducationalCoverage()}{getEducationalCoverage()}}
+{\footnotesize\ttfamily virtual float Buildings\+::get\+Educational\+Coverage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the security coverage provided by the police station. 
+
+\begin{DoxyReturn}{Returns}
+The security coverage as a float. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classSchool_aca5c98be2987bc54467f0bf4b63cba28}{School}}, and \mbox{\hyperlink{classPublicServiceBuilding_ab0ea2553fccec1f477947ddc2752742a}{Public\+Service\+Building}}.
+
+\mbox{\Hypertarget{classBuildings_a993a9340e25a58e2e2912090742f5ba6}\label{classBuildings_a993a9340e25a58e2e2912090742f5ba6}} 
+\index{Buildings@{Buildings}!getHealthCoverage@{getHealthCoverage}}
+\index{getHealthCoverage@{getHealthCoverage}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getHealthCoverage()}{getHealthCoverage()}}
+{\footnotesize\ttfamily virtual float Buildings\+::get\+Health\+Coverage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the health coverage provided by the medical center. 
+
+\begin{DoxyReturn}{Returns}
+The health coverage as a float. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classPublicServiceBuilding_adf20d12307adb2ce794f25cb008b9dc8}{Public\+Service\+Building}}, and \mbox{\hyperlink{classMedicalCenter_a20d4a6fdb121abb26251a1b7daf0991e}{Medical\+Center}}.
+
+\mbox{\Hypertarget{classBuildings_a903e19ef9d878d5714b8ab5de9f71fc1}\label{classBuildings_a903e19ef9d878d5714b8ab5de9f71fc1}} 
+\index{Buildings@{Buildings}!getJobsCreated@{getJobsCreated}}
+\index{getJobsCreated@{getJobsCreated}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getJobsCreated()}{getJobsCreated()}}
+{\footnotesize\ttfamily virtual int Buildings\+::get\+Jobs\+Created (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the number of jobs created by the building. 
+
+\begin{DoxyReturn}{Returns}
+The number of jobs as an integer. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classPublicServiceBuilding_a98fddf51928e1caf68ed7686e76f1f3b}{Public\+Service\+Building}}, \mbox{\hyperlink{classWarehouse_a5f8a70d3414656b322bcda13745baa22}{Warehouse}}, \mbox{\hyperlink{classShop_af94d5d055af855dfa8690076423282d1}{Shop}}, \mbox{\hyperlink{classSchool_a49bc14e2ccc98d0339bcfd983fe06d96}{School}}, \mbox{\hyperlink{classResidentialBuilding_a7a6d78e7b5d798d8f9c6221afcb19e7b}{Residential\+Building}}, \mbox{\hyperlink{classPowerPlant_a9ddad0d7f41de4d1d237f58acfe59307}{Power\+Plant}}, \mbox{\hyperlink{classPoliceStation_af632ea789b1aa614efbbb96fe5a9e17c}{Police\+Station}}, \mbox{\hyperlink{classOffice_af071576c48b32facf2566a622d27514f}{Office}}, \mbox{\hyperlink{classMedicalCenter_af726a9c952e9e47aaf6bb82a4f877fde}{Medical\+Center}}, \mbox{\hyperlink{classMall_a00e1555ccec450d6492fcfed59898ca3}{Mall}}, \mbox{\hyperlink{classIndustrialBuilding_a73c3da89be7477e72f8c7eb55d751311}{Industrial\+Building}}, \mbox{\hyperlink{classFactories_adaa9a99d56011f52a7f0dfa851d2cd86}{Factories}}, \mbox{\hyperlink{classCulturalCenter_a9a78019d21bc323cefd6331a9ee7dc7a}{Cultural\+Center}}, and \mbox{\hyperlink{classCommercialBuilding_afaf183aab243dea40e25690e8b7b5ebc}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classBuildings_ae0a010f94a01d180d1a6e4d023b54561}\label{classBuildings_ae0a010f94a01d180d1a6e4d023b54561}} 
+\index{Buildings@{Buildings}!getlistOfResidence@{getlistOfResidence}}
+\index{getlistOfResidence@{getlistOfResidence}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getlistOfResidence()}{getlistOfResidence()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classCitizen}{Citizen}}$\ast$ Buildings\+::getlist\+Of\+Residence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the list of residents in a building. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the list of citizens residing in or associated with the building. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBuildings_a196e5dc7d116d8df481fe16ffb40756f}\label{classBuildings_a196e5dc7d116d8df481fe16ffb40756f}} 
+\index{Buildings@{Buildings}!getMaintenanceCost@{getMaintenanceCost}}
+\index{getMaintenanceCost@{getMaintenanceCost}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getMaintenanceCost()}{getMaintenanceCost()}}
+{\footnotesize\ttfamily virtual double Buildings\+::get\+Maintenance\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the maintenance cost of the building. 
+
+\begin{DoxyReturn}{Returns}
+The maintenance cost as a double, representing currency units. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classResidentialBuilding_ae086cdd073cc6055e5423353828eebec}{Residential\+Building}}, \mbox{\hyperlink{classPublicServiceBuilding_aa1a510bf9a576b0699a4828a5d2eadcb}{Public\+Service\+Building}}, \mbox{\hyperlink{classLandmarkBuilding_a3f6e6849c9a5f5d29ea16e51bff37006}{Landmark\+Building}}, \mbox{\hyperlink{classIndustrialBuilding_a8fed6194bff88b6cb1f8721b0bbaf1bd}{Industrial\+Building}}, \mbox{\hyperlink{classCommercialBuilding_a67781a6b655a1c5bbd7f7192bf4fae51}{Commercial\+Building}}, \mbox{\hyperlink{classWarehouse_a8ebf665f7afe095650212fd301128f4f}{Warehouse}}, \mbox{\hyperlink{classTownHouse_af316bbcc836847c146f3a2c6aeb29e63}{Town\+House}}, \mbox{\hyperlink{classShop_aa90829bc6635f83e9c3746cac2177023}{Shop}}, \mbox{\hyperlink{classSchool_a496b0ccbb3c8965250824ed0b54232bf}{School}}, \mbox{\hyperlink{classPowerPlant_a68a975238c2b79518ef0111fae91380f}{Power\+Plant}}, \mbox{\hyperlink{classPoliceStation_a63ba87e33e55ddc39386b30509e03225}{Police\+Station}}, \mbox{\hyperlink{classPark_af812e134e0b512ab1fca97db97472423}{Park}}, \mbox{\hyperlink{classOffice_a0b2d5062396b2fb129e5996c33c67a16}{Office}}, \mbox{\hyperlink{classMonument_ae0d8787c2f668483df0acb8f5dabd369}{Monument}}, \mbox{\hyperlink{classMedicalCenter_a00227998395267fe807c43b215d7556d}{Medical\+Center}}, \mbox{\hyperlink{classMall_a1b82e5b2448863742d3348eeb48a17ab}{Mall}}, \mbox{\hyperlink{classHouse_a6bccca3ce5e25636d63d8f1c137388e8}{House}}, \mbox{\hyperlink{classFactories_a129aee786480dc025e0abd8b497a44db}{Factories}}, \mbox{\hyperlink{classCulturalCenter_af6f3e3d6a89356d20626201e351dd2ee}{Cultural\+Center}}, and \mbox{\hyperlink{classApartment_acd246138d22db5dcdd45e753ce8fbdba}{Apartment}}.
+
+\mbox{\Hypertarget{classBuildings_a58fd91cee048b410265d2e8dab88894e}\label{classBuildings_a58fd91cee048b410265d2e8dab88894e}} 
+\index{Buildings@{Buildings}!getName@{getName}}
+\index{getName@{getName}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual string Buildings\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the name of the building. 
+
+\begin{DoxyReturn}{Returns}
+The building\textquotesingle{}s name as a string. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classResidentialBuilding_aaf571c879f3912a84df4fbcb3710e00f}{Residential\+Building}}, \mbox{\hyperlink{classPublicServiceBuilding_a6795238154c334e4e5ed3148f23ffe96}{Public\+Service\+Building}}, \mbox{\hyperlink{classLandmarkBuilding_a25b9ca973c81578065f8cece37de00d4}{Landmark\+Building}}, \mbox{\hyperlink{classIndustrialBuilding_a87cbab2b37fccd8140b874b16eef3981}{Industrial\+Building}}, \mbox{\hyperlink{classCommercialBuilding_ab24328311662c377deb43ccfdb83dbab}{Commercial\+Building}}, \mbox{\hyperlink{classWarehouse_a6f52790e1a77a0b6f2ad2ae12f5a8287}{Warehouse}}, \mbox{\hyperlink{classTownHouse_a9a862362539fcabdcbfbab9525115b76}{Town\+House}}, \mbox{\hyperlink{classShop_a43a344cea2213650d1f0f103f00690e8}{Shop}}, \mbox{\hyperlink{classSchool_a80950c9e4d50374ef755b6adab05a88a}{School}}, \mbox{\hyperlink{classPowerPlant_aba983606b8f9d86e60e4177e51ada42b}{Power\+Plant}}, \mbox{\hyperlink{classPoliceStation_abcddda6770383112b4b12630ed1118b8}{Police\+Station}}, \mbox{\hyperlink{classPark_a056d317a7474449c932f56c8ec703764}{Park}}, \mbox{\hyperlink{classOffice_a866456b277c1b43e2ede47ec93313e5a}{Office}}, \mbox{\hyperlink{classMonument_ade1e6dfa17591c2e90418d1dd470d595}{Monument}}, \mbox{\hyperlink{classMedicalCenter_aff73a62d67ec1b53bd8a8e659dd1942e}{Medical\+Center}}, \mbox{\hyperlink{classMall_ae77f2296986c54b8a7fbf7ca5adbfdf3}{Mall}}, \mbox{\hyperlink{classHouse_a079149ba1dbe764bb378a045f8c6cb40}{House}}, \mbox{\hyperlink{classFactories_a4d5f18ed07963a697c0b6e8d6565ba9a}{Factories}}, \mbox{\hyperlink{classCulturalCenter_a84ef150d247f633355270e3baa5638ca}{Cultural\+Center}}, and \mbox{\hyperlink{classApartment_a56ab06079df6252187c3a2a70cb36066}{Apartment}}.
+
+\mbox{\Hypertarget{classBuildings_a98266f291367e42bb44f49a8949ea8b2}\label{classBuildings_a98266f291367e42bb44f49a8949ea8b2}} 
+\index{Buildings@{Buildings}!getPower@{getPower}}
+\index{getPower@{getPower}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getPower()}{getPower()}}
+{\footnotesize\ttfamily virtual bool Buildings\+::get\+Power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Receives power for the building. 
+
+\begin{DoxyReturn}{Returns}
+true if power was received successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classResidentialBuilding_ae867db795935c20c2c5a45463ac33fb0}{Residential\+Building}}, \mbox{\hyperlink{classPublicServiceBuilding_a79959b7de7d22398e25f2c35d9de6e26}{Public\+Service\+Building}}, \mbox{\hyperlink{classLandmarkBuilding_aecef730ab43b09f8d9a3cb423a46f94a}{Landmark\+Building}}, \mbox{\hyperlink{classIndustrialBuilding_a202d90a14e43d4d22da5477dfcbeadbc}{Industrial\+Building}}, \mbox{\hyperlink{classCommercialBuilding_a0dbff6c0c9a198adb9a7a69b07b1bd76}{Commercial\+Building}}, \mbox{\hyperlink{classWarehouse_a6e50639a770ab0dc58ad31ab883b2e05}{Warehouse}}, \mbox{\hyperlink{classTownHouse_a32b925d3ecbda9a5e6e0a7c404cf3957}{Town\+House}}, \mbox{\hyperlink{classShop_a84c3ef714bbea1526ffc7d10816065fc}{Shop}}, \mbox{\hyperlink{classSchool_a96ec441105ed008687afcc59f66ceb77}{School}}, \mbox{\hyperlink{classPowerPlant_a8234c364754cd65b1b14e8aa0399980e}{Power\+Plant}}, \mbox{\hyperlink{classPoliceStation_a06fd6f49e8d03aba97c2ccb407ea6f83}{Police\+Station}}, \mbox{\hyperlink{classPark_ab8559c1bdf4ba7cdb3ffc7d7f2a84648}{Park}}, \mbox{\hyperlink{classOffice_a5b5865beb905a7fd9c4aca46bba368ad}{Office}}, \mbox{\hyperlink{classMonument_aa820b40523a786099a0aa438eef37786}{Monument}}, \mbox{\hyperlink{classMedicalCenter_ac63f0e957cad47c2f52bae1846ca1c6c}{Medical\+Center}}, \mbox{\hyperlink{classMall_aad29bf553999aa09007a83f4b408b2bc}{Mall}}, \mbox{\hyperlink{classHouse_acb75268c56b49dcf246f268442f6e2ad}{House}}, \mbox{\hyperlink{classFactories_a0e6428cae803e8e25166dcca690774fe}{Factories}}, \mbox{\hyperlink{classCulturalCenter_abb59ff3dcaa5b2fcbcdc7372ecce0c9e}{Cultural\+Center}}, and \mbox{\hyperlink{classApartment_a590afeb39aca36e740b51290bf6bd739}{Apartment}}.
+
+\mbox{\Hypertarget{classBuildings_ae6dc450a35fe3e5ae789357b921b0c72}\label{classBuildings_ae6dc450a35fe3e5ae789357b921b0c72}} 
+\index{Buildings@{Buildings}!getPowerReq@{getPowerReq}}
+\index{getPowerReq@{getPowerReq}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getPowerReq()}{getPowerReq()}}
+{\footnotesize\ttfamily virtual int Buildings\+::get\+Power\+Req (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the power requirement of the building. 
+
+\begin{DoxyReturn}{Returns}
+The power requirement in kilowatt-\/hours (k\+Wh). 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classResidentialBuilding_a4b05dc85c1b4578df1c77bfa8b54592b}{Residential\+Building}}, \mbox{\hyperlink{classPublicServiceBuilding_a821f578fb5baef18294123a88772e283}{Public\+Service\+Building}}, \mbox{\hyperlink{classLandmarkBuilding_ac8df4603f8786f441a3aa50a3cd7a75c}{Landmark\+Building}}, \mbox{\hyperlink{classIndustrialBuilding_a854b562505de3d341cf9503d5f42d145}{Industrial\+Building}}, \mbox{\hyperlink{classCommercialBuilding_a0b192a6a070bf0f907b83cf45c53d11c}{Commercial\+Building}}, \mbox{\hyperlink{classWarehouse_a8ab6c9cfb36bd8dc4b7c4447932c9aa7}{Warehouse}}, \mbox{\hyperlink{classTownHouse_a1bd58ca5b8c72911f4e315d83dc80460}{Town\+House}}, \mbox{\hyperlink{classShop_a69daf8ea3fb5728c5ab9e7f86964f9dd}{Shop}}, \mbox{\hyperlink{classSchool_abbb95759f584ba0752ace26169e4cf7e}{School}}, \mbox{\hyperlink{classPowerPlant_abd58e51dee3337e25a96155f2bfe2468}{Power\+Plant}}, \mbox{\hyperlink{classPoliceStation_a1905c0a99110be7df49d8bd05ab7f983}{Police\+Station}}, \mbox{\hyperlink{classPark_a67bb1c291999a2f84b7aefa48a149529}{Park}}, \mbox{\hyperlink{classOffice_a16e1936910d08fbfb4c08a3dc0f5e293}{Office}}, \mbox{\hyperlink{classMonument_aa5d16f88a8b1f0518d2845dbb0bd4f15}{Monument}}, \mbox{\hyperlink{classMedicalCenter_a4a1209e2f0c525b1e77f94c32ced237b}{Medical\+Center}}, \mbox{\hyperlink{classMall_abddc782e00da2d1d9961852cf5c4c351}{Mall}}, \mbox{\hyperlink{classHouse_a12985418a1776d2140022f237e6a4157}{House}}, \mbox{\hyperlink{classFactories_a5c41401b10bf6edd1d8e7cd82503c413}{Factories}}, \mbox{\hyperlink{classCulturalCenter_a21c8b4defdcca7bf79ae4e859062f3cc}{Cultural\+Center}}, and \mbox{\hyperlink{classApartment_ab64e953d286580dedd22b35eb80c8be7}{Apartment}}.
+
+\mbox{\Hypertarget{classBuildings_ad063833f87a3337b6ed6f1f3686a6e45}\label{classBuildings_ad063833f87a3337b6ed6f1f3686a6e45}} 
+\index{Buildings@{Buildings}!getProfit@{getProfit}}
+\index{getProfit@{getProfit}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getProfit()}{getProfit()}}
+{\footnotesize\ttfamily virtual float Buildings\+::get\+Profit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the profit generated by the commercial building. 
+
+\begin{DoxyReturn}{Returns}
+Profit amount as a float. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classWarehouse_aca67729b4ea03792269e39ede0277595}{Warehouse}}, \mbox{\hyperlink{classShop_a19e8b7ad4a220fc7f7d792eb31f22d3d}{Shop}}, \mbox{\hyperlink{classPowerPlant_a1912ac5bbf2c681f3ae9b240fa81d213}{Power\+Plant}}, \mbox{\hyperlink{classOffice_a7f45354d12f8a8232ab73489a15ff7b0}{Office}}, \mbox{\hyperlink{classMall_a0558a2b36d4aa77d603d4e2afdd95ab4}{Mall}}, \mbox{\hyperlink{classIndustrialBuilding_a31bd258f6b522895cebec66f58bce212}{Industrial\+Building}}, \mbox{\hyperlink{classFactories_ab98541a01fd38a5d48083e0596e2b6ea}{Factories}}, and \mbox{\hyperlink{classCommercialBuilding_acc4395bf128e80842b3ae76da0f4b2d8}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classBuildings_a329450878a0e655e4a59f29e24bd3202}\label{classBuildings_a329450878a0e655e4a59f29e24bd3202}} 
+\index{Buildings@{Buildings}!getSales@{getSales}}
+\index{getSales@{getSales}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getSales()}{getSales()}}
+{\footnotesize\ttfamily virtual float Buildings\+::get\+Sales (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the sales generated by the commercial building. 
+
+\begin{DoxyReturn}{Returns}
+Sales amount as a float. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classWarehouse_a9f7b9bef2902ff1feff5bff90afd443d}{Warehouse}}, \mbox{\hyperlink{classShop_a38f043da1988090615fa81d18abaa159}{Shop}}, \mbox{\hyperlink{classPowerPlant_a85f7a213cdf15c44c097230f075a0aad}{Power\+Plant}}, \mbox{\hyperlink{classOffice_aa2fa64dd88cdc7e8e6289b0e645c4657}{Office}}, \mbox{\hyperlink{classMall_a113c7507987173f4eae574d86824c3e9}{Mall}}, \mbox{\hyperlink{classIndustrialBuilding_aa82d8ef5360d6c7d4b0babaeae81d8a9}{Industrial\+Building}}, \mbox{\hyperlink{classFactories_a42c6ad596824634560a45acc12edc9e9}{Factories}}, and \mbox{\hyperlink{classCommercialBuilding_ab69ce9a94734ece60e08f51262aed158}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classBuildings_a647c790019850fd479ac20fcbd21d873}\label{classBuildings_a647c790019850fd479ac20fcbd21d873}} 
+\index{Buildings@{Buildings}!getSecurityCoverage@{getSecurityCoverage}}
+\index{getSecurityCoverage@{getSecurityCoverage}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getSecurityCoverage()}{getSecurityCoverage()}}
+{\footnotesize\ttfamily virtual float Buildings\+::get\+Security\+Coverage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the security coverage provided by the police station. 
+
+\begin{DoxyReturn}{Returns}
+The security coverage as a float. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classPublicServiceBuilding_af359df4946165e797919bfb731551905}{Public\+Service\+Building}}, and \mbox{\hyperlink{classPoliceStation_a402b7564352c402bc254e05a4d12055d}{Police\+Station}}.
+
+\mbox{\Hypertarget{classBuildings_acd98a1879efc8be4e3fc27eddce6f56b}\label{classBuildings_acd98a1879efc8be4e3fc27eddce6f56b}} 
+\index{Buildings@{Buildings}!getSewageCost@{getSewageCost}}
+\index{getSewageCost@{getSewageCost}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getSewageCost()}{getSewageCost()}}
+{\footnotesize\ttfamily virtual int Buildings\+::get\+Sewage\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the sewage cost of the building. 
+
+\begin{DoxyReturn}{Returns}
+The sewage cost in currency units. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classResidentialBuilding_a1a8b12239511450428c00d1872390264}{Residential\+Building}}, \mbox{\hyperlink{classPublicServiceBuilding_a0a0c1691bca3825f058b86c2b8e307a7}{Public\+Service\+Building}}, \mbox{\hyperlink{classLandmarkBuilding_a780ade236d79adb8007752c718867639}{Landmark\+Building}}, \mbox{\hyperlink{classIndustrialBuilding_afd9c59a327c6609e1ed941200260192a}{Industrial\+Building}}, \mbox{\hyperlink{classCommercialBuilding_aa7b21c407ff71a2f360ec1c30d59c3e7}{Commercial\+Building}}, \mbox{\hyperlink{classWarehouse_a4c9c087cf42b8c31733ba0c436c0c43c}{Warehouse}}, \mbox{\hyperlink{classTownHouse_abcc0f59ac66c8853df44186cb548cb40}{Town\+House}}, \mbox{\hyperlink{classShop_a807d0fe43f8dbadc43d593dd5d1362fc}{Shop}}, \mbox{\hyperlink{classSchool_a28fd46601ea54ddd2c1aded1531a7e2b}{School}}, \mbox{\hyperlink{classPowerPlant_a5aab0d2bc6ea32a8c5e59be3df48e261}{Power\+Plant}}, \mbox{\hyperlink{classPoliceStation_a879630b72881ba49227cf9af6da80908}{Police\+Station}}, \mbox{\hyperlink{classPark_a9321f126205b260775abcea15d4e3e6f}{Park}}, \mbox{\hyperlink{classOffice_a83256cb36fc427127abc7b502ee4581c}{Office}}, \mbox{\hyperlink{classMonument_a9c004de50ec736e06bbc2eb9253af7e1}{Monument}}, \mbox{\hyperlink{classMedicalCenter_a39922a070eb7664c5706181ee9726334}{Medical\+Center}}, \mbox{\hyperlink{classMall_ad399e511790a082c3a7b6cc3ca3e8e31}{Mall}}, \mbox{\hyperlink{classHouse_af997cf84529a0746ee2620ef26ece769}{House}}, \mbox{\hyperlink{classFactories_a95e6fa78cd2cbabbe724be6dc1c9ed8a}{Factories}}, \mbox{\hyperlink{classCulturalCenter_a86f287ecf3dcac7cd6a4ba63dd11b7c6}{Cultural\+Center}}, and \mbox{\hyperlink{classApartment_a2e07a4fbc93507e19a7054100797ba72}{Apartment}}.
+
+\mbox{\Hypertarget{classBuildings_a94e15ba281ac20d60e1a4632f7be1292}\label{classBuildings_a94e15ba281ac20d60e1a4632f7be1292}} 
+\index{Buildings@{Buildings}!getWasteCost@{getWasteCost}}
+\index{getWasteCost@{getWasteCost}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getWasteCost()}{getWasteCost()}}
+{\footnotesize\ttfamily virtual int Buildings\+::get\+Waste\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the waste cost of the building. 
+
+\begin{DoxyReturn}{Returns}
+Waste cost as an integer. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classWarehouse_a3485f269f5e36667291825d29b7eef68}{Warehouse}}, \mbox{\hyperlink{classTownHouse_a2c9a1f2a819253e4a86ad6cb57d40edd}{Town\+House}}, \mbox{\hyperlink{classShop_acb12379ff875f5d34734f1ea913e52e4}{Shop}}, \mbox{\hyperlink{classSchool_adeee816aa612f5f5d79f0a67e906089b}{School}}, \mbox{\hyperlink{classPublicServiceBuilding_a3d3ddf9f07152f367628755a50b88396}{Public\+Service\+Building}}, \mbox{\hyperlink{classPowerPlant_a3530dadff8f05e747a806a642147ee02}{Power\+Plant}}, \mbox{\hyperlink{classPoliceStation_a672299941faa26ffb9350e7c7a8aaeb9}{Police\+Station}}, \mbox{\hyperlink{classPark_a64bb85198d48756c7b16254831df1ecb}{Park}}, \mbox{\hyperlink{classOffice_a54fec4263affb4fa50a09153ef393cc9}{Office}}, \mbox{\hyperlink{classMonument_a90c94d6f5e749e62ff836cc73a909d41}{Monument}}, \mbox{\hyperlink{classMedicalCenter_a2eddb52accdad63880ab435e9cf2ca7f}{Medical\+Center}}, \mbox{\hyperlink{classMall_aab7fc06fd03fb4a112213c50acc57abe}{Mall}}, \mbox{\hyperlink{classHouse_a4279dd1d6b45bf7e0a03d18678f2c957}{House}}, \mbox{\hyperlink{classFactories_a3c94946cfc8278af3231ac1fba1981be}{Factories}}, \mbox{\hyperlink{classCulturalCenter_aa2c53e92cf1ceb2970e906739c8a7c27}{Cultural\+Center}}, and \mbox{\hyperlink{classApartment_a00359e6e1dd29b3f781cb79a26569fc3}{Apartment}}.
+
+\mbox{\Hypertarget{classBuildings_a100a3abba32013b317fe08d78de2d9ab}\label{classBuildings_a100a3abba32013b317fe08d78de2d9ab}} 
+\index{Buildings@{Buildings}!getWater@{getWater}}
+\index{getWater@{getWater}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getWater()}{getWater()}}
+{\footnotesize\ttfamily virtual bool Buildings\+::get\+Water (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Receives water for the building. 
+
+\begin{DoxyReturn}{Returns}
+true if water was received successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classResidentialBuilding_aae44b69bdedffbb41c78205bcfb712e1}{Residential\+Building}}, \mbox{\hyperlink{classPublicServiceBuilding_a29b779f6c94a907e7dc74ba24e688ee9}{Public\+Service\+Building}}, \mbox{\hyperlink{classLandmarkBuilding_a661c42eb0bd712f50eb10cfba131f0e5}{Landmark\+Building}}, \mbox{\hyperlink{classIndustrialBuilding_a0f2fd085a8552d767ca0cc2cc7e0888f}{Industrial\+Building}}, \mbox{\hyperlink{classCommercialBuilding_a804eb1be891988cb585bd48c0ab09635}{Commercial\+Building}}, \mbox{\hyperlink{classWarehouse_ac1af38b2549e45d129ecbcce9f7de920}{Warehouse}}, \mbox{\hyperlink{classTownHouse_a024e646590e992803d8b2b4403d5f45a}{Town\+House}}, \mbox{\hyperlink{classShop_aef532e592b365c055d4cfcacf271b348}{Shop}}, \mbox{\hyperlink{classSchool_a72a8c14555bb4889325a56b24a2c7dc4}{School}}, \mbox{\hyperlink{classPowerPlant_a5e31eff9c53dd6786168ed3ccce35084}{Power\+Plant}}, \mbox{\hyperlink{classPoliceStation_a5fe46073e7d060c57d550336c21c31b6}{Police\+Station}}, \mbox{\hyperlink{classPark_a56586b6fbccdf996174469ec27663374}{Park}}, \mbox{\hyperlink{classOffice_a174f5049e93dad96be8f710bca45e275}{Office}}, \mbox{\hyperlink{classMonument_a6cc1e997c14352ab89b2ae70ad87c710}{Monument}}, \mbox{\hyperlink{classMedicalCenter_af19dc09a9a539927e83474e3ae64c0a8}{Medical\+Center}}, \mbox{\hyperlink{classMall_a21707250243b897c62ee15b65df54f0a}{Mall}}, \mbox{\hyperlink{classHouse_a52dcc19d6a9ec492485ab86b5c2056a1}{House}}, \mbox{\hyperlink{classFactories_a26dc8f8a536d9c06a4eb007e3615a9bc}{Factories}}, \mbox{\hyperlink{classCulturalCenter_a49c3c84e133607c5882759b3f48311e3}{Cultural\+Center}}, and \mbox{\hyperlink{classApartment_a9ad3ecbc187e2132c19f18169009d949}{Apartment}}.
+
+\mbox{\Hypertarget{classBuildings_aa9f8088da3c065b05208ea0565bcff6b}\label{classBuildings_aa9f8088da3c065b05208ea0565bcff6b}} 
+\index{Buildings@{Buildings}!getWaterReq@{getWaterReq}}
+\index{getWaterReq@{getWaterReq}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getWaterReq()}{getWaterReq()}}
+{\footnotesize\ttfamily virtual int Buildings\+::get\+Water\+Req (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the water requirement of the building. 
+
+\begin{DoxyReturn}{Returns}
+The water requirement in liters. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classResidentialBuilding_aed397e7f9cc0e3f76879b3f92a212313}{Residential\+Building}}, \mbox{\hyperlink{classPublicServiceBuilding_a9e3f6145fc21d7664d0b7b3258c13555}{Public\+Service\+Building}}, \mbox{\hyperlink{classLandmarkBuilding_acb64ab79a07960d7bec6491f2a026315}{Landmark\+Building}}, \mbox{\hyperlink{classIndustrialBuilding_a8464c7913ac4fa3a61865877b31bc75f}{Industrial\+Building}}, \mbox{\hyperlink{classCommercialBuilding_ac35a6efffcba448cc807778397020b55}{Commercial\+Building}}, \mbox{\hyperlink{classWarehouse_acaf16f31b6f234bc43d3188ff148b270}{Warehouse}}, \mbox{\hyperlink{classTownHouse_a24aadb15b792516d7ce8b1c2f75a2d57}{Town\+House}}, \mbox{\hyperlink{classShop_af6b2e80ee72d930ebb7965b01f9298de}{Shop}}, \mbox{\hyperlink{classSchool_ac4dbe987e7a7a298c81a190e49afa690}{School}}, \mbox{\hyperlink{classPowerPlant_aab2f90b19bfeb31e687ff5b3a8385ebc}{Power\+Plant}}, \mbox{\hyperlink{classPoliceStation_a99204bd730ebf2953b9a594e7be2d89a}{Police\+Station}}, \mbox{\hyperlink{classPark_af4e0a5f69702b0454f241acf528d56a7}{Park}}, \mbox{\hyperlink{classOffice_a325edec8536a6b94e944f5a4c53e0fd1}{Office}}, \mbox{\hyperlink{classMonument_a9d0f9952cde9be9625d514c7adf17f27}{Monument}}, \mbox{\hyperlink{classMedicalCenter_aa0f1f54a790c63c5114280c9807d5725}{Medical\+Center}}, \mbox{\hyperlink{classMall_afdc55e02fd226ba7a86e14ee883ae4f8}{Mall}}, \mbox{\hyperlink{classHouse_ad67e4678fc1a4ed3456ec67c477ef59c}{House}}, \mbox{\hyperlink{classFactories_aab5713b947b47a64fa94f3d43bb8530a}{Factories}}, \mbox{\hyperlink{classCulturalCenter_a197cc0d976a16755e6116b5bcd421caf}{Cultural\+Center}}, and \mbox{\hyperlink{classApartment_a32d7aee406a3f6bd0127f118397167bf}{Apartment}}.
+
+\mbox{\Hypertarget{classBuildings_a291fa645584d52be99367ba4796ebe14}\label{classBuildings_a291fa645584d52be99367ba4796ebe14}} 
+\index{Buildings@{Buildings}!payCitizen@{payCitizen}}
+\index{payCitizen@{payCitizen}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{payCitizen()}{payCitizen()}}
+{\footnotesize\ttfamily virtual int Buildings\+::pay\+Citizen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Pays a citizen employed in the building. 
+
+\begin{DoxyReturn}{Returns}
+The payment amount as an integer. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classWarehouse_a3038e34d1d0c0dfb238ac51c8257cb66}{Warehouse}}, \mbox{\hyperlink{classShop_a78b0065549ab2c6bdd24f64aababc7ae}{Shop}}, \mbox{\hyperlink{classPowerPlant_af7955cfca6b38edf5096e73631b176e2}{Power\+Plant}}, \mbox{\hyperlink{classOffice_a3b4cf5058c58500b2b0c020be99922ad}{Office}}, \mbox{\hyperlink{classMall_a226434653403f076011ba131cfdf1574}{Mall}}, \mbox{\hyperlink{classIndustrialBuilding_a2a71408fa7a0b51294abbc205fb308c1}{Industrial\+Building}}, \mbox{\hyperlink{classFactories_a9e3500a01fc8554a3ccad884d9a1a89a}{Factories}}, and \mbox{\hyperlink{classCommercialBuilding_ad0e3cc060d90ba7fb925efdc1649b894}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classBuildings_a4dd777c9c3963d8fd5a74ad1fee76ddf}\label{classBuildings_a4dd777c9c3963d8fd5a74ad1fee76ddf}} 
+\index{Buildings@{Buildings}!requestState@{requestState}}
+\index{requestState@{requestState}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{requestState()}{requestState()}}
+{\footnotesize\ttfamily virtual void Buildings\+::request\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Requests the current state of the building. 
+
+\begin{DoxyNote}{Note}
+Pure virtual function to be implemented by derived classes. 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{classResidentialBuilding_a4450dc123c2872db779adea553c197ab}{Residential\+Building}}, \mbox{\hyperlink{classPublicServiceBuilding_a2cdf45047029ed49264c52130c1d9aab}{Public\+Service\+Building}}, \mbox{\hyperlink{classLandmarkBuilding_a6aa7b601c577fa2114df4c826fd00517}{Landmark\+Building}}, \mbox{\hyperlink{classIndustrialBuilding_a2780822b6de99570b5f31e405b71e0fe}{Industrial\+Building}}, \mbox{\hyperlink{classCommercialBuilding_ae8ddedfb93a3d0a88e5179f8aaa60fa1}{Commercial\+Building}}, \mbox{\hyperlink{classWarehouse_a4ee94c67326320a3f7e22b65f556cb3b}{Warehouse}}, \mbox{\hyperlink{classTownHouse_adbcc420d2864717c39f2536f343a373b}{Town\+House}}, \mbox{\hyperlink{classShop_a60bf3c5eb5591d6fa221da7f2afbd986}{Shop}}, \mbox{\hyperlink{classSchool_a2b0f1b0df69144e47964d77ccaf9a45e}{School}}, \mbox{\hyperlink{classPowerPlant_a650c7f0f4f18141c8ec2256d6cc725fa}{Power\+Plant}}, \mbox{\hyperlink{classPoliceStation_a8a6f71d83d71a995c239d51e9d5ce2a8}{Police\+Station}}, \mbox{\hyperlink{classPark_aacde897f3b78869e5e834d6d3e647fdb}{Park}}, \mbox{\hyperlink{classOffice_af66bbd5b2581b1aacd05f641315d26e0}{Office}}, \mbox{\hyperlink{classMonument_af01f5c96f40adbc481bff5a6df48719d}{Monument}}, \mbox{\hyperlink{classMedicalCenter_a1d22b5454e36a8858baac477c3af4004}{Medical\+Center}}, \mbox{\hyperlink{classMall_ac14edf6de3e9827261ae3101fb36c2f0}{Mall}}, \mbox{\hyperlink{classHouse_a42449a82d26e123f9e6bdf12af76f20d}{House}}, \mbox{\hyperlink{classFactories_a3eebb40baf0cf6e22efb8be5e9568ecd}{Factories}}, \mbox{\hyperlink{classCulturalCenter_aa3596183413552b908c8638cc90a8ee0}{Cultural\+Center}}, and \mbox{\hyperlink{classApartment_affcb8a09e65a8012aa5f588c27f902ee}{Apartment}}.
+
+\mbox{\Hypertarget{classBuildings_a6c02963e37bf20ef827f063209901a3a}\label{classBuildings_a6c02963e37bf20ef827f063209901a3a}} 
+\index{Buildings@{Buildings}!setBalance@{setBalance}}
+\index{setBalance@{setBalance}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{setBalance()}{setBalance()}}
+{\footnotesize\ttfamily virtual void Buildings\+::set\+Balance (\begin{DoxyParamCaption}\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+gets the current income of a commercial building 
+
+\begin{DoxyReturn}{Returns}
+the income as an integer 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classShop_ad47e74adfbb01b41ea8017cff3528ef6}{Shop}}, \mbox{\hyperlink{classOffice_ad36eee398fd6c7585b26b2302a5a3e8d}{Office}}, \mbox{\hyperlink{classMall_a9cf46334f78b14ff9cedf91f981f4ab7}{Mall}}, and \mbox{\hyperlink{classCommercialBuilding_ae3d75fa3195c1808f68c1e165bee053b}{Commercial\+Building}}.
+
+\mbox{\Hypertarget{classBuildings_af3184f3602e4c1dd6ac010900770cd57}\label{classBuildings_af3184f3602e4c1dd6ac010900770cd57}} 
+\index{Buildings@{Buildings}!setResources@{setResources}}
+\index{setResources@{setResources}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{setResources()}{setResources()}}
+{\footnotesize\ttfamily void Buildings\+::set\+Resources (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUtility}{Utility}} $\ast$}]{resources }\end{DoxyParamCaption})}
+
+
+
+Sets the resource mediator for the building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resources} & Pointer to the \mbox{\hyperlink{classUtility}{Utility}} object to be used. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBuildings_ae4f56a3ae5658097bee10dc48e130a75}\label{classBuildings_ae4f56a3ae5658097bee10dc48e130a75}} 
+\index{Buildings@{Buildings}!setState@{setState}}
+\index{setState@{setState}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily virtual void Buildings\+::set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classState}{State}} $\ast$}]{new\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the state of the building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+State} & Pointer to the new state object to be assigned. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classResidentialBuilding_a389cda02037710dc3e3fb378cd81e87f}{Residential\+Building}}, \mbox{\hyperlink{classPublicServiceBuilding_a519abe8c233f2ba95faa7478b395d743}{Public\+Service\+Building}}, \mbox{\hyperlink{classLandmarkBuilding_af8cf4edaa6c0609969d781448365186d}{Landmark\+Building}}, \mbox{\hyperlink{classIndustrialBuilding_a8c21b62b5e41a4282202cb02d88bac57}{Industrial\+Building}}, \mbox{\hyperlink{classCommercialBuilding_a16e612d08679f4451fd2ae773251132b}{Commercial\+Building}}, \mbox{\hyperlink{classWarehouse_a697be13b3bcd886611c3eebc671fec79}{Warehouse}}, \mbox{\hyperlink{classTownHouse_a27163316a08110418294ceef588b5b1c}{Town\+House}}, \mbox{\hyperlink{classShop_a66737f453c2158eeea77021235120673}{Shop}}, \mbox{\hyperlink{classSchool_a4c61b6459be118f7cb4213e1d38fefd9}{School}}, \mbox{\hyperlink{classPowerPlant_a30cf2d974a37c7957e00cce4e3194c0e}{Power\+Plant}}, \mbox{\hyperlink{classPoliceStation_ac9a18ff4bed23b85e20a6fb7d3a8808e}{Police\+Station}}, \mbox{\hyperlink{classPark_ab5b7777dcc40a83ad3829a9ccd0d6108}{Park}}, \mbox{\hyperlink{classOffice_a8b738a2b5c7c0c4e810f9b510b72cacd}{Office}}, \mbox{\hyperlink{classMonument_a0e8131d72fc1b7cfeaea419ced2f78fa}{Monument}}, \mbox{\hyperlink{classMedicalCenter_ac84340f4ef9f08425b47027d70886604}{Medical\+Center}}, \mbox{\hyperlink{classMall_a1cad54db87d7520ef707192b42ec160d}{Mall}}, \mbox{\hyperlink{classHouse_a8fd19c1f1de8175df8795362a6e5db8e}{House}}, \mbox{\hyperlink{classFactories_a7876eee75708ed75b78a40f03fb3d410}{Factories}}, \mbox{\hyperlink{classCulturalCenter_a4978e28654afed90e7c04830eb18e054}{Cultural\+Center}}, and \mbox{\hyperlink{classApartment_a6448965db3b10a9c24ce82bb1d52f291}{Apartment}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classBuildings_a0702b3d14494ac145aaa428aa4e01afb}\label{classBuildings_a0702b3d14494ac145aaa428aa4e01afb}} 
+\index{Buildings@{Buildings}!buildingName@{buildingName}}
+\index{buildingName@{buildingName}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{buildingName}{buildingName}}
+{\footnotesize\ttfamily string Buildings\+::building\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+Name of the building for identification. \mbox{\Hypertarget{classBuildings_a010d594842ce60f01bdf00f939ea2011}\label{classBuildings_a010d594842ce60f01bdf00f939ea2011}} 
+\index{Buildings@{Buildings}!buildingType@{buildingType}}
+\index{buildingType@{buildingType}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{buildingType}{buildingType}}
+{\footnotesize\ttfamily string Buildings\+::building\+Type\hspace{0.3cm}{\ttfamily [protected]}}
+
+Type of the building (e.\+g., residential, commercial). \mbox{\Hypertarget{classBuildings_a7497cf317a1deb55c35864bc08c82443}\label{classBuildings_a7497cf317a1deb55c35864bc08c82443}} 
+\index{Buildings@{Buildings}!listOfCitizens@{listOfCitizens}}
+\index{listOfCitizens@{listOfCitizens}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{listOfCitizens}{listOfCitizens}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCitizen}{Citizen}}$\ast$ Buildings\+::list\+Of\+Citizens\hspace{0.3cm}{\ttfamily [protected]}}
+
+List of citizens associated with the building. \mbox{\Hypertarget{classBuildings_a7320201a32ce9541b3aeddac32d9988a}\label{classBuildings_a7320201a32ce9541b3aeddac32d9988a}} 
+\index{Buildings@{Buildings}!maintenanceCost@{maintenanceCost}}
+\index{maintenanceCost@{maintenanceCost}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{maintenanceCost}{maintenanceCost}}
+{\footnotesize\ttfamily double Buildings\+::maintenance\+Cost\hspace{0.3cm}{\ttfamily [protected]}}
+
+Maintenance cost of the building in currency units. \mbox{\Hypertarget{classBuildings_a572094ecc5a5d844acbfe6f18650ed9d}\label{classBuildings_a572094ecc5a5d844acbfe6f18650ed9d}} 
+\index{Buildings@{Buildings}!powerReq@{powerReq}}
+\index{powerReq@{powerReq}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{powerReq}{powerReq}}
+{\footnotesize\ttfamily int Buildings\+::power\+Req\hspace{0.3cm}{\ttfamily [protected]}}
+
+$<$ Pointer to the resource mediator for managing resources. Power requirement of the building in k\+Wh. \mbox{\Hypertarget{classBuildings_aabc1cfaf764d4c41889ecf1f0320fa8e}\label{classBuildings_aabc1cfaf764d4c41889ecf1f0320fa8e}} 
+\index{Buildings@{Buildings}!resources@{resources}}
+\index{resources@{resources}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{resources}{resources}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUtility}{Utility}}$\ast$ Buildings\+::resources}
+
+Mediator for handling resource distribution. \mbox{\Hypertarget{classBuildings_aae45243bbcd3ac7c47e9cbb83162f1f8}\label{classBuildings_aae45243bbcd3ac7c47e9cbb83162f1f8}} 
+\index{Buildings@{Buildings}!sewageCost@{sewageCost}}
+\index{sewageCost@{sewageCost}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{sewageCost}{sewageCost}}
+{\footnotesize\ttfamily int Buildings\+::sewage\+Cost\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sewage cost associated with the building in currency units. \mbox{\Hypertarget{classBuildings_a4befd4aa1ecedd685f1792e9d9cab4c8}\label{classBuildings_a4befd4aa1ecedd685f1792e9d9cab4c8}} 
+\index{Buildings@{Buildings}!state@{state}}
+\index{state@{state}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classState}{State}}$\ast$ Buildings\+::state}
+
+Pointer to the state of the building. \mbox{\Hypertarget{classBuildings_ac8c0debb07dcf0555a28be710377fc36}\label{classBuildings_ac8c0debb07dcf0555a28be710377fc36}} 
+\index{Buildings@{Buildings}!waterReq@{waterReq}}
+\index{waterReq@{waterReq}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{waterReq}{waterReq}}
+{\footnotesize\ttfamily int Buildings\+::water\+Req\hspace{0.3cm}{\ttfamily [protected]}}
+
+Water requirement of the building in liters. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{Buildings_8h}{Buildings.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Buildings.\+cpp\end{DoxyCompactItemize}

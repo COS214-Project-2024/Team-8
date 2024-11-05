@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacedoctest_1_1Color" kind="namespace" language="C++">
+    <compoundname>doctest::Color</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="doctest_8h_1a32e9eaf6013139846e848af6e6cf2b92" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Enum</name>
+        <enumvalue id="doctest_8h_1a32e9eaf6013139846e848af6e6cf2b92a82bb3f0edc1798267a82ac34c1c098f2" prot="public">
+          <name>None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1a32e9eaf6013139846e848af6e6cf2b92a0bf060b447441fbf2e4beeb25370a808" prot="public">
+          <name>White</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1a32e9eaf6013139846e848af6e6cf2b92a67beb0a8d937993ad8b8cf6a238271f9" prot="public">
+          <name>Red</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1a32e9eaf6013139846e848af6e6cf2b92a11e251a01549ffbc0993c769e787c6ae" prot="public">
+          <name>Green</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1a32e9eaf6013139846e848af6e6cf2b92aada3ad8958b1319450cc20f3f8e5e2d6" prot="public">
+          <name>Blue</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1a32e9eaf6013139846e848af6e6cf2b92aee19aacebbc04b150add359e94684c83" prot="public">
+          <name>Cyan</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1a32e9eaf6013139846e848af6e6cf2b92a5da6111e5be1d7b01de0ee571cc1bc76" prot="public">
+          <name>Yellow</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1a32e9eaf6013139846e848af6e6cf2b92aa2a431a059ed0e85160db8967c8ace58" prot="public">
+          <name>Grey</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1a32e9eaf6013139846e848af6e6cf2b92a7659647d16a78c607f9bafaa207b9e07" prot="public">
+          <name>Bright</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1a32e9eaf6013139846e848af6e6cf2b92a236dfdbcd49d10dbf1a31f9e2947a671" prot="public">
+          <name>BrightRed</name>
+          <initializer>= Bright | Red</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1a32e9eaf6013139846e848af6e6cf2b92a016090b96620a42a63dadf0265977664" prot="public">
+          <name>BrightGreen</name>
+          <initializer>= Bright | Green</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1a32e9eaf6013139846e848af6e6cf2b92a44f079a43a4709abd7d6f22b317838a2" prot="public">
+          <name>LightGrey</name>
+          <initializer>= Bright | Grey</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1a32e9eaf6013139846e848af6e6cf2b92a4f80853796b4875d61ff5e4ad138492e" prot="public">
+          <name>BrightWhite</name>
+          <initializer>= Bright | White</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="691" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="692" bodyend="708"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="doctest_8h_1a675253fc8ae3b6d67b40649f3ee7fccf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE <ref refid="classstd_1_1basic__ostream" kindref="compound">std::ostream</ref> &amp;</type>
+        <definition>DOCTEST_INTERFACE std::ostream&amp; doctest::Color::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;s, Color::Enum code)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type><ref refid="classstd_1_1basic__ostream" kindref="compound">std::ostream</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>Color::Enum</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="710" column="23" declfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" declline="710" declcolumn="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="690" column="1"/>
+  </compounddef>
+</doxygen>

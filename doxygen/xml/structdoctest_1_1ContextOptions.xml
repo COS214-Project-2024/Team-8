@@ -1,0 +1,585 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1ContextOptions" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::ContextOptions</compoundname>
+    <includes refid="doctest_8h" local="no">doctest.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a1ee59adf440880ebd7b31516471ddcab" prot="public" static="no" mutable="no">
+        <type><ref refid="classstd_1_1basic__ostream" kindref="compound">std::ostream</ref> *</type>
+        <definition>std::ostream* doctest::ContextOptions::cout</definition>
+        <argsstring></argsstring>
+        <name>cout</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="895" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="895" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a0590006b4d10296c9a697e32ff886f74" prot="public" static="no" mutable="no">
+        <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref></type>
+        <definition>String doctest::ContextOptions::binary_name</definition>
+        <argsstring></argsstring>
+        <name>binary_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="896" column="19" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="896" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a11af202a87045ba03482bf65c0a7f0bb" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structdoctest_1_1detail_1_1TestCase" kindref="compound">detail::TestCase</ref> *</type>
+        <definition>const detail::TestCase* doctest::ContextOptions::currentTest</definition>
+        <argsstring></argsstring>
+        <name>currentTest</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="898" column="28" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="898" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a51b278efd4662f92bb3f7eb6a57974ba" prot="public" static="no" mutable="no">
+        <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref></type>
+        <definition>String doctest::ContextOptions::out</definition>
+        <argsstring></argsstring>
+        <name>out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="901" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="901" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a397c99d733e24fc87f8da6f6eda855da" prot="public" static="no" mutable="no">
+        <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref></type>
+        <definition>String doctest::ContextOptions::order_by</definition>
+        <argsstring></argsstring>
+        <name>order_by</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="902" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="902" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1ab312bdc6f3c16646f04f75742f87ce0a" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned doctest::ContextOptions::rand_seed</definition>
+        <argsstring></argsstring>
+        <name>rand_seed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="903" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="903" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a9f26ee60a5259e73f9f25ce3f4883a97" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned doctest::ContextOptions::first</definition>
+        <argsstring></argsstring>
+        <name>first</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="905" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="905" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a5aaf1b28f6a46d8acb40898a502b6bef" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned doctest::ContextOptions::last</definition>
+        <argsstring></argsstring>
+        <name>last</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="906" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="906" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a8ba5bfec2229bc2da9ab917f4bdee5e7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int doctest::ContextOptions::abort_after</definition>
+        <argsstring></argsstring>
+        <name>abort_after</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="908" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="908" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a93281aa958eed5c2a1533d404b1ebeff" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int doctest::ContextOptions::subcase_filter_levels</definition>
+        <argsstring></argsstring>
+        <name>subcase_filter_levels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="909" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="909" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a5c7bc4cf57fadf73e626666a0a548b92" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::success</definition>
+        <argsstring></argsstring>
+        <name>success</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="911" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="911" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a08571475229452c2eb933da314a74dff" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::case_sensitive</definition>
+        <argsstring></argsstring>
+        <name>case_sensitive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="912" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="912" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a85d785559ea88e0bd61890f77f00a82f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::exit</definition>
+        <argsstring></argsstring>
+        <name>exit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="913" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="913" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a0fc3e0c1cf669cffd1f826c005fc4223" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="914" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="914" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a8c6275483e0d57f1ec012b3ddceaec3a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::minimal</definition>
+        <argsstring></argsstring>
+        <name>minimal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="915" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="915" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a2c1008b57ee51ad2c4917246b17b0ad6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::quiet</definition>
+        <argsstring></argsstring>
+        <name>quiet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="916" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="916" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a642d847a76880d946bdd62b35eba3f63" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::no_throw</definition>
+        <argsstring></argsstring>
+        <name>no_throw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="917" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="917" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1adcbcab2df10d87307a4754ac9588d35f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::no_exitcode</definition>
+        <argsstring></argsstring>
+        <name>no_exitcode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="918" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="918" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1aad35f517c65f792ddc72a672d9014222" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::no_run</definition>
+        <argsstring></argsstring>
+        <name>no_run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="919" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="919" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a32b72d5158f3d58c97dfb32660ff1362" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::no_intro</definition>
+        <argsstring></argsstring>
+        <name>no_intro</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="920" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="920" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1ad7371979d5134b109dd00fba771b0271" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::no_version</definition>
+        <argsstring></argsstring>
+        <name>no_version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="921" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="921" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a4fc9b6673b818b8cb5969725f16b59c3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::no_colors</definition>
+        <argsstring></argsstring>
+        <name>no_colors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="922" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="922" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a8cd276e86a209f3d5486eb6c5a2a29bf" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::force_colors</definition>
+        <argsstring></argsstring>
+        <name>force_colors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="923" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="923" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1af82a6fc802b8ed33a84ea96e85b0d911" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::no_breaks</definition>
+        <argsstring></argsstring>
+        <name>no_breaks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="924" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="924" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a56344ffa781ee4da6cbf3f6c11da8564" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::no_skip</definition>
+        <argsstring></argsstring>
+        <name>no_skip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="925" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="925" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1aab894e731a6fc86cf095288ec7d0c0f2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::gnu_file_line</definition>
+        <argsstring></argsstring>
+        <name>gnu_file_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="926" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="926" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a1e9a8bf8feba5cfe25558e5977c4bd7c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::no_path_in_filenames</definition>
+        <argsstring></argsstring>
+        <name>no_path_in_filenames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="927" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="927" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a880207c3b4cc98fc5c8d94998841e837" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::no_line_numbers</definition>
+        <argsstring></argsstring>
+        <name>no_line_numbers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="928" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="928" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1adf3de2cd7c8a2be559a40b1ed7e80960" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::no_debug_output</definition>
+        <argsstring></argsstring>
+        <name>no_debug_output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="929" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="929" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a4e22eec59e63ed4ff6ab4dfce2389c99" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::no_skipped_summary</definition>
+        <argsstring></argsstring>
+        <name>no_skipped_summary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="930" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="930" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a7932d4aa0f360efec8cc201ec63c8366" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::no_time_in_output</definition>
+        <argsstring></argsstring>
+        <name>no_time_in_output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="931" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="931" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a9d542a95ee03f61c233fff51e7461400" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::help</definition>
+        <argsstring></argsstring>
+        <name>help</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="933" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="933" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a08931527a9e5e634e64a336e5493a7c1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="934" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="934" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a4651b5efbaf2ffc03d60fb4140d21dd3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="935" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="935" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a813e1543c358ab8a7a432b4ad2b32e56" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::list_test_cases</definition>
+        <argsstring></argsstring>
+        <name>list_test_cases</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="936" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="936" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1a579399a66b278cbf96b6183d337f486b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::list_test_suites</definition>
+        <argsstring></argsstring>
+        <name>list_test_suites</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="937" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="937" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1ContextOptions_1ad3daf077ac3182db5175f8baff49fce0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::ContextOptions::list_reporters</definition>
+        <argsstring></argsstring>
+        <name>list_reporters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="938" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="938" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>OCLINT too many fields. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>doctest::ContextOptions</label>
+        <link refid="structdoctest_1_1ContextOptions"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>binary_name</edgelabel>
+          <edgelabel>order_by</edgelabel>
+          <edgelabel>out</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>currentTest</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>cout</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>doctest::detail::TestCase</label>
+        <link refid="structdoctest_1_1detail_1_1TestCase"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_full_name</edgelabel>
+          <edgelabel>m_type</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>doctest::String::view</label>
+      </node>
+      <node id="5">
+        <label>doctest::TestCaseData</label>
+        <link refid="structdoctest_1_1TestCaseData"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_file</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>doctest::String</label>
+        <link refid="classdoctest_1_1String"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::basic_ostream&lt; charT, traits &gt;</label>
+        <link refid="classstd_1_1basic__ostream"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="893" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="894" bodyend="939"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1ContextOptions_1a8ba5bfec2229bc2da9ab917f4bdee5e7" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>abort_after</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a0590006b4d10296c9a697e32ff886f74" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>binary_name</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a08571475229452c2eb933da314a74dff" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>case_sensitive</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a4651b5efbaf2ffc03d60fb4140d21dd3" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>count</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a1ee59adf440880ebd7b31516471ddcab" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>cout</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a11af202a87045ba03482bf65c0a7f0bb" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>currentTest</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a0fc3e0c1cf669cffd1f826c005fc4223" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>duration</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a85d785559ea88e0bd61890f77f00a82f" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>exit</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a9f26ee60a5259e73f9f25ce3f4883a97" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>first</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a8cd276e86a209f3d5486eb6c5a2a29bf" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>force_colors</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1aab894e731a6fc86cf095288ec7d0c0f2" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>gnu_file_line</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a9d542a95ee03f61c233fff51e7461400" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>help</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a5aaf1b28f6a46d8acb40898a502b6bef" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>last</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1ad3daf077ac3182db5175f8baff49fce0" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>list_reporters</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a813e1543c358ab8a7a432b4ad2b32e56" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>list_test_cases</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a579399a66b278cbf96b6183d337f486b" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>list_test_suites</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a8c6275483e0d57f1ec012b3ddceaec3a" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>minimal</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1af82a6fc802b8ed33a84ea96e85b0d911" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>no_breaks</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a4fc9b6673b818b8cb5969725f16b59c3" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>no_colors</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1adf3de2cd7c8a2be559a40b1ed7e80960" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>no_debug_output</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1adcbcab2df10d87307a4754ac9588d35f" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>no_exitcode</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a32b72d5158f3d58c97dfb32660ff1362" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>no_intro</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a880207c3b4cc98fc5c8d94998841e837" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>no_line_numbers</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a1e9a8bf8feba5cfe25558e5977c4bd7c" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>no_path_in_filenames</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1aad35f517c65f792ddc72a672d9014222" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>no_run</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a56344ffa781ee4da6cbf3f6c11da8564" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>no_skip</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a4e22eec59e63ed4ff6ab4dfce2389c99" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>no_skipped_summary</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a642d847a76880d946bdd62b35eba3f63" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>no_throw</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a7932d4aa0f360efec8cc201ec63c8366" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>no_time_in_output</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1ad7371979d5134b109dd00fba771b0271" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>no_version</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a397c99d733e24fc87f8da6f6eda855da" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>order_by</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a51b278efd4662f92bb3f7eb6a57974ba" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>out</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a2c1008b57ee51ad2c4917246b17b0ad6" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>quiet</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1ab312bdc6f3c16646f04f75742f87ce0a" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>rand_seed</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a93281aa958eed5c2a1533d404b1ebeff" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>subcase_filter_levels</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a5c7bc4cf57fadf73e626666a0a548b92" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>success</name></member>
+      <member refid="structdoctest_1_1ContextOptions_1a08931527a9e5e634e64a336e5493a7c1" prot="public" virt="non-virtual"><scope>doctest::ContextOptions</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

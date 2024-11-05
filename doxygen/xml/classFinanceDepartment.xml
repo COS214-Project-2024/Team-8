@@ -1,0 +1,758 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classFinanceDepartment" kind="class" language="C++" prot="public">
+    <compoundname>FinanceDepartment</compoundname>
+    <includes refid="FinanceDepartment_8h" local="no">FinanceDepartment.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFinanceDepartment_1a215cf021e0bbdf1e1a5b40cb00f589a3" prot="private" static="no" mutable="no">
+        <type><ref refid="classResidentialTaxationSystem" kindref="compound">ResidentialTaxationSystem</ref> *</type>
+        <definition>ResidentialTaxationSystem* FinanceDepartment::residentialTaxation</definition>
+        <argsstring></argsstring>
+        <name>residentialTaxation</name>
+        <briefdescription>
+<para>Pointer to the residential taxation system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="29" column="31" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFinanceDepartment_1a40d2583cd13c327e50b4614cd00f8a24" prot="private" static="no" mutable="no">
+        <type><ref refid="classCommercialTaxationSystem" kindref="compound">CommercialTaxationSystem</ref> *</type>
+        <definition>CommercialTaxationSystem* FinanceDepartment::businessTaxation</definition>
+        <argsstring></argsstring>
+        <name>businessTaxation</name>
+        <briefdescription>
+<para>Pointer to the commercial taxation system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="31" column="30" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFinanceDepartment_1ae56935b05b548d591688f12b2569b4e6" prot="private" static="no" mutable="no">
+        <type><ref refid="classBudgetAllocationSystem" kindref="compound">BudgetAllocationSystem</ref> *</type>
+        <definition>BudgetAllocationSystem* FinanceDepartment::budgetAllocation</definition>
+        <argsstring></argsstring>
+        <name>budgetAllocation</name>
+        <briefdescription>
+<para>Pointer to the budget allocation system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="33" column="28" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFinanceDepartment_1ad3609e79d7edc6bfa4acae0c3e0ac51f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classCitizenInterface" kindref="compound">CitizenInterface</ref> * &gt;</type>
+        <definition>std::vector&lt;CitizenInterface *&gt; FinanceDepartment::residentsList</definition>
+        <argsstring></argsstring>
+        <name>residentsList</name>
+        <briefdescription>
+<para>List of all residents/citizens. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="35" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFinanceDepartment_1a14c83f1699965802347cab570430c61c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classBuildings" kindref="compound">Buildings</ref> * &gt;</type>
+        <definition>std::vector&lt;Buildings *&gt; FinanceDepartment::commercialBuildingsList</definition>
+        <argsstring></argsstring>
+        <name>commercialBuildingsList</name>
+        <briefdescription>
+<para>List of all commercial buildings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="37" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFinanceDepartment_1ad99bc85324c01946793e6324b538e217" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FinanceDepartment::incomeTaxRate</definition>
+        <argsstring></argsstring>
+        <name>incomeTaxRate</name>
+        <briefdescription>
+<para>Residential income tax rate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="39" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFinanceDepartment_1a9bbb77f8dc5436c083d9639e615f050f" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FinanceDepartment::propertyTaxRate</definition>
+        <argsstring></argsstring>
+        <name>propertyTaxRate</name>
+        <briefdescription>
+<para>Residential property tax rate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="41" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFinanceDepartment_1a1c70af53598e501a2bc3c5cdd557ba7a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FinanceDepartment::businessTaxRate</definition>
+        <argsstring></argsstring>
+        <name>businessTaxRate</name>
+        <briefdescription>
+<para>Commercial business tax rate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="43" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFinanceDepartment_1a695396858bd08ef4f59c957af7ab6c74" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FinanceDepartment::salesTaxRate</definition>
+        <argsstring></argsstring>
+        <name>salesTaxRate</name>
+        <briefdescription>
+<para>Commercial sales tax rate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="45" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFinanceDepartment_1acf82f225c2ce6156e66449b8485019ce" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FinanceDepartment::totalBusinessSales</definition>
+        <argsstring></argsstring>
+        <name>totalBusinessSales</name>
+        <briefdescription>
+<para>Total business sales. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="47" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFinanceDepartment_1aad8d880fec4ae6bed1f248f8267426cb" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FinanceDepartment::totalBusinessProfits</definition>
+        <argsstring></argsstring>
+        <name>totalBusinessProfits</name>
+        <briefdescription>
+<para>Total business profits. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="49" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFinanceDepartment_1ad24abdfd2f7b45c738daf8dd2a6a9175" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FinanceDepartment::totalResidentsIncomes</definition>
+        <argsstring></argsstring>
+        <name>totalResidentsIncomes</name>
+        <briefdescription>
+<para>Total residents&apos; incomes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="51" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFinanceDepartment_1a3e0716aa0bb2fb813197e177bf072703" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FinanceDepartment::availableFunds</definition>
+        <argsstring></argsstring>
+        <name>availableFunds</name>
+        <briefdescription>
+<para>Total available funds in the Finance Department. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="53" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFinanceDepartment_1ae7d9257ecc1e1d2507985c5fb48ca8ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FinanceDepartment::FinanceDepartment</definition>
+        <argsstring>()</argsstring>
+        <name>FinanceDepartment</name>
+        <briefdescription>
+<para>Constructs a new <ref refid="classFinanceDepartment" kindref="compound">FinanceDepartment</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="59" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="13" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a2d38ee3067f27f02ce728bc336ef499b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FinanceDepartment::~FinanceDepartment</definition>
+        <argsstring>()</argsstring>
+        <name>~FinanceDepartment</name>
+        <briefdescription>
+<para>Destroys the <ref refid="classFinanceDepartment" kindref="compound">FinanceDepartment</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="64" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="26" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a01ce6eee00d82e55b95bc4e5ae4f7240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FinanceDepartment::setAvailableFunds</definition>
+        <argsstring>(double totalRevenue)</argsstring>
+        <name>setAvailableFunds</name>
+        <param>
+          <type>double</type>
+          <declname>totalRevenue</declname>
+        </param>
+        <briefdescription>
+<para>Sets the available funds for the finance department. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>totalRevenue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total revenue collected </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="70" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1ad22f9b22ab034bd4592c760faae9ef1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FinanceDepartment::setResidentialIncomeTaxRate</definition>
+        <argsstring>(double incomeTaxRate)</argsstring>
+        <name>setResidentialIncomeTaxRate</name>
+        <param>
+          <type>double</type>
+          <declname>incomeTaxRate</declname>
+        </param>
+        <briefdescription>
+<para>Sets the residential income tax rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>incomeTaxRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new income tax rate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="76" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a1a1274b5ca5921202b3f2ee6f29fb135" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FinanceDepartment::setResidentialPropertyTaxRate</definition>
+        <argsstring>(double propertyTaxRate)</argsstring>
+        <name>setResidentialPropertyTaxRate</name>
+        <param>
+          <type>double</type>
+          <declname>propertyTaxRate</declname>
+        </param>
+        <briefdescription>
+<para>Sets the residential property tax rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>propertyTaxRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new property tax rate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="82" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a9975ab6cc5c10e8d3bf671f6f8330218" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FinanceDepartment::setCommercialBusinessTaxRate</definition>
+        <argsstring>(double businessTaxRate)</argsstring>
+        <name>setCommercialBusinessTaxRate</name>
+        <param>
+          <type>double</type>
+          <declname>businessTaxRate</declname>
+        </param>
+        <briefdescription>
+<para>Sets the commercial business tax rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>businessTaxRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new business tax rate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="88" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a884ad41f8e62c3e4ab42591c93332212" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FinanceDepartment::setCommercialSalesTaxRate</definition>
+        <argsstring>(double salesTaxRate)</argsstring>
+        <name>setCommercialSalesTaxRate</name>
+        <param>
+          <type>double</type>
+          <declname>salesTaxRate</declname>
+        </param>
+        <briefdescription>
+<para>Sets the commercial sales tax rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>salesTaxRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new sales tax rate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="94" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a35f626c660c396e0b9206e8d55a79fa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FinanceDepartment::getResidentialIncomeTaxRate</definition>
+        <argsstring>()</argsstring>
+        <name>getResidentialIncomeTaxRate</name>
+        <briefdescription>
+<para>Gets the residential income tax rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current residential income tax rate </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="100" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a2e2939cbe5b4261d0ffb0db6a43bb456" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FinanceDepartment::getResidentialPropertyTaxRate</definition>
+        <argsstring>()</argsstring>
+        <name>getResidentialPropertyTaxRate</name>
+        <briefdescription>
+<para>Gets the residential property tax rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current residential property tax rate </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="106" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a87d1a1ae340beb1a1b432b3f953e8350" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FinanceDepartment::getCommercialBusinessTaxRate</definition>
+        <argsstring>()</argsstring>
+        <name>getCommercialBusinessTaxRate</name>
+        <briefdescription>
+<para>Gets the commercial business tax rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current commercial business tax rate </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="112" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="84" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1accd27a568e62f4d963f73f5ed4e3d1e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FinanceDepartment::getCommercialSalesTaxRate</definition>
+        <argsstring>()</argsstring>
+        <name>getCommercialSalesTaxRate</name>
+        <briefdescription>
+<para>Gets the commercial sales tax rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current commercial sales tax rate </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="118" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1af2ea5238f8099bc20b85a23afd776b15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FinanceDepartment::getAvailableFunds</definition>
+        <argsstring>()</argsstring>
+        <name>getAvailableFunds</name>
+        <briefdescription>
+<para>Gets the available funds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current available funds </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="124" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a6b91c32dfff3d045fcb7d77a9ba80dbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FinanceDepartment::delegateRequestForCollectionOffPropertyTax</definition>
+        <argsstring>()</argsstring>
+        <name>delegateRequestForCollectionOffPropertyTax</name>
+        <briefdescription>
+<para>Delegates the request for collection of property tax. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The total property tax collected </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="130" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="94" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a8ac998b8b16c2f4702a87026d71b509c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FinanceDepartment::delegateRequestForCollectionOffIncomeTax</definition>
+        <argsstring>()</argsstring>
+        <name>delegateRequestForCollectionOffIncomeTax</name>
+        <briefdescription>
+<para>Delegates the request for collection of income tax. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The total income tax collected </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="136" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="114" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1afdd6132919201f95f00488d7667f4c34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FinanceDepartment::delegateRequestForCollectionOfBusinessTax</definition>
+        <argsstring>()</argsstring>
+        <name>delegateRequestForCollectionOfBusinessTax</name>
+        <briefdescription>
+<para>Delegates the request for collection of business tax. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The total business tax collected </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="142" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="150" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a121e817acdb25f91f0f33cbcc04cafb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FinanceDepartment::delegateRequestForCollectionOfSalesTax</definition>
+        <argsstring>()</argsstring>
+        <name>delegateRequestForCollectionOfSalesTax</name>
+        <briefdescription>
+<para>Delegates the request for collection of sales tax. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The total sales tax collected </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="148" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="176" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a28d09fe347e09fe37ee460f6cfc72eec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FinanceDepartment::delegateRequestForAllocationOfPublicServiceBuildingsFunds</definition>
+        <argsstring>()</argsstring>
+        <name>delegateRequestForAllocationOfPublicServiceBuildingsFunds</name>
+        <briefdescription>
+<para>Delegates the request for allocation of funds for public service buildings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The amount of funds allocated </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="154" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="203" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a68c8c38897f69ab694e4a4ecf512953a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FinanceDepartment::delegateRequestForAllocationOfUtilitiesFunds</definition>
+        <argsstring>()</argsstring>
+        <name>delegateRequestForAllocationOfUtilitiesFunds</name>
+        <briefdescription>
+<para>Delegates the request for allocation of funds for utilities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The amount of funds allocated </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="160" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="185" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a42d5278160589be6772abf7493c6700c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FinanceDepartment::delegateRequestForAllocationOfTransportInfrastructureFunds</definition>
+        <argsstring>()</argsstring>
+        <name>delegateRequestForAllocationOfTransportInfrastructureFunds</name>
+        <briefdescription>
+<para>Delegates the request for allocation of funds for transport infrastructure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The amount of funds allocated </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="166" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="195" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a44ac508d1dd2274e487b7c5200bbc82e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FinanceDepartment::delegateRequestForAllocationOfLandmarkBuildingsFunds</definition>
+        <argsstring>()</argsstring>
+        <name>delegateRequestForAllocationOfLandmarkBuildingsFunds</name>
+        <briefdescription>
+<para>Delegates the request for allocation of funds for landmark buildings (synonymous with recreation) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The amount of funds allocated </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="172" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="212" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a2a6597b80445fad431907cc4cfd32f25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FinanceDepartment::calculateTotalResidentsIncome</definition>
+        <argsstring>()</argsstring>
+        <name>calculateTotalResidentsIncome</name>
+        <briefdescription>
+<para>Calculates the total residents&apos; income. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The total residents&apos; income </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="178" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="221" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a28055279efa7e2157464d71ada82e741" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FinanceDepartment::calculateTotalBusinessProfit</definition>
+        <argsstring>()</argsstring>
+        <name>calculateTotalBusinessProfit</name>
+        <briefdescription>
+<para>Calculates the total business profit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The total business profit </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="184" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="236" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a04e1df2d505d52a8eb27ab61d6e2134c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FinanceDepartment::calculateTotalBusinessSale</definition>
+        <argsstring>()</argsstring>
+        <name>calculateTotalBusinessSale</name>
+        <briefdescription>
+<para>Calculates the total business sales. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The total business sales </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="190" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="249" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a4300c2de72b7f201dc057a207b5038d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FinanceDepartment::addResidents</definition>
+        <argsstring>(CitizenInterface *resident)</argsstring>
+        <name>addResidents</name>
+        <param>
+          <type><ref refid="classCitizenInterface" kindref="compound">CitizenInterface</ref> *</type>
+          <declname>resident</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new resident to the residents list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resident</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <ref refid="classCitizenInterface" kindref="compound">CitizenInterface</ref> object to be added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="197" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="262" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a3d36328489b964a07edecd6502169dcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FinanceDepartment::addCommercialBuilding</definition>
+        <argsstring>(CommercialBuilding *commercialBuilding)</argsstring>
+        <name>addCommercialBuilding</name>
+        <param>
+          <type><ref refid="classCommercialBuilding" kindref="compound">CommercialBuilding</ref> *</type>
+          <declname>commercialBuilding</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new commercial building to the commercial buildings list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>commercialBuilding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <ref refid="classCommercialBuilding" kindref="compound">CommercialBuilding</ref> object to be added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="204" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="270" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classFinanceDepartment_1a692c4774b8714966111a31abb3a9807f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FinanceDepartment::delegateRequestForAllocationOfEducationFunds</definition>
+        <argsstring>()</argsstring>
+        <name>delegateRequestForAllocationOfEducationFunds</name>
+        <briefdescription>
+<para>Delegates the request for allocation of funds for education. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The amount of funds allocated for education </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="209" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp" bodystart="275" bodyend="280"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents the finance department of a government that manages taxation and budget allocation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classFinanceDepartment" kindref="compound">FinanceDepartment</ref> class is responsible for collecting taxes from residential and commercial entities, maintaining financial records, and allocating funds for various public services and infrastructure projects. </para>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" line="25" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h" bodystart="26" bodyend="210"/>
+    <listofallmembers>
+      <member refid="classFinanceDepartment_1a3d36328489b964a07edecd6502169dcc" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>addCommercialBuilding</name></member>
+      <member refid="classFinanceDepartment_1a4300c2de72b7f201dc057a207b5038d4" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>addResidents</name></member>
+      <member refid="classFinanceDepartment_1a3e0716aa0bb2fb813197e177bf072703" prot="private" virt="non-virtual"><scope>FinanceDepartment</scope><name>availableFunds</name></member>
+      <member refid="classFinanceDepartment_1ae56935b05b548d591688f12b2569b4e6" prot="private" virt="non-virtual"><scope>FinanceDepartment</scope><name>budgetAllocation</name></member>
+      <member refid="classFinanceDepartment_1a40d2583cd13c327e50b4614cd00f8a24" prot="private" virt="non-virtual"><scope>FinanceDepartment</scope><name>businessTaxation</name></member>
+      <member refid="classFinanceDepartment_1a1c70af53598e501a2bc3c5cdd557ba7a" prot="private" virt="non-virtual"><scope>FinanceDepartment</scope><name>businessTaxRate</name></member>
+      <member refid="classFinanceDepartment_1a28055279efa7e2157464d71ada82e741" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>calculateTotalBusinessProfit</name></member>
+      <member refid="classFinanceDepartment_1a04e1df2d505d52a8eb27ab61d6e2134c" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>calculateTotalBusinessSale</name></member>
+      <member refid="classFinanceDepartment_1a2a6597b80445fad431907cc4cfd32f25" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>calculateTotalResidentsIncome</name></member>
+      <member refid="classFinanceDepartment_1a14c83f1699965802347cab570430c61c" prot="private" virt="non-virtual"><scope>FinanceDepartment</scope><name>commercialBuildingsList</name></member>
+      <member refid="classFinanceDepartment_1a692c4774b8714966111a31abb3a9807f" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>delegateRequestForAllocationOfEducationFunds</name></member>
+      <member refid="classFinanceDepartment_1a44ac508d1dd2274e487b7c5200bbc82e" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>delegateRequestForAllocationOfLandmarkBuildingsFunds</name></member>
+      <member refid="classFinanceDepartment_1a28d09fe347e09fe37ee460f6cfc72eec" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>delegateRequestForAllocationOfPublicServiceBuildingsFunds</name></member>
+      <member refid="classFinanceDepartment_1a42d5278160589be6772abf7493c6700c" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>delegateRequestForAllocationOfTransportInfrastructureFunds</name></member>
+      <member refid="classFinanceDepartment_1a68c8c38897f69ab694e4a4ecf512953a" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>delegateRequestForAllocationOfUtilitiesFunds</name></member>
+      <member refid="classFinanceDepartment_1afdd6132919201f95f00488d7667f4c34" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>delegateRequestForCollectionOfBusinessTax</name></member>
+      <member refid="classFinanceDepartment_1a8ac998b8b16c2f4702a87026d71b509c" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>delegateRequestForCollectionOffIncomeTax</name></member>
+      <member refid="classFinanceDepartment_1a6b91c32dfff3d045fcb7d77a9ba80dbb" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>delegateRequestForCollectionOffPropertyTax</name></member>
+      <member refid="classFinanceDepartment_1a121e817acdb25f91f0f33cbcc04cafb6" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>delegateRequestForCollectionOfSalesTax</name></member>
+      <member refid="classFinanceDepartment_1ae7d9257ecc1e1d2507985c5fb48ca8ed" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>FinanceDepartment</name></member>
+      <member refid="classFinanceDepartment_1af2ea5238f8099bc20b85a23afd776b15" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>getAvailableFunds</name></member>
+      <member refid="classFinanceDepartment_1a87d1a1ae340beb1a1b432b3f953e8350" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>getCommercialBusinessTaxRate</name></member>
+      <member refid="classFinanceDepartment_1accd27a568e62f4d963f73f5ed4e3d1e6" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>getCommercialSalesTaxRate</name></member>
+      <member refid="classFinanceDepartment_1a35f626c660c396e0b9206e8d55a79fa1" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>getResidentialIncomeTaxRate</name></member>
+      <member refid="classFinanceDepartment_1a2e2939cbe5b4261d0ffb0db6a43bb456" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>getResidentialPropertyTaxRate</name></member>
+      <member refid="classFinanceDepartment_1ad99bc85324c01946793e6324b538e217" prot="private" virt="non-virtual"><scope>FinanceDepartment</scope><name>incomeTaxRate</name></member>
+      <member refid="classFinanceDepartment_1a9bbb77f8dc5436c083d9639e615f050f" prot="private" virt="non-virtual"><scope>FinanceDepartment</scope><name>propertyTaxRate</name></member>
+      <member refid="classFinanceDepartment_1a215cf021e0bbdf1e1a5b40cb00f589a3" prot="private" virt="non-virtual"><scope>FinanceDepartment</scope><name>residentialTaxation</name></member>
+      <member refid="classFinanceDepartment_1ad3609e79d7edc6bfa4acae0c3e0ac51f" prot="private" virt="non-virtual"><scope>FinanceDepartment</scope><name>residentsList</name></member>
+      <member refid="classFinanceDepartment_1a695396858bd08ef4f59c957af7ab6c74" prot="private" virt="non-virtual"><scope>FinanceDepartment</scope><name>salesTaxRate</name></member>
+      <member refid="classFinanceDepartment_1a01ce6eee00d82e55b95bc4e5ae4f7240" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>setAvailableFunds</name></member>
+      <member refid="classFinanceDepartment_1a9975ab6cc5c10e8d3bf671f6f8330218" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>setCommercialBusinessTaxRate</name></member>
+      <member refid="classFinanceDepartment_1a884ad41f8e62c3e4ab42591c93332212" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>setCommercialSalesTaxRate</name></member>
+      <member refid="classFinanceDepartment_1ad22f9b22ab034bd4592c760faae9ef1a" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>setResidentialIncomeTaxRate</name></member>
+      <member refid="classFinanceDepartment_1a1a1274b5ca5921202b3f2ee6f29fb135" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>setResidentialPropertyTaxRate</name></member>
+      <member refid="classFinanceDepartment_1aad8d880fec4ae6bed1f248f8267426cb" prot="private" virt="non-virtual"><scope>FinanceDepartment</scope><name>totalBusinessProfits</name></member>
+      <member refid="classFinanceDepartment_1acf82f225c2ce6156e66449b8485019ce" prot="private" virt="non-virtual"><scope>FinanceDepartment</scope><name>totalBusinessSales</name></member>
+      <member refid="classFinanceDepartment_1ad24abdfd2f7b45c738daf8dd2a6a9175" prot="private" virt="non-virtual"><scope>FinanceDepartment</scope><name>totalResidentsIncomes</name></member>
+      <member refid="classFinanceDepartment_1a2d38ee3067f27f02ce728bc336ef499b" prot="public" virt="non-virtual"><scope>FinanceDepartment</scope><name>~FinanceDepartment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

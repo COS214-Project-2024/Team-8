@@ -1,0 +1,412 @@
+\hypertarget{classMedicalCenter}{}\doxysection{Medical\+Center Class Reference}
+\label{classMedicalCenter}\index{MedicalCenter@{MedicalCenter}}
+
+
+Represents a medical center, inheriting from \mbox{\hyperlink{classPublicServiceBuilding}{Public\+Service\+Building}}.  
+
+
+
+
+{\ttfamily \#include $<$Medical\+Center.\+h$>$}
+
+
+
+Inheritance diagram for Medical\+Center\+:
+% FIG 0
+
+
+Collaboration diagram for Medical\+Center\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMedicalCenter_aa550241e7a9ca8795e3ab207902d324b}{Medical\+Center}} (string b\+Name, int p\+Req, int w\+Req, double m\+Cost, int s\+Cost, int \mbox{\hyperlink{classMedicalCenter_a9c34189c188635d506fcc9401ac93431}{waste}}, int \mbox{\hyperlink{classMedicalCenter_a5b2271131e5f975fda0f726f99b43a05}{employment}}, float h\+Cov)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classMedicalCenter}{Medical\+Center}} object. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classMedicalCenter_aa302e910a8e18ca176cbeb50e2cba201}{get\+Building\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Gets the type of the building. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classMedicalCenter_aa0f1f54a790c63c5114280c9807d5725}{get\+Water\+Req}} ()
+\begin{DoxyCompactList}\small\item\em Gets the water requirements of the police station. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classMedicalCenter_af726a9c952e9e47aaf6bb82a4f877fde}{get\+Jobs\+Created}} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of jobs created by the police station. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classMedicalCenter_a00227998395267fe807c43b215d7556d}{get\+Maintenance\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the maintenance cost of the police station. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classMedicalCenter_aff73a62d67ec1b53bd8a8e659dd1942e}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the police station. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classMedicalCenter_a4a1209e2f0c525b1e77f94c32ced237b}{get\+Power\+Req}} ()
+\begin{DoxyCompactList}\small\item\em Gets the power requirements of the police station. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classMedicalCenter_a39922a070eb7664c5706181ee9726334}{get\+Sewage\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the sewage cost of the police station. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classMedicalCenter_a2eddb52accdad63880ab435e9cf2ca7f}{get\+Waste\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the waste cost for the police station. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMedicalCenter_a1d22b5454e36a8858baac477c3af4004}\label{classMedicalCenter_a1d22b5454e36a8858baac477c3af4004}} 
+virtual void \mbox{\hyperlink{classMedicalCenter_a1d22b5454e36a8858baac477c3af4004}{request\+State}} ()
+\begin{DoxyCompactList}\small\item\em Requests the current state of the police station. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMedicalCenter_ac84340f4ef9f08425b47027d70886604}\label{classMedicalCenter_ac84340f4ef9f08425b47027d70886604}} 
+void \mbox{\hyperlink{classMedicalCenter_ac84340f4ef9f08425b47027d70886604}{set\+State}} (\mbox{\hyperlink{classState}{State}} $\ast$new\+State)
+\begin{DoxyCompactList}\small\item\em sets the state of the building \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classMedicalCenter_a5de729befc8861441b9884725cb669e1}{add\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Add a building to the \mbox{\hyperlink{classUtility}{Utility}} resource. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classMedicalCenter_ac63f0e957cad47c2f52bae1846ca1c6c}{get\+Power}} ()
+\begin{DoxyCompactList}\small\item\em Receives power for the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classMedicalCenter_af19dc09a9a539927e83474e3ae64c0a8}{get\+Water}} ()
+\begin{DoxyCompactList}\small\item\em Receives water for the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classMedicalCenter_a0f7e9af6c47c27947edd138d607c9839}{clean\+Waste}} ()
+\begin{DoxyCompactList}\small\item\em Cleans the waste of the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classMedicalCenter_a804712792d653350e1fdfec59c992144}{clean\+Sewage}} ()
+\begin{DoxyCompactList}\small\item\em Cleans the sewage of the building. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classMedicalCenter_a20d4a6fdb121abb26251a1b7daf0991e}{get\+Health\+Coverage}} ()
+\begin{DoxyCompactList}\small\item\em Gets the health coverage provided by the medical center. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMedicalCenter_a576620240d995a01356151b82688a47a}{get\+Birth\+Rate}} ()
+\begin{DoxyCompactList}\small\item\em Gets the birth rate supported by the medical center. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classMedicalCenter_a2ddf1ac5d682a1195ba7fafd2660adef}{$\sim$\+Medical\+Center}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classMedicalCenter}{Medical\+Center}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classMedicalCenter_a9c34189c188635d506fcc9401ac93431}{waste}}
+\item 
+int \mbox{\hyperlink{classMedicalCenter_a5b2271131e5f975fda0f726f99b43a05}{employment}}
+\item 
+float \mbox{\hyperlink{classMedicalCenter_a76c3fd32c12511e56159ed51d2dc7b77}{health\+Coverage}}
+\item 
+int \mbox{\hyperlink{classMedicalCenter_a0da82a93433309f70f00b5e274603a67}{birth\+Rate}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a medical center, inheriting from \mbox{\hyperlink{classPublicServiceBuilding}{Public\+Service\+Building}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMedicalCenter_aa550241e7a9ca8795e3ab207902d324b}\label{classMedicalCenter_aa550241e7a9ca8795e3ab207902d324b}} 
+\index{MedicalCenter@{MedicalCenter}!MedicalCenter@{MedicalCenter}}
+\index{MedicalCenter@{MedicalCenter}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{MedicalCenter()}{MedicalCenter()}}
+{\footnotesize\ttfamily Medical\+Center\+::\+Medical\+Center (\begin{DoxyParamCaption}\item[{string}]{b\+Name,  }\item[{int}]{p\+Req,  }\item[{int}]{w\+Req,  }\item[{double}]{m\+Cost,  }\item[{int}]{s\+Cost,  }\item[{int}]{waste,  }\item[{int}]{employment,  }\item[{float}]{h\+Cov }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classMedicalCenter}{Medical\+Center}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+Name} & Name of the medical center. \\
+\hline
+{\em p\+Req} & Power requirement. \\
+\hline
+{\em w\+Req} & Water requirement. \\
+\hline
+{\em m\+Cost} & Maintenance cost. \\
+\hline
+{\em s\+Cost} & Sewage cost. \\
+\hline
+{\em waste} & Waste produced. \\
+\hline
+{\em employment} & Number of employees. \\
+\hline
+{\em h\+Cov} & Health coverage. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMedicalCenter_a2ddf1ac5d682a1195ba7fafd2660adef}\label{classMedicalCenter_a2ddf1ac5d682a1195ba7fafd2660adef}} 
+\index{MedicalCenter@{MedicalCenter}!````~MedicalCenter@{$\sim$MedicalCenter}}
+\index{````~MedicalCenter@{$\sim$MedicalCenter}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{$\sim$MedicalCenter()}{~MedicalCenter()}}
+{\footnotesize\ttfamily Medical\+Center\+::$\sim$\+Medical\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroy the \mbox{\hyperlink{classMedicalCenter}{Medical\+Center}} object. 
+
+Virtual destructor to ensure proper cleanup of derived classes 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMedicalCenter_a5de729befc8861441b9884725cb669e1}\label{classMedicalCenter_a5de729befc8861441b9884725cb669e1}} 
+\index{MedicalCenter@{MedicalCenter}!addBuilding@{addBuilding}}
+\index{addBuilding@{addBuilding}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{addBuilding()}{addBuilding()}}
+{\footnotesize\ttfamily void Medical\+Center\+::add\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Add a building to the \mbox{\hyperlink{classUtility}{Utility}} resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & The building to add to the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classPublicServiceBuilding_ae676c53bdf61d79461cc43addda6b239}{Public\+Service\+Building}}.
+
+\mbox{\Hypertarget{classMedicalCenter_a804712792d653350e1fdfec59c992144}\label{classMedicalCenter_a804712792d653350e1fdfec59c992144}} 
+\index{MedicalCenter@{MedicalCenter}!cleanSewage@{cleanSewage}}
+\index{cleanSewage@{cleanSewage}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{cleanSewage()}{cleanSewage()}}
+{\footnotesize\ttfamily bool Medical\+Center\+::clean\+Sewage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cleans the sewage of the building. 
+
+\begin{DoxyReturn}{Returns}
+true if sewage cleaning was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classPublicServiceBuilding_aec458fbe0aba9fc65e6a7f233c7d8335}{Public\+Service\+Building}}.
+
+\mbox{\Hypertarget{classMedicalCenter_a0f7e9af6c47c27947edd138d607c9839}\label{classMedicalCenter_a0f7e9af6c47c27947edd138d607c9839}} 
+\index{MedicalCenter@{MedicalCenter}!cleanWaste@{cleanWaste}}
+\index{cleanWaste@{cleanWaste}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{cleanWaste()}{cleanWaste()}}
+{\footnotesize\ttfamily bool Medical\+Center\+::clean\+Waste (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cleans the waste of the building. 
+
+\begin{DoxyReturn}{Returns}
+true if waste cleaning was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classPublicServiceBuilding_a5ade12051e423ea1174c4d0a8c3d7451}{Public\+Service\+Building}}.
+
+\mbox{\Hypertarget{classMedicalCenter_a576620240d995a01356151b82688a47a}\label{classMedicalCenter_a576620240d995a01356151b82688a47a}} 
+\index{MedicalCenter@{MedicalCenter}!getBirthRate@{getBirthRate}}
+\index{getBirthRate@{getBirthRate}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{getBirthRate()}{getBirthRate()}}
+{\footnotesize\ttfamily int Medical\+Center\+::get\+Birth\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the birth rate supported by the medical center. 
+
+\begin{DoxyReturn}{Returns}
+The birth rate as an integer. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a038e1c1d7a924c97fc3cdc5954ccd72b}{Buildings}}.
+
+\mbox{\Hypertarget{classMedicalCenter_aa302e910a8e18ca176cbeb50e2cba201}\label{classMedicalCenter_aa302e910a8e18ca176cbeb50e2cba201}} 
+\index{MedicalCenter@{MedicalCenter}!getBuildingType@{getBuildingType}}
+\index{getBuildingType@{getBuildingType}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{getBuildingType()}{getBuildingType()}}
+{\footnotesize\ttfamily string Medical\+Center\+::get\+Building\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the type of the building. 
+
+\begin{DoxyReturn}{Returns}
+The building type as a string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classPublicServiceBuilding_a5f2c3b660e2ff931490c89e81f5fbcfc}{Public\+Service\+Building}}.
+
+\mbox{\Hypertarget{classMedicalCenter_a20d4a6fdb121abb26251a1b7daf0991e}\label{classMedicalCenter_a20d4a6fdb121abb26251a1b7daf0991e}} 
+\index{MedicalCenter@{MedicalCenter}!getHealthCoverage@{getHealthCoverage}}
+\index{getHealthCoverage@{getHealthCoverage}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{getHealthCoverage()}{getHealthCoverage()}}
+{\footnotesize\ttfamily float Medical\+Center\+::get\+Health\+Coverage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the health coverage provided by the medical center. 
+
+\begin{DoxyReturn}{Returns}
+The health coverage as a float. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classPublicServiceBuilding_adf20d12307adb2ce794f25cb008b9dc8}{Public\+Service\+Building}}.
+
+\mbox{\Hypertarget{classMedicalCenter_af726a9c952e9e47aaf6bb82a4f877fde}\label{classMedicalCenter_af726a9c952e9e47aaf6bb82a4f877fde}} 
+\index{MedicalCenter@{MedicalCenter}!getJobsCreated@{getJobsCreated}}
+\index{getJobsCreated@{getJobsCreated}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{getJobsCreated()}{getJobsCreated()}}
+{\footnotesize\ttfamily int Medical\+Center\+::get\+Jobs\+Created (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the number of jobs created by the police station. 
+
+\begin{DoxyReturn}{Returns}
+The number of jobs as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classPublicServiceBuilding_a98fddf51928e1caf68ed7686e76f1f3b}{Public\+Service\+Building}}.
+
+\mbox{\Hypertarget{classMedicalCenter_a00227998395267fe807c43b215d7556d}\label{classMedicalCenter_a00227998395267fe807c43b215d7556d}} 
+\index{MedicalCenter@{MedicalCenter}!getMaintenanceCost@{getMaintenanceCost}}
+\index{getMaintenanceCost@{getMaintenanceCost}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{getMaintenanceCost()}{getMaintenanceCost()}}
+{\footnotesize\ttfamily double Medical\+Center\+::get\+Maintenance\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the maintenance cost of the police station. 
+
+\begin{DoxyReturn}{Returns}
+The maintenance cost as a double. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classPublicServiceBuilding_aa1a510bf9a576b0699a4828a5d2eadcb}{Public\+Service\+Building}}.
+
+\mbox{\Hypertarget{classMedicalCenter_aff73a62d67ec1b53bd8a8e659dd1942e}\label{classMedicalCenter_aff73a62d67ec1b53bd8a8e659dd1942e}} 
+\index{MedicalCenter@{MedicalCenter}!getName@{getName}}
+\index{getName@{getName}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Medical\+Center\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the name of the police station. 
+
+\begin{DoxyReturn}{Returns}
+The name of the police station as a string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classPublicServiceBuilding_a6795238154c334e4e5ed3148f23ffe96}{Public\+Service\+Building}}.
+
+\mbox{\Hypertarget{classMedicalCenter_ac63f0e957cad47c2f52bae1846ca1c6c}\label{classMedicalCenter_ac63f0e957cad47c2f52bae1846ca1c6c}} 
+\index{MedicalCenter@{MedicalCenter}!getPower@{getPower}}
+\index{getPower@{getPower}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{getPower()}{getPower()}}
+{\footnotesize\ttfamily bool Medical\+Center\+::get\+Power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Receives power for the building. 
+
+\begin{DoxyReturn}{Returns}
+true if power was received successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classPublicServiceBuilding_a79959b7de7d22398e25f2c35d9de6e26}{Public\+Service\+Building}}.
+
+\mbox{\Hypertarget{classMedicalCenter_a4a1209e2f0c525b1e77f94c32ced237b}\label{classMedicalCenter_a4a1209e2f0c525b1e77f94c32ced237b}} 
+\index{MedicalCenter@{MedicalCenter}!getPowerReq@{getPowerReq}}
+\index{getPowerReq@{getPowerReq}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{getPowerReq()}{getPowerReq()}}
+{\footnotesize\ttfamily int Medical\+Center\+::get\+Power\+Req (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the power requirements of the police station. 
+
+\begin{DoxyReturn}{Returns}
+The power requirements as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classPublicServiceBuilding_a821f578fb5baef18294123a88772e283}{Public\+Service\+Building}}.
+
+\mbox{\Hypertarget{classMedicalCenter_a39922a070eb7664c5706181ee9726334}\label{classMedicalCenter_a39922a070eb7664c5706181ee9726334}} 
+\index{MedicalCenter@{MedicalCenter}!getSewageCost@{getSewageCost}}
+\index{getSewageCost@{getSewageCost}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{getSewageCost()}{getSewageCost()}}
+{\footnotesize\ttfamily int Medical\+Center\+::get\+Sewage\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the sewage cost of the police station. 
+
+\begin{DoxyReturn}{Returns}
+The sewage cost as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classPublicServiceBuilding_a0a0c1691bca3825f058b86c2b8e307a7}{Public\+Service\+Building}}.
+
+\mbox{\Hypertarget{classMedicalCenter_a2eddb52accdad63880ab435e9cf2ca7f}\label{classMedicalCenter_a2eddb52accdad63880ab435e9cf2ca7f}} 
+\index{MedicalCenter@{MedicalCenter}!getWasteCost@{getWasteCost}}
+\index{getWasteCost@{getWasteCost}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{getWasteCost()}{getWasteCost()}}
+{\footnotesize\ttfamily int Medical\+Center\+::get\+Waste\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the waste cost for the police station. 
+
+\begin{DoxyReturn}{Returns}
+The waste cost as an integer. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classPublicServiceBuilding_a3d3ddf9f07152f367628755a50b88396}{Public\+Service\+Building}}.
+
+\mbox{\Hypertarget{classMedicalCenter_af19dc09a9a539927e83474e3ae64c0a8}\label{classMedicalCenter_af19dc09a9a539927e83474e3ae64c0a8}} 
+\index{MedicalCenter@{MedicalCenter}!getWater@{getWater}}
+\index{getWater@{getWater}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{getWater()}{getWater()}}
+{\footnotesize\ttfamily bool Medical\+Center\+::get\+Water (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Receives water for the building. 
+
+\begin{DoxyReturn}{Returns}
+true if water was received successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classPublicServiceBuilding_a29b779f6c94a907e7dc74ba24e688ee9}{Public\+Service\+Building}}.
+
+\mbox{\Hypertarget{classMedicalCenter_aa0f1f54a790c63c5114280c9807d5725}\label{classMedicalCenter_aa0f1f54a790c63c5114280c9807d5725}} 
+\index{MedicalCenter@{MedicalCenter}!getWaterReq@{getWaterReq}}
+\index{getWaterReq@{getWaterReq}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{getWaterReq()}{getWaterReq()}}
+{\footnotesize\ttfamily int Medical\+Center\+::get\+Water\+Req (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the water requirements of the police station. 
+
+\begin{DoxyReturn}{Returns}
+The water requirements as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classPublicServiceBuilding_a9e3f6145fc21d7664d0b7b3258c13555}{Public\+Service\+Building}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMedicalCenter_a0da82a93433309f70f00b5e274603a67}\label{classMedicalCenter_a0da82a93433309f70f00b5e274603a67}} 
+\index{MedicalCenter@{MedicalCenter}!birthRate@{birthRate}}
+\index{birthRate@{birthRate}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{birthRate}{birthRate}}
+{\footnotesize\ttfamily int Medical\+Center\+::birth\+Rate\hspace{0.3cm}{\ttfamily [protected]}}
+
+Birth rate supported by the medical center. \mbox{\Hypertarget{classMedicalCenter_a5b2271131e5f975fda0f726f99b43a05}\label{classMedicalCenter_a5b2271131e5f975fda0f726f99b43a05}} 
+\index{MedicalCenter@{MedicalCenter}!employment@{employment}}
+\index{employment@{employment}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{employment}{employment}}
+{\footnotesize\ttfamily int Medical\+Center\+::employment\hspace{0.3cm}{\ttfamily [protected]}}
+
+Number of employees working in the medical center. \mbox{\Hypertarget{classMedicalCenter_a76c3fd32c12511e56159ed51d2dc7b77}\label{classMedicalCenter_a76c3fd32c12511e56159ed51d2dc7b77}} 
+\index{MedicalCenter@{MedicalCenter}!healthCoverage@{healthCoverage}}
+\index{healthCoverage@{healthCoverage}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{healthCoverage}{healthCoverage}}
+{\footnotesize\ttfamily float Medical\+Center\+::health\+Coverage\hspace{0.3cm}{\ttfamily [protected]}}
+
+Health coverage provided by the medical center. \mbox{\Hypertarget{classMedicalCenter_a9c34189c188635d506fcc9401ac93431}\label{classMedicalCenter_a9c34189c188635d506fcc9401ac93431}} 
+\index{MedicalCenter@{MedicalCenter}!waste@{waste}}
+\index{waste@{waste}!MedicalCenter@{MedicalCenter}}
+\doxysubsubsection{\texorpdfstring{waste}{waste}}
+{\footnotesize\ttfamily int Medical\+Center\+::waste\hspace{0.3cm}{\ttfamily [protected]}}
+
+Waste produced by the medical center. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Medical\+Center.\+h\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Medical\+Center.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classPlane" kind="class" language="C++" prot="public">
+    <compoundname>Plane</compoundname>
+    <basecompoundref refid="classTransport" prot="public" virt="non-virtual">Transport</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPlane_1a1bd27f3752b2ef7bb99abe2a56c4d143" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Plane::Plane</definition>
+        <argsstring>(int capacity)</argsstring>
+        <name>Plane</name>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classPlane" kindref="compound">Plane</ref>:: <ref refid="classPlane" kindref="compound">Plane</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the capacity of the plane</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Set the capacity of the plane and set the passengers to 2(co-pilot and pilot)</para>
+<para>Don&apos;t confuse weight with the weight of the plane, this is the weight of the cargo </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.h" line="14" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.cpp" bodystart="18" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlane_1adcac2f8b24cf80da8ba4f1aaa32b3c74" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Plane::setNumPassenger</definition>
+        <argsstring>(int pass)</argsstring>
+        <name>setNumPassenger</name>
+        <reimplements refid="classTransport_1ab7cffc57bfbcd0eb90061e32158180f5">setNumPassenger</reimplements>
+        <param>
+          <type>int</type>
+          <declname>pass</declname>
+        </param>
+        <briefdescription>
+<para>Set the Num Passenger object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the number of passengers</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Sets the number of passengers and sets the plane to passenger plane(disabling cargo type) Don&apos;t confuse weight with the weight of the plane, this is the weight of the cargo </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.h" line="16" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.cpp" bodystart="33" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlane_1af486e2e9b094c57dbbeb6956db58dcc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Plane::setCargoWeight</definition>
+        <argsstring>(float weight)</argsstring>
+        <name>setCargoWeight</name>
+        <reimplements refid="classTransport_1ad59ad434539e4a708b5d883ed16f350a">setCargoWeight</reimplements>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+<para>Set the Cargo Weight object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the weight of the cargo</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Sets the weight of the cargo and sets the plane to cargo plane(disabling passenger type) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.h" line="18" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.cpp" bodystart="47" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlane_1ac93de5fe1bcefa477ad33c5d4f01dcf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float Plane::travel</definition>
+        <argsstring>(Stops *stop, RouteNode *head, bool best=0)</argsstring>
+        <name>travel</name>
+        <reimplements refid="classTransport_1ae6ccadb07c91b580372987bcef4c387f">travel</reimplements>
+        <param>
+          <type><ref refid="classStops" kindref="compound">Stops</ref> *</type>
+          <declname>stop</declname>
+        </param>
+        <param>
+          <type><ref refid="classRouteNode" kindref="compound">RouteNode</ref> *</type>
+          <declname>head</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>best</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Travels to the stop using the route accessible through the travel manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the stop to travel to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>head</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the head of the route </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>best</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the flag to skip symbols &apos;T&apos; in the route</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>float the distance traveled </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.h" line="20" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.cpp" bodystart="63" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlane_1a0cebc4f04e80ab168fcfbee4069b66e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string Plane::getType</definition>
+        <argsstring>()</argsstring>
+        <name>getType</name>
+        <reimplements refid="classTransport_1a61e037eadbab0b98f3f081ec42521243">getType</reimplements>
+        <briefdescription>
+<para>Get the Type object(Transport type) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string the type of the transport </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.h" line="22" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.cpp" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlane_1ad0df222c4207b7a46e772c58a579d443" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Plane::setCapacity</definition>
+        <argsstring>(int capacity)</argsstring>
+        <name>setCapacity</name>
+        <reimplements refid="classTransport_1a5f44ecf139f02a194bb558b14150e546">setCapacity</reimplements>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+<para>Set the Capacity object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the capacity of the plane</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Sets the capacity of the plane </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.h" line="24" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.cpp" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlane_1a7f2b8e19f1d0482d6b6fa5fe7b071c56" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Plane::getCapacity</definition>
+        <argsstring>()</argsstring>
+        <name>getCapacity</name>
+        <reimplements refid="classTransport_1a8923bfd9bb01769a4ed66cb01e541cea">getCapacity</reimplements>
+        <briefdescription>
+<para>Get the Capacity object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int the capacity of the plane </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.h" line="26" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.cpp" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlane_1ae3fd29c3865ceaefadffbdda4929396f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float Plane::getWeight</definition>
+        <argsstring>()</argsstring>
+        <name>getWeight</name>
+        <reimplements refid="classTransport_1a5bbabbb02d1fcb23e8d747a3329e123c">getWeight</reimplements>
+        <briefdescription>
+<para>Get the Weight object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float the weight of the cargo </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.h" line="28" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.cpp" bodystart="138" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlane_1a29ba3ebc182fbd2d9c655024b5d85b57" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Plane::getPassengers</definition>
+        <argsstring>()</argsstring>
+        <name>getPassengers</name>
+        <reimplements refid="classTransport_1ae914dee281ef97169260b245a938bb01">getPassengers</reimplements>
+        <briefdescription>
+<para>Get the Passengers object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int the number of passengers </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.h" line="30" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.cpp" bodystart="129" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Transport</label>
+        <link refid="classTransport"/>
+      </node>
+      <node id="1">
+        <label>Plane</label>
+        <link refid="classPlane"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Transport</label>
+        <link refid="classTransport"/>
+      </node>
+      <node id="1">
+        <label>Plane</label>
+        <link refid="classPlane"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Plane.h" bodystart="12" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classTransport_1ab2127104025de74395560f28e5013c49" prot="protected" virt="non-virtual"><scope>Plane</scope><name>capacity</name></member>
+      <member refid="classPlane_1a7f2b8e19f1d0482d6b6fa5fe7b071c56" prot="public" virt="virtual"><scope>Plane</scope><name>getCapacity</name></member>
+      <member refid="classPlane_1a29ba3ebc182fbd2d9c655024b5d85b57" prot="public" virt="virtual"><scope>Plane</scope><name>getPassengers</name></member>
+      <member refid="classPlane_1a0cebc4f04e80ab168fcfbee4069b66e7" prot="public" virt="virtual"><scope>Plane</scope><name>getType</name></member>
+      <member refid="classPlane_1ae3fd29c3865ceaefadffbdda4929396f" prot="public" virt="virtual"><scope>Plane</scope><name>getWeight</name></member>
+      <member refid="classTransport_1a63e08d366beeecea5559d4979e325aa9" prot="protected" virt="non-virtual"><scope>Plane</scope><name>isCargo</name></member>
+      <member refid="classTransport_1a377a586485a39087ea731011ded5766a" prot="protected" virt="non-virtual"><scope>Plane</scope><name>passengers</name></member>
+      <member refid="classPlane_1a1bd27f3752b2ef7bb99abe2a56c4d143" prot="public" virt="non-virtual"><scope>Plane</scope><name>Plane</name></member>
+      <member refid="classPlane_1ad0df222c4207b7a46e772c58a579d443" prot="public" virt="virtual"><scope>Plane</scope><name>setCapacity</name></member>
+      <member refid="classPlane_1af486e2e9b094c57dbbeb6956db58dcc8" prot="public" virt="virtual"><scope>Plane</scope><name>setCargoWeight</name></member>
+      <member refid="classPlane_1adcac2f8b24cf80da8ba4f1aaa32b3c74" prot="public" virt="virtual"><scope>Plane</scope><name>setNumPassenger</name></member>
+      <member refid="classTransport_1a2e3fa7a2e7c7f8678059a88e623aba2f" prot="protected" virt="non-virtual"><scope>Plane</scope><name>transportType</name></member>
+      <member refid="classPlane_1ac93de5fe1bcefa477ad33c5d4f01dcf7" prot="public" virt="virtual"><scope>Plane</scope><name>travel</name></member>
+      <member refid="classTransport_1a4ce2235bd99de189f6e6c9c852f0122f" prot="protected" virt="non-virtual"><scope>Plane</scope><name>weight</name></member>
+      <member refid="classTransport_1a9071b156741912e4550f6c88467d2834" prot="public" virt="virtual"><scope>Plane</scope><name>~Transport</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

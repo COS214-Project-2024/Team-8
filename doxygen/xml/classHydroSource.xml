@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classHydroSource" kind="class" language="C++" prot="public">
+    <compoundname>HydroSource</compoundname>
+    <basecompoundref refid="classEnergySource" prot="public" virt="non-virtual">EnergySource</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classHydroSource_1ad94ab1616f006dfe11f8fcc89d8c265d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HydroSource::HydroSource</definition>
+        <argsstring>(float output)</argsstring>
+        <name>HydroSource</name>
+        <param>
+          <type>float</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+<para>Create a <ref refid="classHydroSource" kindref="compound">HydroSource</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output of the <ref refid="classHydroSource" kindref="compound">HydroSource</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/HydroSource.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/HydroSource.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classHydroSource_1a6635a1df98370e4d741be2347fa6991f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float HydroSource::getEnergyOutput</definition>
+        <argsstring>()</argsstring>
+        <name>getEnergyOutput</name>
+        <reimplements refid="classEnergySource_1a56b0363ed4d7375506c5d1d881bc314a">getEnergyOutput</reimplements>
+        <briefdescription>
+<para>Get the energy output of the <ref refid="classHydroSource" kindref="compound">HydroSource</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float The energy output of the <ref refid="classHydroSource" kindref="compound">HydroSource</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/HydroSource.h" line="14" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/HydroSource.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classHydroSource_1a8f584143a753767308be0091453c7d05" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string HydroSource::getFuelType</definition>
+        <argsstring>()</argsstring>
+        <name>getFuelType</name>
+        <reimplements refid="classEnergySource_1a19f5e20094539ea26a5a81bc0bf88948">getFuelType</reimplements>
+        <briefdescription>
+<para>Get the fuel type of the <ref refid="classHydroSource" kindref="compound">HydroSource</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string The fuel type of the <ref refid="classHydroSource" kindref="compound">HydroSource</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/HydroSource.h" line="16" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/HydroSource.cpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>EnergySource</label>
+        <link refid="classEnergySource"/>
+      </node>
+      <node id="1">
+        <label>HydroSource</label>
+        <link refid="classHydroSource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>EnergySource</label>
+        <link refid="classEnergySource"/>
+      </node>
+      <node id="1">
+        <label>HydroSource</label>
+        <link refid="classHydroSource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/HydroSource.h" line="10" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/HydroSource.h" bodystart="10" bodyend="17"/>
+    <listofallmembers>
+      <member refid="classEnergySource_1a92cf3ad074efdeeb66391742e1308d71" prot="protected" virt="non-virtual"><scope>HydroSource</scope><name>energyOutput</name></member>
+      <member refid="classHydroSource_1a6635a1df98370e4d741be2347fa6991f" prot="public" virt="virtual"><scope>HydroSource</scope><name>getEnergyOutput</name></member>
+      <member refid="classHydroSource_1a8f584143a753767308be0091453c7d05" prot="public" virt="virtual"><scope>HydroSource</scope><name>getFuelType</name></member>
+      <member refid="classHydroSource_1ad94ab1616f006dfe11f8fcc89d8c265d" prot="public" virt="non-virtual"><scope>HydroSource</scope><name>HydroSource</name></member>
+      <member refid="classEnergySource_1a22bdabfa86afba0713db5c6bc5df449f" prot="public" virt="virtual"><scope>HydroSource</scope><name>~EnergySource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

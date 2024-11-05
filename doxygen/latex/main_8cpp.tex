@@ -1,0 +1,180 @@
+\hypertarget{main_8cpp}{}\doxysection{/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/main.cpp File Reference}
+\label{main_8cpp}\index{/home/nev/cos214/Project/finalpush/Team-\/8-\/Design-\/Wits/System/main.cpp@{/home/nev/cos214/Project/finalpush/Team-\/8-\/Design-\/Wits/System/main.cpp}}
+
+
+Interactive \mbox{\hyperlink{classCity}{City}} Builder Simulation.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include \char`\"{}Government.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Finance\+Sector.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Utilities\+Sector.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}General\+Sector.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Finance\+Department.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Command.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Policies.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Economic\+Policies.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Public\+Services\+Policies.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Citizen\+Type.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Employed\+Citizen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Property\+Owner.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Buildings.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Commercial\+Factory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Office\+Factory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Office.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}House\+Factory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}House.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Residential\+Factory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Apartment.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Apartment\+Factory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Shop\+Factory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Shop.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Building\+Controller.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Public\+Service\+Building.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Medical\+Center.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}School.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Police\+Station.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Landmark\+Building.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Mall.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Monument.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Park.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Cultural\+Center.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Travel\+Manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Road.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Plane.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Train.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Airport.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Best\+Route\+Node.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Accesible\+Route.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Train\+Station.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Map\+Iterator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}State.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Under\+Construction.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Operational.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Damaged.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structResourceConsumption}{Resource\+Consumption}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_abdc3b24b9228430a8d639548d0399e14}\label{main_8cpp_abdc3b24b9228430a8d639548d0399e14}} 
+enum class {\bfseries Building\+State} \{ {\bfseries Under\+Construction}
+, {\bfseries Operational}
+, {\bfseries Damaged}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_a5d555657ce648c1a47abb70f1029589d}\label{main_8cpp_a5d555657ce648c1a47abb70f1029589d}} 
+void {\bfseries clear\+Input} ()
+\item 
+\mbox{\Hypertarget{main_8cpp_ab80f005039b55cdbdbea52bbbad3c622}\label{main_8cpp_ab80f005039b55cdbdbea52bbbad3c622}} 
+void {\bfseries wait\+For\+Enter} ()
+\item 
+\mbox{\Hypertarget{main_8cpp_a3fa5c01b369854cb12595c11531b3101}\label{main_8cpp_a3fa5c01b369854cb12595c11531b3101}} 
+void {\bfseries display\+City\+Skyline} ()
+\item 
+\mbox{\Hypertarget{main_8cpp_a192bb9340ffb6234b48b055409fc3852}\label{main_8cpp_a192bb9340ffb6234b48b055409fc3852}} 
+void {\bfseries display\+Story\+Intro} ()
+\item 
+\mbox{\Hypertarget{main_8cpp_a8638917112276c7eb29cbebb83d4f360}\label{main_8cpp_a8638917112276c7eb29cbebb83d4f360}} 
+void {\bfseries update\+Building\+Resources} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$building)
+\item 
+\mbox{\Hypertarget{main_8cpp_a90ce1f93397dcc5adbc254790055b96a}\label{main_8cpp_a90ce1f93397dcc5adbc254790055b96a}} 
+void {\bfseries handle\+Building\+State} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$building, Building\+State new\+State)
+\item 
+\mbox{\Hypertarget{main_8cpp_a87e56e096cedae8c62e7ea0fdbc2af09}\label{main_8cpp_a87e56e096cedae8c62e7ea0fdbc2af09}} 
+void {\bfseries manage\+Building\+Capacity} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$building)
+\item 
+\mbox{\Hypertarget{main_8cpp_ad8a9d0a3fa4b8be93e2aac37c0a6e9e3}\label{main_8cpp_ad8a9d0a3fa4b8be93e2aac37c0a6e9e3}} 
+bool {\bfseries can\+Add\+Occupant} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$building)
+\item 
+\mbox{\Hypertarget{main_8cpp_a6c80bcc9391a1eff8376b7fc9f9035e3}\label{main_8cpp_a6c80bcc9391a1eff8376b7fc9f9035e3}} 
+void {\bfseries add\+Occupant} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$building, \mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}} $\ast$citizen)
+\item 
+\mbox{\Hypertarget{main_8cpp_a98737e1b4489e5a367a2f6646a0f0c47}\label{main_8cpp_a98737e1b4489e5a367a2f6646a0f0c47}} 
+void {\bfseries handle\+Building\+Construction} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$building)
+\item 
+\mbox{\Hypertarget{main_8cpp_a8dbdd60dee886652d58284e227a4c6e9}\label{main_8cpp_a8dbdd60dee886652d58284e227a4c6e9}} 
+void {\bfseries handle\+Public\+Service\+Construction} ()
+\item 
+\mbox{\Hypertarget{main_8cpp_acbb91ce63b28fb9c7e044618f8773921}\label{main_8cpp_acbb91ce63b28fb9c7e044618f8773921}} 
+void {\bfseries handle\+Landmark\+Construction} ()
+\item 
+\mbox{\Hypertarget{main_8cpp_a7f4718dea19bcfe5e1bcaff69d75e7c3}\label{main_8cpp_a7f4718dea19bcfe5e1bcaff69d75e7c3}} 
+void {\bfseries handle\+Citizen\+Management} ()
+\item 
+\mbox{\Hypertarget{main_8cpp_ac95479febb8a5e42155394d943d1cd50}\label{main_8cpp_ac95479febb8a5e42155394d943d1cd50}} 
+void {\bfseries handle\+Government} ()
+\item 
+\mbox{\Hypertarget{main_8cpp_a216ab7fd001c95da696c5a4c38e8a90f}\label{main_8cpp_a216ab7fd001c95da696c5a4c38e8a90f}} 
+void {\bfseries handle\+Transportation} ()
+\item 
+\mbox{\Hypertarget{main_8cpp_a59c2926dd9b0968badf463aaf4f91422}\label{main_8cpp_a59c2926dd9b0968badf463aaf4f91422}} 
+void {\bfseries display\+Menu} ()
+\item 
+\mbox{\Hypertarget{main_8cpp_a40bd43134dc587ac7fe84c48278c2a9f}\label{main_8cpp_a40bd43134dc587ac7fe84c48278c2a9f}} 
+void {\bfseries display\+Building\+Menu} ()
+\item 
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_ace790543ffe3663a896a5f074bd2a3ef}\label{main_8cpp_ace790543ffe3663a896a5f074bd2a3ef}} 
+const std\+::string {\bfseries GREEN} = \char`\"{}\textbackslash{}033\mbox{[}32m\char`\"{}
+\item 
+\mbox{\Hypertarget{main_8cpp_abe00a28b292cf705c5a54afc31c5d034}\label{main_8cpp_abe00a28b292cf705c5a54afc31c5d034}} 
+const std\+::string {\bfseries BLUE} = \char`\"{}\textbackslash{}033\mbox{[}34m\char`\"{}
+\item 
+\mbox{\Hypertarget{main_8cpp_a8bc779337e61d3ab6ad13f81e102f327}\label{main_8cpp_a8bc779337e61d3ab6ad13f81e102f327}} 
+const std\+::string {\bfseries YELLOW} = \char`\"{}\textbackslash{}033\mbox{[}33m\char`\"{}
+\item 
+\mbox{\Hypertarget{main_8cpp_a1e3de85aa0ad921f6984f3aef7361f99}\label{main_8cpp_a1e3de85aa0ad921f6984f3aef7361f99}} 
+const std\+::string {\bfseries RED} = \char`\"{}\textbackslash{}033\mbox{[}31m\char`\"{}
+\item 
+\mbox{\Hypertarget{main_8cpp_a2f0a977841de68d04e86bc84c57c3ff3}\label{main_8cpp_a2f0a977841de68d04e86bc84c57c3ff3}} 
+const std\+::string {\bfseries RESET} = \char`\"{}\textbackslash{}033\mbox{[}0m\char`\"{}
+\item 
+\mbox{\Hypertarget{main_8cpp_a6fa0bb2c6c221969a0fc82534d0f8b00}\label{main_8cpp_a6fa0bb2c6c221969a0fc82534d0f8b00}} 
+const std\+::string {\bfseries highlight} = \char`\"{}\textbackslash{}033\mbox{[}3;38;5;45m\char`\"{}
+\item 
+\mbox{\Hypertarget{main_8cpp_a0cbe348a07d7e27c979db6d7a02484f9}\label{main_8cpp_a0cbe348a07d7e27c979db6d7a02484f9}} 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classBuildings}{Buildings}} $>$ $>$ {\bfseries city\+Buildings}
+\item 
+\mbox{\Hypertarget{main_8cpp_ae445c7144803717e8b2787f4b1f69a3d}\label{main_8cpp_ae445c7144803717e8b2787f4b1f69a3d}} 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}} $>$ $>$ {\bfseries citizens}
+\item 
+\mbox{\Hypertarget{main_8cpp_a6d14b207c423efe16af1de34bb86b532}\label{main_8cpp_a6d14b207c423efe16af1de34bb86b532}} 
+std\+::map$<$ \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$, std\+::vector$<$ \mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}} $\ast$ $>$ $>$ {\bfseries building\+Occupants}
+\item 
+\mbox{\Hypertarget{main_8cpp_a7210aa7d4b30e8012d5eb1dff653bb2c}\label{main_8cpp_a7210aa7d4b30e8012d5eb1dff653bb2c}} 
+std\+::map$<$ \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$, int $>$ {\bfseries building\+Capacity}
+\item 
+\mbox{\Hypertarget{main_8cpp_a9fe38eaf0cf8e3688598caa535f49c22}\label{main_8cpp_a9fe38eaf0cf8e3688598caa535f49c22}} 
+std\+::map$<$ \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$, \mbox{\hyperlink{structResourceConsumption}{Resource\+Consumption}} $>$ {\bfseries building\+Resources}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interactive \mbox{\hyperlink{classCity}{City}} Builder Simulation. 
+
+\begin{DoxyAuthor}{Author}
+Design Wits (modified) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2024-\/04-\/29 
+\end{DoxyDate}

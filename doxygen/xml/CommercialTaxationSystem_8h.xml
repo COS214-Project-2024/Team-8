@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="CommercialTaxationSystem_8h" kind="file" language="C++">
+    <compoundname>CommercialTaxationSystem.h</compoundname>
+    <includedby refid="CommercialTaxationSystem_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CommercialTaxationSystem.cpp</includedby>
+    <includedby refid="FinanceDepartment_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.cpp</includedby>
+    <includedby refid="FinanceDepartment_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="2">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/FinanceDepartment.h</label>
+        <link refid="FinanceDepartment_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CommercialTaxationSystem.h</label>
+        <link refid="CommercialTaxationSystem_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classCommercialTaxationSystem" prot="public">CommercialTaxationSystem</innerclass>
+    <briefdescription>
+<para>Header file for the <ref refid="classCommercialTaxationSystem" kindref="compound">CommercialTaxationSystem</ref> class which implements the second subsystem of the Facade design pattern. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Design Wits </para>
+</simplesect>
+<simplesect kind="date"><para>2024-10-30 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__CommercialTaxationSystem_h__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__CommercialTaxationSystem_h__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classCommercialTaxationSystem" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCommercialTaxationSystem" kindref="compound">CommercialTaxationSystem</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCommercialTaxationSystem" kindref="compound">CommercialTaxationSystem</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>collectBusinessTax(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>businessTaxRate,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>businessProfit);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>collectSalesTax(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>salesTaxRate,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>businessProfit);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>__CommercialTaxationSystem_h__</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CommercialTaxationSystem.h"/>
+  </compounddef>
+</doxygen>

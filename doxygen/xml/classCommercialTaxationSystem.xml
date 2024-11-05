@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCommercialTaxationSystem" kind="class" language="C++" prot="public">
+    <compoundname>CommercialTaxationSystem</compoundname>
+    <includes refid="CommercialTaxationSystem_8h" local="no">CommercialTaxationSystem.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCommercialTaxationSystem_1af5da1c389bca04e6803944b392a98765" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CommercialTaxationSystem::CommercialTaxationSystem</definition>
+        <argsstring>()</argsstring>
+        <name>CommercialTaxationSystem</name>
+        <briefdescription>
+<para>Constructs a new <ref refid="classCommercialTaxationSystem" kindref="compound">CommercialTaxationSystem</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CommercialTaxationSystem.h" line="25" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CommercialTaxationSystem.cpp" bodystart="4" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="classCommercialTaxationSystem_1a72af614854a288d70abc07d9a47fb5aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double CommercialTaxationSystem::collectBusinessTax</definition>
+        <argsstring>(double businessTaxRate, double businessProfit)</argsstring>
+        <name>collectBusinessTax</name>
+        <param>
+          <type>double</type>
+          <declname>businessTaxRate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>businessProfit</declname>
+        </param>
+        <briefdescription>
+<para>Collects business tax from commercial entities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>businessTaxRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current business tax rate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>businessProfit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total profit of the commercial businesses </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The total business tax collected </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CommercialTaxationSystem.h" line="33" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CommercialTaxationSystem.cpp" bodystart="6" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classCommercialTaxationSystem_1a6c339175c0965f4e1cf1f527ade9016c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double CommercialTaxationSystem::collectSalesTax</definition>
+        <argsstring>(double salesTaxRate, double businessProfit)</argsstring>
+        <name>collectSalesTax</name>
+        <param>
+          <type>double</type>
+          <declname>salesTaxRate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>businessProfit</declname>
+        </param>
+        <briefdescription>
+<para>Collects sales tax from commercial entities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>salesTaxRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current sales tax rate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>businessProfit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total profit of the commercial businesses </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The total sales tax collected </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CommercialTaxationSystem.h" line="41" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CommercialTaxationSystem.cpp" bodystart="13" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents the commercial taxation system that collects business tax and sales tax from commercial entities. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classCommercialTaxationSystem" kindref="compound">CommercialTaxationSystem</ref> class is responsible for calculating and collecting business tax and sales tax from commercial businesses. </para>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CommercialTaxationSystem.h" line="19" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CommercialTaxationSystem.h" bodystart="20" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classCommercialTaxationSystem_1a72af614854a288d70abc07d9a47fb5aa" prot="public" virt="non-virtual"><scope>CommercialTaxationSystem</scope><name>collectBusinessTax</name></member>
+      <member refid="classCommercialTaxationSystem_1a6c339175c0965f4e1cf1f527ade9016c" prot="public" virt="non-virtual"><scope>CommercialTaxationSystem</scope><name>collectSalesTax</name></member>
+      <member refid="classCommercialTaxationSystem_1af5da1c389bca04e6803944b392a98765" prot="public" virt="non-virtual"><scope>CommercialTaxationSystem</scope><name>CommercialTaxationSystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classPublicServiceFactory" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>PublicServiceFactory</compoundname>
+    <basecompoundref refid="classBuildingFactory" prot="public" virt="non-virtual">BuildingFactory</basecompoundref>
+    <derivedcompoundref refid="classMedicalCenterFactory" prot="public" virt="non-virtual">MedicalCenterFactory</derivedcompoundref>
+    <derivedcompoundref refid="classPoliceStationFactory" prot="public" virt="non-virtual">PoliceStationFactory</derivedcompoundref>
+    <derivedcompoundref refid="classSchoolFactory" prot="public" virt="non-virtual">SchoolFactory</derivedcompoundref>
+    <includes refid="PublicServiceFactory_8h" local="no">PublicServiceFactory.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classPublicServiceFactory_1a1cc8ba5b91f69ff4fef172c1d64c9756" prot="public" static="no" mutable="no">
+        <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+        <definition>Buildings* PublicServiceFactory::buildings</definition>
+        <argsstring></argsstring>
+        <name>buildings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to a <ref refid="classBuildings" kindref="compound">Buildings</ref> object, representing the public service building instance managed by the factory. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PublicServiceFactory.h" line="17" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PublicServiceFactory.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPublicServiceFactory_1a01bc339cd89079c83630cda53be4a33b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+        <definition>virtual Buildings* PublicServiceFactory::createBuilding</definition>
+        <argsstring>()=0</argsstring>
+        <name>createBuilding</name>
+        <reimplements refid="classBuildingFactory_1a553d8ca955c6e4421ea2de7a616fe9e6">createBuilding</reimplements>
+        <reimplementedby refid="classMedicalCenterFactory_1aae5dd6fbe298c9dad53917692e7d47d7">createBuilding</reimplementedby>
+        <reimplementedby refid="classPoliceStationFactory_1a0bfbed7aa4a4a466d9f37e341a5af34d">createBuilding</reimplementedby>
+        <reimplementedby refid="classSchoolFactory_1a74f0a46ecf394a4a81d341d57226e9af">createBuilding</reimplementedby>
+        <briefdescription>
+<para>Creates a new public service building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pure virtual function that must be implemented by derived classes to create and return a pointer to a new public service <ref refid="classBuildings" kindref="compound">Buildings</ref> object.</para>
+<para><simplesect kind="return"><para>A pointer to a newly created public service <ref refid="classBuildings" kindref="compound">Buildings</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PublicServiceFactory.h" line="27" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A factory class for creating public service buildings. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class inherits from <ref refid="classBuildingFactory" kindref="compound">BuildingFactory</ref> and provides an interface for creating public service building objects. Derived classes must implement the <ref refid="classPublicServiceFactory_1a01bc339cd89079c83630cda53be4a33b" kindref="member">createBuilding()</ref> method to produce specific types of public service buildings. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>PublicServiceFactory</label>
+        <link refid="classPublicServiceFactory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MedicalCenterFactory</label>
+        <link refid="classMedicalCenterFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BuildingFactory</label>
+        <link refid="classBuildingFactory"/>
+      </node>
+      <node id="4">
+        <label>PoliceStationFactory</label>
+        <link refid="classPoliceStationFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SchoolFactory</label>
+        <link refid="classSchoolFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>PublicServiceFactory</label>
+        <link refid="classPublicServiceFactory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>buildings</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>listOfCitizens</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="2">
+        <label>BuildingFactory</label>
+        <link refid="classBuildingFactory"/>
+      </node>
+      <node id="10">
+        <label>State</label>
+        <link refid="classState"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>building</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Citizen</label>
+        <link refid="classCitizen"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>tm</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>TravelManager</label>
+        <link refid="classTravelManager"/>
+      </node>
+      <node id="9">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="7">
+        <label>PopulationControl</label>
+        <link refid="classPopulationControl"/>
+      </node>
+      <node id="5">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PublicServiceFactory.h" line="14" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PublicServiceFactory.h" bodystart="14" bodyend="28"/>
+    <listofallmembers>
+      <member refid="classPublicServiceFactory_1a1cc8ba5b91f69ff4fef172c1d64c9756" prot="public" virt="non-virtual"><scope>PublicServiceFactory</scope><name>buildings</name></member>
+      <member refid="classPublicServiceFactory_1a01bc339cd89079c83630cda53be4a33b" prot="public" virt="pure-virtual"><scope>PublicServiceFactory</scope><name>createBuilding</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classMallFactory" kind="class" language="C++" prot="public">
+    <compoundname>MallFactory</compoundname>
+    <basecompoundref refid="classCommercialFactory" prot="public" virt="non-virtual">CommercialFactory</basecompoundref>
+    <includes refid="MallFactory_8h" local="no">MallFactory.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMallFactory_1a303810cc8fe89c917e43448f1b20db83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MallFactory::MallFactory</definition>
+        <argsstring>()</argsstring>
+        <name>MallFactory</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MallFactory.h" line="24" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MallFactory.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classMallFactory_1ad6cac81e482b666c2d1794e62b0682cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>MallFactory::~MallFactory</definition>
+        <argsstring>()</argsstring>
+        <name>~MallFactory</name>
+        <briefdescription>
+<para>Virtual destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MallFactory.h" line="29" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MallFactory.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classMallFactory_1ae95129f3755356ef32e1c336729a5970" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+        <definition>Buildings * MallFactory::createBuilding</definition>
+        <argsstring>() override</argsstring>
+        <name>createBuilding</name>
+        <reimplements refid="classCommercialFactory_1a06ff168b783133fad993bc6579fe5a00">createBuilding</reimplements>
+        <briefdescription>
+<para>Creates a new mall building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to a newly created <ref refid="classMall" kindref="compound">Mall</ref> object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MallFactory.h" line="35" column="23" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MallFactory.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Factory class for creating mall buildings. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class implements the <ref refid="classCommercialFactory" kindref="compound">CommercialFactory</ref> interface to create <ref refid="classMall" kindref="compound">Mall</ref> objects </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>BuildingFactory</label>
+        <link refid="classBuildingFactory"/>
+      </node>
+      <node id="1">
+        <label>MallFactory</label>
+        <link refid="classMallFactory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CommercialFactory</label>
+        <link refid="classCommercialFactory"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>listOfCitizens</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="3">
+        <label>BuildingFactory</label>
+        <link refid="classBuildingFactory"/>
+      </node>
+      <node id="11">
+        <label>State</label>
+        <link refid="classState"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>building</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MallFactory</label>
+        <link refid="classMallFactory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Citizen</label>
+        <link refid="classCitizen"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>tm</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>TravelManager</label>
+        <link refid="classTravelManager"/>
+      </node>
+      <node id="10">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="8">
+        <label>PopulationControl</label>
+        <link refid="classPopulationControl"/>
+      </node>
+      <node id="2">
+        <label>CommercialFactory</label>
+        <link refid="classCommercialFactory"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>buildings</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MallFactory.h" line="19" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MallFactory.h" bodystart="19" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classCommercialFactory_1aecc5d78093d97d4dabc67bdb46f0123f" prot="public" virt="non-virtual"><scope>MallFactory</scope><name>buildings</name></member>
+      <member refid="classMallFactory_1ae95129f3755356ef32e1c336729a5970" prot="public" virt="virtual"><scope>MallFactory</scope><name>createBuilding</name></member>
+      <member refid="classMallFactory_1a303810cc8fe89c917e43448f1b20db83" prot="public" virt="non-virtual"><scope>MallFactory</scope><name>MallFactory</name></member>
+      <member refid="classCommercialFactory_1a101c2dcac960d17e02d7f2fb84713787" prot="public" virt="virtual"><scope>MallFactory</scope><name>~CommercialFactory</name></member>
+      <member refid="classMallFactory_1ad6cac81e482b666c2d1794e62b0682cd" prot="public" virt="virtual"><scope>MallFactory</scope><name>~MallFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

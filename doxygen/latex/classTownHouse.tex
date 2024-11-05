@@ -1,0 +1,333 @@
+\hypertarget{classTownHouse}{}\doxysection{Town\+House Class Reference}
+\label{classTownHouse}\index{TownHouse@{TownHouse}}
+
+
+Represents a townhouse, a type of residential building.  
+
+
+
+
+{\ttfamily \#include $<$Town\+House.\+h$>$}
+
+
+
+Inheritance diagram for Town\+House\+:
+% FIG 0
+
+
+Collaboration diagram for Town\+House\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTownHouse_aec4c056db51e7e5fdee3b9222f8e33c6}{Town\+House}} (string b\+Name, int p\+Req, int w\+Req, double m\+Cost, int s\+Cost, int waste, int \mbox{\hyperlink{classResidentialBuilding_a5a96a6a10da11b24be5336c719a28df6}{capacity}})
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classTownHouse}{Town\+House}} class. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classTownHouse_a6271d646da88bd504a6594a1a344416d}{get\+Building\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Gets the type of building. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classTownHouse_af316bbcc836847c146f3a2c6aeb29e63}{get\+Maintenance\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the maintenance cost of the townhouse. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classTownHouse_a9a862362539fcabdcbfbab9525115b76}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the townhouse. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classTownHouse_a1bd58ca5b8c72911f4e315d83dc80460}{get\+Power\+Req}} ()
+\begin{DoxyCompactList}\small\item\em Gets the power requirement of the townhouse. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classTownHouse_abcc0f59ac66c8853df44186cb548cb40}{get\+Sewage\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the sewage cost of the townhouse. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classTownHouse_a24aadb15b792516d7ce8b1c2f75a2d57}{get\+Water\+Req}} ()
+\begin{DoxyCompactList}\small\item\em Gets the water requirement of the townhouse. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTownHouse_adbcc420d2864717c39f2536f343a373b}\label{classTownHouse_adbcc420d2864717c39f2536f343a373b}} 
+virtual void \mbox{\hyperlink{classTownHouse_adbcc420d2864717c39f2536f343a373b}{request\+State}} ()
+\begin{DoxyCompactList}\small\item\em Requests the current state of the townhouse. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCitizen}{Citizen}} $\ast$ \mbox{\hyperlink{classTownHouse_a76d47d843bc1681c078db85513b3ad4d}{get\+List\+Of\+Residents}} ()
+\begin{DoxyCompactList}\small\item\em Gets the list of residents in the townhouse. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTownHouse_a039ffaf3b20dd029b68f5bf4aec7fb3e}{get\+Capacity}} ()
+\begin{DoxyCompactList}\small\item\em Gets the maximum capacity of the townhouse. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTownHouse_a2c9a1f2a819253e4a86ad6cb57d40edd}{get\+Waste\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the waste cost associated with the townhouse. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTownHouse_a27163316a08110418294ceef588b5b1c}\label{classTownHouse_a27163316a08110418294ceef588b5b1c}} 
+void \mbox{\hyperlink{classTownHouse_a27163316a08110418294ceef588b5b1c}{set\+State}} (\mbox{\hyperlink{classState}{State}} $\ast$new\+State)
+\begin{DoxyCompactList}\small\item\em sets the state of the building \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classTownHouse_ae046e54305fbb5979640e7fece84dcb9}{clean\+Sewage}} ()
+\begin{DoxyCompactList}\small\item\em Cleans the sewage of the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classTownHouse_a8b3a6871c11491c2427bd03c6a547624}{clean\+Waste}} ()
+\begin{DoxyCompactList}\small\item\em Cleans the waste of the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classTownHouse_a32b925d3ecbda9a5e6e0a7c404cf3957}{get\+Power}} ()
+\begin{DoxyCompactList}\small\item\em Receives power for the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classTownHouse_a024e646590e992803d8b2b4403d5f45a}{get\+Water}} ()
+\begin{DoxyCompactList}\small\item\em Receives water for the building. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classTownHouse_a95e14dce352464977e74c68d95556ffa}{add\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Add a building to the Building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a townhouse, a type of residential building. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTownHouse_aec4c056db51e7e5fdee3b9222f8e33c6}\label{classTownHouse_aec4c056db51e7e5fdee3b9222f8e33c6}} 
+\index{TownHouse@{TownHouse}!TownHouse@{TownHouse}}
+\index{TownHouse@{TownHouse}!TownHouse@{TownHouse}}
+\doxysubsubsection{\texorpdfstring{TownHouse()}{TownHouse()}}
+{\footnotesize\ttfamily Town\+House\+::\+Town\+House (\begin{DoxyParamCaption}\item[{string}]{b\+Name,  }\item[{int}]{p\+Req,  }\item[{int}]{w\+Req,  }\item[{double}]{m\+Cost,  }\item[{int}]{s\+Cost,  }\item[{int}]{waste,  }\item[{int}]{capacity }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classTownHouse}{Town\+House}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+Name} & Name of the townhouse \\
+\hline
+{\em p\+Req} & Power requirement \\
+\hline
+{\em w\+Req} & Water requirement \\
+\hline
+{\em m\+Cost} & Maintenance cost \\
+\hline
+{\em s\+Cost} & Sewage cost \\
+\hline
+{\em waste} & Amount of waste produced \\
+\hline
+{\em capacity} & Maximum capacity of the townhouse \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTownHouse_a95e14dce352464977e74c68d95556ffa}\label{classTownHouse_a95e14dce352464977e74c68d95556ffa}} 
+\index{TownHouse@{TownHouse}!addBuilding@{addBuilding}}
+\index{addBuilding@{addBuilding}!TownHouse@{TownHouse}}
+\doxysubsubsection{\texorpdfstring{addBuilding()}{addBuilding()}}
+{\footnotesize\ttfamily void Town\+House\+::add\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Add a building to the Building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & The building to add to the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_ae484947db4eea1a9e2858f47db5ee43d}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classTownHouse_ae046e54305fbb5979640e7fece84dcb9}\label{classTownHouse_ae046e54305fbb5979640e7fece84dcb9}} 
+\index{TownHouse@{TownHouse}!cleanSewage@{cleanSewage}}
+\index{cleanSewage@{cleanSewage}!TownHouse@{TownHouse}}
+\doxysubsubsection{\texorpdfstring{cleanSewage()}{cleanSewage()}}
+{\footnotesize\ttfamily bool Town\+House\+::clean\+Sewage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cleans the sewage of the building. 
+
+\begin{DoxyReturn}{Returns}
+True if the cleaning was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_af409d286d0d15a39c1e4c835b502205c}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classTownHouse_a8b3a6871c11491c2427bd03c6a547624}\label{classTownHouse_a8b3a6871c11491c2427bd03c6a547624}} 
+\index{TownHouse@{TownHouse}!cleanWaste@{cleanWaste}}
+\index{cleanWaste@{cleanWaste}!TownHouse@{TownHouse}}
+\doxysubsubsection{\texorpdfstring{cleanWaste()}{cleanWaste()}}
+{\footnotesize\ttfamily bool Town\+House\+::clean\+Waste (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cleans the waste of the building. 
+
+\begin{DoxyReturn}{Returns}
+True if the cleaning was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_a9fef368fd52003c9bcef6956b20a41ad}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classTownHouse_a6271d646da88bd504a6594a1a344416d}\label{classTownHouse_a6271d646da88bd504a6594a1a344416d}} 
+\index{TownHouse@{TownHouse}!getBuildingType@{getBuildingType}}
+\index{getBuildingType@{getBuildingType}!TownHouse@{TownHouse}}
+\doxysubsubsection{\texorpdfstring{getBuildingType()}{getBuildingType()}}
+{\footnotesize\ttfamily virtual string Town\+House\+::get\+Building\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the type of building. 
+
+\begin{DoxyReturn}{Returns}
+The building type as a string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_aee6ea83d6f70ac8db9c5960db42e88b7}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classTownHouse_a039ffaf3b20dd029b68f5bf4aec7fb3e}\label{classTownHouse_a039ffaf3b20dd029b68f5bf4aec7fb3e}} 
+\index{TownHouse@{TownHouse}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!TownHouse@{TownHouse}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily int Town\+House\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the maximum capacity of the townhouse. 
+
+\begin{DoxyReturn}{Returns}
+The capacity of the townhouse. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTownHouse_a76d47d843bc1681c078db85513b3ad4d}\label{classTownHouse_a76d47d843bc1681c078db85513b3ad4d}} 
+\index{TownHouse@{TownHouse}!getListOfResidents@{getListOfResidents}}
+\index{getListOfResidents@{getListOfResidents}!TownHouse@{TownHouse}}
+\doxysubsubsection{\texorpdfstring{getListOfResidents()}{getListOfResidents()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCitizen}{Citizen}} $\ast$ Town\+House\+::get\+List\+Of\+Residents (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the list of residents in the townhouse. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the list of residents. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTownHouse_af316bbcc836847c146f3a2c6aeb29e63}\label{classTownHouse_af316bbcc836847c146f3a2c6aeb29e63}} 
+\index{TownHouse@{TownHouse}!getMaintenanceCost@{getMaintenanceCost}}
+\index{getMaintenanceCost@{getMaintenanceCost}!TownHouse@{TownHouse}}
+\doxysubsubsection{\texorpdfstring{getMaintenanceCost()}{getMaintenanceCost()}}
+{\footnotesize\ttfamily double Town\+House\+::get\+Maintenance\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the maintenance cost of the townhouse. 
+
+\begin{DoxyReturn}{Returns}
+The maintenance cost. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_ae086cdd073cc6055e5423353828eebec}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classTownHouse_a9a862362539fcabdcbfbab9525115b76}\label{classTownHouse_a9a862362539fcabdcbfbab9525115b76}} 
+\index{TownHouse@{TownHouse}!getName@{getName}}
+\index{getName@{getName}!TownHouse@{TownHouse}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Town\+House\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the name of the townhouse. 
+
+\begin{DoxyReturn}{Returns}
+The name of the townhouse as a string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_aaf571c879f3912a84df4fbcb3710e00f}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classTownHouse_a32b925d3ecbda9a5e6e0a7c404cf3957}\label{classTownHouse_a32b925d3ecbda9a5e6e0a7c404cf3957}} 
+\index{TownHouse@{TownHouse}!getPower@{getPower}}
+\index{getPower@{getPower}!TownHouse@{TownHouse}}
+\doxysubsubsection{\texorpdfstring{getPower()}{getPower()}}
+{\footnotesize\ttfamily bool Town\+House\+::get\+Power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Receives power for the building. 
+
+\begin{DoxyReturn}{Returns}
+True if power was received successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_ae867db795935c20c2c5a45463ac33fb0}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classTownHouse_a1bd58ca5b8c72911f4e315d83dc80460}\label{classTownHouse_a1bd58ca5b8c72911f4e315d83dc80460}} 
+\index{TownHouse@{TownHouse}!getPowerReq@{getPowerReq}}
+\index{getPowerReq@{getPowerReq}!TownHouse@{TownHouse}}
+\doxysubsubsection{\texorpdfstring{getPowerReq()}{getPowerReq()}}
+{\footnotesize\ttfamily int Town\+House\+::get\+Power\+Req (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the power requirement of the townhouse. 
+
+\begin{DoxyReturn}{Returns}
+The power requirement. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_a4b05dc85c1b4578df1c77bfa8b54592b}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classTownHouse_abcc0f59ac66c8853df44186cb548cb40}\label{classTownHouse_abcc0f59ac66c8853df44186cb548cb40}} 
+\index{TownHouse@{TownHouse}!getSewageCost@{getSewageCost}}
+\index{getSewageCost@{getSewageCost}!TownHouse@{TownHouse}}
+\doxysubsubsection{\texorpdfstring{getSewageCost()}{getSewageCost()}}
+{\footnotesize\ttfamily int Town\+House\+::get\+Sewage\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the sewage cost of the townhouse. 
+
+\begin{DoxyReturn}{Returns}
+The sewage cost. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_a1a8b12239511450428c00d1872390264}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classTownHouse_a2c9a1f2a819253e4a86ad6cb57d40edd}\label{classTownHouse_a2c9a1f2a819253e4a86ad6cb57d40edd}} 
+\index{TownHouse@{TownHouse}!getWasteCost@{getWasteCost}}
+\index{getWasteCost@{getWasteCost}!TownHouse@{TownHouse}}
+\doxysubsubsection{\texorpdfstring{getWasteCost()}{getWasteCost()}}
+{\footnotesize\ttfamily int Town\+House\+::get\+Waste\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the waste cost associated with the townhouse. 
+
+\begin{DoxyReturn}{Returns}
+The waste cost. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a94e15ba281ac20d60e1a4632f7be1292}{Buildings}}.
+
+\mbox{\Hypertarget{classTownHouse_a024e646590e992803d8b2b4403d5f45a}\label{classTownHouse_a024e646590e992803d8b2b4403d5f45a}} 
+\index{TownHouse@{TownHouse}!getWater@{getWater}}
+\index{getWater@{getWater}!TownHouse@{TownHouse}}
+\doxysubsubsection{\texorpdfstring{getWater()}{getWater()}}
+{\footnotesize\ttfamily bool Town\+House\+::get\+Water (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Receives water for the building. 
+
+\begin{DoxyReturn}{Returns}
+True if water was received successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_aae44b69bdedffbb41c78205bcfb712e1}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classTownHouse_a24aadb15b792516d7ce8b1c2f75a2d57}\label{classTownHouse_a24aadb15b792516d7ce8b1c2f75a2d57}} 
+\index{TownHouse@{TownHouse}!getWaterReq@{getWaterReq}}
+\index{getWaterReq@{getWaterReq}!TownHouse@{TownHouse}}
+\doxysubsubsection{\texorpdfstring{getWaterReq()}{getWaterReq()}}
+{\footnotesize\ttfamily int Town\+House\+::get\+Water\+Req (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the water requirement of the townhouse. 
+
+\begin{DoxyReturn}{Returns}
+The water requirement. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_aed397e7f9cc0e3f76879b3f92a212313}{Residential\+Building}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Town\+House.\+h\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Town\+House.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,210 @@
+\hypertarget{classVehicle}{}\doxysection{Vehicle Class Reference}
+\label{classVehicle}\index{Vehicle@{Vehicle}}
+
+
+Inheritance diagram for Vehicle\+:
+% FIG 0
+
+
+Collaboration diagram for Vehicle\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVehicle_a53609d5d59f14c67a5a3ebb57cd987a6}{Vehicle}} (int capacity)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classVehicle}{Vehicle}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVehicle_aa46d2dc446cb7eb0439ee0b09e0cd1a2}{set\+Num\+Passenger}} (int pass)
+\begin{DoxyCompactList}\small\item\em Set the number of passengers on the vehicle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVehicle_ae74caf3d40220d9486eeacb98be16b51}{set\+Cargo\+Weight}} (float weight)
+\begin{DoxyCompactList}\small\item\em Set the weight of the cargo on the vehicle. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classVehicle_ad3bfe207428f935fac17c9dce248e354}{travel}} (\mbox{\hyperlink{classStops}{Stops}} $\ast$stop, \mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$head, bool best=0)
+\begin{DoxyCompactList}\small\item\em Travels to the stop using the route accessible through the travel manager. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classVehicle_af2d4744f4af86eaa9f4205afb8abd477}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get the type of the vehicle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVehicle_a97ac91bcf97b514a514fb4973325b864}{set\+Capacity}} (int capacity)
+\begin{DoxyCompactList}\small\item\em Set the capacity of the vehicle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classVehicle_a989b3acf3f0c8aaae1c6b59b88ecf702}{get\+Capacity}} ()
+\begin{DoxyCompactList}\small\item\em Get the capacity of the vehicle. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classVehicle_a100bb875ea8c1f54939413536a752682}{get\+Weight}} ()
+\begin{DoxyCompactList}\small\item\em Get the weight of the vehicle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classVehicle_a86992dc07efda51173f07d4a4caaf1cd}{get\+Passengers}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of passengers on the vehicle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVehicle_a53609d5d59f14c67a5a3ebb57cd987a6}\label{classVehicle_a53609d5d59f14c67a5a3ebb57cd987a6}} 
+\index{Vehicle@{Vehicle}!Vehicle@{Vehicle}}
+\index{Vehicle@{Vehicle}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{Vehicle()}{Vehicle()}}
+{\footnotesize\ttfamily Vehicle\+::\+Vehicle (\begin{DoxyParamCaption}\item[{int}]{capacity }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classVehicle}{Vehicle}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & the capacity of the vehicle\\
+\hline
+\end{DoxyParams}
+Sets the capacity of the vehicle to the given capacity Sets the train to not be cargo by default Sets the number of passengers to 1 by default Sets the weight of the cargo to 0 by default because it is not cargo 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classVehicle_a989b3acf3f0c8aaae1c6b59b88ecf702}\label{classVehicle_a989b3acf3f0c8aaae1c6b59b88ecf702}} 
+\index{Vehicle@{Vehicle}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily int Vehicle\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the capacity of the vehicle. 
+
+\begin{DoxyReturn}{Returns}
+int the capacity of the vehicle 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classVehicle_a86992dc07efda51173f07d4a4caaf1cd}\label{classVehicle_a86992dc07efda51173f07d4a4caaf1cd}} 
+\index{Vehicle@{Vehicle}!getPassengers@{getPassengers}}
+\index{getPassengers@{getPassengers}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{getPassengers()}{getPassengers()}}
+{\footnotesize\ttfamily int Vehicle\+::get\+Passengers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the number of passengers on the vehicle. 
+
+\begin{DoxyReturn}{Returns}
+int the number of passengers 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classVehicle_af2d4744f4af86eaa9f4205afb8abd477}\label{classVehicle_af2d4744f4af86eaa9f4205afb8abd477}} 
+\index{Vehicle@{Vehicle}!getType@{getType}}
+\index{getType@{getType}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily std\+::string Vehicle\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the type of the vehicle. 
+
+\begin{DoxyReturn}{Returns}
+string the type of the vehicle 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classVehicle_a100bb875ea8c1f54939413536a752682}\label{classVehicle_a100bb875ea8c1f54939413536a752682}} 
+\index{Vehicle@{Vehicle}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{getWeight()}{getWeight()}}
+{\footnotesize\ttfamily float Vehicle\+::get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the weight of the vehicle. 
+
+\begin{DoxyReturn}{Returns}
+float the weight of the vehicle 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classVehicle_a97ac91bcf97b514a514fb4973325b864}\label{classVehicle_a97ac91bcf97b514a514fb4973325b864}} 
+\index{Vehicle@{Vehicle}!setCapacity@{setCapacity}}
+\index{setCapacity@{setCapacity}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{setCapacity()}{setCapacity()}}
+{\footnotesize\ttfamily void Vehicle\+::set\+Capacity (\begin{DoxyParamCaption}\item[{int}]{capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the capacity of the vehicle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & is the capacity of the vehicle\\
+\hline
+\end{DoxyParams}
+Sets the capacity of the vehicle If the capacity is less than or equal to 18, the vehicle is a car If the capacity is greater than 18, the vehicle is a bus 
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classVehicle_ae74caf3d40220d9486eeacb98be16b51}\label{classVehicle_ae74caf3d40220d9486eeacb98be16b51}} 
+\index{Vehicle@{Vehicle}!setCargoWeight@{setCargoWeight}}
+\index{setCargoWeight@{setCargoWeight}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{setCargoWeight()}{setCargoWeight()}}
+{\footnotesize\ttfamily void Vehicle\+::set\+Cargo\+Weight (\begin{DoxyParamCaption}\item[{float}]{weight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the weight of the cargo on the vehicle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weight} & is the weight of the cargo\\
+\hline
+\end{DoxyParams}
+Sets the weight of the cargo on the vehicle Sets the vehicle to be a Truck(carries cargo) Sets the number of passengers to 1 by default 
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classVehicle_aa46d2dc446cb7eb0439ee0b09e0cd1a2}\label{classVehicle_aa46d2dc446cb7eb0439ee0b09e0cd1a2}} 
+\index{Vehicle@{Vehicle}!setNumPassenger@{setNumPassenger}}
+\index{setNumPassenger@{setNumPassenger}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{setNumPassenger()}{setNumPassenger()}}
+{\footnotesize\ttfamily void Vehicle\+::set\+Num\+Passenger (\begin{DoxyParamCaption}\item[{int}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the number of passengers on the vehicle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pass} & is the number of passengers\\
+\hline
+\end{DoxyParams}
+Sets the number of passengers on the vehicle Sets the vehicle to not be cargo Don\textquotesingle{}t confuse weight with the weight of the vehicle, this is the weight of the cargo 
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+\mbox{\Hypertarget{classVehicle_ad3bfe207428f935fac17c9dce248e354}\label{classVehicle_ad3bfe207428f935fac17c9dce248e354}} 
+\index{Vehicle@{Vehicle}!travel@{travel}}
+\index{travel@{travel}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{travel()}{travel()}}
+{\footnotesize\ttfamily float Vehicle\+::travel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStops}{Stops}} $\ast$}]{stop,  }\item[{\mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$}]{head,  }\item[{bool}]{best = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Travels to the stop using the route accessible through the travel manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stop} & is the stop to travel to \\
+\hline
+{\em head} & is the head of the route \\
+\hline
+{\em best} & is the flag to travel on \char`\"{}\+R\char`\"{} symbols(best route)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float the distance traveled 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransport}{Transport}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{Vehicle_8h}{Vehicle.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{Vehicle_8cpp}{Vehicle.\+cpp}}\end{DoxyCompactItemize}

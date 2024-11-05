@@ -1,0 +1,127 @@
+\hypertarget{classMapIterator}{}\doxysection{Map\+Iterator Class Reference}
+\label{classMapIterator}\index{MapIterator@{MapIterator}}
+
+
+Collaboration diagram for Map\+Iterator\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMapIterator_a988f0f36c4043307e0a02ac0fb814646}{Map\+Iterator}} (\mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$cur)
+\begin{DoxyCompactList}\small\item\em Construct a new Map Iterator\+:\+: Map Iterator object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStops}{Stops}} $\ast$ \mbox{\hyperlink{classMapIterator_ac12bec18bc150fe371c4fc969bd1cb41}{operator$\ast$}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classStops}{Stops}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$ \mbox{\hyperlink{classMapIterator_ae4d86a01cf684a1187b90d3baab463df}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Overload the ++ operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMapIterator_ad0b08cf8f347bdfac1eb320bf9a0f772}{operator==}} (\mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$other)
+\begin{DoxyCompactList}\small\item\em Overload the == operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$ \mbox{\hyperlink{classMapIterator_a7077a19985208ea0f6919af8ea1d61ae}{current\+Node}} ()
+\begin{DoxyCompactList}\small\item\em Get the current node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$ \mbox{\hyperlink{classMapIterator_a5c884f76172410b6380b2356931b9c97}{head\+Node}} ()
+\begin{DoxyCompactList}\small\item\em Get the head node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMapIterator_a3b3d9a7dae33e2d0029d434fd6300438}\label{classMapIterator_a3b3d9a7dae33e2d0029d434fd6300438}} 
+\mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$ {\bfseries head}
+\item 
+\mbox{\Hypertarget{classMapIterator_aa8b98d392f260fc7b8bf62b9a4e69c8d}\label{classMapIterator_aa8b98d392f260fc7b8bf62b9a4e69c8d}} 
+\mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$ {\bfseries current}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMapIterator_a988f0f36c4043307e0a02ac0fb814646}\label{classMapIterator_a988f0f36c4043307e0a02ac0fb814646}} 
+\index{MapIterator@{MapIterator}!MapIterator@{MapIterator}}
+\index{MapIterator@{MapIterator}!MapIterator@{MapIterator}}
+\doxysubsubsection{\texorpdfstring{MapIterator()}{MapIterator()}}
+{\footnotesize\ttfamily Map\+Iterator\+::\+Map\+Iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$}]{cur }\end{DoxyParamCaption})}
+
+
+
+Construct a new Map Iterator\+:\+: Map Iterator object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cur} & has reference to the current node\\
+\hline
+\end{DoxyParams}
+Set the head and current node to the current node 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMapIterator_a7077a19985208ea0f6919af8ea1d61ae}\label{classMapIterator_a7077a19985208ea0f6919af8ea1d61ae}} 
+\index{MapIterator@{MapIterator}!currentNode@{currentNode}}
+\index{currentNode@{currentNode}!MapIterator@{MapIterator}}
+\doxysubsubsection{\texorpdfstring{currentNode()}{currentNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$ Map\+Iterator\+::current\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current node. 
+
+\begin{DoxyReturn}{Returns}
+Route\+Node$\ast$ pointer of the current object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMapIterator_a5c884f76172410b6380b2356931b9c97}\label{classMapIterator_a5c884f76172410b6380b2356931b9c97}} 
+\index{MapIterator@{MapIterator}!headNode@{headNode}}
+\index{headNode@{headNode}!MapIterator@{MapIterator}}
+\doxysubsubsection{\texorpdfstring{headNode()}{headNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$ Map\+Iterator\+::head\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the head node. 
+
+\begin{DoxyReturn}{Returns}
+Route\+Node$\ast$ pointer of the head object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMapIterator_ac12bec18bc150fe371c4fc969bd1cb41}\label{classMapIterator_ac12bec18bc150fe371c4fc969bd1cb41}} 
+\index{MapIterator@{MapIterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!MapIterator@{MapIterator}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStops}{Stops}} $\ast$ Map\+Iterator\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{classStops}{Stops}} object. 
+
+\begin{DoxyReturn}{Returns}
+Stops$\ast$ data of the current object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMapIterator_ae4d86a01cf684a1187b90d3baab463df}\label{classMapIterator_ae4d86a01cf684a1187b90d3baab463df}} 
+\index{MapIterator@{MapIterator}!operator++@{operator++}}
+\index{operator++@{operator++}!MapIterator@{MapIterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$ Map\+Iterator\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Overload the ++ operator. 
+
+\begin{DoxyReturn}{Returns}
+Route\+Node$\ast$ pointer of the current object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMapIterator_ad0b08cf8f347bdfac1eb320bf9a0f772}\label{classMapIterator_ad0b08cf8f347bdfac1eb320bf9a0f772}} 
+\index{MapIterator@{MapIterator}!operator==@{operator==}}
+\index{operator==@{operator==}!MapIterator@{MapIterator}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Map\+Iterator\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRouteNode}{Route\+Node}} $\ast$}]{other }\end{DoxyParamCaption})}
+
+
+
+Overload the == operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & is the other \mbox{\hyperlink{classRouteNode}{Route\+Node}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the current node is equal to the other node 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{MapIterator_8h}{Map\+Iterator.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{MapIterator_8cpp}{Map\+Iterator.\+cpp}}\end{DoxyCompactItemize}

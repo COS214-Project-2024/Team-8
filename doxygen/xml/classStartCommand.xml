@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classStartCommand" kind="class" language="C++" prot="public">
+    <compoundname>StartCommand</compoundname>
+    <basecompoundref refid="classCommand" prot="public" virt="non-virtual">Command</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classStartCommand_1a4d35f8b65329690536d68168effe0b36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>StartCommand::StartCommand</definition>
+        <argsstring>(Utility *utility)</argsstring>
+        <name>StartCommand</name>
+        <param>
+          <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+          <declname>utility</declname>
+        </param>
+        <briefdescription>
+<para>Create a <ref refid="classStartCommand" kindref="compound">StartCommand</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utility</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The utility to start </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/StartCommand.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/StartCommand.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classStartCommand_1a38aacdd6210d19d93833ab8447a980c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void StartCommand::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <reimplements refid="classCommand_1a6fd7d9bd8df8bfc881e4d6c7cd1878b7">execute</reimplements>
+        <briefdescription>
+<para>Execute the command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Starts the utility </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/StartCommand.h" line="14" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/StartCommand.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classStartCommand_1a2653acf332ac690a85ad2a9168eb6d09" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string StartCommand::getUtilityType</definition>
+        <argsstring>()</argsstring>
+        <name>getUtilityType</name>
+        <reimplements refid="classCommand_1a34de0246195437ab1f1c078e7c3488c6">getUtilityType</reimplements>
+        <briefdescription>
+<para>Get the utility type of the command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string The utility type of the command </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/StartCommand.h" line="16" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/StartCommand.cpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classStartCommand_1a0d75a9acd379cf750bc84f43a17c6ae8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+        <definition>Utility * StartCommand::getUtility</definition>
+        <argsstring>()</argsstring>
+        <name>getUtility</name>
+        <reimplements refid="classCommand_1a0606383bba658ef28073274a49859aa1">getUtility</reimplements>
+        <briefdescription>
+<para>Get the utility of the command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Utility* The utility of the command(deep copy) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/StartCommand.h" line="18" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/StartCommand.cpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Command</label>
+        <link refid="classCommand"/>
+      </node>
+      <node id="1">
+        <label>StartCommand</label>
+        <link refid="classStartCommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Command</label>
+        <link refid="classCommand"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>utility</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>StartCommand</label>
+        <link refid="classStartCommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/StartCommand.h" line="10" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/StartCommand.h" bodystart="10" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classStartCommand_1a38aacdd6210d19d93833ab8447a980c1" prot="public" virt="virtual"><scope>StartCommand</scope><name>execute</name></member>
+      <member refid="classStartCommand_1a0d75a9acd379cf750bc84f43a17c6ae8" prot="public" virt="virtual"><scope>StartCommand</scope><name>getUtility</name></member>
+      <member refid="classStartCommand_1a2653acf332ac690a85ad2a9168eb6d09" prot="public" virt="virtual"><scope>StartCommand</scope><name>getUtilityType</name></member>
+      <member refid="classStartCommand_1a4d35f8b65329690536d68168effe0b36" prot="public" virt="non-virtual"><scope>StartCommand</scope><name>StartCommand</name></member>
+      <member refid="classCommand_1af4cc0c69ccba769e7d910b90f111d78e" prot="protected" virt="non-virtual"><scope>StartCommand</scope><name>utility</name></member>
+      <member refid="classCommand_1ab552bb3a07fdd1acbfd8ea76e69b2278" prot="public" virt="virtual"><scope>StartCommand</scope><name>~Command</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

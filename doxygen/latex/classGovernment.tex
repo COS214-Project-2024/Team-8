@@ -1,0 +1,350 @@
+\hypertarget{classGovernment}{}\doxysection{Government Class Reference}
+\label{classGovernment}\index{Government@{Government}}
+
+
+Base class for government sectors implementing Observer pattern for citizen notifications.  
+
+
+
+
+{\ttfamily \#include $<$Government.\+h$>$}
+
+
+
+Inheritance diagram for Government\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGovernment_ad06c951e706c3a9e43e18b11c75d8888}\label{classGovernment_ad06c951e706c3a9e43e18b11c75d8888}} 
+\mbox{\hyperlink{classGovernment_ad06c951e706c3a9e43e18b11c75d8888}{Government}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGovernment_a759a1616da9713d8ca7beac89b4887c9}\label{classGovernment_a759a1616da9713d8ca7beac89b4887c9}} 
+\mbox{\hyperlink{classGovernment_a759a1616da9713d8ca7beac89b4887c9}{Government}} (\mbox{\hyperlink{classFinanceDepartment}{Finance\+Department}} $\ast$finance\+Department)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGovernment_ad4b00db6938ff1ed64b22e3326e0b19c}\label{classGovernment_ad4b00db6938ff1ed64b22e3326e0b19c}} 
+virtual \mbox{\hyperlink{classGovernment_ad4b00db6938ff1ed64b22e3326e0b19c}{$\sim$\+Government}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGovernment_a7cbe1cdc8753c4fee0fb664b72741768}{attach}} (\mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}} $\ast$citizen)
+\begin{DoxyCompactList}\small\item\em Attaches a citizen observer to the government. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGovernment_a8de647466bc53190f22811ce2f0db1f2}{detach}} (\mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}} $\ast$citizen)
+\begin{DoxyCompactList}\small\item\em Detaches a citizen observer from the government. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGovernment_adf2258ede6292fa43349c97d70d72155}\label{classGovernment_adf2258ede6292fa43349c97d70d72155}} 
+void \mbox{\hyperlink{classGovernment_adf2258ede6292fa43349c97d70d72155}{notify}} ()
+\begin{DoxyCompactList}\small\item\em Notifies all citizen observers of changes in tax rates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGovernment_a38ba7d30972a89cbe0427c3e49bc3719}{add\+Command}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCommand}{Command}} $>$ command)
+\begin{DoxyCompactList}\small\item\em Adds a command to the command queue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGovernment_a6c95299d73b2ea48262fbd99f367d8be}\label{classGovernment_a6c95299d73b2ea48262fbd99f367d8be}} 
+void \mbox{\hyperlink{classGovernment_a6c95299d73b2ea48262fbd99f367d8be}{execute\+Commands}} ()
+\begin{DoxyCompactList}\small\item\em Executes all commands in the queue. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classGovernment_a8a3ca8c70e12763cc3a44b67006240ec}{request\+Collection\+Of\+Property\+Tax}} ()
+\begin{DoxyCompactList}\small\item\em Collects property tax. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classGovernment_a195d3cba2c94ef45165a0cba8ec967ae}{request\+Collection\+Of\+Income\+Tax}} ()
+\begin{DoxyCompactList}\small\item\em Collects income tax. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classGovernment_a4a473f2a53da2aeaf9b76c6fb8889276}{request\+Collection\+Of\+Business\+Tax}} ()
+\begin{DoxyCompactList}\small\item\em Collects business tax. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classGovernment_a1891cd25c1c876e2784d1c57d5303b77}{request\+Collection\+Of\+Sales\+Tax}} ()
+\begin{DoxyCompactList}\small\item\em Collects sales tax. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classGovernment_acfbd3701241813873f61ae5e21043956}{request\+Allocation\+Of\+Utilities\+Funds}} ()
+\begin{DoxyCompactList}\small\item\em Allocates funds for utilities. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classGovernment_ab216803dc0eb2d5faecde752af8d6adb}{request\+Allocation\+Of\+Public\+Service\+Buildings\+Funds}} ()
+\begin{DoxyCompactList}\small\item\em Allocates funds for public service buildings. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classGovernment_aff679f05a074938efb99fb278df3843d}{request\+Allocation\+Of\+Transport\+Funds}} ()
+\begin{DoxyCompactList}\small\item\em Allocates funds for transport. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classGovernment_a8b8aa1f5de6bf7dd7ec441083aea4d86}{request\+Allocation\+Of\+Education\+Funds}} ()
+\begin{DoxyCompactList}\small\item\em Allocates funds for education. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classGovernment_add6275ae12a9d9acd697d4694e56b38f}{request\+Allocation\+Of\+Recreation\+Funds}} ()
+\begin{DoxyCompactList}\small\item\em Allocates funds for recreation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGovernment_a1e4bcb825fb5a42351e6cbac5750ee77}{set\+Budget}} (double b)
+\begin{DoxyCompactList}\small\item\em Sets the government budget. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classGovernment_ae925a4769f88e47de0cb4a08a3a50d35}{get\+Budget}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current budget. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGovernment_ac472f1128c2f548cc1bd947b7f5c9e17}{set\+Total\+Revenue}} (double b)
+\begin{DoxyCompactList}\small\item\em Sets the total revenue. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classGovernment_ac3f3a94b6dbbecf6720e70953eda6046}{get\+Total\+Revenue}} () const
+\begin{DoxyCompactList}\small\item\em Gets the total revenue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGovernment_af812cedd72e563cb1e824e507eb64f06}{set\+Successor}} (\mbox{\hyperlink{classGovernment}{Government}} $\ast$next\+Handler)
+\begin{DoxyCompactList}\small\item\em Sets the successor in the chain of responsibility. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGovernment}{Government}} $\ast$ \mbox{\hyperlink{classGovernment_aca02afeba5ccebde1a4393cd628cede6}{get\+Successor}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current successor in the chain. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classGovernment_a8ebf14df569730e97b7016af3a00a0fc}{handle\+Request}} (std\+::string request\+Details)
+\begin{DoxyCompactList}\small\item\em Handles citizen requests. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for government sectors implementing Observer pattern for citizen notifications. 
+
+This class manages citizens, budget allocation, and tax collection while implementing the Observer pattern to notify citizens of changes in tax rates and policies. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGovernment_a38ba7d30972a89cbe0427c3e49bc3719}\label{classGovernment_a38ba7d30972a89cbe0427c3e49bc3719}} 
+\index{Government@{Government}!addCommand@{addCommand}}
+\index{addCommand@{addCommand}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{addCommand()}{addCommand()}}
+{\footnotesize\ttfamily void Government\+::add\+Command (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCommand}{Command}} $>$}]{command }\end{DoxyParamCaption})}
+
+
+
+Adds a command to the command queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & Unique pointer to command to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGovernment_a7cbe1cdc8753c4fee0fb664b72741768}\label{classGovernment_a7cbe1cdc8753c4fee0fb664b72741768}} 
+\index{Government@{Government}!attach@{attach}}
+\index{attach@{attach}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{attach()}{attach()}}
+{\footnotesize\ttfamily void Government\+::attach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}} $\ast$}]{citizen }\end{DoxyParamCaption})}
+
+
+
+Attaches a citizen observer to the government. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em citizen} & Pointer to citizen to attach \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGovernment_a8de647466bc53190f22811ce2f0db1f2}\label{classGovernment_a8de647466bc53190f22811ce2f0db1f2}} 
+\index{Government@{Government}!detach@{detach}}
+\index{detach@{detach}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{detach()}{detach()}}
+{\footnotesize\ttfamily void Government\+::detach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}} $\ast$}]{citizen }\end{DoxyParamCaption})}
+
+
+
+Detaches a citizen observer from the government. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em citizen} & Pointer to citizen to detach \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGovernment_ae925a4769f88e47de0cb4a08a3a50d35}\label{classGovernment_ae925a4769f88e47de0cb4a08a3a50d35}} 
+\index{Government@{Government}!getBudget@{getBudget}}
+\index{getBudget@{getBudget}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{getBudget()}{getBudget()}}
+{\footnotesize\ttfamily double Government\+::get\+Budget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the current budget. 
+
+\begin{DoxyReturn}{Returns}
+Current budget amount 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGovernment_aca02afeba5ccebde1a4393cd628cede6}\label{classGovernment_aca02afeba5ccebde1a4393cd628cede6}} 
+\index{Government@{Government}!getSuccessor@{getSuccessor}}
+\index{getSuccessor@{getSuccessor}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{getSuccessor()}{getSuccessor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGovernment}{Government}} $\ast$ Government\+::get\+Successor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the current successor in the chain. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the current successor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGovernment_ac3f3a94b6dbbecf6720e70953eda6046}\label{classGovernment_ac3f3a94b6dbbecf6720e70953eda6046}} 
+\index{Government@{Government}!getTotalRevenue@{getTotalRevenue}}
+\index{getTotalRevenue@{getTotalRevenue}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{getTotalRevenue()}{getTotalRevenue()}}
+{\footnotesize\ttfamily double Government\+::get\+Total\+Revenue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the total revenue. 
+
+\begin{DoxyReturn}{Returns}
+Total revenue amount 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGovernment_a8ebf14df569730e97b7016af3a00a0fc}\label{classGovernment_a8ebf14df569730e97b7016af3a00a0fc}} 
+\index{Government@{Government}!handleRequest@{handleRequest}}
+\index{handleRequest@{handleRequest}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{handleRequest()}{handleRequest()}}
+{\footnotesize\ttfamily void Government\+::handle\+Request (\begin{DoxyParamCaption}\item[{std\+::string}]{request\+Details }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handles citizen requests. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Details} & Details of the request \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classUtilitiesSector_a1190486aaef510689cfe904e18851738}{Utilities\+Sector}}, \mbox{\hyperlink{classGeneralSector_aa9a1ab8e0dc2f623f4e65d7e452e892f}{General\+Sector}}, and \mbox{\hyperlink{classFinanceSector_a066dbe4c307815a27112a5961c6befe9}{Finance\+Sector}}.
+
+\mbox{\Hypertarget{classGovernment_a8b8aa1f5de6bf7dd7ec441083aea4d86}\label{classGovernment_a8b8aa1f5de6bf7dd7ec441083aea4d86}} 
+\index{Government@{Government}!requestAllocationOfEducationFunds@{requestAllocationOfEducationFunds}}
+\index{requestAllocationOfEducationFunds@{requestAllocationOfEducationFunds}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{requestAllocationOfEducationFunds()}{requestAllocationOfEducationFunds()}}
+{\footnotesize\ttfamily double Government\+::request\+Allocation\+Of\+Education\+Funds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Allocates funds for education. 
+
+\begin{DoxyReturn}{Returns}
+Amount allocated for education 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGovernment_ab216803dc0eb2d5faecde752af8d6adb}\label{classGovernment_ab216803dc0eb2d5faecde752af8d6adb}} 
+\index{Government@{Government}!requestAllocationOfPublicServiceBuildingsFunds@{requestAllocationOfPublicServiceBuildingsFunds}}
+\index{requestAllocationOfPublicServiceBuildingsFunds@{requestAllocationOfPublicServiceBuildingsFunds}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{requestAllocationOfPublicServiceBuildingsFunds()}{requestAllocationOfPublicServiceBuildingsFunds()}}
+{\footnotesize\ttfamily double Government\+::request\+Allocation\+Of\+Public\+Service\+Buildings\+Funds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allocates funds for public service buildings. 
+
+\begin{DoxyReturn}{Returns}
+Amount allocated for public service buildings 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGovernment_add6275ae12a9d9acd697d4694e56b38f}\label{classGovernment_add6275ae12a9d9acd697d4694e56b38f}} 
+\index{Government@{Government}!requestAllocationOfRecreationFunds@{requestAllocationOfRecreationFunds}}
+\index{requestAllocationOfRecreationFunds@{requestAllocationOfRecreationFunds}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{requestAllocationOfRecreationFunds()}{requestAllocationOfRecreationFunds()}}
+{\footnotesize\ttfamily double Government\+::request\+Allocation\+Of\+Recreation\+Funds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allocates funds for recreation. 
+
+\begin{DoxyReturn}{Returns}
+Amount allocated for recreation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGovernment_aff679f05a074938efb99fb278df3843d}\label{classGovernment_aff679f05a074938efb99fb278df3843d}} 
+\index{Government@{Government}!requestAllocationOfTransportFunds@{requestAllocationOfTransportFunds}}
+\index{requestAllocationOfTransportFunds@{requestAllocationOfTransportFunds}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{requestAllocationOfTransportFunds()}{requestAllocationOfTransportFunds()}}
+{\footnotesize\ttfamily double Government\+::request\+Allocation\+Of\+Transport\+Funds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allocates funds for transport. 
+
+\begin{DoxyReturn}{Returns}
+Amount allocated for transport 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGovernment_acfbd3701241813873f61ae5e21043956}\label{classGovernment_acfbd3701241813873f61ae5e21043956}} 
+\index{Government@{Government}!requestAllocationOfUtilitiesFunds@{requestAllocationOfUtilitiesFunds}}
+\index{requestAllocationOfUtilitiesFunds@{requestAllocationOfUtilitiesFunds}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{requestAllocationOfUtilitiesFunds()}{requestAllocationOfUtilitiesFunds()}}
+{\footnotesize\ttfamily double Government\+::request\+Allocation\+Of\+Utilities\+Funds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allocates funds for utilities. 
+
+\begin{DoxyReturn}{Returns}
+Amount allocated for utilities 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGovernment_a4a473f2a53da2aeaf9b76c6fb8889276}\label{classGovernment_a4a473f2a53da2aeaf9b76c6fb8889276}} 
+\index{Government@{Government}!requestCollectionOfBusinessTax@{requestCollectionOfBusinessTax}}
+\index{requestCollectionOfBusinessTax@{requestCollectionOfBusinessTax}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{requestCollectionOfBusinessTax()}{requestCollectionOfBusinessTax()}}
+{\footnotesize\ttfamily double Government\+::request\+Collection\+Of\+Business\+Tax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Collects business tax. 
+
+\begin{DoxyReturn}{Returns}
+Amount of business tax collected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGovernment_a195d3cba2c94ef45165a0cba8ec967ae}\label{classGovernment_a195d3cba2c94ef45165a0cba8ec967ae}} 
+\index{Government@{Government}!requestCollectionOfIncomeTax@{requestCollectionOfIncomeTax}}
+\index{requestCollectionOfIncomeTax@{requestCollectionOfIncomeTax}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{requestCollectionOfIncomeTax()}{requestCollectionOfIncomeTax()}}
+{\footnotesize\ttfamily double Government\+::request\+Collection\+Of\+Income\+Tax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Collects income tax. 
+
+\begin{DoxyReturn}{Returns}
+Amount of income tax collected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGovernment_a8a3ca8c70e12763cc3a44b67006240ec}\label{classGovernment_a8a3ca8c70e12763cc3a44b67006240ec}} 
+\index{Government@{Government}!requestCollectionOfPropertyTax@{requestCollectionOfPropertyTax}}
+\index{requestCollectionOfPropertyTax@{requestCollectionOfPropertyTax}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{requestCollectionOfPropertyTax()}{requestCollectionOfPropertyTax()}}
+{\footnotesize\ttfamily double Government\+::request\+Collection\+Of\+Property\+Tax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Collects property tax. 
+
+\begin{DoxyReturn}{Returns}
+Amount of property tax collected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGovernment_a1891cd25c1c876e2784d1c57d5303b77}\label{classGovernment_a1891cd25c1c876e2784d1c57d5303b77}} 
+\index{Government@{Government}!requestCollectionOfSalesTax@{requestCollectionOfSalesTax}}
+\index{requestCollectionOfSalesTax@{requestCollectionOfSalesTax}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{requestCollectionOfSalesTax()}{requestCollectionOfSalesTax()}}
+{\footnotesize\ttfamily double Government\+::request\+Collection\+Of\+Sales\+Tax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Collects sales tax. 
+
+\begin{DoxyReturn}{Returns}
+Amount of sales tax collected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGovernment_a1e4bcb825fb5a42351e6cbac5750ee77}\label{classGovernment_a1e4bcb825fb5a42351e6cbac5750ee77}} 
+\index{Government@{Government}!setBudget@{setBudget}}
+\index{setBudget@{setBudget}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{setBudget()}{setBudget()}}
+{\footnotesize\ttfamily void Government\+::set\+Budget (\begin{DoxyParamCaption}\item[{double}]{b }\end{DoxyParamCaption})}
+
+
+
+Sets the government budget. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & New budget amount \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGovernment_af812cedd72e563cb1e824e507eb64f06}\label{classGovernment_af812cedd72e563cb1e824e507eb64f06}} 
+\index{Government@{Government}!setSuccessor@{setSuccessor}}
+\index{setSuccessor@{setSuccessor}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{setSuccessor()}{setSuccessor()}}
+{\footnotesize\ttfamily void Government\+::set\+Successor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGovernment}{Government}} $\ast$}]{next\+Handler }\end{DoxyParamCaption})}
+
+
+
+Sets the successor in the chain of responsibility. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em next\+Handler} & Pointer to the next handler in the chain \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGovernment_ac472f1128c2f548cc1bd947b7f5c9e17}\label{classGovernment_ac472f1128c2f548cc1bd947b7f5c9e17}} 
+\index{Government@{Government}!setTotalRevenue@{setTotalRevenue}}
+\index{setTotalRevenue@{setTotalRevenue}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{setTotalRevenue()}{setTotalRevenue()}}
+{\footnotesize\ttfamily void Government\+::set\+Total\+Revenue (\begin{DoxyParamCaption}\item[{double}]{b }\end{DoxyParamCaption})}
+
+
+
+Sets the total revenue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & Current revenue amount \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{Government_8h}{Government.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Government.\+cpp\end{DoxyCompactItemize}

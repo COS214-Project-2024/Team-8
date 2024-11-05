@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="DemoMain_8cpp" kind="file" language="C++">
+    <compoundname>DemoMain.cpp</compoundname>
+    <includes refid="doctest_8h" local="yes">doctest.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">sstream</includes>
+    <includes refid="TravelManager_8h" local="yes">TravelManager.h</includes>
+    <includes refid="Road_8h" local="yes">Road.h</includes>
+    <includes refid="Plane_8h" local="yes">Plane.h</includes>
+    <includes refid="Train_8h" local="yes">Train.h</includes>
+    <includes refid="Airport_8h" local="yes">Airport.h</includes>
+    <includes refid="BestRouteNode_8h" local="yes">BestRouteNode.h</includes>
+    <includes refid="AccesibleRoute_8h" local="yes">AccesibleRoute.h</includes>
+    <includes refid="TrainStation_8h" local="yes">TrainStation.h</includes>
+    <includes refid="MapIterator_8h" local="yes">MapIterator.h</includes>
+    <incdepgraph>
+      <node id="19">
+        <label>BestRouteNode.h</label>
+        <link refid="BestRouteNode_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>AccesibleRoute.h</label>
+        <link refid="AccesibleRoute_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>TrainStation.h</label>
+        <link refid="TrainStation_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Plane.h</label>
+        <link refid="Plane_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>MapIterator.h</label>
+        <link refid="MapIterator_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>VehicleBuilder.h</label>
+        <link refid="VehicleBuilder_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Transport.h</label>
+        <link refid="Transport_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Stops.h</label>
+        <link refid="Stops_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>TransportBuilder.h</label>
+        <link refid="TransportBuilder_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>signal.h</label>
+      </node>
+      <node id="5">
+        <label>sstream</label>
+      </node>
+      <node id="20">
+        <label>Road.h</label>
+        <link refid="Road_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TravelManager.h</label>
+        <link refid="TravelManager_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>RouteNode.h</label>
+        <link refid="RouteNode_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>doctest.h</label>
+        <link refid="doctest_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="17">
+        <label>Vehicle.h</label>
+        <link refid="Vehicle_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Airport.h</label>
+        <link refid="Airport_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>PlaneBuilder.h</label>
+        <link refid="PlaneBuilder_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/DemoMain.cpp</label>
+        <link refid="DemoMain_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>TrainBuilder.h</label>
+        <link refid="TrainBuilder_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Train.h</label>
+        <link refid="Train_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="DemoMain_8cpp_1a623b8690a262536536a43eab2d7df03d" prot="public" static="no">
+        <name>DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/DemoMain.cpp" line="1" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/DemoMain.cpp" bodystart="1" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="DemoMain_8cpp_1a2e8eb39521d87ad87ff6423afbc1040c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_CASE</definition>
+        <argsstring>(&quot;Testing the MapIterator&quot;)</argsstring>
+        <name>TEST_CASE</name>
+        <param>
+          <type>&quot;Testing the <ref refid="classMapIterator" kindref="compound">MapIterator</ref>&quot;</type>
+        </param>
+        <briefdescription>
+<para>This function checks the stop iterator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/DemoMain.cpp" line="27" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/DemoMain.cpp" bodystart="27" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="DemoMain_8cpp_1a8c269b9863fffc1312ced16e13c82f24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_CASE</definition>
+        <argsstring>(&quot;Testing Best Route Travel&quot;)</argsstring>
+        <name>TEST_CASE</name>
+        <param>
+          <type>&quot;Testing Best Route Travel&quot;</type>
+        </param>
+        <briefdescription>
+<para>This function tests the <ref refid="classTravelManager" kindref="compound">TravelManager</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/DemoMain.cpp" line="58" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/DemoMain.cpp" bodystart="58" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Unit Testing for the <ref refid="classTravelManager" kindref="compound">TravelManager</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#define<sp/>DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;doctest.h&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>doctest<sp/>folder</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="TravelManager_8h" kindref="compound">TravelManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Road_8h" kindref="compound">Road.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Plane_8h" kindref="compound">Plane.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Train_8h" kindref="compound">Train.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Airport_8h" kindref="compound">Airport.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;BestRouteNode.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="AccesibleRoute_8h" kindref="compound">AccesibleRoute.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="TrainStation_8h" kindref="compound">TrainStation.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="MapIterator_8h" kindref="compound">MapIterator.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="DemoMain_8cpp_1a2e8eb39521d87ad87ff6423afbc1040c" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;Testing<sp/>the<sp/>MapIterator&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classStops" kindref="compound">Stops</ref>*<sp/>stop1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classRoad" kindref="compound">Road</ref>(</highlight><highlight class="stringliteral">&quot;HighWay&quot;</highlight><highlight class="normal">,<sp/>10.0f);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classStops" kindref="compound">Stops</ref>*<sp/>stop2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classAirport" kindref="compound">Airport</ref>(</highlight><highlight class="stringliteral">&quot;LAX&quot;</highlight><highlight class="normal">,<sp/>10.0f);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classStops" kindref="compound">Stops</ref>*<sp/>stop3<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classTrainStation" kindref="compound">TrainStation</ref>(</highlight><highlight class="stringliteral">&quot;Union<sp/>Station&quot;</highlight><highlight class="normal">,<sp/>10.0f);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRouteNode" kindref="compound">RouteNode</ref>*<sp/>head<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classBestRouteNode" kindref="compound">BestRouteNode</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>head-&gt;add(stop1);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>head-&gt;add(stop2);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>head-&gt;add(stop3);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRouteNode" kindref="compound">RouteNode</ref>*<sp/>head2<sp/>=<sp/>head;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(head2-&gt;getData()<sp/>==<sp/>stop1);<sp/></highlight><highlight class="comment">//check<sp/>if<sp/>the<sp/>getData<sp/>function<sp/>works</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(head2-&gt;travel()-&gt;getData()<sp/>==<sp/>stop2);<sp/></highlight><highlight class="comment">//check<sp/>if<sp/>the<sp/>travel<sp/>function<sp/>works</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;MapIterator&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMapIterator" kindref="compound">MapIterator</ref>*<sp/>iter<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classMapIterator" kindref="compound">MapIterator</ref>(head);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(iter-&gt;<ref refid="classMapIterator_1a7077a19985208ea0f6919af8ea1d61ae" kindref="member">currentNode</ref>()<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Current<sp/>Node:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>iter-&gt;operator*()-&gt;getName()<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHECK(iter-&gt;operator*()<sp/>==<sp/>head2-&gt;getData());<sp/></highlight><highlight class="comment">//check<sp/>if<sp/>traversal<sp/>consistent<sp/>with<sp/>chain<sp/>of<sp/>nodes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>head2<sp/>=<sp/>head2-&gt;travel();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iter-&gt;operator++();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>iter;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>head;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>stop3;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>stop2;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>stop1;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><ref refid="DemoMain_8cpp_1a2e8eb39521d87ad87ff6423afbc1040c" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;Testing<sp/>Best<sp/>Route<sp/>Travel&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTravelManager" kindref="compound">TravelManager</ref>*<sp/>manager<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classTravelManager" kindref="compound">TravelManager</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classStops" kindref="compound">Stops</ref>*<sp/>stop1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classRoad" kindref="compound">Road</ref>(</highlight><highlight class="stringliteral">&quot;HighWay&quot;</highlight><highlight class="normal">,<sp/>10.0f);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classStops" kindref="compound">Stops</ref>*<sp/>stop2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classAirport" kindref="compound">Airport</ref>(</highlight><highlight class="stringliteral">&quot;LAX&quot;</highlight><highlight class="normal">,<sp/>10.0f);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classStops" kindref="compound">Stops</ref>*<sp/>stop3<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classTrainStation" kindref="compound">TrainStation</ref>(</highlight><highlight class="stringliteral">&quot;Union<sp/>Station&quot;</highlight><highlight class="normal">,<sp/>10.0f);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classStops" kindref="compound">Stops</ref>*<sp/>stop4<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classRoad" kindref="compound">Road</ref>(</highlight><highlight class="stringliteral">&quot;N2&quot;</highlight><highlight class="normal">,<sp/>10.0f);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classStops" kindref="compound">Stops</ref>*<sp/>stop5<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classAirport" kindref="compound">Airport</ref>(</highlight><highlight class="stringliteral">&quot;OR<sp/>Tambo&quot;</highlight><highlight class="normal">,<sp/>10.0f);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classStops" kindref="compound">Stops</ref>*<sp/>stop6<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classTrainStation" kindref="compound">TrainStation</ref>(</highlight><highlight class="stringliteral">&quot;Gauteng<sp/>Station&quot;</highlight><highlight class="normal">,<sp/>10.0f);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classStops" kindref="compound">Stops</ref>*<sp/>stop7<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classRoad" kindref="compound">Road</ref>(</highlight><highlight class="stringliteral">&quot;N1&quot;</highlight><highlight class="normal">,<sp/>10.0f);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostringstream<sp/>oss;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>std::streambuf*<sp/>p_cout_streambuf<sp/>=<sp/>std::cout.rdbuf();<sp/></highlight><highlight class="comment">//save<sp/>old<sp/>buf</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout.rdbuf(oss.rdbuf());<sp/></highlight><highlight class="comment">//redirect<sp/>std::cout<sp/>to<sp/>oss</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>manager-&gt;<ref refid="classTravelManager_1acca4e31ec9819790fc13cb6080ed3c68" kindref="member">addStops</ref>(stop1);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>manager-&gt;<ref refid="classTravelManager_1acca4e31ec9819790fc13cb6080ed3c68" kindref="member">addStops</ref>(stop2);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>manager-&gt;<ref refid="classTravelManager_1acca4e31ec9819790fc13cb6080ed3c68" kindref="member">addStops</ref>(stop3);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>manager-&gt;<ref refid="classTravelManager_1acca4e31ec9819790fc13cb6080ed3c68" kindref="member">addStops</ref>(stop4);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>manager-&gt;<ref refid="classTravelManager_1acca4e31ec9819790fc13cb6080ed3c68" kindref="member">addStops</ref>(stop5);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>manager-&gt;<ref refid="classTravelManager_1acca4e31ec9819790fc13cb6080ed3c68" kindref="member">addStops</ref>(stop6);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>manager-&gt;<ref refid="classTravelManager_1ad6f91d50ae036a8f602ff820f4aea4d2" kindref="member">BestRoute</ref>(140,<sp/>stop6);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout.rdbuf(p_cout_streambuf);<sp/></highlight><highlight class="comment">//reset<sp/>to<sp/>standard<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(oss.str().find(</highlight><highlight class="stringliteral">&quot;Travel<sp/>Summary&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>std::string::npos);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>manager-&gt;<ref refid="classTravelManager_1ad6f91d50ae036a8f602ff820f4aea4d2" kindref="member">BestRoute</ref>(140,<sp/>stop7);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout.rdbuf(p_cout_streambuf);<sp/></highlight><highlight class="comment">//reset<sp/>to<sp/>standard<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(oss.str().find(</highlight><highlight class="stringliteral">&quot;No<sp/>route<sp/>found\n&quot;</highlight><highlight class="normal">)<sp/>==<sp/>std::string::npos);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>stop7;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>stop6;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>stop5;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>stop4;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>stop3;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>stop2;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>stop1;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>manager;<sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/DemoMain.cpp"/>
+  </compounddef>
+</doxygen>

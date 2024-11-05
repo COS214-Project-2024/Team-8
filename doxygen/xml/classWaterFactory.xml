@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classWaterFactory" kind="class" language="C++" prot="public">
+    <compoundname>WaterFactory</compoundname>
+    <basecompoundref refid="classUtilityFactory" prot="public" virt="non-virtual">UtilityFactory</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWaterFactory_1a5ebee017411887a93493e7f490e8ea93" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+        <definition>Utility * WaterFactory::createUtility</definition>
+        <argsstring>(float output)</argsstring>
+        <name>createUtility</name>
+        <reimplements refid="classUtilityFactory_1aa9a1efccb820e6720abae72b39db1408">createUtility</reimplements>
+        <param>
+          <type>float</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+<para>Create a <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output of the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Utility* The <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> object created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterFactory.h" line="13" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterFactory.cpp" bodystart="10" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>WaterFactory</label>
+        <link refid="classWaterFactory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UtilityFactory</label>
+        <link refid="classUtilityFactory"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>WaterFactory</label>
+        <link refid="classWaterFactory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UtilityFactory</label>
+        <link refid="classUtilityFactory"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterFactory.h" line="11" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/WaterFactory.h" bodystart="11" bodyend="14"/>
+    <listofallmembers>
+      <member refid="classWaterFactory_1a5ebee017411887a93493e7f490e8ea93" prot="public" virt="virtual"><scope>WaterFactory</scope><name>createUtility</name></member>
+      <member refid="classUtilityFactory_1a0b3ba1ad421b3670aac7d693c159c793" prot="public" virt="virtual"><scope>WaterFactory</scope><name>~UtilityFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

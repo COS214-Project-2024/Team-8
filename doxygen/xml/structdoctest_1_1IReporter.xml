@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1IReporter" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>doctest::IReporter</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdoctest_1_1IReporter_1ae7e30d1c2cd332094c66d39bf3a85e52" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void doctest::IReporter::report_query</definition>
+        <argsstring>(const QueryData &amp;)=0</argsstring>
+        <name>report_query</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1QueryData" kindref="compound">QueryData</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2056" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1IReporter_1a7f4a4b654726d4b266c91cc0e1569f96" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void doctest::IReporter::test_run_start</definition>
+        <argsstring>()=0</argsstring>
+        <name>test_run_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2059" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1IReporter_1a610495b7caa29e36b5ea62bff62952ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void doctest::IReporter::test_run_end</definition>
+        <argsstring>(const TestRunStats &amp;)=0</argsstring>
+        <name>test_run_end</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1TestRunStats" kindref="compound">TestRunStats</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2061" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1IReporter_1afa107df2d0230607e2f86f1876f48526" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void doctest::IReporter::test_case_start</definition>
+        <argsstring>(const TestCaseData &amp;)=0</argsstring>
+        <name>test_case_start</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1TestCaseData" kindref="compound">TestCaseData</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2064" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1IReporter_1a46c2fe41e5fa3d6930a3cb26d81ed764" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void doctest::IReporter::test_case_reenter</definition>
+        <argsstring>(const TestCaseData &amp;)=0</argsstring>
+        <name>test_case_reenter</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1TestCaseData" kindref="compound">TestCaseData</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2066" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1IReporter_1a43f8f19681dd5d42218ecb4fd935cda7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void doctest::IReporter::test_case_end</definition>
+        <argsstring>(const CurrentTestCaseStats &amp;)=0</argsstring>
+        <name>test_case_end</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1CurrentTestCaseStats" kindref="compound">CurrentTestCaseStats</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2068" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1IReporter_1a40b0cdf1ad59dabc736e35fde63d516f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void doctest::IReporter::test_case_exception</definition>
+        <argsstring>(const TestCaseException &amp;)=0</argsstring>
+        <name>test_case_exception</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1TestCaseException" kindref="compound">TestCaseException</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2071" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1IReporter_1a03ef82d6fb9afe8b0e3bbe24f28dd268" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void doctest::IReporter::subcase_start</definition>
+        <argsstring>(const SubcaseSignature &amp;)=0</argsstring>
+        <name>subcase_start</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1SubcaseSignature" kindref="compound">SubcaseSignature</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2074" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1IReporter_1a05196dd1a5f7e40e8c734cd2a37d4e1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void doctest::IReporter::subcase_end</definition>
+        <argsstring>()=0</argsstring>
+        <name>subcase_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2076" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1IReporter_1a5bb54923eab233bb02f2fcfc178fa12a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void doctest::IReporter::log_assert</definition>
+        <argsstring>(const AssertData &amp;)=0</argsstring>
+        <name>log_assert</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1AssertData" kindref="compound">AssertData</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2079" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1IReporter_1a2b2cb4f15aa7417d4903a0edc3147018" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void doctest::IReporter::log_message</definition>
+        <argsstring>(const MessageData &amp;)=0</argsstring>
+        <name>log_message</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1MessageData" kindref="compound">MessageData</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2081" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1IReporter_1ab4ecfea9cd9582aad4a5e90e0c8ba45d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void doctest::IReporter::test_case_skipped</definition>
+        <argsstring>(const TestCaseData &amp;)=0</argsstring>
+        <name>test_case_skipped</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1TestCaseData" kindref="compound">TestCaseData</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2085" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structdoctest_1_1IReporter_1a7d520de46d9104c0eeb02375fabad32d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int doctest::IReporter::get_num_active_contexts</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_active_contexts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2090" column="40"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1IReporter_1a67a2da62d754d3b517d6d50ef210a988" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structdoctest_1_1IContextScope" kindref="compound">IContextScope</ref> *const  *</type>
+        <definition>static const IContextScope* const* doctest::IReporter::get_active_contexts</definition>
+        <argsstring>()</argsstring>
+        <name>get_active_contexts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2091" column="38"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1IReporter_1ac8b96fef046edc609a3374a61b84797d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int doctest::IReporter::get_num_stringified_contexts</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_stringified_contexts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2094" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1IReporter_1acc1a86891876a957c6fc382af7894f99" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classdoctest_1_1String" kindref="compound">String</ref> *</type>
+        <definition>static const String* doctest::IReporter::get_stringified_contexts</definition>
+        <argsstring>()</argsstring>
+        <name>get_stringified_contexts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2095" column="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2049" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2050" bodyend="2096"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1IReporter_1a67a2da62d754d3b517d6d50ef210a988" prot="public" virt="non-virtual"><scope>doctest::IReporter</scope><name>get_active_contexts</name></member>
+      <member refid="structdoctest_1_1IReporter_1a7d520de46d9104c0eeb02375fabad32d" prot="public" virt="non-virtual"><scope>doctest::IReporter</scope><name>get_num_active_contexts</name></member>
+      <member refid="structdoctest_1_1IReporter_1ac8b96fef046edc609a3374a61b84797d" prot="public" virt="non-virtual"><scope>doctest::IReporter</scope><name>get_num_stringified_contexts</name></member>
+      <member refid="structdoctest_1_1IReporter_1acc1a86891876a957c6fc382af7894f99" prot="public" virt="non-virtual"><scope>doctest::IReporter</scope><name>get_stringified_contexts</name></member>
+      <member refid="structdoctest_1_1IReporter_1a5bb54923eab233bb02f2fcfc178fa12a" prot="public" virt="pure-virtual"><scope>doctest::IReporter</scope><name>log_assert</name></member>
+      <member refid="structdoctest_1_1IReporter_1a2b2cb4f15aa7417d4903a0edc3147018" prot="public" virt="pure-virtual"><scope>doctest::IReporter</scope><name>log_message</name></member>
+      <member refid="structdoctest_1_1IReporter_1ae7e30d1c2cd332094c66d39bf3a85e52" prot="public" virt="pure-virtual"><scope>doctest::IReporter</scope><name>report_query</name></member>
+      <member refid="structdoctest_1_1IReporter_1a05196dd1a5f7e40e8c734cd2a37d4e1e" prot="public" virt="pure-virtual"><scope>doctest::IReporter</scope><name>subcase_end</name></member>
+      <member refid="structdoctest_1_1IReporter_1a03ef82d6fb9afe8b0e3bbe24f28dd268" prot="public" virt="pure-virtual"><scope>doctest::IReporter</scope><name>subcase_start</name></member>
+      <member refid="structdoctest_1_1IReporter_1a43f8f19681dd5d42218ecb4fd935cda7" prot="public" virt="pure-virtual"><scope>doctest::IReporter</scope><name>test_case_end</name></member>
+      <member refid="structdoctest_1_1IReporter_1a40b0cdf1ad59dabc736e35fde63d516f" prot="public" virt="pure-virtual"><scope>doctest::IReporter</scope><name>test_case_exception</name></member>
+      <member refid="structdoctest_1_1IReporter_1a46c2fe41e5fa3d6930a3cb26d81ed764" prot="public" virt="pure-virtual"><scope>doctest::IReporter</scope><name>test_case_reenter</name></member>
+      <member refid="structdoctest_1_1IReporter_1ab4ecfea9cd9582aad4a5e90e0c8ba45d" prot="public" virt="pure-virtual"><scope>doctest::IReporter</scope><name>test_case_skipped</name></member>
+      <member refid="structdoctest_1_1IReporter_1afa107df2d0230607e2f86f1876f48526" prot="public" virt="pure-virtual"><scope>doctest::IReporter</scope><name>test_case_start</name></member>
+      <member refid="structdoctest_1_1IReporter_1a610495b7caa29e36b5ea62bff62952ed" prot="public" virt="pure-virtual"><scope>doctest::IReporter</scope><name>test_run_end</name></member>
+      <member refid="structdoctest_1_1IReporter_1a7f4a4b654726d4b266c91cc0e1569f96" prot="public" virt="pure-virtual"><scope>doctest::IReporter</scope><name>test_run_start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

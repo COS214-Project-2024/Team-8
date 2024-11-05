@@ -1,0 +1,74 @@
+\hypertarget{classCommercialFactory}{}\doxysection{Commercial\+Factory Class Reference}
+\label{classCommercialFactory}\index{CommercialFactory@{CommercialFactory}}
+
+
+A factory class for creating commercial buildings.  
+
+
+
+
+{\ttfamily \#include $<$Commercial\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Commercial\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for Commercial\+Factory\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classCommercialFactory_a06ff168b783133fad993bc6579fe5a00}{create\+Building}} ()=0
+\begin{DoxyCompactList}\small\item\em Creates a new commercial building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classCommercialFactory_aecc5d78093d97d4dabc67bdb46f0123f}{buildings}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A factory class for creating commercial buildings. 
+
+This class inherits from \mbox{\hyperlink{classBuildingFactory}{Building\+Factory}} and provides an interface for creating commercial building objects. Derived classes must implement the \mbox{\hyperlink{classCommercialFactory_a06ff168b783133fad993bc6579fe5a00}{create\+Building()}} method to produce specific types of commercial buildings. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCommercialFactory_a06ff168b783133fad993bc6579fe5a00}\label{classCommercialFactory_a06ff168b783133fad993bc6579fe5a00}} 
+\index{CommercialFactory@{CommercialFactory}!createBuilding@{createBuilding}}
+\index{createBuilding@{createBuilding}!CommercialFactory@{CommercialFactory}}
+\doxysubsubsection{\texorpdfstring{createBuilding()}{createBuilding()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classBuildings}{Buildings}}$\ast$ Commercial\+Factory\+::create\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Creates a new commercial building. 
+
+Pure virtual function that must be implemented by derived classes to create and return a pointer to a new commercial \mbox{\hyperlink{classBuildings}{Buildings}} object.
+
+\begin{DoxyReturn}{Returns}
+A pointer to a newly created commercial \mbox{\hyperlink{classBuildings}{Buildings}} object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBuildingFactory_a553d8ca955c6e4421ea2de7a616fe9e6}{Building\+Factory}}.
+
+
+
+Implemented in \mbox{\hyperlink{classMallFactory_ae95129f3755356ef32e1c336729a5970}{Mall\+Factory}}, \mbox{\hyperlink{classShopFactory_aacea60a9db7a627f226b6e4e2ae15a9e}{Shop\+Factory}}, and \mbox{\hyperlink{classOfficeFactory_ad783eea602f896852848753d10f30847}{Office\+Factory}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classCommercialFactory_aecc5d78093d97d4dabc67bdb46f0123f}\label{classCommercialFactory_aecc5d78093d97d4dabc67bdb46f0123f}} 
+\index{CommercialFactory@{CommercialFactory}!buildings@{buildings}}
+\index{buildings@{buildings}!CommercialFactory@{CommercialFactory}}
+\doxysubsubsection{\texorpdfstring{buildings}{buildings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}}$\ast$ Commercial\+Factory\+::buildings}
+
+Pointer to a \mbox{\hyperlink{classBuildings}{Buildings}} object, representing the commercial building instance managed by the factory. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{CommercialFactory_8h}{Commercial\+Factory.\+h}}\end{DoxyCompactItemize}

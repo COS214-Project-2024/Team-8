@@ -1,0 +1,79 @@
+\hypertarget{classwaterResource}{}\doxysection{water\+Resource Class Reference}
+\label{classwaterResource}\index{waterResource@{waterResource}}
+
+
+Inheritance diagram for water\+Resource\+:
+% FIG 0
+
+
+Collaboration diagram for water\+Resource\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classwaterResource_acf390f4b571f257b5d3262e366603849}\label{classwaterResource_acf390f4b571f257b5d3262e366603849}} 
+\mbox{\hyperlink{classwaterResource_acf390f4b571f257b5d3262e366603849}{water\+Resource}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new power Resource\+:\+: Resource object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classwaterResource_a36469699f6961fafcde63c7c3289e4f7}{give\+Resource}} (float units) override
+\begin{DoxyCompactList}\small\item\em Return true if the requested units of water can be supplied and subtract the available water, otherwise return false if it can not be supplied. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classwaterResource_a53b090ab9aacbfe0519ee41494c16d66}{receive\+Resource}} () override
+\begin{DoxyCompactList}\small\item\em Get water from the water utility object, increase the available water by the water received from said water utility. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classwaterResource_ae5bd1f7194d774e291705cfc503116f9}{get\+Available\+Amount}} () override
+\begin{DoxyCompactList}\small\item\em Get the available amount of water. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classwaterResource_ae5bd1f7194d774e291705cfc503116f9}\label{classwaterResource_ae5bd1f7194d774e291705cfc503116f9}} 
+\index{waterResource@{waterResource}!getAvailableAmount@{getAvailableAmount}}
+\index{getAvailableAmount@{getAvailableAmount}!waterResource@{waterResource}}
+\doxysubsubsection{\texorpdfstring{getAvailableAmount()}{getAvailableAmount()}}
+{\footnotesize\ttfamily float water\+Resource\+::get\+Available\+Amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Get the available amount of water. 
+
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwaterResource_a36469699f6961fafcde63c7c3289e4f7}\label{classwaterResource_a36469699f6961fafcde63c7c3289e4f7}} 
+\index{waterResource@{waterResource}!giveResource@{giveResource}}
+\index{giveResource@{giveResource}!waterResource@{waterResource}}
+\doxysubsubsection{\texorpdfstring{giveResource()}{giveResource()}}
+{\footnotesize\ttfamily bool water\+Resource\+::give\+Resource (\begin{DoxyParamCaption}\item[{float}]{units }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Return true if the requested units of water can be supplied and subtract the available water, otherwise return false if it can not be supplied. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em units} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwaterResource_a53b090ab9aacbfe0519ee41494c16d66}\label{classwaterResource_a53b090ab9aacbfe0519ee41494c16d66}} 
+\index{waterResource@{waterResource}!receiveResource@{receiveResource}}
+\index{receiveResource@{receiveResource}!waterResource@{waterResource}}
+\doxysubsubsection{\texorpdfstring{receiveResource()}{receiveResource()}}
+{\footnotesize\ttfamily void water\+Resource\+::receive\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Get water from the water utility object, increase the available water by the water received from said water utility. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em units} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/water\+Resource.\+h\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/water\+Resource.\+cpp\end{DoxyCompactItemize}

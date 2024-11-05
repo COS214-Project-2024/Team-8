@@ -1,0 +1,267 @@
+\hypertarget{classSewageSystems}{}\doxysection{Sewage\+Systems Class Reference}
+\label{classSewageSystems}\index{SewageSystems@{SewageSystems}}
+
+
+Inheritance diagram for Sewage\+Systems\+:
+% FIG 0
+
+
+Collaboration diagram for Sewage\+Systems\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSewageSystems_ab53177265b9da63f67a339d4ce933a29}{Sewage\+Systems}} (float output)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}} object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classSewageSystems_ae49f42bdab9a540700687e1e057dd16a}{get\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Repare the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSewageSystems_ac8f9acf837402ea3fad02b42ff6063f9}{execute\+Operation}} ()
+\begin{DoxyCompactList}\small\item\em Execute the operation of the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classSewageSystems_a390667d56ab969144e08e3e5778e9a39}{get\+Output}} ()
+\begin{DoxyCompactList}\small\item\em Get the output of the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSewageSystems_a6d0ec43da3fe9edb9732f11d5bef4cec}{pause\+Operation}} ()
+\begin{DoxyCompactList}\small\item\em Pause the operation of the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSewageSystems_acf5c2be3686331135698ef9dbcde15c5}{setmax\+Waste}} (int max)
+\begin{DoxyCompactList}\small\item\em Set the maximum waste of the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSewageSystems_aab1ed6964d6e259067d1305fe8a20cd2}{undo\+Change}} ()
+\begin{DoxyCompactList}\small\item\em Undo the last operation done on the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classSewageSystems_a58d6c2b7a78ee701772d44efb30ddee9}{get\+Utility\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get the type of the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUtility}{Utility}} $\ast$ \mbox{\hyperlink{classSewageSystems_ac2c0e0ae189c173a5a9596251b6537e3}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Clone the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSewageSystems_a1c5bad0443ff2c05e44432d08f074c97}{repair\+Utility}} ()
+\begin{DoxyCompactList}\small\item\em Repare the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSewageSystems_a388d3ef2329b6f97b454cf9640ce6539}{set\+Output}} (float Output)
+\begin{DoxyCompactList}\small\item\em Set the output of the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSewageSystems_a019a3a6808d52bd5b87209c4fd127c53}{add\+Building}} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$building)
+\begin{DoxyCompactList}\small\item\em Add a building to the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSewageSystems_affcbc6b4d39ab909ec5334f2d0703b4c}{clean\+Sewage}} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$sender)
+\begin{DoxyCompactList}\small\item\em Clean the sewage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSewageSystems_ab53177265b9da63f67a339d4ce933a29}\label{classSewageSystems_ab53177265b9da63f67a339d4ce933a29}} 
+\index{SewageSystems@{SewageSystems}!SewageSystems@{SewageSystems}}
+\index{SewageSystems@{SewageSystems}!SewageSystems@{SewageSystems}}
+\doxysubsubsection{\texorpdfstring{SewageSystems()}{SewageSystems()}}
+{\footnotesize\ttfamily Sewage\+Systems\+::\+Sewage\+Systems (\begin{DoxyParamCaption}\item[{float}]{output }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output} & The output of the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}\\
+\hline
+\end{DoxyParams}
+Sets the status to \char`\"{}\+Operational\char`\"{} and adds the status to the command\+History \mbox{\hyperlink{classCommand}{Command}} history is used to keep track of the operations done on the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSewageSystems_a019a3a6808d52bd5b87209c4fd127c53}\label{classSewageSystems_a019a3a6808d52bd5b87209c4fd127c53}} 
+\index{SewageSystems@{SewageSystems}!addBuilding@{addBuilding}}
+\index{addBuilding@{addBuilding}!SewageSystems@{SewageSystems}}
+\doxysubsubsection{\texorpdfstring{addBuilding()}{addBuilding()}}
+{\footnotesize\ttfamily void Sewage\+Systems\+::add\+Building (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$}]{building }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Add a building to the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & The building to add to the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classUtility_a4ea6047493c471b470e4c392aa8c801b}{Utility}}.
+
+\mbox{\Hypertarget{classSewageSystems_affcbc6b4d39ab909ec5334f2d0703b4c}\label{classSewageSystems_affcbc6b4d39ab909ec5334f2d0703b4c}} 
+\index{SewageSystems@{SewageSystems}!cleanSewage@{cleanSewage}}
+\index{cleanSewage@{cleanSewage}!SewageSystems@{SewageSystems}}
+\doxysubsubsection{\texorpdfstring{cleanSewage()}{cleanSewage()}}
+{\footnotesize\ttfamily bool Sewage\+Systems\+::clean\+Sewage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$}]{sender }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Clean the sewage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The building that sent the sewage\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if the sewage was cleaned, false otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classUtility_aa6e79e1fbe644bf131adb5d4acc3689d}{Utility}}.
+
+\mbox{\Hypertarget{classSewageSystems_ac2c0e0ae189c173a5a9596251b6537e3}\label{classSewageSystems_ac2c0e0ae189c173a5a9596251b6537e3}} 
+\index{SewageSystems@{SewageSystems}!clone@{clone}}
+\index{clone@{clone}!SewageSystems@{SewageSystems}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUtility}{Utility}} $\ast$ Sewage\+Systems\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Clone the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. 
+
+\begin{DoxyReturn}{Returns}
+Utility$\ast$ The cloned \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+\mbox{\Hypertarget{classSewageSystems_ac8f9acf837402ea3fad02b42ff6063f9}\label{classSewageSystems_ac8f9acf837402ea3fad02b42ff6063f9}} 
+\index{SewageSystems@{SewageSystems}!executeOperation@{executeOperation}}
+\index{executeOperation@{executeOperation}!SewageSystems@{SewageSystems}}
+\doxysubsubsection{\texorpdfstring{executeOperation()}{executeOperation()}}
+{\footnotesize\ttfamily void Sewage\+Systems\+::execute\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Execute the operation of the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. 
+
+Sets the status to \char`\"{}\+Operational\char`\"{} and adds the status to the command\+History 
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+\mbox{\Hypertarget{classSewageSystems_a390667d56ab969144e08e3e5778e9a39}\label{classSewageSystems_a390667d56ab969144e08e3e5778e9a39}} 
+\index{SewageSystems@{SewageSystems}!getOutput@{getOutput}}
+\index{getOutput@{getOutput}!SewageSystems@{SewageSystems}}
+\doxysubsubsection{\texorpdfstring{getOutput()}{getOutput()}}
+{\footnotesize\ttfamily float Sewage\+Systems\+::get\+Output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the output of the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. 
+
+\begin{DoxyReturn}{Returns}
+float The output of the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}} 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classUtility_a40b833bd8494fcddeb667a4705635b5f}{Utility}}.
+
+\mbox{\Hypertarget{classSewageSystems_ae49f42bdab9a540700687e1e057dd16a}\label{classSewageSystems_ae49f42bdab9a540700687e1e057dd16a}} 
+\index{SewageSystems@{SewageSystems}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!SewageSystems@{SewageSystems}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily std\+::string Sewage\+Systems\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Repare the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. 
+
+Sets the status to \char`\"{}\+Operational\char`\"{} and adds the status to the command\+History Simulates a repair operation by printing a series of \textquotesingle{}\#\textquotesingle{} to the console 
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+\mbox{\Hypertarget{classSewageSystems_a58d6c2b7a78ee701772d44efb30ddee9}\label{classSewageSystems_a58d6c2b7a78ee701772d44efb30ddee9}} 
+\index{SewageSystems@{SewageSystems}!getUtilityType@{getUtilityType}}
+\index{getUtilityType@{getUtilityType}!SewageSystems@{SewageSystems}}
+\doxysubsubsection{\texorpdfstring{getUtilityType()}{getUtilityType()}}
+{\footnotesize\ttfamily std\+::string Sewage\+Systems\+::get\+Utility\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the type of the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string The type of the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+\mbox{\Hypertarget{classSewageSystems_a6d0ec43da3fe9edb9732f11d5bef4cec}\label{classSewageSystems_a6d0ec43da3fe9edb9732f11d5bef4cec}} 
+\index{SewageSystems@{SewageSystems}!pauseOperation@{pauseOperation}}
+\index{pauseOperation@{pauseOperation}!SewageSystems@{SewageSystems}}
+\doxysubsubsection{\texorpdfstring{pauseOperation()}{pauseOperation()}}
+{\footnotesize\ttfamily void Sewage\+Systems\+::pause\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Pause the operation of the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. 
+
+Sets the status to \char`\"{}\+Paused\char`\"{} and adds the status to the command\+History 
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+\mbox{\Hypertarget{classSewageSystems_a1c5bad0443ff2c05e44432d08f074c97}\label{classSewageSystems_a1c5bad0443ff2c05e44432d08f074c97}} 
+\index{SewageSystems@{SewageSystems}!repairUtility@{repairUtility}}
+\index{repairUtility@{repairUtility}!SewageSystems@{SewageSystems}}
+\doxysubsubsection{\texorpdfstring{repairUtility()}{repairUtility()}}
+{\footnotesize\ttfamily void Sewage\+Systems\+::repair\+Utility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Repare the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. 
+
+Sets the status to \char`\"{}\+Operational\char`\"{} and adds the status to the command\+History Simulates a repair operation by printing a series of \textquotesingle{}\#\textquotesingle{} to the console 
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+\mbox{\Hypertarget{classSewageSystems_acf5c2be3686331135698ef9dbcde15c5}\label{classSewageSystems_acf5c2be3686331135698ef9dbcde15c5}} 
+\index{SewageSystems@{SewageSystems}!setmaxWaste@{setmaxWaste}}
+\index{setmaxWaste@{setmaxWaste}!SewageSystems@{SewageSystems}}
+\doxysubsubsection{\texorpdfstring{setmaxWaste()}{setmaxWaste()}}
+{\footnotesize\ttfamily void Sewage\+Systems\+::setmax\+Waste (\begin{DoxyParamCaption}\item[{int}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the maximum waste of the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & The maximum waste of the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}} \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classUtility_ae20563a384347c5bcd52809ed52983fa}{Utility}}.
+
+\mbox{\Hypertarget{classSewageSystems_a388d3ef2329b6f97b454cf9640ce6539}\label{classSewageSystems_a388d3ef2329b6f97b454cf9640ce6539}} 
+\index{SewageSystems@{SewageSystems}!setOutput@{setOutput}}
+\index{setOutput@{setOutput}!SewageSystems@{SewageSystems}}
+\doxysubsubsection{\texorpdfstring{setOutput()}{setOutput()}}
+{\footnotesize\ttfamily void Sewage\+Systems\+::set\+Output (\begin{DoxyParamCaption}\item[{float}]{Output }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the output of the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Output} & The output of the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}} \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classUtility_a8e87df51780eefefc9df53a98569fe70}{Utility}}.
+
+\mbox{\Hypertarget{classSewageSystems_aab1ed6964d6e259067d1305fe8a20cd2}\label{classSewageSystems_aab1ed6964d6e259067d1305fe8a20cd2}} 
+\index{SewageSystems@{SewageSystems}!undoChange@{undoChange}}
+\index{undoChange@{undoChange}!SewageSystems@{SewageSystems}}
+\doxysubsubsection{\texorpdfstring{undoChange()}{undoChange()}}
+{\footnotesize\ttfamily void Sewage\+Systems\+::undo\+Change (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Undo the last operation done on the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}}. 
+
+If the last operation was \char`\"{}\+Operational\char`\"{}, the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}} is paused If the last operation was \char`\"{}\+Paused\char`\"{}, the \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}} is set to operational If there are no more operations to undo, a message is printed to the console 
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{SewageSystems_8h}{Sewage\+Systems.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Sewage\+Systems.\+cpp\end{DoxyCompactItemize}

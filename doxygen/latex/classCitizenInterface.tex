@@ -1,0 +1,492 @@
+\hypertarget{classCitizenInterface}{}\doxysection{Citizen\+Interface Class Reference}
+\label{classCitizenInterface}\index{CitizenInterface@{CitizenInterface}}
+
+
+An abstract base class that defines the interface for \mbox{\hyperlink{classCitizen}{Citizen}} components.  
+
+
+
+
+{\ttfamily \#include $<$Citizen\+Interface.\+h$>$}
+
+
+
+Inheritance diagram for Citizen\+Interface\+:
+% FIG 0
+
+
+Collaboration diagram for Citizen\+Interface\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCitizenInterface_ad7cec6aa7c9c96c45ea18062790736b2}\label{classCitizenInterface_ad7cec6aa7c9c96c45ea18062790736b2}} 
+virtual \mbox{\hyperlink{classCitizenInterface_ad7cec6aa7c9c96c45ea18062790736b2}{$\sim$\+Citizen\+Interface}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor to allow for polymorphic deletion. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}} $>$ \mbox{\hyperlink{classCitizenInterface_ac523798722c1850f01e09f70bd8b0763}{clone}} ()=0
+\begin{DoxyCompactList}\small\item\em Clones the citizen object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classCitizenInterface_ad6b01b1e47b2c0f08aad5b074cdd7feb}{update}} (float new\+Tax\+Rate)=0
+\begin{DoxyCompactList}\small\item\em Updates the citizen with information from a governing authority. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classCitizenInterface_a497d1327d92721e95f570bfb264c0f14}{make\+Request}} (\mbox{\hyperlink{classGovernment}{Government}} $\ast$\mbox{\hyperlink{classCitizenInterface_a8f1062120fb4edff8be1ff2282692149}{government}}, std\+::string request\+Details)=0
+\begin{DoxyCompactList}\small\item\em Submits a request to the government. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classCitizenInterface_a627fc1401d87e5c5740b3a7b435891fd}{use\+Transport}} (\mbox{\hyperlink{classStops}{Stops}} $\ast$stop, int capacity, bool best\+Route=false)=0
+\begin{DoxyCompactList}\small\item\em Uses transport by calling travel method in \mbox{\hyperlink{classTransport}{Transport}} hierarchy. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classCitizenInterface_af41f54c047a6090e91cce78fd482dc00}{add\+Known\+Locations}} (\mbox{\hyperlink{classStops}{Stops}} $\ast$stop)=0
+\begin{DoxyCompactList}\small\item\em Adds known locations to the citizen\textquotesingle{}s travel manager. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classCitizenInterface_ac43523f4ed8709b965c96278a3d09393}{adjust\+Citizen\+Satisfaction}} (float new\+Satisfaction)=0
+\begin{DoxyCompactList}\small\item\em Adjusts the satisfaction level of the citizen. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classCitizenInterface_ae8fec0392ec8735c6146fbfdc1cae18f}{request\+Public\+Service}} (std\+::string service\+Type, float impact)=0
+\begin{DoxyCompactList}\small\item\em Requests access to a public service, affecting citizen satisfaction. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classCitizenInterface_ad58560caff8a0cc1329054e95c9491f9}{attend\+Event}} (std\+::string event\+Name, float impact)=0
+\begin{DoxyCompactList}\small\item\em Attends a city event, potentially boosting satisfaction and engagement. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classCitizenInterface_a7b16a6f570cb6dfca1e53d01d9cdf9ca}{evaluate\+Happiness}} ()=0
+\begin{DoxyCompactList}\small\item\em Evaluates the happiness level of the citizen. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classCitizenInterface_a32bdf4369e9973f2ff9f712e8ca55b24}{set\+Employment\+Status}} (bool employment\+Status)=0
+\begin{DoxyCompactList}\small\item\em Sets the employment status of the citizen. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classCitizenInterface_a1899f3d8d3f1bba8f59fc435e06a7c31}{set\+Property\+Ownership}} (bool \mbox{\hyperlink{classCitizenInterface_a2277bd8cf0f5deeeb2edcb5fb8c88357}{owns\+Property}})=0
+\begin{DoxyCompactList}\small\item\em Sets the property ownership status of the citizen. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classCitizenInterface_a371d2c7ffc1fdb5b36f9487ef0ca9c1c}{get\+Salary}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the citizen\textquotesingle{}s current salary. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classCitizenInterface_a6fae53c2d69484f043c9af10f15161c6}{set\+Salary}} (float new\+Salary)=0
+\begin{DoxyCompactList}\small\item\em Sets a new salary for the citizen. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classCitizenInterface_a9bd7f8f5288eadfdb2b59c049792aaf6}{get\+Satisfaction}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets the satisfaction of the citizen. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classCitizenInterface_aaead4dfe58d130b52c76836ce5d7cefe}{get\+Employement\+Status}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets the employment status of the citizen. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classCitizenInterface_a2ea81b15184bd333b7c60aaffb1d7e05}{get\+Property\+Ownership\+Status}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets the property ownership status of the citizen. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classCitizenInterface_a4799289b2011f0fcb72ce991aa17650f}{get\+Age}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets the age of the citizen. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classCitizenInterface_a9044492e21959c0ff353e1b3c68046fe}{get\+Name}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets the name of the citizen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCitizenInterface_af7fade8a9ab0d1c2e97a88837c30f927}\label{classCitizenInterface_af7fade8a9ab0d1c2e97a88837c30f927}} 
+virtual void \mbox{\hyperlink{classCitizenInterface_af7fade8a9ab0d1c2e97a88837c30f927}{display\+Details}} ()=0
+\begin{DoxyCompactList}\small\item\em Displays the details of the citizen in a formatted manner. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCitizenInterface_a98940f52ade08a1096cac7517eb77f40}\label{classCitizenInterface_a98940f52ade08a1096cac7517eb77f40}} 
+virtual float {\bfseries get\+Tax\+Rate} ()=0
+\item 
+\mbox{\Hypertarget{classCitizenInterface_af59ea950baf56ca6bf72bb60c5fe210c}\label{classCitizenInterface_af59ea950baf56ca6bf72bb60c5fe210c}} 
+virtual double {\bfseries get\+Balance} ()=0
+\item 
+\mbox{\Hypertarget{classCitizenInterface_a4bbee357e479349ee4dae70efae6798b}\label{classCitizenInterface_a4bbee357e479349ee4dae70efae6798b}} 
+virtual void {\bfseries set\+Balance} (double new\+Balance)=0
+\item 
+\mbox{\Hypertarget{classCitizenInterface_a5d103f160f7ee36a20a60366ab3285e6}\label{classCitizenInterface_a5d103f160f7ee36a20a60366ab3285e6}} 
+virtual void {\bfseries set\+Satisfaction} (int new\+Satisfaction)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classCitizenInterface_ada5892a64a6cac5a27a313735f6f7ef8}{name}}
+\item 
+float \mbox{\hyperlink{classCitizenInterface_ae295a5670ab4e6f5ede3ba3914c95322}{salary}}
+\item 
+float \mbox{\hyperlink{classCitizenInterface_ae04673c435d951b25d841c24456297c0}{satisfaction}}
+\item 
+\mbox{\Hypertarget{classCitizenInterface_ae89f359a99f0c4c603ca8590b780582b}\label{classCitizenInterface_ae89f359a99f0c4c603ca8590b780582b}} 
+int {\bfseries age}
+\item 
+bool \mbox{\hyperlink{classCitizenInterface_a1949f7d399a688e2d7cdf1c7de81b02e}{is\+Employed}}
+\item 
+bool \mbox{\hyperlink{classCitizenInterface_a2277bd8cf0f5deeeb2edcb5fb8c88357}{owns\+Property}}
+\item 
+\mbox{\hyperlink{classGovernment}{Government}} $\ast$ \mbox{\hyperlink{classCitizenInterface_a8f1062120fb4edff8be1ff2282692149}{government}}
+\item 
+\mbox{\hyperlink{classPopulationControl}{Population\+Control}} \mbox{\hyperlink{classCitizenInterface_a81e269098f1a81dd046773e520e0065f}{pop\+Control}}
+\item 
+\mbox{\Hypertarget{classCitizenInterface_a0932e90d5917ea2d80cc545943eee930}\label{classCitizenInterface_a0932e90d5917ea2d80cc545943eee930}} 
+float {\bfseries curr\+Tax\+Rate}
+\item 
+\mbox{\Hypertarget{classCitizenInterface_a24e22f118e15014583962f2dd71d4ca5}\label{classCitizenInterface_a24e22f118e15014583962f2dd71d4ca5}} 
+double {\bfseries balance}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstract base class that defines the interface for \mbox{\hyperlink{classCitizen}{Citizen}} components. 
+
+This interface provides a common structure for all citizen-\/related classes, including functions for tax calculation, salary adjustments, public service requests, and cloning capabilities. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCitizenInterface_af41f54c047a6090e91cce78fd482dc00}\label{classCitizenInterface_af41f54c047a6090e91cce78fd482dc00}} 
+\index{CitizenInterface@{CitizenInterface}!addKnownLocations@{addKnownLocations}}
+\index{addKnownLocations@{addKnownLocations}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{addKnownLocations()}{addKnownLocations()}}
+{\footnotesize\ttfamily virtual void Citizen\+Interface\+::add\+Known\+Locations (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStops}{Stops}} $\ast$}]{stop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds known locations to the citizen\textquotesingle{}s travel manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stop} & The stop to be added to the travel manager. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classCitizenType_aafbc7e228dd2fb4da91059a7ab13365f}{Citizen\+Type}}, and \mbox{\hyperlink{classCitizen_a0898b8b98a35a1744d5d4c235ab4681d}{Citizen}}.
+
+\mbox{\Hypertarget{classCitizenInterface_ac43523f4ed8709b965c96278a3d09393}\label{classCitizenInterface_ac43523f4ed8709b965c96278a3d09393}} 
+\index{CitizenInterface@{CitizenInterface}!adjustCitizenSatisfaction@{adjustCitizenSatisfaction}}
+\index{adjustCitizenSatisfaction@{adjustCitizenSatisfaction}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{adjustCitizenSatisfaction()}{adjustCitizenSatisfaction()}}
+{\footnotesize\ttfamily virtual void Citizen\+Interface\+::adjust\+Citizen\+Satisfaction (\begin{DoxyParamCaption}\item[{float}]{new\+Satisfaction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adjusts the satisfaction level of the citizen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Satisfaction} & The new satisfaction level. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classCitizenType_a0d0d82ba2482a2343f2089f9ab40c6de}{Citizen\+Type}}, and \mbox{\hyperlink{classCitizen_a68c89f916d8b94096d89d7b605e959cb}{Citizen}}.
+
+\mbox{\Hypertarget{classCitizenInterface_ad58560caff8a0cc1329054e95c9491f9}\label{classCitizenInterface_ad58560caff8a0cc1329054e95c9491f9}} 
+\index{CitizenInterface@{CitizenInterface}!attendEvent@{attendEvent}}
+\index{attendEvent@{attendEvent}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{attendEvent()}{attendEvent()}}
+{\footnotesize\ttfamily virtual void Citizen\+Interface\+::attend\+Event (\begin{DoxyParamCaption}\item[{std\+::string}]{event\+Name,  }\item[{float}]{impact }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Attends a city event, potentially boosting satisfaction and engagement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Name} & The name of the event. \\
+\hline
+{\em impact} & The impact of the event on citizen satisfaction. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classCitizenType_a568146357029967143e17b44dcb1c318}{Citizen\+Type}}, and \mbox{\hyperlink{classCitizen_a1c6324eadadad370567f8af2f6b04f27}{Citizen}}.
+
+\mbox{\Hypertarget{classCitizenInterface_ac523798722c1850f01e09f70bd8b0763}\label{classCitizenInterface_ac523798722c1850f01e09f70bd8b0763}} 
+\index{CitizenInterface@{CitizenInterface}!clone@{clone}}
+\index{clone@{clone}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}}$>$ Citizen\+Interface\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Clones the citizen object. 
+
+\begin{DoxyReturn}{Returns}
+A unique pointer to a new \mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}} object that is a clone of this object. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCitizenType_a6d6ee37de29e2791fb3ef2bc6a01e18c}{Citizen\+Type}}, and \mbox{\hyperlink{classCitizen_ade11673566d466af3e785829df29a484}{Citizen}}.
+
+\mbox{\Hypertarget{classCitizenInterface_a7b16a6f570cb6dfca1e53d01d9cdf9ca}\label{classCitizenInterface_a7b16a6f570cb6dfca1e53d01d9cdf9ca}} 
+\index{CitizenInterface@{CitizenInterface}!evaluateHappiness@{evaluateHappiness}}
+\index{evaluateHappiness@{evaluateHappiness}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{evaluateHappiness()}{evaluateHappiness()}}
+{\footnotesize\ttfamily virtual float Citizen\+Interface\+::evaluate\+Happiness (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Evaluates the happiness level of the citizen. 
+
+\begin{DoxyReturn}{Returns}
+An overall happiness level considering satisfaction and other personal factors. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCitizenType_af3f22949052e155ce0b7582fd747e606}{Citizen\+Type}}, and \mbox{\hyperlink{classCitizen_a264073daff7d319ecb2cd3ef06a794e9}{Citizen}}.
+
+\mbox{\Hypertarget{classCitizenInterface_a4799289b2011f0fcb72ce991aa17650f}\label{classCitizenInterface_a4799289b2011f0fcb72ce991aa17650f}} 
+\index{CitizenInterface@{CitizenInterface}!getAge@{getAge}}
+\index{getAge@{getAge}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{getAge()}{getAge()}}
+{\footnotesize\ttfamily virtual int Citizen\+Interface\+::get\+Age (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the age of the citizen. 
+
+\begin{DoxyReturn}{Returns}
+The age of the citizen. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCitizenType_ad85a22568685a326686adc0eef92df2b}{Citizen\+Type}}, and \mbox{\hyperlink{classCitizen_a96e445dc5c4468d9c85faa49475c329a}{Citizen}}.
+
+\mbox{\Hypertarget{classCitizenInterface_aaead4dfe58d130b52c76836ce5d7cefe}\label{classCitizenInterface_aaead4dfe58d130b52c76836ce5d7cefe}} 
+\index{CitizenInterface@{CitizenInterface}!getEmployementStatus@{getEmployementStatus}}
+\index{getEmployementStatus@{getEmployementStatus}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{getEmployementStatus()}{getEmployementStatus()}}
+{\footnotesize\ttfamily virtual bool Citizen\+Interface\+::get\+Employement\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the employment status of the citizen. 
+
+\begin{DoxyReturn}{Returns}
+The employment status of the citizen. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCitizenType_af9d568d82c39f39812483123bae2d69b}{Citizen\+Type}}, and \mbox{\hyperlink{classCitizen_a27e24c005f0d75caa6e33275c3dbc887}{Citizen}}.
+
+\mbox{\Hypertarget{classCitizenInterface_a9044492e21959c0ff353e1b3c68046fe}\label{classCitizenInterface_a9044492e21959c0ff353e1b3c68046fe}} 
+\index{CitizenInterface@{CitizenInterface}!getName@{getName}}
+\index{getName@{getName}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual std\+::string Citizen\+Interface\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the name of the citizen. 
+
+\begin{DoxyReturn}{Returns}
+The name of the citizen. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCitizenType_a0450b71e06dba458705c9d0782ea6859}{Citizen\+Type}}, and \mbox{\hyperlink{classCitizen_a6cb8c93c800efcb4abbfe25e63c68317}{Citizen}}.
+
+\mbox{\Hypertarget{classCitizenInterface_a2ea81b15184bd333b7c60aaffb1d7e05}\label{classCitizenInterface_a2ea81b15184bd333b7c60aaffb1d7e05}} 
+\index{CitizenInterface@{CitizenInterface}!getPropertyOwnershipStatus@{getPropertyOwnershipStatus}}
+\index{getPropertyOwnershipStatus@{getPropertyOwnershipStatus}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{getPropertyOwnershipStatus()}{getPropertyOwnershipStatus()}}
+{\footnotesize\ttfamily virtual bool Citizen\+Interface\+::get\+Property\+Ownership\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the property ownership status of the citizen. 
+
+\begin{DoxyReturn}{Returns}
+The property ownership status of the citizen. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCitizenType_a922ffa635257b3130fd5d823096aeb4a}{Citizen\+Type}}, and \mbox{\hyperlink{classCitizen_aaa81a0d5850c26dcfdfd1ca6f808fa35}{Citizen}}.
+
+\mbox{\Hypertarget{classCitizenInterface_a371d2c7ffc1fdb5b36f9487ef0ca9c1c}\label{classCitizenInterface_a371d2c7ffc1fdb5b36f9487ef0ca9c1c}} 
+\index{CitizenInterface@{CitizenInterface}!getSalary@{getSalary}}
+\index{getSalary@{getSalary}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{getSalary()}{getSalary()}}
+{\footnotesize\ttfamily virtual float Citizen\+Interface\+::get\+Salary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the citizen\textquotesingle{}s current salary. 
+
+\begin{DoxyReturn}{Returns}
+The citizen\textquotesingle{}s salary. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCitizenType_a51be73da5f42dec3c719337e7011146a}{Citizen\+Type}}, and \mbox{\hyperlink{classCitizen_ab34564a3430b1fa5574e4a4409b38115}{Citizen}}.
+
+\mbox{\Hypertarget{classCitizenInterface_a9bd7f8f5288eadfdb2b59c049792aaf6}\label{classCitizenInterface_a9bd7f8f5288eadfdb2b59c049792aaf6}} 
+\index{CitizenInterface@{CitizenInterface}!getSatisfaction@{getSatisfaction}}
+\index{getSatisfaction@{getSatisfaction}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{getSatisfaction()}{getSatisfaction()}}
+{\footnotesize\ttfamily virtual float Citizen\+Interface\+::get\+Satisfaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the satisfaction of the citizen. 
+
+\begin{DoxyReturn}{Returns}
+The satisfaction of the citizen. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCitizenType_a83a94fc8b3f4c8b1e8ad3bc2a6d42588}{Citizen\+Type}}, and \mbox{\hyperlink{classCitizen_a0a875195b487daf901eceaf3e7dc6914}{Citizen}}.
+
+\mbox{\Hypertarget{classCitizenInterface_a497d1327d92721e95f570bfb264c0f14}\label{classCitizenInterface_a497d1327d92721e95f570bfb264c0f14}} 
+\index{CitizenInterface@{CitizenInterface}!makeRequest@{makeRequest}}
+\index{makeRequest@{makeRequest}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{makeRequest()}{makeRequest()}}
+{\footnotesize\ttfamily virtual void Citizen\+Interface\+::make\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGovernment}{Government}} $\ast$}]{government,  }\item[{std\+::string}]{request\+Details }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Submits a request to the government. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em government} & The government entity to receive the request. \\
+\hline
+{\em request\+Details} & The details of the request. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classCitizenType_aae53050c5e3c66c8978db9defc2746e6}{Citizen\+Type}}, and \mbox{\hyperlink{classCitizen_a913dbea7ecf2b87951908c9554db652a}{Citizen}}.
+
+\mbox{\Hypertarget{classCitizenInterface_ae8fec0392ec8735c6146fbfdc1cae18f}\label{classCitizenInterface_ae8fec0392ec8735c6146fbfdc1cae18f}} 
+\index{CitizenInterface@{CitizenInterface}!requestPublicService@{requestPublicService}}
+\index{requestPublicService@{requestPublicService}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{requestPublicService()}{requestPublicService()}}
+{\footnotesize\ttfamily virtual void Citizen\+Interface\+::request\+Public\+Service (\begin{DoxyParamCaption}\item[{std\+::string}]{service\+Type,  }\item[{float}]{impact }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Requests access to a public service, affecting citizen satisfaction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em service\+Type} & The type of public service requested (e.\+g., \char`\"{}\+Healthcare\char`\"{}, \char`\"{}\+Education\char`\"{}). \\
+\hline
+{\em impact} & Satisfaction impact of using this service. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classCitizenType_abbfb3180ef46dc4a39d60c2e7b021fc7}{Citizen\+Type}}, and \mbox{\hyperlink{classCitizen_a6af6fe4dae318e5747424c055a3b8bd9}{Citizen}}.
+
+\mbox{\Hypertarget{classCitizenInterface_a32bdf4369e9973f2ff9f712e8ca55b24}\label{classCitizenInterface_a32bdf4369e9973f2ff9f712e8ca55b24}} 
+\index{CitizenInterface@{CitizenInterface}!setEmploymentStatus@{setEmploymentStatus}}
+\index{setEmploymentStatus@{setEmploymentStatus}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{setEmploymentStatus()}{setEmploymentStatus()}}
+{\footnotesize\ttfamily virtual void Citizen\+Interface\+::set\+Employment\+Status (\begin{DoxyParamCaption}\item[{bool}]{employment\+Status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the employment status of the citizen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em employment\+Status} & The employment status (true for employed, false for unemployed). \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classCitizenType_acb51eaee56333a56e4b3531f6e601d1c}{Citizen\+Type}}, and \mbox{\hyperlink{classCitizen_a67360b9651e7a5503c920eca85c0d79e}{Citizen}}.
+
+\mbox{\Hypertarget{classCitizenInterface_a1899f3d8d3f1bba8f59fc435e06a7c31}\label{classCitizenInterface_a1899f3d8d3f1bba8f59fc435e06a7c31}} 
+\index{CitizenInterface@{CitizenInterface}!setPropertyOwnership@{setPropertyOwnership}}
+\index{setPropertyOwnership@{setPropertyOwnership}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{setPropertyOwnership()}{setPropertyOwnership()}}
+{\footnotesize\ttfamily virtual void Citizen\+Interface\+::set\+Property\+Ownership (\begin{DoxyParamCaption}\item[{bool}]{owns\+Property }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the property ownership status of the citizen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em owns\+Property} & The ownership status (true if owns property, false otherwise). \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classCitizenType_a588493f6810dda6ff5e74290e9e1b5dc}{Citizen\+Type}}, and \mbox{\hyperlink{classCitizen_a1aa1eca1f2adfc51f109637b4c6c4892}{Citizen}}.
+
+\mbox{\Hypertarget{classCitizenInterface_a6fae53c2d69484f043c9af10f15161c6}\label{classCitizenInterface_a6fae53c2d69484f043c9af10f15161c6}} 
+\index{CitizenInterface@{CitizenInterface}!setSalary@{setSalary}}
+\index{setSalary@{setSalary}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{setSalary()}{setSalary()}}
+{\footnotesize\ttfamily virtual void Citizen\+Interface\+::set\+Salary (\begin{DoxyParamCaption}\item[{float}]{new\+Salary }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets a new salary for the citizen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Salary} & The new salary amount. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classCitizenType_a4e277d8f603503921079cc4d2465a4e7}{Citizen\+Type}}, and \mbox{\hyperlink{classCitizen_ac2d947f929d253b87b64485c9a7498c3}{Citizen}}.
+
+\mbox{\Hypertarget{classCitizenInterface_ad6b01b1e47b2c0f08aad5b074cdd7feb}\label{classCitizenInterface_ad6b01b1e47b2c0f08aad5b074cdd7feb}} 
+\index{CitizenInterface@{CitizenInterface}!update@{update}}
+\index{update@{update}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Citizen\+Interface\+::update (\begin{DoxyParamCaption}\item[{float}]{new\+Tax\+Rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Updates the citizen with information from a governing authority. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Tax\+Rate} & The new tax rate to be applied. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classCitizenType_ab753df3909b5c4bb09a6a6092d78eac4}{Citizen\+Type}}, and \mbox{\hyperlink{classCitizen_a8e8aa3ad0de003d19a835f7cb2972e2b}{Citizen}}.
+
+\mbox{\Hypertarget{classCitizenInterface_a627fc1401d87e5c5740b3a7b435891fd}\label{classCitizenInterface_a627fc1401d87e5c5740b3a7b435891fd}} 
+\index{CitizenInterface@{CitizenInterface}!useTransport@{useTransport}}
+\index{useTransport@{useTransport}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{useTransport()}{useTransport()}}
+{\footnotesize\ttfamily virtual void Citizen\+Interface\+::use\+Transport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStops}{Stops}} $\ast$}]{stop,  }\item[{int}]{capacity,  }\item[{bool}]{best\+Route = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Uses transport by calling travel method in \mbox{\hyperlink{classTransport}{Transport}} hierarchy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transport} & The transport system to be used. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classCitizenType_a035d71e5fbd61e0e491f10812643f1de}{Citizen\+Type}}, and \mbox{\hyperlink{classCitizen_a7431f43a1090664ca3a0c75f1860c7f4}{Citizen}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classCitizenInterface_a8f1062120fb4edff8be1ff2282692149}\label{classCitizenInterface_a8f1062120fb4edff8be1ff2282692149}} 
+\index{CitizenInterface@{CitizenInterface}!government@{government}}
+\index{government@{government}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{government}{government}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGovernment}{Government}}$\ast$ Citizen\+Interface\+::government\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pointer to the \mbox{\hyperlink{classGovernment}{Government}} \mbox{\Hypertarget{classCitizenInterface_a1949f7d399a688e2d7cdf1c7de81b02e}\label{classCitizenInterface_a1949f7d399a688e2d7cdf1c7de81b02e}} 
+\index{CitizenInterface@{CitizenInterface}!isEmployed@{isEmployed}}
+\index{isEmployed@{isEmployed}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{isEmployed}{isEmployed}}
+{\footnotesize\ttfamily bool Citizen\+Interface\+::is\+Employed\hspace{0.3cm}{\ttfamily [protected]}}
+
+Employment status of the citizen. \mbox{\Hypertarget{classCitizenInterface_ada5892a64a6cac5a27a313735f6f7ef8}\label{classCitizenInterface_ada5892a64a6cac5a27a313735f6f7ef8}} 
+\index{CitizenInterface@{CitizenInterface}!name@{name}}
+\index{name@{name}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Citizen\+Interface\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+Name of the citizen. \mbox{\Hypertarget{classCitizenInterface_a2277bd8cf0f5deeeb2edcb5fb8c88357}\label{classCitizenInterface_a2277bd8cf0f5deeeb2edcb5fb8c88357}} 
+\index{CitizenInterface@{CitizenInterface}!ownsProperty@{ownsProperty}}
+\index{ownsProperty@{ownsProperty}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{ownsProperty}{ownsProperty}}
+{\footnotesize\ttfamily bool Citizen\+Interface\+::owns\+Property\hspace{0.3cm}{\ttfamily [protected]}}
+
+Property ownership status of the citizen. \mbox{\Hypertarget{classCitizenInterface_a81e269098f1a81dd046773e520e0065f}\label{classCitizenInterface_a81e269098f1a81dd046773e520e0065f}} 
+\index{CitizenInterface@{CitizenInterface}!popControl@{popControl}}
+\index{popControl@{popControl}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{popControl}{popControl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPopulationControl}{Population\+Control}} Citizen\+Interface\+::pop\+Control\hspace{0.3cm}{\ttfamily [protected]}}
+
+Manages population metrics and demographics. \mbox{\Hypertarget{classCitizenInterface_ae295a5670ab4e6f5ede3ba3914c95322}\label{classCitizenInterface_ae295a5670ab4e6f5ede3ba3914c95322}} 
+\index{CitizenInterface@{CitizenInterface}!salary@{salary}}
+\index{salary@{salary}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{salary}{salary}}
+{\footnotesize\ttfamily float Citizen\+Interface\+::salary\hspace{0.3cm}{\ttfamily [protected]}}
+
+Salary of the citizen. \mbox{\Hypertarget{classCitizenInterface_ae04673c435d951b25d841c24456297c0}\label{classCitizenInterface_ae04673c435d951b25d841c24456297c0}} 
+\index{CitizenInterface@{CitizenInterface}!satisfaction@{satisfaction}}
+\index{satisfaction@{satisfaction}!CitizenInterface@{CitizenInterface}}
+\doxysubsubsection{\texorpdfstring{satisfaction}{satisfaction}}
+{\footnotesize\ttfamily float Citizen\+Interface\+::satisfaction\hspace{0.3cm}{\ttfamily [protected]}}
+
+Satisfaction level of the citizen. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Citizen\+Interface.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,668 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classGovernment" kind="class" language="C++" prot="public">
+    <compoundname>Government</compoundname>
+    <derivedcompoundref refid="classFinanceSector" prot="public" virt="non-virtual">FinanceSector</derivedcompoundref>
+    <derivedcompoundref refid="classGeneralSector" prot="public" virt="non-virtual">GeneralSector</derivedcompoundref>
+    <derivedcompoundref refid="classUtilitiesSector" prot="public" virt="non-virtual">UtilitiesSector</derivedcompoundref>
+    <includes refid="Government_8h" local="no">Government.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGovernment_1af32138338235716bf6e29ad5212831a7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classCitizenInterface" kindref="compound">CitizenInterface</ref> * &gt;</type>
+        <definition>std::vector&lt;CitizenInterface *&gt; Government::citizenList</definition>
+        <argsstring></argsstring>
+        <name>citizenList</name>
+        <briefdescription>
+<para>List of citizen observers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="31" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGovernment_1aa755beaf1eb76859561bba13fe1b35da" prot="private" static="no" mutable="no">
+        <type><ref refid="classGovernment" kindref="compound">Government</ref> *</type>
+        <definition>Government* Government::successor</definition>
+        <argsstring></argsstring>
+        <name>successor</name>
+        <briefdescription>
+<para>Next handler in chain of responsibility. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="32" column="16" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGovernment_1a2db48691dd91a6615874bd2348138c81" prot="private" static="no" mutable="no">
+        <type><ref refid="classGovernment" kindref="compound">Government</ref> *</type>
+        <definition>Government* Government::requestee</definition>
+        <argsstring></argsstring>
+        <name>requestee</name>
+        <briefdescription>
+<para><ref refid="classGovernment" kindref="compound">Government</ref> entity handling requests. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="33" column="16" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGovernment_1a0197120aa93c17843c0d55501bc91ac3" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="classCommand" kindref="compound">Command</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;Command&gt; &gt; Government::commands</definition>
+        <argsstring></argsstring>
+        <name>commands</name>
+        <briefdescription>
+<para><ref refid="classCommand" kindref="compound">Command</ref> pattern implementation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="34" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGovernment_1adc5fd0312ea92230001a4c235c3371c9" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Government::budget</definition>
+        <argsstring></argsstring>
+        <name>budget</name>
+        <briefdescription>
+<para>Current government budget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="35" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGovernment_1a47db717f6d2690ea2ef02e0c74ae39bd" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Government::totalRevenue</definition>
+        <argsstring></argsstring>
+        <name>totalRevenue</name>
+        <briefdescription>
+<para>Total collected revenue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="36" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGovernment_1aa8747add3bcddb23707f5d07644985cf" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Government::currentTaxRate</definition>
+        <argsstring></argsstring>
+        <name>currentTaxRate</name>
+        <briefdescription>
+<para>Current tax rate for citizen notifications. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="37" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGovernment_1a6acb86fa4cd9fefa226c6f263be2e6d5" prot="private" static="no" mutable="no">
+        <type><ref refid="classFinanceDepartment" kindref="compound">FinanceDepartment</ref> *</type>
+        <definition>FinanceDepartment* Government::financeDepartment</definition>
+        <argsstring></argsstring>
+        <name>financeDepartment</name>
+        <briefdescription>
+<para>Finance branch of the <ref refid="classGovernment" kindref="compound">Government</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="38" column="23" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGovernment_1ad06c951e706c3a9e43e18b11c75d8888" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Government::Government</definition>
+        <argsstring>()</argsstring>
+        <name>Government</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="42" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="7" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1a759a1616da9713d8ca7beac89b4887c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Government::Government</definition>
+        <argsstring>(FinanceDepartment *financeDepartment)</argsstring>
+        <name>Government</name>
+        <param>
+          <type><ref refid="classFinanceDepartment" kindref="compound">FinanceDepartment</ref> *</type>
+          <declname>financeDepartment</declname>
+        </param>
+        <briefdescription>
+<para>Parameterized constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="45" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="20" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1ad4b00db6938ff1ed64b22e3326e0b19c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Government::~Government</definition>
+        <argsstring>()</argsstring>
+        <name>~Government</name>
+        <briefdescription>
+<para>Virtual destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="48" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="183" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1a7cbe1cdc8753c4fee0fb664b72741768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Government::attach</definition>
+        <argsstring>(CitizenInterface *citizen)</argsstring>
+        <name>attach</name>
+        <param>
+          <type><ref refid="classCitizenInterface" kindref="compound">CitizenInterface</ref> *</type>
+          <declname>citizen</declname>
+        </param>
+        <briefdescription>
+<para>Attaches a citizen observer to the government. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>citizen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to citizen to attach </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="54" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="32" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1a8de647466bc53190f22811ce2f0db1f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Government::detach</definition>
+        <argsstring>(CitizenInterface *citizen)</argsstring>
+        <name>detach</name>
+        <param>
+          <type><ref refid="classCitizenInterface" kindref="compound">CitizenInterface</ref> *</type>
+          <declname>citizen</declname>
+        </param>
+        <briefdescription>
+<para>Detaches a citizen observer from the government. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>citizen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to citizen to detach </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="60" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="43" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1adf2258ede6292fa43349c97d70d72155" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Government::notify</definition>
+        <argsstring>()</argsstring>
+        <name>notify</name>
+        <briefdescription>
+<para>Notifies all citizen observers of changes in tax rates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="65" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="52" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1a38ba7d30972a89cbe0427c3e49bc3719" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Government::addCommand</definition>
+        <argsstring>(std::unique_ptr&lt; Command &gt; command)</argsstring>
+        <name>addCommand</name>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="classCommand" kindref="compound">Command</ref> &gt;</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+<para>Adds a command to the command queue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unique pointer to command to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="71" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1a6c95299d73b2ea48262fbd99f367d8be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Government::executeCommands</definition>
+        <argsstring>()</argsstring>
+        <name>executeCommands</name>
+        <briefdescription>
+<para>Executes all commands in the queue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="76" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="84" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1a8a3ca8c70e12763cc3a44b67006240ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Government::requestCollectionOfPropertyTax</definition>
+        <argsstring>()</argsstring>
+        <name>requestCollectionOfPropertyTax</name>
+        <briefdescription>
+<para>Collects property tax. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Amount of property tax collected </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="82" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="93" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1a195d3cba2c94ef45165a0cba8ec967ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Government::requestCollectionOfIncomeTax</definition>
+        <argsstring>()</argsstring>
+        <name>requestCollectionOfIncomeTax</name>
+        <briefdescription>
+<para>Collects income tax. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Amount of income tax collected </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="88" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="103" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1a4a473f2a53da2aeaf9b76c6fb8889276" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Government::requestCollectionOfBusinessTax</definition>
+        <argsstring>()</argsstring>
+        <name>requestCollectionOfBusinessTax</name>
+        <briefdescription>
+<para>Collects business tax. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Amount of business tax collected </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="94" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="113" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1a1891cd25c1c876e2784d1c57d5303b77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Government::requestCollectionOfSalesTax</definition>
+        <argsstring>()</argsstring>
+        <name>requestCollectionOfSalesTax</name>
+        <briefdescription>
+<para>Collects sales tax. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Amount of sales tax collected </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="100" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="123" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1acfbd3701241813873f61ae5e21043956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Government::requestAllocationOfUtilitiesFunds</definition>
+        <argsstring>()</argsstring>
+        <name>requestAllocationOfUtilitiesFunds</name>
+        <briefdescription>
+<para>Allocates funds for utilities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Amount allocated for utilities </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="106" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="133" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1ab216803dc0eb2d5faecde752af8d6adb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Government::requestAllocationOfPublicServiceBuildingsFunds</definition>
+        <argsstring>()</argsstring>
+        <name>requestAllocationOfPublicServiceBuildingsFunds</name>
+        <briefdescription>
+<para>Allocates funds for public service buildings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Amount allocated for public service buildings </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="112" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="140" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1aff679f05a074938efb99fb278df3843d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Government::requestAllocationOfTransportFunds</definition>
+        <argsstring>()</argsstring>
+        <name>requestAllocationOfTransportFunds</name>
+        <briefdescription>
+<para>Allocates funds for transport. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Amount allocated for transport </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="118" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="147" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1a8b8aa1f5de6bf7dd7ec441083aea4d86" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double Government::requestAllocationOfEducationFunds</definition>
+        <argsstring>()</argsstring>
+        <name>requestAllocationOfEducationFunds</name>
+        <briefdescription>
+<para>Allocates funds for education. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Amount allocated for education </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="124" column="16" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="185" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1add6275ae12a9d9acd697d4694e56b38f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Government::requestAllocationOfRecreationFunds</definition>
+        <argsstring>()</argsstring>
+        <name>requestAllocationOfRecreationFunds</name>
+        <briefdescription>
+<para>Allocates funds for recreation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Amount allocated for recreation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="129" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="154" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1a1e4bcb825fb5a42351e6cbac5750ee77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Government::setBudget</definition>
+        <argsstring>(double b)</argsstring>
+        <name>setBudget</name>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Sets the government budget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New budget amount </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="135" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="160" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1ae925a4769f88e47de0cb4a08a3a50d35" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Government::getBudget</definition>
+        <argsstring>() const</argsstring>
+        <name>getBudget</name>
+        <briefdescription>
+<para>Gets the current budget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Current budget amount </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="141" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1ac472f1128c2f548cc1bd947b7f5c9e17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Government::setTotalRevenue</definition>
+        <argsstring>(double b)</argsstring>
+        <name>setTotalRevenue</name>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Sets the total revenue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current revenue amount </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="147" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="170" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1ac3f3a94b6dbbecf6720e70953eda6046" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Government::getTotalRevenue</definition>
+        <argsstring>() const</argsstring>
+        <name>getTotalRevenue</name>
+        <briefdescription>
+<para>Gets the total revenue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Total revenue amount </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="153" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="171" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1af812cedd72e563cb1e824e507eb64f06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Government::setSuccessor</definition>
+        <argsstring>(Government *nextHandler)</argsstring>
+        <name>setSuccessor</name>
+        <param>
+          <type><ref refid="classGovernment" kindref="compound">Government</ref> *</type>
+          <declname>nextHandler</declname>
+        </param>
+        <briefdescription>
+<para>Sets the successor in the chain of responsibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nextHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the next handler in the chain </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="159" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="173" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1aca02afeba5ccebde1a4393cd628cede6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGovernment" kindref="compound">Government</ref> *</type>
+        <definition>Government * Government::getSuccessor</definition>
+        <argsstring>() const</argsstring>
+        <name>getSuccessor</name>
+        <briefdescription>
+<para>Gets the current successor in the chain. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to the current successor </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="165" column="16" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="178" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classGovernment_1a8ebf14df569730e97b7016af3a00a0fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Government::handleRequest</definition>
+        <argsstring>(std::string requestDetails)</argsstring>
+        <name>handleRequest</name>
+        <reimplementedby refid="classFinanceSector_1a066dbe4c307815a27112a5961c6befe9">handleRequest</reimplementedby>
+        <reimplementedby refid="classGeneralSector_1aa9a1ab8e0dc2f623f4e65d7e452e892f">handleRequest</reimplementedby>
+        <reimplementedby refid="classUtilitiesSector_1a1190486aaef510689cfe904e18851738">handleRequest</reimplementedby>
+        <param>
+          <type>std::string</type>
+          <declname>requestDetails</declname>
+        </param>
+        <briefdescription>
+<para>Handles citizen requests. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>requestDetails</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Details of the request </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="171" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp" bodystart="191" bodyend="191"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for government sectors implementing Observer pattern for citizen notifications. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class manages citizens, budget allocation, and tax collection while implementing the Observer pattern to notify citizens of changes in tax rates and policies. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>UtilitiesSector</label>
+        <link refid="classUtilitiesSector"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="3">
+        <label>GeneralSector</label>
+        <link refid="classGeneralSector"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FinanceSector</label>
+        <link refid="classFinanceSector"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" line="28" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.h" bodystart="29" bodyend="173"/>
+    <listofallmembers>
+      <member refid="classGovernment_1a38ba7d30972a89cbe0427c3e49bc3719" prot="public" virt="non-virtual"><scope>Government</scope><name>addCommand</name></member>
+      <member refid="classGovernment_1a7cbe1cdc8753c4fee0fb664b72741768" prot="public" virt="non-virtual"><scope>Government</scope><name>attach</name></member>
+      <member refid="classGovernment_1adc5fd0312ea92230001a4c235c3371c9" prot="private" virt="non-virtual"><scope>Government</scope><name>budget</name></member>
+      <member refid="classGovernment_1af32138338235716bf6e29ad5212831a7" prot="private" virt="non-virtual"><scope>Government</scope><name>citizenList</name></member>
+      <member refid="classGovernment_1a0197120aa93c17843c0d55501bc91ac3" prot="private" virt="non-virtual"><scope>Government</scope><name>commands</name></member>
+      <member refid="classGovernment_1aa8747add3bcddb23707f5d07644985cf" prot="private" virt="non-virtual"><scope>Government</scope><name>currentTaxRate</name></member>
+      <member refid="classGovernment_1a8de647466bc53190f22811ce2f0db1f2" prot="public" virt="non-virtual"><scope>Government</scope><name>detach</name></member>
+      <member refid="classGovernment_1a6c95299d73b2ea48262fbd99f367d8be" prot="public" virt="non-virtual"><scope>Government</scope><name>executeCommands</name></member>
+      <member refid="classGovernment_1a6acb86fa4cd9fefa226c6f263be2e6d5" prot="private" virt="non-virtual"><scope>Government</scope><name>financeDepartment</name></member>
+      <member refid="classGovernment_1ae925a4769f88e47de0cb4a08a3a50d35" prot="public" virt="non-virtual"><scope>Government</scope><name>getBudget</name></member>
+      <member refid="classGovernment_1aca02afeba5ccebde1a4393cd628cede6" prot="public" virt="non-virtual"><scope>Government</scope><name>getSuccessor</name></member>
+      <member refid="classGovernment_1ac3f3a94b6dbbecf6720e70953eda6046" prot="public" virt="non-virtual"><scope>Government</scope><name>getTotalRevenue</name></member>
+      <member refid="classGovernment_1ad06c951e706c3a9e43e18b11c75d8888" prot="public" virt="non-virtual"><scope>Government</scope><name>Government</name></member>
+      <member refid="classGovernment_1a759a1616da9713d8ca7beac89b4887c9" prot="public" virt="non-virtual"><scope>Government</scope><name>Government</name></member>
+      <member refid="classGovernment_1a8ebf14df569730e97b7016af3a00a0fc" prot="public" virt="virtual"><scope>Government</scope><name>handleRequest</name></member>
+      <member refid="classGovernment_1adf2258ede6292fa43349c97d70d72155" prot="public" virt="non-virtual"><scope>Government</scope><name>notify</name></member>
+      <member refid="classGovernment_1a8b8aa1f5de6bf7dd7ec441083aea4d86" prot="public" virt="virtual"><scope>Government</scope><name>requestAllocationOfEducationFunds</name></member>
+      <member refid="classGovernment_1ab216803dc0eb2d5faecde752af8d6adb" prot="public" virt="non-virtual"><scope>Government</scope><name>requestAllocationOfPublicServiceBuildingsFunds</name></member>
+      <member refid="classGovernment_1add6275ae12a9d9acd697d4694e56b38f" prot="public" virt="non-virtual"><scope>Government</scope><name>requestAllocationOfRecreationFunds</name></member>
+      <member refid="classGovernment_1aff679f05a074938efb99fb278df3843d" prot="public" virt="non-virtual"><scope>Government</scope><name>requestAllocationOfTransportFunds</name></member>
+      <member refid="classGovernment_1acfbd3701241813873f61ae5e21043956" prot="public" virt="non-virtual"><scope>Government</scope><name>requestAllocationOfUtilitiesFunds</name></member>
+      <member refid="classGovernment_1a4a473f2a53da2aeaf9b76c6fb8889276" prot="public" virt="non-virtual"><scope>Government</scope><name>requestCollectionOfBusinessTax</name></member>
+      <member refid="classGovernment_1a195d3cba2c94ef45165a0cba8ec967ae" prot="public" virt="non-virtual"><scope>Government</scope><name>requestCollectionOfIncomeTax</name></member>
+      <member refid="classGovernment_1a8a3ca8c70e12763cc3a44b67006240ec" prot="public" virt="non-virtual"><scope>Government</scope><name>requestCollectionOfPropertyTax</name></member>
+      <member refid="classGovernment_1a1891cd25c1c876e2784d1c57d5303b77" prot="public" virt="non-virtual"><scope>Government</scope><name>requestCollectionOfSalesTax</name></member>
+      <member refid="classGovernment_1a2db48691dd91a6615874bd2348138c81" prot="private" virt="non-virtual"><scope>Government</scope><name>requestee</name></member>
+      <member refid="classGovernment_1a1e4bcb825fb5a42351e6cbac5750ee77" prot="public" virt="non-virtual"><scope>Government</scope><name>setBudget</name></member>
+      <member refid="classGovernment_1af812cedd72e563cb1e824e507eb64f06" prot="public" virt="non-virtual"><scope>Government</scope><name>setSuccessor</name></member>
+      <member refid="classGovernment_1ac472f1128c2f548cc1bd947b7f5c9e17" prot="public" virt="non-virtual"><scope>Government</scope><name>setTotalRevenue</name></member>
+      <member refid="classGovernment_1aa755beaf1eb76859561bba13fe1b35da" prot="private" virt="non-virtual"><scope>Government</scope><name>successor</name></member>
+      <member refid="classGovernment_1a47db717f6d2690ea2ef02e0c74ae39bd" prot="private" virt="non-virtual"><scope>Government</scope><name>totalRevenue</name></member>
+      <member refid="classGovernment_1ad4b00db6938ff1ed64b22e3326e0b19c" prot="public" virt="virtual"><scope>Government</scope><name>~Government</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

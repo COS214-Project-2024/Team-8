@@ -1,0 +1,397 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1Approx" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::Approx</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoctest_1_1Approx_1a332ac911453d1289f81bc36068e2bb97" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double doctest::Approx::m_epsilon</definition>
+        <argsstring></argsstring>
+        <name>m_epsilon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1281" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1Approx_1aa313c36a9170e7e3157e390a8839396d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double doctest::Approx::m_scale</definition>
+        <argsstring></argsstring>
+        <name>m_scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1282" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1Approx_1af29d79bf1986ba565a688cb97b10efd4" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double doctest::Approx::m_value</definition>
+        <argsstring></argsstring>
+        <name>m_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1283" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1283" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdoctest_1_1Approx_1a86f0d1b44c1cf095697f23ccdab00802" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doctest::Approx::Approx</definition>
+        <argsstring>(double value)</argsstring>
+        <name>Approx</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1211" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1Approx_1aae907c5ea1c4ac94e134db9e35da7dce" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdoctest_1_1Approx" kindref="compound">Approx</ref></type>
+        <definition>Approx doctest::Approx::operator()</definition>
+        <argsstring>(double value) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1213" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1Approx_1af8df6b0af00fd875e5b6a0c30b86f636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdoctest_1_1Approx" kindref="compound">Approx</ref> &amp;</type>
+        <definition>Approx&amp; doctest::Approx::epsilon</definition>
+        <argsstring>(double newEpsilon)</argsstring>
+        <name>epsilon</name>
+        <param>
+          <type>double</type>
+          <declname>newEpsilon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1224" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1Approx_1a62185fd4c09a63dab61bd893574d8473" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdoctest_1_1Approx" kindref="compound">Approx</ref> &amp;</type>
+        <definition>Approx&amp; doctest::Approx::scale</definition>
+        <argsstring>(double newScale)</argsstring>
+        <name>scale</name>
+        <param>
+          <type>double</type>
+          <declname>newScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1235" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structdoctest_1_1Approx_1a2b6b56551f113fd12f4a52b4d3e5fd7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE friend bool</type>
+        <definition>DOCTEST_INTERFACE friend bool operator==</definition>
+        <argsstring>(double lhs, const Approx &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>double</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdoctest_1_1Approx" kindref="compound">Approx</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1247" column="35"/>
+      </memberdef>
+      <memberdef kind="friend" id="structdoctest_1_1Approx_1a1b99d0c4c3924a253474e68ae30e1175" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE friend bool</type>
+        <definition>DOCTEST_INTERFACE friend bool operator==</definition>
+        <argsstring>(const Approx &amp;lhs, double rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1Approx" kindref="compound">Approx</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1248" column="35"/>
+      </memberdef>
+      <memberdef kind="friend" id="structdoctest_1_1Approx_1a44d4bbc575291095c884848887538233" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE friend bool</type>
+        <definition>DOCTEST_INTERFACE friend bool operator!=</definition>
+        <argsstring>(double lhs, const Approx &amp;rhs)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>double</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdoctest_1_1Approx" kindref="compound">Approx</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1249" column="35"/>
+      </memberdef>
+      <memberdef kind="friend" id="structdoctest_1_1Approx_1ae86972ba14656f422afdcc60cd2cdb08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE friend bool</type>
+        <definition>DOCTEST_INTERFACE friend bool operator!=</definition>
+        <argsstring>(const Approx &amp;lhs, double rhs)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1Approx" kindref="compound">Approx</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1250" column="35"/>
+      </memberdef>
+      <memberdef kind="friend" id="structdoctest_1_1Approx_1af2fef67cf4508a446eeaf38dafae661f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE friend bool</type>
+        <definition>DOCTEST_INTERFACE friend bool operator&lt;=</definition>
+        <argsstring>(double lhs, const Approx &amp;rhs)</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type>double</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdoctest_1_1Approx" kindref="compound">Approx</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1251" column="30"/>
+      </memberdef>
+      <memberdef kind="friend" id="structdoctest_1_1Approx_1a7f32e572caa5ee152b8ade301fcfd838" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE friend bool</type>
+        <definition>DOCTEST_INTERFACE friend bool operator&lt;=</definition>
+        <argsstring>(const Approx &amp;lhs, double rhs)</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1Approx" kindref="compound">Approx</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1252" column="30"/>
+      </memberdef>
+      <memberdef kind="friend" id="structdoctest_1_1Approx_1acf882dbff26c57cd8404da3edd46f45e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE friend bool</type>
+        <definition>DOCTEST_INTERFACE friend bool operator&gt;=</definition>
+        <argsstring>(double lhs, const Approx &amp;rhs)</argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type>double</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdoctest_1_1Approx" kindref="compound">Approx</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1253" column="35"/>
+      </memberdef>
+      <memberdef kind="friend" id="structdoctest_1_1Approx_1a52e1bcec19171f0ec55cc3a280188a03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE friend bool</type>
+        <definition>DOCTEST_INTERFACE friend bool operator&gt;=</definition>
+        <argsstring>(const Approx &amp;lhs, double rhs)</argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1Approx" kindref="compound">Approx</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1254" column="35"/>
+      </memberdef>
+      <memberdef kind="friend" id="structdoctest_1_1Approx_1acf32148e34dc6444a3bb4b16e7298279" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE friend bool</type>
+        <definition>DOCTEST_INTERFACE friend bool operator&lt;</definition>
+        <argsstring>(double lhs, const Approx &amp;rhs)</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>double</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdoctest_1_1Approx" kindref="compound">Approx</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1255" column="30"/>
+      </memberdef>
+      <memberdef kind="friend" id="structdoctest_1_1Approx_1a54ce2536ed164b79688f43e373dcbf7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE friend bool</type>
+        <definition>DOCTEST_INTERFACE friend bool operator&lt;</definition>
+        <argsstring>(const Approx &amp;lhs, double rhs)</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1Approx" kindref="compound">Approx</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1256" column="30"/>
+      </memberdef>
+      <memberdef kind="friend" id="structdoctest_1_1Approx_1a97a6e92b9c9dacc0adb2f76f9faf2924" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE friend bool</type>
+        <definition>DOCTEST_INTERFACE friend bool operator&gt;</definition>
+        <argsstring>(double lhs, const Approx &amp;rhs)</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>double</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdoctest_1_1Approx" kindref="compound">Approx</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1257" column="35"/>
+      </memberdef>
+      <memberdef kind="friend" id="structdoctest_1_1Approx_1a12a93e1726180db4091cb2e3b8ba5e30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_INTERFACE friend bool</type>
+        <definition>DOCTEST_INTERFACE friend bool operator&gt;</definition>
+        <argsstring>(const Approx &amp;lhs, double rhs)</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1Approx" kindref="compound">Approx</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1258" column="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1209" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1210" bodyend="1284"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1Approx_1a86f0d1b44c1cf095697f23ccdab00802" prot="public" virt="non-virtual"><scope>doctest::Approx</scope><name>Approx</name></member>
+      <member refid="structdoctest_1_1Approx_1af8df6b0af00fd875e5b6a0c30b86f636" prot="public" virt="non-virtual"><scope>doctest::Approx</scope><name>epsilon</name></member>
+      <member refid="structdoctest_1_1Approx_1a332ac911453d1289f81bc36068e2bb97" prot="public" virt="non-virtual"><scope>doctest::Approx</scope><name>m_epsilon</name></member>
+      <member refid="structdoctest_1_1Approx_1aa313c36a9170e7e3157e390a8839396d" prot="public" virt="non-virtual"><scope>doctest::Approx</scope><name>m_scale</name></member>
+      <member refid="structdoctest_1_1Approx_1af29d79bf1986ba565a688cb97b10efd4" prot="public" virt="non-virtual"><scope>doctest::Approx</scope><name>m_value</name></member>
+      <member refid="structdoctest_1_1Approx_1a44d4bbc575291095c884848887538233" prot="public" virt="non-virtual"><scope>doctest::Approx</scope><name>operator!=</name></member>
+      <member refid="structdoctest_1_1Approx_1ae86972ba14656f422afdcc60cd2cdb08" prot="public" virt="non-virtual"><scope>doctest::Approx</scope><name>operator!=</name></member>
+      <member refid="structdoctest_1_1Approx_1aae907c5ea1c4ac94e134db9e35da7dce" prot="public" virt="non-virtual"><scope>doctest::Approx</scope><name>operator()</name></member>
+      <member refid="structdoctest_1_1Approx_1acf32148e34dc6444a3bb4b16e7298279" prot="public" virt="non-virtual"><scope>doctest::Approx</scope><name>operator&lt;</name></member>
+      <member refid="structdoctest_1_1Approx_1a54ce2536ed164b79688f43e373dcbf7b" prot="public" virt="non-virtual"><scope>doctest::Approx</scope><name>operator&lt;</name></member>
+      <member refid="structdoctest_1_1Approx_1af2fef67cf4508a446eeaf38dafae661f" prot="public" virt="non-virtual"><scope>doctest::Approx</scope><name>operator&lt;=</name></member>
+      <member refid="structdoctest_1_1Approx_1a7f32e572caa5ee152b8ade301fcfd838" prot="public" virt="non-virtual"><scope>doctest::Approx</scope><name>operator&lt;=</name></member>
+      <member refid="structdoctest_1_1Approx_1a2b6b56551f113fd12f4a52b4d3e5fd7e" prot="public" virt="non-virtual"><scope>doctest::Approx</scope><name>operator==</name></member>
+      <member refid="structdoctest_1_1Approx_1a1b99d0c4c3924a253474e68ae30e1175" prot="public" virt="non-virtual"><scope>doctest::Approx</scope><name>operator==</name></member>
+      <member refid="structdoctest_1_1Approx_1a97a6e92b9c9dacc0adb2f76f9faf2924" prot="public" virt="non-virtual"><scope>doctest::Approx</scope><name>operator&gt;</name></member>
+      <member refid="structdoctest_1_1Approx_1a12a93e1726180db4091cb2e3b8ba5e30" prot="public" virt="non-virtual"><scope>doctest::Approx</scope><name>operator&gt;</name></member>
+      <member refid="structdoctest_1_1Approx_1acf882dbff26c57cd8404da3edd46f45e" prot="public" virt="non-virtual"><scope>doctest::Approx</scope><name>operator&gt;=</name></member>
+      <member refid="structdoctest_1_1Approx_1a52e1bcec19171f0ec55cc3a280188a03" prot="public" virt="non-virtual"><scope>doctest::Approx</scope><name>operator&gt;=</name></member>
+      <member refid="structdoctest_1_1Approx_1a62185fd4c09a63dab61bd893574d8473" prot="public" virt="non-virtual"><scope>doctest::Approx</scope><name>scale</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

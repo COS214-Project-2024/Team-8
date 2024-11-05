@@ -1,0 +1,31 @@
+digraph "PublicServicesPolicies"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="PublicServicesPolicies",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Concrete implementation of public services policies."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Policies",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPolicies.html",tooltip="Abstract base class for policy commands."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Command",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCommand.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" utility" ,fontname="Helvetica"];
+  Node4 [label="Utility",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classUtility.html",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" government" ,fontname="Helvetica"];
+  Node5 [label="Government",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGovernment.html",tooltip="Base class for government sectors implementing Observer pattern for citizen notifications."];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" citizen" ,fontname="Helvetica"];
+  Node6 [label="Citizen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCitizen.html",tooltip="Represents a citizen in the government system."];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="CitizenInterface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCitizenInterface.html",tooltip="An abstract base class that defines the interface for Citizen components."];
+  Node5 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" government" ,fontname="Helvetica"];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" popControl" ,fontname="Helvetica"];
+  Node8 [label="PopulationControl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPopulationControl.html",tooltip="Class for managing population dynamics in a city."];
+  Node5 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" government" ,fontname="Helvetica"];
+  Node9 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tm" ,fontname="Helvetica"];
+  Node9 [label="TravelManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTravelManager.html",tooltip=" "];
+  Node8 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" popControl" ,fontname="Helvetica"];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" economicPolicies" ,fontname="Helvetica"];
+  Node10 [label="EconomicPolicies",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEconomicPolicies.html",tooltip="Concrete implementation of economic policies."];
+  Node2 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" citizen" ,fontname="Helvetica"];
+  Node1 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" psPolicies" ,fontname="Helvetica"];
+}

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="CommercialTaxationSystem_8cpp" kind="file" language="C++">
+    <compoundname>CommercialTaxationSystem.cpp</compoundname>
+    <includes refid="CommercialTaxationSystem_8h" local="yes">CommercialTaxationSystem.h</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CommercialTaxationSystem.cpp</label>
+        <link refid="CommercialTaxationSystem_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>CommercialTaxationSystem.h</label>
+        <link refid="CommercialTaxationSystem_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="CommercialTaxationSystem_8h" kindref="compound">CommercialTaxationSystem.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><ref refid="classCommercialTaxationSystem_1af5da1c389bca04e6803944b392a98765" kindref="member">CommercialTaxationSystem::CommercialTaxationSystem</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classCommercialTaxationSystem_1a72af614854a288d70abc07d9a47fb5aa" kindref="member">CommercialTaxationSystem::collectBusinessTax</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>businessTaxRate,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>businessProfit)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalBusinessTaxes<sp/>=<sp/>businessTaxRate<sp/>*<sp/>businessProfit;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;💰<sp/>Total<sp/>Business<sp/>Taxes<sp/>Collected:<sp/>R<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>totalBusinessTaxes<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>totalBusinessTaxes;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classCommercialTaxationSystem_1a6c339175c0965f4e1cf1f527ade9016c" kindref="member">CommercialTaxationSystem::collectSalesTax</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>salesTaxRate,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>businessProfit)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalSalesTaxes<sp/>=<sp/>salesTaxRate<sp/>*<sp/>businessProfit;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;🛒<sp/>Total<sp/>Sales<sp/>Taxes<sp/>Collected:<sp/>R<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>totalSalesTaxes<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>totalSalesTaxes;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CommercialTaxationSystem.cpp"/>
+  </compounddef>
+</doxygen>

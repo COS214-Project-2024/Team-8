@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classconstructionResource" kind="class" language="C++" prot="public">
+    <compoundname>constructionResource</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Resource</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classconstructionResource_1adfabf9e5c671dba14bdf791482394dbd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int constructionResource::constructionMaterial</definition>
+        <argsstring></argsstring>
+        <name>constructionMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/constructionResource.h" line="9" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/constructionResource.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classconstructionResource_1a596308e42f814ae17e302a4b79aca6c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>constructionResource::constructionResource</definition>
+        <argsstring>()</argsstring>
+        <name>constructionResource</name>
+        <briefdescription>
+<para>Construct a new power Resource::power Resource object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/constructionResource.h" line="12" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/constructionResource.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classconstructionResource_1ab53468234a67f956e5c6093e13238e6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool constructionResource::giveResource</definition>
+        <argsstring>(float units) override</argsstring>
+        <name>giveResource</name>
+        <param>
+          <type>float</type>
+          <declname>units</declname>
+        </param>
+        <briefdescription>
+<para>Return true if the requested amount of construction material can be supplied and subtract the available material, otherwise return false if it can not be supplied. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>units</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/constructionResource.h" line="13" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/constructionResource.cpp" bodystart="17" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classconstructionResource_1ab326272baadfacb71e2d067a58581c0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void constructionResource::receiveResource</definition>
+        <argsstring>() override</argsstring>
+        <name>receiveResource</name>
+        <briefdescription>
+<para>Get Construction Material from the <ref refid="classCity" kindref="compound">City</ref>, increase the available Construction by the amount received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>units</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/constructionResource.h" line="14" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/constructionResource.cpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classconstructionResource_1ad2ca081985f1db7b9e62fa2e2fa2ae95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float constructionResource::getAvailableAmount</definition>
+        <argsstring>() override</argsstring>
+        <name>getAvailableAmount</name>
+        <briefdescription>
+<para>Get the available amount of construction material available. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/constructionResource.h" line="15" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/constructionResource.cpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classconstructionResource_1a8a4c99cda09db75b6f7aac00921baf35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>constructionResource::~constructionResource</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~constructionResource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/constructionResource.h" line="17" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>constructionResource</label>
+        <link refid="classconstructionResource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Resource</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>constructionResource</label>
+        <link refid="classconstructionResource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Resource</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/constructionResource.h" line="6" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/constructionResource.h" bodystart="6" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classconstructionResource_1adfabf9e5c671dba14bdf791482394dbd" prot="private" virt="non-virtual"><scope>constructionResource</scope><name>constructionMaterial</name></member>
+      <member refid="classconstructionResource_1a596308e42f814ae17e302a4b79aca6c8" prot="public" virt="non-virtual"><scope>constructionResource</scope><name>constructionResource</name></member>
+      <member refid="classconstructionResource_1ad2ca081985f1db7b9e62fa2e2fa2ae95" prot="public" virt="non-virtual"><scope>constructionResource</scope><name>getAvailableAmount</name></member>
+      <member refid="classconstructionResource_1ab53468234a67f956e5c6093e13238e6b" prot="public" virt="non-virtual"><scope>constructionResource</scope><name>giveResource</name></member>
+      <member refid="classconstructionResource_1ab326272baadfacb71e2d067a58581c0e" prot="public" virt="non-virtual"><scope>constructionResource</scope><name>receiveResource</name></member>
+      <member refid="classconstructionResource_1a8a4c99cda09db75b6f7aac00921baf35" prot="public" virt="non-virtual"><scope>constructionResource</scope><name>~constructionResource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

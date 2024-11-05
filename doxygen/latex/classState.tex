@@ -1,0 +1,61 @@
+\hypertarget{classState}{}\doxysection{State Class Reference}
+\label{classState}\index{State@{State}}
+
+
+Abstract class representing the state of a building.  
+
+
+
+
+{\ttfamily \#include $<$State.\+h$>$}
+
+
+
+Inheritance diagram for State\+:
+% FIG 0
+
+
+Collaboration diagram for State\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classState_af1f6af5199e5952cacb9ed428b6310bf}\label{classState_af1f6af5199e5952cacb9ed428b6310bf}} 
+virtual void \mbox{\hyperlink{classState_af1f6af5199e5952cacb9ed428b6310bf}{handle}} ()=0
+\begin{DoxyCompactList}\small\item\em Handles the operations specific to the current state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classState_a5dda824b77a0fa3f2a15a094693755f4}\label{classState_a5dda824b77a0fa3f2a15a094693755f4}} 
+virtual void \mbox{\hyperlink{classState_a5dda824b77a0fa3f2a15a094693755f4}{change\+State}} ()=0
+\begin{DoxyCompactList}\small\item\em Changes the state of the building. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classState_a783d52422b544bb226e13de8ecfd6ad6}{$\sim$\+State}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor to ensure proper cleanup of derived classes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classState_acfa8a1da79e8d62670243e5d089b5221}\label{classState_acfa8a1da79e8d62670243e5d089b5221}} 
+\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classState_acfa8a1da79e8d62670243e5d089b5221}{building}}
+\begin{DoxyCompactList}\small\item\em Pointer to the building associated with this state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classState_aed83304bf27c38ae673f1addd03bda5f}\label{classState_aed83304bf27c38ae673f1addd03bda5f}} 
+std\+::string {\bfseries state\+Name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class representing the state of a building. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classState_a783d52422b544bb226e13de8ecfd6ad6}\label{classState_a783d52422b544bb226e13de8ecfd6ad6}} 
+\index{State@{State}!````~State@{$\sim$State}}
+\index{````~State@{$\sim$State}!State@{State}}
+\doxysubsubsection{\texorpdfstring{$\sim$State()}{~State()}}
+{\footnotesize\ttfamily virtual State\+::$\sim$\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Virtual destructor to ensure proper cleanup of derived classes. 
+
+This virtual destructor is necessary because the class hierarchy uses polymorphism and objects may be deleted through pointers to the base class. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/State.\+h\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/State.\+cpp\end{DoxyCompactItemize}

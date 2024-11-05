@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classMapIterator" kind="class" language="C++" prot="public">
+    <compoundname>MapIterator</compoundname>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classMapIterator_1a3b3d9a7dae33e2d0029d434fd6300438" prot="protected" static="no" mutable="no">
+        <type><ref refid="classRouteNode" kindref="compound">RouteNode</ref> *</type>
+        <definition>RouteNode* MapIterator::head</definition>
+        <argsstring></argsstring>
+        <name>head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MapIterator.h" line="14" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MapIterator.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMapIterator_1aa8b98d392f260fc7b8bf62b9a4e69c8d" prot="protected" static="no" mutable="no">
+        <type><ref refid="classRouteNode" kindref="compound">RouteNode</ref> *</type>
+        <definition>RouteNode* MapIterator::current</definition>
+        <argsstring></argsstring>
+        <name>current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MapIterator.h" line="15" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MapIterator.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMapIterator_1a988f0f36c4043307e0a02ac0fb814646" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MapIterator::MapIterator</definition>
+        <argsstring>(RouteNode *cur)</argsstring>
+        <name>MapIterator</name>
+        <param>
+          <type><ref refid="classRouteNode" kindref="compound">RouteNode</ref> *</type>
+          <declname>cur</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Map Iterator:: Map Iterator object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>has reference to the current node</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Set the head and current node to the current node </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MapIterator.h" line="18" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MapIterator.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classMapIterator_1ac12bec18bc150fe371c4fc969bd1cb41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classStops" kindref="compound">Stops</ref> *</type>
+        <definition>Stops * MapIterator::operator*</definition>
+        <argsstring>()</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+<para>Get the <ref refid="classStops" kindref="compound">Stops</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Stops* data of the current object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MapIterator.h" line="20" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MapIterator.cpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classMapIterator_1ae4d86a01cf684a1187b90d3baab463df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classRouteNode" kindref="compound">RouteNode</ref> *</type>
+        <definition>RouteNode * MapIterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+<para>Overload the ++ operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>RouteNode* pointer of the current object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MapIterator.h" line="22" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MapIterator.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classMapIterator_1ad0b08cf8f347bdfac1eb320bf9a0f772" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MapIterator::operator==</definition>
+        <argsstring>(RouteNode *other)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="classRouteNode" kindref="compound">RouteNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Overload the == operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the other <ref refid="classRouteNode" kindref="compound">RouteNode</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the current node is equal to the other node </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MapIterator.h" line="24" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MapIterator.cpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classMapIterator_1a7077a19985208ea0f6919af8ea1d61ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classRouteNode" kindref="compound">RouteNode</ref> *</type>
+        <definition>RouteNode * MapIterator::currentNode</definition>
+        <argsstring>()</argsstring>
+        <name>currentNode</name>
+        <briefdescription>
+<para>Get the current node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>RouteNode* pointer of the current object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MapIterator.h" line="26" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MapIterator.cpp" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classMapIterator_1a5c884f76172410b6380b2356931b9c97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classRouteNode" kindref="compound">RouteNode</ref> *</type>
+        <definition>RouteNode * MapIterator::headNode</definition>
+        <argsstring>()</argsstring>
+        <name>headNode</name>
+        <briefdescription>
+<para>Get the head node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>RouteNode* pointer of the head object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MapIterator.h" line="28" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MapIterator.cpp" bodystart="65" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MapIterator</label>
+        <link refid="classMapIterator"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>current</edgelabel>
+          <edgelabel>head</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RouteNode</label>
+        <link refid="classRouteNode"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>successor</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Stops</label>
+        <link refid="classStops"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MapIterator.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MapIterator.h" bodystart="12" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classMapIterator_1aa8b98d392f260fc7b8bf62b9a4e69c8d" prot="protected" virt="non-virtual"><scope>MapIterator</scope><name>current</name></member>
+      <member refid="classMapIterator_1a7077a19985208ea0f6919af8ea1d61ae" prot="public" virt="non-virtual"><scope>MapIterator</scope><name>currentNode</name></member>
+      <member refid="classMapIterator_1a3b3d9a7dae33e2d0029d434fd6300438" prot="protected" virt="non-virtual"><scope>MapIterator</scope><name>head</name></member>
+      <member refid="classMapIterator_1a5c884f76172410b6380b2356931b9c97" prot="public" virt="non-virtual"><scope>MapIterator</scope><name>headNode</name></member>
+      <member refid="classMapIterator_1a988f0f36c4043307e0a02ac0fb814646" prot="public" virt="non-virtual"><scope>MapIterator</scope><name>MapIterator</name></member>
+      <member refid="classMapIterator_1ac12bec18bc150fe371c4fc969bd1cb41" prot="public" virt="non-virtual"><scope>MapIterator</scope><name>operator*</name></member>
+      <member refid="classMapIterator_1ae4d86a01cf684a1187b90d3baab463df" prot="public" virt="non-virtual"><scope>MapIterator</scope><name>operator++</name></member>
+      <member refid="classMapIterator_1ad0b08cf8f347bdfac1eb320bf9a0f772" prot="public" virt="non-virtual"><scope>MapIterator</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,72 @@
+\hypertarget{classCommand}{}\doxysection{Command Class Reference}
+\label{classCommand}\index{Command@{Command}}
+
+
+Inheritance diagram for Command\+:
+% FIG 0
+
+
+Collaboration diagram for Command\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCommand_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}\label{classCommand_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}} 
+virtual void {\bfseries execute} ()=0
+\item 
+virtual std\+::string \mbox{\hyperlink{classCommand_a34de0246195437ab1f1c078e7c3488c6}{get\+Utility\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get the utility type of the command. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classUtility}{Utility}} $\ast$ \mbox{\hyperlink{classCommand_a0606383bba658ef28073274a49859aa1}{get\+Utility}} ()
+\begin{DoxyCompactList}\small\item\em Get the utility of the command. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCommand_ab552bb3a07fdd1acbfd8ea76e69b2278}\label{classCommand_ab552bb3a07fdd1acbfd8ea76e69b2278}} 
+virtual \mbox{\hyperlink{classCommand_ab552bb3a07fdd1acbfd8ea76e69b2278}{$\sim$\+Command}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classCommand}{Command}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCommand_af4cc0c69ccba769e7d910b90f111d78e}\label{classCommand_af4cc0c69ccba769e7d910b90f111d78e}} 
+\mbox{\hyperlink{classUtility}{Utility}} $\ast$ {\bfseries utility}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCommand_a0606383bba658ef28073274a49859aa1}\label{classCommand_a0606383bba658ef28073274a49859aa1}} 
+\index{Command@{Command}!getUtility@{getUtility}}
+\index{getUtility@{getUtility}!Command@{Command}}
+\doxysubsubsection{\texorpdfstring{getUtility()}{getUtility()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUtility}{Utility}} $\ast$ Command\+::get\+Utility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the utility of the command. 
+
+\begin{DoxyReturn}{Returns}
+Utility$\ast$ The utility of the command 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classUndoCommand_ac87aba001d750b7c85ebfab2674bc4f6}{Undo\+Command}}, \mbox{\hyperlink{classStopCommand_abc66c964d65117c1a8fdb9940b6af88e}{Stop\+Command}}, and \mbox{\hyperlink{classStartCommand_a0d75a9acd379cf750bc84f43a17c6ae8}{Start\+Command}}.
+
+\mbox{\Hypertarget{classCommand_a34de0246195437ab1f1c078e7c3488c6}\label{classCommand_a34de0246195437ab1f1c078e7c3488c6}} 
+\index{Command@{Command}!getUtilityType@{getUtilityType}}
+\index{getUtilityType@{getUtilityType}!Command@{Command}}
+\doxysubsubsection{\texorpdfstring{getUtilityType()}{getUtilityType()}}
+{\footnotesize\ttfamily std\+::string Command\+::get\+Utility\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the utility type of the command. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string The utility type of the command 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classUndoCommand_abeedb9edd3c7db14e6f718dcf35760ae}{Undo\+Command}}, \mbox{\hyperlink{classStopCommand_a3a4aef422615eddc35ca32350f91a4f9}{Stop\+Command}}, and \mbox{\hyperlink{classStartCommand_a2653acf332ac690a85ad2a9168eb6d09}{Start\+Command}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{Command_8h}{Command.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Command.\+cpp\end{DoxyCompactItemize}

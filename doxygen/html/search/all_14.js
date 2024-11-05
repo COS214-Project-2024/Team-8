@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['unary_5fassert_479',['unary_assert',['../structdoctest_1_1detail_1_1ResultBuilder.html#a63a2a19638f4a761c70abd5563e2d23a',1,'doctest::detail::ResultBuilder']]],
+  ['underconstruction_480',['UnderConstruction',['../classUnderConstruction.html',1,'UnderConstruction'],['../classUnderConstruction.html#a5fb7edcd747e7b0450d39f587fb7ad66',1,'UnderConstruction::UnderConstruction()']]],
+  ['underlying_5ftype_481',['underlying_type',['../structdoctest_1_1detail_1_1types_1_1underlying__type.html',1,'doctest::detail::types']]],
+  ['undochange_482',['undoChange',['../classUtilityPowerPlant.html#ad2eda88b790df188abb1fc1987c5d411',1,'UtilityPowerPlant::undoChange()'],['../classWaterSupply.html#a191a2a76a909253c82d6aee54f5bd827',1,'WaterSupply::undoChange()'],['../classWasteManagement.html#a0575b4c2c2606d1f321cb06aed398a23',1,'WasteManagement::undoChange()'],['../classSewageSystems.html#aab1ed6964d6e259067d1305fe8a20cd2',1,'SewageSystems::undoChange()']]],
+  ['undocommand_483',['undoCommand',['../classUtilityManager.html#a2e57f56b88197d87628638694849e961',1,'UtilityManager']]],
+  ['undocommand_484',['UndoCommand',['../classUndoCommand.html#afbad4f631c082f50621721260896767d',1,'UndoCommand::UndoCommand()'],['../classUndoCommand.html',1,'UndoCommand']]],
+  ['undocommand_2eh_485',['UndoCommand.h',['../UndoCommand_8h.html',1,'']]],
+  ['unfilleddam_486',['UnfilledDam',['../classUtilityManager.html#af5e8276abb0911a866eb355c9e100e8d',1,'UtilityManager']]],
+  ['update_487',['update',['../classCitizenType.html#ab753df3909b5c4bb09a6a6092d78eac4',1,'CitizenType::update()'],['../classCitizenInterface.html#ad6b01b1e47b2c0f08aad5b074cdd7feb',1,'CitizenInterface::update()'],['../classCitizen.html#a8e8aa3ad0de003d19a835f7cb2972e2b',1,'Citizen::update()']]],
+  ['updatepopulation_488',['updatePopulation',['../classPopulationControl.html#a0b75ec3579f92354070dc22f8af7de28',1,'PopulationControl']]],
+  ['upgraderesidence_489',['upgradeResidence',['../classPropertyOwner.html#aa1d5573c40884586f9e413ae5fd81a2b',1,'PropertyOwner']]],
+  ['usetransport_490',['useTransport',['../classCitizenType.html#a035d71e5fbd61e0e491f10812643f1de',1,'CitizenType::useTransport()'],['../classCitizenInterface.html#a627fc1401d87e5c5740b3a7b435891fd',1,'CitizenInterface::useTransport()'],['../classCitizen.html#a7431f43a1090664ca3a0c75f1860c7f4',1,'Citizen::useTransport()']]],
+  ['utilitiescontrol_491',['UtilitiesControl',['../classUtilitiesControl.html',1,'']]],
+  ['utilitiessector_492',['UtilitiesSector',['../classUtilitiesSector.html#a22af1216a66d483aa9c4ea3b9754810c',1,'UtilitiesSector::UtilitiesSector()'],['../classUtilitiesSector.html',1,'UtilitiesSector']]],
+  ['utilitiessector_2eh_493',['UtilitiesSector.h',['../UtilitiesSector_8h.html',1,'']]],
+  ['utility_494',['Utility',['../classUtility.html',1,'']]],
+  ['utility_2eh_495',['Utility.h',['../Utility_8h.html',1,'']]],
+  ['utilityfactory_496',['UtilityFactory',['../classUtilityFactory.html',1,'']]],
+  ['utilityfactory_2eh_497',['UtilityFactory.h',['../UtilityFactory_8h.html',1,'']]],
+  ['utilitymanager_498',['UtilityManager',['../classUtilityManager.html#ae13355bf1457dd829b2771bad592cfcc',1,'UtilityManager::UtilityManager()'],['../classUtilityManager.html',1,'UtilityManager']]],
+  ['utilitypowerplant_499',['UtilityPowerPlant',['../classUtilityPowerPlant.html#af57e1be54efc98e628f7d943bc90129b',1,'UtilityPowerPlant::UtilityPowerPlant()'],['../classUtilityPowerPlant.html',1,'UtilityPowerPlant']]],
+  ['utilitypowerplant_2eh_500',['UtilityPowerPlant.h',['../UtilityPowerPlant_8h.html',1,'']]]
+];

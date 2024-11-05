@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1detail_1_1IExceptionTranslator" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>doctest::detail::IExceptionTranslator</compoundname>
+    <derivedcompoundref refid="classdoctest_1_1detail_1_1ExceptionTranslator" prot="public" virt="non-virtual">doctest::detail::ExceptionTranslator&lt; T &gt;</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1IExceptionTranslator_1a9c56005e4c83c13b859cc2e31102bfbc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool doctest::detail::IExceptionTranslator::translate</definition>
+        <argsstring>(String &amp;) const =0</argsstring>
+        <name>translate</name>
+        <reimplementedby refid="classdoctest_1_1detail_1_1ExceptionTranslator_1a56484c4218a06bbbd1548335a8b64110">translate</reimplementedby>
+        <param>
+          <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1798" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>doctest::detail::ExceptionTranslator&lt; T &gt;</label>
+        <link refid="classdoctest_1_1detail_1_1ExceptionTranslator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>doctest::detail::IExceptionTranslator</label>
+        <link refid="structdoctest_1_1detail_1_1IExceptionTranslator"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1795" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1796" bodyend="1799"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1detail_1_1IExceptionTranslator_1a9c56005e4c83c13b859cc2e31102bfbc" prot="public" virt="pure-virtual"><scope>doctest::detail::IExceptionTranslator</scope><name>translate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

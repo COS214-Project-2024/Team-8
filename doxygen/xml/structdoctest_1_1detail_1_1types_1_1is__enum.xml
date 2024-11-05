@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1detail_1_1types_1_1is__enum" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::detail::types::is_enum</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structdoctest_1_1detail_1_1types_1_1is__enum_1a2ac322024808b91cda5ce1a42691ee07" prot="public" static="yes" mutable="no">
+        <type>DOCTEST_CONSTEXPR bool</type>
+        <definition>DOCTEST_CONSTEXPR bool doctest::detail::types::is_enum&lt; T &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>= __is_enum(T)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="966" column="64" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="966" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="966" column="20" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="966" bodyend="966"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1detail_1_1types_1_1is__enum_1a2ac322024808b91cda5ce1a42691ee07" prot="public" virt="non-virtual"><scope>doctest::detail::types::is_enum</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

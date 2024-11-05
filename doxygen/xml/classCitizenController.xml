@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCitizenController" kind="class" language="C++" prot="private">
+    <compoundname>CitizenController</compoundname>
+    <includes refid="CitizenController_8h" local="no">CitizenController.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCitizenController_1ab2561b4403b6637721d07cf52160c318" prot="private" static="no" mutable="no">
+        <type><ref refid="classCitizen" kindref="compound">Citizen</ref> **</type>
+        <definition>Citizen** CitizenController::ListOfCitizens</definition>
+        <argsstring></argsstring>
+        <name>ListOfCitizens</name>
+        <briefdescription>
+<para>A dynamic array of pointers to <ref refid="classCitizen" kindref="compound">Citizen</ref> objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" line="17" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCitizenController_1af1255be9309f042241278f1946f96d1e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CitizenController::amountOfCitizens</definition>
+        <argsstring></argsstring>
+        <name>amountOfCitizens</name>
+        <briefdescription>
+<para>The current number of citizens in the list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" line="18" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCitizenController_1a7c07e513b38f09ef0bfb9cfb292d9864" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CitizenController::amountEmployedCitizens</definition>
+        <argsstring></argsstring>
+        <name>amountEmployedCitizens</name>
+        <briefdescription>
+<para>The number of employed citizens in the list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" line="19" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCitizenController_1a1a462bec414bc3050282ba6cd1ae4437" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CitizenController::amountPropertyOwners</definition>
+        <argsstring></argsstring>
+        <name>amountPropertyOwners</name>
+        <briefdescription>
+<para>The number of property owners in the list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" line="20" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCitizenController_1ab9f3725d35b89e1974bf4cbd166a107d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CitizenController::AvgSatisfaction</definition>
+        <argsstring></argsstring>
+        <name>AvgSatisfaction</name>
+        <briefdescription>
+<para>The average satisfaction score of the citizens. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" line="22" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCitizenController_1a672c4954b5429e3fbee5e48c902311bc" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CitizenController::TaxableIncome</definition>
+        <argsstring></argsstring>
+        <name>TaxableIncome</name>
+        <briefdescription>
+<para>The total taxable income of all citizens combined. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" line="23" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCitizenController_1a1fbfd0ae85ad80fa911a3fe75fd030e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CitizenController::CitizenController</definition>
+        <argsstring>()</argsstring>
+        <name>CitizenController</name>
+        <briefdescription>
+<para>Default constructor for the CitizenController class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes internal variables and allocates memory for the list of citizens. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" line="31" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.cpp" bodystart="6" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenController_1a0f333e098a40494c4695abea51264b69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CitizenController::~CitizenController</definition>
+        <argsstring>()</argsstring>
+        <name>~CitizenController</name>
+        <briefdescription>
+<para>Destructor for the CitizenController class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cleans up dynamically allocated memory (e.g., deletes the list of citizens). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" line="38" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenController_1a18eaaeea5892e43a79405c2a44f5d3d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CitizenController::addCitizen</definition>
+        <argsstring>(Citizen *add)</argsstring>
+        <name>addCitizen</name>
+        <param>
+          <type><ref refid="classCitizen" kindref="compound">Citizen</ref> *</type>
+          <declname>add</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new citizen to the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method adds a new <ref refid="classCitizen" kindref="compound">Citizen</ref> object to the dynamic array and updates statistics like the total number of citizens, employed citizens, and property owners.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>add</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the <ref refid="classCitizen" kindref="compound">Citizen</ref> object to be added. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" line="48" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.cpp" bodystart="14" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenController_1a3932bf4f212e8cc39cd705444d7ae464" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CitizenController::removeCitizen</definition>
+        <argsstring>(Citizen *rem)</argsstring>
+        <name>removeCitizen</name>
+        <param>
+          <type><ref refid="classCitizen" kindref="compound">Citizen</ref> *</type>
+          <declname>rem</declname>
+        </param>
+        <briefdescription>
+<para>Removes a citizen from the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method removes a <ref refid="classCitizen" kindref="compound">Citizen</ref> object from the dynamic array and updates statistics accordingly (e.g., reducing the number of employed citizens or property owners).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the <ref refid="classCitizen" kindref="compound">Citizen</ref> object to be removed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" line="58" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.cpp" bodystart="41" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenController_1aaee6c0695d7692efa0b7d197d94a31ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CitizenController::getAmountOfCitizens</definition>
+        <argsstring>()</argsstring>
+        <name>getAmountOfCitizens</name>
+        <briefdescription>
+<para>Gets the total number of citizens in the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method returns the current count of citizens in the list.</para>
+<para><simplesect kind="return"><para>The number of citizens (int). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" line="67" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.cpp" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenController_1a23c77df8d2d5c864d1b97272319835f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CitizenController::getEmployedCitizensAmount</definition>
+        <argsstring>()</argsstring>
+        <name>getEmployedCitizensAmount</name>
+        <briefdescription>
+<para>Gets the number of employed citizens in the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method returns the current count of employed citizens in the list.</para>
+<para><simplesect kind="return"><para>The number of employed citizens (int). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" line="76" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.cpp" bodystart="84" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenController_1abba0c8b75814e273adfd3779c340165e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CitizenController::getamountPropertyOwnersAmount</definition>
+        <argsstring>()</argsstring>
+        <name>getamountPropertyOwnersAmount</name>
+        <briefdescription>
+<para>Gets the number of property owners in the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method returns the current count of property owners in the list.</para>
+<para><simplesect kind="return"><para>The number of property owners (int). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" line="85" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.cpp" bodystart="98" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenController_1a1880deba04cd3cbecc036ae575a4ea9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double CitizenController::getAvgSatisfaction</definition>
+        <argsstring>()</argsstring>
+        <name>getAvgSatisfaction</name>
+        <briefdescription>
+<para>Gets the average satisfaction score of all citizens. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method calculates and returns the average satisfaction score of all citizens in the list. It may return a value between 0 and 100, representing satisfaction as a percentage.</para>
+<para><simplesect kind="return"><para>The average satisfaction score (double). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" line="96" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.cpp" bodystart="112" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenController_1a6ed9cca1fbae91bf951f67119ae797ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float CitizenController::GetTaxableIncome</definition>
+        <argsstring>()</argsstring>
+        <name>GetTaxableIncome</name>
+        <briefdescription>
+<para>Gets the total taxable income of all citizens. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method calculates and returns the total taxable income from all citizens combined.</para>
+<para><simplesect kind="return"><para>The total taxable income (float). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" line="105" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.cpp" bodystart="125" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classCitizenController_1ac9b18cd63b5bf0bdb01ef050a305e1c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCitizen" kindref="compound">Citizen</ref> **</type>
+        <definition>Citizen ** CitizenController::getListOfCitizens</definition>
+        <argsstring>()</argsstring>
+        <name>getListOfCitizens</name>
+        <briefdescription>
+<para>Gets a pointer to the list of citizens. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method returns the current list of <ref refid="classCitizen" kindref="compound">Citizen</ref> objects.</para>
+<para><simplesect kind="return"><para>A pointer to an array of <ref refid="classCitizen" kindref="compound">Citizen</ref> pointers. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" line="114" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.cpp" bodystart="138" bodyend="141"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to manage and control a collection of citizens. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Controls a List of Citizens.</para>
+<para>The CitizenController class manages a list of citizens and provides functionality to add, remove, and retrieve information about citizens. It also keeps track of statistics like employment, property ownership, satisfaction, and taxable income.</para>
+<para>This interface provides a common structure for all <ref refid="classCitizen" kindref="compound">Citizen</ref> related functions Is in charge of getting the total amount Employed and Property Owners , aswell as Citizens Tax Rate and the Average Satisfaction of all the citizens . </para>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h" line="14" column="1"/>
+    <listofallmembers>
+      <member refid="classCitizenController_1a18eaaeea5892e43a79405c2a44f5d3d5" prot="public" virt="non-virtual"><scope>CitizenController</scope><name>addCitizen</name></member>
+      <member refid="classCitizenController_1a7c07e513b38f09ef0bfb9cfb292d9864" prot="private" virt="non-virtual"><scope>CitizenController</scope><name>amountEmployedCitizens</name></member>
+      <member refid="classCitizenController_1af1255be9309f042241278f1946f96d1e" prot="private" virt="non-virtual"><scope>CitizenController</scope><name>amountOfCitizens</name></member>
+      <member refid="classCitizenController_1a1a462bec414bc3050282ba6cd1ae4437" prot="private" virt="non-virtual"><scope>CitizenController</scope><name>amountPropertyOwners</name></member>
+      <member refid="classCitizenController_1ab9f3725d35b89e1974bf4cbd166a107d" prot="private" virt="non-virtual"><scope>CitizenController</scope><name>AvgSatisfaction</name></member>
+      <member refid="classCitizenController_1a1fbfd0ae85ad80fa911a3fe75fd030e3" prot="public" virt="non-virtual"><scope>CitizenController</scope><name>CitizenController</name></member>
+      <member refid="classCitizenController_1aaee6c0695d7692efa0b7d197d94a31ee" prot="public" virt="non-virtual"><scope>CitizenController</scope><name>getAmountOfCitizens</name></member>
+      <member refid="classCitizenController_1abba0c8b75814e273adfd3779c340165e" prot="public" virt="non-virtual"><scope>CitizenController</scope><name>getamountPropertyOwnersAmount</name></member>
+      <member refid="classCitizenController_1a1880deba04cd3cbecc036ae575a4ea9c" prot="public" virt="non-virtual"><scope>CitizenController</scope><name>getAvgSatisfaction</name></member>
+      <member refid="classCitizenController_1a23c77df8d2d5c864d1b97272319835f3" prot="public" virt="non-virtual"><scope>CitizenController</scope><name>getEmployedCitizensAmount</name></member>
+      <member refid="classCitizenController_1ac9b18cd63b5bf0bdb01ef050a305e1c9" prot="public" virt="non-virtual"><scope>CitizenController</scope><name>getListOfCitizens</name></member>
+      <member refid="classCitizenController_1a6ed9cca1fbae91bf951f67119ae797ec" prot="public" virt="non-virtual"><scope>CitizenController</scope><name>GetTaxableIncome</name></member>
+      <member refid="classCitizenController_1ab2561b4403b6637721d07cf52160c318" prot="private" virt="non-virtual"><scope>CitizenController</scope><name>ListOfCitizens</name></member>
+      <member refid="classCitizenController_1a3932bf4f212e8cc39cd705444d7ae464" prot="public" virt="non-virtual"><scope>CitizenController</scope><name>removeCitizen</name></member>
+      <member refid="classCitizenController_1a672c4954b5429e3fbee5e48c902311bc" prot="private" virt="non-virtual"><scope>CitizenController</scope><name>TaxableIncome</name></member>
+      <member refid="classCitizenController_1a0f333e098a40494c4695abea51264b69" prot="public" virt="non-virtual"><scope>CitizenController</scope><name>~CitizenController</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

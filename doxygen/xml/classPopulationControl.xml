@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classPopulationControl" kind="class" language="C++" prot="public">
+    <compoundname>PopulationControl</compoundname>
+    <includes refid="PopulationControl_8h" local="no">PopulationControl.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classPopulationControl_1ad02435e5816a9905fa85b7f8f4f1d0e3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PopulationControl::totalPopulation</definition>
+        <argsstring></argsstring>
+        <name>totalPopulation</name>
+        <briefdescription>
+<para>Current total population. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.h" line="55" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classPopulationControl_1a6042d94cf077dae8be734cefd5afd9fd" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int PopulationControl::MAX_POPULATION</definition>
+        <argsstring></argsstring>
+        <name>MAX_POPULATION</name>
+        <initializer>= 1000000</initializer>
+        <briefdescription>
+<para>Maximum allowable population. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.h" line="56" column="22" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPopulationControl_1a8d9d3eb15ffe0bd7611881bf27d2aaa1" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float PopulationControl::MIGRATION_RATE_MULTIPLIER</definition>
+        <argsstring></argsstring>
+        <name>MIGRATION_RATE_MULTIPLIER</name>
+        <initializer>= 0.05f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.h" line="57" column="24" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPopulationControl_1a8440a222e1b38a9d8c2a8cbf2619ea77" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classBuildings" kindref="compound">Buildings</ref> * &gt;</type>
+        <definition>std::vector&lt;Buildings*&gt; PopulationControl::buildings</definition>
+        <argsstring></argsstring>
+        <name>buildings</name>
+        <briefdescription>
+<para>List of buildings in the city. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.h" line="60" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPopulationControl_1a9cbb47a4eafa75880181bea13a966d6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PopulationControl::PopulationControl</definition>
+        <argsstring>()</argsstring>
+        <name>PopulationControl</name>
+        <briefdescription>
+<para>Constructor for the <ref refid="classPopulationControl" kindref="compound">PopulationControl</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.h" line="21" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.cpp" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classPopulationControl_1aad0a98111a28fb0c88f8e1630e0c7c58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PopulationControl::~PopulationControl</definition>
+        <argsstring>()</argsstring>
+        <name>~PopulationControl</name>
+        <briefdescription>
+<para>Destructor for the <ref refid="classPopulationControl" kindref="compound">PopulationControl</ref> class, cleans up dynamically allocated buildings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.h" line="26" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.cpp" bodystart="13" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classPopulationControl_1a0b75ec3579f92354070dc22f8af7de28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PopulationControl::updatePopulation</definition>
+        <argsstring>(ResidentialBuilding *building)</argsstring>
+        <name>updatePopulation</name>
+        <param>
+          <type><ref refid="classResidentialBuilding" kindref="compound">ResidentialBuilding</ref> *</type>
+          <declname>building</declname>
+        </param>
+        <briefdescription>
+<para>Updates the population based on the building being added. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>building</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the building being added. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.h" line="33" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.cpp" bodystart="17" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classPopulationControl_1a555ccf6e293d46e09d899397045552af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PopulationControl::getTotalPopulation</definition>
+        <argsstring>()</argsstring>
+        <name>getTotalPopulation</name>
+        <briefdescription>
+<para>Gets the current total population. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Current population as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.h" line="40" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classPopulationControl_1a8f97b92c902501a54bd0f8756ca44387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PopulationControl::simulatePopulationGrowth</definition>
+        <argsstring>()</argsstring>
+        <name>simulatePopulationGrowth</name>
+        <briefdescription>
+<para>Simulates population growth based on hospitals&apos; birth rates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.h" line="46" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.cpp" bodystart="44" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classPopulationControl_1a21352ac64581f9f9bb339413fd1f8ea2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PopulationControl::simulateMigration</definition>
+        <argsstring>(int jobsCreated)</argsstring>
+        <name>simulateMigration</name>
+        <param>
+          <type>int</type>
+          <declname>jobsCreated</declname>
+        </param>
+        <briefdescription>
+<para>Calculates migration based on commercial buildings&apos; job creation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jobsCreated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of jobs created by new commercial buildings. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.h" line="53" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.cpp" bodystart="64" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classPopulationControl_1abe28a7322cdc9074cd22ad6136971a6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PopulationControl::increasePopulation</definition>
+        <argsstring>()</argsstring>
+        <name>increasePopulation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.h" line="54" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.cpp" bodystart="95" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classPopulationControl_1a18003e7f63ef1fe7ff41624a65293171" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PopulationControl::calculateMigration</definition>
+        <argsstring>(int jobsCreated)</argsstring>
+        <name>calculateMigration</name>
+        <param>
+          <type>int</type>
+          <declname>jobsCreated</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the migration effect based on created jobs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jobsCreated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of jobs created by new commercial buildings. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The calculated migration increase. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.h" line="69" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.cpp" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classPopulationControl_1aba1c23a602492cc3a753667aba3cc4ca" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PopulationControl::enforcePopulationControl</definition>
+        <argsstring>()</argsstring>
+        <name>enforcePopulationControl</name>
+        <briefdescription>
+<para>Implements population control when the population exceeds the limit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function could represent a government policy that introduces emigration incentives, population growth restrictions, or other controls to manage overflow. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.h" line="77" column="10" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.cpp" bodystart="79" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for managing population dynamics in a city. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.h" line="16" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PopulationControl.h" bodystart="16" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classPopulationControl_1a8440a222e1b38a9d8c2a8cbf2619ea77" prot="private" virt="non-virtual"><scope>PopulationControl</scope><name>buildings</name></member>
+      <member refid="classPopulationControl_1a18003e7f63ef1fe7ff41624a65293171" prot="private" virt="non-virtual"><scope>PopulationControl</scope><name>calculateMigration</name></member>
+      <member refid="classPopulationControl_1aba1c23a602492cc3a753667aba3cc4ca" prot="private" virt="non-virtual"><scope>PopulationControl</scope><name>enforcePopulationControl</name></member>
+      <member refid="classPopulationControl_1a555ccf6e293d46e09d899397045552af" prot="public" virt="non-virtual"><scope>PopulationControl</scope><name>getTotalPopulation</name></member>
+      <member refid="classPopulationControl_1abe28a7322cdc9074cd22ad6136971a6c" prot="public" virt="non-virtual"><scope>PopulationControl</scope><name>increasePopulation</name></member>
+      <member refid="classPopulationControl_1a6042d94cf077dae8be734cefd5afd9fd" prot="public" virt="non-virtual"><scope>PopulationControl</scope><name>MAX_POPULATION</name></member>
+      <member refid="classPopulationControl_1a8d9d3eb15ffe0bd7611881bf27d2aaa1" prot="public" virt="non-virtual"><scope>PopulationControl</scope><name>MIGRATION_RATE_MULTIPLIER</name></member>
+      <member refid="classPopulationControl_1a9cbb47a4eafa75880181bea13a966d6b" prot="public" virt="non-virtual"><scope>PopulationControl</scope><name>PopulationControl</name></member>
+      <member refid="classPopulationControl_1a21352ac64581f9f9bb339413fd1f8ea2" prot="public" virt="non-virtual"><scope>PopulationControl</scope><name>simulateMigration</name></member>
+      <member refid="classPopulationControl_1a8f97b92c902501a54bd0f8756ca44387" prot="public" virt="non-virtual"><scope>PopulationControl</scope><name>simulatePopulationGrowth</name></member>
+      <member refid="classPopulationControl_1ad02435e5816a9905fa85b7f8f4f1d0e3" prot="public" virt="non-virtual"><scope>PopulationControl</scope><name>totalPopulation</name></member>
+      <member refid="classPopulationControl_1a0b75ec3579f92354070dc22f8af7de28" prot="public" virt="non-virtual"><scope>PopulationControl</scope><name>updatePopulation</name></member>
+      <member refid="classPopulationControl_1aad0a98111a28fb0c88f8e1630e0c7c58" prot="public" virt="non-virtual"><scope>PopulationControl</scope><name>~PopulationControl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

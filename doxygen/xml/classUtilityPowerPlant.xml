@@ -1,0 +1,465 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUtilityPowerPlant" kind="class" language="C++" prot="public">
+    <compoundname>UtilityPowerPlant</compoundname>
+    <basecompoundref refid="classUtility" prot="public" virt="non-virtual">Utility</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUtilityPowerPlant_1a614e9ba841683231b868775bfa2731c0" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UtilityPowerPlant::maximumWatts</definition>
+        <argsstring></argsstring>
+        <name>maximumWatts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="17" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilityPowerPlant_1a98371015cbe652ca191c52a84edbe07d" prot="private" static="no" mutable="no">
+        <type><ref refid="classEnergySource" kindref="compound">EnergySource</ref> *</type>
+        <definition>EnergySource* UtilityPowerPlant::fuel</definition>
+        <argsstring></argsstring>
+        <name>fuel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="18" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUtilityPowerPlant_1af57e1be54efc98e628f7d943bc90129b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UtilityPowerPlant::UtilityPowerPlant</definition>
+        <argsstring>(float output)</argsstring>
+        <name>UtilityPowerPlant</name>
+        <param>
+          <type>float</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+<para>Create a <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+The constructor for the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref> class Also sets the fuel using the switchFuel function </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="29" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.cpp" bodystart="4" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityPowerPlant_1a3cb55ed7fb494bce9182faa07f578d3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string UtilityPowerPlant::getStatus</definition>
+        <argsstring>()</argsstring>
+        <name>getStatus</name>
+        <reimplements refid="classUtility_1aa5e24ae315185bd1d736a50fa4aee21d">getStatus</reimplements>
+        <briefdescription>
+<para>Get the status of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string The status of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="35" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityPowerPlant_1a128baf06329d56f24831d9e2135170c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UtilityPowerPlant::repairUtility</definition>
+        <argsstring>()</argsstring>
+        <name>repairUtility</name>
+        <reimplements refid="classUtility_1ae5bd09fa1f3c74c562b1c7d5f6e3c770">repairUtility</reimplements>
+        <briefdescription>
+<para>Repair the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Repairs the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref> Also sets the status to operational </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="42" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.cpp" bodystart="17" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityPowerPlant_1a086693d1bd4293c7d10016def8f8860f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UtilityPowerPlant::executeOperation</definition>
+        <argsstring>()</argsstring>
+        <name>executeOperation</name>
+        <reimplements refid="classUtility_1a30f0d3aa2c132e33a0ea7e47debbb974">executeOperation</reimplements>
+        <briefdescription>
+<para>Execute the operation of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the status to operational </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="48" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityPowerPlant_1a26f2152f70c54ef464b2e5cb9905f024" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float UtilityPowerPlant::getOutput</definition>
+        <argsstring>()</argsstring>
+        <name>getOutput</name>
+        <reimplements refid="classUtility_1a40b833bd8494fcddeb667a4705635b5f">getOutput</reimplements>
+        <briefdescription>
+<para>Get the output of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float The output of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="54" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.cpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityPowerPlant_1af7624cca23efa6a270915d858d81869f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UtilityPowerPlant::setOutput</definition>
+        <argsstring>(float Output)</argsstring>
+        <name>setOutput</name>
+        <reimplements refid="classUtility_1a8e87df51780eefefc9df53a98569fe70">setOutput</reimplements>
+        <param>
+          <type>float</type>
+          <declname>Output</declname>
+        </param>
+        <briefdescription>
+<para>Set the output of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+CHanges the fuel type of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref> based on the output </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="62" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityPowerPlant_1a2cc3e7dff68c0f762082cc03866b39de" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UtilityPowerPlant::pauseOperation</definition>
+        <argsstring>()</argsstring>
+        <name>pauseOperation</name>
+        <reimplements refid="classUtility_1a27c39caf66558263047b2c10fda15174">pauseOperation</reimplements>
+        <briefdescription>
+<para>Pause the operation of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the status to paused </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="68" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityPowerPlant_1a249ebc9a7a32e5bf44592a813d2252e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UtilityPowerPlant::setMaxWatts</definition>
+        <argsstring>(float max)</argsstring>
+        <name>setMaxWatts</name>
+        <reimplements refid="classUtility_1a946a24d4473791f62941221c63f67a25">setMaxWatts</reimplements>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Set the max watts of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The max watts of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="74" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.cpp" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityPowerPlant_1aa2d344e66c38897621022f2bc7e371a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UtilityPowerPlant::setFuel</definition>
+        <argsstring>(EnergySource *fuel)</argsstring>
+        <name>setFuel</name>
+        <reimplements refid="classUtility_1aa9261d8034152c1fc5618d35f5d70c38">setFuel</reimplements>
+        <param>
+          <type><ref refid="classEnergySource" kindref="compound">EnergySource</ref> *</type>
+          <declname>fuel</declname>
+        </param>
+        <briefdescription>
+<para>Set the fuel of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fuel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fuel of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="80" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.cpp" bodystart="140" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityPowerPlant_1a9edd644251baac4f5825c52aa7bca800" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string UtilityPowerPlant::getEnergyType</definition>
+        <argsstring>()</argsstring>
+        <name>getEnergyType</name>
+        <reimplements refid="classUtility_1a6f8eec7ad0199ab9223d8f57f2108e25">getEnergyType</reimplements>
+        <briefdescription>
+<para>Set the fuel of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fuel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fuel of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="86" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.cpp" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityPowerPlant_1a356bcabb0bfc16607c80b53def8cad57" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string UtilityPowerPlant::getUtilityType</definition>
+        <argsstring>()</argsstring>
+        <name>getUtilityType</name>
+        <reimplements refid="classUtility_1a05241d457a3eeb2c4e1508e5ca89ea56">getUtilityType</reimplements>
+        <briefdescription>
+<para>Get the utility type of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string The utility type of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="92" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.cpp" bodystart="65" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityPowerPlant_1a703724831db2253c7bb31966da4ce01f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UtilityPowerPlant::switchFuel</definition>
+        <argsstring>()</argsstring>
+        <name>switchFuel</name>
+        <reimplements refid="classUtility_1ad29972cb0be49835b747eb6bc667a198">switchFuel</reimplements>
+        <briefdescription>
+<para>Switch the fuel of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Changes the fuel type of the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref> based on the current fuel type </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="98" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.cpp" bodystart="70" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityPowerPlant_1a0b2674ba1a5adbbc7ed124d2593b024c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+        <definition>Utility * UtilityPowerPlant::clone</definition>
+        <argsstring>()</argsstring>
+        <name>clone</name>
+        <reimplements refid="classUtility_1a4a793297c2d99d8d5c689276a973b518">clone</reimplements>
+        <briefdescription>
+<para>Clone the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Utility* The cloned <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="104" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.cpp" bodystart="106" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityPowerPlant_1ad2eda88b790df188abb1fc1987c5d411" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UtilityPowerPlant::undoChange</definition>
+        <argsstring>()</argsstring>
+        <name>undoChange</name>
+        <reimplements refid="classUtility_1a345b48a57c1716c1756d874c17fc2aba">undoChange</reimplements>
+        <briefdescription>
+<para>Undo the last change to the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Undoes the last change to the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="110" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.cpp" bodystart="113" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityPowerPlant_1a7e8267585c47d8a67d114105b0a6c3d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UtilityPowerPlant::getPower</definition>
+        <argsstring>(Buildings *sender)</argsstring>
+        <name>getPower</name>
+        <reimplements refid="classUtility_1abd93d41bd72298acda7fe3950dab16d2">getPower</reimplements>
+        <param>
+          <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+          <declname>sender</declname>
+        </param>
+        <briefdescription>
+<para>Get the power from the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sender of the power</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool True if the power was received, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="118" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.cpp" bodystart="155" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityPowerPlant_1a2b885f34f66fe8eb36f7a301838fd696" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UtilityPowerPlant::addBuilding</definition>
+        <argsstring>(Buildings *building)</argsstring>
+        <name>addBuilding</name>
+        <reimplements refid="classUtility_1a4ea6047493c471b470e4c392aa8c801b">addBuilding</reimplements>
+        <param>
+          <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+          <declname>building</declname>
+        </param>
+        <briefdescription>
+<para>Add a building to the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>building</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The building to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="124" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.cpp" bodystart="173" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityPowerPlant_1a3934123d95bb9eb4236bbe294bea698e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UtilityPowerPlant::~UtilityPowerPlant</definition>
+        <argsstring>()</argsstring>
+        <name>~UtilityPowerPlant</name>
+        <briefdescription>
+<para>Destroy the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroys the <ref refid="classUtilityPowerPlant" kindref="compound">UtilityPowerPlant</ref> object </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="130" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.cpp" bodystart="149" bodyend="152"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="1">
+        <label>UtilityPowerPlant</label>
+        <link refid="classUtilityPowerPlant"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="1">
+        <label>UtilityPowerPlant</label>
+        <link refid="classUtilityPowerPlant"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" line="14" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityPowerPlant.h" bodystart="14" bodyend="131"/>
+    <listofallmembers>
+      <member refid="classUtilityPowerPlant_1a2b885f34f66fe8eb36f7a301838fd696" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>addBuilding</name></member>
+      <member refid="classUtility_1ac79531e37704bf46de18d608f977b95c" prot="protected" virt="non-virtual"><scope>UtilityPowerPlant</scope><name>buildings</name></member>
+      <member refid="classUtility_1aa6e79e1fbe644bf131adb5d4acc3689d" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>cleanSewage</name></member>
+      <member refid="classUtility_1a46770e0e3a9d147b17bd7f373db58fac" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>cleanWaste</name></member>
+      <member refid="classUtilityPowerPlant_1a0b2674ba1a5adbbc7ed124d2593b024c" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>clone</name></member>
+      <member refid="classUtility_1a199e63168af1a70654715e55cfdaaadd" prot="protected" virt="non-virtual"><scope>UtilityPowerPlant</scope><name>commandHistory</name></member>
+      <member refid="classUtilityPowerPlant_1a086693d1bd4293c7d10016def8f8860f" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>executeOperation</name></member>
+      <member refid="classUtilityPowerPlant_1a98371015cbe652ca191c52a84edbe07d" prot="private" virt="non-virtual"><scope>UtilityPowerPlant</scope><name>fuel</name></member>
+      <member refid="classUtilityPowerPlant_1a9edd644251baac4f5825c52aa7bca800" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>getEnergyType</name></member>
+      <member refid="classUtilityPowerPlant_1a26f2152f70c54ef464b2e5cb9905f024" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>getOutput</name></member>
+      <member refid="classUtilityPowerPlant_1a7e8267585c47d8a67d114105b0a6c3d9" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>getPower</name></member>
+      <member refid="classUtilityPowerPlant_1a3cb55ed7fb494bce9182faa07f578d3d" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>getStatus</name></member>
+      <member refid="classUtilityPowerPlant_1a356bcabb0bfc16607c80b53def8cad57" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>getUtilityType</name></member>
+      <member refid="classUtility_1a9df345da6df3d01c77fe330c90b39311" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>getWater</name></member>
+      <member refid="classUtilityPowerPlant_1a614e9ba841683231b868775bfa2731c0" prot="private" virt="non-virtual"><scope>UtilityPowerPlant</scope><name>maximumWatts</name></member>
+      <member refid="classUtility_1a77e31318778f334c044fd7bbd7521118" prot="protected" virt="non-virtual"><scope>UtilityPowerPlant</scope><name>Output</name></member>
+      <member refid="classUtilityPowerPlant_1a2cc3e7dff68c0f762082cc03866b39de" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>pauseOperation</name></member>
+      <member refid="classUtilityPowerPlant_1a128baf06329d56f24831d9e2135170c9" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>repairUtility</name></member>
+      <member refid="classUtilityPowerPlant_1aa2d344e66c38897621022f2bc7e371a9" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>setFuel</name></member>
+      <member refid="classUtility_1ab705aff598d1b89f04d9a31c47456cac" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>setMaxGallons</name></member>
+      <member refid="classUtility_1ae20563a384347c5bcd52809ed52983fa" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>setmaxWaste</name></member>
+      <member refid="classUtilityPowerPlant_1a249ebc9a7a32e5bf44592a813d2252e1" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>setMaxWatts</name></member>
+      <member refid="classUtilityPowerPlant_1af7624cca23efa6a270915d858d81869f" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>setOutput</name></member>
+      <member refid="classUtility_1a72a5b065755157aee43eaf0373da87bd" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>setProcessCapacity</name></member>
+      <member refid="classUtility_1a2022354933e1799f6138636b81d902db" prot="protected" virt="non-virtual"><scope>UtilityPowerPlant</scope><name>status</name></member>
+      <member refid="classUtilityPowerPlant_1a703724831db2253c7bb31966da4ce01f" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>switchFuel</name></member>
+      <member refid="classUtilityPowerPlant_1ad2eda88b790df188abb1fc1987c5d411" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>undoChange</name></member>
+      <member refid="classUtilityPowerPlant_1af57e1be54efc98e628f7d943bc90129b" prot="public" virt="non-virtual"><scope>UtilityPowerPlant</scope><name>UtilityPowerPlant</name></member>
+      <member refid="classUtility_1a96b929cc62f8fc5b367cb6814d2fd93c" prot="public" virt="virtual"><scope>UtilityPowerPlant</scope><name>~Utility</name></member>
+      <member refid="classUtilityPowerPlant_1a3934123d95bb9eb4236bbe294bea698e" prot="public" virt="non-virtual"><scope>UtilityPowerPlant</scope><name>~UtilityPowerPlant</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

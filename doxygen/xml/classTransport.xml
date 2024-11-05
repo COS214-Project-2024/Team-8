@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classTransport" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Transport</compoundname>
+    <derivedcompoundref refid="classPlane" prot="public" virt="non-virtual">Plane</derivedcompoundref>
+    <derivedcompoundref refid="classTrain" prot="public" virt="non-virtual">Train</derivedcompoundref>
+    <derivedcompoundref refid="classVehicle" prot="public" virt="non-virtual">Vehicle</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classTransport_1a63e08d366beeecea5559d4979e325aa9" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Transport::isCargo</definition>
+        <argsstring></argsstring>
+        <name>isCargo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" line="17" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransport_1a2e3fa7a2e7c7f8678059a88e623aba2f" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Transport::transportType</definition>
+        <argsstring></argsstring>
+        <name>transportType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" line="18" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransport_1a377a586485a39087ea731011ded5766a" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Transport::passengers</definition>
+        <argsstring></argsstring>
+        <name>passengers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" line="19" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransport_1a4ce2235bd99de189f6e6c9c852f0122f" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Transport::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" line="20" column="7" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransport_1ab2127104025de74395560f28e5013c49" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Transport::capacity</definition>
+        <argsstring></argsstring>
+        <name>capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" line="21" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTransport_1a5f44ecf139f02a194bb558b14150e546" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Transport::setCapacity</definition>
+        <argsstring>(int capacity)=0</argsstring>
+        <name>setCapacity</name>
+        <reimplementedby refid="classPlane_1ad0df222c4207b7a46e772c58a579d443">setCapacity</reimplementedby>
+        <reimplementedby refid="classTrain_1a84d10b3cd05ef144ec3cf219517cb962">setCapacity</reimplementedby>
+        <reimplementedby refid="classVehicle_1a97ac91bcf97b514a514fb4973325b864">setCapacity</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" line="24" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransport_1a8923bfd9bb01769a4ed66cb01e541cea" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int Transport::getCapacity</definition>
+        <argsstring>()=0</argsstring>
+        <name>getCapacity</name>
+        <reimplementedby refid="classPlane_1a7f2b8e19f1d0482d6b6fa5fe7b071c56">getCapacity</reimplementedby>
+        <reimplementedby refid="classTrain_1ac0e66f207335cdecba0b4c57115fdc62">getCapacity</reimplementedby>
+        <reimplementedby refid="classVehicle_1a989b3acf3f0c8aaae1c6b59b88ecf702">getCapacity</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" line="26" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransport_1ab7cffc57bfbcd0eb90061e32158180f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Transport::setNumPassenger</definition>
+        <argsstring>(int pass)=0</argsstring>
+        <name>setNumPassenger</name>
+        <reimplementedby refid="classPlane_1adcac2f8b24cf80da8ba4f1aaa32b3c74">setNumPassenger</reimplementedby>
+        <reimplementedby refid="classTrain_1a7dc0c9ea34f2f994ccd712f66c644d41">setNumPassenger</reimplementedby>
+        <reimplementedby refid="classVehicle_1aa46d2dc446cb7eb0439ee0b09e0cd1a2">setNumPassenger</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>pass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" line="28" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransport_1ad59ad434539e4a708b5d883ed16f350a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Transport::setCargoWeight</definition>
+        <argsstring>(float weight)=0</argsstring>
+        <name>setCargoWeight</name>
+        <reimplementedby refid="classPlane_1af486e2e9b094c57dbbeb6956db58dcc8">setCargoWeight</reimplementedby>
+        <reimplementedby refid="classTrain_1a625461d30a50a62221eeb4e738503833">setCargoWeight</reimplementedby>
+        <reimplementedby refid="classVehicle_1ae74caf3d40220d9486eeacb98be16b51">setCargoWeight</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" line="30" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransport_1ae6ccadb07c91b580372987bcef4c387f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float Transport::travel</definition>
+        <argsstring>(Stops *stop, RouteNode *head, bool best=0)=0</argsstring>
+        <name>travel</name>
+        <reimplementedby refid="classPlane_1ac93de5fe1bcefa477ad33c5d4f01dcf7">travel</reimplementedby>
+        <reimplementedby refid="classTrain_1ab9a3744fcd4cd80353a2380e8f78b8bb">travel</reimplementedby>
+        <reimplementedby refid="classVehicle_1ad3bfe207428f935fac17c9dce248e354">travel</reimplementedby>
+        <param>
+          <type><ref refid="classStops" kindref="compound">Stops</ref> *</type>
+          <declname>stop</declname>
+        </param>
+        <param>
+          <type><ref refid="classRouteNode" kindref="compound">RouteNode</ref> *</type>
+          <declname>head</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>best</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" line="32" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransport_1a61e037eadbab0b98f3f081ec42521243" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Transport::getType</definition>
+        <argsstring>()=0</argsstring>
+        <name>getType</name>
+        <reimplementedby refid="classPlane_1a0cebc4f04e80ab168fcfbee4069b66e7">getType</reimplementedby>
+        <reimplementedby refid="classTrain_1a7e45373d2223fdaaf61cfbf95f285867">getType</reimplementedby>
+        <reimplementedby refid="classVehicle_1af2d4744f4af86eaa9f4205afb8abd477">getType</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" line="34" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransport_1a5bbabbb02d1fcb23e8d747a3329e123c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float Transport::getWeight</definition>
+        <argsstring>()=0</argsstring>
+        <name>getWeight</name>
+        <reimplementedby refid="classPlane_1ae3fd29c3865ceaefadffbdda4929396f">getWeight</reimplementedby>
+        <reimplementedby refid="classTrain_1ab36bbf7cc2bc772348ef045c2b0c2bff">getWeight</reimplementedby>
+        <reimplementedby refid="classVehicle_1a100bb875ea8c1f54939413536a752682">getWeight</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" line="36" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransport_1ae914dee281ef97169260b245a938bb01" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int Transport::getPassengers</definition>
+        <argsstring>()=0</argsstring>
+        <name>getPassengers</name>
+        <reimplementedby refid="classPlane_1a29ba3ebc182fbd2d9c655024b5d85b57">getPassengers</reimplementedby>
+        <reimplementedby refid="classTrain_1a59bb0fc2d26443e601225eb880ce17c7">getPassengers</reimplementedby>
+        <reimplementedby refid="classVehicle_1a86992dc07efda51173f07d4a4caaf1cd">getPassengers</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" line="38" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransport_1a9071b156741912e4550f6c88467d2834" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Transport::~Transport</definition>
+        <argsstring>()</argsstring>
+        <name>~Transport</name>
+        <briefdescription>
+<para>Destructor for the <ref refid="classTransport" kindref="compound">Transport</ref> object Virtual destructor of the <ref refid="classTransport" kindref="compound">Transport</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" line="43" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.cpp" bodystart="4" bodyend="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Train</label>
+        <link refid="classTrain"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Vehicle</label>
+        <link refid="classVehicle"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Transport</label>
+        <link refid="classTransport"/>
+      </node>
+      <node id="2">
+        <label>Plane</label>
+        <link refid="classPlane"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" line="15" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Transport.h" bodystart="15" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classTransport_1ab2127104025de74395560f28e5013c49" prot="protected" virt="non-virtual"><scope>Transport</scope><name>capacity</name></member>
+      <member refid="classTransport_1a8923bfd9bb01769a4ed66cb01e541cea" prot="public" virt="pure-virtual"><scope>Transport</scope><name>getCapacity</name></member>
+      <member refid="classTransport_1ae914dee281ef97169260b245a938bb01" prot="public" virt="pure-virtual"><scope>Transport</scope><name>getPassengers</name></member>
+      <member refid="classTransport_1a61e037eadbab0b98f3f081ec42521243" prot="public" virt="pure-virtual"><scope>Transport</scope><name>getType</name></member>
+      <member refid="classTransport_1a5bbabbb02d1fcb23e8d747a3329e123c" prot="public" virt="pure-virtual"><scope>Transport</scope><name>getWeight</name></member>
+      <member refid="classTransport_1a63e08d366beeecea5559d4979e325aa9" prot="protected" virt="non-virtual"><scope>Transport</scope><name>isCargo</name></member>
+      <member refid="classTransport_1a377a586485a39087ea731011ded5766a" prot="protected" virt="non-virtual"><scope>Transport</scope><name>passengers</name></member>
+      <member refid="classTransport_1a5f44ecf139f02a194bb558b14150e546" prot="public" virt="pure-virtual"><scope>Transport</scope><name>setCapacity</name></member>
+      <member refid="classTransport_1ad59ad434539e4a708b5d883ed16f350a" prot="public" virt="pure-virtual"><scope>Transport</scope><name>setCargoWeight</name></member>
+      <member refid="classTransport_1ab7cffc57bfbcd0eb90061e32158180f5" prot="public" virt="pure-virtual"><scope>Transport</scope><name>setNumPassenger</name></member>
+      <member refid="classTransport_1a2e3fa7a2e7c7f8678059a88e623aba2f" prot="protected" virt="non-virtual"><scope>Transport</scope><name>transportType</name></member>
+      <member refid="classTransport_1ae6ccadb07c91b580372987bcef4c387f" prot="public" virt="pure-virtual"><scope>Transport</scope><name>travel</name></member>
+      <member refid="classTransport_1a4ce2235bd99de189f6e6c9c852f0122f" prot="protected" virt="non-virtual"><scope>Transport</scope><name>weight</name></member>
+      <member refid="classTransport_1a9071b156741912e4550f6c88467d2834" prot="public" virt="virtual"><scope>Transport</scope><name>~Transport</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

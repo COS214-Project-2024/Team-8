@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUtilityManager" kind="class" language="C++" prot="public">
+    <compoundname>UtilityManager</compoundname>
+    <includes refid="UtilityManager_8h" local="no">UtilityManager.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUtilityManager_1aa93bd314d1502ebad070e9e8731a8875" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classCommand" kindref="compound">Command</ref> * &gt;</type>
+        <definition>std::vector&lt;Command*&gt; UtilityManager::commands</definition>
+        <argsstring></argsstring>
+        <name>commands</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.h" line="16" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUtilityManager_1ae13355bf1457dd829b2771bad592cfcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UtilityManager::UtilityManager</definition>
+        <argsstring>()</argsstring>
+        <name>UtilityManager</name>
+        <briefdescription>
+<para>Create a <ref refid="classUtilityManager" kindref="compound">UtilityManager</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The constructor for the <ref refid="classUtilityManager" kindref="compound">UtilityManager</ref> class </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.h" line="18" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityManager_1ab0be33dd3965b881f8accd4d49864f8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UtilityManager::executeWaste</definition>
+        <argsstring>()</argsstring>
+        <name>executeWaste</name>
+        <briefdescription>
+<para>Executes the Waste Management utility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Executes the Waste Management utility </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.h" line="20" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.cpp" bodystart="17" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityManager_1a2e57f56b88197d87628638694849e961" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UtilityManager::undoCommand</definition>
+        <argsstring>()</argsstring>
+        <name>undoCommand</name>
+        <briefdescription>
+<para>Undoes the last command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Undoes the last command that was executed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.h" line="22" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.cpp" bodystart="33" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityManager_1a33e85dde96dd99b6967666998f5b291d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UtilityManager::LoadShedding</definition>
+        <argsstring>()</argsstring>
+        <name>LoadShedding</name>
+        <briefdescription>
+<para>Executes Load Shedding. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Load Shedding is a utility that is used to stop the power plant </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.h" line="24" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.cpp" bodystart="47" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityManager_1af5e8276abb0911a866eb355c9e100e8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UtilityManager::UnfilledDam</definition>
+        <argsstring>()</argsstring>
+        <name>UnfilledDam</name>
+        <briefdescription>
+<para>Executes Unfilled Dam. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Unfilled Dam is a utility that is used to stop the water treatment plant </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.h" line="26" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.cpp" bodystart="63" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityManager_1a3561a090cdea901a6786909a29354ad3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UtilityManager::executeSewage</definition>
+        <argsstring>()</argsstring>
+        <name>executeSewage</name>
+        <briefdescription>
+<para>Executes the Sewage Plant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Executes the Sewage Plant utility </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.h" line="28" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.cpp" bodystart="79" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityManager_1a87d9a5ec480f2290dbf7d8436aac5038" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UtilityManager::executeWater</definition>
+        <argsstring>()</argsstring>
+        <name>executeWater</name>
+        <briefdescription>
+<para>Executes the Water Treatment Plant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Executes the Water Treatment Plant utility </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.h" line="30" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.cpp" bodystart="95" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityManager_1afb686377c45b477ff1a28dbed393c742" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UtilityManager::executeElectricity</definition>
+        <argsstring>()</argsstring>
+        <name>executeElectricity</name>
+        <briefdescription>
+<para>Executes the Power Plant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Executes the Power Plant utility </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.h" line="32" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.cpp" bodystart="111" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilityManager_1a9806203288798a60e026fed270380a7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UtilityManager::addCommand</definition>
+        <argsstring>(Command *com)</argsstring>
+        <name>addCommand</name>
+        <param>
+          <type><ref refid="classCommand" kindref="compound">Command</ref> *</type>
+          <declname>com</declname>
+        </param>
+        <briefdescription>
+<para>Add a command to the <ref refid="classUtilityManager" kindref="compound">UtilityManager</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>com</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The command to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.h" line="34" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.cpp" bodystart="127" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classUtilityManager" kindref="compound">UtilityManager</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classUtilityManager" kindref="compound">UtilityManager</ref> class is used to manage the utilities in the city </para>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.h" line="14" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UtilityManager.h" bodystart="14" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classUtilityManager_1a9806203288798a60e026fed270380a7b" prot="public" virt="non-virtual"><scope>UtilityManager</scope><name>addCommand</name></member>
+      <member refid="classUtilityManager_1aa93bd314d1502ebad070e9e8731a8875" prot="private" virt="non-virtual"><scope>UtilityManager</scope><name>commands</name></member>
+      <member refid="classUtilityManager_1afb686377c45b477ff1a28dbed393c742" prot="public" virt="non-virtual"><scope>UtilityManager</scope><name>executeElectricity</name></member>
+      <member refid="classUtilityManager_1a3561a090cdea901a6786909a29354ad3" prot="public" virt="non-virtual"><scope>UtilityManager</scope><name>executeSewage</name></member>
+      <member refid="classUtilityManager_1ab0be33dd3965b881f8accd4d49864f8b" prot="public" virt="non-virtual"><scope>UtilityManager</scope><name>executeWaste</name></member>
+      <member refid="classUtilityManager_1a87d9a5ec480f2290dbf7d8436aac5038" prot="public" virt="non-virtual"><scope>UtilityManager</scope><name>executeWater</name></member>
+      <member refid="classUtilityManager_1a33e85dde96dd99b6967666998f5b291d" prot="public" virt="non-virtual"><scope>UtilityManager</scope><name>LoadShedding</name></member>
+      <member refid="classUtilityManager_1a2e57f56b88197d87628638694849e961" prot="public" virt="non-virtual"><scope>UtilityManager</scope><name>undoCommand</name></member>
+      <member refid="classUtilityManager_1af5e8276abb0911a866eb355c9e100e8d" prot="public" virt="non-virtual"><scope>UtilityManager</scope><name>UnfilledDam</name></member>
+      <member refid="classUtilityManager_1ae13355bf1457dd829b2771bad592cfcc" prot="public" virt="non-virtual"><scope>UtilityManager</scope><name>UtilityManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

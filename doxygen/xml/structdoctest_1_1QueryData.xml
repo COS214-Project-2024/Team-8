@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1QueryData" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::QueryData</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoctest_1_1QueryData_1a435f443f389323f47cb8b0e4202bbea9" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structdoctest_1_1TestRunStats" kindref="compound">TestRunStats</ref> *</type>
+        <definition>const TestRunStats* doctest::QueryData::run_stats</definition>
+        <argsstring></argsstring>
+        <name>run_stats</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2044" column="25" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2044" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1QueryData_1a8085a29db9a1cd5c7eff22ef44e9a9e8" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structdoctest_1_1TestCaseData" kindref="compound">TestCaseData</ref> **</type>
+        <definition>const TestCaseData** doctest::QueryData::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2045" column="24" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2045" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1QueryData_1af1033338fe975ae3c19b16452401230d" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned doctest::QueryData::num_data</definition>
+        <argsstring></argsstring>
+        <name>num_data</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2046" column="26" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2046" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>doctest::QueryData</label>
+        <link refid="structdoctest_1_1QueryData"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>run_stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>doctest::String::view</label>
+      </node>
+      <node id="5">
+        <label>doctest::TestRunStats</label>
+        <link refid="structdoctest_1_1TestRunStats"/>
+      </node>
+      <node id="2">
+        <label>doctest::TestCaseData</label>
+        <link refid="structdoctest_1_1TestCaseData"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_file</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>doctest::String</label>
+        <link refid="classdoctest_1_1String"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2042" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2043" bodyend="2047"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1QueryData_1a8085a29db9a1cd5c7eff22ef44e9a9e8" prot="public" virt="non-virtual"><scope>doctest::QueryData</scope><name>data</name></member>
+      <member refid="structdoctest_1_1QueryData_1af1033338fe975ae3c19b16452401230d" prot="public" virt="non-virtual"><scope>doctest::QueryData</scope><name>num_data</name></member>
+      <member refid="structdoctest_1_1QueryData_1a435f443f389323f47cb8b0e4202bbea9" prot="public" virt="non-virtual"><scope>doctest::QueryData</scope><name>run_stats</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1detail_1_1TestCase" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::detail::TestCase</compoundname>
+    <basecompoundref refid="structdoctest_1_1TestCaseData" prot="public" virt="non-virtual">doctest::TestCaseData</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoctest_1_1detail_1_1TestCase_1aba46691733c89216ce6b0ac0b7dc6b42" prot="public" static="no" mutable="no">
+        <type>funcType</type>
+        <definition>funcType doctest::detail::TestCase::m_test</definition>
+        <argsstring></argsstring>
+        <name>m_test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1616" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1detail_1_1TestCase_1a8ffb163e420de6387a52def254a52438" prot="public" static="no" mutable="no">
+        <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref></type>
+        <definition>String doctest::detail::TestCase::m_type</definition>
+        <argsstring></argsstring>
+        <name>m_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1618" column="16" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1618" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1detail_1_1TestCase_1af5183eb061a33329ede72791ad3457f9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int doctest::detail::TestCase::m_template_id</definition>
+        <argsstring></argsstring>
+        <name>m_template_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1619" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1detail_1_1TestCase_1a30f21f77461de7bd68dc44362171b62a" prot="public" static="no" mutable="no">
+        <type><ref refid="classdoctest_1_1String" kindref="compound">String</ref></type>
+        <definition>String doctest::detail::TestCase::m_full_name</definition>
+        <argsstring></argsstring>
+        <name>m_full_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1620" column="16" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1620" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1TestCase_1a0c18ba2713bb9db7dc3e7b35854c4840" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doctest::detail::TestCase::TestCase</definition>
+        <argsstring>(funcType test, const char *file, unsigned line, const TestSuite &amp;test_suite, const String &amp;type=String(), int template_id=-1)</argsstring>
+        <name>TestCase</name>
+        <param>
+          <type>funcType</type>
+          <declname>test</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdoctest_1_1detail_1_1TestSuite" kindref="compound">TestSuite</ref> &amp;</type>
+          <declname>test_suite</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdoctest_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>type</declname>
+          <defval><ref refid="classdoctest_1_1String" kindref="compound">String</ref>()</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>template_id</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1622" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1TestCase_1a0d8aa1f3d0cbd31f3bc4a74d9c6add23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doctest::detail::TestCase::TestCase</definition>
+        <argsstring>(const TestCase &amp;other)</argsstring>
+        <name>TestCase</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1detail_1_1TestCase" kindref="compound">TestCase</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1625" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1TestCase_1a64af5df2fca574ebd242ab756dc7064d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doctest::detail::TestCase::TestCase</definition>
+        <argsstring>(TestCase &amp;&amp;)=delete</argsstring>
+        <name>TestCase</name>
+        <param>
+          <type><ref refid="structdoctest_1_1detail_1_1TestCase" kindref="compound">TestCase</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1626" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1TestCase_1a3e767f89d496f2dc80ebbab72677c754" prot="public" static="no" const="no" explicit="no" inline="no" refqual="lvalue" virt="non-virtual">
+        <type></type>
+        <definition>doctest::detail::TestCase::DOCTEST_MSVC_SUPPRESS_WARNING_WITH_PUSH</definition>
+        <argsstring>(26434) TestCase &amp;operator</argsstring>
+        <name>DOCTEST_MSVC_SUPPRESS_WARNING_WITH_PUSH</name>
+        <param>
+          <type>26434</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1628" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1TestCase_1a9c74de90d396e94f58da3f8d31ebde14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DOCTEST_MSVC_SUPPRESS_WARNING_POP <ref refid="structdoctest_1_1detail_1_1TestCase" kindref="compound">TestCase</ref> &amp;</type>
+        <definition>DOCTEST_MSVC_SUPPRESS_WARNING_POP TestCase&amp; doctest::detail::TestCase::operator=</definition>
+        <argsstring>(TestCase &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="structdoctest_1_1detail_1_1TestCase" kindref="compound">TestCase</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1632" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1TestCase_1a016ebe61334d9301c0b900ce242f69a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdoctest_1_1detail_1_1TestCase" kindref="compound">TestCase</ref> &amp;</type>
+        <definition>TestCase&amp; doctest::detail::TestCase::operator*</definition>
+        <argsstring>(const char *in)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1634" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1TestCase_1a7ff8c8e9a0e4515dbef926a835b447f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structdoctest_1_1detail_1_1TestCase" kindref="compound">TestCase</ref> &amp;</type>
+        <definition>TestCase&amp; doctest::detail::TestCase::operator*</definition>
+        <argsstring>(const T &amp;in)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1637" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1637" bodyend="1640"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1TestCase_1a865f5906758263125b68b8d785a05ca1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool doctest::detail::TestCase::operator&lt;</definition>
+        <argsstring>(const TestCase &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="structdoctest_1_1detail_1_1TestCase" kindref="compound">TestCase</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1642" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1TestCase_1a1fed36b077f87cd75276875fe1db00b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doctest::detail::TestCase::~TestCase</definition>
+        <argsstring>()=default</argsstring>
+        <name>~TestCase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1644" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>doctest::detail::TestCase</label>
+        <link refid="structdoctest_1_1detail_1_1TestCase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>doctest::TestCaseData</label>
+        <link refid="structdoctest_1_1TestCaseData"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>doctest::detail::TestCase</label>
+        <link refid="structdoctest_1_1detail_1_1TestCase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_full_name</edgelabel>
+          <edgelabel>m_type</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>doctest::String::view</label>
+      </node>
+      <node id="2">
+        <label>doctest::TestCaseData</label>
+        <link refid="structdoctest_1_1TestCaseData"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_file</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>doctest::String</label>
+        <link refid="classdoctest_1_1String"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1614" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1615" bodyend="1645"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1detail_1_1TestCase_1a3e767f89d496f2dc80ebbab72677c754" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>DOCTEST_MSVC_SUPPRESS_WARNING_WITH_PUSH</name></member>
+      <member refid="structdoctest_1_1TestCaseData_1abd855851b4b9edbaf46c3458abc1ba80" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>m_description</name></member>
+      <member refid="structdoctest_1_1TestCaseData_1a6c5995f53ad39769bf06600e562ea9eb" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>m_expected_failures</name></member>
+      <member refid="structdoctest_1_1TestCaseData_1ac3e8095418a13cd7bbc921cce5b3c5c6" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>m_file</name></member>
+      <member refid="structdoctest_1_1detail_1_1TestCase_1a30f21f77461de7bd68dc44362171b62a" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>m_full_name</name></member>
+      <member refid="structdoctest_1_1TestCaseData_1aaabb9765e7aa39416c058a9cbccef57f" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>m_line</name></member>
+      <member refid="structdoctest_1_1TestCaseData_1a887b70bf52f74724f0d7fe99d43a8783" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>m_may_fail</name></member>
+      <member refid="structdoctest_1_1TestCaseData_1a0cb34895130be773e624526d68e5b2cd" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>m_name</name></member>
+      <member refid="structdoctest_1_1TestCaseData_1aa4876d06d5172070efeeb7d15bd786cf" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>m_no_breaks</name></member>
+      <member refid="structdoctest_1_1TestCaseData_1a23480651d6a09b34d76ede3fd11dd587" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>m_no_output</name></member>
+      <member refid="structdoctest_1_1TestCaseData_1a037f6dfb931aff9c9b17f31203a3987e" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>m_should_fail</name></member>
+      <member refid="structdoctest_1_1TestCaseData_1a0c2353bd3fd8c2fa84d34ab4e973e038" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>m_skip</name></member>
+      <member refid="structdoctest_1_1detail_1_1TestCase_1af5183eb061a33329ede72791ad3457f9" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>m_template_id</name></member>
+      <member refid="structdoctest_1_1detail_1_1TestCase_1aba46691733c89216ce6b0ac0b7dc6b42" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>m_test</name></member>
+      <member refid="structdoctest_1_1TestCaseData_1ae264da66ff0e88a34c467d364dd18840" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>m_test_suite</name></member>
+      <member refid="structdoctest_1_1TestCaseData_1a8cab4a7998b486bafa81498f93dd4d91" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>m_timeout</name></member>
+      <member refid="structdoctest_1_1detail_1_1TestCase_1a8ffb163e420de6387a52def254a52438" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>m_type</name></member>
+      <member refid="structdoctest_1_1detail_1_1TestCase_1a016ebe61334d9301c0b900ce242f69a1" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>operator*</name></member>
+      <member refid="structdoctest_1_1detail_1_1TestCase_1a7ff8c8e9a0e4515dbef926a835b447f9" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>operator*</name></member>
+      <member refid="structdoctest_1_1detail_1_1TestCase_1a865f5906758263125b68b8d785a05ca1" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>operator&lt;</name></member>
+      <member refid="structdoctest_1_1detail_1_1TestCase_1a9c74de90d396e94f58da3f8d31ebde14" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>operator=</name></member>
+      <member refid="structdoctest_1_1detail_1_1TestCase_1a0c18ba2713bb9db7dc3e7b35854c4840" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>TestCase</name></member>
+      <member refid="structdoctest_1_1detail_1_1TestCase_1a0d8aa1f3d0cbd31f3bc4a74d9c6add23" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>TestCase</name></member>
+      <member refid="structdoctest_1_1detail_1_1TestCase_1a64af5df2fca574ebd242ab756dc7064d" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>TestCase</name></member>
+      <member refid="structdoctest_1_1detail_1_1TestCase_1a1fed36b077f87cd75276875fe1db00b9" prot="public" virt="non-virtual"><scope>doctest::detail::TestCase</scope><name>~TestCase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

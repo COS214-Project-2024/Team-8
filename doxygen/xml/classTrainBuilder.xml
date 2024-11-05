@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classTrainBuilder" kind="class" language="C++" prot="public">
+    <compoundname>TrainBuilder</compoundname>
+    <basecompoundref refid="classTransportBuilder" prot="public" virt="non-virtual">TransportBuilder</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTrainBuilder_1a5151113490f826ca573be80dae5cbc9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TrainBuilder::TrainBuilder</definition>
+        <argsstring>()</argsstring>
+        <name>TrainBuilder</name>
+        <briefdescription>
+<para>Construct a new <ref refid="classTrain" kindref="compound">Train</ref> Builder:: <ref refid="classTrain" kindref="compound">Train</ref> Builder object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a new <ref refid="classTrain" kindref="compound">Train</ref> object with a capacity of 0(place holder) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainBuilder.h" line="13" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainBuilder.cpp" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrainBuilder_1a18b610ed849a1063a2399063e8144ceb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classTransportBuilder" kindref="compound">TransportBuilder</ref> *</type>
+        <definition>TransportBuilder * TrainBuilder::setCapacity</definition>
+        <argsstring>(int capacity)</argsstring>
+        <name>setCapacity</name>
+        <reimplements refid="classTransportBuilder_1a30c8d8950e157b81274b22568e3e9a19">setCapacity</reimplements>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+<para>Used to set the capacity of the train. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>integer value of the capacity </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TrainBuilder* pointer to the <ref refid="classTrainBuilder" kindref="compound">TrainBuilder</ref> object for chaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainBuilder.h" line="15" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainBuilder.cpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrainBuilder_1a1fed73e60fd4ad3b9a7ab8a6de7c7d1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classTransportBuilder" kindref="compound">TransportBuilder</ref> *</type>
+        <definition>TransportBuilder * TrainBuilder::setCargoWeight</definition>
+        <argsstring>(float weight)</argsstring>
+        <name>setCargoWeight</name>
+        <reimplements refid="classTransportBuilder_1aeb17e11e9207930294b3f0920ce67c41">setCargoWeight</reimplements>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+<para>Set the Cargo Weight object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>float value of the weight </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TrainBuilder* pointer to the <ref refid="classTrainBuilder" kindref="compound">TrainBuilder</ref> object for chaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainBuilder.h" line="17" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainBuilder.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrainBuilder_1a283c4870954092d8ffb14c9936ace913" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classTransportBuilder" kindref="compound">TransportBuilder</ref> *</type>
+        <definition>TransportBuilder * TrainBuilder::setNumPassengers</definition>
+        <argsstring>(int num)</argsstring>
+        <name>setNumPassengers</name>
+        <reimplements refid="classTransportBuilder_1a4e14b217344b0b3b0c56602e1d2d004a">setNumPassengers</reimplements>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Set the Num Passengers object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>integer value of the number of passengers </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TrainBuilder* pointer to the <ref refid="classTrainBuilder" kindref="compound">TrainBuilder</ref> object for chaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainBuilder.h" line="19" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainBuilder.cpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrainBuilder_1a0bd563ac68d08afefe1fe9871b07a3d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classTransport" kindref="compound">Transport</ref> *</type>
+        <definition>Transport * TrainBuilder::build</definition>
+        <argsstring>()</argsstring>
+        <name>build</name>
+        <reimplements refid="classTransportBuilder_1a7dc350335f09aa796b77541f0bcc025c">build</reimplements>
+        <briefdescription>
+<para>Build the <ref refid="classTrain" kindref="compound">Train</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The transport object has been constructed </para>
+</simplesect>
+<simplesect kind="return"><para>Transport* pointer to the <ref refid="classTrain" kindref="compound">Train</ref> object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainBuilder.h" line="21" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainBuilder.cpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>TransportBuilder</label>
+        <link refid="classTransportBuilder"/>
+      </node>
+      <node id="1">
+        <label>TrainBuilder</label>
+        <link refid="classTrainBuilder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>TransportBuilder</label>
+        <link refid="classTransportBuilder"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>transport</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Transport</label>
+        <link refid="classTransport"/>
+      </node>
+      <node id="1">
+        <label>TrainBuilder</label>
+        <link refid="classTrainBuilder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainBuilder.h" line="11" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TrainBuilder.h" bodystart="11" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classTrainBuilder_1a0bd563ac68d08afefe1fe9871b07a3d7" prot="public" virt="virtual"><scope>TrainBuilder</scope><name>build</name></member>
+      <member refid="classTrainBuilder_1a18b610ed849a1063a2399063e8144ceb" prot="public" virt="virtual"><scope>TrainBuilder</scope><name>setCapacity</name></member>
+      <member refid="classTrainBuilder_1a1fed73e60fd4ad3b9a7ab8a6de7c7d1c" prot="public" virt="virtual"><scope>TrainBuilder</scope><name>setCargoWeight</name></member>
+      <member refid="classTrainBuilder_1a283c4870954092d8ffb14c9936ace913" prot="public" virt="virtual"><scope>TrainBuilder</scope><name>setNumPassengers</name></member>
+      <member refid="classTrainBuilder_1a5151113490f826ca573be80dae5cbc9f" prot="public" virt="non-virtual"><scope>TrainBuilder</scope><name>TrainBuilder</name></member>
+      <member refid="classTransportBuilder_1ac42b4edef812e1c65eb2a07c17d16f5b" prot="protected" virt="non-virtual"><scope>TrainBuilder</scope><name>transport</name></member>
+      <member refid="classTransportBuilder_1a2f24be878963ce150493f4acb109a229" prot="public" virt="virtual"><scope>TrainBuilder</scope><name>~TransportBuilder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,540 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classResidentialBuilding" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>ResidentialBuilding</compoundname>
+    <basecompoundref refid="classBuildings" prot="public" virt="non-virtual">Buildings</basecompoundref>
+    <derivedcompoundref refid="classApartment" prot="public" virt="non-virtual">Apartment</derivedcompoundref>
+    <derivedcompoundref refid="classHouse" prot="public" virt="non-virtual">House</derivedcompoundref>
+    <derivedcompoundref refid="classTownHouse" prot="public" virt="non-virtual">TownHouse</derivedcompoundref>
+    <includes refid="ResidentialBuilding_8h" local="no">ResidentialBuilding.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classResidentialBuilding_1a5a96a6a10da11b24be5336c719a28df6" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ResidentialBuilding::capacity</definition>
+        <argsstring></argsstring>
+        <name>capacity</name>
+        <briefdescription>
+<para>Capacity of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="16" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classResidentialBuilding_1ac98afb1860c6701fece560c9f7cb4097" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ResidentialBuilding::waste</definition>
+        <argsstring></argsstring>
+        <name>waste</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="17" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classResidentialBuilding_1a811bccb2d9375f58b950471920a340ac" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+        <definition>Utility* ResidentialBuilding::resources</definition>
+        <argsstring></argsstring>
+        <name>resources</name>
+        <briefdescription>
+<para>Mediator for resources. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="20" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classResidentialBuilding_1a6cc26a5041ab45770fdaa7da789b08d9" prot="protected" static="no" mutable="no">
+        <type><ref refid="classState" kindref="compound">State</ref> *</type>
+        <definition>State* ResidentialBuilding::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+<para>Current state of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="21" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classResidentialBuilding_1a4450dc123c2872db779adea553c197ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ResidentialBuilding::requestState</definition>
+        <argsstring>()=0</argsstring>
+        <name>requestState</name>
+        <reimplements refid="classBuildings_1a4dd777c9c3963d8fd5a74ad1fee76ddf">requestState</reimplements>
+        <reimplementedby refid="classApartment_1affcb8a09e65a8012aa5f588c27f902ee">requestState</reimplementedby>
+        <reimplementedby refid="classHouse_1a42449a82d26e123f9e6bdf12af76f20d">requestState</reimplementedby>
+        <reimplementedby refid="classTownHouse_1adbcc420d2864717c39f2536f343a373b">requestState</reimplementedby>
+        <briefdescription>
+<para>Requests the current state of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="28" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classResidentialBuilding_1af409d286d0d15a39c1e4c835b502205c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool ResidentialBuilding::cleanSewage</definition>
+        <argsstring>()=0</argsstring>
+        <name>cleanSewage</name>
+        <reimplements refid="classBuildings_1a80e812e9003bff1371df778942ecfb36">cleanSewage</reimplements>
+        <reimplementedby refid="classApartment_1ade0ae9dc5bb6be2c2ed1109abad47322">cleanSewage</reimplementedby>
+        <reimplementedby refid="classHouse_1a023f323dd947bdf509380c5e69f35397">cleanSewage</reimplementedby>
+        <reimplementedby refid="classTownHouse_1ae046e54305fbb5979640e7fece84dcb9">cleanSewage</reimplementedby>
+        <briefdescription>
+<para>Cleans the sewage of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the cleaning was successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="34" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classResidentialBuilding_1a9fef368fd52003c9bcef6956b20a41ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool ResidentialBuilding::cleanWaste</definition>
+        <argsstring>()=0</argsstring>
+        <name>cleanWaste</name>
+        <reimplements refid="classBuildings_1aaaeb748113337669c224c2293d2f0d82">cleanWaste</reimplements>
+        <reimplementedby refid="classApartment_1a0787841d537df8e435ec3f0abac715c9">cleanWaste</reimplementedby>
+        <reimplementedby refid="classHouse_1a26a4ff9f04c00ea9a1d6f7814e0af2de">cleanWaste</reimplementedby>
+        <reimplementedby refid="classTownHouse_1a8b3a6871c11491c2427bd03c6a547624">cleanWaste</reimplementedby>
+        <briefdescription>
+<para>Cleans the waste of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the cleaning was successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="40" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classResidentialBuilding_1aee6ea83d6f70ac8db9c5960db42e88b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>string</type>
+        <definition>virtual string ResidentialBuilding::getBuildingType</definition>
+        <argsstring>()=0</argsstring>
+        <name>getBuildingType</name>
+        <reimplements refid="classBuildings_1a99ed74a589fe28f98eed08ba0d8dc339">getBuildingType</reimplements>
+        <reimplementedby refid="classApartment_1a392a887e59559a83927bba479aaab2ad">getBuildingType</reimplementedby>
+        <reimplementedby refid="classHouse_1a822b5940f76b7e87814ece9ea643b89f">getBuildingType</reimplementedby>
+        <reimplementedby refid="classTownHouse_1a6271d646da88bd504a6594a1a344416d">getBuildingType</reimplementedby>
+        <briefdescription>
+<para>Gets the type of building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Type of the building as a string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="46" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classResidentialBuilding_1a7a6d78e7b5d798d8f9c6221afcb19e7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int ResidentialBuilding::getJobsCreated</definition>
+        <argsstring>()</argsstring>
+        <name>getJobsCreated</name>
+        <reimplements refid="classBuildings_1a903e19ef9d878d5714b8ab5de9f71fc1">getJobsCreated</reimplements>
+        <briefdescription>
+<para>Gets the number of jobs created by the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of jobs created. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="52" column="17" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classResidentialBuilding_1ae086cdd073cc6055e5423353828eebec" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double ResidentialBuilding::getMaintenanceCost</definition>
+        <argsstring>()=0</argsstring>
+        <name>getMaintenanceCost</name>
+        <reimplements refid="classBuildings_1a196e5dc7d116d8df481fe16ffb40756f">getMaintenanceCost</reimplements>
+        <reimplementedby refid="classApartment_1acd246138d22db5dcdd45e753ce8fbdba">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classHouse_1a6bccca3ce5e25636d63d8f1c137388e8">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classTownHouse_1af316bbcc836847c146f3a2c6aeb29e63">getMaintenanceCost</reimplementedby>
+        <briefdescription>
+<para>Gets the maintenance cost of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Maintenance cost as a double. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="58" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classResidentialBuilding_1aaf571c879f3912a84df4fbcb3710e00f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>string</type>
+        <definition>virtual string ResidentialBuilding::getName</definition>
+        <argsstring>()=0</argsstring>
+        <name>getName</name>
+        <reimplements refid="classBuildings_1a58fd91cee048b410265d2e8dab88894e">getName</reimplements>
+        <reimplementedby refid="classApartment_1a56ab06079df6252187c3a2a70cb36066">getName</reimplementedby>
+        <reimplementedby refid="classHouse_1a079149ba1dbe764bb378a045f8c6cb40">getName</reimplementedby>
+        <reimplementedby refid="classTownHouse_1a9a862362539fcabdcbfbab9525115b76">getName</reimplementedby>
+        <briefdescription>
+<para>Gets the name of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Name of the building as a string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="64" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classResidentialBuilding_1a4b05dc85c1b4578df1c77bfa8b54592b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int ResidentialBuilding::getPowerReq</definition>
+        <argsstring>()=0</argsstring>
+        <name>getPowerReq</name>
+        <reimplements refid="classBuildings_1ae6dc450a35fe3e5ae789357b921b0c72">getPowerReq</reimplements>
+        <reimplementedby refid="classApartment_1ab64e953d286580dedd22b35eb80c8be7">getPowerReq</reimplementedby>
+        <reimplementedby refid="classHouse_1a12985418a1776d2140022f237e6a4157">getPowerReq</reimplementedby>
+        <reimplementedby refid="classTownHouse_1a1bd58ca5b8c72911f4e315d83dc80460">getPowerReq</reimplementedby>
+        <briefdescription>
+<para>Gets the power requirement of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Power requirement as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="70" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classResidentialBuilding_1a1a8b12239511450428c00d1872390264" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int ResidentialBuilding::getSewageCost</definition>
+        <argsstring>()=0</argsstring>
+        <name>getSewageCost</name>
+        <reimplements refid="classBuildings_1acd98a1879efc8be4e3fc27eddce6f56b">getSewageCost</reimplements>
+        <reimplementedby refid="classApartment_1a2e07a4fbc93507e19a7054100797ba72">getSewageCost</reimplementedby>
+        <reimplementedby refid="classHouse_1af997cf84529a0746ee2620ef26ece769">getSewageCost</reimplementedby>
+        <reimplementedby refid="classTownHouse_1abcc0f59ac66c8853df44186cb548cb40">getSewageCost</reimplementedby>
+        <briefdescription>
+<para>Gets the sewage cost of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Sewage cost as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="76" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classResidentialBuilding_1aed397e7f9cc0e3f76879b3f92a212313" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int ResidentialBuilding::getWaterReq</definition>
+        <argsstring>()=0</argsstring>
+        <name>getWaterReq</name>
+        <reimplements refid="classBuildings_1aa9f8088da3c065b05208ea0565bcff6b">getWaterReq</reimplements>
+        <reimplementedby refid="classApartment_1a32d7aee406a3f6bd0127f118397167bf">getWaterReq</reimplementedby>
+        <reimplementedby refid="classHouse_1ad67e4678fc1a4ed3456ec67c477ef59c">getWaterReq</reimplementedby>
+        <reimplementedby refid="classTownHouse_1a24aadb15b792516d7ce8b1c2f75a2d57">getWaterReq</reimplementedby>
+        <briefdescription>
+<para>Gets the water requirement of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Water requirement as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="82" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classResidentialBuilding_1ae867db795935c20c2c5a45463ac33fb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool ResidentialBuilding::getPower</definition>
+        <argsstring>()=0</argsstring>
+        <name>getPower</name>
+        <reimplements refid="classBuildings_1a98266f291367e42bb44f49a8949ea8b2">getPower</reimplements>
+        <reimplementedby refid="classApartment_1a590afeb39aca36e740b51290bf6bd739">getPower</reimplementedby>
+        <reimplementedby refid="classHouse_1acb75268c56b49dcf246f268442f6e2ad">getPower</reimplementedby>
+        <reimplementedby refid="classTownHouse_1a32b925d3ecbda9a5e6e0a7c404cf3957">getPower</reimplementedby>
+        <briefdescription>
+<para>Receives power for the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if power was received successfully, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="88" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classResidentialBuilding_1aae44b69bdedffbb41c78205bcfb712e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool ResidentialBuilding::getWater</definition>
+        <argsstring>()=0</argsstring>
+        <name>getWater</name>
+        <reimplements refid="classBuildings_1a100a3abba32013b317fe08d78de2d9ab">getWater</reimplements>
+        <reimplementedby refid="classApartment_1a9ad3ecbc187e2132c19f18169009d949">getWater</reimplementedby>
+        <reimplementedby refid="classHouse_1a52dcc19d6a9ec492485ab86b5c2056a1">getWater</reimplementedby>
+        <reimplementedby refid="classTownHouse_1a024e646590e992803d8b2b4403d5f45a">getWater</reimplementedby>
+        <briefdescription>
+<para>Receives water for the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if water was received successfully, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="94" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classResidentialBuilding_1a3366ab094bbb6038393b5160eaa559b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ResidentialBuilding::getCapacity</definition>
+        <argsstring>()</argsstring>
+        <name>getCapacity</name>
+        <briefdescription>
+<para>Receives water for the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if water was received successfully, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="100" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classResidentialBuilding_1ae484947db4eea1a9e2858f47db5ee43d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ResidentialBuilding::addBuilding</definition>
+        <argsstring>()=0</argsstring>
+        <name>addBuilding</name>
+        <reimplements refid="classBuildings_1adb4f64849474dce9ded072e712658fc2">addBuilding</reimplements>
+        <reimplementedby refid="classApartment_1ae9a71432c8b9856ddd79c176ec6348aa">addBuilding</reimplementedby>
+        <reimplementedby refid="classHouse_1abb209a0bfda0dff1b6357dc0bc687916">addBuilding</reimplementedby>
+        <reimplementedby refid="classTownHouse_1a95e14dce352464977e74c68d95556ffa">addBuilding</reimplementedby>
+        <briefdescription>
+<para>Add a building to the Building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>building</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The building to add to the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="110" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classResidentialBuilding_1a389cda02037710dc3e3fb378cd81e87f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ResidentialBuilding::setState</definition>
+        <argsstring>(State *newState)=0</argsstring>
+        <name>setState</name>
+        <reimplements refid="classBuildings_1ae4f56a3ae5658097bee10dc48e130a75">setState</reimplements>
+        <reimplementedby refid="classApartment_1a6448965db3b10a9c24ce82bb1d52f291">setState</reimplementedby>
+        <reimplementedby refid="classHouse_1a8fd19c1f1de8175df8795362a6e5db8e">setState</reimplementedby>
+        <reimplementedby refid="classTownHouse_1a27163316a08110418294ceef588b5b1c">setState</reimplementedby>
+        <param>
+          <type><ref refid="classState" kindref="compound">State</ref> *</type>
+          <declname>newState</declname>
+        </param>
+        <briefdescription>
+<para>sets the state of the building </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="115" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract class representing a residential building, inheriting from <ref refid="classBuildings" kindref="compound">Buildings</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+      </node>
+      <node id="1">
+        <label>ResidentialBuilding</label>
+        <link refid="classResidentialBuilding"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Apartment</label>
+        <link refid="classApartment"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>House</label>
+        <link refid="classHouse"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>TownHouse</label>
+        <link refid="classTownHouse"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>listOfCitizens</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ResidentialBuilding</label>
+        <link refid="classResidentialBuilding"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="9">
+        <label>State</label>
+        <link refid="classState"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>building</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Citizen</label>
+        <link refid="classCitizen"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>tm</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>TravelManager</label>
+        <link refid="classTravelManager"/>
+      </node>
+      <node id="8">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="6">
+        <label>PopulationControl</label>
+        <link refid="classPopulationControl"/>
+      </node>
+      <node id="4">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ResidentialBuilding.h" bodystart="12" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classResidentialBuilding_1ae484947db4eea1a9e2858f47db5ee43d" prot="public" virt="pure-virtual"><scope>ResidentialBuilding</scope><name>addBuilding</name></member>
+      <member refid="classBuildings_1afc21c459782fab5d58a3517c09474df0" prot="protected" virt="non-virtual"><scope>ResidentialBuilding</scope><name>balance</name></member>
+      <member refid="classBuildings_1a0702b3d14494ac145aaa428aa4e01afb" prot="protected" virt="non-virtual"><scope>ResidentialBuilding</scope><name>buildingName</name></member>
+      <member refid="classBuildings_1af5b874917cf6e1dbe90dbcf5b9b37326" prot="public" virt="non-virtual"><scope>ResidentialBuilding</scope><name>Buildings</name></member>
+      <member refid="classBuildings_1a010d594842ce60f01bdf00f939ea2011" prot="protected" virt="non-virtual"><scope>ResidentialBuilding</scope><name>buildingType</name></member>
+      <member refid="classResidentialBuilding_1a5a96a6a10da11b24be5336c719a28df6" prot="protected" virt="non-virtual"><scope>ResidentialBuilding</scope><name>capacity</name></member>
+      <member refid="classResidentialBuilding_1af409d286d0d15a39c1e4c835b502205c" prot="public" virt="pure-virtual"><scope>ResidentialBuilding</scope><name>cleanSewage</name></member>
+      <member refid="classResidentialBuilding_1a9fef368fd52003c9bcef6956b20a41ad" prot="public" virt="pure-virtual"><scope>ResidentialBuilding</scope><name>cleanWaste</name></member>
+      <member refid="classBuildings_1a4254206fe0f1f565e269e1e543cba834" prot="public" virt="virtual"><scope>ResidentialBuilding</scope><name>getBalance</name></member>
+      <member refid="classBuildings_1a038e1c1d7a924c97fc3cdc5954ccd72b" prot="public" virt="virtual"><scope>ResidentialBuilding</scope><name>getBirthRate</name></member>
+      <member refid="classResidentialBuilding_1aee6ea83d6f70ac8db9c5960db42e88b7" prot="public" virt="pure-virtual"><scope>ResidentialBuilding</scope><name>getBuildingType</name></member>
+      <member refid="classResidentialBuilding_1a3366ab094bbb6038393b5160eaa559b8" prot="public" virt="non-virtual"><scope>ResidentialBuilding</scope><name>getCapacity</name></member>
+      <member refid="classBuildings_1a14a35e8d36b717014241a9f416324ae5" prot="public" virt="virtual"><scope>ResidentialBuilding</scope><name>getCommercialIncome</name></member>
+      <member refid="classBuildings_1aea12268287656270eb98cd2f22b82e02" prot="public" virt="virtual"><scope>ResidentialBuilding</scope><name>getEducationalCoverage</name></member>
+      <member refid="classBuildings_1a993a9340e25a58e2e2912090742f5ba6" prot="public" virt="virtual"><scope>ResidentialBuilding</scope><name>getHealthCoverage</name></member>
+      <member refid="classResidentialBuilding_1a7a6d78e7b5d798d8f9c6221afcb19e7b" prot="public" virt="virtual"><scope>ResidentialBuilding</scope><name>getJobsCreated</name></member>
+      <member refid="classBuildings_1ae0a010f94a01d180d1a6e4d023b54561" prot="public" virt="virtual"><scope>ResidentialBuilding</scope><name>getlistOfResidence</name></member>
+      <member refid="classResidentialBuilding_1ae086cdd073cc6055e5423353828eebec" prot="public" virt="pure-virtual"><scope>ResidentialBuilding</scope><name>getMaintenanceCost</name></member>
+      <member refid="classResidentialBuilding_1aaf571c879f3912a84df4fbcb3710e00f" prot="public" virt="pure-virtual"><scope>ResidentialBuilding</scope><name>getName</name></member>
+      <member refid="classResidentialBuilding_1ae867db795935c20c2c5a45463ac33fb0" prot="public" virt="pure-virtual"><scope>ResidentialBuilding</scope><name>getPower</name></member>
+      <member refid="classResidentialBuilding_1a4b05dc85c1b4578df1c77bfa8b54592b" prot="public" virt="pure-virtual"><scope>ResidentialBuilding</scope><name>getPowerReq</name></member>
+      <member refid="classBuildings_1ad063833f87a3337b6ed6f1f3686a6e45" prot="public" virt="virtual"><scope>ResidentialBuilding</scope><name>getProfit</name></member>
+      <member refid="classBuildings_1a329450878a0e655e4a59f29e24bd3202" prot="public" virt="virtual"><scope>ResidentialBuilding</scope><name>getSales</name></member>
+      <member refid="classBuildings_1a647c790019850fd479ac20fcbd21d873" prot="public" virt="virtual"><scope>ResidentialBuilding</scope><name>getSecurityCoverage</name></member>
+      <member refid="classResidentialBuilding_1a1a8b12239511450428c00d1872390264" prot="public" virt="pure-virtual"><scope>ResidentialBuilding</scope><name>getSewageCost</name></member>
+      <member refid="classBuildings_1a94e15ba281ac20d60e1a4632f7be1292" prot="public" virt="virtual"><scope>ResidentialBuilding</scope><name>getWasteCost</name></member>
+      <member refid="classResidentialBuilding_1aae44b69bdedffbb41c78205bcfb712e1" prot="public" virt="pure-virtual"><scope>ResidentialBuilding</scope><name>getWater</name></member>
+      <member refid="classResidentialBuilding_1aed397e7f9cc0e3f76879b3f92a212313" prot="public" virt="pure-virtual"><scope>ResidentialBuilding</scope><name>getWaterReq</name></member>
+      <member refid="classBuildings_1a7497cf317a1deb55c35864bc08c82443" prot="protected" virt="non-virtual"><scope>ResidentialBuilding</scope><name>listOfCitizens</name></member>
+      <member refid="classBuildings_1a7320201a32ce9541b3aeddac32d9988a" prot="protected" virt="non-virtual"><scope>ResidentialBuilding</scope><name>maintenanceCost</name></member>
+      <member refid="classBuildings_1a291fa645584d52be99367ba4796ebe14" prot="public" virt="virtual"><scope>ResidentialBuilding</scope><name>payCitizen</name></member>
+      <member refid="classBuildings_1a572094ecc5a5d844acbfe6f18650ed9d" prot="protected" virt="non-virtual"><scope>ResidentialBuilding</scope><name>powerReq</name></member>
+      <member refid="classBuildings_1a4f41883b0ba36ed4840bc905cc19ea3d" prot="protected" virt="non-virtual"><scope>ResidentialBuilding</scope><name>profit</name></member>
+      <member refid="classResidentialBuilding_1a4450dc123c2872db779adea553c197ab" prot="public" virt="pure-virtual"><scope>ResidentialBuilding</scope><name>requestState</name></member>
+      <member refid="classResidentialBuilding_1a811bccb2d9375f58b950471920a340ac" prot="protected" virt="non-virtual"><scope>ResidentialBuilding</scope><name>resources</name></member>
+      <member refid="classBuildings_1a2c3680425e9cd1526d1c4c834c017690" prot="protected" virt="non-virtual"><scope>ResidentialBuilding</scope><name>sales</name></member>
+      <member refid="classBuildings_1a6c02963e37bf20ef827f063209901a3a" prot="public" virt="virtual"><scope>ResidentialBuilding</scope><name>setBalance</name></member>
+      <member refid="classBuildings_1af3184f3602e4c1dd6ac010900770cd57" prot="public" virt="non-virtual"><scope>ResidentialBuilding</scope><name>setResources</name></member>
+      <member refid="classResidentialBuilding_1a389cda02037710dc3e3fb378cd81e87f" prot="public" virt="pure-virtual"><scope>ResidentialBuilding</scope><name>setState</name></member>
+      <member refid="classBuildings_1aae45243bbcd3ac7c47e9cbb83162f1f8" prot="protected" virt="non-virtual"><scope>ResidentialBuilding</scope><name>sewageCost</name></member>
+      <member refid="classResidentialBuilding_1a6cc26a5041ab45770fdaa7da789b08d9" prot="protected" virt="non-virtual"><scope>ResidentialBuilding</scope><name>state</name></member>
+      <member refid="classResidentialBuilding_1ac98afb1860c6701fece560c9f7cb4097" prot="protected" virt="non-virtual"><scope>ResidentialBuilding</scope><name>waste</name></member>
+      <member refid="classBuildings_1ac8c0debb07dcf0555a28be710377fc36" prot="protected" virt="non-virtual"><scope>ResidentialBuilding</scope><name>waterReq</name></member>
+      <member refid="classBuildings_1a60b14d2c02c2424eeb0ba52bd9fee170" prot="public" virt="pure-virtual"><scope>ResidentialBuilding</scope><name>~Buildings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

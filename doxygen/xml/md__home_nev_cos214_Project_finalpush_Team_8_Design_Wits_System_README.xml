@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="md__home_nev_cos214_Project_finalpush_Team_8_Design_Wits_System_README" kind="page">
+    <compoundname>md__home_nev_cos214_Project_finalpush_Team_8_Design_Wits_System_README</compoundname>
+    <title># &lt;p style=&quot;text-align: center;&quot;&gt; COS 214 Project : City Builder &lt;/p&gt;</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+<image type="html" name="./images/logolandscape.png" inline="yes"></image>
+ </para>
+<sect1 id="md__home_nev_cos214_Project_finalpush_Team_8_Design_Wits_System_README_1autotoc_md0">
+<title>##  &lt;p style=&quot;text-align: center;&quot;&gt; &lt;em&gt;Team 8 : Design Wits&lt;/em&gt; &lt;/p&gt;</title>
+</sect1>
+<sect1 id="md__home_nev_cos214_Project_finalpush_Team_8_Design_Wits_System_README_1autotoc_md1">
+<title>Contents:</title>
+<para><itemizedlist>
+<listitem><para><ulink url="#description">Description</ulink></para>
+</listitem><listitem><para><ulink url="#how-to-run">How to Run</ulink></para>
+</listitem><listitem><para><ulink url="#documentation">Documentation</ulink></para>
+</listitem><listitem><para><ulink url="#team">Team</ulink></para>
+</listitem></itemizedlist>
+</para>
+<sect3 id="md__home_nev_cos214_Project_finalpush_Team_8_Design_Wits_System_README_1autotoc_md2">
+<title>Description:</title>
+<para>TBD.</para>
+</sect3>
+<sect3 id="md__home_nev_cos214_Project_finalpush_Team_8_Design_Wits_System_README_1autotoc_md3">
+<title>How to Run:</title>
+<para>TBD.</para>
+</sect3>
+<sect3 id="md__home_nev_cos214_Project_finalpush_Team_8_Design_Wits_System_README_1autotoc_md4">
+<title>Documentation:</title>
+<para>TBD.</para>
+</sect3>
+<sect3 id="md__home_nev_cos214_Project_finalpush_Team_8_Design_Wits_System_README_1autotoc_md5">
+<title>Team:</title>
+<para><table rows="8" cols="3"><row>
+<entry thead="yes"><para>Name   </para>
+</entry><entry thead="yes"><para>Links   </para>
+</entry><entry thead="yes"><para>Description    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Tebogo Hamese<linebreak/>
+ <emphasis>u21532941</emphasis><linebreak/>
+<image type="html" name="./images/tebogo.jpg" inline="yes"></image>
+   </para>
+</entry><entry thead="no"><para><linebreak/>
+<ulink url="https://github.com/tibbyhm"><image type="html" name="https://github.com/favicon.ico" inline="yes"></image>
+</ulink>   </para>
+</entry><entry thead="no"><para>Computer Science student exploring cybersecurity and cloud computing. I keep my head in the clouds... but at least this way, I know they’re secure!    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Nevan Rahman<linebreak/>
+<emphasis>u21572993</emphasis><linebreak/>
+<image type="html" name="./images/nev.JPEG" inline="yes"></image>
+   </para>
+</entry><entry thead="no"><para><linebreak/>
+<ulink url="https://github.com/rsnevan"><image type="html" name="https://github.com/favicon.ico" inline="yes"></image>
+</ulink> <ulink url="https://linkedin.com/in/nevanrahman"><image type="html" name="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/linkedin.svg" inline="yes"></image>
+</ulink>   </para>
+</entry><entry thead="no"><para>BSc Computer Science student and IT Lab Technician with a passion for data.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Unathi Dlamini<linebreak/>
+<emphasis>u22553402</emphasis><linebreak/>
+<image type="html" name="./images/unathi.jpg" inline="yes"></image>
+   </para>
+</entry><entry thead="no"><para><linebreak/>
+<ulink url="https://github.com/unathi3"><image type="html" name="https://github.com/favicon.ico" inline="yes"></image>
+</ulink> <ulink url="https://www.linkedin.com/in/unathi-dlamini-237007224/"><image type="html" name="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/linkedin.svg" inline="yes"></image>
+</ulink>   </para>
+</entry><entry thead="no"><para>A second-year computer science student at the University of Pretoria with a passion for programming, web design, and learning<nonbreakablespace/>new<nonbreakablespace/>skills.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Palesa Thabane<linebreak/>
+<emphasis>u21540838</emphasis><linebreak/>
+<image type="html" name="./images/palesa.jpg" inline="yes"></image>
+   </para>
+</entry><entry thead="no"><para><linebreak/>
+<ulink url="https://github.com/ms-thabane"><image type="html" name="https://github.com/favicon.ico" inline="yes"></image>
+</ulink>   </para>
+</entry><entry thead="no"><para>Shy shell-dweller BSc Computer Science student with an interest in cybersecurity.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Reinhard Pretorius<linebreak/>
+<emphasis>u22509578</emphasis><linebreak/>
+<image type="html" name="./images/reinhard.jpg" inline="yes"></image>
+   </para>
+</entry><entry thead="no"><para><linebreak/>
+<ulink url="https://github.com/WizardOfGold"><image type="html" name="https://github.com/favicon.ico" inline="yes"></image>
+</ulink>   </para>
+</entry><entry thead="no"><para>Computer Science student with a passion for Machine Learning and Complex<nonbreakablespace/>Data<nonbreakablespace/>structures    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Mthawelanga Gomba<linebreak/>
+<emphasis>u21664707</emphasis><linebreak/>
+<image type="html" name="./images/mtha.jpg" inline="yes"></image>
+   </para>
+</entry><entry thead="no"><para><linebreak/>
+<ulink url="https://github.com/AuraBlack123"><image type="html" name="https://github.com/favicon.ico" inline="yes"></image>
+</ulink>   </para>
+</entry><entry thead="no"><para>Average dude doing what he can and having fun along the way.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Philemon Muleya<linebreak/>
+<emphasis>u23629810</emphasis><linebreak/>
+<image type="html" name="./images/philemon.jpg" inline="yes"></image>
+   </para>
+</entry><entry thead="no"><para><linebreak/>
+<ulink url="https://github.com/UML23"><image type="html" name="https://github.com/favicon.ico" inline="yes"></image>
+</ulink>   </para>
+</entry><entry thead="no"><para>Second year student with interest in operating systems. Sudo apt-get install Knowledge...<nonbreakablespace/>Error   </para>
+</entry></row>
+</table>
+</para>
+</sect3>
+</sect1>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/README.md"/>
+  </compounddef>
+</doxygen>

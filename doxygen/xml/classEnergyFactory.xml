@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classEnergyFactory" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>EnergyFactory</compoundname>
+    <derivedcompoundref refid="classCoalFactory" prot="public" virt="non-virtual">CoalFactory</derivedcompoundref>
+    <derivedcompoundref refid="classHydroFactory" prot="public" virt="non-virtual">HydroFactory</derivedcompoundref>
+    <derivedcompoundref refid="classNuclearFactory" prot="public" virt="non-virtual">NuclearFactory</derivedcompoundref>
+    <derivedcompoundref refid="classWindFactory" prot="public" virt="non-virtual">WindFactory</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEnergyFactory_1ac3859d17f26d7e3d50b49787396f86e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classEnergySource" kindref="compound">EnergySource</ref> *</type>
+        <definition>EnergySource * EnergyFactory::createEnergySource</definition>
+        <argsstring>(float output)=0</argsstring>
+        <name>createEnergySource</name>
+        <reimplementedby refid="classCoalFactory_1a41a19220df823e8dcb7936402a8247e1">createEnergySource</reimplementedby>
+        <reimplementedby refid="classHydroFactory_1a18717c4e4b924638ebc32a976249185c">createEnergySource</reimplementedby>
+        <reimplementedby refid="classNuclearFactory_1a8e01ce4a60b16aaf51913e3a5d41b0ef">createEnergySource</reimplementedby>
+        <reimplementedby refid="classWindFactory_1a0d7e8383f79afef375021c9837f5c23f">createEnergySource</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EnergyFactory.h" line="12" column="22" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EnergyFactory.cpp" bodystart="4" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classEnergyFactory_1afb618240bc5090f49a4fc93559ef50cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual EnergyFactory::~EnergyFactory</definition>
+        <argsstring>()</argsstring>
+        <name>~EnergyFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EnergyFactory.h" line="13" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CoalFactory</label>
+        <link refid="classCoalFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>HydroFactory</label>
+        <link refid="classHydroFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>WindFactory</label>
+        <link refid="classWindFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>NuclearFactory</label>
+        <link refid="classNuclearFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>EnergyFactory</label>
+        <link refid="classEnergyFactory"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EnergyFactory.h" line="10" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EnergyFactory.h" bodystart="10" bodyend="14"/>
+    <listofallmembers>
+      <member refid="classEnergyFactory_1ac3859d17f26d7e3d50b49787396f86e4" prot="public" virt="pure-virtual"><scope>EnergyFactory</scope><name>createEnergySource</name></member>
+      <member refid="classEnergyFactory_1afb618240bc5090f49a4fc93559ef50cd" prot="public" virt="virtual"><scope>EnergyFactory</scope><name>~EnergyFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

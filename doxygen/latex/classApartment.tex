@@ -1,0 +1,333 @@
+\hypertarget{classApartment}{}\doxysection{Apartment Class Reference}
+\label{classApartment}\index{Apartment@{Apartment}}
+
+
+Represents an apartment building that inherits from \mbox{\hyperlink{classResidentialBuilding}{Residential\+Building}}.  
+
+
+
+
+{\ttfamily \#include $<$Apartment.\+h$>$}
+
+
+
+Inheritance diagram for Apartment\+:
+% FIG 0
+
+
+Collaboration diagram for Apartment\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classApartment_ad9cf8631ea00a5b87f499ec7fe2008da}{Apartment}} (string b\+Name, int p\+Req, int w\+Req, double m\+Cost, int s\+Cost, int waste, int \mbox{\hyperlink{classResidentialBuilding_a5a96a6a10da11b24be5336c719a28df6}{capacity}})
+\begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{classApartment}{Apartment}} object with the specified attributes. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classApartment_a392a887e59559a83927bba479aaab2ad}{get\+Building\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Gets the type of the building. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classApartment_acd246138d22db5dcdd45e753ce8fbdba}{get\+Maintenance\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the maintenance cost of the building. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classApartment_a56ab06079df6252187c3a2a70cb36066}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the building. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classApartment_ab64e953d286580dedd22b35eb80c8be7}{get\+Power\+Req}} ()
+\begin{DoxyCompactList}\small\item\em Gets the power requirement of the building. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classApartment_a2e07a4fbc93507e19a7054100797ba72}{get\+Sewage\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the sewage cost of the building. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classApartment_a32d7aee406a3f6bd0127f118397167bf}{get\+Water\+Req}} ()
+\begin{DoxyCompactList}\small\item\em Gets the water requirement of the building. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classApartment_affcb8a09e65a8012aa5f588c27f902ee}\label{classApartment_affcb8a09e65a8012aa5f588c27f902ee}} 
+virtual void \mbox{\hyperlink{classApartment_affcb8a09e65a8012aa5f588c27f902ee}{request\+State}} ()
+\begin{DoxyCompactList}\small\item\em Requests the state of the building. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCitizen}{Citizen}} $\ast$ \mbox{\hyperlink{classApartment_a26972f57d39c2fe621b2cdcf455985d4}{get\+List\+Of\+Residents}} ()
+\begin{DoxyCompactList}\small\item\em Gets the list of residents in the apartment. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classApartment_aec8e5c6b0a0351155ad7267e5775ce6f}{get\+Capacity}} ()
+\begin{DoxyCompactList}\small\item\em Gets the capacity of the building. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classApartment_a00359e6e1dd29b3f781cb79a26569fc3}{get\+Waste\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the waste cost of the building. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classApartment_a6448965db3b10a9c24ce82bb1d52f291}\label{classApartment_a6448965db3b10a9c24ce82bb1d52f291}} 
+void \mbox{\hyperlink{classApartment_a6448965db3b10a9c24ce82bb1d52f291}{set\+State}} (\mbox{\hyperlink{classState}{State}} $\ast$new\+State)
+\begin{DoxyCompactList}\small\item\em sets the state of the building \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classApartment_a590afeb39aca36e740b51290bf6bd739}{get\+Power}} ()
+\begin{DoxyCompactList}\small\item\em Receives power for the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classApartment_a9ad3ecbc187e2132c19f18169009d949}{get\+Water}} ()
+\begin{DoxyCompactList}\small\item\em Receives water for the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classApartment_a0787841d537df8e435ec3f0abac715c9}{clean\+Waste}} ()
+\begin{DoxyCompactList}\small\item\em Cleans the waste of the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classApartment_ade0ae9dc5bb6be2c2ed1109abad47322}{clean\+Sewage}} ()
+\begin{DoxyCompactList}\small\item\em Cleans the sewage of the building. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classApartment_ae9a71432c8b9856ddd79c176ec6348aa}{add\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Add a building to the Building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents an apartment building that inherits from \mbox{\hyperlink{classResidentialBuilding}{Residential\+Building}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classApartment_ad9cf8631ea00a5b87f499ec7fe2008da}\label{classApartment_ad9cf8631ea00a5b87f499ec7fe2008da}} 
+\index{Apartment@{Apartment}!Apartment@{Apartment}}
+\index{Apartment@{Apartment}!Apartment@{Apartment}}
+\doxysubsubsection{\texorpdfstring{Apartment()}{Apartment()}}
+{\footnotesize\ttfamily Apartment\+::\+Apartment (\begin{DoxyParamCaption}\item[{string}]{b\+Name,  }\item[{int}]{p\+Req,  }\item[{int}]{w\+Req,  }\item[{double}]{m\+Cost,  }\item[{int}]{s\+Cost,  }\item[{int}]{waste,  }\item[{int}]{capacity }\end{DoxyParamCaption})}
+
+
+
+Constructs an \mbox{\hyperlink{classApartment}{Apartment}} object with the specified attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+Name} & The name of the building. \\
+\hline
+{\em p\+Req} & Power requirement. \\
+\hline
+{\em w\+Req} & Water requirement. \\
+\hline
+{\em m\+Cost} & Maintenance cost. \\
+\hline
+{\em s\+Cost} & Sewage cost. \\
+\hline
+{\em waste} & Waste generated by the building. \\
+\hline
+{\em capacity} & The capacity in terms of residents. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classApartment_ae9a71432c8b9856ddd79c176ec6348aa}\label{classApartment_ae9a71432c8b9856ddd79c176ec6348aa}} 
+\index{Apartment@{Apartment}!addBuilding@{addBuilding}}
+\index{addBuilding@{addBuilding}!Apartment@{Apartment}}
+\doxysubsubsection{\texorpdfstring{addBuilding()}{addBuilding()}}
+{\footnotesize\ttfamily void Apartment\+::add\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Add a building to the Building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & The building to add to the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_ae484947db4eea1a9e2858f47db5ee43d}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classApartment_ade0ae9dc5bb6be2c2ed1109abad47322}\label{classApartment_ade0ae9dc5bb6be2c2ed1109abad47322}} 
+\index{Apartment@{Apartment}!cleanSewage@{cleanSewage}}
+\index{cleanSewage@{cleanSewage}!Apartment@{Apartment}}
+\doxysubsubsection{\texorpdfstring{cleanSewage()}{cleanSewage()}}
+{\footnotesize\ttfamily bool Apartment\+::clean\+Sewage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cleans the sewage of the building. 
+
+\begin{DoxyReturn}{Returns}
+true if sewage cleaning was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_af409d286d0d15a39c1e4c835b502205c}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classApartment_a0787841d537df8e435ec3f0abac715c9}\label{classApartment_a0787841d537df8e435ec3f0abac715c9}} 
+\index{Apartment@{Apartment}!cleanWaste@{cleanWaste}}
+\index{cleanWaste@{cleanWaste}!Apartment@{Apartment}}
+\doxysubsubsection{\texorpdfstring{cleanWaste()}{cleanWaste()}}
+{\footnotesize\ttfamily bool Apartment\+::clean\+Waste (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cleans the waste of the building. 
+
+\begin{DoxyReturn}{Returns}
+true if waste cleaning was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_a9fef368fd52003c9bcef6956b20a41ad}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classApartment_a392a887e59559a83927bba479aaab2ad}\label{classApartment_a392a887e59559a83927bba479aaab2ad}} 
+\index{Apartment@{Apartment}!getBuildingType@{getBuildingType}}
+\index{getBuildingType@{getBuildingType}!Apartment@{Apartment}}
+\doxysubsubsection{\texorpdfstring{getBuildingType()}{getBuildingType()}}
+{\footnotesize\ttfamily string Apartment\+::get\+Building\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the type of the building. 
+
+\begin{DoxyReturn}{Returns}
+The type of the building as a string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_aee6ea83d6f70ac8db9c5960db42e88b7}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classApartment_aec8e5c6b0a0351155ad7267e5775ce6f}\label{classApartment_aec8e5c6b0a0351155ad7267e5775ce6f}} 
+\index{Apartment@{Apartment}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!Apartment@{Apartment}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily int Apartment\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the capacity of the building. 
+
+\begin{DoxyReturn}{Returns}
+The capacity as an integer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApartment_a26972f57d39c2fe621b2cdcf455985d4}\label{classApartment_a26972f57d39c2fe621b2cdcf455985d4}} 
+\index{Apartment@{Apartment}!getListOfResidents@{getListOfResidents}}
+\index{getListOfResidents@{getListOfResidents}!Apartment@{Apartment}}
+\doxysubsubsection{\texorpdfstring{getListOfResidents()}{getListOfResidents()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCitizen}{Citizen}} $\ast$ Apartment\+::get\+List\+Of\+Residents (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the list of residents in the apartment. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the list of residents. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApartment_acd246138d22db5dcdd45e753ce8fbdba}\label{classApartment_acd246138d22db5dcdd45e753ce8fbdba}} 
+\index{Apartment@{Apartment}!getMaintenanceCost@{getMaintenanceCost}}
+\index{getMaintenanceCost@{getMaintenanceCost}!Apartment@{Apartment}}
+\doxysubsubsection{\texorpdfstring{getMaintenanceCost()}{getMaintenanceCost()}}
+{\footnotesize\ttfamily double Apartment\+::get\+Maintenance\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the maintenance cost of the building. 
+
+\begin{DoxyReturn}{Returns}
+The maintenance cost as a double. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_ae086cdd073cc6055e5423353828eebec}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classApartment_a56ab06079df6252187c3a2a70cb36066}\label{classApartment_a56ab06079df6252187c3a2a70cb36066}} 
+\index{Apartment@{Apartment}!getName@{getName}}
+\index{getName@{getName}!Apartment@{Apartment}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Apartment\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the name of the building. 
+
+\begin{DoxyReturn}{Returns}
+The name of the building as a string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_aaf571c879f3912a84df4fbcb3710e00f}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classApartment_a590afeb39aca36e740b51290bf6bd739}\label{classApartment_a590afeb39aca36e740b51290bf6bd739}} 
+\index{Apartment@{Apartment}!getPower@{getPower}}
+\index{getPower@{getPower}!Apartment@{Apartment}}
+\doxysubsubsection{\texorpdfstring{getPower()}{getPower()}}
+{\footnotesize\ttfamily bool Apartment\+::get\+Power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Receives power for the building. 
+
+\begin{DoxyReturn}{Returns}
+true if power was received successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_ae867db795935c20c2c5a45463ac33fb0}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classApartment_ab64e953d286580dedd22b35eb80c8be7}\label{classApartment_ab64e953d286580dedd22b35eb80c8be7}} 
+\index{Apartment@{Apartment}!getPowerReq@{getPowerReq}}
+\index{getPowerReq@{getPowerReq}!Apartment@{Apartment}}
+\doxysubsubsection{\texorpdfstring{getPowerReq()}{getPowerReq()}}
+{\footnotesize\ttfamily int Apartment\+::get\+Power\+Req (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the power requirement of the building. 
+
+\begin{DoxyReturn}{Returns}
+The power requirement as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_a4b05dc85c1b4578df1c77bfa8b54592b}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classApartment_a2e07a4fbc93507e19a7054100797ba72}\label{classApartment_a2e07a4fbc93507e19a7054100797ba72}} 
+\index{Apartment@{Apartment}!getSewageCost@{getSewageCost}}
+\index{getSewageCost@{getSewageCost}!Apartment@{Apartment}}
+\doxysubsubsection{\texorpdfstring{getSewageCost()}{getSewageCost()}}
+{\footnotesize\ttfamily int Apartment\+::get\+Sewage\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the sewage cost of the building. 
+
+\begin{DoxyReturn}{Returns}
+The sewage cost as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_a1a8b12239511450428c00d1872390264}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classApartment_a00359e6e1dd29b3f781cb79a26569fc3}\label{classApartment_a00359e6e1dd29b3f781cb79a26569fc3}} 
+\index{Apartment@{Apartment}!getWasteCost@{getWasteCost}}
+\index{getWasteCost@{getWasteCost}!Apartment@{Apartment}}
+\doxysubsubsection{\texorpdfstring{getWasteCost()}{getWasteCost()}}
+{\footnotesize\ttfamily int Apartment\+::get\+Waste\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the waste cost of the building. 
+
+\begin{DoxyReturn}{Returns}
+The waste cost as an integer. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a94e15ba281ac20d60e1a4632f7be1292}{Buildings}}.
+
+\mbox{\Hypertarget{classApartment_a9ad3ecbc187e2132c19f18169009d949}\label{classApartment_a9ad3ecbc187e2132c19f18169009d949}} 
+\index{Apartment@{Apartment}!getWater@{getWater}}
+\index{getWater@{getWater}!Apartment@{Apartment}}
+\doxysubsubsection{\texorpdfstring{getWater()}{getWater()}}
+{\footnotesize\ttfamily bool Apartment\+::get\+Water (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Receives water for the building. 
+
+\begin{DoxyReturn}{Returns}
+true if water was received successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_aae44b69bdedffbb41c78205bcfb712e1}{Residential\+Building}}.
+
+\mbox{\Hypertarget{classApartment_a32d7aee406a3f6bd0127f118397167bf}\label{classApartment_a32d7aee406a3f6bd0127f118397167bf}} 
+\index{Apartment@{Apartment}!getWaterReq@{getWaterReq}}
+\index{getWaterReq@{getWaterReq}!Apartment@{Apartment}}
+\doxysubsubsection{\texorpdfstring{getWaterReq()}{getWaterReq()}}
+{\footnotesize\ttfamily int Apartment\+::get\+Water\+Req (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the water requirement of the building. 
+
+\begin{DoxyReturn}{Returns}
+The water requirement as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialBuilding_aed397e7f9cc0e3f76879b3f92a212313}{Residential\+Building}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Apartment.\+h\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Apartment.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classdoctest_1_1detail_1_1ContextScope" kind="class" language="C++" prot="public">
+    <compoundname>doctest::detail::ContextScope</compoundname>
+    <basecompoundref refid="structdoctest_1_1detail_1_1ContextScopeBase" prot="public" virt="non-virtual">doctest::detail::ContextScopeBase</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename L</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdoctest_1_1detail_1_1ContextScope_1ad8ce74b4ff2883bf43a4944502e32acb" prot="private" static="no" mutable="no">
+        <type>L</type>
+        <definition>L doctest::detail::ContextScope&lt; L &gt;::lambda_</definition>
+        <argsstring></argsstring>
+        <name>lambda_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1848" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1848" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdoctest_1_1detail_1_1ContextScope_1a344c76a0374615d567a084c0a0ffd215" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>doctest::detail::ContextScope&lt; L &gt;::ContextScope</definition>
+        <argsstring>(const L &amp;lambda)</argsstring>
+        <name>ContextScope</name>
+        <param>
+          <type>const L &amp;</type>
+          <declname>lambda</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1851" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1851" bodyend="1851"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1detail_1_1ContextScope_1aea8b6a27c0f1257529f9912ec2ab2991" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>doctest::detail::ContextScope&lt; L &gt;::ContextScope</definition>
+        <argsstring>(L &amp;&amp;lambda)</argsstring>
+        <name>ContextScope</name>
+        <param>
+          <type>L &amp;&amp;</type>
+          <declname>lambda</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1852" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1852" bodyend="1852"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1detail_1_1ContextScope_1aa2bc8edd40e227d9028b0cfca4911465" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doctest::detail::ContextScope&lt; L &gt;::ContextScope</definition>
+        <argsstring>(const ContextScope &amp;)=delete</argsstring>
+        <name>ContextScope</name>
+        <param>
+          <type>const <ref refid="classdoctest_1_1detail_1_1ContextScope" kindref="compound">ContextScope</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1854" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1detail_1_1ContextScope_1aa6ab9a99670766e8ee26631cea4148f9" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>doctest::detail::ContextScope&lt; L &gt;::ContextScope</definition>
+        <argsstring>(ContextScope &amp;&amp;) noexcept=default</argsstring>
+        <name>ContextScope</name>
+        <param>
+          <type><ref refid="classdoctest_1_1detail_1_1ContextScope" kindref="compound">ContextScope</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1855" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1detail_1_1ContextScope_1a1f865dae012939ee7b2e30175b9f928d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdoctest_1_1detail_1_1ContextScope" kindref="compound">ContextScope</ref> &amp;</type>
+        <definition>ContextScope&amp; doctest::detail::ContextScope&lt; L &gt;::operator=</definition>
+        <argsstring>(const ContextScope &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classdoctest_1_1detail_1_1ContextScope" kindref="compound">ContextScope</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1857" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1detail_1_1ContextScope_1a1540f960d01ca6ceadff1335d82f53f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdoctest_1_1detail_1_1ContextScope" kindref="compound">ContextScope</ref> &amp;</type>
+        <definition>ContextScope&amp; doctest::detail::ContextScope&lt; L &gt;::operator=</definition>
+        <argsstring>(ContextScope &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classdoctest_1_1detail_1_1ContextScope" kindref="compound">ContextScope</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1858" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1detail_1_1ContextScope_1a4636ac32ae41ae108c7ada4a164ffaeb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void doctest::detail::ContextScope&lt; L &gt;::stringify</definition>
+        <argsstring>(std::ostream *s) const override</argsstring>
+        <name>stringify</name>
+        <reimplements refid="structdoctest_1_1IContextScope_1affbf0f9bf8107a4a8a805d237288141d">stringify</reimplements>
+        <param>
+          <type><ref refid="classstd_1_1basic__ostream" kindref="compound">std::ostream</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1860" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1860" bodyend="1860"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoctest_1_1detail_1_1ContextScope_1a1ee7d4702398ee8d0e80ab843aa260d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>doctest::detail::ContextScope&lt; L &gt;::~ContextScope</definition>
+        <argsstring>() override</argsstring>
+        <name>~ContextScope</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1862" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1862" bodyend="1866"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>doctest::IContextScope</label>
+        <link refid="structdoctest_1_1IContextScope"/>
+      </node>
+      <node id="2">
+        <label>doctest::detail::ContextScopeBase</label>
+        <link refid="structdoctest_1_1detail_1_1ContextScopeBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>doctest::detail::ContextScope&lt; L &gt;</label>
+        <link refid="classdoctest_1_1detail_1_1ContextScope"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>doctest::IContextScope</label>
+        <link refid="structdoctest_1_1IContextScope"/>
+      </node>
+      <node id="2">
+        <label>doctest::detail::ContextScopeBase</label>
+        <link refid="structdoctest_1_1detail_1_1ContextScopeBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>doctest::detail::ContextScope&lt; L &gt;</label>
+        <link refid="classdoctest_1_1detail_1_1ContextScope"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1846" column="16" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1847" bodyend="1867"/>
+    <listofallmembers>
+      <member refid="classdoctest_1_1detail_1_1ContextScope_1a344c76a0374615d567a084c0a0ffd215" prot="public" virt="non-virtual"><scope>doctest::detail::ContextScope</scope><name>ContextScope</name></member>
+      <member refid="classdoctest_1_1detail_1_1ContextScope_1aea8b6a27c0f1257529f9912ec2ab2991" prot="public" virt="non-virtual"><scope>doctest::detail::ContextScope</scope><name>ContextScope</name></member>
+      <member refid="classdoctest_1_1detail_1_1ContextScope_1aa2bc8edd40e227d9028b0cfca4911465" prot="public" virt="non-virtual"><scope>doctest::detail::ContextScope</scope><name>ContextScope</name></member>
+      <member refid="classdoctest_1_1detail_1_1ContextScope_1aa6ab9a99670766e8ee26631cea4148f9" prot="public" virt="non-virtual"><scope>doctest::detail::ContextScope</scope><name>ContextScope</name></member>
+      <member refid="structdoctest_1_1detail_1_1ContextScopeBase_1a3fff412c7c41aeb8fc0314f3f4503ec4" prot="public" virt="non-virtual"><scope>doctest::detail::ContextScope</scope><name>ContextScopeBase</name></member>
+      <member refid="structdoctest_1_1detail_1_1ContextScopeBase_1af3a3ff7ad6b98142ef0f7e1d01912d48" prot="protected" virt="non-virtual"><scope>doctest::detail::ContextScope</scope><name>ContextScopeBase</name></member>
+      <member refid="structdoctest_1_1detail_1_1ContextScopeBase_1a13e4ac8d4ef5b7c3361618f6ad5efcfe" prot="protected" virt="non-virtual"><scope>doctest::detail::ContextScope</scope><name>ContextScopeBase</name></member>
+      <member refid="structdoctest_1_1detail_1_1ContextScopeBase_1a6f223de9a972b08bf1b9e9d2d99ab4c6" prot="protected" virt="non-virtual"><scope>doctest::detail::ContextScope</scope><name>destroy</name></member>
+      <member refid="classdoctest_1_1detail_1_1ContextScope_1ad8ce74b4ff2883bf43a4944502e32acb" prot="private" virt="non-virtual"><scope>doctest::detail::ContextScope</scope><name>lambda_</name></member>
+      <member refid="structdoctest_1_1detail_1_1ContextScopeBase_1a260af2340e01226c6098958ee2b383a2" prot="protected" virt="non-virtual"><scope>doctest::detail::ContextScope</scope><name>need_to_destroy</name></member>
+      <member refid="classdoctest_1_1detail_1_1ContextScope_1a1f865dae012939ee7b2e30175b9f928d" prot="public" virt="non-virtual"><scope>doctest::detail::ContextScope</scope><name>operator=</name></member>
+      <member refid="classdoctest_1_1detail_1_1ContextScope_1a1540f960d01ca6ceadff1335d82f53f2" prot="public" virt="non-virtual"><scope>doctest::detail::ContextScope</scope><name>operator=</name></member>
+      <member refid="structdoctest_1_1detail_1_1ContextScopeBase_1a89d1add2226e800b03031d3084314427" prot="public" virt="non-virtual" ambiguityscope="doctest::detail::ContextScopeBase::"><scope>doctest::detail::ContextScope</scope><name>operator=</name></member>
+      <member refid="structdoctest_1_1detail_1_1ContextScopeBase_1a2016ee1c70136df4c2c539f7e9b436e9" prot="public" virt="non-virtual" ambiguityscope="doctest::detail::ContextScopeBase::"><scope>doctest::detail::ContextScope</scope><name>operator=</name></member>
+      <member refid="classdoctest_1_1detail_1_1ContextScope_1a4636ac32ae41ae108c7ada4a164ffaeb" prot="public" virt="virtual"><scope>doctest::detail::ContextScope</scope><name>stringify</name></member>
+      <member refid="classdoctest_1_1detail_1_1ContextScope_1a1ee7d4702398ee8d0e80ab843aa260d7" prot="public" virt="non-virtual"><scope>doctest::detail::ContextScope</scope><name>~ContextScope</name></member>
+      <member refid="structdoctest_1_1detail_1_1ContextScopeBase_1a3adec03d141d955f6b4655fdb1202583" prot="public" virt="non-virtual"><scope>doctest::detail::ContextScope</scope><name>~ContextScopeBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

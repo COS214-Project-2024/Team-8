@@ -1,0 +1,71 @@
+\hypertarget{classApartmentFactory}{}\doxysection{Apartment\+Factory Class Reference}
+\label{classApartmentFactory}\index{ApartmentFactory@{ApartmentFactory}}
+
+
+A factory class for creating apartment buildings.  
+
+
+
+
+{\ttfamily \#include $<$Apartment\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Apartment\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for Apartment\+Factory\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classApartmentFactory_a5ba1cdad1ffba9037af6884b90d02b64}{create\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new apartment building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classApartmentFactory_a11c24adadf864b9b20c37e56133f3d49}{buildings}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A factory class for creating apartment buildings. 
+
+This class inherits from \mbox{\hyperlink{classResidentialFactory}{Residential\+Factory}} and provides a method for creating apartment building objects. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classApartmentFactory_a5ba1cdad1ffba9037af6884b90d02b64}\label{classApartmentFactory_a5ba1cdad1ffba9037af6884b90d02b64}} 
+\index{ApartmentFactory@{ApartmentFactory}!createBuilding@{createBuilding}}
+\index{createBuilding@{createBuilding}!ApartmentFactory@{ApartmentFactory}}
+\doxysubsubsection{\texorpdfstring{createBuilding()}{createBuilding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ Apartment\+Factory\+::create\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a new apartment building. 
+
+This function creates and returns a pointer to a new apartment \mbox{\hyperlink{classBuildings}{Buildings}} object.
+
+\begin{DoxyReturn}{Returns}
+A pointer to a newly created apartment \mbox{\hyperlink{classBuildings}{Buildings}} object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResidentialFactory_af98fef03d68b3ccda81dcd27e922d680}{Residential\+Factory}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classApartmentFactory_a11c24adadf864b9b20c37e56133f3d49}\label{classApartmentFactory_a11c24adadf864b9b20c37e56133f3d49}} 
+\index{ApartmentFactory@{ApartmentFactory}!buildings@{buildings}}
+\index{buildings@{buildings}!ApartmentFactory@{ApartmentFactory}}
+\doxysubsubsection{\texorpdfstring{buildings}{buildings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}}$\ast$ Apartment\+Factory\+::buildings}
+
+Pointer to a \mbox{\hyperlink{classBuildings}{Buildings}} object, representing the apartment building instance managed by the factory. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{ApartmentFactory_8h}{Apartment\+Factory.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Apartment\+Factory.\+cpp\end{DoxyCompactItemize}

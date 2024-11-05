@@ -1,0 +1,97 @@
+\hypertarget{classUndoCommand}{}\doxysection{Undo\+Command Class Reference}
+\label{classUndoCommand}\index{UndoCommand@{UndoCommand}}
+
+
+Inheritance diagram for Undo\+Command\+:
+% FIG 0
+
+
+Collaboration diagram for Undo\+Command\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUndoCommand_afbad4f631c082f50621721260896767d}{Undo\+Command}} (\mbox{\hyperlink{classUtility}{Utility}} $\ast$utility)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classUndoCommand}{Undo\+Command}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUndoCommand_a0e1e25e20e345ccfc9095f805f4c3bb2}{execute}} ()
+\begin{DoxyCompactList}\small\item\em Execute the command. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classUndoCommand_abeedb9edd3c7db14e6f718dcf35760ae}{get\+Utility\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get the utility type of the command. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUtility}{Utility}} $\ast$ \mbox{\hyperlink{classUndoCommand_ac87aba001d750b7c85ebfab2674bc4f6}{get\+Utility}} ()
+\begin{DoxyCompactList}\small\item\em Get the utility of the command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classUndoCommand_afbad4f631c082f50621721260896767d}\label{classUndoCommand_afbad4f631c082f50621721260896767d}} 
+\index{UndoCommand@{UndoCommand}!UndoCommand@{UndoCommand}}
+\index{UndoCommand@{UndoCommand}!UndoCommand@{UndoCommand}}
+\doxysubsubsection{\texorpdfstring{UndoCommand()}{UndoCommand()}}
+{\footnotesize\ttfamily Undo\+Command\+::\+Undo\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUtility}{Utility}} $\ast$}]{utility }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{classUndoCommand}{Undo\+Command}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em utility} & The utility to Undo \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUndoCommand_a0e1e25e20e345ccfc9095f805f4c3bb2}\label{classUndoCommand_a0e1e25e20e345ccfc9095f805f4c3bb2}} 
+\index{UndoCommand@{UndoCommand}!execute@{execute}}
+\index{execute@{execute}!UndoCommand@{UndoCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Undo\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Execute the command. 
+
+Undos the utility 
+
+Implements \mbox{\hyperlink{classCommand}{Command}}.
+
+\mbox{\Hypertarget{classUndoCommand_ac87aba001d750b7c85ebfab2674bc4f6}\label{classUndoCommand_ac87aba001d750b7c85ebfab2674bc4f6}} 
+\index{UndoCommand@{UndoCommand}!getUtility@{getUtility}}
+\index{getUtility@{getUtility}!UndoCommand@{UndoCommand}}
+\doxysubsubsection{\texorpdfstring{getUtility()}{getUtility()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUtility}{Utility}} $\ast$ Undo\+Command\+::get\+Utility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the utility of the command. 
+
+\begin{DoxyReturn}{Returns}
+Utility$\ast$ The utility of the command(deep copy) 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classCommand_a0606383bba658ef28073274a49859aa1}{Command}}.
+
+\mbox{\Hypertarget{classUndoCommand_abeedb9edd3c7db14e6f718dcf35760ae}\label{classUndoCommand_abeedb9edd3c7db14e6f718dcf35760ae}} 
+\index{UndoCommand@{UndoCommand}!getUtilityType@{getUtilityType}}
+\index{getUtilityType@{getUtilityType}!UndoCommand@{UndoCommand}}
+\doxysubsubsection{\texorpdfstring{getUtilityType()}{getUtilityType()}}
+{\footnotesize\ttfamily std\+::string Undo\+Command\+::get\+Utility\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the utility type of the command. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string The utility type of the command 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classCommand_a34de0246195437ab1f1c078e7c3488c6}{Command}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{UndoCommand_8h}{Undo\+Command.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Undo\+Command.\+cpp\end{DoxyCompactItemize}

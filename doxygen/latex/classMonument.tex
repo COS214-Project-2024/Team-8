@@ -1,0 +1,307 @@
+\hypertarget{classMonument}{}\doxysection{Monument Class Reference}
+\label{classMonument}\index{Monument@{Monument}}
+
+
+Represents a monument, inheriting from \mbox{\hyperlink{classLandmarkBuilding}{Landmark\+Building}}.  
+
+
+
+
+{\ttfamily \#include $<$Monument.\+h$>$}
+
+
+
+Inheritance diagram for Monument\+:
+% FIG 0
+
+
+Collaboration diagram for Monument\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMonument_a3ac8cfac22f14ef5924d1396bba16112}{Monument}} (string b\+Name, int p\+Req, int w\+Req, double m\+Cost, int s\+Cost, int waste)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classMonument}{Monument}} object. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classMonument_a7348eb3e86de17228f0ca50d7c5fe48a}{get\+Building\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Gets the type of the monument. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classMonument_ae0d8787c2f668483df0acb8f5dabd369}{get\+Maintenance\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the maintenance cost of the monument. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classMonument_ade1e6dfa17591c2e90418d1dd470d595}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the monument. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classMonument_aa5d16f88a8b1f0518d2845dbb0bd4f15}{get\+Power\+Req}} ()
+\begin{DoxyCompactList}\small\item\em Gets the power requirement of the monument. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classMonument_a9c004de50ec736e06bbc2eb9253af7e1}{get\+Sewage\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the sewage cost of the monument. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classMonument_a9d0f9952cde9be9625d514c7adf17f27}{get\+Water\+Req}} ()
+\begin{DoxyCompactList}\small\item\em Gets the water requirement of the monument. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMonument_af01f5c96f40adbc481bff5a6df48719d}\label{classMonument_af01f5c96f40adbc481bff5a6df48719d}} 
+virtual void \mbox{\hyperlink{classMonument_af01f5c96f40adbc481bff5a6df48719d}{request\+State}} ()
+\begin{DoxyCompactList}\small\item\em Requests the current state of the monument. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMonument_a90c94d6f5e749e62ff836cc73a909d41}{get\+Waste\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the waste cost for the monument. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMonument_a0e8131d72fc1b7cfeaea419ced2f78fa}\label{classMonument_a0e8131d72fc1b7cfeaea419ced2f78fa}} 
+void \mbox{\hyperlink{classMonument_a0e8131d72fc1b7cfeaea419ced2f78fa}{set\+State}} (\mbox{\hyperlink{classState}{State}} $\ast$new\+State)
+\begin{DoxyCompactList}\small\item\em sets the state of the building \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classMonument_af1e7e849c3d1ea1d9f9232ba3d9bfe29}{add\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Add a building to the \mbox{\hyperlink{classUtility}{Utility}} resource. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classMonument_aa820b40523a786099a0aa438eef37786}{get\+Power}} ()
+\begin{DoxyCompactList}\small\item\em Receives power for the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classMonument_a6cc1e997c14352ab89b2ae70ad87c710}{get\+Water}} ()
+\begin{DoxyCompactList}\small\item\em Receives water for the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classMonument_a2f01e07c1ce7f901b505baaa55bbc584}{clean\+Waste}} ()
+\begin{DoxyCompactList}\small\item\em Cleans the waste of the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classMonument_ab1d8a96cfcdf7c0cbe2ffdc7a2513f73}{clean\+Sewage}} ()
+\begin{DoxyCompactList}\small\item\em Cleans the sewage of the building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMonument_ace36eb723115c254a3b5a7a483fde209}\label{classMonument_ace36eb723115c254a3b5a7a483fde209}} 
+int {\bfseries waste}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a monument, inheriting from \mbox{\hyperlink{classLandmarkBuilding}{Landmark\+Building}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMonument_a3ac8cfac22f14ef5924d1396bba16112}\label{classMonument_a3ac8cfac22f14ef5924d1396bba16112}} 
+\index{Monument@{Monument}!Monument@{Monument}}
+\index{Monument@{Monument}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{Monument()}{Monument()}}
+{\footnotesize\ttfamily Monument\+::\+Monument (\begin{DoxyParamCaption}\item[{string}]{b\+Name,  }\item[{int}]{p\+Req,  }\item[{int}]{w\+Req,  }\item[{double}]{m\+Cost,  }\item[{int}]{s\+Cost,  }\item[{int}]{waste }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classMonument}{Monument}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+Name} & Name of the monument. \\
+\hline
+{\em p\+Req} & Power requirement. \\
+\hline
+{\em w\+Req} & Water requirement. \\
+\hline
+{\em m\+Cost} & Maintenance cost. \\
+\hline
+{\em s\+Cost} & Sewage cost. \\
+\hline
+{\em waste} & Waste produced. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMonument_af1e7e849c3d1ea1d9f9232ba3d9bfe29}\label{classMonument_af1e7e849c3d1ea1d9f9232ba3d9bfe29}} 
+\index{Monument@{Monument}!addBuilding@{addBuilding}}
+\index{addBuilding@{addBuilding}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{addBuilding()}{addBuilding()}}
+{\footnotesize\ttfamily void Monument\+::add\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Add a building to the \mbox{\hyperlink{classUtility}{Utility}} resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & The building to add to the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_aa8179defd14ed585752076b6d407aada}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classMonument_ab1d8a96cfcdf7c0cbe2ffdc7a2513f73}\label{classMonument_ab1d8a96cfcdf7c0cbe2ffdc7a2513f73}} 
+\index{Monument@{Monument}!cleanSewage@{cleanSewage}}
+\index{cleanSewage@{cleanSewage}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{cleanSewage()}{cleanSewage()}}
+{\footnotesize\ttfamily bool Monument\+::clean\+Sewage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cleans the sewage of the building. 
+
+\begin{DoxyReturn}{Returns}
+true if sewage cleaning was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a4b58e301fe9f6d3dc400aad1650e3db2}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classMonument_a2f01e07c1ce7f901b505baaa55bbc584}\label{classMonument_a2f01e07c1ce7f901b505baaa55bbc584}} 
+\index{Monument@{Monument}!cleanWaste@{cleanWaste}}
+\index{cleanWaste@{cleanWaste}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{cleanWaste()}{cleanWaste()}}
+{\footnotesize\ttfamily bool Monument\+::clean\+Waste (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cleans the waste of the building. 
+
+\begin{DoxyReturn}{Returns}
+true if waste cleaning was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a53f41bc4fe9ccb241e6619463296c405}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classMonument_a7348eb3e86de17228f0ca50d7c5fe48a}\label{classMonument_a7348eb3e86de17228f0ca50d7c5fe48a}} 
+\index{Monument@{Monument}!getBuildingType@{getBuildingType}}
+\index{getBuildingType@{getBuildingType}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{getBuildingType()}{getBuildingType()}}
+{\footnotesize\ttfamily string Monument\+::get\+Building\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the type of the monument. 
+
+\begin{DoxyReturn}{Returns}
+The type of the monument as a string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a10edeac1cd62dd4519d196b873bb7cc0}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classMonument_ae0d8787c2f668483df0acb8f5dabd369}\label{classMonument_ae0d8787c2f668483df0acb8f5dabd369}} 
+\index{Monument@{Monument}!getMaintenanceCost@{getMaintenanceCost}}
+\index{getMaintenanceCost@{getMaintenanceCost}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{getMaintenanceCost()}{getMaintenanceCost()}}
+{\footnotesize\ttfamily double Monument\+::get\+Maintenance\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the maintenance cost of the monument. 
+
+\begin{DoxyReturn}{Returns}
+The maintenance cost as a double. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a3f6e6849c9a5f5d29ea16e51bff37006}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classMonument_ade1e6dfa17591c2e90418d1dd470d595}\label{classMonument_ade1e6dfa17591c2e90418d1dd470d595}} 
+\index{Monument@{Monument}!getName@{getName}}
+\index{getName@{getName}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Monument\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the name of the monument. 
+
+\begin{DoxyReturn}{Returns}
+The name of the monument as a string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a25b9ca973c81578065f8cece37de00d4}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classMonument_aa820b40523a786099a0aa438eef37786}\label{classMonument_aa820b40523a786099a0aa438eef37786}} 
+\index{Monument@{Monument}!getPower@{getPower}}
+\index{getPower@{getPower}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{getPower()}{getPower()}}
+{\footnotesize\ttfamily bool Monument\+::get\+Power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Receives power for the building. 
+
+\begin{DoxyReturn}{Returns}
+true if power was received successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_aecef730ab43b09f8d9a3cb423a46f94a}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classMonument_aa5d16f88a8b1f0518d2845dbb0bd4f15}\label{classMonument_aa5d16f88a8b1f0518d2845dbb0bd4f15}} 
+\index{Monument@{Monument}!getPowerReq@{getPowerReq}}
+\index{getPowerReq@{getPowerReq}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{getPowerReq()}{getPowerReq()}}
+{\footnotesize\ttfamily int Monument\+::get\+Power\+Req (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the power requirement of the monument. 
+
+\begin{DoxyReturn}{Returns}
+The power requirement as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_ac8df4603f8786f441a3aa50a3cd7a75c}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classMonument_a9c004de50ec736e06bbc2eb9253af7e1}\label{classMonument_a9c004de50ec736e06bbc2eb9253af7e1}} 
+\index{Monument@{Monument}!getSewageCost@{getSewageCost}}
+\index{getSewageCost@{getSewageCost}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{getSewageCost()}{getSewageCost()}}
+{\footnotesize\ttfamily int Monument\+::get\+Sewage\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the sewage cost of the monument. 
+
+\begin{DoxyReturn}{Returns}
+The sewage cost as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a780ade236d79adb8007752c718867639}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classMonument_a90c94d6f5e749e62ff836cc73a909d41}\label{classMonument_a90c94d6f5e749e62ff836cc73a909d41}} 
+\index{Monument@{Monument}!getWasteCost@{getWasteCost}}
+\index{getWasteCost@{getWasteCost}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{getWasteCost()}{getWasteCost()}}
+{\footnotesize\ttfamily int Monument\+::get\+Waste\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the waste cost for the monument. 
+
+\begin{DoxyReturn}{Returns}
+The waste cost as an integer. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a94e15ba281ac20d60e1a4632f7be1292}{Buildings}}.
+
+\mbox{\Hypertarget{classMonument_a6cc1e997c14352ab89b2ae70ad87c710}\label{classMonument_a6cc1e997c14352ab89b2ae70ad87c710}} 
+\index{Monument@{Monument}!getWater@{getWater}}
+\index{getWater@{getWater}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{getWater()}{getWater()}}
+{\footnotesize\ttfamily bool Monument\+::get\+Water (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Receives water for the building. 
+
+\begin{DoxyReturn}{Returns}
+true if water was received successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a661c42eb0bd712f50eb10cfba131f0e5}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classMonument_a9d0f9952cde9be9625d514c7adf17f27}\label{classMonument_a9d0f9952cde9be9625d514c7adf17f27}} 
+\index{Monument@{Monument}!getWaterReq@{getWaterReq}}
+\index{getWaterReq@{getWaterReq}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{getWaterReq()}{getWaterReq()}}
+{\footnotesize\ttfamily int Monument\+::get\+Water\+Req (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the water requirement of the monument. 
+
+\begin{DoxyReturn}{Returns}
+The water requirement as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_acb64ab79a07960d7bec6491f2a026315}{Landmark\+Building}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Monument.\+h\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Monument.\+cpp\end{DoxyCompactItemize}

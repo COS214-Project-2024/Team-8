@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacestd" kind="namespace" language="C++">
+    <compoundname>std</compoundname>
+    <innerclass refid="structstd_1_1char__traits" prot="public">std::char_traits</innerclass>
+    <innerclass refid="classstd_1_1basic__ostream" prot="public">std::basic_ostream</innerclass>
+    <innerclass refid="classstd_1_1basic__istream" prot="public">std::basic_istream</innerclass>
+    <innerclass refid="classstd_1_1tuple" prot="public">std::tuple</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="doctest_8h_1a6d1736434ff6d516a3df38cbb7487ea5" prot="public" static="no">
+        <type><ref refid="classstd_1_1basic__ostream" kindref="compound">basic_ostream</ref>&lt; char, <ref refid="structstd_1_1char__traits" kindref="compound">char_traits</ref>&lt; char &gt; &gt;</type>
+        <definition>typedef basic_ostream&lt;char, char_traits&lt;char&gt; &gt; std::ostream</definition>
+        <argsstring></argsstring>
+        <name>ostream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="531" column="23" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="530" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="doctest_8h_1a3891b048d9663e32878ba34284d62294" prot="public" static="no">
+        <type><ref refid="classstd_1_1basic__istream" kindref="compound">basic_istream</ref>&lt; char, <ref refid="structstd_1_1char__traits" kindref="compound">char_traits</ref>&lt; char &gt; &gt;</type>
+        <definition>typedef basic_istream&lt;char, char_traits&lt;char&gt; &gt; std::istream</definition>
+        <argsstring></argsstring>
+        <name>istream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="537" column="23" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="536" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="doctest_8h_1a434932eec359f259df5e75c242397884" prot="public" static="no" mutable="no">
+        <type>decltype(nullptr) typedef</type>
+        <definition>decltype(nullptr) typedef std::nullptr_t</definition>
+        <argsstring></argsstring>
+        <name>nullptr_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="523" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="doctest_8h_1adc27271d5708e23ddd424987ab96c71b" prot="public" static="no" mutable="no">
+        <type>decltype(sizeof(void *)) typede</type>
+        <definition>decltype(sizeof(void*)) typede std::size_t) </definition>
+        <argsstring>)</argsstring>
+        <name>size_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="524" column="18" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="524" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="doctest_8h_1a69bae4d605f9ca3b46f99b8464306bf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class traits</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classstd_1_1basic__ostream" kindref="compound">basic_ostream</ref>&lt; char, traits &gt; &amp;</type>
+        <definition>basic_ostream&lt;char, traits&gt;&amp; std::operator&lt;&lt;</definition>
+        <argsstring>(basic_ostream&lt; char, traits &gt; &amp;, const char *)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type><ref refid="classstd_1_1basic__ostream" kindref="compound">basic_ostream</ref>&lt; char, traits &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="531" column="23" declfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" declline="531" declcolumn="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="522" column="1"/>
+  </compounddef>
+</doxygen>

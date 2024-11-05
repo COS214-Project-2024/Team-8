@@ -1,0 +1,171 @@
+\hypertarget{classStops}{}\doxysection{Stops Class Reference}
+\label{classStops}\index{Stops@{Stops}}
+
+
+Inheritance diagram for Stops\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual float \mbox{\hyperlink{classStops_a14813638d7fb2714b56dc2532958c98d}{get\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Get the cost of the stop. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classStops_a7aabea9e534aaa8e0e9ee1bafe2f7428}\label{classStops_a7aabea9e534aaa8e0e9ee1bafe2f7428}} 
+virtual char {\bfseries get\+Symbol} ()=0
+\item 
+\mbox{\Hypertarget{classStops_a1d30fa6e72ca3d4676c2fc88dabb0983}\label{classStops_a1d30fa6e72ca3d4676c2fc88dabb0983}} 
+virtual float {\bfseries get\+Distance} ()=0
+\item 
+virtual void \mbox{\hyperlink{classStops_a7f980311c40a9cecfe574407fb6bc298}{set\+Ticket\+Cost}} (float cost)
+\begin{DoxyCompactList}\small\item\em Get the symbol of the stop. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classStops_a70d5f66434cb4b88ea8d26ad1b2c3024}{get\+Ticket\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Get the distance of the stop. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classStops_a6b78497b94cf1f1f9b13924c2998cdb7}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the stop. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classStops_a416292d229a532c7cd9e2590db50c988}{set\+Speed\+Limit}} (int limit)
+\begin{DoxyCompactList}\small\item\em Set the speed limit of the stop. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classStops_ada6e61a4a80fac50ea65a4665cb4404b}{get\+Speed\+Limit}} ()
+\begin{DoxyCompactList}\small\item\em Get the speed limit of the stop. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classStops_a2f759d0b7f248f4331fb8b75111bb616}\label{classStops_a2f759d0b7f248f4331fb8b75111bb616}} 
+char {\bfseries symbol}
+\item 
+\mbox{\Hypertarget{classStops_a8e2f1ad6f7ffc407221f7a86787e7c2e}\label{classStops_a8e2f1ad6f7ffc407221f7a86787e7c2e}} 
+float {\bfseries length}
+\item 
+\mbox{\Hypertarget{classStops_ad54a0cacf3247d10ffde221f111dd25e}\label{classStops_ad54a0cacf3247d10ffde221f111dd25e}} 
+std\+::string {\bfseries name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStops_a14813638d7fb2714b56dc2532958c98d}\label{classStops_a14813638d7fb2714b56dc2532958c98d}} 
+\index{Stops@{Stops}!getCost@{getCost}}
+\index{getCost@{getCost}!Stops@{Stops}}
+\doxysubsubsection{\texorpdfstring{getCost()}{getCost()}}
+{\footnotesize\ttfamily float Stops\+::get\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the cost of the stop. 
+
+\begin{DoxyPrecond}{Precondition}
+get\+Cost is not a member of the subclass 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em NOT A MEMBER OF SAID CLASS} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classStops_a6b78497b94cf1f1f9b13924c2998cdb7}\label{classStops_a6b78497b94cf1f1f9b13924c2998cdb7}} 
+\index{Stops@{Stops}!getName@{getName}}
+\index{getName@{getName}!Stops@{Stops}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Stops\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the name of the stop. 
+
+\begin{DoxyPrecond}{Precondition}
+name has been set by the subclass 
+\end{DoxyPrecond}
+
+
+Reimplemented in \mbox{\hyperlink{classTrainStation_a4182b60fe3ae7cc1d737876f83fd298c}{Train\+Station}}, \mbox{\hyperlink{classRoad_ad0c6b016a475f6d643f4eabdca070145}{Road}}, and \mbox{\hyperlink{classAirport_aafd8d1751d8a1be5f2bb91c2fdef9ebe}{Airport}}.
+
+\mbox{\Hypertarget{classStops_ada6e61a4a80fac50ea65a4665cb4404b}\label{classStops_ada6e61a4a80fac50ea65a4665cb4404b}} 
+\index{Stops@{Stops}!getSpeedLimit@{getSpeedLimit}}
+\index{getSpeedLimit@{getSpeedLimit}!Stops@{Stops}}
+\doxysubsubsection{\texorpdfstring{getSpeedLimit()}{getSpeedLimit()}}
+{\footnotesize\ttfamily int Stops\+::get\+Speed\+Limit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the speed limit of the stop. 
+
+\begin{DoxyPrecond}{Precondition}
+get\+Speed\+Limit is not a member of the subclass 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em NOT A MEMBER OF SAID CLASS} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{classRoad_ab0a0039a3ea771a451c08b322a102edc}{Road}}.
+
+\mbox{\Hypertarget{classStops_a70d5f66434cb4b88ea8d26ad1b2c3024}\label{classStops_a70d5f66434cb4b88ea8d26ad1b2c3024}} 
+\index{Stops@{Stops}!getTicketCost@{getTicketCost}}
+\index{getTicketCost@{getTicketCost}!Stops@{Stops}}
+\doxysubsubsection{\texorpdfstring{getTicketCost()}{getTicketCost()}}
+{\footnotesize\ttfamily float Stops\+::get\+Ticket\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the distance of the stop. 
+
+\begin{DoxyPrecond}{Precondition}
+get\+Distance is not a member of the subclass 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em NOT A MEMBER OF SAID CLASS} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{classAirport_a2d822c0c044845ba0344cc1d6da236a0}{Airport}}.
+
+\mbox{\Hypertarget{classStops_a416292d229a532c7cd9e2590db50c988}\label{classStops_a416292d229a532c7cd9e2590db50c988}} 
+\index{Stops@{Stops}!setSpeedLimit@{setSpeedLimit}}
+\index{setSpeedLimit@{setSpeedLimit}!Stops@{Stops}}
+\doxysubsubsection{\texorpdfstring{setSpeedLimit()}{setSpeedLimit()}}
+{\footnotesize\ttfamily void Stops\+::set\+Speed\+Limit (\begin{DoxyParamCaption}\item[{int}]{limit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the speed limit of the stop. 
+
+\begin{DoxyPrecond}{Precondition}
+set\+Speed\+Limit is not a member of the subclass 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em NOT A MEMBER OF SAID CLASS} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{classRoad_a0dfa5e74f5b15056ef4b22327b2bab21}{Road}}.
+
+\mbox{\Hypertarget{classStops_a7f980311c40a9cecfe574407fb6bc298}\label{classStops_a7f980311c40a9cecfe574407fb6bc298}} 
+\index{Stops@{Stops}!setTicketCost@{setTicketCost}}
+\index{setTicketCost@{setTicketCost}!Stops@{Stops}}
+\doxysubsubsection{\texorpdfstring{setTicketCost()}{setTicketCost()}}
+{\footnotesize\ttfamily void Stops\+::set\+Ticket\+Cost (\begin{DoxyParamCaption}\item[{float}]{cost }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the symbol of the stop. 
+
+\begin{DoxyPrecond}{Precondition}
+symbol has been set by the subclass 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em NOT A MEMBER OF SAID CLASS} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{classTrainStation_adf4a160dc2f9e534c1bccb188064fff5}{Train\+Station}}, and \mbox{\hyperlink{classAirport_afd2eaf99960e13397357b568fa794078}{Airport}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{Stops_8h}{Stops.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{Stops_8cpp}{Stops.\+cpp}}\end{DoxyCompactItemize}

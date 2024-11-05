@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUndoCommand" kind="class" language="C++" prot="public">
+    <compoundname>UndoCommand</compoundname>
+    <basecompoundref refid="classCommand" prot="public" virt="non-virtual">Command</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUndoCommand_1afbad4f631c082f50621721260896767d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UndoCommand::UndoCommand</definition>
+        <argsstring>(Utility *utility)</argsstring>
+        <name>UndoCommand</name>
+        <param>
+          <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+          <declname>utility</declname>
+        </param>
+        <briefdescription>
+<para>Create a <ref refid="classUndoCommand" kindref="compound">UndoCommand</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utility</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The utility to Undo </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UndoCommand.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UndoCommand.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUndoCommand_1a0e1e25e20e345ccfc9095f805f4c3bb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UndoCommand::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <reimplements refid="classCommand_1a6fd7d9bd8df8bfc881e4d6c7cd1878b7">execute</reimplements>
+        <briefdescription>
+<para>Execute the command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Undos the utility </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UndoCommand.h" line="14" column="6" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UndoCommand.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classUndoCommand_1abeedb9edd3c7db14e6f718dcf35760ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string UndoCommand::getUtilityType</definition>
+        <argsstring>()</argsstring>
+        <name>getUtilityType</name>
+        <reimplements refid="classCommand_1a34de0246195437ab1f1c078e7c3488c6">getUtilityType</reimplements>
+        <briefdescription>
+<para>Get the utility type of the command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string The utility type of the command </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UndoCommand.h" line="16" column="13" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UndoCommand.cpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classUndoCommand_1ac87aba001d750b7c85ebfab2674bc4f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+        <definition>Utility * UndoCommand::getUtility</definition>
+        <argsstring>()</argsstring>
+        <name>getUtility</name>
+        <reimplements refid="classCommand_1a0606383bba658ef28073274a49859aa1">getUtility</reimplements>
+        <briefdescription>
+<para>Get the utility of the command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Utility* The utility of the command(deep copy) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UndoCommand.h" line="18" column="9" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UndoCommand.cpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Command</label>
+        <link refid="classCommand"/>
+      </node>
+      <node id="1">
+        <label>UndoCommand</label>
+        <link refid="classUndoCommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Command</label>
+        <link refid="classCommand"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>utility</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="1">
+        <label>UndoCommand</label>
+        <link refid="classUndoCommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UndoCommand.h" line="10" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/UndoCommand.h" bodystart="10" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classUndoCommand_1a0e1e25e20e345ccfc9095f805f4c3bb2" prot="public" virt="virtual"><scope>UndoCommand</scope><name>execute</name></member>
+      <member refid="classUndoCommand_1ac87aba001d750b7c85ebfab2674bc4f6" prot="public" virt="virtual"><scope>UndoCommand</scope><name>getUtility</name></member>
+      <member refid="classUndoCommand_1abeedb9edd3c7db14e6f718dcf35760ae" prot="public" virt="virtual"><scope>UndoCommand</scope><name>getUtilityType</name></member>
+      <member refid="classUndoCommand_1afbad4f631c082f50621721260896767d" prot="public" virt="non-virtual"><scope>UndoCommand</scope><name>UndoCommand</name></member>
+      <member refid="classCommand_1af4cc0c69ccba769e7d910b90f111d78e" prot="protected" virt="non-virtual"><scope>UndoCommand</scope><name>utility</name></member>
+      <member refid="classCommand_1ab552bb3a07fdd1acbfd8ea76e69b2278" prot="public" virt="virtual"><scope>UndoCommand</scope><name>~Command</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

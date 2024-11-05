@@ -1,0 +1,110 @@
+\hypertarget{classEmployedCitizen}{}\doxysection{Employed\+Citizen Class Reference}
+\label{classEmployedCitizen}\index{EmployedCitizen@{EmployedCitizen}}
+
+
+Concrete decorator class for employed citizens.  
+
+
+
+
+{\ttfamily \#include $<$Employed\+Citizen.\+h$>$}
+
+
+
+Inheritance diagram for Employed\+Citizen\+:
+% FIG 0
+
+
+Collaboration diagram for Employed\+Citizen\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEmployedCitizen_a63ab0b212b04667e5d6b59f806bb6fe2}{Employed\+Citizen}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}} $>$ \mbox{\hyperlink{classCitizenType_ab7fb7c1a14eeb44fa2ea6b6a0084f4b2}{base\+Citizen}})
+\begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{classEmployedCitizen}{Employed\+Citizen}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEmployedCitizen_a007a91a3800e6b8cbd3c67595ef55a83}{get\+Employed}} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$building)
+\begin{DoxyCompactList}\small\item\em Sets employment for the citizen at a specified building. Adjusts the salary and updates satisfaction based on employment status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEmployedCitizen_a4ddbdab109b18b7608bd1a821e41386d}{job\+Promotion}} (float percentage)
+\begin{DoxyCompactList}\small\item\em Increases the citizen\textquotesingle{}s salary by a given percentage. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classEmployedCitizen_a73c8059734741498393294056f6c58be}{citizen\+Type}} () override
+\begin{DoxyCompactList}\small\item\em Returns the type of the citizen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Concrete decorator class for employed citizens. 
+
+This class adds specific attributes and behaviors related to employed citizens, enhancing the base \mbox{\hyperlink{classCitizen}{Citizen}} functionality. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEmployedCitizen_a63ab0b212b04667e5d6b59f806bb6fe2}\label{classEmployedCitizen_a63ab0b212b04667e5d6b59f806bb6fe2}} 
+\index{EmployedCitizen@{EmployedCitizen}!EmployedCitizen@{EmployedCitizen}}
+\index{EmployedCitizen@{EmployedCitizen}!EmployedCitizen@{EmployedCitizen}}
+\doxysubsubsection{\texorpdfstring{EmployedCitizen()}{EmployedCitizen()}}
+{\footnotesize\ttfamily Employed\+Citizen\+::\+Employed\+Citizen (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCitizenInterface}{Citizen\+Interface}} $>$}]{base\+Citizen }\end{DoxyParamCaption})}
+
+
+
+Constructs an \mbox{\hyperlink{classEmployedCitizen}{Employed\+Citizen}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Citizen} & A unique pointer to the base citizen. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEmployedCitizen_a73c8059734741498393294056f6c58be}\label{classEmployedCitizen_a73c8059734741498393294056f6c58be}} 
+\index{EmployedCitizen@{EmployedCitizen}!citizenType@{citizenType}}
+\index{citizenType@{citizenType}!EmployedCitizen@{EmployedCitizen}}
+\doxysubsubsection{\texorpdfstring{citizenType()}{citizenType()}}
+{\footnotesize\ttfamily std\+::string Employed\+Citizen\+::citizen\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the type of the citizen. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the type of the citizen. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classCitizenType}{Citizen\+Type}}.
+
+\mbox{\Hypertarget{classEmployedCitizen_a007a91a3800e6b8cbd3c67595ef55a83}\label{classEmployedCitizen_a007a91a3800e6b8cbd3c67595ef55a83}} 
+\index{EmployedCitizen@{EmployedCitizen}!getEmployed@{getEmployed}}
+\index{getEmployed@{getEmployed}!EmployedCitizen@{EmployedCitizen}}
+\doxysubsubsection{\texorpdfstring{getEmployed()}{getEmployed()}}
+{\footnotesize\ttfamily void Employed\+Citizen\+::get\+Employed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$}]{building }\end{DoxyParamCaption})}
+
+
+
+Sets employment for the citizen at a specified building. Adjusts the salary and updates satisfaction based on employment status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & Pointer to the building offering employment. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEmployedCitizen_a4ddbdab109b18b7608bd1a821e41386d}\label{classEmployedCitizen_a4ddbdab109b18b7608bd1a821e41386d}} 
+\index{EmployedCitizen@{EmployedCitizen}!jobPromotion@{jobPromotion}}
+\index{jobPromotion@{jobPromotion}!EmployedCitizen@{EmployedCitizen}}
+\doxysubsubsection{\texorpdfstring{jobPromotion()}{jobPromotion()}}
+{\footnotesize\ttfamily void Employed\+Citizen\+::job\+Promotion (\begin{DoxyParamCaption}\item[{float}]{percentage }\end{DoxyParamCaption})}
+
+
+
+Increases the citizen\textquotesingle{}s salary by a given percentage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em percentage} & The percentage increase. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Employed\+Citizen.\+h\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Employed\+Citizen.\+cpp\end{DoxyCompactItemize}

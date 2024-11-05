@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1detail_1_1should__stringify__as__underlying__type" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::detail::should_stringify_as_underlying_type</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structdoctest_1_1detail_1_1should__stringify__as__underlying__type_1a0115e8b2c73fe1a0fc9f344a1374e2dd" prot="public" static="yes" mutable="no">
+        <type>DOCTEST_CONSTEXPR bool</type>
+        <definition>DOCTEST_CONSTEXPR bool doctest::detail::should_stringify_as_underlying_type&lt; T &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>= <ref refid="structdoctest_1_1detail_1_1types_1_1is__enum" kindref="compound">detail::types::is_enum</ref>&lt;T&gt;::value &amp;&amp; !<ref refid="structdoctest_1_1detail_1_1has__insertion__operator" kindref="compound">doctest::detail::has_insertion_operator</ref>&lt;T&gt;::value</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1031" column="39" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1031" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1030" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1030" bodyend="1032"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1detail_1_1should__stringify__as__underlying__type_1a0115e8b2c73fe1a0fc9f344a1374e2dd" prot="public" virt="non-virtual"><scope>doctest::detail::should_stringify_as_underlying_type</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

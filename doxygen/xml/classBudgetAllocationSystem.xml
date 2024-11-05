@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classBudgetAllocationSystem" kind="class" language="C++" prot="public">
+    <compoundname>BudgetAllocationSystem</compoundname>
+    <includes refid="BudgetAllocationSystem_8h" local="no">BudgetAllocationSystem.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBudgetAllocationSystem_1a4905d07e8e4f5a1bbb60d62589e715e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BudgetAllocationSystem::BudgetAllocationSystem</definition>
+        <argsstring>()</argsstring>
+        <name>BudgetAllocationSystem</name>
+        <briefdescription>
+<para>Constructs a new <ref refid="classBudgetAllocationSystem" kindref="compound">BudgetAllocationSystem</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.h" line="24" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.cpp" bodystart="4" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="classBudgetAllocationSystem_1a4136810058e31ce6a5a9ed02b4fd68ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double BudgetAllocationSystem::allocateMedicalCenterFunds</definition>
+        <argsstring>(double availableFunds)</argsstring>
+        <name>allocateMedicalCenterFunds</name>
+        <param>
+          <type>double</type>
+          <declname>availableFunds</declname>
+        </param>
+        <briefdescription>
+<para>Allocates funds for medical centers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>availableFunds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total available funds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The amount of funds allocated for medical centers </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.h" line="31" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.cpp" bodystart="7" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classBudgetAllocationSystem_1ac6b55f5aeecd93f73e2e06809884d9f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double BudgetAllocationSystem::allocateSchoolFunds</definition>
+        <argsstring>(double availableFunds)</argsstring>
+        <name>allocateSchoolFunds</name>
+        <param>
+          <type>double</type>
+          <declname>availableFunds</declname>
+        </param>
+        <briefdescription>
+<para>Allocates funds for schools. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>availableFunds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total available funds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The amount of funds allocated for schools </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.h" line="38" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.cpp" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classBudgetAllocationSystem_1a48ce04438fc0beac51dfe11465538db1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double BudgetAllocationSystem::allocatePoliceStationFunds</definition>
+        <argsstring>(double availableFunds)</argsstring>
+        <name>allocatePoliceStationFunds</name>
+        <param>
+          <type>double</type>
+          <declname>availableFunds</declname>
+        </param>
+        <briefdescription>
+<para>Allocates funds for police stations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>availableFunds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total available funds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The amount of funds allocated for police stations </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.h" line="45" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.cpp" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classBudgetAllocationSystem_1ac24ffabbd32b4437f88595004a2b7f79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double BudgetAllocationSystem::allocatePowerPlantFunds</definition>
+        <argsstring>(double availableFunds)</argsstring>
+        <name>allocatePowerPlantFunds</name>
+        <param>
+          <type>double</type>
+          <declname>availableFunds</declname>
+        </param>
+        <briefdescription>
+<para>Allocates funds for power plants. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>availableFunds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total available funds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The amount of funds allocated for power plants </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.h" line="52" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.cpp" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classBudgetAllocationSystem_1a2e099729df3800044a23a49ab2195b4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double BudgetAllocationSystem::allocateWaterTowerFunds</definition>
+        <argsstring>(double availableFunds)</argsstring>
+        <name>allocateWaterTowerFunds</name>
+        <param>
+          <type>double</type>
+          <declname>availableFunds</declname>
+        </param>
+        <briefdescription>
+<para>Allocates funds for water towers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>availableFunds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total available funds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The amount of funds allocated for water towers </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.h" line="59" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.cpp" bodystart="32" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classBudgetAllocationSystem_1a67ddf50ac970ca3a79d70879191de210" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double BudgetAllocationSystem::allocateWastePlantFunds</definition>
+        <argsstring>(double availableFunds)</argsstring>
+        <name>allocateWastePlantFunds</name>
+        <param>
+          <type>double</type>
+          <declname>availableFunds</declname>
+        </param>
+        <briefdescription>
+<para>Allocates funds for waste plants. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>availableFunds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total available funds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The amount of funds allocated for waste plants </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.h" line="66" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.cpp" bodystart="38" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classBudgetAllocationSystem_1a208fad123e67eeb1cca69fba30635cdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double BudgetAllocationSystem::allocateSewagePipeFunds</definition>
+        <argsstring>(double availableFunds)</argsstring>
+        <name>allocateSewagePipeFunds</name>
+        <param>
+          <type>double</type>
+          <declname>availableFunds</declname>
+        </param>
+        <briefdescription>
+<para>Allocates funds for sewage pipes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>availableFunds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total available funds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The amount of funds allocated for sewage pipes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.h" line="73" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.cpp" bodystart="44" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classBudgetAllocationSystem_1ac84e9fc232d8fc7f84897219dfcd1cce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double BudgetAllocationSystem::allocateRoadsFunds</definition>
+        <argsstring>(double availableFunds)</argsstring>
+        <name>allocateRoadsFunds</name>
+        <param>
+          <type>double</type>
+          <declname>availableFunds</declname>
+        </param>
+        <briefdescription>
+<para>Allocates funds for roads. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>availableFunds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total available funds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The amount of funds allocated for roads </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.h" line="80" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.cpp" bodystart="51" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classBudgetAllocationSystem_1a4bdc8ee50a6f2dbf4004617633ff57d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double BudgetAllocationSystem::allocateAirportsFunds</definition>
+        <argsstring>(double availableFunds)</argsstring>
+        <name>allocateAirportsFunds</name>
+        <param>
+          <type>double</type>
+          <declname>availableFunds</declname>
+        </param>
+        <briefdescription>
+<para>Allocates funds for airports. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>availableFunds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total available funds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The amount of funds allocated for airports </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.h" line="87" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.cpp" bodystart="57" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classBudgetAllocationSystem_1ae0bd1b9f3292c656c30608a23e827f47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double BudgetAllocationSystem::allocateTrainStationsFunds</definition>
+        <argsstring>(double availableFunds)</argsstring>
+        <name>allocateTrainStationsFunds</name>
+        <param>
+          <type>double</type>
+          <declname>availableFunds</declname>
+        </param>
+        <briefdescription>
+<para>Allocates funds for train stations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>availableFunds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total available funds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The amount of funds allocated for train stations </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.h" line="94" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.cpp" bodystart="63" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classBudgetAllocationSystem_1a08e0f2af67f6850a2c040563ca999076" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double BudgetAllocationSystem::allocateParkFunds</definition>
+        <argsstring>(double availableFunds)</argsstring>
+        <name>allocateParkFunds</name>
+        <param>
+          <type>double</type>
+          <declname>availableFunds</declname>
+        </param>
+        <briefdescription>
+<para>Allocates funds for parks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>availableFunds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total available funds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The amount of funds allocated for parks </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.h" line="101" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.cpp" bodystart="70" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classBudgetAllocationSystem_1a11f3d4d04ef94bcbeac07e2482a08cb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double BudgetAllocationSystem::allocateMonumentFunds</definition>
+        <argsstring>(double availableFunds)</argsstring>
+        <name>allocateMonumentFunds</name>
+        <param>
+          <type>double</type>
+          <declname>availableFunds</declname>
+        </param>
+        <briefdescription>
+<para>Allocates funds for monuments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>availableFunds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total available funds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The amount of funds allocated for monuments </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.h" line="108" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.cpp" bodystart="76" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classBudgetAllocationSystem_1a5e544a7c84b9ab99ccf736657b0270b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double BudgetAllocationSystem::allocateCulturalCenterFunds</definition>
+        <argsstring>(double availableFunds)</argsstring>
+        <name>allocateCulturalCenterFunds</name>
+        <param>
+          <type>double</type>
+          <declname>availableFunds</declname>
+        </param>
+        <briefdescription>
+<para>Allocates funds for cultural centers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>availableFunds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total available funds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The amount of funds allocated for cultural centers </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.h" line="115" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.cpp" bodystart="82" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents the budget allocation system that manages the distribution of funds for various public services and infrastructure. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classBudgetAllocationSystem" kindref="compound">BudgetAllocationSystem</ref> class is responsible for allocating available funds to different categories of public services and infrastructure projects, such as medical centers, schools, police stations, utilities, transportation, and recreational facilities. </para>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.h" line="18" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.h" bodystart="19" bodyend="116"/>
+    <listofallmembers>
+      <member refid="classBudgetAllocationSystem_1a4bdc8ee50a6f2dbf4004617633ff57d4" prot="public" virt="non-virtual"><scope>BudgetAllocationSystem</scope><name>allocateAirportsFunds</name></member>
+      <member refid="classBudgetAllocationSystem_1a5e544a7c84b9ab99ccf736657b0270b0" prot="public" virt="non-virtual"><scope>BudgetAllocationSystem</scope><name>allocateCulturalCenterFunds</name></member>
+      <member refid="classBudgetAllocationSystem_1a4136810058e31ce6a5a9ed02b4fd68ad" prot="public" virt="non-virtual"><scope>BudgetAllocationSystem</scope><name>allocateMedicalCenterFunds</name></member>
+      <member refid="classBudgetAllocationSystem_1a11f3d4d04ef94bcbeac07e2482a08cb0" prot="public" virt="non-virtual"><scope>BudgetAllocationSystem</scope><name>allocateMonumentFunds</name></member>
+      <member refid="classBudgetAllocationSystem_1a08e0f2af67f6850a2c040563ca999076" prot="public" virt="non-virtual"><scope>BudgetAllocationSystem</scope><name>allocateParkFunds</name></member>
+      <member refid="classBudgetAllocationSystem_1a48ce04438fc0beac51dfe11465538db1" prot="public" virt="non-virtual"><scope>BudgetAllocationSystem</scope><name>allocatePoliceStationFunds</name></member>
+      <member refid="classBudgetAllocationSystem_1ac24ffabbd32b4437f88595004a2b7f79" prot="public" virt="non-virtual"><scope>BudgetAllocationSystem</scope><name>allocatePowerPlantFunds</name></member>
+      <member refid="classBudgetAllocationSystem_1ac84e9fc232d8fc7f84897219dfcd1cce" prot="public" virt="non-virtual"><scope>BudgetAllocationSystem</scope><name>allocateRoadsFunds</name></member>
+      <member refid="classBudgetAllocationSystem_1ac6b55f5aeecd93f73e2e06809884d9f4" prot="public" virt="non-virtual"><scope>BudgetAllocationSystem</scope><name>allocateSchoolFunds</name></member>
+      <member refid="classBudgetAllocationSystem_1a208fad123e67eeb1cca69fba30635cdb" prot="public" virt="non-virtual"><scope>BudgetAllocationSystem</scope><name>allocateSewagePipeFunds</name></member>
+      <member refid="classBudgetAllocationSystem_1ae0bd1b9f3292c656c30608a23e827f47" prot="public" virt="non-virtual"><scope>BudgetAllocationSystem</scope><name>allocateTrainStationsFunds</name></member>
+      <member refid="classBudgetAllocationSystem_1a67ddf50ac970ca3a79d70879191de210" prot="public" virt="non-virtual"><scope>BudgetAllocationSystem</scope><name>allocateWastePlantFunds</name></member>
+      <member refid="classBudgetAllocationSystem_1a2e099729df3800044a23a49ab2195b4a" prot="public" virt="non-virtual"><scope>BudgetAllocationSystem</scope><name>allocateWaterTowerFunds</name></member>
+      <member refid="classBudgetAllocationSystem_1a4905d07e8e4f5a1bbb60d62589e715e8" prot="public" virt="non-virtual"><scope>BudgetAllocationSystem</scope><name>BudgetAllocationSystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

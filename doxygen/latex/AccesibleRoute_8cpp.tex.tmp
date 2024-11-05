@@ -1,0 +1,15 @@
+\hypertarget{AccesibleRoute_8cpp}{}\doxysection{/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\+Accesible\+Route.cpp File Reference}
+\label{AccesibleRoute_8cpp}\index{/home/nev/cos214/Project/finalpush/Team-\/8-\/Design-\/Wits/System/AccesibleRoute.cpp@{/home/nev/cos214/Project/finalpush/Team-\/8-\/Design-\/Wits/System/AccesibleRoute.cpp}}
+
+
+This is the \mbox{\hyperlink{classAccesibleRoute}{Accesible\+Route}} class implementation file A subclass of \mbox{\hyperlink{classRouteNode}{Route\+Node}}.  
+
+
+{\ttfamily \#include \char`\"{}Accesible\+Route.\+h\char`\"{}}\newline
+Include dependency graph for Accesible\+Route.\+cpp\+:
+% FIG 0
+
+
+\doxysubsection{Detailed Description}
+This is the \mbox{\hyperlink{classAccesibleRoute}{Accesible\+Route}} class implementation file A subclass of \mbox{\hyperlink{classRouteNode}{Route\+Node}}. 
+

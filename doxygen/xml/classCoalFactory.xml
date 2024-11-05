@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCoalFactory" kind="class" language="C++" prot="public">
+    <compoundname>CoalFactory</compoundname>
+    <basecompoundref refid="classEnergyFactory" prot="public" virt="non-virtual">EnergyFactory</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCoalFactory_1a41a19220df823e8dcb7936402a8247e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classEnergySource" kindref="compound">EnergySource</ref> *</type>
+        <definition>EnergySource * CoalFactory::createEnergySource</definition>
+        <argsstring>(float output)</argsstring>
+        <name>createEnergySource</name>
+        <reimplements refid="classEnergyFactory_1ac3859d17f26d7e3d50b49787396f86e4">createEnergySource</reimplements>
+        <param>
+          <type>float</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+<para>Create an <ref refid="classEnergySource" kindref="compound">EnergySource</ref> object of type <ref refid="classCoalSource" kindref="compound">CoalSource</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output of the <ref refid="classCoalSource" kindref="compound">CoalSource</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CoalFactory.h" line="13" column="14" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CoalFactory.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CoalFactory</label>
+        <link refid="classCoalFactory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>EnergyFactory</label>
+        <link refid="classEnergyFactory"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CoalFactory</label>
+        <link refid="classCoalFactory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>EnergyFactory</label>
+        <link refid="classEnergyFactory"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CoalFactory.h" line="11" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CoalFactory.h" bodystart="11" bodyend="14"/>
+    <listofallmembers>
+      <member refid="classCoalFactory_1a41a19220df823e8dcb7936402a8247e1" prot="public" virt="virtual"><scope>CoalFactory</scope><name>createEnergySource</name></member>
+      <member refid="classEnergyFactory_1afb618240bc5090f49a4fc93559ef50cd" prot="public" virt="virtual"><scope>CoalFactory</scope><name>~EnergyFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

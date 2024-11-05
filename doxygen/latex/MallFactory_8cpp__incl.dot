@@ -1,0 +1,28 @@
+digraph "/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MallFactory.cpp"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="/home/nev/cos214/Project\l/finalpush/Team-8-Design\l-Wits/System/MallFactory.cpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Implementation of the MallFactory class."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="MallFactory.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MallFactory_8h.html",tooltip="Defines the MallFactory class for creating mall buildings."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="CommercialFactory.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$CommercialFactory_8h.html",tooltip="Defines the CommercialFactory class interface."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Buildings.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Buildings_8h.html",tooltip="Header file containing the Buildings abstract base class definition."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="iostream",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="string",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="BuildingFactory.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$BuildingFactory_8h.html",tooltip="Defines the BuildingFactory class interface."];
+  Node7 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Mall.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Mall_8h_source.html",tooltip=" "];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="CommercialBuilding.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$CommercialBuilding_8h_source.html",tooltip=" "];
+  Node9 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+}

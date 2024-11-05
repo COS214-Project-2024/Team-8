@@ -1,0 +1,320 @@
+\hypertarget{classCulturalCenter}{}\doxysection{Cultural\+Center Class Reference}
+\label{classCulturalCenter}\index{CulturalCenter@{CulturalCenter}}
+
+
+Represents a cultural center building, inheriting from \mbox{\hyperlink{classLandmarkBuilding}{Landmark\+Building}}.  
+
+
+
+
+{\ttfamily \#include $<$Cultural\+Center.\+h$>$}
+
+
+
+Inheritance diagram for Cultural\+Center\+:
+% FIG 0
+
+
+Collaboration diagram for Cultural\+Center\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCulturalCenter_a318f2b4122f487225e9a6915a1b1cb7e}{Cultural\+Center}} (string b\+Name, int p\+Req, int w\+Req, double m\+Cost, int s\+Cost, int waste)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classCulturalCenter}{Cultural\+Center}} object with the specified attributes. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classCulturalCenter_aee7c0cebb5ae6b32faaeb17a2461109e}{get\+Building\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Gets the type of the cultural center. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classCulturalCenter_a9a78019d21bc323cefd6331a9ee7dc7a}{get\+Jobs\+Created}} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of jobs created by the cultural center. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classCulturalCenter_af6f3e3d6a89356d20626201e351dd2ee}{get\+Maintenance\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the maintenance cost of the cultural center. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classCulturalCenter_a84ef150d247f633355270e3baa5638ca}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the cultural center. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classCulturalCenter_a21c8b4defdcca7bf79ae4e859062f3cc}{get\+Power\+Req}} ()
+\begin{DoxyCompactList}\small\item\em Gets the power requirement of the cultural center. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classCulturalCenter_a86f287ecf3dcac7cd6a4ba63dd11b7c6}{get\+Sewage\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the sewage cost of the cultural center. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classCulturalCenter_a197cc0d976a16755e6116b5bcd421caf}{get\+Water\+Req}} ()
+\begin{DoxyCompactList}\small\item\em Gets the water requirement of the cultural center. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCulturalCenter_aa3596183413552b908c8638cc90a8ee0}\label{classCulturalCenter_aa3596183413552b908c8638cc90a8ee0}} 
+virtual void \mbox{\hyperlink{classCulturalCenter_aa3596183413552b908c8638cc90a8ee0}{request\+State}} ()
+\begin{DoxyCompactList}\small\item\em Requests the current state of the cultural center. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCulturalCenter_aa2c53e92cf1ceb2970e906739c8a7c27}{get\+Waste\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the waste cost for the cultural center. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCulturalCenter_a4978e28654afed90e7c04830eb18e054}\label{classCulturalCenter_a4978e28654afed90e7c04830eb18e054}} 
+void \mbox{\hyperlink{classCulturalCenter_a4978e28654afed90e7c04830eb18e054}{set\+State}} (\mbox{\hyperlink{classState}{State}} $\ast$new\+State)
+\begin{DoxyCompactList}\small\item\em sets the state of the building \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classCulturalCenter_a4b403e088feac2d38c56b6c10e921326}{add\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Add a building to the \mbox{\hyperlink{classUtility}{Utility}} resource. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classCulturalCenter_abb59ff3dcaa5b2fcbcdc7372ecce0c9e}{get\+Power}} ()
+\begin{DoxyCompactList}\small\item\em Receives power for the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classCulturalCenter_a49c3c84e133607c5882759b3f48311e3}{get\+Water}} ()
+\begin{DoxyCompactList}\small\item\em Receives water for the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classCulturalCenter_a5332fe7bb7e4082780f6f1747b80c627}{clean\+Waste}} ()
+\begin{DoxyCompactList}\small\item\em Cleans the waste of the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classCulturalCenter_a2653e24f61254c62d017c3cc8b3d45db}{clean\+Sewage}} ()
+\begin{DoxyCompactList}\small\item\em Cleans the sewage of the building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a cultural center building, inheriting from \mbox{\hyperlink{classLandmarkBuilding}{Landmark\+Building}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCulturalCenter_a318f2b4122f487225e9a6915a1b1cb7e}\label{classCulturalCenter_a318f2b4122f487225e9a6915a1b1cb7e}} 
+\index{CulturalCenter@{CulturalCenter}!CulturalCenter@{CulturalCenter}}
+\index{CulturalCenter@{CulturalCenter}!CulturalCenter@{CulturalCenter}}
+\doxysubsubsection{\texorpdfstring{CulturalCenter()}{CulturalCenter()}}
+{\footnotesize\ttfamily Cultural\+Center\+::\+Cultural\+Center (\begin{DoxyParamCaption}\item[{string}]{b\+Name,  }\item[{int}]{p\+Req,  }\item[{int}]{w\+Req,  }\item[{double}]{m\+Cost,  }\item[{int}]{s\+Cost,  }\item[{int}]{waste }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classCulturalCenter}{Cultural\+Center}} object with the specified attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+Name} & Name of the building. \\
+\hline
+{\em p\+Req} & Power requirement. \\
+\hline
+{\em w\+Req} & Water requirement. \\
+\hline
+{\em m\+Cost} & Maintenance cost. \\
+\hline
+{\em s\+Cost} & Sewage cost. \\
+\hline
+{\em waste} & Waste generated by the building. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCulturalCenter_a4b403e088feac2d38c56b6c10e921326}\label{classCulturalCenter_a4b403e088feac2d38c56b6c10e921326}} 
+\index{CulturalCenter@{CulturalCenter}!addBuilding@{addBuilding}}
+\index{addBuilding@{addBuilding}!CulturalCenter@{CulturalCenter}}
+\doxysubsubsection{\texorpdfstring{addBuilding()}{addBuilding()}}
+{\footnotesize\ttfamily void Cultural\+Center\+::add\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Add a building to the \mbox{\hyperlink{classUtility}{Utility}} resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & The building to add to the \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_aa8179defd14ed585752076b6d407aada}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classCulturalCenter_a2653e24f61254c62d017c3cc8b3d45db}\label{classCulturalCenter_a2653e24f61254c62d017c3cc8b3d45db}} 
+\index{CulturalCenter@{CulturalCenter}!cleanSewage@{cleanSewage}}
+\index{cleanSewage@{cleanSewage}!CulturalCenter@{CulturalCenter}}
+\doxysubsubsection{\texorpdfstring{cleanSewage()}{cleanSewage()}}
+{\footnotesize\ttfamily bool Cultural\+Center\+::clean\+Sewage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cleans the sewage of the building. 
+
+\begin{DoxyReturn}{Returns}
+true if sewage cleaning was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a4b58e301fe9f6d3dc400aad1650e3db2}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classCulturalCenter_a5332fe7bb7e4082780f6f1747b80c627}\label{classCulturalCenter_a5332fe7bb7e4082780f6f1747b80c627}} 
+\index{CulturalCenter@{CulturalCenter}!cleanWaste@{cleanWaste}}
+\index{cleanWaste@{cleanWaste}!CulturalCenter@{CulturalCenter}}
+\doxysubsubsection{\texorpdfstring{cleanWaste()}{cleanWaste()}}
+{\footnotesize\ttfamily bool Cultural\+Center\+::clean\+Waste (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cleans the waste of the building. 
+
+\begin{DoxyReturn}{Returns}
+true if waste cleaning was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a53f41bc4fe9ccb241e6619463296c405}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classCulturalCenter_aee7c0cebb5ae6b32faaeb17a2461109e}\label{classCulturalCenter_aee7c0cebb5ae6b32faaeb17a2461109e}} 
+\index{CulturalCenter@{CulturalCenter}!getBuildingType@{getBuildingType}}
+\index{getBuildingType@{getBuildingType}!CulturalCenter@{CulturalCenter}}
+\doxysubsubsection{\texorpdfstring{getBuildingType()}{getBuildingType()}}
+{\footnotesize\ttfamily string Cultural\+Center\+::get\+Building\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the type of the cultural center. 
+
+\begin{DoxyReturn}{Returns}
+The type of the building as a string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a10edeac1cd62dd4519d196b873bb7cc0}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classCulturalCenter_a9a78019d21bc323cefd6331a9ee7dc7a}\label{classCulturalCenter_a9a78019d21bc323cefd6331a9ee7dc7a}} 
+\index{CulturalCenter@{CulturalCenter}!getJobsCreated@{getJobsCreated}}
+\index{getJobsCreated@{getJobsCreated}!CulturalCenter@{CulturalCenter}}
+\doxysubsubsection{\texorpdfstring{getJobsCreated()}{getJobsCreated()}}
+{\footnotesize\ttfamily int Cultural\+Center\+::get\+Jobs\+Created (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the number of jobs created by the cultural center. 
+
+\begin{DoxyReturn}{Returns}
+The number of jobs as an integer. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a903e19ef9d878d5714b8ab5de9f71fc1}{Buildings}}.
+
+\mbox{\Hypertarget{classCulturalCenter_af6f3e3d6a89356d20626201e351dd2ee}\label{classCulturalCenter_af6f3e3d6a89356d20626201e351dd2ee}} 
+\index{CulturalCenter@{CulturalCenter}!getMaintenanceCost@{getMaintenanceCost}}
+\index{getMaintenanceCost@{getMaintenanceCost}!CulturalCenter@{CulturalCenter}}
+\doxysubsubsection{\texorpdfstring{getMaintenanceCost()}{getMaintenanceCost()}}
+{\footnotesize\ttfamily double Cultural\+Center\+::get\+Maintenance\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the maintenance cost of the cultural center. 
+
+\begin{DoxyReturn}{Returns}
+The maintenance cost as a double. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a3f6e6849c9a5f5d29ea16e51bff37006}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classCulturalCenter_a84ef150d247f633355270e3baa5638ca}\label{classCulturalCenter_a84ef150d247f633355270e3baa5638ca}} 
+\index{CulturalCenter@{CulturalCenter}!getName@{getName}}
+\index{getName@{getName}!CulturalCenter@{CulturalCenter}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Cultural\+Center\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the name of the cultural center. 
+
+\begin{DoxyReturn}{Returns}
+The name of the building as a string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a25b9ca973c81578065f8cece37de00d4}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classCulturalCenter_abb59ff3dcaa5b2fcbcdc7372ecce0c9e}\label{classCulturalCenter_abb59ff3dcaa5b2fcbcdc7372ecce0c9e}} 
+\index{CulturalCenter@{CulturalCenter}!getPower@{getPower}}
+\index{getPower@{getPower}!CulturalCenter@{CulturalCenter}}
+\doxysubsubsection{\texorpdfstring{getPower()}{getPower()}}
+{\footnotesize\ttfamily bool Cultural\+Center\+::get\+Power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Receives power for the building. 
+
+\begin{DoxyReturn}{Returns}
+true if power was received successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_aecef730ab43b09f8d9a3cb423a46f94a}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classCulturalCenter_a21c8b4defdcca7bf79ae4e859062f3cc}\label{classCulturalCenter_a21c8b4defdcca7bf79ae4e859062f3cc}} 
+\index{CulturalCenter@{CulturalCenter}!getPowerReq@{getPowerReq}}
+\index{getPowerReq@{getPowerReq}!CulturalCenter@{CulturalCenter}}
+\doxysubsubsection{\texorpdfstring{getPowerReq()}{getPowerReq()}}
+{\footnotesize\ttfamily int Cultural\+Center\+::get\+Power\+Req (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the power requirement of the cultural center. 
+
+\begin{DoxyReturn}{Returns}
+The power requirement as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_ac8df4603f8786f441a3aa50a3cd7a75c}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classCulturalCenter_a86f287ecf3dcac7cd6a4ba63dd11b7c6}\label{classCulturalCenter_a86f287ecf3dcac7cd6a4ba63dd11b7c6}} 
+\index{CulturalCenter@{CulturalCenter}!getSewageCost@{getSewageCost}}
+\index{getSewageCost@{getSewageCost}!CulturalCenter@{CulturalCenter}}
+\doxysubsubsection{\texorpdfstring{getSewageCost()}{getSewageCost()}}
+{\footnotesize\ttfamily int Cultural\+Center\+::get\+Sewage\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the sewage cost of the cultural center. 
+
+\begin{DoxyReturn}{Returns}
+The sewage cost as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a780ade236d79adb8007752c718867639}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classCulturalCenter_aa2c53e92cf1ceb2970e906739c8a7c27}\label{classCulturalCenter_aa2c53e92cf1ceb2970e906739c8a7c27}} 
+\index{CulturalCenter@{CulturalCenter}!getWasteCost@{getWasteCost}}
+\index{getWasteCost@{getWasteCost}!CulturalCenter@{CulturalCenter}}
+\doxysubsubsection{\texorpdfstring{getWasteCost()}{getWasteCost()}}
+{\footnotesize\ttfamily int Cultural\+Center\+::get\+Waste\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the waste cost for the cultural center. 
+
+\begin{DoxyReturn}{Returns}
+The waste cost as an integer. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a94e15ba281ac20d60e1a4632f7be1292}{Buildings}}.
+
+\mbox{\Hypertarget{classCulturalCenter_a49c3c84e133607c5882759b3f48311e3}\label{classCulturalCenter_a49c3c84e133607c5882759b3f48311e3}} 
+\index{CulturalCenter@{CulturalCenter}!getWater@{getWater}}
+\index{getWater@{getWater}!CulturalCenter@{CulturalCenter}}
+\doxysubsubsection{\texorpdfstring{getWater()}{getWater()}}
+{\footnotesize\ttfamily bool Cultural\+Center\+::get\+Water (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Receives water for the building. 
+
+\begin{DoxyReturn}{Returns}
+true if water was received successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_a661c42eb0bd712f50eb10cfba131f0e5}{Landmark\+Building}}.
+
+\mbox{\Hypertarget{classCulturalCenter_a197cc0d976a16755e6116b5bcd421caf}\label{classCulturalCenter_a197cc0d976a16755e6116b5bcd421caf}} 
+\index{CulturalCenter@{CulturalCenter}!getWaterReq@{getWaterReq}}
+\index{getWaterReq@{getWaterReq}!CulturalCenter@{CulturalCenter}}
+\doxysubsubsection{\texorpdfstring{getWaterReq()}{getWaterReq()}}
+{\footnotesize\ttfamily int Cultural\+Center\+::get\+Water\+Req (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the water requirement of the cultural center. 
+
+\begin{DoxyReturn}{Returns}
+The water requirement as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLandmarkBuilding_acb64ab79a07960d7bec6491f2a026315}{Landmark\+Building}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Cultural\+Center.\+h\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Cultural\+Center.\+cpp\end{DoxyCompactItemize}

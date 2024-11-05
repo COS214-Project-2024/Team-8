@@ -1,0 +1,15 @@
+digraph "CommercialFactory"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="CommercialFactory",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A factory class for creating commercial buildings."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="BuildingFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuildingFactory.html",tooltip="An abstract factory class for creating Building objects."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="MallFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMallFactory.html",tooltip="Factory class for creating mall buildings."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="OfficeFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOfficeFactory.html",tooltip="A factory class for creating office buildings."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="ShopFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classShopFactory.html",tooltip="A factory class for creating shop buildings."];
+}

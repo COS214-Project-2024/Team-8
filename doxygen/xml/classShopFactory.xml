@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classShopFactory" kind="class" language="C++" prot="public">
+    <compoundname>ShopFactory</compoundname>
+    <basecompoundref refid="classCommercialFactory" prot="public" virt="non-virtual">CommercialFactory</basecompoundref>
+    <includes refid="ShopFactory_8h" local="no">ShopFactory.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classShopFactory_1a00d6ab2e83c74d06173b6d75d005e9fa" prot="public" static="no" mutable="no">
+        <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+        <definition>Buildings* ShopFactory::buildings</definition>
+        <argsstring></argsstring>
+        <name>buildings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to a <ref refid="classBuildings" kindref="compound">Buildings</ref> object, representing the shop building instance managed by the factory. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ShopFactory.h" line="22" column="11" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ShopFactory.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classShopFactory_1aacea60a9db7a627f226b6e4e2ae15a9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classBuildings" kindref="compound">Buildings</ref> *</type>
+        <definition>Buildings * ShopFactory::createBuilding</definition>
+        <argsstring>()</argsstring>
+        <name>createBuilding</name>
+        <reimplements refid="classCommercialFactory_1a06ff168b783133fad993bc6579fe5a00">createBuilding</reimplements>
+        <briefdescription>
+<para>Creates a new shop building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function creates and returns a pointer to a new shop <ref refid="classBuildings" kindref="compound">Buildings</ref> object.</para>
+<para><simplesect kind="return"><para>A pointer to a newly created shop <ref refid="classBuildings" kindref="compound">Buildings</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ShopFactory.h" line="31" column="19" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ShopFactory.cpp" bodystart="5" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A factory class for creating shop buildings. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class inherits from <ref refid="classCommercialFactory" kindref="compound">CommercialFactory</ref> and provides a method for creating shop building objects. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>BuildingFactory</label>
+        <link refid="classBuildingFactory"/>
+      </node>
+      <node id="1">
+        <label>ShopFactory</label>
+        <link refid="classShopFactory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CommercialFactory</label>
+        <link refid="classCommercialFactory"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>listOfCitizens</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="3">
+        <label>BuildingFactory</label>
+        <link refid="classBuildingFactory"/>
+      </node>
+      <node id="11">
+        <label>State</label>
+        <link refid="classState"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>building</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Citizen</label>
+        <link refid="classCitizen"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>tm</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>TravelManager</label>
+        <link refid="classTravelManager"/>
+      </node>
+      <node id="10">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="1">
+        <label>ShopFactory</label>
+        <link refid="classShopFactory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>buildings</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>PopulationControl</label>
+        <link refid="classPopulationControl"/>
+      </node>
+      <node id="2">
+        <label>CommercialFactory</label>
+        <link refid="classCommercialFactory"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>buildings</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ShopFactory.h" line="19" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/ShopFactory.h" bodystart="19" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classShopFactory_1a00d6ab2e83c74d06173b6d75d005e9fa" prot="public" virt="non-virtual"><scope>ShopFactory</scope><name>buildings</name></member>
+      <member refid="classShopFactory_1aacea60a9db7a627f226b6e4e2ae15a9e" prot="public" virt="virtual"><scope>ShopFactory</scope><name>createBuilding</name></member>
+      <member refid="classCommercialFactory_1a101c2dcac960d17e02d7f2fb84713787" prot="public" virt="virtual"><scope>ShopFactory</scope><name>~CommercialFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

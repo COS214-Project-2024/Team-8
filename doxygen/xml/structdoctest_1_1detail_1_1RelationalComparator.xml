@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1detail_1_1RelationalComparator" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::detail::RelationalComparator</compoundname>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+      </param>
+      <param>
+        <type>class L</type>
+      </param>
+      <param>
+        <type>class R</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdoctest_1_1detail_1_1RelationalComparator_1a51062ad46cd23c982838a0a51df70512" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool doctest::detail::RelationalComparator&lt; int, L, R &gt;::operator()</definition>
+        <argsstring>(const DOCTEST_REF_WRAP(L), const DOCTEST_REF_WRAP(R)) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const </type>
+          <declname>DOCTEST_REF_WRAP</declname>
+          <array>L</array>
+        </param>
+        <param>
+          <type>const </type>
+          <declname>DOCTEST_REF_WRAP</declname>
+          <array>R</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1668" column="51" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1668" bodyend="1668"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="1668" column="19" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="1668" bodyend="1668"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1detail_1_1RelationalComparator_1a51062ad46cd23c982838a0a51df70512" prot="public" virt="non-virtual"><scope>doctest::detail::RelationalComparator</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

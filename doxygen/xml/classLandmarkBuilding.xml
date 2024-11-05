@@ -1,0 +1,439 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classLandmarkBuilding" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>LandmarkBuilding</compoundname>
+    <basecompoundref refid="classBuildings" prot="public" virt="non-virtual">Buildings</basecompoundref>
+    <derivedcompoundref refid="classCulturalCenter" prot="public" virt="non-virtual">CulturalCenter</derivedcompoundref>
+    <derivedcompoundref refid="classMonument" prot="public" virt="non-virtual">Monument</derivedcompoundref>
+    <derivedcompoundref refid="classPark" prot="public" virt="non-virtual">Park</derivedcompoundref>
+    <includes refid="LandmarkBuilding_8h" local="no">LandmarkBuilding.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLandmarkBuilding_1a10edeac1cd62dd4519d196b873bb7cc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>string</type>
+        <definition>virtual string LandmarkBuilding::getBuildingType</definition>
+        <argsstring>()=0</argsstring>
+        <name>getBuildingType</name>
+        <reimplements refid="classBuildings_1a99ed74a589fe28f98eed08ba0d8dc339">getBuildingType</reimplements>
+        <reimplementedby refid="classCulturalCenter_1aee7c0cebb5ae6b32faaeb17a2461109e">getBuildingType</reimplementedby>
+        <reimplementedby refid="classMonument_1a7348eb3e86de17228f0ca50d7c5fe48a">getBuildingType</reimplementedby>
+        <reimplementedby refid="classPark_1a2c89a3de0a83ca1928651a3afa672f39">getBuildingType</reimplementedby>
+        <briefdescription>
+<para>Gets the type of the landmark building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The type of the building as a string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="19" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classLandmarkBuilding_1a3f6e6849c9a5f5d29ea16e51bff37006" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double LandmarkBuilding::getMaintenanceCost</definition>
+        <argsstring>()=0</argsstring>
+        <name>getMaintenanceCost</name>
+        <reimplements refid="classBuildings_1a196e5dc7d116d8df481fe16ffb40756f">getMaintenanceCost</reimplements>
+        <reimplementedby refid="classCulturalCenter_1af6f3e3d6a89356d20626201e351dd2ee">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classMonument_1ae0d8787c2f668483df0acb8f5dabd369">getMaintenanceCost</reimplementedby>
+        <reimplementedby refid="classPark_1af812e134e0b512ab1fca97db97472423">getMaintenanceCost</reimplementedby>
+        <briefdescription>
+<para>Gets the maintenance cost of the landmark building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The maintenance cost as a double. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="26" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classLandmarkBuilding_1a25b9ca973c81578065f8cece37de00d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>string</type>
+        <definition>virtual string LandmarkBuilding::getName</definition>
+        <argsstring>()=0</argsstring>
+        <name>getName</name>
+        <reimplements refid="classBuildings_1a58fd91cee048b410265d2e8dab88894e">getName</reimplements>
+        <reimplementedby refid="classCulturalCenter_1a84ef150d247f633355270e3baa5638ca">getName</reimplementedby>
+        <reimplementedby refid="classMonument_1ade1e6dfa17591c2e90418d1dd470d595">getName</reimplementedby>
+        <reimplementedby refid="classPark_1a056d317a7474449c932f56c8ec703764">getName</reimplementedby>
+        <briefdescription>
+<para>Gets the name of the landmark building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The name of the building as a string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="32" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classLandmarkBuilding_1ac8df4603f8786f441a3aa50a3cd7a75c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int LandmarkBuilding::getPowerReq</definition>
+        <argsstring>()=0</argsstring>
+        <name>getPowerReq</name>
+        <reimplements refid="classBuildings_1ae6dc450a35fe3e5ae789357b921b0c72">getPowerReq</reimplements>
+        <reimplementedby refid="classCulturalCenter_1a21c8b4defdcca7bf79ae4e859062f3cc">getPowerReq</reimplementedby>
+        <reimplementedby refid="classMonument_1aa5d16f88a8b1f0518d2845dbb0bd4f15">getPowerReq</reimplementedby>
+        <reimplementedby refid="classPark_1a67bb1c291999a2f84b7aefa48a149529">getPowerReq</reimplementedby>
+        <briefdescription>
+<para>Gets the power requirement of the landmark building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The power requirement as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="38" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classLandmarkBuilding_1a780ade236d79adb8007752c718867639" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int LandmarkBuilding::getSewageCost</definition>
+        <argsstring>()=0</argsstring>
+        <name>getSewageCost</name>
+        <reimplements refid="classBuildings_1acd98a1879efc8be4e3fc27eddce6f56b">getSewageCost</reimplements>
+        <reimplementedby refid="classCulturalCenter_1a86f287ecf3dcac7cd6a4ba63dd11b7c6">getSewageCost</reimplementedby>
+        <reimplementedby refid="classMonument_1a9c004de50ec736e06bbc2eb9253af7e1">getSewageCost</reimplementedby>
+        <reimplementedby refid="classPark_1a9321f126205b260775abcea15d4e3e6f">getSewageCost</reimplementedby>
+        <briefdescription>
+<para>Gets the sewage cost of the landmark building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The sewage cost as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="44" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classLandmarkBuilding_1acb64ab79a07960d7bec6491f2a026315" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int LandmarkBuilding::getWaterReq</definition>
+        <argsstring>()=0</argsstring>
+        <name>getWaterReq</name>
+        <reimplements refid="classBuildings_1aa9f8088da3c065b05208ea0565bcff6b">getWaterReq</reimplements>
+        <reimplementedby refid="classCulturalCenter_1a197cc0d976a16755e6116b5bcd421caf">getWaterReq</reimplementedby>
+        <reimplementedby refid="classMonument_1a9d0f9952cde9be9625d514c7adf17f27">getWaterReq</reimplementedby>
+        <reimplementedby refid="classPark_1af4e0a5f69702b0454f241acf528d56a7">getWaterReq</reimplementedby>
+        <briefdescription>
+<para>Gets the water requirement of the landmark building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The water requirement as an integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="50" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classLandmarkBuilding_1a6aa7b601c577fa2114df4c826fd00517" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void LandmarkBuilding::requestState</definition>
+        <argsstring>()=0</argsstring>
+        <name>requestState</name>
+        <reimplements refid="classBuildings_1a4dd777c9c3963d8fd5a74ad1fee76ddf">requestState</reimplements>
+        <reimplementedby refid="classCulturalCenter_1aa3596183413552b908c8638cc90a8ee0">requestState</reimplementedby>
+        <reimplementedby refid="classMonument_1af01f5c96f40adbc481bff5a6df48719d">requestState</reimplementedby>
+        <reimplementedby refid="classPark_1aacde897f3b78869e5e834d6d3e647fdb">requestState</reimplementedby>
+        <briefdescription>
+<para>Requests the current state of the landmark building. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="55" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classLandmarkBuilding_1af8cf4edaa6c0609969d781448365186d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void LandmarkBuilding::setState</definition>
+        <argsstring>(State *newState)=0</argsstring>
+        <name>setState</name>
+        <reimplements refid="classBuildings_1ae4f56a3ae5658097bee10dc48e130a75">setState</reimplements>
+        <reimplementedby refid="classCulturalCenter_1a4978e28654afed90e7c04830eb18e054">setState</reimplementedby>
+        <reimplementedby refid="classMonument_1a0e8131d72fc1b7cfeaea419ced2f78fa">setState</reimplementedby>
+        <reimplementedby refid="classPark_1ab5b7777dcc40a83ad3829a9ccd0d6108">setState</reimplementedby>
+        <param>
+          <type><ref refid="classState" kindref="compound">State</ref> *</type>
+          <declname>newState</declname>
+        </param>
+        <briefdescription>
+<para>sets the state of the building </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="60" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classLandmarkBuilding_1aa8179defd14ed585752076b6d407aada" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void LandmarkBuilding::addBuilding</definition>
+        <argsstring>()=0</argsstring>
+        <name>addBuilding</name>
+        <reimplements refid="classBuildings_1adb4f64849474dce9ded072e712658fc2">addBuilding</reimplements>
+        <reimplementedby refid="classCulturalCenter_1a4b403e088feac2d38c56b6c10e921326">addBuilding</reimplementedby>
+        <reimplementedby refid="classMonument_1af1e7e849c3d1ea1d9f9232ba3d9bfe29">addBuilding</reimplementedby>
+        <reimplementedby refid="classPark_1a9026ffbf64514400d81218e970f7aeef">addBuilding</reimplementedby>
+        <briefdescription>
+<para>Add a building to the <ref refid="classUtility" kindref="compound">Utility</ref> resource. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>building</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The building to add to the <ref refid="classWaterSupply" kindref="compound">WaterSupply</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="68" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLandmarkBuilding_1aecef730ab43b09f8d9a3cb423a46f94a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool LandmarkBuilding::getPower</definition>
+        <argsstring>()=0</argsstring>
+        <name>getPower</name>
+        <reimplements refid="classBuildings_1a98266f291367e42bb44f49a8949ea8b2">getPower</reimplements>
+        <reimplementedby refid="classCulturalCenter_1abb59ff3dcaa5b2fcbcdc7372ecce0c9e">getPower</reimplementedby>
+        <reimplementedby refid="classMonument_1aa820b40523a786099a0aa438eef37786">getPower</reimplementedby>
+        <reimplementedby refid="classPark_1ab8559c1bdf4ba7cdb3ffc7d7f2a84648">getPower</reimplementedby>
+        <briefdescription>
+<para>Receives power for the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if power was received successfully, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="74" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classLandmarkBuilding_1a661c42eb0bd712f50eb10cfba131f0e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool LandmarkBuilding::getWater</definition>
+        <argsstring>()=0</argsstring>
+        <name>getWater</name>
+        <reimplements refid="classBuildings_1a100a3abba32013b317fe08d78de2d9ab">getWater</reimplements>
+        <reimplementedby refid="classCulturalCenter_1a49c3c84e133607c5882759b3f48311e3">getWater</reimplementedby>
+        <reimplementedby refid="classMonument_1a6cc1e997c14352ab89b2ae70ad87c710">getWater</reimplementedby>
+        <reimplementedby refid="classPark_1a56586b6fbccdf996174469ec27663374">getWater</reimplementedby>
+        <briefdescription>
+<para>Receives water for the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if water was received successfully, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="80" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classLandmarkBuilding_1a53f41bc4fe9ccb241e6619463296c405" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool LandmarkBuilding::cleanWaste</definition>
+        <argsstring>()=0</argsstring>
+        <name>cleanWaste</name>
+        <reimplements refid="classBuildings_1aaaeb748113337669c224c2293d2f0d82">cleanWaste</reimplements>
+        <reimplementedby refid="classCulturalCenter_1a5332fe7bb7e4082780f6f1747b80c627">cleanWaste</reimplementedby>
+        <reimplementedby refid="classMonument_1a2f01e07c1ce7f901b505baaa55bbc584">cleanWaste</reimplementedby>
+        <reimplementedby refid="classPark_1ac5ea570943ee58b803c919033ef0c3bf">cleanWaste</reimplementedby>
+        <briefdescription>
+<para>Cleans the waste of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if waste cleaning was successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="86" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classLandmarkBuilding_1a4b58e301fe9f6d3dc400aad1650e3db2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool LandmarkBuilding::cleanSewage</definition>
+        <argsstring>()=0</argsstring>
+        <name>cleanSewage</name>
+        <reimplements refid="classBuildings_1a80e812e9003bff1371df778942ecfb36">cleanSewage</reimplements>
+        <reimplementedby refid="classCulturalCenter_1a2653e24f61254c62d017c3cc8b3d45db">cleanSewage</reimplementedby>
+        <reimplementedby refid="classMonument_1ab1d8a96cfcdf7c0cbe2ffdc7a2513f73">cleanSewage</reimplementedby>
+        <reimplementedby refid="classPark_1a52b7b6d0e8d7795e133346be8706ccff">cleanSewage</reimplementedby>
+        <briefdescription>
+<para>Cleans the sewage of the building. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if sewage cleaning was successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="92" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a landmark building, inheriting from <ref refid="classBuildings" kindref="compound">Buildings</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+      </node>
+      <node id="3">
+        <label>CulturalCenter</label>
+        <link refid="classCulturalCenter"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Park</label>
+        <link refid="classPark"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>LandmarkBuilding</label>
+        <link refid="classLandmarkBuilding"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Monument</label>
+        <link refid="classMonument"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Buildings</label>
+        <link refid="classBuildings"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>listOfCitizens</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Government</label>
+        <link refid="classGovernment"/>
+      </node>
+      <node id="9">
+        <label>State</label>
+        <link refid="classState"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>building</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Citizen</label>
+        <link refid="classCitizen"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>tm</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>TravelManager</label>
+        <link refid="classTravelManager"/>
+      </node>
+      <node id="1">
+        <label>LandmarkBuilding</label>
+        <link refid="classLandmarkBuilding"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Utility</label>
+        <link refid="classUtility"/>
+      </node>
+      <node id="6">
+        <label>PopulationControl</label>
+        <link refid="classPopulationControl"/>
+      </node>
+      <node id="4">
+        <label>CitizenInterface</label>
+        <link refid="classCitizenInterface"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>government</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>popControl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" line="12" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/LandmarkBuilding.h" bodystart="12" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classLandmarkBuilding_1aa8179defd14ed585752076b6d407aada" prot="public" virt="pure-virtual"><scope>LandmarkBuilding</scope><name>addBuilding</name></member>
+      <member refid="classBuildings_1afc21c459782fab5d58a3517c09474df0" prot="protected" virt="non-virtual"><scope>LandmarkBuilding</scope><name>balance</name></member>
+      <member refid="classBuildings_1a0702b3d14494ac145aaa428aa4e01afb" prot="protected" virt="non-virtual"><scope>LandmarkBuilding</scope><name>buildingName</name></member>
+      <member refid="classBuildings_1af5b874917cf6e1dbe90dbcf5b9b37326" prot="public" virt="non-virtual"><scope>LandmarkBuilding</scope><name>Buildings</name></member>
+      <member refid="classBuildings_1a010d594842ce60f01bdf00f939ea2011" prot="protected" virt="non-virtual"><scope>LandmarkBuilding</scope><name>buildingType</name></member>
+      <member refid="classLandmarkBuilding_1a4b58e301fe9f6d3dc400aad1650e3db2" prot="public" virt="pure-virtual"><scope>LandmarkBuilding</scope><name>cleanSewage</name></member>
+      <member refid="classLandmarkBuilding_1a53f41bc4fe9ccb241e6619463296c405" prot="public" virt="pure-virtual"><scope>LandmarkBuilding</scope><name>cleanWaste</name></member>
+      <member refid="classBuildings_1a4254206fe0f1f565e269e1e543cba834" prot="public" virt="virtual"><scope>LandmarkBuilding</scope><name>getBalance</name></member>
+      <member refid="classBuildings_1a038e1c1d7a924c97fc3cdc5954ccd72b" prot="public" virt="virtual"><scope>LandmarkBuilding</scope><name>getBirthRate</name></member>
+      <member refid="classLandmarkBuilding_1a10edeac1cd62dd4519d196b873bb7cc0" prot="public" virt="pure-virtual"><scope>LandmarkBuilding</scope><name>getBuildingType</name></member>
+      <member refid="classBuildings_1a14a35e8d36b717014241a9f416324ae5" prot="public" virt="virtual"><scope>LandmarkBuilding</scope><name>getCommercialIncome</name></member>
+      <member refid="classBuildings_1aea12268287656270eb98cd2f22b82e02" prot="public" virt="virtual"><scope>LandmarkBuilding</scope><name>getEducationalCoverage</name></member>
+      <member refid="classBuildings_1a993a9340e25a58e2e2912090742f5ba6" prot="public" virt="virtual"><scope>LandmarkBuilding</scope><name>getHealthCoverage</name></member>
+      <member refid="classBuildings_1a903e19ef9d878d5714b8ab5de9f71fc1" prot="public" virt="virtual"><scope>LandmarkBuilding</scope><name>getJobsCreated</name></member>
+      <member refid="classBuildings_1ae0a010f94a01d180d1a6e4d023b54561" prot="public" virt="virtual"><scope>LandmarkBuilding</scope><name>getlistOfResidence</name></member>
+      <member refid="classLandmarkBuilding_1a3f6e6849c9a5f5d29ea16e51bff37006" prot="public" virt="pure-virtual"><scope>LandmarkBuilding</scope><name>getMaintenanceCost</name></member>
+      <member refid="classLandmarkBuilding_1a25b9ca973c81578065f8cece37de00d4" prot="public" virt="pure-virtual"><scope>LandmarkBuilding</scope><name>getName</name></member>
+      <member refid="classLandmarkBuilding_1aecef730ab43b09f8d9a3cb423a46f94a" prot="public" virt="pure-virtual"><scope>LandmarkBuilding</scope><name>getPower</name></member>
+      <member refid="classLandmarkBuilding_1ac8df4603f8786f441a3aa50a3cd7a75c" prot="public" virt="pure-virtual"><scope>LandmarkBuilding</scope><name>getPowerReq</name></member>
+      <member refid="classBuildings_1ad063833f87a3337b6ed6f1f3686a6e45" prot="public" virt="virtual"><scope>LandmarkBuilding</scope><name>getProfit</name></member>
+      <member refid="classBuildings_1a329450878a0e655e4a59f29e24bd3202" prot="public" virt="virtual"><scope>LandmarkBuilding</scope><name>getSales</name></member>
+      <member refid="classBuildings_1a647c790019850fd479ac20fcbd21d873" prot="public" virt="virtual"><scope>LandmarkBuilding</scope><name>getSecurityCoverage</name></member>
+      <member refid="classLandmarkBuilding_1a780ade236d79adb8007752c718867639" prot="public" virt="pure-virtual"><scope>LandmarkBuilding</scope><name>getSewageCost</name></member>
+      <member refid="classBuildings_1a94e15ba281ac20d60e1a4632f7be1292" prot="public" virt="virtual"><scope>LandmarkBuilding</scope><name>getWasteCost</name></member>
+      <member refid="classLandmarkBuilding_1a661c42eb0bd712f50eb10cfba131f0e5" prot="public" virt="pure-virtual"><scope>LandmarkBuilding</scope><name>getWater</name></member>
+      <member refid="classLandmarkBuilding_1acb64ab79a07960d7bec6491f2a026315" prot="public" virt="pure-virtual"><scope>LandmarkBuilding</scope><name>getWaterReq</name></member>
+      <member refid="classBuildings_1a7497cf317a1deb55c35864bc08c82443" prot="protected" virt="non-virtual"><scope>LandmarkBuilding</scope><name>listOfCitizens</name></member>
+      <member refid="classBuildings_1a7320201a32ce9541b3aeddac32d9988a" prot="protected" virt="non-virtual"><scope>LandmarkBuilding</scope><name>maintenanceCost</name></member>
+      <member refid="classBuildings_1a291fa645584d52be99367ba4796ebe14" prot="public" virt="virtual"><scope>LandmarkBuilding</scope><name>payCitizen</name></member>
+      <member refid="classBuildings_1a572094ecc5a5d844acbfe6f18650ed9d" prot="protected" virt="non-virtual"><scope>LandmarkBuilding</scope><name>powerReq</name></member>
+      <member refid="classBuildings_1a4f41883b0ba36ed4840bc905cc19ea3d" prot="protected" virt="non-virtual"><scope>LandmarkBuilding</scope><name>profit</name></member>
+      <member refid="classLandmarkBuilding_1a6aa7b601c577fa2114df4c826fd00517" prot="public" virt="pure-virtual"><scope>LandmarkBuilding</scope><name>requestState</name></member>
+      <member refid="classBuildings_1aabc1cfaf764d4c41889ecf1f0320fa8e" prot="public" virt="non-virtual"><scope>LandmarkBuilding</scope><name>resources</name></member>
+      <member refid="classBuildings_1a2c3680425e9cd1526d1c4c834c017690" prot="protected" virt="non-virtual"><scope>LandmarkBuilding</scope><name>sales</name></member>
+      <member refid="classBuildings_1a6c02963e37bf20ef827f063209901a3a" prot="public" virt="virtual"><scope>LandmarkBuilding</scope><name>setBalance</name></member>
+      <member refid="classBuildings_1af3184f3602e4c1dd6ac010900770cd57" prot="public" virt="non-virtual"><scope>LandmarkBuilding</scope><name>setResources</name></member>
+      <member refid="classLandmarkBuilding_1af8cf4edaa6c0609969d781448365186d" prot="public" virt="pure-virtual"><scope>LandmarkBuilding</scope><name>setState</name></member>
+      <member refid="classBuildings_1aae45243bbcd3ac7c47e9cbb83162f1f8" prot="protected" virt="non-virtual"><scope>LandmarkBuilding</scope><name>sewageCost</name></member>
+      <member refid="classBuildings_1a4befd4aa1ecedd685f1792e9d9cab4c8" prot="public" virt="non-virtual"><scope>LandmarkBuilding</scope><name>state</name></member>
+      <member refid="classBuildings_1ac8c0debb07dcf0555a28be710377fc36" prot="protected" virt="non-virtual"><scope>LandmarkBuilding</scope><name>waterReq</name></member>
+      <member refid="classBuildings_1a60b14d2c02c2424eeb0ba52bd9fee170" prot="public" virt="pure-virtual"><scope>LandmarkBuilding</scope><name>~Buildings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+digraph "PublicServiceBuilding"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="PublicServiceBuilding",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Abstract class representing a public service building, inheriting from Buildings."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Buildings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuildings.html",tooltip="Abstract base class representing a building with basic utilities and resource requirements."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="MedicalCenter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMedicalCenter.html",tooltip="Represents a medical center, inheriting from PublicServiceBuilding."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PoliceStation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoliceStation.html",tooltip="Represents a police station as a type of public service building."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="School",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSchool.html",tooltip="Class representing a school, inheriting from PublicServiceBuilding."];
+}

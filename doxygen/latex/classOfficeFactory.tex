@@ -1,0 +1,71 @@
+\hypertarget{classOfficeFactory}{}\doxysection{Office\+Factory Class Reference}
+\label{classOfficeFactory}\index{OfficeFactory@{OfficeFactory}}
+
+
+A factory class for creating office buildings.  
+
+
+
+
+{\ttfamily \#include $<$Office\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Office\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for Office\+Factory\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classOfficeFactory_ad783eea602f896852848753d10f30847}{create\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new office building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classOfficeFactory_a56b49d08bae6d5e325e10befece96708}{buildings}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A factory class for creating office buildings. 
+
+This class inherits from \mbox{\hyperlink{classCommercialFactory}{Commercial\+Factory}} and provides a method for creating office building objects. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOfficeFactory_ad783eea602f896852848753d10f30847}\label{classOfficeFactory_ad783eea602f896852848753d10f30847}} 
+\index{OfficeFactory@{OfficeFactory}!createBuilding@{createBuilding}}
+\index{createBuilding@{createBuilding}!OfficeFactory@{OfficeFactory}}
+\doxysubsubsection{\texorpdfstring{createBuilding()}{createBuilding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ Office\+Factory\+::create\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a new office building. 
+
+This function creates and returns a pointer to a new office \mbox{\hyperlink{classBuildings}{Buildings}} object.
+
+\begin{DoxyReturn}{Returns}
+A pointer to a newly created office \mbox{\hyperlink{classBuildings}{Buildings}} object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCommercialFactory_a06ff168b783133fad993bc6579fe5a00}{Commercial\+Factory}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classOfficeFactory_a56b49d08bae6d5e325e10befece96708}\label{classOfficeFactory_a56b49d08bae6d5e325e10befece96708}} 
+\index{OfficeFactory@{OfficeFactory}!buildings@{buildings}}
+\index{buildings@{buildings}!OfficeFactory@{OfficeFactory}}
+\doxysubsubsection{\texorpdfstring{buildings}{buildings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}}$\ast$ Office\+Factory\+::buildings}
+
+Pointer to a \mbox{\hyperlink{classBuildings}{Buildings}} object, representing the office building instance managed by the factory. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{OfficeFactory_8h}{Office\+Factory.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Office\+Factory.\+cpp\end{DoxyCompactItemize}

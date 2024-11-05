@@ -1,0 +1,247 @@
+\hypertarget{classWasteManagement}{}\doxysection{Waste\+Management Class Reference}
+\label{classWasteManagement}\index{WasteManagement@{WasteManagement}}
+
+
+Inheritance diagram for Waste\+Management\+:
+% FIG 0
+
+
+Collaboration diagram for Waste\+Management\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWasteManagement_a4442e7116f4b6afad686cf9343cc88ba}{Waste\+Management}} (float output)
+\item 
+std\+::string \mbox{\hyperlink{classWasteManagement_a67a1bb876fae1d6b45db72a4761cbd66}{get\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Get the status of the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWasteManagement_aaa0972fb1af625e6bfac4f076721c930}{repair\+Utility}} ()
+\begin{DoxyCompactList}\small\item\em Repair the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWasteManagement_aef14afdcea9cdcffee36bb08185ebe69}{execute\+Operation}} ()
+\begin{DoxyCompactList}\small\item\em Execute the operation of the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classWasteManagement_a9b0ef5d23ea4505d36c16907bbfd1a42}{get\+Output}} ()
+\begin{DoxyCompactList}\small\item\em Get the output of the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWasteManagement_aa5329c86e05b7b7205c409c964358649}{pause\+Operation}} ()
+\begin{DoxyCompactList}\small\item\em Pause the operation of the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classWasteManagement_a8c7fd80a9055c10f2ac36d71b866fd70}{get\+Utility\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get the utility type of the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUtility}{Utility}} $\ast$ \mbox{\hyperlink{classWasteManagement_a08c6d447494301c05413ac59b26eff02}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Clone the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWasteManagement_ab6b5ef72863523a7f571a1bda289f42d}{set\+Process\+Capacity}} (int pro)
+\begin{DoxyCompactList}\small\item\em Set the process capacity of the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWasteManagement_a0575b4c2c2606d1f321cb06aed398a23}{undo\+Change}} ()
+\begin{DoxyCompactList}\small\item\em Undo the last change to the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWasteManagement_ab076e410d7c15e6389ded0485530fe76}{add\+Building}} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$building)
+\begin{DoxyCompactList}\small\item\em Add a building to the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classWasteManagement_ae9c042ea0410aa4f082d9b556efdaf25}{clean\+Waste}} (\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$sender)
+\begin{DoxyCompactList}\small\item\em Clean Building that is registered/exists in the Waste Management vector object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWasteManagement_a4442e7116f4b6afad686cf9343cc88ba}\label{classWasteManagement_a4442e7116f4b6afad686cf9343cc88ba}} 
+\index{WasteManagement@{WasteManagement}!WasteManagement@{WasteManagement}}
+\index{WasteManagement@{WasteManagement}!WasteManagement@{WasteManagement}}
+\doxysubsubsection{\texorpdfstring{WasteManagement()}{WasteManagement()}}
+{\footnotesize\ttfamily Waste\+Management\+::\+Waste\+Management (\begin{DoxyParamCaption}\item[{float}]{output }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em output} & The output of the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}\\
+\hline
+\end{DoxyParams}
+The constructor for the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}} class 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWasteManagement_ab076e410d7c15e6389ded0485530fe76}\label{classWasteManagement_ab076e410d7c15e6389ded0485530fe76}} 
+\index{WasteManagement@{WasteManagement}!addBuilding@{addBuilding}}
+\index{addBuilding@{addBuilding}!WasteManagement@{WasteManagement}}
+\doxysubsubsection{\texorpdfstring{addBuilding()}{addBuilding()}}
+{\footnotesize\ttfamily void Waste\+Management\+::add\+Building (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$}]{building }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Add a building to the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & The building to add \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classUtility_a4ea6047493c471b470e4c392aa8c801b}{Utility}}.
+
+\mbox{\Hypertarget{classWasteManagement_ae9c042ea0410aa4f082d9b556efdaf25}\label{classWasteManagement_ae9c042ea0410aa4f082d9b556efdaf25}} 
+\index{WasteManagement@{WasteManagement}!cleanWaste@{cleanWaste}}
+\index{cleanWaste@{cleanWaste}!WasteManagement@{WasteManagement}}
+\doxysubsubsection{\texorpdfstring{cleanWaste()}{cleanWaste()}}
+{\footnotesize\ttfamily bool Waste\+Management\+::clean\+Waste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$}]{sender }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Clean Building that is registered/exists in the Waste Management vector object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classUtility_a46770e0e3a9d147b17bd7f373db58fac}{Utility}}.
+
+\mbox{\Hypertarget{classWasteManagement_a08c6d447494301c05413ac59b26eff02}\label{classWasteManagement_a08c6d447494301c05413ac59b26eff02}} 
+\index{WasteManagement@{WasteManagement}!clone@{clone}}
+\index{clone@{clone}!WasteManagement@{WasteManagement}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUtility}{Utility}} $\ast$ Waste\+Management\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Clone the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. 
+
+\begin{DoxyReturn}{Returns}
+Utility$\ast$ The cloned \mbox{\hyperlink{classWasteManagement}{Waste\+Management}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+\mbox{\Hypertarget{classWasteManagement_aef14afdcea9cdcffee36bb08185ebe69}\label{classWasteManagement_aef14afdcea9cdcffee36bb08185ebe69}} 
+\index{WasteManagement@{WasteManagement}!executeOperation@{executeOperation}}
+\index{executeOperation@{executeOperation}!WasteManagement@{WasteManagement}}
+\doxysubsubsection{\texorpdfstring{executeOperation()}{executeOperation()}}
+{\footnotesize\ttfamily void Waste\+Management\+::execute\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Execute the operation of the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. 
+
+Sets the status to operational 
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+\mbox{\Hypertarget{classWasteManagement_a9b0ef5d23ea4505d36c16907bbfd1a42}\label{classWasteManagement_a9b0ef5d23ea4505d36c16907bbfd1a42}} 
+\index{WasteManagement@{WasteManagement}!getOutput@{getOutput}}
+\index{getOutput@{getOutput}!WasteManagement@{WasteManagement}}
+\doxysubsubsection{\texorpdfstring{getOutput()}{getOutput()}}
+{\footnotesize\ttfamily float Waste\+Management\+::get\+Output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the output of the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. 
+
+\begin{DoxyReturn}{Returns}
+float The output of the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}} 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classUtility_a40b833bd8494fcddeb667a4705635b5f}{Utility}}.
+
+\mbox{\Hypertarget{classWasteManagement_a67a1bb876fae1d6b45db72a4761cbd66}\label{classWasteManagement_a67a1bb876fae1d6b45db72a4761cbd66}} 
+\index{WasteManagement@{WasteManagement}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!WasteManagement@{WasteManagement}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily std\+::string Waste\+Management\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the status of the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string The status of the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+\mbox{\Hypertarget{classWasteManagement_a8c7fd80a9055c10f2ac36d71b866fd70}\label{classWasteManagement_a8c7fd80a9055c10f2ac36d71b866fd70}} 
+\index{WasteManagement@{WasteManagement}!getUtilityType@{getUtilityType}}
+\index{getUtilityType@{getUtilityType}!WasteManagement@{WasteManagement}}
+\doxysubsubsection{\texorpdfstring{getUtilityType()}{getUtilityType()}}
+{\footnotesize\ttfamily std\+::string Waste\+Management\+::get\+Utility\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the utility type of the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string The utility type of the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+\mbox{\Hypertarget{classWasteManagement_aa5329c86e05b7b7205c409c964358649}\label{classWasteManagement_aa5329c86e05b7b7205c409c964358649}} 
+\index{WasteManagement@{WasteManagement}!pauseOperation@{pauseOperation}}
+\index{pauseOperation@{pauseOperation}!WasteManagement@{WasteManagement}}
+\doxysubsubsection{\texorpdfstring{pauseOperation()}{pauseOperation()}}
+{\footnotesize\ttfamily void Waste\+Management\+::pause\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Pause the operation of the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. 
+
+Sets the status to paused 
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+\mbox{\Hypertarget{classWasteManagement_aaa0972fb1af625e6bfac4f076721c930}\label{classWasteManagement_aaa0972fb1af625e6bfac4f076721c930}} 
+\index{WasteManagement@{WasteManagement}!repairUtility@{repairUtility}}
+\index{repairUtility@{repairUtility}!WasteManagement@{WasteManagement}}
+\doxysubsubsection{\texorpdfstring{repairUtility()}{repairUtility()}}
+{\footnotesize\ttfamily void Waste\+Management\+::repair\+Utility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Repair the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. 
+
+Repairs the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}} Also sets the status to operational 
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+\mbox{\Hypertarget{classWasteManagement_ab6b5ef72863523a7f571a1bda289f42d}\label{classWasteManagement_ab6b5ef72863523a7f571a1bda289f42d}} 
+\index{WasteManagement@{WasteManagement}!setProcessCapacity@{setProcessCapacity}}
+\index{setProcessCapacity@{setProcessCapacity}!WasteManagement@{WasteManagement}}
+\doxysubsubsection{\texorpdfstring{setProcessCapacity()}{setProcessCapacity()}}
+{\footnotesize\ttfamily void Waste\+Management\+::set\+Process\+Capacity (\begin{DoxyParamCaption}\item[{int}]{pro }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the process capacity of the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pro} & The process capacity of the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}} \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classUtility_a72a5b065755157aee43eaf0373da87bd}{Utility}}.
+
+\mbox{\Hypertarget{classWasteManagement_a0575b4c2c2606d1f321cb06aed398a23}\label{classWasteManagement_a0575b4c2c2606d1f321cb06aed398a23}} 
+\index{WasteManagement@{WasteManagement}!undoChange@{undoChange}}
+\index{undoChange@{undoChange}!WasteManagement@{WasteManagement}}
+\doxysubsubsection{\texorpdfstring{undoChange()}{undoChange()}}
+{\footnotesize\ttfamily void Waste\+Management\+::undo\+Change (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Undo the last change to the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}}. 
+
+Undoes the last change to the \mbox{\hyperlink{classWasteManagement}{Waste\+Management}} 
+
+Implements \mbox{\hyperlink{classUtility}{Utility}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{WasteManagement_8h}{Waste\+Management.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Waste\+Management.\+cpp\end{DoxyCompactItemize}

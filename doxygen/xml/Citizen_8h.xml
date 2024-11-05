@@ -1,0 +1,456 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Citizen_8h" kind="file" language="C++">
+    <compoundname>Citizen.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">memory</includes>
+    <includes refid="CitizenInterface_8h" local="yes">CitizenInterface.h</includes>
+    <includes refid="TravelManager_8h" local="yes">TravelManager.h</includes>
+    <includes refid="Stops_8h" local="yes">Stops.h</includes>
+    <includedby refid="Apartment_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Apartment.cpp</includedby>
+    <includedby refid="BuildingController_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h</includedby>
+    <includedby refid="Buildings_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Buildings.cpp</includedby>
+    <includedby refid="Citizen_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Citizen.cpp</includedby>
+    <includedby refid="CitizenController_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h</includedby>
+    <includedby refid="CityController_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CityController.h</includedby>
+    <includedby refid="CulturalCenter_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CulturalCenter.cpp</includedby>
+    <includedby refid="EconomicPolicies_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EconomicPolicies.cpp</includedby>
+    <includedby refid="EconomicPolicies_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EconomicPolicies.h</includedby>
+    <includedby refid="Factories_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Factories.cpp</includedby>
+    <includedby refid="Government_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Government.cpp</includedby>
+    <includedby refid="House_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/House.cpp</includedby>
+    <includedby refid="Mall_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Mall.cpp</includedby>
+    <includedby refid="MedicalCenter_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/MedicalCenter.cpp</includedby>
+    <includedby refid="Monument_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Monument.cpp</includedby>
+    <includedby refid="Office_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Office.cpp</includedby>
+    <includedby refid="Park_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Park.cpp</includedby>
+    <includedby refid="PoliceStation_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PoliceStation.cpp</includedby>
+    <includedby refid="PowerPlant_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PowerPlant.cpp</includedby>
+    <includedby refid="PublicServicesPolicies_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PublicServicesPolicies.cpp</includedby>
+    <includedby refid="PublicServicesPolicies_8h" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PublicServicesPolicies.h</includedby>
+    <includedby refid="School_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/School.cpp</includedby>
+    <includedby refid="Shop_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Shop.cpp</includedby>
+    <includedby refid="TownHouse_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/TownHouse.cpp</includedby>
+    <includedby refid="Warehouse_8cpp" local="yes">/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Warehouse.cpp</includedby>
+    <incdepgraph>
+      <node id="35">
+        <label>BestRouteNode.h</label>
+        <link refid="BestRouteNode_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>AccesibleRoute.h</label>
+        <link refid="AccesibleRoute_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>PopulationControl.h</label>
+        <link refid="PopulationControl_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Government.h</label>
+        <link refid="Government_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CitizenInterface.h</label>
+        <link refid="CitizenInterface_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>Plane.h</label>
+        <link refid="Plane_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>CommercialBuilding.h</label>
+        <link refid="CommercialBuilding_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>MapIterator.h</label>
+        <link refid="MapIterator_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Buildings.h</label>
+        <link refid="Buildings_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="32">
+        <label>VehicleBuilder.h</label>
+        <link refid="VehicleBuilder_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Transport.h</label>
+        <link refid="Transport_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>State.h</label>
+        <link refid="State_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Stops.h</label>
+        <link refid="Stops_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>EnergySource.h</label>
+        <link refid="EnergySource_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>TransportBuilder.h</label>
+        <link refid="TransportBuilder_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="23">
+        <label>UnderConstruction.h</label>
+        <link refid="UnderConstruction_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>sstream</label>
+      </node>
+      <node id="26">
+        <label>TravelManager.h</label>
+        <link refid="TravelManager_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Citizen.h</label>
+        <link refid="Citizen_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>RouteNode.h</label>
+        <link refid="RouteNode_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>PublicServiceBuilding.h</label>
+        <link refid="PublicServiceBuilding_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>iostream</label>
+      </node>
+      <node id="33">
+        <label>Vehicle.h</label>
+        <link refid="Vehicle_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Command.h</label>
+        <link refid="Command_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>chrono</label>
+      </node>
+      <node id="27">
+        <label>PlaneBuilder.h</label>
+        <link refid="PlaneBuilder_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>thread</label>
+      </node>
+      <node id="20">
+        <label>MedicalCenter.h</label>
+        <link refid="MedicalCenter_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>TrainBuilder.h</label>
+        <link refid="TrainBuilder_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>ResidentialBuilding.h</label>
+        <link refid="ResidentialBuilding_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Train.h</label>
+        <link refid="Train_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="7">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/EconomicPolicies.h</label>
+        <link refid="EconomicPolicies_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CitizenController.h</label>
+        <link refid="CitizenController_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="8">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/PublicServicesPolicies.h</label>
+        <link refid="PublicServicesPolicies_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Citizen.h</label>
+        <link refid="Citizen_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/City.h</label>
+        <link refid="City_8h_source"/>
+      </node>
+      <node id="2">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BuildingController.h</label>
+        <link refid="BuildingController_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/CityController.h</label>
+        <link refid="CityController_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classCitizen" prot="public">Citizen</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CITIZEN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CITIZEN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;CitizenInterface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="TravelManager_8h" kindref="compound">TravelManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Stops_8h" kindref="compound">Stops.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classCitizen" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCitizen" kindref="compound">Citizen</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classCitizenInterface" kindref="compound">CitizenInterface</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCitizen" kindref="compound">Citizen</ref>(std::string<sp/><ref refid="classCitizen_1abca3f4db1b069d530bf26bb681d55e3e" kindref="member">name</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a9a6ce8a05dd2a1dc0cb7ea958f1ce873" kindref="member">salary</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a9906c606bdbac44dcf4dc384c3a9d211" kindref="member">age</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1aea3cc6285cd89f75061e680a17a3dd7e" kindref="member">satisfaction</ref>,<sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGovernment" kindref="compound">Government</ref>*<sp/><ref refid="classCitizen_1ac88789754b747ec5746485055958d9fc" kindref="member">government</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasJob<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1ac53f466a02e533acba8789b2397cc9b5" kindref="member">ownsProperty</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCitizen" kindref="compound">Citizen</ref>(std::string<sp/><ref refid="classCitizen_1abca3f4db1b069d530bf26bb681d55e3e" kindref="member">name</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a9a6ce8a05dd2a1dc0cb7ea958f1ce873" kindref="member">salary</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a9906c606bdbac44dcf4dc384c3a9d211" kindref="member">age</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1aea3cc6285cd89f75061e680a17a3dd7e" kindref="member">satisfaction</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCitizen" kindref="compound">Citizen</ref>(){};<sp/></highlight><highlight class="comment">//added<sp/>a<sp/>default<sp/>constructor<sp/>-<sp/>unathi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCitizen_1aca7dce04dd6e6d2abb0638cadbfd1632" kindref="member">~Citizen</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>getTaxRate()<sp/>;<sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;CitizenInterface&gt;<sp/><ref refid="classCitizen_1ade11673566d466af3e785829df29a484" kindref="member">clone</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a8e8aa3ad0de003d19a835f7cb2972e2b" kindref="member">update</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>newTaxRate)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a913dbea7ecf2b87951908c9554db652a" kindref="member">makeRequest</ref>(<ref refid="classGovernment" kindref="compound">Government</ref>*<sp/><ref refid="classCitizen_1ac88789754b747ec5746485055958d9fc" kindref="member">government</ref>,<sp/>std::string<sp/>requestDetails)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a7431f43a1090664ca3a0c75f1860c7f4" kindref="member">useTransport</ref>(<ref refid="classStops" kindref="compound">Stops</ref><sp/>*stop,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>capacity,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bestRoute<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a68c89f916d8b94096d89d7b605e959cb" kindref="member">adjustCitizenSatisfaction</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>newSatisfaction)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a67360b9651e7a5503c920eca85c0d79e" kindref="member">setEmploymentStatus</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>employmentStatus);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a1aa1eca1f2adfc51f109637b4c6c4892" kindref="member">setPropertyOwnership</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1ac53f466a02e533acba8789b2397cc9b5" kindref="member">ownsProperty</ref>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1ab34564a3430b1fa5574e4a4409b38115" kindref="member">getSalary</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1ac2d947f929d253b87b64485c9a7498c3" kindref="member">setSalary</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>newSalary);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a96e445dc5c4468d9c85faa49475c329a" kindref="member">getAge</ref>();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classCitizen_1a6cb8c93c800efcb4abbfe25e63c68317" kindref="member">getName</ref>();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a0a875195b487daf901eceaf3e7dc6914" kindref="member">getSatisfaction</ref>();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a6af6fe4dae318e5747424c055a3b8bd9" kindref="member">requestPublicService</ref>(<sp/>std::string<sp/>serviceType,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>impact)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a1c6324eadadad370567f8af2f6b04f27" kindref="member">attendEvent</ref>(std::string<sp/>eventName,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>impact)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a264073daff7d319ecb2cd3ef06a794e9" kindref="member">evaluateHappiness</ref>()<sp/><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a0898b8b98a35a1744d5d4c235ab4681d" kindref="member">addKnownLocations</ref>(<ref refid="classStops" kindref="compound">Stops</ref><sp/>*stop)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1acdf4737fdc5e63a32a7de1163bbbc09d" kindref="member">displayDetails</ref>()<sp/>;<sp/></highlight><highlight class="comment">//<sp/>Function<sp/>declaration</highlight></codeline>
+<codeline lineno="148"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a27e24c005f0d75caa6e33275c3dbc887" kindref="member">getEmployementStatus</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1aaa81a0d5850c26dcfdfd1ca6f808fa35" kindref="member">getPropertyOwnershipStatus</ref>();</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>getBalance()<sp/><sp/>;<sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setBalance(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>newBalance)<sp/><sp/>;<sp/></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setSatisfaction(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>newSatisfaction<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="159" refid="classCitizen_1abca3f4db1b069d530bf26bb681d55e3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classCitizen_1abca3f4db1b069d530bf26bb681d55e3e" kindref="member">name</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="160" refid="classCitizen_1a9a6ce8a05dd2a1dc0cb7ea958f1ce873" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a9a6ce8a05dd2a1dc0cb7ea958f1ce873" kindref="member">salary</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="161" refid="classCitizen_1aea3cc6285cd89f75061e680a17a3dd7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1aea3cc6285cd89f75061e680a17a3dd7e" kindref="member">satisfaction</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="162" refid="classCitizen_1a9906c606bdbac44dcf4dc384c3a9d211" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a9906c606bdbac44dcf4dc384c3a9d211" kindref="member">age</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163" refid="classCitizen_1ac790268bd01b8bf067ebac692ae51b17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1ac790268bd01b8bf067ebac692ae51b17" kindref="member">isEmployed</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="164" refid="classCitizen_1ac53f466a02e533acba8789b2397cc9b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1ac53f466a02e533acba8789b2397cc9b5" kindref="member">ownsProperty</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="165" refid="classCitizen_1a7bd549ced2bbacc03708cd412609c7a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPopulationControl" kindref="compound">PopulationControl</ref><sp/>*<ref refid="classCitizen_1a7bd549ced2bbacc03708cd412609c7a6" kindref="member">popControl</ref>;<sp/></highlight></codeline>
+<codeline lineno="166" refid="classCitizen_1ac88789754b747ec5746485055958d9fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGovernment" kindref="compound">Government</ref><sp/>*<ref refid="classCitizen_1ac88789754b747ec5746485055958d9fc" kindref="member">government</ref>;<sp/></highlight></codeline>
+<codeline lineno="167" refid="classCitizen_1a523b77626b92a4a866ebf490dc3f7f35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classCitizen_1a523b77626b92a4a866ebf490dc3f7f35" kindref="member">currTaxRate</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>balance<sp/>;<sp/></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTravelManager" kindref="compound">TravelManager</ref><sp/>*tm;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>CITIZEN_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/Citizen.h"/>
+  </compounddef>
+</doxygen>

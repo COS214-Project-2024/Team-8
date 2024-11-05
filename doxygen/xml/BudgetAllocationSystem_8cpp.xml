@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="BudgetAllocationSystem_8cpp" kind="file" language="C++">
+    <compoundname>BudgetAllocationSystem.cpp</compoundname>
+    <includes refid="BudgetAllocationSystem_8h" local="yes">BudgetAllocationSystem.h</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.cpp</label>
+        <link refid="BudgetAllocationSystem_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BudgetAllocationSystem.h</label>
+        <link refid="BudgetAllocationSystem_8h"/>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="BudgetAllocationSystem_8h" kindref="compound">BudgetAllocationSystem.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><ref refid="classBudgetAllocationSystem_1a4905d07e8e4f5a1bbb60d62589e715e8" kindref="member">BudgetAllocationSystem::BudgetAllocationSystem</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Public<sp/>Service<sp/>Buildings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBudgetAllocationSystem_1a4136810058e31ce6a5a9ed02b4fd68ad" kindref="member">BudgetAllocationSystem::allocateMedicalCenterFunds</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>availableFunds)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;🏥<sp/>Medical<sp/>Center<sp/>Funds:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>availableFunds<sp/>*<sp/>0.20;<sp/></highlight><highlight class="comment">//<sp/>20%<sp/>for<sp/>Medical<sp/>Center</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBudgetAllocationSystem_1ac6b55f5aeecd93f73e2e06809884d9f4" kindref="member">BudgetAllocationSystem::allocateSchoolFunds</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>availableFunds)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;📚<sp/>School<sp/>Funds:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>availableFunds<sp/>*<sp/>0.10;<sp/></highlight><highlight class="comment">//<sp/>10%<sp/>for<sp/>School</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBudgetAllocationSystem_1a48ce04438fc0beac51dfe11465538db1" kindref="member">BudgetAllocationSystem::allocatePoliceStationFunds</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>availableFunds)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;🚔<sp/>Police<sp/>Station<sp/>Funds:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>availableFunds<sp/>*<sp/>0.10;<sp/></highlight><highlight class="comment">//<sp/>10%<sp/>for<sp/>Police<sp/>Station</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Utilities</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBudgetAllocationSystem_1ac24ffabbd32b4437f88595004a2b7f79" kindref="member">BudgetAllocationSystem::allocatePowerPlantFunds</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>availableFunds)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;⚡<sp/>Power<sp/>Plant<sp/>Funds:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>availableFunds<sp/>*<sp/>0.15;<sp/></highlight><highlight class="comment">//<sp/>15%<sp/>for<sp/>Power<sp/>Plant</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBudgetAllocationSystem_1a2e099729df3800044a23a49ab2195b4a" kindref="member">BudgetAllocationSystem::allocateWaterTowerFunds</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>availableFunds)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;🚰<sp/>Water<sp/>Tower<sp/>Funds:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>availableFunds<sp/>*<sp/>0.10;<sp/></highlight><highlight class="comment">//<sp/>10%<sp/>for<sp/>Water<sp/>Tower</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBudgetAllocationSystem_1a67ddf50ac970ca3a79d70879191de210" kindref="member">BudgetAllocationSystem::allocateWastePlantFunds</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>availableFunds)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;♻️<sp/>Waste<sp/>Plant<sp/>Funds:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>availableFunds<sp/>*<sp/>0.05;<sp/></highlight><highlight class="comment">//<sp/>5%<sp/>for<sp/>Waste<sp/>Plant</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBudgetAllocationSystem_1a208fad123e67eeb1cca69fba30635cdb" kindref="member">BudgetAllocationSystem::allocateSewagePipeFunds</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>availableFunds)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;🚽<sp/>Sewage<sp/>Pipe<sp/>Funds:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>availableFunds<sp/>*<sp/>0.05;<sp/></highlight><highlight class="comment">//<sp/>5%<sp/>for<sp/>Sewage<sp/>Pipe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Transport<sp/>Infrastructure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBudgetAllocationSystem_1ac84e9fc232d8fc7f84897219dfcd1cce" kindref="member">BudgetAllocationSystem::allocateRoadsFunds</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>availableFunds)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;🛣️<sp/>Roads<sp/>Funds:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>availableFunds<sp/>*<sp/>0.10;<sp/></highlight><highlight class="comment">//<sp/>10%<sp/>for<sp/>Roads</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBudgetAllocationSystem_1a4bdc8ee50a6f2dbf4004617633ff57d4" kindref="member">BudgetAllocationSystem::allocateAirportsFunds</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>availableFunds)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;✈️<sp/>Airports<sp/>Funds:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>availableFunds<sp/>*<sp/>0.05;<sp/></highlight><highlight class="comment">//<sp/>5%<sp/>for<sp/>Airports</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBudgetAllocationSystem_1ae0bd1b9f3292c656c30608a23e827f47" kindref="member">BudgetAllocationSystem::allocateTrainStationsFunds</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>availableFunds)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;🚆<sp/>Train<sp/>Stations<sp/>Funds:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>availableFunds<sp/>*<sp/>0.05;<sp/></highlight><highlight class="comment">//<sp/>5%<sp/>for<sp/>Train<sp/>Stations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Landmark<sp/>Buildings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBudgetAllocationSystem_1a08e0f2af67f6850a2c040563ca999076" kindref="member">BudgetAllocationSystem::allocateParkFunds</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>availableFunds)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;🌳<sp/>Park<sp/>Funds:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>availableFunds<sp/>*<sp/>0.05;<sp/></highlight><highlight class="comment">//<sp/>5%<sp/>for<sp/>Park</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBudgetAllocationSystem_1a11f3d4d04ef94bcbeac07e2482a08cb0" kindref="member">BudgetAllocationSystem::allocateMonumentFunds</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>availableFunds)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;⛲<sp/>Monument<sp/>Funds:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>availableFunds<sp/>*<sp/>0.025;<sp/></highlight><highlight class="comment">//<sp/>2.5%<sp/>for<sp/>Monument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBudgetAllocationSystem_1a5e544a7c84b9ab99ccf736657b0270b0" kindref="member">BudgetAllocationSystem::allocateCulturalCenterFunds</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>availableFunds)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;🎭<sp/>Cultural<sp/>Center<sp/>Funds:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>availableFunds<sp/>*<sp/>0.025;<sp/></highlight><highlight class="comment">//<sp/>2.5%<sp/>for<sp/>Cultural<sp/>Center</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/BudgetAllocationSystem.cpp"/>
+  </compounddef>
+</doxygen>

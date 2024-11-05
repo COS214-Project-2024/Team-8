@@ -1,0 +1,512 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacedoctest_1_1assertType" kind="namespace" language="C++">
+    <compoundname>doctest::assertType</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Enum</name>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a2dd798b430ccf956bc48c3b48bb4e570" prot="public">
+          <name>is_warn</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a9ca6ff629647f2a90d4c01ce68800590" prot="public">
+          <name>is_check</name>
+          <initializer>= 2 * is_warn</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3aff8fa549e941fb7ca7adcd49d9ffdf6d" prot="public">
+          <name>is_require</name>
+          <initializer>= 2 * is_check</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a34258afd98e569142dfb5b0a2c468436" prot="public">
+          <name>is_normal</name>
+          <initializer>= 2 * is_require</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a922a5fb427724cad963fb3dd789a8114" prot="public">
+          <name>is_throws</name>
+          <initializer>= 2 * is_normal</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a278ed7bf7e411c11e25ad8a60933ef34" prot="public">
+          <name>is_throws_as</name>
+          <initializer>= 2 * is_throws</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3ab79f3f076e62c260e77febd914bb82c3" prot="public">
+          <name>is_throws_with</name>
+          <initializer>= 2 * is_throws_as</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a0ad6f07c0273891b1c3f2fd84fe666dc" prot="public">
+          <name>is_nothrow</name>
+          <initializer>= 2 * is_throws_with</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a6539bad84e35008dc4a4a2c2d0793318" prot="public">
+          <name>is_false</name>
+          <initializer>= 2 * is_nothrow</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3adfaee7d6a907d7681e53e0e91734e058" prot="public">
+          <name>is_unary</name>
+          <initializer>= 2 * is_false</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a7010ae6142f085a3bfd85caa251c7499" prot="public">
+          <name>is_eq</name>
+          <initializer>= 2 * is_unary</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a3d624cd25af4d9bb1c29bd84f356e58d" prot="public">
+          <name>is_ne</name>
+          <initializer>= 2 * is_eq</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3abcad551db5972ed3918d2dae14c556f1" prot="public">
+          <name>is_lt</name>
+          <initializer>= 2 * is_ne</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a21d83a0fcc556d3c90614579e5cd2599" prot="public">
+          <name>is_gt</name>
+          <initializer>= 2 * is_lt</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a79ca2d90e99907eb5fe2971865bfcb30" prot="public">
+          <name>is_ge</name>
+          <initializer>= 2 * is_gt</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a3e1b485ee74c36fc1d0ba5902032af87" prot="public">
+          <name>is_le</name>
+          <initializer>= 2 * is_ge</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3af972d8a41e3090304ef38ad43483314d" prot="public">
+          <name>DT_WARN</name>
+          <initializer>= is_normal | is_warn</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a4431fd22794b06d854c7f9fbf43b10b8" prot="public">
+          <name>DT_CHECK</name>
+          <initializer>= is_normal | is_check</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a807ade2ef3e65b909e1551d8c8406d54" prot="public">
+          <name>DT_REQUIRE</name>
+          <initializer>= is_normal | is_require</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a710e0f57342dff74ba39e74419443435" prot="public">
+          <name>DT_WARN_FALSE</name>
+          <initializer>= is_normal | is_false | is_warn</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3aa518f2714c2f58bb1ed3b2d2f8c1b075" prot="public">
+          <name>DT_CHECK_FALSE</name>
+          <initializer>= is_normal | is_false | is_check</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3ae81f0c9c945715690c794c4e7cbb7bbf" prot="public">
+          <name>DT_REQUIRE_FALSE</name>
+          <initializer>= is_normal | is_false | is_require</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a9575f9ac61737539cde0fc3353e3d424" prot="public">
+          <name>DT_WARN_THROWS</name>
+          <initializer>= is_throws | is_warn</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3abf34f9af14d1c3d9b23dc80fc553e607" prot="public">
+          <name>DT_CHECK_THROWS</name>
+          <initializer>= is_throws | is_check</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a961340742b11d7e37f3874fef305d609" prot="public">
+          <name>DT_REQUIRE_THROWS</name>
+          <initializer>= is_throws | is_require</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3ad915d4c9681ce4f6ad8a5e0967cb0f04" prot="public">
+          <name>DT_WARN_THROWS_AS</name>
+          <initializer>= is_throws_as | is_warn</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a389b826746dde155cb46687c7e565cce" prot="public">
+          <name>DT_CHECK_THROWS_AS</name>
+          <initializer>= is_throws_as | is_check</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a180912d780568b6d9f1f0ef4a96a7be6" prot="public">
+          <name>DT_REQUIRE_THROWS_AS</name>
+          <initializer>= is_throws_as | is_require</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3ae6357eecb1d854cd7ad71e72c52c2f6d" prot="public">
+          <name>DT_WARN_THROWS_WITH</name>
+          <initializer>= is_throws_with | is_warn</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a5b0d08bf133f70f746ebd2f8b8e514d5" prot="public">
+          <name>DT_CHECK_THROWS_WITH</name>
+          <initializer>= is_throws_with | is_check</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a7b37f7677433a6da93a9e15c3ab62d24" prot="public">
+          <name>DT_REQUIRE_THROWS_WITH</name>
+          <initializer>= is_throws_with | is_require</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3ac76f8fa71f1b776034cd7db2687c99c8" prot="public">
+          <name>DT_WARN_THROWS_WITH_AS</name>
+          <initializer>= is_throws_with | is_throws_as | is_warn</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a13d5a33071d51aaaebcd08c4fd012035" prot="public">
+          <name>DT_CHECK_THROWS_WITH_AS</name>
+          <initializer>= is_throws_with | is_throws_as | is_check</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a81ed09bf509081b6c5887f196a593438" prot="public">
+          <name>DT_REQUIRE_THROWS_WITH_AS</name>
+          <initializer>= is_throws_with | is_throws_as | is_require</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3ab2aade9d6de83d7d0548e784a502d67f" prot="public">
+          <name>DT_WARN_NOTHROW</name>
+          <initializer>= is_nothrow | is_warn</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a5c330f1952cb85a8416902e237ec6f1f" prot="public">
+          <name>DT_CHECK_NOTHROW</name>
+          <initializer>= is_nothrow | is_check</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a2ab93f3a9dfd9c597e4810cd22fe6d16" prot="public">
+          <name>DT_REQUIRE_NOTHROW</name>
+          <initializer>= is_nothrow | is_require</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a856e0bc4639d22946b02ca5aae7f6c2c" prot="public">
+          <name>DT_WARN_EQ</name>
+          <initializer>= is_normal | is_eq | is_warn</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a25ea7bcb831f008cfbcfd5da41e9008e" prot="public">
+          <name>DT_CHECK_EQ</name>
+          <initializer>= is_normal | is_eq | is_check</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3ab2880914ce3960d556aa8681e9e47ad4" prot="public">
+          <name>DT_REQUIRE_EQ</name>
+          <initializer>= is_normal | is_eq | is_require</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a64e5a52a68ac1280d1a0910578d342cd" prot="public">
+          <name>DT_WARN_NE</name>
+          <initializer>= is_normal | is_ne | is_warn</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3ad2d533f5a46b17df1170d4b29ccd572a" prot="public">
+          <name>DT_CHECK_NE</name>
+          <initializer>= is_normal | is_ne | is_check</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a3c0d1c2454abd45b63391ee3970b133c" prot="public">
+          <name>DT_REQUIRE_NE</name>
+          <initializer>= is_normal | is_ne | is_require</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3af5a8a1175f296c626efaaf728a8a5b96" prot="public">
+          <name>DT_WARN_GT</name>
+          <initializer>= is_normal | is_gt | is_warn</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a4dbd73b6541c25b5c6fe059e970d937a" prot="public">
+          <name>DT_CHECK_GT</name>
+          <initializer>= is_normal | is_gt | is_check</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a65b68e53d865150051f880273a6c8462" prot="public">
+          <name>DT_REQUIRE_GT</name>
+          <initializer>= is_normal | is_gt | is_require</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3af78432b9b33a8765b326441c42a0c1b8" prot="public">
+          <name>DT_WARN_LT</name>
+          <initializer>= is_normal | is_lt | is_warn</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a18449655ab3feda0b66aa7306a85aeb5" prot="public">
+          <name>DT_CHECK_LT</name>
+          <initializer>= is_normal | is_lt | is_check</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a6dabfc7a1ec170e2ec6e31de8e703085" prot="public">
+          <name>DT_REQUIRE_LT</name>
+          <initializer>= is_normal | is_lt | is_require</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a493f8d19aa6056a3e8f475772548349b" prot="public">
+          <name>DT_WARN_GE</name>
+          <initializer>= is_normal | is_ge | is_warn</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3afc68d23bf246717c10e7bc0231dc062c" prot="public">
+          <name>DT_CHECK_GE</name>
+          <initializer>= is_normal | is_ge | is_check</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a54599a5076fe992159f2e88cad185682" prot="public">
+          <name>DT_REQUIRE_GE</name>
+          <initializer>= is_normal | is_ge | is_require</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a1d40a679871797392c64dd8b4324f4e8" prot="public">
+          <name>DT_WARN_LE</name>
+          <initializer>= is_normal | is_le | is_warn</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3ad711b30f529eb092f9bcf90600a07eb1" prot="public">
+          <name>DT_CHECK_LE</name>
+          <initializer>= is_normal | is_le | is_check</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a49c183d4be8babc83bbb3754303f7d45" prot="public">
+          <name>DT_REQUIRE_LE</name>
+          <initializer>= is_normal | is_le | is_require</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a9bc05989c4bd086562f3a0e05ab07ceb" prot="public">
+          <name>DT_WARN_UNARY</name>
+          <initializer>= is_normal | is_unary | is_warn</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3ae649bc4be44cb5e296ee851a7637c018" prot="public">
+          <name>DT_CHECK_UNARY</name>
+          <initializer>= is_normal | is_unary | is_check</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a0e430d8916b3d685b5df30d602d06b6d" prot="public">
+          <name>DT_REQUIRE_UNARY</name>
+          <initializer>= is_normal | is_unary | is_require</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3ad0c3e97290a20b0942a2988c2c413f45" prot="public">
+          <name>DT_WARN_UNARY_FALSE</name>
+          <initializer>= is_normal | is_false | is_unary | is_warn</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3ae8c9c5080e302b840ab4e053d5160191" prot="public">
+          <name>DT_CHECK_UNARY_FALSE</name>
+          <initializer>= is_normal | is_false | is_unary | is_check</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="doctest_8h_1ae1bb5bed722f34f1c38b83cb19d326d3a23caa06098e51bbb331da066e98ebd4e" prot="public">
+          <name>DT_REQUIRE_UNARY_FALSE</name>
+          <initializer>= is_normal | is_false | is_unary | is_require</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="714" column="5" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="715" bodyend="801"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="713" column="1"/>
+  </compounddef>
+</doxygen>

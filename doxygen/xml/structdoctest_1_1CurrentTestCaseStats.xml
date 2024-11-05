@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoctest_1_1CurrentTestCaseStats" kind="struct" language="C++" prot="public">
+    <compoundname>doctest::CurrentTestCaseStats</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoctest_1_1CurrentTestCaseStats_1ac8731bc4e8e32b86cf2940f4dcb61dec" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int doctest::CurrentTestCaseStats::numAssertsCurrentTest</definition>
+        <argsstring></argsstring>
+        <name>numAssertsCurrentTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2019" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2019" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1CurrentTestCaseStats_1a2fb52eed7bcef7322a816f418f0fb942" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int doctest::CurrentTestCaseStats::numAssertsFailedCurrentTest</definition>
+        <argsstring></argsstring>
+        <name>numAssertsFailedCurrentTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2020" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2020" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1CurrentTestCaseStats_1a29b1963f1d624d9f939f404726298f48" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double doctest::CurrentTestCaseStats::seconds</definition>
+        <argsstring></argsstring>
+        <name>seconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2021" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2021" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1CurrentTestCaseStats_1aaa58c52fd07a20e6e4daf19eecb2e2ba" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int doctest::CurrentTestCaseStats::failure_flags</definition>
+        <argsstring></argsstring>
+        <name>failure_flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2022" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2022" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoctest_1_1CurrentTestCaseStats_1a2c77d43c1fbab06710da7b5bbba4f3ab" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doctest::CurrentTestCaseStats::testCaseSuccess</definition>
+        <argsstring></argsstring>
+        <name>testCaseSuccess</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2023" column="12" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2023" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" line="2017" column="1" bodyfile="/home/nev/cos214/Project/finalpush/Team-8-Design-Wits/System/doctest.h" bodystart="2018" bodyend="2024"/>
+    <listofallmembers>
+      <member refid="structdoctest_1_1CurrentTestCaseStats_1aaa58c52fd07a20e6e4daf19eecb2e2ba" prot="public" virt="non-virtual"><scope>doctest::CurrentTestCaseStats</scope><name>failure_flags</name></member>
+      <member refid="structdoctest_1_1CurrentTestCaseStats_1ac8731bc4e8e32b86cf2940f4dcb61dec" prot="public" virt="non-virtual"><scope>doctest::CurrentTestCaseStats</scope><name>numAssertsCurrentTest</name></member>
+      <member refid="structdoctest_1_1CurrentTestCaseStats_1a2fb52eed7bcef7322a816f418f0fb942" prot="public" virt="non-virtual"><scope>doctest::CurrentTestCaseStats</scope><name>numAssertsFailedCurrentTest</name></member>
+      <member refid="structdoctest_1_1CurrentTestCaseStats_1a29b1963f1d624d9f939f404726298f48" prot="public" virt="non-virtual"><scope>doctest::CurrentTestCaseStats</scope><name>seconds</name></member>
+      <member refid="structdoctest_1_1CurrentTestCaseStats_1a2c77d43c1fbab06710da7b5bbba4f3ab" prot="public" virt="non-virtual"><scope>doctest::CurrentTestCaseStats</scope><name>testCaseSuccess</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

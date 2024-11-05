@@ -1,0 +1,71 @@
+\hypertarget{classFactoriesFactory}{}\doxysection{Factories\+Factory Class Reference}
+\label{classFactoriesFactory}\index{FactoriesFactory@{FactoriesFactory}}
+
+
+A factory class for creating factory buildings.  
+
+
+
+
+{\ttfamily \#include $<$Factories\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Factories\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for Factories\+Factory\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classFactoriesFactory_a4ebc485dcfe116f1e1eaae44f2b35e89}{create\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new factory building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ \mbox{\hyperlink{classFactoriesFactory_a225ff423b38bb8512e03d6bf18121f95}{buildings}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A factory class for creating factory buildings. 
+
+This class inherits from \mbox{\hyperlink{classIndustrialFactory}{Industrial\+Factory}} and provides a method for creating factory building objects. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFactoriesFactory_a4ebc485dcfe116f1e1eaae44f2b35e89}\label{classFactoriesFactory_a4ebc485dcfe116f1e1eaae44f2b35e89}} 
+\index{FactoriesFactory@{FactoriesFactory}!createBuilding@{createBuilding}}
+\index{createBuilding@{createBuilding}!FactoriesFactory@{FactoriesFactory}}
+\doxysubsubsection{\texorpdfstring{createBuilding()}{createBuilding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}} $\ast$ Factories\+Factory\+::create\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a new factory building. 
+
+This function creates and returns a pointer to a new factory \mbox{\hyperlink{classBuildings}{Buildings}} object.
+
+\begin{DoxyReturn}{Returns}
+A pointer to a newly created factory \mbox{\hyperlink{classBuildings}{Buildings}} object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIndustrialFactory_ac1eba9a085eaf6c0a7ea915b6e95f83c}{Industrial\+Factory}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFactoriesFactory_a225ff423b38bb8512e03d6bf18121f95}\label{classFactoriesFactory_a225ff423b38bb8512e03d6bf18121f95}} 
+\index{FactoriesFactory@{FactoriesFactory}!buildings@{buildings}}
+\index{buildings@{buildings}!FactoriesFactory@{FactoriesFactory}}
+\doxysubsubsection{\texorpdfstring{buildings}{buildings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}}$\ast$ Factories\+Factory\+::buildings}
+
+Pointer to a \mbox{\hyperlink{classBuildings}{Buildings}} object, representing the factory building instance managed by the factory. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/\mbox{\hyperlink{FactoriesFactory_8h}{Factories\+Factory.\+h}}\item 
+/home/nev/cos214/\+Project/finalpush/\+Team-\/8-\/\+Design-\/\+Wits/\+System/Factories\+Factory.\+cpp\end{DoxyCompactItemize}
