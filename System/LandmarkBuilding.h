@@ -18,11 +18,6 @@ public:
      */
     virtual string getBuildingType() = 0;
 
-    /**
-     * @brief Gets the number of jobs created by the landmark building.
-     * @return The number of jobs as an integer.
-     */
-    virtual int getJobsCreated() = 0;
 
     /**
      * @brief Gets the maintenance cost of the landmark building.

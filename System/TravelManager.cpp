@@ -72,9 +72,9 @@ void TravelManager::addStops(Stops* stop) {
  * The builder is deleted if it exists
  */
 TravelManager::~TravelManager() {
-	delete this->route;
+	/*delete this->route;
 	if(transport) delete this->transport;
-	if(builder) delete this->builder;
+	if(builder) delete this->builder;*/
 }
 
 /**

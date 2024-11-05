@@ -44,6 +44,7 @@
 #include "PublicServiceBuilding.h"
 #include "MedicalCenter.h"
 #include "LandmarkBuilding.h"
+#include "Mall.h"
 
 // Transportation includes
 #include "TravelManager.h"
@@ -169,6 +170,8 @@ void handleLandmarkConstruction() {
     }
 }
 
+std::vector<std::unique_ptr<CitizenInterface>> citizens;
+
 void handleCitizenManagement() {
     std::cout << "\n=== Citizen Management ===\n";
     std::cout << "1. Create New Citizen\n";
@@ -188,14 +191,87 @@ void handleCitizenManagement() {
             
             auto citizen = std::make_unique<Citizen>(name, 50000, 30, 75);
             citizen->displayDetails();
+            citizens.push_back(std::move(citizen));
             break;
         }
         case 2: {
-            std::cout << "Citizen listing functionality coming soon!\n";
+            if (citizens.empty()) {
+                std::cout << "No citizens registered yet!\n";
+            } else {
+                std::cout << "\n=== Registered Citizens ===\n";
+                for (size_t i = 0; i < citizens.size(); ++i) {
+                    std::cout << "\nCitizen #" << (i + 1) << ":\n";
+                    citizens[i]->displayDetails();
+                }
+            }
             break;
         }
         case 3: {
-            std::cout << "Job assignment functionality coming soon!\n";
+            if (citizens.empty()) {
+                std::cout << "No citizens available to assign jobs!\n";
+                break;
+            }
+            if (cityBuildings.empty()) {
+                std::cout << "No buildings available for employment!\n";
+                break;
+            }
+
+            std::cout << "\nSelect a citizen to employ:\n";
+            for (size_t i = 0; i < citizens.size(); ++i) {
+                std::cout << (i + 1) << ". " << citizens[i]->getName() 
+                         << " (Currently " << (citizens[i]->getEmployementStatus() ? "Employed" : "Unemployed") 
+                         << ")\n";
+            }
+
+            int citizenChoice;
+            std::cin >> citizenChoice;
+            clearInput();
+
+            if (citizenChoice < 1 || citizenChoice > static_cast<int>(citizens.size())) {
+                std::cout << "Invalid citizen selection!\n";
+                break;
+            }
+
+            std::cout << "\nSelect a building for employment:\n";
+            int buildingCount = 0;
+            std::vector<size_t> validBuildingIndices;
+
+            for (size_t i = 0; i < cityBuildings.size(); ++i) {
+                if (auto commercialBuilding = dynamic_cast<CommercialBuilding*>(cityBuildings[i].get())) {
+                    buildingCount++;
+                    validBuildingIndices.push_back(i);
+                    std::cout << buildingCount << ". " << cityBuildings[i]->getName() << "\n";
+                }
+                else if (auto publicBuilding = dynamic_cast<PublicServiceBuilding*>(cityBuildings[i].get())) {
+                    buildingCount++;
+                    validBuildingIndices.push_back(i);
+                    std::cout << buildingCount << ". " << cityBuildings[i]->getName() << "\n";
+                }
+            }
+
+            if (buildingCount == 0) {
+                std::cout << "No suitable buildings for employment!\n";
+                break;
+            }
+
+            int buildingChoice;
+            std::cin >> buildingChoice;
+            clearInput();
+
+            if (buildingChoice < 1 || buildingChoice > buildingCount) {
+                std::cout << "Invalid building selection!\n";
+                break;
+            }
+
+            // Create employed citizen decorator
+            size_t citizenIndex = citizenChoice - 1;
+            size_t buildingIndex = validBuildingIndices[buildingChoice - 1];
+
+            auto employedCitizen = std::make_unique<EmployedCitizen>(std::move(citizens[citizenIndex]));
+            employedCitizen->getEmployed(cityBuildings[buildingIndex].get());
+            
+            // Put the decorated citizen back in the vector
+            citizens[citizenIndex] = std::move(employedCitizen);
             break;
         }
     }
@@ -373,9 +449,32 @@ int main() {
                                     cityBuildings.push_back(std::unique_ptr<Buildings>(factory->createBuilding()));std::cout << "Office built successfully!\n";
                                     break;
                                 }
-                                default:
-                                    std::cout << "Invalid choice!\n";
-                            }
+                              case 3: {
+            std::cout << "Enter Mall name: ";
+            std::string name;
+            std::getline(std::cin, name);
+            
+            auto* mall = new Mall(
+                name,           // building name
+                2000,          // power requirement
+                1500,          // water requirement
+                15000.0,       // maintenance cost
+                300,           // sewage cost
+                250,           // waste
+                100000.0f,     // sales
+                25000.0f,      // profit
+                100            // employment
+            );
+            
+            std::cout << "\nMall '" << name << "' constructed successfully!\n";
+            std::cout << "Jobs Created: " << mall->getJobsCreated() << "\n";
+            
+            cityBuildings.push_back(std::unique_ptr<Buildings>(mall));
+            break;
+        }
+        default:
+            std::cout << "Invalid choice!\n";
+    }
                             break;
                         }
                         case 3: {

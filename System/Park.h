@@ -29,11 +29,6 @@ public:
      */
     virtual string getBuildingType();
 
-    /**
-     * @brief Gets the number of jobs created by the park.
-     * @return The number of jobs as an integer.
-     */
-    virtual int getJobsCreated();
 
     /**
      * @brief Gets the maintenance cost of the park.

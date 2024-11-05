@@ -1,6 +1,6 @@
 # Compiler and flags
 CC = g++
-CFLAGS = -c -std=c++17 -g -Wall -Werror
+CFLAGS = -c -std=c++17 -g -Wall
 
 # Main executable name
 TARGET = citybuilder
@@ -63,6 +63,11 @@ OBJECTS = main.o \
     CommercialTaxationSystem.o \
     BudgetAllocationSystem.o \
     PublicServiceBuilding.o \
+    School.o \
+    PoliceStation.o \
+    Monument.o \
+    Park.o \
+    CulturalCenter.o \
 
 # Header files (for dependencies)
 HEADERS = $(wildcard *.h)
